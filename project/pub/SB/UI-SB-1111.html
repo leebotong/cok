@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-1111</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		// $(function(){
+		// 	popOpen(popupC)
+		// })
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>QR코드발급</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">입금 받고자 하는<br><strong>QR코드</strong>를 발급하세요.</p>
+				<ul class="listDot">
+					<li>고객님의 <span class="pColor">계좌번호</span> 및 <span class="pColor">입금액</span>을 입력하여 QR코드를 <span class="pColor">발급</span>하시기 바랍니다.</li>
+				</ul>
+			</div>
+
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">입금받을 계좌</strong>
+					<div class="inpSel isLogo">
+						<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel placeholder">
+							<span class="logo">
+								<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+							</span>
+							<div class="accNum">
+								<span class="tit"><!--<span class="accBank">[농협]</span>--> 바로N콕통장(내주거래통장)</span>
+								<span class="num">55-5368-1234-02</span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">받을금액</strong>
+					<!-- <p class="numVal"><em class="data"></em><span class="unit">원</span></p> -->
+					<div class="inpText">
+						<input type="tel" title="인출 금액" value class="tyNum" placeholder="금액입력" maxlength="16"> <!-- fn_change_hangul_money 퍼블 테스트용 -->
+						<span class="unit">원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+
+					<!-- [2022-07-04] 윤지현:마크업수정 -->
+					<div class="touchBtnWrap">
+						<a href="javascript:;" role="button" title="1만원 추가">+1만</a>
+						<a href="javascript:;" role="button" title="5만원 추가">+5만</a>
+						<a href="javascript:;" role="button" title="10만원 추가">+10만</a>
+						<a href="javascript:;" role="button" title="100만원 추가" class="">+100만</a>
+						<a href="javascript:;" role="button" title="전액" class="">전액</a>
+					</div>
+					<!-- //[2022-07-04] 윤지현:마크업수정 -->
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">제목 * 상호</strong>
+					<div class="inpText">
+						<input type="text" title="제목 및 상호 입력" placeholder="최대 12자 이내 입력" maxlength="12">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">발급</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div><!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+</div>
+
+</body>
+</html>

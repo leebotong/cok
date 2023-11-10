@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>UI-MM-0111</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+  <link rel="stylesheet" href="../../css/cok_market.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>다른금융계좌 등록</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="allCheckTopBox bgNone active" style="margin-top:28px;">
+				<input type="checkbox" name="agreeChk" id="aggChkAll" checked>
+				<label for="aggChkAll">약관 전체동의</label>
+			</div>
+
+			<div class="pgTitWrap">
+				<p class="pTit">오픈뱅킹 관련 <strong class="pColor">금융(거래)정보<br> 제공내역</strong>을 받으실<br> <strong class="pColor">이메일을 입력</strong>해주세요.</p>
+			</div>
+      
+      <div class="formItem">
+        <!-- <strong class="formTit">이메일</strong> -->
+        <div class="formGroup">
+          <div class="inpText">
+            <input type="tel" title="아이디" value class="tyTxt" placeholder="E-MAIL">
+          </div>
+          <span class="etc">@</span>
+          <div class="inpSel">
+            <a href="javascript:;" title="도메인 선택" role="button" class="btnSel placeholder">선택</a>
+          </div>
+        </div>
+        <div class="inpText">
+          <input type="text" title="이메일주소 직접입력" value class="tyTxt" placeholder="직접입력">
+          <button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+        </div>
+        <p class="infoTxt">소중한 금융정보 보호를 위해 반드시 올바른 이메일 주소를 입력해주세요.</p>
+      </div>
+
+      <div class="formItem jsTgWrap">
+        <strong class="formTit inpChk">
+          <input type="checkbox" name="chk10" id="chk101" class="jsTgBtn">
+          <label for="chk101">권유직원이 있어요. (선택)</label>
+        </strong>
+        <!-- 권유직원 선택시 노출 -->
+        <div class="jsTgCont formExpBox">
+          <div class="formWrap">
+            <div class="formGroup mt0">
+              <div class="inpText">
+                <input type="text" title="권유직원" class="tyTxt" value placeholder="권유직원 입력" readonly>
+                <button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+                <a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //권유직원 선택시 노출 -->
+      </div>
+			
+      <div class="btmInfoWrap">
+        <strong class="tit">확인사항</strong>
+        <ul class="listDot">
+          <li>고객님 회원정보에 등록된 이메일 주소가 자동으로 노출되며, 해당 이메일 주소는 농협중앙회 오픈뱅킹 가입용도로만 사용됩니다.</li>
+          <li>입력하신 이메일 주소는 고객님의 회원정보에 반영되지 않으며, 회원정보에 등록된 개인정보(이메일) 수정을 원하신다면 가까운 영업점 또는 스마트뱅킹을 이용하셔야 합니다.</li>
+        </ul>
+      </div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">동의</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

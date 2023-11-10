@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0330P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>NH고향사랑기부예금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button" class="popOpen">풀팝업</a>
+
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">나의 기부지역 선택</h2> <!-- [2023-01-05] 윤지현:띄어쓰기수정 -->
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="pgTitWrap">
+							<p class="pTit">나의 기부지역을<br><strong>선택</strong>해주세요.</p><!-- [2023-01-05] 윤지현:띄어쓰기수정 -->
+							<!--[2023-01-05] 김연진 : 삭제 <ul class="listDot"> 
+								<li>적금 연평잔의 일부를 고향사랑기금으로<br>조성하여 고향 발전을 위하여 사용합니다.</li>
+							</ul> -->
+						</div>
+
+						<div class="formWrap">
+							<div class="formItem">
+								<strong class="formTit">나의 기부지역 <!-- [2023-01-05] 윤지현:띄어쓰기수정 -->
+									<!--tooltip-->
+									<div class="tooltipWrap">
+										<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+										<div class="tooltipCont" style="display: none;">
+											<strong class="tit">나의 기부지역</strong><!-- [2023-01-05] 윤지현:띄어쓰기수정 -->
+											<!-- [2023-01-03] 윤지현:툴팁내용추가 -->
+											<ul class="listDot">
+												<li>선택한 기부지역은 통장명으로 사용됩니다.<br>(통장명: NH고향사랑기부예금(선택지역명))</li>
+												<li>희망하는 지역으로 고향사랑기부금을 납부하면 해당 지역의 발전을 위한 고향사랑에 기여할 수 있으며, 본 상품에서 우대금리를 받을 수 있습니다. ※ 상품약관 참조</li>
+											</ul>
+											<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+										</div>
+									</div>
+									<!--//tooltip-->
+								</strong>
+								<div class="inpSel">
+									<a href="javascript:;" title="시/도 선택" role="button" class="btnSel ">강원도</a>
+								</div>
+								<div class="inpSel">
+									<a href="javascript:;" title="시/구 선택" role="button" class="btnSel ">양양군</a>
+								</div>
+							</div>
+						</div>
+
+							<!-- [2023-01-05] 김연진 : 확인사항 삭제<hr class="divingLine" aria-hidden="true">
+
+						 <div class="btmInfoWrap">
+							<strong class="tit">확인사항</strong>
+							<ul class="infoTxt">
+								<li>선택한 지역은 통장명으로 사용됩니다.<br>(통장명: NH고향사랑기부적금(선택지역명)) </li>
+								<li>공익기금은 해당 지자체 소속 17개 시, 도, 광역시로 적립되며, 지역간 균형있는 발전을 위해 통합하여 지원합니다. ※ 상품약관 참조</li>
+							</ul>
+						</div> -->
+
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">다음</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

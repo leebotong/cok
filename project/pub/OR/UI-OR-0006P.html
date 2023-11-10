@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-OR-0006P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(sp_popup);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1></h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(sp_popup);" class="popOpen">UI-OR-0006P</a>
+			</div> 
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea">
+		<!-- SLIDE POPUP -->
+		<div id="sp_popup" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">해외송금수수료 및 전신료</h2>
+						</div>
+						<div class="layerSelectContent">
+							<div class="tblWrap">
+								<div class="tbl">
+									<table>
+										<caption>해외송금수수료 및 전신료로 인터넷/	스마트뱅킹/콕뱅크과 영업점(일반요율)의 해외송금 수수료, 전신료로 구성</caption>
+										<colgroup>
+											<col width="30%">
+											<col width="48%">
+											<col width="">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">구분</th><!-- [2022-09-30] 김자영 : 텍스트수정 -->
+												<th scope="col">해외송금 수수료</th>
+												<th scope="col">전신료</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">인터넷/	스마트뱅킹/콕뱅크</th>
+												<td class="al">미화 5,000달러 상당액 이하 : 3,000원<br>
+													미화5,000달러 상당액 초과 : 5,000원</td>
+												<td>건당 5,000원</td>
+											</tr>
+											<tr>
+												<th scope="row">영업점(일반요율)</th>
+												<td class="al">미화 500달러 상당액 이하 : 5,000원<br>미화 2,000달러 상당액 이하 : 10,000원<br>미화 5,000달러 상당액 이하 : 15,000원<br>미화 20,000달러 상당액 이하 : 20,000원<br>미화 20,000달러 상당액 초과 : 25,000원</td>
+												<td>건당 8,000원</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+					</div>
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

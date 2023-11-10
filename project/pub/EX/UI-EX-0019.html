@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0019</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>외화주머니에 담기</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+			<div class="pgTitWrap">
+				<p class="pTit">환전하실 <strong>환전금액</strong>을<br><strong>입력</strong>해주세요.</p>
+			</div>
+			<div class="formwrap">
+				<div class="formTit">환전할 금액</div>
+				<div class="tabWrap box">
+					<div role="tablist" class="tabList">
+						<a href="javascript:;" role="tab" aria-selected="true" class="active">외화로입력</a>
+						<a href="javascript:;" role="tab" class>원화로입력</a>
+					</div>
+
+					<div class="formItem">
+						<div class="inpSel">
+							<span class="logo exchange">
+								<img src="../../images/logo/icon_USD.png" alt="미국국기"> <!--[2022-08-02] 이경아 : 이미지명 수정-->
+								<!-- <img src="../../images/logo/icon_JPY.png" alt="일본국기">
+								<img src="../../images/logo/icon_EUR.png" alt="유럽연합">
+								<img src="../../images/logo/icon_CNY.png" alt="중국국기"> -->
+							</span>
+							<a href="javascript:;" title="기준화선택" role="button" class="btnSel">USD(미국달러)</a>
+						</div>
+					</div>
+
+					<div class="tabPanelList">
+						<div role="tabpanel" class="tabPanel show">
+							<!--[2022-12-02] 환전 신청 1일 거래금액 한도 조정 상시운영 : 윤희정-->
+							<div class="formItem error">
+								<div class="inpText">
+									<input type="text" title="환전할 외화 입력" class="tyTxt" value placeholder="1달러 단위로 입력">
+									<span class="unit">달러</span>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+								<p class="infoTxtErr">최저 환전 금액은 1 달러 입니다.</p>  <!-- [2023-05-17] 환전 거래한도 : 문구수정 v1.13 -->
+							</div>
+							<!--//[2022-12-02] 환전 신청 1일 거래금액 한도 조정 상시운영 : 윤희정-->
+						</div>
+
+						<div role="tabpanel" class="tabPanel">
+							<div class="formItem">
+								<div class="inpText">
+									<input type="text" title="환전할 원화 입력" class="tyTxt" value placeholder="금액 입력">
+									<span class="unit">원</span>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="infoTxt">
+						<!-- [2023-05-10] 환전 거래한도 및 재환전 시 적용 환율 : v1.2// -->
+						<li>최소 1$(달러)부터 1$(달러) 단위로 환전 신청이 가능합니다.</li>
+						<li>외화주머니 1일 담기 최대 한도는 2천달러이며 최대 보관한도는 1만 달러입니다.</li>
+						<!-- 일본 엔화인 경우 -->
+						<li>최소 1,000¥(엔)부터 1,000¥(엔) 단위로 환전 신청이 가능합니다.</li>
+						<li>외화주머니 1일 담기 최대 한도는 2천달러이며 최대 보관한도는 1만 달러입니다.</li>
+						<!-- 중국 위안화인 경우-->
+						<li>최소 100¥(위안)부터 100¥(위안) 단위로 환전 신청이 가능합니다.</li>
+						<li>외화주머니 1일 담기 최대 한도는 2천달러이며 최대 보관한도는 1만 달러입니다.</li>
+						<!-- 유럽 유로화인 경우-->
+						<li>최소 5€(유로)부터 5€(유로) 단위로 환전 신청이 가능합니다.</li>
+						<li>외화주머니 1일 담기 최대 한도는 2천달러이며 최대 보관한도는 1만 달러입니다.</li>
+						<!-- //[2023-05-10] 환전 거래한도 및 재환전 시 적용 환율 : v1.2 -->
+					</ul>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">환전금액 계산하기</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

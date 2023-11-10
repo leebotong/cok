@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>콕세상 메인</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_main.css"><!-- 일반모드 메인페이지 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"><!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cokWorld.css"><!-- 콕세상 전용 -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script><!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script type="text/javascript">
+	<!--
+		$(document).ready(function(){
+			bannerSwiper();	//메인베너
+			menuSwiper();	//탭메뉴
+			jQuery('.svcLinkBox.myCok').hide();	//MY콕 닫기
+			function bannerSwiper() {
+				$('.cokWmainBanner').each(function (idx) {
+					var $this = $(this);
+					var slideNumber = $this.parent().find('.slideNumber');
+					$this.addClass('type' + idx);
+
+					//슬라이드 초기화
+					if (bannerSwiper != undefined){
+						bannerSwiper.destroy();
+						bannerSwiper = undefined;
+					}
+
+					var bannerSwiper = new Swiper(".type" + idx + " .swiper-container", {
+
+						slidesPerView: 1,
+						spaceBetween: 10,
+						initialSlide : 0,
+						loop: true,
+						loopAdditionalSlides: 1,
+						breakpoints: {
+							640: {
+								//slidesPerView: 2,
+							}
+						},
+						autoplay: {
+							deley: 3000,
+							disableOnInteraction: true,
+						},
+						centeredSlides: true,
+						observer: true,
+						observeParents: true,
+						observeSlideChildren: true,
+						on: {
+							init: function () {
+								var totalSlides = this.slides.length - 4;
+								var currentCount = (this.activeIndex - 2) % (totalSlides) + 1;
+								$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+								$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active").attr("aria-hidden", false).attr("tabindex", 0);
+								slideNumber.html('<span class="page">' + currentCount +'</span>' +'/' + totalSlides);
+							},
+							slideChangeTransitionEnd: function () {
+								$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+								$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active")	.attr("aria-hidden", false)	.attr("tabindex", 0);
+							},
+
+							//추가
+							slideChange: function () {
+								var totalSlides = this.slides.length - 4;
+								var currentCount = (this.activeIndex - 2) % (totalSlides) + 1;
+
+								if(currentCount === 0) {
+									slideNumber.html('<span class="page">' + totalSlides +'</span>' +'/' + totalSlides);
+								} else {
+									slideNumber.html('<span class="page">' + currentCount +'</span>'+ '/' + totalSlides);
+								}
+
+								if(currentCount >= 2){
+									$this.addClass('none');
+								} else {
+									$this.removeClass('none');
+								}
+							}
+						},
+					});
+
+					$this.parent().find('.auto').append('<a href="javascript:;" class="swiperAuto stop" role="button" aria-label="일시정지"></a>');
+					$this.parent().find('.swiperAuto').on("click", function () {
+						if ($(this).hasClass("stop")) {
+							$(this).addClass("start").removeClass("stop").attr("aria-label", "재생");
+							bannerSwiper.autoplay.stop();
+						} else {
+							$(this).addClass("stop").removeClass("start").attr("aria-label", "일시정지");
+							bannerSwiper.autoplay.start();
+						}
+					});
+				})
+			};
+			function menuSwiper() {
+				var menuSwiper = new Swiper(".titleTab", {
+
+					slidesPerView: 4,
+					navigation:{
+						nextEl:'.btnNext',
+						prevEl:'.btnPrev',
+					},
+				});
+			};
+			//더보기
+			jQuery('.btnBox .btnMoreBig').on('click',function(){
+				var _this = jQuery(this);
+				if(_this.hasClass('up')){
+					_this.removeClass('up').text('더보기');
+					jQuery('.svcLinkBox.myCok').slideUp();
+				}else{
+					_this.addClass('up').text('닫기');
+					jQuery('.svcLinkBox.myCok').slideDown();
+				}
+			});
+			//탭메뉴
+			jQuery('.titleTab .cokWTitTabBtn').on('click',function(){
+				var _this = jQuery(this),
+						_targ = _this.attr('data');
+				jQuery('.titleTab .cokWTitTabBtn').removeClass('on');
+				_this.addClass('on');
+				if(_targ == "all"){
+					jQuery('.svcLinkBox').removeClass('hid').removeClass('shw');
+					jQuery('.btnBox').show();
+					jQuery('.svcLinkBox.myCok').hide();
+					jQuery('.btnMoreBig').removeClass('up').text('더보기');
+				}else{
+					jQuery('.svcLinkBox').addClass('hid').removeClass('shw');
+					jQuery('.svcLinkBox.'+_targ).addClass('shw').removeClass('hid');
+					jQuery('.btnBox').hide();
+					jQuery('.svcLinkBox.myCok').attr('style','');
+				};
+			});
+		});
+	//-->
+	</script>
+</head>
+<body>
+	<div id="wrap" class="cokWmainWrap main"><!-- 콕세상 class cokWmainWrap -->
+		<!-- #header -->
+		<div id="header">
+			<div class="topHead">
+				<h3>콕세상</h3>
+				<div class="cokMenuBox">
+					<a href="#nolink" title="" class="" role="button">콕팜</a>
+					<a href="#nolink" title="" class="" role="button">콕쇼핑</a>
+				</div>
+				<a href="#nolink" title="" class="btnPageBack" role="button">이전 화면</a>
+				<a href="#nolink" title="" class="btnHome" role="button">홈</a>
+			</div>
+			<div class="inMenu">
+				<div class="mainBtnBox">
+					<a href="#nolink" role="button" class="cokWmainBtn telSave on">콕통신비 절약</a>
+					<a href="#nolink" role="button" class="cokWmainBtn stock">증권추천</a>
+					<a href="#nolink" role="button" class="cokWmainBtn cokLife">콕생활</a>
+					<a href="#nolink" role="button" class="cokWmainBtn myCok">MY콕</a>
+				</div>
+				<button type="button" class="btnCokWallMenu">전체메뉴</button>
+			</div>
+		</div>
+		<!-- //#header -->
+
+		<div id="container">
+			<div id="contents">
+				<div class="content">
+					<div class="cokWmainBannerArea">
+						<div class="cokWmainBanner">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#nolink"><img src="../../images/cokWorld/banner/colWmain_banner01.jpg" alt="배달앱 10% 간편결제 5% 할인 NH농협카드 준법심의필 : 업무광고 202201-001"></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#nolink"><img src="../../images/cokWorld/banner/colWmain_banner11.jpg" alt="배달앱 10% 간편결제 5% 할인 NH농협카드 준법심의필 : 업무광고 202201-001"></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#nolink"><img src="../../images/cokWorld/banner/colWmain_banner21.jpg" alt="배달앱 10% 간편결제 5% 할인 NH농협카드 준법심의필 : 업무광고 202201-001"></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#nolink"><img src="../../images/cokWorld/banner/colWmain_banner01.jpg" alt="배달앱 10% 간편결제 5% 할인 NH농협카드 준법심의필 : 업무광고 202201-001"></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#nolink"><img src="../../images/cokWorld/banner/colWmain_banner11.jpg" alt="배달앱 10% 간편결제 5% 할인 NH농협카드 준법심의필 : 업무광고 202201-001"></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#nolink"><img src="../../images/cokWorld/banner/colWmain_banner21.jpg" alt="배달앱 10% 간편결제 5% 할인 NH농협카드 준법심의필 : 업무광고 202201-001"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slideCtlBtnBox">
+							<div class="slideNumber"></div>
+							<div class="auto"></div>
+							<a href="#nolink" role="button" class="btnList">전체보기<span class="blind">운영 제휴존목록으로 이동</span></a><!-- 개발작업하실때 운영제휴존으로 연결해주세요! -->
+						</div>
+					</div>
+					<div class="cokWSvcLinkArea">
+						<div class="topTitle">
+							<strong class="tit">콕세상에서 둘러보세요</strong>
+							<button type="button" class="btnSvcInfo">서비스 소개</button>
+						</div>
+						<div class="swiper titleTab">
+							<button type="button" class="btnPrev">이전</button>
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#nolink" role="button" class="cokWTitTabBtn on" data="all">전체</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#nolink" role="button" class="cokWTitTabBtn" data="tel">콕통신비절약</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#nolink" role="button" class="cokWTitTabBtn" data="stock">증권추천</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#nolink" role="button" class="cokWTitTabBtn" data="life">콕생활</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#nolink" role="button" class="cokWTitTabBtn" data="myCok">MY콕</a>
+									</div>
+								</div>
+							<button type="button" class="btnNext">다음</button>
+						</div>
+						<div class="svcLinkBox tel">
+							<p class="linkTit">콕통신비 절약</p>
+							<ul>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn thMall">
+										<span>알뜰폰 요금제</span>
+										<strong>알뜰폰전용몰</strong>
+										<div class="svcTit"><span>알뜰폰전용몰</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn hoMall">
+										<span>인터넷/IPTV</span>
+										<strong>홈상품전용몰</strong>
+										<div class="svcTit"><span>홈상품전용몰</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn phMall">
+										<span>최신폰 쇼핑</span>
+										<strong>휴대폰전용몰</strong>
+										<div class="svcTit"><span>휴대폰전용몰</span></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="svcLinkBox stock">
+							<p class="linkTit">증권추천</p>
+							<ul>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn stock">
+										<span>AI주식추천</span>
+										<strong>투자정보/이슈</strong>
+										<div class="svcTit"><span>증권추천</span></div>
+									</a>
+								</li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="svcLinkBox life">
+							<p class="linkTit">콕생활</p>
+							<ul>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn luck">
+										<span>매일 행복예감</span>
+										<strong>운세</strong>
+										<div class="svcTit"><span>운세</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn phfmsafe">
+										<span>실시간</span>
+										<strong>가족안심지킴이</strong>
+										<div class="svcTit"><span>휴대폰가족보호</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn aptCok">
+										<span>AI가격예측</span>
+										<strong>부동산 정보</strong>
+										<div class="svcTit"><span>아파트NH콕</span></div>
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn persInfo">
+										<span>사생활보호</span>
+										<strong>내폰정보지킴이</strong>
+										<div class="svcTit"><span>원키퍼</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn smartFish">
+										<span>금융사기 예방</span>
+										<strong>스마트피싱보호</strong>
+										<div class="svcTit"><span>스마트피싱보호</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn theCheat">
+										<span>사기피해 검색</span>
+										<strong>더치트</strong>
+										<div class="svcTit"><span>더치트</span></div>
+									</a>
+								</li>
+							</ul>
+							<!-- [2023-03-14] 김연진 : 삭제 <ul>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn carInsur">
+										<span>전문상담 가입</span>
+										<strong>비교견적</strong>
+										<div class="svcTit"><span>자동차보험</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn permCar">
+										<span>내차 시세조회</span>
+										<strong>인증딜러판매</strong>
+										<div class="svcTit"><span>인증자동차</span></div>
+									</a>
+								</li>
+								<li></li>
+							</ul> -->
+							<ul><!-- [2023-03-14] 김연진 : 교통카드>선물하기 순서변경-->
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn transpCard">
+										<span>간편 선불충전</span>
+										<strong>교통카드</strong>
+										<div class="svcTit"><span>교통카드</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn gift">
+										<span>마음담은e쿠폰</span>
+										<strong>선물하기</strong>
+										<div class="svcTit"><span>선물하기</span></div>
+									</a>
+								</li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="svcLinkBox myCok">
+							<p class="linkTit">MY콕</p>
+							<ul>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn cardPoint">
+										<span>카드 포인트</span>
+										<strong>현금전환</strong>
+										<div class="svcTit"><span>카드포인트입금</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn insurInfo">
+										<span>가입보험 분석</span>
+										<strong>보장내역 비교</strong>
+										<div class="svcTit"><span>보험정보</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn pension">
+										<span>연금정보 조회</span>
+										<strong>납부액/수령액</strong>
+										<div class="svcTit"><span>연금정보</span></div>
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn carDriv">
+										<span>시세/추천차량</span>
+										<strong>벌점/미납내역</strong>
+										<div class="svcTit"><span>차량/운전정보</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn estate">
+										<span>우리집 시세</span>
+										<strong>안전지역 추천</strong>
+										<div class="svcTit"><span>부동산정보</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn health">
+										<span>건강정보</span>
+										<strong>진료/약 처방</strong>
+										<div class="svcTit"><span>건강정보</span></div>
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn welfare">
+										<span>내가 받을</span>
+										<strong>복지자금 조회</strong>
+										<div class="svcTit"><span>복지/정책자금</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn rural">
+										<span>교육/지원정책</span>
+										<strong>농촌정착가이드</strong>
+										<div class="svcTit"><span>귀농/귀촌정보</span></div>
+									</a>
+								</li>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn travel">
+										<span>캠핑/체험마을</span>
+										<strong>향토음식 정보</strong>
+										<div class="svcTit"><span>여행정보</span></div>
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#nolink" role="link" class="svcLinkBtn lifeduc">
+										<span>지역별 조회</span>
+										<strong>학습강좌 수강</strong>
+										<div class="svcTit"><span>평생학습강좌</span></div>
+									</a>
+								</li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="btnBox">
+							<button type="button" class="btnMoreBig">더보기</button>
+						</div>
+					</div>
+				</div>
+			</div><!-- //#contents -->
+		</div><!-- //#container -->
+
+	</div>
+</body>
+</html>

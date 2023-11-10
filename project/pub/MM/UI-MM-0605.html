@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0605</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<!-- <a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a> -->
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+		</div>
+		<!-- <h1>회차별중도인출</h1> -->
+		<div class="headerR">
+			<!-- <a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a> -->
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="completeWrap">
+				<i class="check"></i>
+				<p class="tit"><strong class="pColor">입출금 해지</strong> 완료</p>
+        <p class="txt">계좌 해지가 정상 처리되었습니다.<br>아래의 내용을 확인해주세요.</p>
+			</div>
+
+
+			<div class="listTblBox complete">
+				<ul>
+          <li>
+						<span class="tit">예금종류(상품명)</span>
+						<p class="txt">NH근로자급여통장<br>(자유입출금)</p>
+          </li>
+          <li>
+						<span class="tit">해지계좌번호</span>
+						<p class="txt">123-29383-2929-292</p>
+          </li>
+					<li>
+						<span class="tit">예금주명</span>
+						<p class="txt">김농협</p>
+					</li>
+					<li>
+						<span class="tit">처리일자/시간</span>
+						<p class="txt">2021.05.01 13:02</p>
+					</li>
+					<li>
+						<span class="tit">해지구분</span>
+						<p class="txt">일반해지</p>
+					</li>
+				</ul>
+			</div>			
+
+			<section>
+				<div class="listTbl">
+					<div class="listTit">
+						<strong>해지 지급액</strong>
+					</div>
+					<ul>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">세후지급액</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">해지 요청금액</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">소득세</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">지방소득세</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">농특세</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">세금합계액</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<div class="listTbl">
+					<div class="listTit">
+						<strong>해지처리 후 입금계좌 정보</strong>
+					</div>
+					<ul>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">입금계좌번호</span>
+								<p class="txt">123-1234-1234-123</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">입금 후 잔액</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+					</ul>
+          <p class="infoTxt">해지된 계좌의 잔액이 지정하신 계좌로 정상 입금되었습니다.</p>
+				</div>
+			</section>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">해지내역 조회</button>
+        <button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

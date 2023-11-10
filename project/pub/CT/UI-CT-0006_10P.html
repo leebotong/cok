@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0006_10P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jqueryRotate.js"></script><!-- 룰렛 rotate -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+	
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">내 추천인 코드</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="pgTitWrap">
+							<p class="pTit"><strong>콕뱅크를 추천</strong>하고<br><strong>내 추천인 코드</strong>를 공유하세요.</p>
+						</div>
+						<p class="defTit2">내 추천인 코드</p>
+						<div class="rounBgBox mt15">
+							<p class="ac pColor">ABC1234</p>
+						</div>
+
+						<div class="rounBgBox shareBox noFlex">
+							<a href="javascript:;" role="button" class="shareItem kakao">카카오톡</a>
+							<a href="javascript:;" role="button" class="shareItem mms">문자(MMS)</a>
+							<a href="javascript:;" role="button" class="shareItem copy">추천인코드 복사</a>
+						</div>
+
+						<div class="rcmdInfoList">
+							<ul class="listWrap icoTxtType">
+								<!--▼ [2022-08-05] 김자영: br 추가-->
+								<li><i class="ico"></i>친구에게  NH콕뱅크를 추천합니다.<br> 친구가 콕뱅크에 <em class="pColor">회원가입을 하면</em> 이벤트에 응모할 수 있습니다.</li>
+								<li><i class="ico"></i>친구가 콕뱅크에 가입했다면, 내 코드를카카오톡이나 문자로 공유하세요.</li>
+								<li><i class="ico"></i>친구가 이벤트에 응모하면서 <em class="pColor">내 추천인코드를 입력합니다.</em></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- [2022-08-17] 김자영 : 확인버튼 추가 -->
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">확인</button>
+						</div>
+					</div>
+					<!--// [2022-08-17] 김자영 : 확인버튼 추가 -->
+
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

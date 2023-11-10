@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TX-040T</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>기금 및 기타 국고 납부</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="tabWrap oneDepth">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" class="active">납부</a>
+					<a href="javascript:;" role="tab">납부내역조회</a>
+				</div>
+			</div>
+
+			<p class="defTit2">조회구분</p>
+			<div class="tabWrap segment">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" class="segmentItem active">고객관리번호</a>
+					<a href="javascript:;" role="tab" class="segmentItem">전자납부번호</a>
+				</div>
+				<div class="tabPanelList">
+					<div role="tabpanel" class="tabPanel show">
+						<!-- [2022-10-13] 김자영: 삭제
+						<p class="defTit2">조회설정</p>
+						-->
+						
+						<div class="rdoBtnsWrap">
+							<!-- [2022-07-07] 김자영 : label 수정-->
+							<ul>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample01">
+										<label for="sample01">1주일</label>
+									</span>
+								</li>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample02">
+										<label for="sample02">1개월</label>
+									</span>
+								</li>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample03">
+										<label for="sample03">3개월</label>
+									</span>
+								</li>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample04">
+										<label for="sample04">6개월</label>
+									</span>
+								</li>
+								<li class="filter">
+									<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+								</li>
+							</ul>
+							<!--// [2022-07-07] 김자영 : label 수정-->
+						</div>
+
+						<hr class="divingLine">
+					</div>
+					<div role="tabpanel" class="tabPanel">
+						<div class="formWrap">
+							<div class="formItem">
+								<strong class="formTit">전자납부번호</strong>
+								<div class="formGroup flex37">
+									<div class="inpText">
+										<input type="tel" title="전자납부번호 앞자리" value class="tyTxt" placeholder="4자리 숫자" maxlength="4">
+									</div>
+									<span class="etc">-</span>
+									<div class="inpText">
+										<input type="tel" title="전자납부번호 뒷자리" value class="tyTxt" placeholder="15자리 숫자 입력" maxlength="15">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="infoTxt">
+					<li>서비스 이용시간: 평일 00:30~23:00</li>
+					<li>고객관리번호 &lt;주민 또는 법인(사업자)번호&gt;로 조회하시면 고객님께 부과된 저체 기금고지서를 확인 후 납부하실 수 있습니다.</li>
+					<li>'전자납부번호(종이고지서에 표기됨)'로 조회하시면 해당기금 및 기타국고 고지서를 확인후 납부할 수 있습니다.</li>
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">조회</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

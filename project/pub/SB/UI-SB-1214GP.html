@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1214GP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupB);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕! BASIC 적금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupB)">UI-SB-1214GP</a>
+		</div>  <!-- //#contents -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- TOAST POPUP -->
+	<div class="toastPopWrap">
+		<div role="alert" aria-atomic="true" aria-hidden="true" aria-live="assertive" id="toast1" class="toastPop fade hide">
+			<span class="toastMessage"><!-- message --></span>
+		</div>
+	</div>
+
+	<!-- SLIDE POPUP -->
+	<div id="popupB" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">자주/최근</h2>
+					</div>
+					<div class="layerSelectContent">
+						<section class="tabWrap ellipse jsTabInTab fastTransfer">
+							<div role="tablist" class="tabList layoutWrap">
+								<div>
+									<a href="javascript:;" role="tab" class="active">최근입금</a>
+									<a href="javascript:;" role="tab">내계좌</a>
+									<a href="javascript:;" role="tab">자주쓰는</a>
+								</div>
+							</div>
+							<!-- ▼ 2022-07-01 마크업 변경, tabPanelList영역 전체적으로 수정됨 -->
+							<div class="tabPanelList">
+								<!-- 최근입금 -->
+								<div role="tabpanel" class="tabPanel show">
+									<section>
+										<div class="listTbl">
+											<ul>
+												<li>
+													<div class="accTypeWrap listIn_flex">
+														<div class="accLayout">
+															<a href="javascript:;" role="button" class="accInfo">
+																<div class="logoWrap">
+																	<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+																</div>
+																<div class="accInfoWrap">
+																	<strong class="accName">
+																		<!-- <span class="accBank">[NH농협]</span> -->
+																		<span class="userName">김농협(생활비)</span>
+																	</strong>
+																	<div class="accNumWrap">
+																		<div class="accNumBox">
+																			<span class="accNumber">352-1775-6397-03</span>
+																		</div>
+																	</div>
+																</div>
+															</a>
+															<div class="accDataWrap">
+																<span class="accPossible">2022.06.30</span>
+															</div>
+														</div>
+														<div class="accUtilBox">
+															<button type="button" class="accAdd"><span class="blind">자주쓰는계좌 추가</span></button>
+															<button type="button" class="listClear"><span class="blind">삭제하기</span></button>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</section>
+
+									<!-- 리스트 없을 경우 -->
+									<section>
+										<div class="noData">
+											<i class="check"></i>
+											<strong class="tit">최근 입금 내역이 없습니다.</strong>
+										</div>
+									</section>
+								</div>
+								<!-- 내계좌 -->
+								<div role="tabpanel" class="tabPanel">
+									<!-- 리스트 있을 경우 -->
+									<section>
+										<div class="listTbl">
+											<ul>
+												<li>
+													<div class="accTypeWrap listIn_flex">
+														<div class="accLayout">
+															<a href="javascript:;" role="button" class="accInfo">
+																<div class="logoWrap">
+																	<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+																</div>
+																<div class="accInfoWrap">
+																	<strong class="accName">
+																		<!-- <span class="accBank">[NH농협]</span> -->
+																		<span class="bankBookName">주머니(money) 통장</span>
+																	</strong>
+																	<div class="accNumWrap">
+																		<div class="accNumBox">
+																			<span class="accNumber">352-1775-6397-03</span>
+																		</div>
+																	</div>
+																</div>
+															</a>
+															<div class="accDataWrap">
+																<div>
+																	<div class="accPossible">잔액 <strong class="dataWrap"><em class="data">1,200,000</em><span class="unit">원</span></strong></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="accTypeWrap listIn_flex">
+														<div class="accLayout">
+															<a href="javascript:;" role="button" class="accInfo">
+																<div class="logoWrap">
+																	<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+																</div>
+																<div class="accInfoWrap">
+																	<strong class="accName">
+																		<!-- <span class="accBank">[NH농협]</span> -->
+																		<span class="bankBookName">주머니(money) 통장</span>
+																	</strong>
+																	<div class="accNumWrap">
+																		<div class="accNumBox">
+																			<span class="accNumber">352-1775-6397-03</span>
+																		</div>
+																	</div>
+																</div>
+															</a>
+															<div class="accDataWrap">
+																<div>
+																	<div class="accPossible"><button type="button" class="underLine">잔액보기</button></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="ac mt30">
+											<div class="btnLnkLine">
+												<a href="javascript:;" role="button" class="underLine">+ 계좌 등록</a>
+											</div>
+										</div>
+									</section>
+
+									<!-- 리스트 없을 경우 -->
+									<section>
+										<div class="noData">
+											<i class="check"></i>
+											<strong class="tit">등록한 계좌가 없습니다.</strong>
+										</div>
+										<div class="btnInArea">
+											<button type="button">계좌 등록</button>
+										</div>
+									</section>
+
+								</div>
+								<!-- 자주쓰는 -->
+								<div role="tabpanel" class="tabPanel">
+									<!-- 리스트 있을 경우 -->
+									<section>
+										<div class="listTbl">
+											<ul>
+												<li>
+													<div class="accTypeWrap listIn_flex">
+														<div class="accLayout">
+															<a href="javascript:;" role="button" class="accInfo">
+																<div class="logoWrap">
+																	<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+																</div>
+																<div class="accInfoWrap">
+																	<strong class="accName">
+																		<!-- <span class="accBank">[NH농협]</span> -->
+																		<span class="userName">김농협(생활비)</span>
+																	</strong>
+																	<div class="accNumWrap">
+																		<div class="accNumBox">
+																			<span class="accNumber">352-1775-6397-03</span>
+																		</div>
+																	</div>
+																</div>
+															</a>
+														</div>
+														<div class="accUtilBox">
+															<button type="button" class="listClear"><span class="blind">삭제하기</span></button>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="ac mt30">
+											<div class="btnLnkLine">
+												<a href="javascript:;" role="button" class="underLine">+ 자주쓰는 계좌 설정</a>
+											</div>
+										</div>
+									</section>
+
+									<!-- 리스트 없을 경우 -->
+									<section>
+										<div class="noData">
+											<i class="check"></i>
+											<strong class="tit">자주쓰는계좌 등록 내역이 없습니다.</strong>
+										</div>
+
+										<div class="btnInArea">
+											<button type="button">자주쓰는계좌 등록</button>
+										</div>
+									</section>
+								</div>
+							</div>
+						</section>
+					</div>
+					<!-- <div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class>취소</button>
+							<button type="button" onclick="popClose(this)" class="sel">등록</button>
+						</div>
+					</div> -->
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

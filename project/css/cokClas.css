@@ -1,0 +1,217 @@
+@charset 'utf-8';
+
+/***************************************************** 공통 ************************************************/
+	/* MAIN COLOR 변형 */
+:root{
+	--primary-blue-op20:#05a5ab20; /* primary컬러에 투명도20, 선택된 요소의 라인강조용 */
+}
+.fs18 {font-size:18px;}
+.fs32 {font-size:32px;}
+
+.listTblBox.complete.CL:before{background:url('../images/com/img_confirm_finish.png') no-repeat 0 0 / cover;}
+.formItem~.btnInArea{margin-top:30px;}
+
+.colorChkList.CL .colorChg input[type='radio']+label {width:44px; height:44px; border-radius:50%;}
+.colorChkList.CL li:nth-child(n+5) {margin-top:30px;}
+
+
+/***************************************************** jlee ************************************************/
+.popContBox.cokClassInfo .marketingArea .section:first-child {padding-top:40px;}
+.popContBox.cokClassInfo .marketingArea .section .mktDesc {max-width:100%;}
+.popContBox.cokClassInfo .marketingArea .section .mktTit {}
+.popContBox.cokClassInfo .marketingArea .section .mktDesc + .mktTit {margin-top:10px;}
+.popContBox.cokClassInfo .marketingArea .imgAreaUnit {text-align:center;}
+.CLaccountList p.ar + .CLaccountBox {margin-top:10px;}
+.alramLink.highLightType {padding:0;border:0;border-radius:0;}
+.alramLink.highLightType .formTit.inpChk {margin:0;position:relative;}
+.alramLink.highLightType .inpChk input[type='checkbox']+label {width:100%;padding:16px 38px;border:1px solid var(--bd-color-02);border-radius:12px;}
+.alramLink.highLightType .inpChk input[type='checkbox']+label:before {left:10px;top:15px;background-size:cover;}
+.alramLink.highLightType .inpChk input[type='checkbox']:checked+label {
+	color:var(--primary-blue);font-weight:600;border-color:var(--primary-blue);
+	box-shadow:3px 3px 3px var(--primary-blue-op20), -3px -3px 3px var(--primary-blue-op20);
+	-webkit-box-shadow:3px 3px 3px var(--primary-blue-op20), -3px -3px 3px var(--primary-blue-op20);
+}
+.alramLink.highLightType .inpChk input[type='checkbox']+label span {font-size:14px;color:var(--txt-color-blue-01);}
+.alramLink.highLightType .inpChk input[type='checkbox']:checked+label:before {background-image:url('../images/com/spr_checkbox_sm.png');background-position:-26px 0;}
+.alramLink.highLightType .alramAgreeBtn {background-size:22px;background-position:center center;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);}
+.alramLink.highLightType .inpChk input[type='checkbox']:checked ~ .alramAgreeBtn {background-image:url('../images/com/arrow_detailPB.png');}
+
+
+
+
+
+/***************************************************** 윤희정 ************************************************/
+
+.CLaccountList  ~ .bannerWrap {margin-top:80px;}
+
+#contents .CLaccountList:first-child {padding-top:33px;}
+.CLaccountDetail {padding-top:20px;}
+.CLaccountBox {border-radius:10px; box-shadow:0 8px 19px 0 rgba(0, 0, 0, .15);position:relative;}
+.CLaccountList .CLaccountBox {box-shadow: none;}
+.CLaccountBox * {color:var(--white) !important;}
+.CLaccountBox + .CLaccountBox {margin-top:16px;}
+
+.CLaccountBox.nonClass {border:1px solid #eeeff1;text-align:center;position:relative; box-shadow:0 0 17px 0 rgba(0, 0, 0, .08)}
+.CLaccountBox.nonClass a {display:inline-block;height:150px;width:100%;}
+.CLaccountBox.nonClass a span {
+	font-size:16px; color:var(--txt-color-blue-01) !important; display:inline-block;padding-top:50px;margin-top:40px;
+	background:url('../images/com/btn_roundPlus.png') no-repeat center top / 40px 40px;
+}
+.CLaccountBox.purpleC {background:var(--purpleC)}
+.CLaccountBox.greenC {background:var(--greenC)}
+.CLaccountBox.yellowC {background:var(--yellowCbg)}
+.CLaccountBox.primaryC {background:var(--primaryC)}
+.CLaccountBox.pinkCbg {background:var(--pinkCbg)}
+.CLaccountBox.lightpurpleC {background:var(--lightpurpleC)}
+.CLaccountBox.lightblueC {background:var(--lightblueC)}
+.CLaccountBox.skyCbg {background:var(--skyCbg)}
+.CLaccountBox.blueC {background:var(--blueC)}
+.CLaccountBox.grayC {background:var(--grayC)}
+.CLaccountBox.lightgrayC {background:var(--lightgrayC)}
+.CLaccountBox.lightskyCbg {background:var(--lightskyCbg)}
+
+.CLaccountBox.yellowC *,
+.CLaccountBox.pinkCbg *,
+.CLaccountBox.skyCbg *,
+.CLaccountBox.lightskyCbg * {color:var(--black) !important;}
+
+.CLaccountBox .accName {font-size:var(--font16); padding:17px 17px 0;}
+.CLaccountBox .accName.owner:before {
+	content:'내가 총무인 모임'; color:transparent; display:inline-block;width:16px;height:16px;margin-right:8px;
+	background:url('../images/com/ico_crown.png') no-repeat left center / contain;
+}
+
+.CLaccountBox .accNumBox {padding:20px 17px 13px; font-weight:400; font-size:var(--font14);}
+.CLaccountBox .accName + .accNumBox {padding-top:8px;}
+.CLaccountBox .accNumber {margin-right:3px; }
+.CLaccountDetail .accNumber:after {display:inline-block; width:18px; height:15px; margin-top:1px; margin-left:5px; vertical-align:top; background:url(../images/com/btn_copy_white.png) no-repeat center center/auto 15px; content:'계좌복사'; color:transparent}
+
+.CLaccountBox.yellowC .accNumBox *,
+.CLaccountBox.pinkCbg .accNumBox *,
+.CLaccountBox.skyCbg .accNumBox *,
+.CLaccountBox.lightskyCbg .accNumBox * {opacity:0.7}
+.CLaccountBox.yellowC .accNumber:after,
+.CLaccountBox.pinkCbg .accNumber:after,
+.CLaccountBox.skyCbg .accNumber:after,
+.CLaccountBox.lightskyCbg .accNumber:after {height:17px; margin-left:7px; -webkit-filter: brightness(0); filter: brightness(0); background:url(../images/com/btn_copy.png) no-repeat -9px -4px/auto 24px;}
+
+.CLaccountBox .accInfoInBtn {position:absolute; right:14px; top:14px; width:30px; height:30px;  -webkit-filter:invert(1); filter:invert(1); opacity: 0.7; background:url(../images/com/btn_setting.png) no-repeat center center/auto 24px;}
+.CLaccountBox.yellowC .accInfoInBtn,
+.CLaccountBox.pinkCbg .accInfoInBtn,
+.CLaccountBox.skyCbg .accInfoInBtn,
+.CLaccountBox.lightskyCbg .accInfoInBtn {-webkit-filter:none; filter:none; }
+
+.CLaccountBox .accMember:before {display:inline-block; width:1px; height:12px; margin-right:9px; background:rgba(255, 255, 255, 0.15); content:'';}
+.CLaccountBox.yellowC .accMember:before ,
+.CLaccountBox.pinkCbg .accMember:before ,
+.CLaccountBox.skyCbg .accMember:before ,
+.CLaccountBox.lightskyCbg .accMember:before  {background:rgba(17, 17, 17, 0.08);}
+
+.CLaccountBox .accDataWrap {padding:5px 17px 16px 19px; margin-top:0;}
+.CLaccountList .CLaccountBox .accDataWrap {padding-top:0;}
+.CLaccountBox .accDataWrap .accNumInfo {font-weight:400; opacity:0.6; margin-right:10px;}
+
+.CLaccountBox .accMore {
+	position:absolute;top:17px;right:6px;width:25px;height:25px;opacity:.8;
+	background: url('../images/main/btn_more.png') no-repeat center center/auto 18px;
+}
+.CLaccountBox.yellowC .accMore,
+.CLaccountBox.pinkCbg .accMore,
+.CLaccountBox.skyCbg .accMore,
+.CLaccountBox.lightskyCbg .accMore {background-size: auto 24px; background-image: url('../images/com/btn_more3.png') }
+
+.CLaccountBox .mainBtn {display:flex; align-items: stretch;  height:47px; border-top:1px solid rgba(255, 255, 255, 0.2)}
+.CLaccountBox.yellowC .mainBtn,
+.CLaccountBox.pinkCbg .mainBtn,
+.CLaccountBox.skyCbg .mainBtn,
+.CLaccountBox.lightskyCbg .mainBtn {border-color:rgba(53, 61, 74, 0.12)}
+
+.CLaccountBox .mainBtn button {width:50%; position:relative; }
+.CLaccountList .CLaccountBox .mainBtn button {width:100%; position:relative; }
+.owner .CLaccountBox .mainBtn button:not(:first-child) {width:30%;}
+.owner .CLaccountBox .mainBtn button:first-child {width:auto; flex:auto;}
+.CLaccountBox .mainBtn button:not(:first-child):before {position:absolute; left:0; top:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%); display:inline-block; width:1px; height:15px; background:rgba(255, 255, 255, 0.2); content:'총무'; color:transparent;}
+
+.CLaccountBox.yellowC .mainBtn  button:not(:first-child):before,
+.CLaccountBox.pinkCbg .mainBtn  button:not(:first-child):before,
+.CLaccountBox.skyCbg .mainBtn  button:not(:first-child):before,
+.CLaccountBox.lightskyCbg .mainBtn  button:not(:first-child):before {background:rgba(17, 17, 17, 0.1)}
+
+.CLaccountDetail .notice {display:flex; align-items: center; width:100%; padding-right:10px; margin-top:40px; height:40px;  border-radius: 5px; background:var(--bg-color-02); }
+.CLaccountDetail .notice:before {flex:none; width:30px; height:40px; background:url(../images/com/btn_alarm_gray.png) no-repeat 10px center/auto 15px; content:''; }
+.CLaccountDetail .notice span { max-width:calc(100% - 20px ); line-height:40px; font-size: var(--font14);  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.CLaccountDetail .notice.empty {color:var(--txt-color-gray-01)}
+.CLaccountDetail .notice.new span {max-width:calc(100% - 30px ); }
+.CLaccountDetail .notice.new:after {flex:none; width: 27px; height:24px; margin-left:5px; line-height: 24px; text-align:center; font-size:var(--font12); color:var(--secondary-royal); border-radius:6px; background:#fdf0f1; content:'N'}
+
+
+.CLboard {margin-top:19px;}
+.CLboard .writer {color:var(--txt-color-blue-01); font-weight:700; }
+.CLboard .writer:after {display:inline-block; width:16px; height:16px; margin-left:5px; vertical-align:top; background:url(../images/com/ico_crown.png) no-repeat center/16px; content:'';}
+.CLboard .date {margin-top:11px;}
+.CLboard .accMore {position:absolute; right:10px; top:-5px;}
+.CLboard .boardCont {margin-top:18px; padding:16px; background:#f8f8f8; border:1px solid var(--divider-color); color:var(--black); font-size:var(--font18); border-radius:7px}
+
+.CLwrite {margin-top:19px;}
+.CLwrite .textAreaWrap {height:400px; display:flex; flex-direction: column; border-radius:7px; padding-bottom:22px; margin-top:19px;}
+.CLwrite .textAreaWrap textarea {flex:1;}
+.CLwrite .textAreaWrap .size {padding-top:17px; margin-top:auto; text-align:right; color:var(--txt-color-gray-01); }
+.CLwrite .textAreaWrap .size span {color:var(--primaryC)}
+.CLwrite .btmInfoWrap {margin-top:47px;}
+
+.tabWrap.oneDepth.feeHistory {margin:0 0 20px 0;}
+.feeHistory .accDataWrap {margin:0}
+
+.twoToneType.feeHistoryByDate {margin-top:-10px;}
+.feeHistoryByDate .ttTop {padding-top:15px;}
+.feeHistoryByDate .filterText {color:var(--black);}
+.feeHistoryByDate .layoutWrap {padding:12px 0 10px;}
+.feeHistoryByDate .ttTop .accDataWrap * {font-size:var(--font24); color:var(--primaryC) !important; font-weight:normal;}
+.feeHistoryByDate .listTbl ul {border:none;}
+.feeHistoryByDate .listTbl .name {font-size:var(--font14); color:var(--black); }
+.feeHistoryByDate .listTbl .owner .name:after {display:inline-block; width:16px; height:16px; margin-left:5px; vertical-align:middle; background:url(../images/com/ico_crown.png) no-repeat center/16px; content:'총무'; color:transparent;}
+.feeHistoryByDate .listTbl .accDataWrap {margin-left:auto;}
+.feeHistoryByDate .listTbl .accDataWrap * {font-size:var(--font16); color:var(--black) !important; font-weight:normal;}
+.feeHistoryByDate .statusCount {display:inline-flex;}
+.feeHistoryByDate .btmInfoWrap {margin-top:47px;}
+
+.feeHistoryByName {display:flex; height:100%; align-items: stretch; padding-top:20px;}
+.feeHistoryByName > * {flex:1; overflow:hidden; overflow-y: auto; padding-left:20px;}
+.feeHistoryByName > *:first-child {flex:none; width:90px; padding:0; background:url(../images/cont/bg_scrolldot.png) repeat-y right top/4px auto;}
+.feeHistoryByName ul.memberList a {color:var(--black); }
+.feeHistoryByName ul.memberList li {padding-bottom:18px;}
+.feeHistoryByName ul.memberList li.active a {font-weight:700; color:var(--primaryC)}
+.feeHistoryByName ul.memberList li.owner a:after {display:inline-block; width:16px; height:16px; margin-left:5px; vertical-align:middle; background:url(../images/com/ico_crown.png) no-repeat center/16px; content:'총무'; color:transparent; }
+
+.feeHistoryByName .byYear +  .byYear {margin-top:20px;}
+.feeHistoryByName .byYear .total {display:flex; justify-content: space-between; padding:20px 15px; color:var(--black); background-color:var(--bg-color-02); border-radius: 10px;}
+.feeHistoryByName .byYear .total * {font-size:var(--font16)}
+.feeHistoryByName .byYear ul {margin-top:7px;}
+.feeHistoryByName .byYear ul li {display:flex; justify-content: space-between; padding:13px 15px; border-bottom:1px solid #edeef0}
+.feeHistoryByName .byYear ul li * {color:var(--black)}
+.feeHistoryByName .byYear ul li.empty * {color:var(--txt-color-gray-01)}
+.feeHistoryByName .byYear ul li .month {font-size:var(--font14)}
+.feeHistoryByName .byYear ul li .accDataWrap * {font-size:var(--font16);}
+
+.feeRequest img {margin-bottom:25px;}
+.feeRequest .confirmMsg {margin-bottom:15px;}
+
+.CLmanager {padding-top:18px;}
+.CLmanager .title {font-size:var(--font20); color:var(--black); font-weight:700; margin-bottom:15px;}
+.CLmanager .title button {width:20px; height:20px; margin-left:5px;  vertical-align:top; background: url(../images/com/ico_modify.png) no-repeat center center/ 18px auto;}
+.CLmanager .listTblBox {margin-bottom:30px;}
+.CLmanager .tooltipWrap .btnToolTip {background-image:url(../images/com/light_ico_tooltip.png)}
+.CLmanager .tooltipWrap .tooltipCont {margin-left:20px; margin-right:20px;}
+.CLmanager .tooltipWrap .tooltipCont .tit {padding:0; background:none;}
+
+.CLmembers {padding-top:8px;}
+.CLmembers .owner {display: flex; justify-content: space-between; margin-bottom:20px}
+.CLmembers .owner > strong:after {display:inline-block; width:16px; height:16px; margin-left:5px; vertical-align:top; background:url(../images/com/ico_crown.png) no-repeat center/16px; content:''; color:transparent;}
+.CLmembers .tooltipWrap .tooltipCont {margin-left:20px; margin-right:20px;}
+.CLmembers .linkItem .tit {display: flex; justify-content: space-between;}
+.CLmembers .btnLnkLine {margin:0;}
+.CLmembers .btnLnkLine .underLine {line-height:1}
+.CLmembers .linkItem ul {padding-top:12px}
+.CLmembers .linkItem ul li {display: flex; min-height:30px; margin-bottom:15px; align-items: center;}
+.CLmembers .linkItem ul li span {font-size:var(--font14); color:var(--txt-color-blue-03); margin-left:5px}
+.CLmembers .linkItem ul li button {margin-left:auto}}

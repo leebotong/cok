@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-0161</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		// $(function(){
+		// 	popOpen(popupC)
+		// })
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>스윙서비스 관리</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>스윙 금액</strong>을 선택해주세요.</p>
+				<ul class="listDot">
+					<!-- ▼ 2022-07-01 수정 -->
+					<li>매일 설정하신 스윙 금액 이하의 금액이<br>적금계좌로 자동저금(자동이체)됩니다.</li>
+				</ul>
+			</div>
+
+			<div class="layoutWrap">
+				<p class="defTit"><strong>스윙 기능 사용</strong></p>
+				<div class="toggleSwitch">
+					<input type="checkbox" id="switchS">
+					<label for="switchS"></label>
+				</div>
+			</div>
+
+			<section class="section30">
+				<!-- formwrap -->
+				<div class="formWrap">
+					<div class="formItem">
+						<strong class="formTit">스윙금액
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<strong class="tit">스윙금액</strong>
+									<ul class="listDot">
+										<li>출금계좌에서 자동이체 될 금액(스윙 금액)을 설정합니다.</li>
+										<li>스윙 금액의 단위는 자유롭게 선택할 수 있습니다. 예를 들어 스윙 금액을 2천원 미만으로 선택한 경우 연계된 통장의 매일 잔액 중 1,000 ~ 1,999원까지 본 적금으로 자동이체 됩니다. </li>
+										<li>스윙 금액 단위변경은 적금 만기일 전, 매 영업일(공유일 제외)09시~18시에 가능합니다. </li>
+									</ul>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->
+						</strong>
+						<div class="rangeWrap">
+							<span class="circle"></span>
+							<span class="bar"></span>
+							<ul>
+								<li><button type="button" title>2천원<br>미만</button></li>
+								<li><button type="button" title="선택됨" class="active">5천원<br>미만</button></li>
+								<li><button type="button" title>1만원<br>미만</button></li>
+								<li><button type="button" title>2만원<br>미만</button></li>
+							</ul>
+						</div>
+						<script>
+							$(function(){
+								var bar = $('.rangeWrap .bar');
+								var circle = $('.rangeWrap .circle');
+								var btn = $('.rangeWrap button');
+
+								$('.rangeWrap button').each(function(){
+									if($(this).hasClass('active')){
+										var objoffset = $(this).offset().left -20;
+										var objWidth = $(this).outerWidth(true) / 2;
+										var objoffsetMov = objoffset + objWidth -13;
+										$(this).attr('title','').removeClass('active');
+										$(this).attr('title','선택됨').addClass('active');
+										circle.animate({left:objoffsetMov},200);
+										bar.animate({width:objoffsetMov},200);
+									}
+								});
+								btn.click(function(){
+									var objoffset = $(this).offset().left - 20;
+									var objWidth = $(this).outerWidth(true) / 2;
+									var objoffsetMov = objoffset + objWidth - 13;
+									$('.rangeWrap button').attr('title','').removeClass('active');
+									$(this).attr('title','선택됨').addClass('active');
+									circle.animate({left:objoffsetMov},200);
+									bar.animate({width:objoffsetMov},200);
+								})
+							});
+						</script>
+					</div>
+				</div>
+				<!-- //formwrap -->
+			</section>
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<p class="infoTxt">스윙 금액 변경 시 익일부터 적용됩니다.</p>
+			</div>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button">취소</button>
+				<button type="button" class="sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+</div>
+
+</body>
+</html>

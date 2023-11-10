@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-0030P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(fullA);
+		})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1></h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(fullA);" class="popOpen">승인내역상세 팝업</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP -->
+		<div id="fullA" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">특판 상품 상세</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div class="pgTitWrap sm">
+								<p class="pTit">정기적금</p>
+								<p class="pTxt">해운대농협</p>
+							</div>
+							<section class="section40">
+								<div class="marketListBranch">
+									<div class="rateBox">
+										<div class="innerBox">
+											최고 연 <strong class="dataWrap"><em class="data">0.0505</em><span class="unit">%</span></strong>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="section40">
+								<div class="listTbl">
+									<ul>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">특판기간</span>
+												<span class="txt">2023.03.21 09:00<br>~ 2023.04.21 17:00</span>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">특판한도</span>
+												<div class="txt"><strong class="dataWrap"><em class="data">1,700좌 또는 100억원</em></strong></div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">가입기간</div>
+												<div class="txt">12개월 이상 ~ 24개월 이내<br>(월 단위)</div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">인당 가입금액</div>
+												<div class="txt"><strong class="dataWrap"><em class="data">10만원 이상 ~ 50만원 이하</em></strong></div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">인당 가입가능 계좌</div>
+												<div class="txt">최대 1좌</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<p class="infoTxt">특판한도 소진 시 판매가 종료됩니다.</p>
+							</section>
+
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button class="sel">확인</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

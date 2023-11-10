@@ -1,0 +1,216 @@
+@charset 'utf-8';
+
+@font-face{font-family:'NotoSans';font-weight:bold;font-display:block;src:local('Noto Sans KR Bold'), url('../fonts/NotoSansKR-Bold.woff2') format('woff2'), url('../fonts/NotoSansKR-Bold.woff') format('woff');}
+@font-face{font-family:'NotoSans';font-weight:600;font-display:block;src:local('Noto Sans KR Medium'), url('../fonts/NotoSansKR-Medium.woff2') format('woff2'), url('../fonts/NotoSansKR-Medium.woff') format('woff');}
+@font-face{font-family:'NotoSans';font-weight:normal;font-display:block;src:local('Noto Sans KR Regular'), url('../fonts/NotoSansKR-Regular.woff2') format('woff2'), url('../fonts/NotoSansKR-Regular.woff') format('woff');}
+
+/* 콕세상 전용css */
+.cokWmainWrap,
+.cokWpopupWrap {font-family:'NotoSans';}
+.cokWmainWrap #header {padding:0;height:auto;display:block;}
+.cokWmainWrap #header .topHead {width:100%;padding:0 20px;border-bottom:1px solid #dadada;position:relative;height:50px;display:flex;align-items:center;}
+.cokWmainWrap #header .topHead h3 {margin:0 125px 0 30px;font-size:18px;color:#111;text-align:left;font-family:'Spoqa';}
+.cokWmainWrap #header .topHead .cokMenuBox {position:absolute;top:50%;transform:translateY(-50%);right:60px;}
+.cokWmainWrap #header .topHead .cokMenuBox a {font-size:14px;color:#898989;margin-left:15px;font-family:'Spoqa';}
+.cokWmainWrap #header .topHead > a {
+	position:absolute;display:inline-block;width:24px;height:24px;top:50%;transform:translateY(-50%);overflow:hidden;color:transparent;font-size:6px;
+	background:url('') no-repeat center center / cover;
+}
+.cokWmainWrap #header .topHead .btnPageBack {background-image:url('../images/cokWorld/btn/btn_pageBack.png');left:20px;}
+.cokWmainWrap #header .topHead .btnHome {background-image:url('../images/cokWorld/btn/btn_goHome.png');right:20px;}
+.cokWmainWrap #header .inMenu {position:relative;width:100%;padding:0 27px 0 0;border-bottom:1px solid #57a151;height:100%;height:80px;}
+.cokWmainWrap #header .mainBtnBox {width:100%;display:flex;padding-left:20px;height:100%;}
+.cokWmainWrap #header .mainBtnBox .cokWmainBtn {
+	flex:1;font-size:12px;color:#333;padding-top:45px;text-align:center;margin-top:10px;
+	background:url('') no-repeat center top/45px 33px;
+}
+.cokWmainWrap #header .mainBtnBox .cokWmainBtn.telSave {background-image:url('../images/cokWorld/btn/btn_cokWmain_TelSave.png');}
+.cokWmainWrap #header .mainBtnBox .cokWmainBtn.stock {background-image:url('../images/cokWorld/btn/btn_cokWmain_stock.png');}
+.cokWmainWrap #header .mainBtnBox .cokWmainBtn.cokLife {background-image:url('../images/cokWorld/btn/btn_cokWmain_cokLife.png');}
+.cokWmainWrap #header .mainBtnBox .cokWmainBtn.myCok {background-image:url('../images/cokWorld/btn/btn_cokWmain_myCok.png');}
+.cokWmainWrap #header .btnCokWallMenu {
+	background:#fafafa url('../images/cokWorld/btn/btn_cokWallMenu.png') no-repeat center center/14px 8px;
+	position:absolute;right:0;top:0;color:transparent;font-size:6px;width:27px;height:100%;
+	box-shadow:-10px 0px 10px #ddd;-webkit-box-shadow:-10px 0px 10px #ddd;
+}
+.cokWmainWrap #container {padding:50px 0 0;}
+.cokWmainWrap.main #container {padding-top:130px;}
+.cokWmainWrap .cokWmainBannerArea {background-color:#f2f3f7;padding:14px 20px 50px;position:relative;overflow:hidden;}
+.cokWmainWrap .cokWmainBannerArea .cokWmainBanner {position:relative;}
+.cokWmainWrap .cokWmainBannerArea .swiper-container {overflow:initial;}
+.cokWmainWrap .cokWmainBannerArea .swiper-container .swiper-slide > a > img {border-radius:10px;}
+.cokWmainWrap .cokWmainBannerArea .slideCtlBtnBox {position:absolute;right:20px;bottom:12px;overflow:hidden;display:flex;}
+.cokWmainWrap .cokWmainBannerArea .slideCtlBtnBox .slideNumber {
+	font-size:11px;color:#fff;background-color:#a9aaac;line-height:26px;border-radius:26px;padding:0 10px;display:inline-block;
+}
+.cokWmainWrap .cokWmainBannerArea .slideCtlBtnBox .auto a {display:inline-block;width:24px;height:24px;background:url('') no-repeat center center/contain;margin:0 5px;}
+.cokWmainWrap .cokWmainBannerArea .slideCtlBtnBox .auto a.stop {background-image:url('../images/cokWorld/btn/btn_slideStop.png');}
+.cokWmainWrap .cokWmainBannerArea .slideCtlBtnBox .auto a.start {background-image:url('../images/cokWorld/btn/btn_slidePlay.png');}
+.cokWmainWrap .cokWmainBannerArea .slideCtlBtnBox .btnList {
+	display:inline-block;line-height:26px;color:#fff;background-color:#a9aaac;border-radius:26px;font-size:11px;padding:0 10px;
+}
+.cokWmainWrap .cokWSvcLinkArea {padding:0 20px;margin-top:35px;}
+.cokWmainWrap .cokWSvcLinkArea .topTitle {width:100;position:relative;}
+.cokWmainWrap .cokWSvcLinkArea .topTitle .tit {line-height:32px;display:inline-block;text-align:left;font-size:19px;color:#333;}
+.cokWmainWrap .cokWSvcLinkArea .topTitle .btnSvcInfo {
+	font-size:15px;color:#333;line-height:30px;padding:0 10px;border:1px solid #ddd;border-radius:30px;position:absolute;right:0;font-weight:bold;
+}
+.cokWmainWrap .cokWSvcLinkArea .topTitle + .titleTab {margin-top:10px;}
+.cokWmainWrap .cokWSvcLinkArea .titleTab {width:100%;height:40px;background-color:#f2f3f7;border-radius:5px;padding:0 20px;position:relative;overflow:hidden;}
+.cokWmainWrap .cokWSvcLinkArea .titleTab button {
+	position:absolute;top:0;width:20px;height:100%;color:transparent;font-size:6px;z-index:1;
+	background:#f2f3f7 url('') no-repeat center center/8px 15px;
+}
+.cokWmainWrap .cokWSvcLinkArea .titleTab button.btnPrev {left:0;background-image:url('../images/cokWorld/btn/btn_prev.png');}
+.cokWmainWrap .cokWSvcLinkArea .titleTab button.btnNext {right:0;background-image:url('../images/cokWorld/btn/btn_next.png');}
+.cokWmainWrap .cokWSvcLinkArea .titleTab .swiper-wrapper {z-index:0;}
+.cokWmainWrap .cokWSvcLinkArea .titleTab .swiper-slide {width:auto;}
+.cokWmainWrap .cokWSvcLinkArea .titleTab .swiper-button-disabled {display:block;opacity:.5;}
+.cokWmainWrap .cokWSvcLinkArea .titleTab a {font-size:13px;color:#333;display:inline-block;line-height:40px;width:100%;text-align:center;letter-spacing:-1px;}
+.cokWmainWrap .cokWSvcLinkArea .titleTab a.on {color:#57a151;border:1px solid #57a151;border-radius:5px;background-color:#fff;box-sizing:border-box;line-height:38px;}
+.cokWmainWrap .cokWSvcLinkArea .titleTab + .svcLinkBox {margin-top:20px;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox.hid {display:none;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox.shw {display:block;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox.shw .linkTit {display:none;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .linkTit {font-size:15px;color:#000;font-weight:600;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .linkTit + ul {margin-top:13px;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox ul {display:flex;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox ul li {flex:1;margin-right:10px;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox ul li:last-child {margin-right:0;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox ul li a {
+	display:inline-block;width:100%;text-align:center;border:1px solid #ddd;border-radius:10px;padding:12px 7px 0 7px;height:100px;box-sizing:border-box;position:relative;
+	box-shadow:8px 8px 8px #eee;-webkit-box-shadow:8px 8px 8px #eee;
+}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox ul li a span,
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox ul li a strong {text-align:left;display:inline-block;width:100%;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox ul li a span {font-size:11px;color:#333;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox ul li a strong {font-size:14px;color:#333;font-weight:600;line-height:20px;letter-spacing:-1px;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox ul li a .svcTit {
+	line-height:39px;position:absolute;bottom:0;left:0;width:100%;border-radius:0 0 10px 10px;text-align:left;padding-left:35px;
+	background:url('') no-repeat 5px center/25px 25px;
+}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox ul li a .svcTit span {font-size:10px;color:#fff;display:inline-block;line-height:12px;vertical-align:middle;letter-spacing:-.5px;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox ul + ul {margin-top:14px;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox + .svcLinkBox {margin-top:20px;}
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.thMall .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_thMall.png');background-color:#1641cc;}/*알뜰폰*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.hoMall .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_hoMall.png');background-color:#26abdd;}/*홈상품*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.phMall .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_phMall.png');background-color:#4f8ce7;}/*휴대폰*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.stock .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_stock.png');background-color:#4accd8;}/*증권추천*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.luck .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_luck.png');background-color:#24898e;}/*운세*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.phfmsafe .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_phfmsafe.png');background-color:#206e59;}/*가족암심지킴이*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.aptCok .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_aptCok.png');background-color:#38c56a;}/*아파트NH콕*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.theCheat .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_theCheat.png');background-color:#338c58;}/*더치트*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.persInfo .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_persInfo.png');background-color:#30aa8e;}/*개인정보지키미*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.smartFish .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_smartFish.png');background-color:#75ce9d;}/*스마트피싱*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.carInsur .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_carInsur.png');background-color:#99b82f;}/*자동차보험*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.permCar .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_permCar.png');background-color:#19b667;}/*인증자동차*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.gift .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_gift.png');background-color:#b6cb26;}/*선물하기*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.transpCard .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_transpCard.png');background-color:#6eb755;}/*교통카드*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.cardPoint .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_cardPoint.png');background-color:#f0444c;}/*카드포인트*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.insurInfo .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_insurInfo.png');background-color:#bd4949;}/*보험정보*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.pension .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_pension.png');background-color:#a67f3b;}/*국민연금정보*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.carDriv .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_carDriv.png');background-color:#dd8c0b;}/*차량/운전정보*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.estate .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_estate.png');background-color:#b35909;}/*부동산정보*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.health .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_health.png');background-color:#f48040;}/*건강정보*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.welfare .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_welfare.png');background-color:#9b7039;}/*복지/정책자금*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.rural .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_rural.png');background-color:#ffb320;}/*귀농/취촌정보*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.travel .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_travel.png');background-color:#ee6907;}/*여행정보*/
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox .svcLinkBtn.lifeduc .svcTit {background-image:url('../images/cokWorld/icon/icon_svcLink_lifeduc.png');background-color:#6c4020;}/*평생학습강좌*/
+.cokWmainWrap .cokWSvcLinkArea .hidBox + .btnBox,
+.cokWmainWrap .cokWSvcLinkArea .svcLinkBox + .btnBox {margin-top:20px;}
+.cokWmainWrap .cokWSvcLinkArea .hidBox {display:none;margin:20px 0;}
+.cokWmainWrap .btnBox {width:100%;text-align:center;}
+.cokWmainWrap .btnBox .btnMoreBig {
+	border:1px solid #ddd;width:56px;height:56px;border-radius:56px;text-align:center;font-size:10px;color:#333;padding-top:25px;
+	background:url('../images/cokWorld/btn/btn_moreBig.png') no-repeat center 10px/20px 20px;
+}
+.cokWmainWrap .btnBox .btnMoreBig.up {background-image:url('../images/cokWorld/btn/btn_more2Big.png');}
+/* 전체메뉴 */
+.cokWpopupWrap {overflow:hidden;background-color:#fff;position:fixed;top:0;left:0;right:0;bottom:0;z-index:101;}
+.cokWpopupWrap .popupWarp {height:100%;}
+.cokWpopupWrap .popupWarp .popupHead {position:relative;height:55px;line-height:55px;border-bottom:1px solid #ddd;text-align:center;}
+.cokWpopupWrap .popupWarp .popupHead h4 {font-size:21px;color:#333;}
+.cokWpopupWrap .popupWarp .popupHead .btnPopupClose {
+	width:24px;height:24px;color:transparent;font-size:6px;position:absolute;right:20px;top:15px;
+	background:url('../images/cokWorld/btn/btn_popupClose.png') no-repeat center center/24px 24px;
+}
+.cokWpopupWrap .popupWarp .popupContent {padding:40px 20px 135px;height:100%;overflow-y:auto;}
+.cokWpopupWrap .popupWarp .popupContent .textUnit .tit {font-size:24px;color:#333;line-height:28px;letter-spacing:-1px;}
+.cokWpopupWrap .popupWarp .popupContent .textUnit .tit .highlight {
+	font-weight:600;position:relative;line-height:28px;display:inline-block;
+	background:url('../images/cokWorld/img/img_highlightBg.png') repeat-x bottom left/1px 8px;
+}
+.cokWpopupWrap .popupWarp .popupContent .textUnit .subTit {font-size:14px;color:#666;line-height:16px;}
+.cokWpopupWrap .popupWarp .popupContent .textUnit .subTit b {font-weight:600;}
+.cokWpopupWrap .popupWarp .popupContent .textUnit .tit + .subTit {margin-top:13px;}
+.cokWpopupWrap .popupWarp .popupContent .textUnit + .textUnit {margin-top:50px;}
+.cokWpopupWrap .popupWarp .popupContent .textUnit .tit.fs21 {font-size:21px;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard {
+	width:100%;display:inline-block;box-sizing:border-box;border:1px solid #ccc;border-radius:10px;padding:15px 80px 15px 15px;
+	box-shadow:5px 5px 5px #eee;-webkit-box-shadow:5px 5px 5px #eee;
+	background:url('') no-repeat center right 10px/70px 70px;
+}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard .tit {font-size:17px;color:#303030;font-weight:600;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard .tit i {
+	content:"";display:inline-block;width:20px;height:20px;vertical-align:top;
+	background:url('../images/cokWorld/icon/arrow.png') no-repeat center center / contain;
+}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard .sub {font-size:14px;color:#6d6d6d;line-height:18px;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard .tit + .sub {margin-top:20px;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard.thMall {background-image:url('../images/cokWorld/img/img_cardBox_thMall.png');}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard.hoMall {background-image:url('../images/cokWorld/img/img_cardBox_hoMall.png');}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard.phMall {background-image:url('../images/cokWorld/img/img_cardBox_phMall.png');}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard.noBorder.stock {background-image:url('../images/cokWorld/img/img_cardBoxNobod_stock.png');}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard.noBorder {box-shadow:none;padding:30px 15px 30px 80px;background-position:center left;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard.noBorder .tit {font-size:15px;font-weight:bold;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard.noBorder .sub {font-size:13px;color:#333;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard.noBorder .tit + .sub {margin-top:7px;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard +  .linkCard,
+.cokWpopupWrap .popupWarp .popupContent .textUnit + .cardBox {margin-top:10px;}
+.cokWpopupWrap .popupWarp .popupContent .textUnit + .cardBox.card3Type {margin-top:20px;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox + .textUnit {margin-top:30px;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .group {display:flex;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .group .linkCard {flex:1;margin-right:10px;margin-top:0;box-shadow:none;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .group .linkCard:last-child {margin-right:0;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .group + .group {margin-top:12px;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .group .linkCard {
+	padding:70px 0 0;text-align:center;width:100px;height:115px;border:0;
+	background-position:top center;background-size:contain;
+}
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .group .linkCard .tit {font-size:12px;font-weight:bold;color:#333;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .group .linkCard .sub {font-size:11px;color:#333;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .group .linkCard .tit + .sub {margin-top:5px;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .linkCard.luck {background-image:url('../images/cokWorld/img/img_card3Type_luck.png');}/*운세*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .linkCard.phfmsafe {background-image:url('../images/cokWorld/img/img_card3Type_phfmsafe.png');}/*휴대폰가족보호*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .linkCard.aptCok {background-image:url('../images/cokWorld/img/img_card3Type_aptCok.png');}/*아파트NH콕*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .linkCard.persInfo {background-image:url('../images/cokWorld/img/img_card3Type_persInfo.png');}/*개인정보지키미*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .linkCard.theCheat {background-image:url('../images/cokWorld/img/img_card3Type_theCheat.png');}/*더치트*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .linkCard.smartFish {background-image:url('../images/cokWorld/img/img_card3Type_smartFish.png');}/*스마트피싱보호*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .linkCard.carInsur {background-image:url('../images/cokWorld/img/img_card3Type_carInsur.png');}/*자동차보험*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .linkCard.permCar {background-image:url('../images/cokWorld/img/img_card3Type_permCar.png');}/*인증자동차*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .linkCard.gift {background-image:url('../images/cokWorld/img/img_card3Type_gift.png');}/*선물하기*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card3Type .linkCard.transpCard {background-image:url('../images/cokWorld/img/img_card3Type_transpCard.png');}/*교통카드*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard {padding:13px 50px 13px 10px;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard .tit {font-size:15px;color:#333;font-weight:bold;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard .sub {font-size:12px;color:#333;line-height:18px;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard .tit + .sub {margin-top:5px;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard:after {
+	content:"";display:inline-block;position:absolute;right:0;top:0;width:50px;height:100%;border-radius:0 10px 10px 0;
+	background:#eef0f1 url('') no-repeat center center/40px 40px;
+}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard.non {border:0;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox .linkCard.non:after {display:none;}
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard.cardPoint:after {background-image:url('../images/cokWorld/img/img_card2Type_cardPoint.png');}/*카드포인트*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard.insurInfo:after {background-image:url('../images/cokWorld/img/img_card2Type_insurInfo.png');}/*보험정보*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard.pension:after {background-image:url('../images/cokWorld/img/img_card2Type_pension.png');}/*국민연금정보*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard.carDriv:after {background-image:url('../images/cokWorld/img/img_card2Type_carDriv.png');}/*차량운전정보*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard.estate:after {background-image:url('../images/cokWorld/img/img_card2Type_estate.png');}/*부동산정보*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard.health:after {background-image:url('../images/cokWorld/img/img_card2Type_health.png');}/*건강정보*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard.welfare:after {background-image:url('../images/cokWorld/img/img_card2Type_welfare.png');}/*복지정책자금*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard.rural:after {background-image:url('../images/cokWorld/img/img_card2Type_rural.png');}/*귀농귀촌정보*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard.travel:after {background-image:url('../images/cokWorld/img/img_card2Type_travel.png');}/*여행정보*/
+.cokWpopupWrap .popupWarp .popupContent .cardBox.card2Type .linkCard.lifeduc:after {background-image:url('../images/cokWorld/img/img_card2Type_lifeduc.png');}/*평생학습강좌*/
+/* 제휴혜택존 */
+.cokWmainWrap .bannerListArea {margin:40px 0 60px;}
+.cokWmainWrap .bannerListArea .bannerBox img {width:100%;}
+.cokWmainWrap .bannerListArea .bannerBox + .bannerBox{margin-top:40px;}

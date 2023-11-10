@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CO-0077P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupCCA);
+		})
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupCCA);" title="풀팝업 열기" role="button" class="popOpen">팝업열기</a>
+			
+		</div>  <!-- //#contents -->
+		
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- CENTER POPUP -->
+	<div id="popupCCA" class="popupWrap center" style="display:none;">
+		<div class="layerPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="Layer_Tit">
+								<h2 tabindex="0">송금한도 일괄 하향 안내<span class="blind">팝업</span></h2>
+							</div>
+							<div class="Layer_Con">
+								<!-- 컨펌메세지 -->
+								<div class="confirmMsg">
+									<i class="warning"></i>
+									<p class="tit">콕PASS(모바일OTP)<br>최대 송금한도 <em class="pColor">일괄 하향</em> 안내</p>
+									<p class="txt">금융사기 피해방지 및 금융자산 보호를 위한<br>조치로 콕PASS 최대 송금한도가 아래와 같이<br><em class="txtRed">2022.10.22.(토)</em> 부터 일괄 하향 됩니다.</p>
+								</div>
+								<div class="tblWrap">
+									<div class="tbl">
+										<table>
+											<caption></caption>
+											<colgroup>
+												<col style="width:auto;">
+												<col style="width:37%">
+												<col style="width:35%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" rowspan="2">구분</th>
+													<th scope="col" colspan="2">최대 송금한도</th>
+												</tr>
+												<tr>
+													<th scope="col">변경 전</th>
+													<th scope="col">변경 후</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">1회</th>
+													<td>5천만원</td>
+													<td>1천만원</td>
+												</tr>
+												<tr>
+													<th scope="row">1일</th>
+													<td>1억5천만원</td>
+													<td>5천만원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<p class="infoTxt">농협 인터넷뱅킹 또는 스마트뱅킹에서 실물OTP를 이용하고 계신 고객님은 콕뱅크 [전체메뉴 &gt; 인증/보안 &gt; 보안설정 &gt; 송금 보안매체 설정]에서 실물OTP 이용 설정을 하시면 최대 1회 1억원, 1일 5억원까지 송금하실 수 있습니다.</p>
+								<p class="infoTxt">관련하여 궁금한 사항이 있으시면 아래 연락처로 문의해주세요.<br>Tel) 00-000-0000, 00-000-0000</p>
+							</div>
+							<div class="Layer_Pop_Close">
+								<div class="btnArea">
+									<button type="button" title onclick="popClose(this)" class="sel">확인</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

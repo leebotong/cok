@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>콕 table</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>테이블</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<h1 class="gTit">### 테이블: th,td 기본 center</h1>
+			<div class="tblWrap">
+				<div class="tblHeader">
+					<p>테이블 제목</p>
+					<span>단위/범례</span>
+				</div>
+				<div class="tbl">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col width="40%">
+							<col width="">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">제목</th>
+								<th scope="col">제목</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">상품명</th>
+								<td><strong>콕콕콕</strong></td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="2">관리점</th>
+								<td>블라블라</td>
+							</tr>
+							<tr>
+								<td>블라블라2</td>
+							</tr>
+							<tr>
+								<th scope="row">가입금액</th>
+								<td><strong class="dataWrap"><em class="data">10,000</em><span class="unit">원</span></strong></td>
+							</tr>
+							<tr>
+								<th scope="row">자동이체일</th>
+								<td>매월 10일</td>
+							</tr>
+							<tr>
+								<th scope="row">만기일</th>
+								<td>2023.03.10</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+
+			<div class="tblWrap">
+				<div class="tblHeader">
+					<p>테이블 제목 .tbl.tdLeft</p>
+					<span>단위/범례</span>
+				</div>
+				<div class="tbl tdLeft">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col width="30%">
+							<col width="">
+							<col width="">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">Title 1</th>
+								<th scope="col">Title 2</th>
+								<th scope="col">Title 3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Text</td>
+								<td>Text</td>
+								<td class="ar"><strong class="dataWrap"><em class="data">10,000</em><span class="unit">원</span></strong></td>
+							</tr>
+							<tr>
+								<td>Text</td>
+								<td>Text</td>
+								<td>Text</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="tblWrap">
+				<div class="tblHeader">
+					<p>테이블 제목</p>
+					<span>단위/범례</span>
+				</div>
+				<div class="tbl">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col width="30%">
+							<col width="">
+							<col width="">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">Title 1</th>
+								<th scope="col">Title 2</th>
+								<th scope="col">Title 3</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">TitleA</th>
+								<td>Text</td>
+								<td>Text</td>
+							</tr>
+							<tr>
+								<th scope="row">TitleB</th>
+								<td>Text</td>
+								<td>Text</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="tblWrap">
+				<div class="tblHeader">
+					<p>테이블 제목</p>
+					<span>단위/범례</span>
+				</div>
+				<div class="tbl">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col width="20%">
+							<col width="">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="rowgroup" rowspan="2">Title 1</th>
+								<th scope="row">Sub</th>
+								<td>Text</td>
+							</tr>
+							<tr>
+								<th scope="row">Sub</th>
+								<td>Text</td>
+							</tr>
+							<tr>
+								<th scope="rowgroup" rowspan="2">Title 2</th>
+								<th scope="row">Sub</th>
+								<td>Text</td>
+							</tr>
+							<tr>
+								<th scope="row">Sub</th>
+								<td>Text</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="tblWrap">
+				<div class="tblHeader">
+					<p>테이블 제목</p>
+					<span>단위/범례</span>
+				</div>
+				<div class="tbl">
+					<table>
+						<caption></caption>
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+							<col width="">
+						<thead>
+							<tr>
+								<th scope="colgroup" colspan="4">Title 1</th>
+							</tr>
+							<tr>
+								<th scope="col">Sub</th>
+								<th scope="col">Sub</th>
+								<th scope="col">Sub</th>
+								<th scope="col">Sub</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Text</td>
+								<td>Text</td>
+								<td>Text</td>
+								<td>Text</td>
+							</tr>
+							<tr>
+								<td>Text</td>
+								<td>Text</td>
+								<td>Text</td>
+								<td>Text</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			
+			<h1 class="gTit" style="margin-top:40px">### 테이블: th가 colgroup일 경우. .tbl thead.colgroup</h1>
+			<div class="tblWrap">
+				<div class="tbl">
+					<table>
+						<caption></caption>
+						<colgroup>
+							<col width="">
+							<col width="">
+							<col width="">
+							<col width="">
+						</colgroup>
+						<thead class="colgroup">
+							<tr>
+								<th scope="col" colspan="2">자동화기기</th>
+								<th scope="col" rowspan="2">전자금융<br>(이체)</th>
+								<th scope="col" rowspan="2">창구거래</th>
+							</tr>
+							<tr>
+								<th scope="col">인출</th>
+								<th scope="col">이체</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>30만원</td>
+								<td>30만원</td>
+								<td>100만원</td>
+								<td>100만원</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- <div class="tblWrap">
+				<div class="tblHeader">
+					<p>테이블 제목</p>
+					<span>단위/범례</span>
+				</div>
+				<div class="tbl">
+					<table>
+						<caption></caption>
+							<col width="25%">
+							<col width="25%">
+							<col width="25%">
+							<col width="">
+						<thead>
+							<tr>
+								<th scope="colgroup" colspan="2" rowspan="2">Title 1</th>
+								<th scope="colgroup" colspan="2">Title 2</th>
+							</tr>
+							<tr>
+								<th scope="col">Sub</th>
+								<th scope="col">Sub</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th rowspan="2" scope="rowgroup">TitleA</th>
+								<th scope="row">Sub</th>
+								<td>Text</td>
+								<td>Text</td>
+							</tr>
+							<tr>
+								<th scope="row">Sub</th>
+								<td>Text</td>
+								<td>Text</td>
+							</tr>
+							<tr>
+								<th rowspan="2" scope="rowgroup">TitleB</th>
+								<th scope="row">Sub</th>
+								<td>Text</td>
+								<td>Text</td>
+							</tr>
+							<tr>
+								<th scope="row">Sub</th>
+								<td>Text</td>
+								<td>Text</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>	 -->
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

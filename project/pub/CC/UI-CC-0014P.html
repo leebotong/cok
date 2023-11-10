@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>UI-CC-0014P</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>제로페이</h1>2023-01-17
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button" class="popOpen">풀팝업</a>
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<!-- <div class="btnArea">
+				<button type="button" class="btn_full sel">조회</button>
+			</div> -->
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">결제내역 상세</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<section>
+							<div class="listTbl">
+								<div class="listTit"><strong>가맹점 정보</strong></div>
+								<ul>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">가맹점명</span>
+											<p class="txt">농협편의점</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">업태</span>
+											<p class="txt">도소매 및 음식점</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">사업자번호</span>
+											<p class="txt">123-45-6789123</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">주소</span>
+											<p class="txt">서울 서초구 동작대로 240 대형빌딩 204호</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">대표자명</span>
+											<p class="txt">홍길동</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">전화번호</span>
+											<p class="txt">02-1234-5678</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="listTbl">
+								<div class="listTit"><strong>결제 정보</strong></div>
+								<ul>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">결제금액</span>
+											<p class="txt"><strong class="dataWrap"><em class="data">5,800</em><span class="unit">원</span></strong></p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">금액</span>
+											<p class="txt"><strong class="dataWrap"><em class="data">5,273</em><span class="unit">원</span></strong></p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">부가세</span>
+											<p class="txt"><strong class="dataWrap"><em class="data">527</em><span class="unit">원</span></strong></p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">봉사료</span>
+											<p class="txt"><strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong></p>
+										</div>
+									</li>
+									<!-- [2023-01-17] 김연진 : 제로페이 결제내역 내 자원순환보증금 값 추가 -->
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">자원순환보증금</span>
+											<p class="txt"><strong><em class="data">50,000</em><span class="unit">원</span></strong></p>
+										</div>
+									</li>
+									<!-- //[2023-01-17] 김연진 : 제로페이 결제내역 내 자원순환보증금 값 추가 -->
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">거래은행</span>
+											<p class="txt">농협은행</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">계좌번호</span>
+											<p class="txt">110-235-*******</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">결제일시</span>
+											<p class="txt">2022.03.28 14:05:43</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">거래일련번호</span>
+											<p class="txt">PPG1500128177</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">확인</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

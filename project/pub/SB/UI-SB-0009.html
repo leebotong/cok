@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-0009</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>다른 카드사 연결 해제</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>연결을 해제</strong>할 카드사를 <br>선택해주세요.</p>
+				<ul class="listDot">
+					<li>카드 등록해제는 기관(카드사)별로만 가능합니다.</li>
+				</ul>
+			</div>
+			
+			<div class="boxType checkBoxImg"> <!--[2022-07-07] 이경아 : checkBoxImg 클래스 추가-->
+				<ul class="listWrap textType">
+					<li>
+						<a href="javascript:;" title role="button" class="jsSelectLink active">
+						<div class="accInLayout">
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_kb_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<span class="accBank">KB카드</span>
+									</strong>
+								</div>
+							</div>
+						</div></a>
+					</li>
+					<li>
+						<a href="javascript:;" title role="button" class="jsSelectLink">
+						<div class="accInLayout">
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_sh_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<span class="accBank">신한카드</span>
+									</strong>
+								</div>
+							</div>
+						</div></a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="toastMessage">선택한 0/10 카드사 연결을 해제 합니다.</div>
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button> <!--[2022-07-08] 이경아 : 선택에서 취소로 수정-->
+				<button type="button" class="btn_full sel">해제</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popupArea">
+</div>
+</body>
+</html>

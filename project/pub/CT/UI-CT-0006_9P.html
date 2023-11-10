@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0006_9P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(cp);
+		})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>이벤트 상세</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(cp);" role="button" class="popOpen">UI-CT-0006_9P</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+		<!-- CENTER POPUP -->
+		<div id="cp" class="popupWrap center" style="display:none;">
+			<div class="layerPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popContBox">
+							<div class="Layer_Pop">
+								<div class="Layer_Tit">
+									<h2 tabindex="0"></h2>
+								</div>
+								<div class="Layer_Con">
+									<div class="ac lineHeight">
+										<p class="defTit1 mt0">추천인 코드 확인을 위해서 개인정보<br> 수집 및 이용동의가 필요합니다.</p>
+									</div>
+									<div class="agreeInArea mt20">
+										<!-- [2022-08-09] 김자영 : 마크업 div inner 추가 -->
+										<div class="inner">
+											<p class="termsExp">
+												1. 개인정보 수집목적 및 항목 이벤트 경품당첨자 선정/발표 및 경품배송을 위해 고객님의 성명, 휴대전화번호를 수집하고 있습니다.<br><br>
+												2. 개인정보 보유/이용기간 수집한 개인정보는 해당이벤트 경품 배송 및 확인완료 기간까지 이용되며 제3자 제공 및 기타용도에 이용되지
+											</p>
+										</div>
+										<!--// [2022-08-09] 김자영 : 마크업 div inner 추가 -->
+									</div>
+
+									<!-- [2022-08-09] 김자영: 마크업 추가 -->
+									<div class="allCheck">
+										<input type="checkbox" name="agreeChk" id="aggrChk11">
+										<label for="aggrChk11">추천인 이벤트 참여를 위한 개인정보수집 및 이용안내를 확인하였습니다.</label>
+									</div>
+									<!--// [2022-08-09] 김자영: 마크업 추가 -->
+								</div>
+								<div class="Layer_Pop_Close">
+									<!-- [2022-08-09] 김자영: 삭제
+									<div class="allCheck floating">
+										<input type="checkbox" name="agreeChk" id="aggrChk11">
+										<label for="aggrChk11">추천인 이벤트 참여를 위한 개인정보수집 및 이용안내를 확인하였습니다.</label>
+									</div>
+									-->
+									<div class="btnArea">
+										<button type="button" onclick="popClose(this)">취소</button>
+										<button type="button" onclick="popClose(this)" class="sel dis">동의</button>
+									</div>
+								</div>
+								<!-- <a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

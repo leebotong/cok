@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>UI-TX-002P</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>지로</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button" class="popOpen">풀팝업</a>
+			
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<!-- <div class="btnArea">
+				<button type="button" class="btn_full sel">조회</button>
+			</div> -->
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">전기요금 납부 상세</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<section>
+							<div class="listTbl">
+								<div class="listTit"><strong>납부정보</strong></div> <!-- [2022-07-14] 윤지현:문구수정 -->
+								<ul>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">납부계좌</span> 
+											<p class="txt">123-1234-1234-123</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">납부경로</span> 
+											<p class="txt">계좌납부</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">납부일</span> 
+											<p class="txt">2022.04.11</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="listTbl">
+								<div class="listTit"><strong>전기요금 납부상세내역</strong></div>
+								<ul>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">납부의무자명</span> 
+											<p class="txt">홍길동</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">전자납부번호</span> 
+											<p class="txt">1234567890</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">납부기한</span> 
+											<p class="txt">2022.09.01~2022.09.12</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">고지구분</span> 
+											<p class="txt">당월분</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">납부금액</span> 
+											<p class="txt"><strong class="dataWrap"><em class="data">100,000</em><span class="unit">원</span></strong></p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">납기일</span> 
+											<p class="txt">2022.04.11</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">확인</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

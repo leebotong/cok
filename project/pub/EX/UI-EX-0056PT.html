@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0056PT</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(sp_popup);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1></h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(sp_popup);" class="popOpen">UI-EX-0056PT</a>
+			</div> 
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea">
+		<!-- SLIDE POPUP -->
+		<div id="sp_popup" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">거주성 판정기준표</h2>
+						</div>
+						<div class="layerSelectContent">
+							
+							<div class="tabWrap oneDepth">
+								<div role="tablist" class="tabList">
+									<a href="javascript:;" role="tab">국내 거주자</a>
+									<a href="javascript:;" role="tab" aria-selected="true" class="active">국내 비거주자</a>
+								</div>
+								<div class="tabPanelList">
+									<div role="tabpanel" class="tabPanel">
+										<section class="section30">
+											<ol class="listNum habitability">
+												<li>대한민국 국민
+													<ul>
+														<li>가. 대한민국 재외공관에서 근무할 목적으로 외국에 파견되어 체재하고 있는 자.</li>
+														<li>나. 비거주자이었던 자로서 입국하여 국내에 3개월 이상 체재하고 있는 자.</li>
+														<li>다. 기타 기획재정부 장관이 정하는 자.</li>
+													</ul>
+												</li>
+											</ol>
+										</section>
+									</div>
+									<div role="tabpanel" class="tabPanel show">
+										<section class="section30">
+											<ol class="listNum habitability">
+												<li>국내에 있는 외국정부의 공관과 국제기구.</li>
+												<li>주한미군, 국제연합군 및 군속·초청계약자, 비세출자금기관,  군사우편국, 군용은행시설.</li>
+												<li>외국에 있는 국내법인 등의 영업소 및 사무소.</li>
+												<li>외국에 주된 사무소가 있는 단체·기관, 이에 준하는 조직체.</li>
+												<li>대한민국 국민
+													<ul>
+														<li>가. 대한민국 재외공관에서 근무할 목적으로 외국에 파견되어 체재하고 있는 자.</li>
+														<li>나. 비거주자이었던 자로서 입국하여 국내에 3개월 이상 체재하고 있는 자.</li>
+														<li>다. 기타 기획재정부 장관이 정하는 자.</li>
+													</ul>
+												</li>
+												<li>외국인
+													<ul>
+														<li>가. 국내에 있는 외국정부의 공관 또는 국제기구에서 근무하는 외교관·영사 또는 그 수행원이나 사용인.</li>
+														<li>나. 외국정부 또는 국제기구의 공무로 입국하는 자.</li>
+														<li>다. 거주자였던 외국인으로서 출국하여 외국에서 3개월 이상 체재 중인 자.</li>
+													</ul>
+												</li>
+											</ol>
+										</section>
+									</div>
+								</div>
+							</div>
+							
+					</div>
+
+					<div class="popFootBox">
+						<div class="btnArea half">
+							<button type="button" onclick="popClose(this)" class="sel">확인</button>
+						</div>
+					</div>
+
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

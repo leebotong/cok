@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0411</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>송금한도 설정</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div class="flexBanner">
+			<div class="flexTxt">
+				<p class="txt">콕PASS 발급하시면<br> 송금한도 증액이 가능해요.</p>
+				<span class="stxt">(1회 최대 1천만원 / 1일 최대 5천만원)</span>
+			</div>
+			<div class="btnWrap">
+				<a href="javascript:;" role="button" class="flexHide"><span class="chks">다시 보지 않기</span></a>
+				<a href="javascript:;" role="button"><strong class="pColor">콕PASS발급</strong></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.flexHide').click(function(){
+					$('.flexBanner').hide();
+				});
+			});
+		</script>
+
+		<div id="contents">
+			<!-- [2022-07-15] -->
+			<p class="defTit2 cockPass">현재 송금한도<span class="badge">보안매체 없음</span></p>
+      <div class="listTblBox">
+        <ul>
+					<li>
+						<span class="tit">1회 송금 한도</span>
+						<p class="txt"><em class="pColor">500만원</em></p>
+					</li>
+					<li>
+						<span class="tit">1일 송금 한도</span>
+						<p class="txt"><em class="pColor">500만원</em></p>
+					</li>
+				</ul>
+			</div>
+			<!-- <p class="infoTxt">주거래 계좌 관리점이 농협은행일 경우본점 기준으로 표기됩니다.</p> --><!-- [2022-10-24] 삭제 -->
+
+			<p class="defTit2"><span class="pColor">변경할 송금한도</span>를 입력해주세요.</p>
+			<div class="formWrap mt20">
+				<div class="formItem">
+					<strong class="formTit">1일 송금한도 (최대 500만원)</strong>
+					<div class="inpText">
+						<input type="text" title="1일 송금한도(최대500만원)" class="tyTxt" value="" placeholder="만원 단위 입력">
+						<span class="unit rspace">만원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						<a href="javascript:;" role="button" aria-label="" class="btnSm">최대한도</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- 2022-10-24 수정 -->
+			<div class="textItem mt40">
+				<div class="layoutWrap">
+					<p class="tit">최대 송금한도</p>
+					<a href="#" role="button" class="linkBtn">송금 보안매체 설정</a>
+				</div>
+
+				<div class="tblWrap">
+					<div class="tbl">
+						<table>
+							<caption>보안매체별 최대 송금한도</caption>
+							<colgroup>
+								<col width="">
+								<col width="32%">
+								<col width="32%">
+							</colgroup>
+							<!-- [2022-09-05] 수정 -->
+							<thead>
+								<tr>
+									<th scope="col">보안매체</th>
+									<th scope="col">1회</th>
+									<th scope="col">1일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">기본<br>(간편인증)</th>
+									<td>5백만원</td>
+									<td>5백만원</td>
+								</tr>
+								<tr>
+									<th scope="row">콕PASS<br>(모바일OTP)</th>
+									<td>5천만원</td>
+									<td>5천만원</td>
+								</tr>
+								<tr>
+									<th scope="row" class="h65">OTP(실물)</th><!-- 2022-10-24 클래스추가 -->
+									<td>1억원</td>
+								<td>5억원</td>
+								</tr>
+							</tbody>
+							<!-- //[2022-09-05] 수정 -->
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<!-- [2023-05-16] 송금한도 설정 화면 UI 개선 -->
+			<ul class="infoTxt">
+				<li>보안매체를 설정하시면 송금 시 1일 누적 송금액이 5백만원을 초과한 경우 등록된 보안매체로 인증을 진행합니다.</li>
+				<li>금융인증서로 로그인한 경우, 금융결제원 정책에 따라 금융인증서로도 인증을 진행합니다. </li>
+			</ul>
+
+			<p class="defTit2">나의 주거래계좌 관리점</p>
+			<div class="readonlyBox">
+				<div class="accInfo">
+					<div class="logoWrap">
+						<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+					</div>
+					<div class="accInfoWrap">
+						<div class="accNumWrap">
+							<div class="accNumBox">
+								<span class="accNumber">안양원예농협 인덕원역지점</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="infoTxt">주거래계좌 관리점 변경은 <a href="javascript:;" role="button" class="pColor underLine">관리>계좌조회/관리</a>  메뉴에서 주거래계좌를 변경하시면 해당 계좌의 관리점으로 자동 변경 됩니다.</p><!-- [2022-10-05] 웹접근성 수정 role="button" 추가 -->
+			<p class="infoTxt">주거래계좌 관리점이 농협은행일 경우 본점 기준으로 표기됩니다.</p>
+			<!-- //2022-10-24 수정 -->
+
+			<div class="btmInfoWrap mt40">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<!-- [2023-05-16] 송금한도 설정 화면 UI 개선// -->
+					<li>1일 송금한도를 1,000만원 초과하여 상향 변경하는 경우 <span class="pColor">비대면 실명인증</span>을 추가 진행합니다.</li>
+					<li>비대면 실명인증은 콕뱅크에 등록된 농·축협 입출금 계좌로만 인증할 수 있습니다.</li>
+					<li>출금계좌가 한도제한계좌일 경우 이용한도는 별도로 적용됩니다. (전자금융+창구거래+기타거래 1회/1일 출금한도 100만원)</li>
+					<li>송금한도는 콕뱅크의 콕송금을 이용하실 때 적용되는송금(이체)한도이며 등록된 보안매체의 송금한도 내에서 변경할 수 있습니다.</li>
+					<li>기본(간편인증) 1일 송금한도는 주거래 농협의 송금한도 범위내에서 설정이 가능합니다.</li>
+					<!-- //[2023-05-16] 송금한도 설정 화면 UI 개선 -->
+				</ul>
+			</div>
+			<!-- //[2022-07-15] -->
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel dis">송금한도 변경</button><!-- 조건충족시 disabled 제거-->
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<script>
+	// 퍼블확인용
+	$(function(){
+		$('.btnSm').click(function(){
+			if(!$(this).hasClass('point')){
+				$(this).addClass('point');
+			} else {
+				$(this).removeClass('point');
+			}
+		})
+	})
+</script>
+</body>
+</html>

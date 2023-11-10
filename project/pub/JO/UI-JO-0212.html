@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0212</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>적합성 확인서</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>적합성 원칙 확인</strong>을 위해<br>고객님의 정보를<strong>입력</strong>해주세요.</p>
+				<ul class="listDot">
+					<li>본 확인서는 「금융소비자 보호에 관한 법률」 에 의거하여 고객님의 연령, 대출목적(용도) 등을 파악하여, 고객님께서 신청하신 상품이 고객님의 상황에 적합한지 여부를 확인하기 위한 기초 자료로 활용됩니다.
+					</li>
+				</ul>
+			</div>
+
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">대출신청목적</strong><!-- [2022-07-05] 윤지현:문구수정 -->
+					<div class="inpSel">
+						<a href="javascript:;" title="대출신청목적 선택" role="button" class="btnSel">기타</a>
+					</div>
+					<div class="inpText">
+						<input type="text" title="대출용도 입력" value class="tyTxt" placeholder="대출용도 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">대출희망상품 <!-- [2022-07-05] 윤지현:문구수정 -->
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">대출희망상품</strong>
+								<ul class="listDot">
+									<li>기타상품 : 예적금담보대출 외 비대면 전 상품</li>
+									<li>예적금담보대출 : 예적금/신탁 담보대출</li>
+								</ul>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="inpText">
+						<input type="text" title="대출희망상품 확인" value="기타상품" class="tyTxt" placeholder readonly>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">총 자산규모 <!-- [2022-07-05] 윤지현:문구수정 -->
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">자산</strong>
+								<ul class="listDot">
+									<li>자본(순자산) – 부채</li>
+								</ul>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="inpText">
+						<input type="tel" title="총 자산규모" value class="tyNum" placeholder="자산규모 입력">
+						<span class="unit">백만원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">총 부채 <!-- [2022-07-05] 윤지현:문구수정 -->
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">부채</strong>
+								<ul class="listDot">
+									<li>갚아야 할 빚</li>
+								</ul>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="inpText">
+						<input type="tel" title="총 부채" value class="tyNum" placeholder="부채 입력">
+						<span class="unit">백만원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">연간소득</strong><!-- [2022-07-05] 윤지현:문구수정 -->
+					<div class="inpText">
+						<input type="tel" title="연간소득" value class="tyNum" placeholder="연간소득 입력">
+						<span class="unit">백만원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">연간 소득 중 고정지출 비율</strong><!-- [2022-07-05] 윤지현:문구수정 -->
+					<div class="inpSel">
+						<a href="javascript:;" title="연간 소득 중 고정지출 비율 선택" role="button" class="btnSel placeholder">선택</a>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">현재 대출 및 카드대금 연체 여부</strong><!-- [2022-07-05] 윤지현:문구수정 -->
+					<div class="tabWrap box">
+						<div role="tablist" class="tabList">
+							<a href="javascript:;" role="tab">없음</a>
+							<a href="javascript:;" role="tab" aria-selected="true" class="active">있음</a>
+						</div>
+						<div class="tabPanelList">
+							<div role="tabpanel" class="tabPanel">
+							</div>
+							<div role="tabpanel" class="tabPanel show">
+								<div class="formItem">
+									<div class="inpText">
+										<input type="tel" title="금융기관명" value class="tyTxt" placeholder="금융기관명">
+									</div>
+									<div class="inpText">
+										<input type="tel" title="연체금액 입력" value class="tyNum" placeholder="연체금액 입력" maxlength="16">
+										<span class="unit">원</span>
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">신용점수 및 평가기관 정보</strong>
+					<div class="tabWrap box">
+						<div role="tablist" class="tabList">
+							<a href="javascript:;" role="tab">잘 모름</a>
+							<a href="javascript:;" role="tab" aria-selected="true" class="active">알고있음</a>
+						</div>
+						<div class="tabPanelList">
+							<div role="tabpanel" class="tabPanel">
+							</div>
+							<div role="tabpanel" class="tabPanel show">
+								<div class="formItem">
+									<div class="inpText">
+										<input type="tel" title="신용점수 입력" value class="tyNum" placeholder="신용점수 입력">
+										<span class="unit">점</span>
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+									<div class="inpSel">
+										<a href="javascript:;" title="신용평가사 선택" role="button" class="btnSel placeholder">신용평가사 선택</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">대출 상환방법</strong><!-- [2022-07-05] 윤지현:문구수정 -->
+					<div class="inpSel">
+						<a href="javascript:;" title="기타소득 선택" role="button" class="btnSel">기타소득</a>
+					</div>
+					<div class="inpText">
+						<input type="text" title="상환방법 입력" value class="tyTxt" placeholder="상환방법 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="allCheck mt30">
+				<p>본인은 당행에 제공한 적합성 관련 정보와 관련하여 다음과 같은 사항을 확인합니다.</p>
+			</div>
+			
+			<ul class="infoTxt">
+				<li></li>
+				<li>당행에 제공한 적합성 관련 정보는 본인의 재산상황, 용도 등의 정보를 정확히 알려드린 것입니다.</li>
+				<li>본인이 제공한 정보가 정확하지 않거나, 정보에 변경사항이 발생한 경우에는 적합성 판단이 달라질 수 있음을 설명받았습니다. </li>
+			</ul>
+
+			<div class="allCheck">
+				<input type="checkbox" name="agreeChk" id="aggrChk11" checked>
+				<label for="aggrChk11">신청하신 대출상품 적합 여부 확인을 위해 본인의 
+					개인정보를 수집, 이용, 제공하는 것에 동의 합니다.</label>
+			</div>
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

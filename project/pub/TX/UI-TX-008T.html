@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>UI-TX-008T</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>상하수도요금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="tabWrap oneDepth">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" class="active">납부</a>
+					<a href="javascript:;" role="tab">예약납부내역</a>
+					<a href="javascript:;" role="tab">납부내역</a>
+				</div>
+			</div>
+
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">조회기준 선택</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="조회기준 선택" role="button" class="btnSel">전자납부번호</a>
+					</div>
+				</div>
+				<!-- case1: 전자납부번호 선택시 -->
+				<div class="formItem">
+					<strong class="formTit">전자납부번호</strong>
+					<div class="inpText">
+						<input type="tel" title="전자납부번호 19자리 숫자 입력" value class="tyTxt" placeholder="19자리 숫자 입력"><!-- 2022-09-30 접근성수정 title="" 내용 수정 -->
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<!-- case2: 고객번호(서울시) 선택시 -->
+				<div class="formItem">
+					<strong class="formTit">고객번호</strong>
+					<div class="inpText">
+						<input type="tel" title="고객번호 9자리 숫자 입력" value class="tyTxt" placeholder="9자리 숫자 입력"><!-- 2022-09-30 접근성수정 title="" 내용 수정 -->
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<!-- case3: 전자수용가번호 선택시 -->
+				<div class="formItem">
+					<strong class="formTit">전자수용가번호</strong>
+					<div class="inpText">
+						<input type="tel" title="전자수용가번호 15자리 숫자 입력" value class="tyTxt" placeholder="15자리 숫자 입력"><!-- 2022-09-30 접근성수정 title="" 내용 수정 -->
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">행정구역 선택</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="행정구역 선택" role="button" class="btnSel">전지역</a>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">지자체 선택</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="지자체 선택" role="button" class="btnSel">전지역</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<!-- [2022-07-07] 김자영: 확인사항 수정 -->
+				<ul class="listDot">
+					<li><span class="pColor">서비스 이용시간: 매일 00:30~23:10</span></li><!-- [2022-10-11] 윤지현:문구수정 -->
+						<li>고지서의 전자수용가번호/고객번호(서울시)/혹은 전자납부번호로 조회하실 수 있습니다.</li>
+						<!-- <li>‘14.12.14일 이후 11월말까지 발행한 구 상하수도 고지서의 전자납부번호, 수용가번호를 이용한 전자납부가 불가하오니 가상계좌납부 또는 은행창구, 공과금수납기에서 실물 납부하시기 바랍니다.</li>  [2022-10-11] 윤지현:문구삭제 -->
+				</ul>
+				<!--// [2022-07-07] 김자영: 확인사항 수정 -->
+			</div>
+			
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">조회</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1013DP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(dp);
+		})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>수수료면제조회</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(dp);" role="button" class="popOpen">UI-SB-1013DP</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+
+		<!-- CENTER POPUP -->
+		<div id="dp" class="popupWrap center" style="display:none;">
+			<div class="layerPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popContBox">
+							<div class="Layer_Pop">
+								<div class="Layer_Tit">
+									<h2 tabindex="0">수수료면제조회</h2>
+								</div>
+								<div class="Layer_Con">
+									<div class="listTbl">
+										<div class="listTit mt14">
+											<span><span class="fXsmall">조회기준일시:2022-03-04 16:52:10</span></span>
+										</div>
+										<ul>
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">면제항목</span>
+													<span class="txt">세대원클래스</span>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">면제횟수<br>(잔여/전체)</span>
+													<span class="txt pColor">제한없음</span>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">적용시작일</span>
+													<span class="txt">2020.04.04</span>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">적용종료일</span>
+													<span class="txt">2020.04.04</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<p class="infoTxt pColor">콕송금은 위 면제항목과 별개로 이체금액 50만원/건 이하는 수수료 면제 혜택을 제공하고 있습니다.</p>
+									<p class="infoTxt">면제항목별 상세 조건은 해당 상품 또는 서비스 기준에 따릅니다.</p>
+								</div>
+								<div class="Layer_Pop_Close">
+									<div class="btnArea">
+										<button type="button" onclick="popClose(this)" class="sel">확인</button>
+									</div>
+								</div>
+								<!-- <a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

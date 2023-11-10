@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SA-0020</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>공동인증서</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">PC에서 <br><strong>공동인증서</strong>를 가져옵니다.</p>
+				<ul class="listDot">
+					<li>고객님의 PC에 저장된 공동인증서를 스마트폰으로 복사하면 스마트폰에서도 동일하게 사용할 수 있습니다.</li>
+				</ul>
+			</div>
+			<div class="imgBox commCertify"></div>
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="defTit2">인증번호</strong>
+					<div class="formGroup">
+						<div class="inpText">
+							<input type="tel" title="인증번호 첫번째 4자리" class="tyTxt" value maxlength="4"><!-- [2022-09-30] 접근성수정 title="" 수정 -->
+						</div>
+						<span class="etc">-</span>
+						<div class="inpText">
+							<input type="tel" title="인증번호 두번째 4자리" class="tyTxt" value maxlength="4"><!-- [2022-09-30] 접근성수정 title="" 수정 -->
+						</div>
+						<span class="etc">-</span>
+						<div class="inpText">
+							<input type="tel" title="인증번호 세번째 4자리" class="tyTxt" value maxlength="4"><!-- [2022-09-30] 접근성수정 title="" 수정 -->
+						</div>
+						<span class="etc">-</span>
+						<div class="inpText">
+							<input type="tel" title="인증번호 마지막 4자리" class="tyTxt" value maxlength="4"><!-- [2022-09-30] 접근성수정 title="" 수정 -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="section40">
+				<p class="defTit2">공동인증서 복사 절차 안내</p>
+				<ol class="listNumBg">
+					<li>PC에서 농협인터넷뱅킹에 접속합니다.<br>
+							(http://banking.nonghyup.com)
+				</li>
+					<li>인증센터 > 인증서복사 메뉴에서 ‘인증서 내보내기<br>
+						<!-- ▼ [2022-10-11] 김자영 : 텍스트 수정 -->
+						(PC→스마트폰)’를 선택합니다.
+					</li>
+					<li>가져올 공동인증서 선택 후 공동인증서 암호를 입력합니다.</li>
+					<li>스마트폰 화면에 생성된 인증번호를 입력합니다.</li>
+					<li>‘공동인증서 가져오기‘ 버튼 선택 후 공동인증서 암호를 입력합니다.</li>
+				</ol>
+			</section>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<!-- ▼ [2022-10-04] 김자영 : 웹접근성 title 추가 -->
+				<button type="button" class="btn_full sel" title="PC에서 공동인증서 가져오기">공동인증서 가져오기</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+  <!-- //#wrap -->
+
+</div></body>
+</html>

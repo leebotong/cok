@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-OR-0005</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>해외송금</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="twoToneType">
+					<div class="ttTop">
+					<!-- ROUND BOX -->
+					<div class="roundBox">
+						<div class="roundInBox">
+
+							<div class="accTypeWrap accAlwaysType">
+								<a href="javascript:;" title="계좌선택" role="button" class="accInLayout">
+									<div class="accInfo">
+										<div class="accInfoInLayout">
+											<div class="logoWrap">
+												<img src="../../images/logo/logo_bnk_011_72x72.png" alt="농협은행" class="logo">
+											</div>
+											<div class="accInfoWrap">
+												<strong class="accName">
+													<!-- <span class="accBank">[NH농협]</span> -->
+													<span class="bankBookName">주머니(MONEY)통장</span>
+												</strong>
+												<div class="accNumWrap">
+													<div class="accNumBox">
+														<span class="accNumber">352-1775-6397-03</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<div class="accDataWrap forInner"><!--[2022-07-08] 이경아 : 채우기 버튼 추가--> <!--[2022-07-12] 이경아 : 클래스명 수정-->
+									<div>
+										<span class="accNumInfo">출금가능금액</span>
+										<strong class="accCash">827,216</strong>
+										<span class="accUnit">원</span>
+									</div>
+									<button type="button" class="btnSm">+잔액 채우기</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- //ROUND BOX -->
+					<div class="accUtility">
+						<button type="button" class="btnSm">송금수수료 안내
+						</button>
+					</div>
+					</div>
+					<div class="ttBottom">
+						<div class="ttContents">
+							<div class="formWrap">
+
+								<div class="formItem">
+									<strong class="formTit">송금금액</strong>
+									<div class="formGroup flex46">
+										<div class="inpSel">
+											<span class="logo exchange">
+												<img src="../../images/logo/icon_USD.png" alt="미국국기"> <!--[2022-08-02] 이경아 : 이미지명 수정-->
+								<!-- <img src="../../images/logo/icon_JPY.png" alt="일본국기">
+								<img src="../../images/logo/icon_EUR.png" alt="유럽연합">
+								<img src="../../images/logo/icon_CNY.png" alt="중국국기"> -->
+											</span>
+											<a href="javascript:;" title="기준화선택" role="button" class="btnSel">USD</a> <!--[2022-07-07] 이경아 : 타이틀수정-->
+										</div>
+										<!--[2022-07-20] 이경아 : $마크 삭제 -->
+										<div class="inpText"> <!--[2022-07-18] 이경아 : usd, jpy, eur, cny class삭제 -->
+											<input type="tel" title="달럭입력" class="tyTxt" value placeholder="송금 금액">
+										</div>
+									</div>
+								</div>
+								<!--[2022-07-20] 이경아 : 예상원화금액 삭제 -->
+								<p class="infoTxt">환율 변동에 따라 조회시점과 실행시점의 환율이 다르게 적용되어 출금금액의 차이가 발생 할 수 있습니다.</p>
+								<div class="btnInArea">
+									<button type="button">중계은행 수수료안내</button>
+								</div>
+
+								<div class="formItem">
+									<strong class="formTit">해외중계은행 수수료</strong>
+									<div class="inpSel">
+										<a href="javascript:;" title="해외중계은행 수수료 선택" role="button" class="btnSel ">보내는분 부담</a>
+									</div>
+									<p class="infoTxt">받는 분 부담을 선택할 경우 송금금액에서 수수료가 차감된 후 송금됩니다.</p>
+								</div>
+
+								<div class="formItem">
+									<strong class="formTit">출금계좌 비밀번호</strong>
+									<div class="inpText error">
+										<button type="button" title="출금계좌 비밀번호 4자리 입력됨" aria-label="출금계좌 비밀번호" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+										<input type="password" title="출금계좌 비밀번호" aria-hidden="true" class="tyTxt sKey" value placeholder="숫자 4자리 입력" readonly>
+									</div>
+									<p class="infoTxtOk">인증 완료되었습니다.</p>
+									<p class="infoTxtErr">비밀번호가 일치하지 않습니다. (1/5)</p>
+								</div>
+							</div>
+
+							<hr class="divingLine">
+
+							<div class="formWrap">
+								<p class="defTit2">보내는 분 정보</p>
+								<div class="formItem">
+									<strong class="formTit">송금구분</strong>
+									<div class="inpSel">
+										<a href="javascript:;" title="송금구분 선택" role="button" class="btnSel placeholder">송금 구분 선택</a>
+									</div>
+									<p class="infoTxt">건당 미화 5,000달러 이하로 송금 가능한 거래입니다. 미화 5,000달러 초과 송금 의뢰시는 다른 항목을 선택해 주세요!</p>
+								</div>
+
+								<!-- <div class="formItem">
+									<strong class="formTit">여권번호</strong>
+									<div class="inpText">
+										<input type="text" title="여권번호 입력" class="tyTxt" value placeholder="여권번호 입력">
+										<a href="javascript:;" role="button" aria-label class="btnSm">조회</a>
+									</div>
+								</div> -->
+
+								<div class="formItem">
+									<strong class="formTit">영문이름</strong>
+									<div class="inpText readonly">
+										<input type="text" title="영문이름" class="tyTxt" value="Hong Gil Dong" placeholder readonly>
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+								</div>
+
+								<div class="formItem">
+									<strong class="formTit">휴대전화번호</strong>
+									<div class="formGroup flex46">
+										<div class="inpSel">
+											<a href="javascript:;" title="휴대폰번호 앞자리 선택" role="button" class="btnSel">010</a>
+										</div>
+										<div class="inpText">
+											<input type="tel" title="휴대폰번호" class="tyTxt" value placeholder="'-'없이 입력">
+										</div>
+									</div>
+								</div>
+								<p class="infoTxt">즉시 연락 가능한 전화번호를 입력해 주세요.</p>
+
+								<div class="formItem">
+									<strong class="formTit">이메일</strong>
+									<div class="formGroup">
+										<div class="inpText">
+											<input type="text" title="아이디" class="tyTxt" placeholder="이메일 입력"><!-- [2022-08-19] 김자영: placeholder 수정 -->
+										</div>
+										<span class="etc">@</span>
+										<div class="inpSel">
+											<a href="javascript:;" title="도메인 선택" role="button" class="btnSel placeholder">직접입력</a><!-- [2022-08-19] 김자영: placeholder 수정 -->
+										</div>
+									</div>
+									<div class="inpText">
+										<input type="text" title="도메일직접입력" class="tyTxt" value placeholder="직접입력"><!-- [2022-08-19] 김자영: placeholder 수정 -->
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+								</div>
+							</div>
+
+							<hr class="divingLine">
+
+
+							<p class="defTit2">받는 분 정보</p>
+							<div class="listTblBox">
+								<ul>
+									<li>
+										<span class="tit">영어이름</span>
+										<p class="txt">HONG GILDONG</p>
+									</li>
+									<li>
+										<span class="tit">받는분 계좌번호</span>
+										<p class="txt">1654*****5112</p>
+									</li>
+								</ul>
+							</div>
+							<p class="infoTxt">IBAN CODE 사용국가(유럽,중동 등)로 송금 시, IBAN CODE를 입력하지 않을 경우에는 입금지연 및 추가 수수료가 발생할 수 있습니다.</p>
+							<div class="formWrap">
+								<div class="formItem">
+									<strong class="formTit">영문주소</strong>
+									<!-- <div class="inpText readonly">
+										<input type="text" title="영문주소" class="tyTxt" value="UNITED STATES" placeholder readonly>
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+									<div class="inpSel">
+										<a href="javascript:;" title="도시 선택" role="button" class="btnSel ">도시 선택</a>
+									</div> -->
+									<div class="inpText">
+										<input type="text" title="영문주소 입력" class="tyTxt" value placeholder="영문주소 입력">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+									<div class="inpText">
+										<input type="text" title="영문주소 입력" class="tyTxt" value placeholder="영문주소 입력">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+									<div class="inpText">
+										<input type="text" title="영문주소 상세입력" class="tyTxt" value placeholder="영문주소 상세입력">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+								</div>
+
+
+								<div class="formItem"> <!--[2022-07-20] 이경아 : 전화번호 앞자리 select 삭제-->
+									<strong class="formTit">휴대전화번호(선택)</strong>
+										<div class="inpText">
+											<input type="tel" title="휴대전화번호" class="tyTxt" value placeholder="전화번호 입력">
+										</div>
+								</div>
+								<p class="infoTxt">일부 은행의 경우 받는분과 연락 후 입금하므로 가급적 입력하시기 바랍니다.</p>
+
+								<div class="formItem">
+									<strong class="formTit">이메일(선택)</strong>
+									<div class="formGroup">
+										<div class="inpText">
+											<input type="text" title="아이디" class="tyTxt" placeholder="이메일 입력">
+										</div>
+										<span class="etc">@</span>
+										<div class="inpSel">
+											<a href="javascript:;" title="도메인 선택" role="button" class="btnSel placeholder">nonghyup.com</a>
+										</div>
+									</div>
+									<div class="inpText">
+										<input type="text" title="도메일직접입력" class="tyTxt" value placeholder="직접입력">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+								</div>
+								<p class="infoTxt">송금 취결시 받는분에게 송금내용을 이메일로 보내드립니다.</p>
+							</div>
+
+							<hr class="divingLine">
+							<p class="defTit2">수취은행 정보</p>
+							<div class="listTblBox">
+								<ul>
+									<li>
+										<span class="tit">SWIFT CODE<br>(BIC Code)</span>
+										<p class="txt">NACFRSAAAAAA</p>
+									</li>
+									<li>
+										<span class="tit">국가별 수취은행<br>고유코드</span>
+										<p class="txt">00</p>
+									</li>
+									<li>
+										<span class="tit">수취은행 국가명</span>
+										<p class="txt">US</p>
+									</li>
+									<li>
+										<span class="tit">영문은행명</span>
+										<p class="txt">Bank of America</p>
+									</li>
+									<li>
+										<span class="tit">영문지점명</span>
+										<p class="txt">WILLSHIRE<br>COUNTY BRANCH</p>
+									</li>
+									<li>
+										<span class="tit">수취은행주소</span>
+										<p class="txt">1000 E. DEL. AMO<br>BLVD, S1234<br>Carson, CA, 90746</p>
+									</li>
+								</ul>
+							</div>
+							<p class="infoTxt">일본 송금 시 수취은행이 우체국, Net Bank, E Bank 인 경우에는 송금할 수 없습니다.</p>
+
+
+							<div class="formWrap">
+								<div class="formItem">
+									<strong class="formTit">송금기록사항(영문)(선택)</strong>
+									<div class="inpText">
+										<input type="text" title="송금기록사항 입력" class="tyTxt" value placeholder="기록사항 입력">
+									</div>
+									<p class="infoTxt">송금관련 기타정보 입력이 필요한 경우 입력해 주세요.</p>
+								</div>
+							</div>
+							<section class="section40">
+							<div class="allCheckBox">
+								<div class="termsList">
+									<div>
+										<div class="termsCheck">
+											<input type="checkbox" name="nPartCheck" id="aggrChk01">
+											<label for="aggrChk01">외환거래 기본약관을 확인하였습니다.</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+							<div class="btmInfoWrap">
+								<strong class="tit">확인사항</strong>
+								<ul class="listDot">
+									<li>고객님은 농협은행의 외환거래 기본약관을 열람하시고 그 내용을 동의하셔서 위와 같이 신청하셨습니다.</li>
+									<li>입력사항이 정확하지 않은 경우에는 송금지연, 송금반환, 수취거절, 오류전달 등으로 인하여 고객님의 피해가 우려되오니 입력 시 유의하여 주시기 바랍니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class="sel">다음</button>
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+</body>
+</html>
+

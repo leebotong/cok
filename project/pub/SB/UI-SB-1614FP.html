@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-1614FP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(fullA);
+			// popOpen(cp);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>콕창구출금</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(fullA);" class="popOpen">UI-TR-1614FP</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP -->
+		<div id="fullA" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">콕창구출금 이용절차</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div class="pgTitWrap">
+								<p class="pTit">콕창구출금 <strong>이용절차</strong>를<br>알려드려요.</p>
+							</div>
+
+							<!-- listTbl -->
+							<!-- [2022-11-01] 윤지현:마크업수정 -->
+							<div class="prdGuideStep reMg">
+								<ol>
+									<li class="step00"><strong>출금전표 작성</strong><span class="line2">출금전표를 작성해 주세요.<br>(창구에 비치된 OOO으로도 작성 가능해요)</span></li>
+									<li class="step10"><strong>신분증 제출</strong><span class="line2">창구직원에게 신분증(주민등록증 또는 운전면허증)을 제시해 주세요.</span></li>
+									<li class="step08"><strong>인증번호 생성</strong><span class="line2">콕뱅크앱 실행 후 콕창구출금 화면에서 인증번호를 생성해주세요.(인증번호 생성을 위해 콕PASS 비밀번호 입력이 필요해요)</span></li>
+									<li class="step01"><strong>인증번호 입력</strong><span class="line2">직원의 안내에 따라 생성된 인증번호를 창구 핀패드에 입력해 주세요.</span></li>
+									<li class="step12"><strong>계좌비밀번호 입력</strong><span class="line2">계좌비밀번호를 창구 핀패드에 입력해 주세요.</span></li>
+									<li class="step09"><strong>출금금액 수령</strong><span class="line2">신청하신 출금금액을 창구직원에게 수령해 주세요.</span></li>
+								</ol>
+							</div>
+							<!-- //[2022-11-01] 윤지현:마크업수정 -->
+
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

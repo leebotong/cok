@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0512</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>계좌비밀번호 변경</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<p class="defTit2">예금명/계좌번호</p><!--UI-TR-0133.html-->
+			<div class="listTblBox">
+				<ul>
+					<li>
+						<span class="tit">예금명</span>
+						<p class="txt">저축예금</p>
+					</li>
+					<li>
+						<span class="tit">계좌번호</span>
+						<p class="txt pColor">123-1234-1234-12</p>
+					</li>
+				</ul>
+			</div>
+
+      <section class="section40">
+        <div class="formItem">
+          <strong class="formTit">신규 비밀번호</strong>
+          <div class="inpText">
+            <button type="button" title="신규 계좌비밀번호 4자리 입력됨" aria-label="신규 비밀번호 4자리 숫자 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+            <input type="password" title="신규 계좌비밀번호 4자리 숫자" aria-hidden="true" value="" class="sKey" placeholder="숫자 4자리 입력" maxlength="4" readonly>
+          </div>
+        </div>        
+        <div class="formItem">
+          <strong class="formTit">신규 비밀번호 확인</strong>
+          <div class="inpText">
+            <button type="button" title="신규 계좌비밀번호 4자리 입력됨" aria-label="신규 계좌비밀번호 4자리 다시 입력" class="btnTransparent"></button>
+            <input type="password" title="신규 계좌비밀번호 4자리 다시 입력" aria-hidden="true" value class="sKey" placeholder="숫자 4자리 입력" maxlength="4" readonly>
+          </div>
+        </div>
+      </section>
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>주민등록번호 상 생년월일, 전화번호, 동일숫자의 연속(예:111등), 연속번호(예:1234등)는 비밀번호로 등록할 수 없습니다.</li>
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="">취소</button>
+				<button type="button" class="sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

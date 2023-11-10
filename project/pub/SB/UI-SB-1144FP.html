@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-1144FP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(fullA);
+			// popOpen(cp);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>송금확인</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(fullA);" class="popOpen">송금확인 상세 팝업</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP -->
+		<div id="fullA" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">송금확인</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div class="pgTitWrap">
+								<p class="pTit"><strong>김수현</strong>님께 <strong>120,567,000원</strong>을<br>송금하시겠습니까?</p>
+							</div>
+
+							<!-- [2022-11-09] 윤지현: UI변경으로 마크업추가 -->
+							<div class="listTblBox complete">
+								<ul>
+									<li>
+										<span class="tit">보낼금액</span>
+										<p class="txt"><strong class="dataWrap"><em class="data">12,567,000</em><span class="unit">원</span></strong></p>
+									</li>
+									<li>
+										<span class="tit">받는분 휴대전화</span>
+										<p class="txt">01012341234</p>
+									</li>
+									<li>
+										<span class="tit">받는분</span>
+										<p class="txt pColor">김수현</p>
+									</li>
+								</ul>
+							</div>
+							<!-- //[2022-11-09] 윤지현: UI변경으로 마크업추가 -->
+
+							<!-- listTbl -->
+							<div class="listTbl">
+								<ul>
+									<!-- [2022-11-09] 윤지현: UI변경으로 마크업삭제 -->
+									<li>
+										<div class="listIn_flex">
+											<span class="tit alignTop">출금계좌</span>
+											<p class="txt"> <!-- [2022-11-10] 윤지현: 클래스삭제 -->
+												<span>NH농협</span>
+												<span>123-1234-1234-12</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">받는계좌에 표시</span>
+											<p class="txt">김수현</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">내계좌에 표시</span>
+											<p class="txt">김수현</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">거래메모</span> <!-- [2023-03-31] 김연진:문구수정 -->
+											<p class="txt">용돈</p>
+										</div>
+									</li>
+									<!-- ▼ 2022-07-20 비노출 처리 -->
+									<!-- <li>
+										<div class="listIn_flex">
+											<span class="tit">경조메시지</span>
+											<p class="txt">축결혼</p>
+										</div>
+									</li> -->
+								</ul>
+							</div>
+
+							<div class="btmInfoWrap">
+								<strong class="tit">확인사항</strong>
+								<ul class="listDot">
+									<li>예금주명과 받는분 이름이 일치해야만 송금받기가 가능합니다.</li>
+									<!-- [2023-02-14] 콕뱅크 송금 수수료 면제 정책 적용 : 김연진 <li>수취인의 계좌 및 송금액에 따라 수수료가 부과될 수 있습니다.</li> -->
+									<li class="pColor">착오송금 예방을 위해 송금정보를 확인하시기 바랍니다.</li>
+								</ul>
+							</div>
+
+							<section class="section40">
+								<div class="titWrap">
+									<strong class="title">보이스피싱</strong>
+									<small><a href="javascript:;" role="button">유의안내<span class="icon">&#xE001;</span></a></small>
+								</div>
+							</section>
+						</div>
+						<div class="popFootBox">
+							<span class="toastMessage">[송금]선택시 전자서명과 동시에 송금됩니다.</span>
+							<div class="btnArea">
+								<button class="">취소</button>
+								<button class="sel">송금</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CL-1210</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">  <!-- [2023-05-08] 콕모임 수정 -->
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>모임원 관리</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="tabWrap oneDepth CLselMember">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" class="active">참여중</a>
+					<a href="javascript:;" role="tab">대기중</a>
+				</div>
+				<div class="tabPanelList">
+					<div role="tabpanel" class="tabPanel show">
+						<div class="CLInfoWrap">
+							<div class="balloon">
+								<p class="dil">참여중인 모임원이 <strong>총 101명</strong> 있어요.
+									<!-- tooltip -->
+									<div class="tooltipWrap">
+										<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+										<div class="tooltipCont">
+											<strong class="tit">모임원</strong>
+											<ul class="listDot">
+												<!-- [2023-06-28] 콕모임 : 0626 문구수정 피드백 반영 -->
+												<li>모임별 초대할 수 있는 모임원은 최대 <em class="pColor">100명</em>이며, 최대 참여 인원은 모임주 포함 총 101명입니다. </li>
+												<li>모임주의 계좌번호와 실명은 모임원들에게 모두 공개되며, 모임원은 모임개설일 이후 <em class="pColor">모든 거래내역 및 잔액</em>을 조회할 수 있습니다. </li>
+											</ul>
+											<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+										</div>
+									</div>
+									<!-- //tooltip -->
+								</p>
+							</div>
+							<div class="allCheck">
+								<input type="checkbox" name="agreeChk" id="aggrChk00" class="jsTgBtn" aria-expanded="true">
+								<label for="aggrChk00">전체 선택</label>
+							</div>
+						</div>
+
+						<div class="CLMListWrap">
+							<ul>
+								<li class="memberOwner">
+									<span class="name">김농협</span>
+									<span class="date">2025.03.01 개설</span>
+								</li>
+								<li>
+									<span class="name">
+										<span class="allCheck">
+											<input type="checkbox" name="agreeChk" id="aggrChk01" class="jsTgBtn" aria-expanded="true">
+											<label for="aggrChk01">김농협</label>
+										</span>
+									</span>
+									<span class="date">2025.03.01 가입</span>
+								</li>
+								<li>
+									<span class="name">
+										<span class="allCheck">
+											<input type="checkbox" name="agreeChk" id="aggrChk02" class="jsTgBtn" aria-expanded="true">
+											<label for="aggrChk02">김농협</label>
+										</span>
+									</span>
+									<span class="date">2025.03.01 가입</span>
+								</li>
+								<li>
+									<span class="name">
+										<span class="allCheck">
+											<input type="checkbox" name="agreeChk" id="aggrChk03" class="jsTgBtn" aria-expanded="true">
+											<label for="aggrChk03">김농협</label>
+										</span>
+									</span>
+									<span class="date">2025.03.01 가입</span>
+								</li>
+							</ul>
+						</div>
+
+						<!--조회결과가 없을 경우-->
+						<!-- <div class="noData type4">
+							<i class="check"></i>
+							<p class="tit">참여중인 모임원이 없어요</p>
+							<p class="txt">모임원을 초대해 보세요.</p>
+						</div> -->
+						<!--//조회결과가 없을 경우-->
+
+						<div id="footer_cont">
+							<div class="btnArea">
+								<button type="button" class="btn_full sel">모임 내보내기</button>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tabPanel">
+						<!--조회결과가 없을 경우-->
+						<div class="noData type2">
+							<i class="check"></i>
+							<p class="tit">참여중인 모임원이 없어요</p>
+							<p class="txt">모임원을 초대해 보세요.</p>
+						</div>
+						<!--//조회결과가 없을 경우-->
+						<div id="footer_cont">
+							<div class="btnArea">
+								<button type="button" class="btn_full sel">모임 초대하기</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+</div>
+
+</body>
+</html>

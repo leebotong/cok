@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>UI-MM-0110</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>다른금융계좌 등록</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<!-- [2022-06-30]디자인변경 -->
+			<div class="jsTgWrap">
+				<div class="allCheckTopBox addArrow bgNone" style="margin-top:28px;">
+					<input type="checkbox" name="agreeChk" id="aggrChk10" class="jsTgBtn">
+					<label for="aggrChk10">약관 전체동의</label>
+					<!-- <a href="#none" class="termsArrow" role="button" title="약관상세보기 팝업열림">&#xE001;</a> -->
+				</div>
+
+				<div class="allCheckBox" style="display:block">
+					<div class="termsHead">
+						<p>상품안내 및 이용약관</p>
+					</div>
+					<ul class="termsList">
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk01">
+								<label for="aggrChk01">[필수] 오픈뱅킹 서비스 이용약관</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk02">
+								<label for="aggrChk02">[필수] 오픈뱅킹 출금/조회 약관</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk03">
+								<label for="aggrChk03">[필수] 개인(신용)정보 수집 및 이용동의</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk04">
+								<label for="aggrChk04">[필수] 금융거래정보제공 동의</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk05">
+								<label for="aggrChk05">[필수] 계좌통합관리서비스 약관(어카운트인포)</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk06">
+								<label for="aggrChk06">[필수] 농·축협 오픈뱅킹가입 시 등록한 계좌를 채널별 통합하여 관리하는데 동의합니다.</label> <!-- [2023-05-10] 오픈뱅킹 문구수정 : 농협중앙회 -> 농축협 --> <!-- [2023-05-12] 오픈뱅킹 문구수정 : 농축협 -> 농·축협 -->
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk07">
+								<label for="aggrChk07">[선택] 개인신용정보 수집 및 이용동의(오픈뱅킹용)</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="allAgreeCont">
+				<p class="defTit2 wide">오픈뱅킹 관련 금융(거래)정보 제공내역을 받으실 이메일을 입력해주세요.</p>
+				<div class="formItem">
+					<div class="formGroup">
+						<div class="inpText">
+							<input type="tel" title="아이디" value class="tyTxt" placeholder="E-MAIL">
+						</div>
+						<span class="etc">@</span>
+						<div class="inpSel">
+							<a href="javascript:;" title="도메인 선택" role="button" class="btnSel placeholder">선택</a>
+						</div>
+					</div>
+					<div class="inpText">
+						<input type="text" title="이메일주소 직접입력" value class="tyTxt" placeholder="직접입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxt">소중한 금융정보 보호를 위해 반드시 올바른 이메일 주소를 입력해주세요.</p>
+				</div>
+
+				<div class="formItem jsTgWrap">
+					<strong class="formTit inpChk">
+						<input type="checkbox" name="chk10" id="chk101" class="jsTgBtn">
+						<label for="chk101">권유직원이 있어요. (선택)</label>
+					</strong>
+					<!-- 권유직원 선택시 노출 -->
+					<div class="jsTgCont formExpBox">
+						<div class="formWrap">
+							<div class="formGroup mt0">
+								<div class="inpText">
+									<input type="text" title="권유직원" class="tyTxt" value placeholder="권유직원 입력" readonly>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //권유직원 선택시 노출 -->
+				</div>
+			</div>
+			<!-- [2022-06-30]디자인변경 -->
+      <div class="btmInfoWrap">
+        <strong class="tit">확인사항</strong>
+        <ul class="listDot">
+          <li>고객님 고객정보에 등록된 이메일 주소가 자동으로 노출되며, 해당 이메일 주소는 농·축협 오픈뱅킹 가입용도로만 사용됩니다.</li> <!-- [2023-05-10] 오픈뱅킹 문구수정 : 농협중앙회 -> 농축협 --> <!-- [2023-05-12] 오픈뱅킹 문구수정 : 농축협 -> 농·축협 -->
+          <li>입력하신 이메일 주소는 고객님의 고객정보에 반영되지 않으며, 회원정보에 등록된 고객정보(이메일) 수정을 원하신다면 가까운 영업점 또는 스마트뱅킹을 이용하셔야 합니다.</li>
+        </ul>
+      </div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">동의</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

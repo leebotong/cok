@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1213-01</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../js/modernizr.custom.min.js"></script>
+	<script>
+		$(function(){
+			popOpen(popupA);
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>빠른송금 편집</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(popupA);">빠른송금 편집</a>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont"></div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+<!-- //#wrap -->
+
+<div id="popArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<!-- ###########################################
+					# 2022-08-22 페이지 기획/디자인 변경으로 전체적으로 변경 되었음
+					############################################ -->
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">빠른송금 편집</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="pgTitWrap">
+							<p class="pTit"><strong>빠른송금</strong> 목록을 간편하게<br><strong>순서변경 및 삭제</strong>할 수 있어요.</p><!-- [2022-11-09] 윤지현:문구수정 -->
+							<!-- <ul class="listDot">
+								<li>자유롭게 순서 변경 및 삭제할 수 있습니다.</li>
+							</ul> [2022-11-09] 윤지현:삭제 -->
+						</div>						
+						<!-- menuListSetting -->
+						<div class="menuListSetting">
+
+							<div class="switchWrap">
+								<div class="btns">
+									<!-- [2022-11-10] 윤지현:버튼순서변경 -->
+									<button type="button" class="btnSm">전체삭제</button>
+									<button type="button" class="btnSm">삭제</button>
+								</div>
+								<div class="formHolder switchType">
+									<input type="checkbox" name="majorAccount" id="customSwitches" class="inptSwitch">
+									<label for="customSwitches" class="swch"><span class="blind">drag로 목록순서 변경</span></label>
+								</div>
+							</div>
+
+							<!-- dragItem -->
+							<div class="item dragItem transferNickName">
+								<ul class="transferView typeRoundBox menuSetUp">
+								</ul>
+								<ul aria-live="polite" id="sortable" class="transferView typeRoundBox menuSetUp ui-sortable">
+									<li>
+										<div class="inr">
+											<!-- 2022-08-22 -->
+											<div class="inpChk">
+												<input type="checkbox" id="chk01">
+												<label for="chk01"><span class="blind">선택</span></label>
+											</div>
+											<!-- //2022-08-22 -->
+											<div class="layoutWrap">
+												<div class="nickNameImg">
+													<img src="../../images/cont/@temp_ico_nickpic.png" alt class>
+												</div>
+												<div class="nickNameWrap">
+													<span class="nickNameName">등산모임</span>
+													<!-- <span class="accBank">[NH농협]</span> --><span class="num">532-1981-4190-93</span>
+												</div>
+											</div>
+											<p class="nickPayment">100,000원</p>
+											<div class="btnSetWrap ui-sortable-handle">
+												<button type="button" class="btnSetList"><span class="blind">드래그 방식하여 순서 변경</span></button>
+											</div>
+										</div>
+									</li>
+									<li class="active">
+										<div class="inr">
+											<!-- 2022-08-22 -->
+											<div class="inpChk">
+												<input type="checkbox" id="chk11">
+												<label for="chk11"><span class="blind">선택</span></label>
+											</div>
+											<!-- //2022-08-22 -->
+											<div class="layoutWrap">
+												<div class="nickNameImg">
+													<img src="../../images/cont/@temp_ico_nickpic.png" alt class>
+												</div>
+												<div class="nickNameWrap">
+													<span class="nickNameName">등산모임</span>
+													<span class="accBank">[기업]</span><span class="num">5322918283292</span>
+												</div>
+											</div>
+											<p class="nickPayment">100,000원</p>
+											<div class="btnSetWrap ui-sortable-handle">
+												<button type="button" class="btnSetList"><span class="blind">드래그 방식하여 순서 변경</span></button>
+											</div>
+										</div>
+									</li>
+									<li class="empty">
+										<div class="inr">
+											<!-- 2022-08-22 -->
+											<div class="inpChk">
+												<input type="checkbox" id="chk12" disabled>
+												<label for="chk12"><span class="blind">선택</span></label>
+											</div>
+											<!-- //2022-08-22 -->
+											<div class="layoutWrap">
+												<div class="nickNameImg">
+													<img src="../../images/cont/@temp_ico_nickpic.png" alt class>
+												</div>
+												<div class="nickNameWrap">
+													<span class="nickNameName">등산모임</span>
+													<span class="accBank">[기업]</span><span class="num">5322918283292</span>
+												</div>
+											</div>
+											<p class="nickPayment">100,000원</p>
+											<div class="btnSetWrap ui-sortable-handle">
+												<button type="button" class="btnSetList"><span class="blind">드래그 방식하여 순서 변경</span></button>
+											</div>
+										</div>
+									</li>
+									<!-- 2022-08-24 영역이동 -->
+									<li>
+										<div class="inr">
+											<!-- 2022-08-22 -->
+											<div class="inpChk">
+												<input type="checkbox" id="chk01">
+												<label for="chk01"><span class="blind">선택</span></label>
+											</div>
+											<!-- //2022-08-22 -->
+											<div class="layoutWrap">
+												<div class="nickNameImg">
+													<img src="../../images/cont/@temp_ico_nickpic.png" alt class>
+												</div>
+												<div class="nickNameWrap">
+													<span class="nickNameName">등산모임</span>
+													<!--<span class="accBank">[농협]</span>--><span class="num">532-1981-4190-93</span>
+												</div>
+											</div>
+											<p class="nickPayment">100,000원</p>
+											<div class="btnSetWrap upDown">
+												<button type="button" class="btnSetDown off"><span class="blind">하단으로 이동</span></button>
+												<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="inr">
+											<!-- 2022-08-22 -->
+											<div class="inpChk">
+												<input type="checkbox" id="chk02">
+												<label for="chk02"><span class="blind">선택</span></label>
+											</div>
+											<!-- //2022-08-22 -->
+											<div class="layoutWrap">
+												<div class="nickNameImg">
+													<img src="../../images/cont/@temp_ico_nickpic.png" alt class>
+												</div>
+												<div class="nickNameWrap">
+													<span class="nickNameName">등산모임</span>
+													<span class="accBank">[기업]</span><span class="num">5322918283292</span>
+												</div>
+											</div>
+											<p class="nickPayment">100,000원</p>
+											<div class="btnSetWrap upDown">
+												<button type="button" class="btnSetDown off"><span class="blind">하단으로 이동</span></button>
+												<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+											</div>
+										</div>
+									</li>
+									<li class="empty">
+										<div class="inr">
+											<!-- 2022-08-22 -->
+											<div class="inpChk">
+												<input type="checkbox" id="chk03" disabled>
+												<label for="chk03"><span class="blind">선택</span></label>
+											</div>
+											<!-- //2022-08-22 -->
+											<div class="layoutWrap">
+												<div class="nickNameImg">
+													<img src="../../images/cont/@temp_ico_nickpic.png" alt class>
+												</div>
+												<div class="nickNameWrap">
+													<span class="nickNameName">등산모임</span>
+													<span class="accBank">[기업]</span><span class="num">5322918283292</span>
+												</div>
+											</div>
+											<p class="nickPayment">100,000원</p>
+											<div class="btnSetWrap upDown">
+												<button type="button" class="btnSetDown off"><span class="blind">하단으로 이동</span></button>
+												<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+											</div>
+										</div>
+									</li>
+									<!-- //2022-08-24 영역이동 -->
+								</ul>
+							</div>
+							<!-- //dragItem -->
+							
+							<!-- 2022-08-24 영역이동 -->
+							<!-- listItem -->
+							<!-- <div class="item listItem transferNickName">
+								<ul class="transferView typeRoundBox menuSetUp">
+								</ul>
+								<ul aria-live="polite" class="transferView typeRoundBox menuSetUp">
+									<li>
+										<div class="inr">
+											
+											<div class="inpChk">
+												<input type="checkbox" id="chk01">
+												<label for="chk01"><span class="blind">선택</span></label>
+											</div>
+											
+											<div class="layoutWrap">
+												<div class="nickNameImg">
+													<img src="../../images/cont/@temp_ico_nickpic.png" alt class>
+												</div>
+												<div class="nickNameWrap">
+													<span class="nickNameName">등산모임</span>
+													<span class="accBank">[농협]</span><span class="num">532-1981-4190-93</span>
+												</div>
+											</div>
+											<p class="nickPayment">100,000원</p>
+											<div class="btnSetWrap upDown">
+												<button type="button" class="btnSetDown off"><span class="blind">하단으로 이동</span></button>
+												<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="inr">
+											
+											<div class="inpChk">
+												<input type="checkbox" id="chk02">
+												<label for="chk02"><span class="blind">선택</span></label>
+											</div>
+											
+											<div class="layoutWrap">
+												<div class="nickNameImg">
+													<img src="../../images/cont/@temp_ico_nickpic.png" alt class>
+												</div>
+												<div class="nickNameWrap">
+													<span class="nickNameName">등산모임</span>
+													<span class="accBank">[기업]</span><span class="num">5322918283292</span>
+												</div>
+											</div>
+											<p class="nickPayment">100,000원</p>
+											<div class="btnSetWrap upDown">
+												<button type="button" class="btnSetDown off"><span class="blind">하단으로 이동</span></button>
+												<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+											</div>
+										</div>
+									</li>
+									<li class="empty">
+										<div class="inr">
+											
+											<div class="inpChk">
+												<input type="checkbox" id="chk03" disabled>
+												<label for="chk03"><span class="blind">선택</span></label>
+											</div>
+											
+											<div class="layoutWrap">
+												<div class="nickNameImg">
+													<img src="../../images/cont/@temp_ico_nickpic.png" alt class>
+												</div>
+												<div class="nickNameWrap">
+													<span class="nickNameName">등산모임</span>
+													<span class="accBank">[기업]</span><span class="num">5322918283292</span>
+												</div>
+											</div>
+											<p class="nickPayment">100,000원</p>
+											<div class="btnSetWrap upDown">
+												<button type="button" class="btnSetDown off"><span class="blind">하단으로 이동</span></button>
+												<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div> -->
+							<!-- //listItem -->
+						</div>
+						<!-- //menuListSetting -->
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="">취소</button>
+							<button class="sel">저장</button><!-- [2022-11-09] 윤지현:문구수정 -->
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function(){
+		$("#sortable").sortable({
+			//connectWith:'.accInfoArea',
+			helper : 'clone',
+			handle:'.btnSetWrap',
+			cancel:'',
+			containment:'.menuSetUp.ui-sortable',
+			items:'li',
+			scroll:false,
+			axis : 'y'
+		});
+		$("#sortable").disableSelection();
+		$("input:checkbox[name=majorAccount]").click(function(){
+			if(!$(this).closest('.menuListSetting').hasClass('on')){
+				$(this).closest('.menuListSetting').addClass('on');
+				$(this).next().find('span').text('drag로 목록순서 변경');
+			} else {
+				$(this).closest('.menuListSetting').removeClass('on');
+				$(this).next().find('span').text('button으로 목록순서 변경');
+			}
+		});
+	});
+
+
+	(function () {
+	var Class = {
+		/* radio, checkbox 세팅 */		initCheckboxRadioOnce: function initCheckboxRadioOnce() {
+			$(document)
+				.off('click', 'input:radio, input:checkbox')
+				.on('click', 'input:radio, input:checkbox', function (e) {
+					var $input = $(this);
+					var name = $input.attr('name');
+					var id = $input.attr('id');
+					var type = $input.attr('type');
+
+					if (type == 'radio') {
+						$('input[name="' + name + '"]')
+							.each(function () {
+								var id = $(this).attr('id');
+								$('label[for="' + id + '"]').closest('.formHolder.radio:not(.noCtrl), .btnHolder.radio:not(.noCtrl)').removeClass('active');
+							});
+						$('label[for="' + id + '"]').closest('.formHolder.radio:not(.noCtrl), .btnHolder.radio:not(.noCtrl)').addClass('active');
+					} else {
+						if (!$input.closest('.formHolder:not(.noCtrl)').hasClass('active')) {
+							$('label[for="' + id + '"]').closest('.formHolder.check:not(.noCtrl), .formHolder.switchType:not(.noCtrl)').addClass('active');
+						} else {
+							$('label[for="' + id + '"]').closest('.formHolder.check:not(.noCtrl), .formHolder.switchType:not(.noCtrl)').removeClass('active');
+						}
+					}
+				});
+		},
+
+		/* ComUi 초기화 */
+		init: function () {
+			for (var func in Class) {
+				if (Class.hasOwnProperty(func)) {
+					if (func !== 'init' && func.indexOf('init') == 0) {
+						var $document = $(document);
+						if (func.lastIndexOf('Once') + 4 == func.length && !$document.data(func)) {
+							$document.data(func, true);
+							Class[func].call(this);
+						} else if (func.lastIndexOf('Once') + 4 != func.length) {
+							Class[func].call(this);
+						}
+					}
+				}
+			}
+		}
+	};
+	if (typeof this['ComUi'] !== 'undefined') {
+		this['ComUi']['mobile'] = Class;
+	} else {
+		this['ComUi'] = { mobile: Class };
+	}
+})();
+
+//ComUi.mobile.toast(navigator.userAgent);
+$.fn.ComUi = ComUi.mobile.init;
+$(function () {
+	var $html = $('html');
+	var $body = $('body');
+	$(document).ComUi();
+});
+</script>
+
+</body>
+</html>

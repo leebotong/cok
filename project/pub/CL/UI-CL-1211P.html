@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CL-1211P</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+		</div>
+		<h1></h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent CLselMember">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">모임원</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="CLInfoWrap">
+							<div class="balloon">
+								<p class="dil">참여중인 모임원이 <strong>총 101명</strong> 있어요.
+									<!-- tooltip -->
+									<div class="tooltipWrap">
+										<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+										<div class="tooltipCont">
+											<strong class="tit">모임원</strong>
+											<ul class="listDot">
+												<!-- [2023-06-28] 콕모임 : 0626 문구수정 피드백 반영 -->
+												<li>참여할 수 있는 모임원은 최대 <em class="pColor">100명</em>이며, 최대 참여 인원은 모임주 포함 총 101명입니다.</li>
+												<li>모임원은 모임개설일 이후 <em class="pColor">모든 거래내역 및 잔액</em>을 조회할 수 있습니다. </li>
+											</ul>
+											<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+										</div>
+									</div>
+									<!-- //tooltip -->
+								</p>
+							</div>
+							<div class="allCheck">
+							</div>
+						</div>
+						<div class="CLMListWrap">
+							<ul>
+								<li class="memberOwner">
+									<span class="name">김농협</span>
+									<span class="date">2025.03.01 개설</span>
+								</li>
+								<li>
+									<span class="name">김농협</span>
+									</span>
+									<span class="date">2025.03.01 가입</span>
+								</li>
+								<li>
+									<span class="name">김농협</span>
+									<span class="date">2025.03.01 가입</span>
+								</li>
+								<li>
+									<span class="name">김농협</span>
+									<span class="date">2025.03.01 가입</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">확인</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

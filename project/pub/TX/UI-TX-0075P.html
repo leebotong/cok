@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TX-0075P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			 popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>회원가입</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- #popupArea -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">NH포인트 캐시백</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="pgTitWrap">
+							<p class="pTit">NH포인트를 <strong>현금으로 전환</strong><br>하실 수 있습니다. </p>
+						</div>
+						<div class="listTblBox">
+							<ul>
+								<li>
+									<span class="tit">보유포인트</span>
+									<p class="txt"><strong class="dataWrap"><em class="data">3,000</em><span class="unit">P</span></strong></p>
+								</li>
+								<li>
+									<span class="tit">캐시백 가능포인트</span>
+									<p class="txt"><strong class="dataWrap"><em class="data">3,000</em><span class="unit">P</span></strong></p>
+								</li>
+							</ul>
+						</div>
+			
+						<div class="formWrap">
+							<div class="formItem">
+								<div class="formItem">
+									<strong class="formTit">전환할 포인트</strong>
+									<div class="inpText">
+										<input type="tel" title="전환할 포인트" value class="tyTxt" placeholder="캐시백 신청 포인트 입력">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+									<p class="infoTxt">NH포인트 1P는 현금 1원으로 전환하실 수 있으며, 최소 1P 이상 부터 자유롭게 캐시백 신청이 가능합니다.</p>
+								</div>
+							</div>
+							<div class="formItem">
+								<strong class="formTit">송금계좌</strong>
+								<div class="inpSel">
+									<a href="javascript:;" title="송금계좌 선택" role="button" class="btnSel placeholder">선택</a>
+								</div>
+							</div>
+						</div>
+			
+						<div class="btmInfoWrap">
+							<strong class="tit">확인사항</strong>
+							<ul class="listDot">
+								<li>신청 후 포인트 전환 취소는 불가능합니다.</li>
+								<li>신청 후 당일 신청하신 계좌에 입금됩니다.</li>
+							</ul>
+						</div>			
+
+            
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">캐시백 신청</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">확인</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //#popupArea -->
+</body>
+</html>

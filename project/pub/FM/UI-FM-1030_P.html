@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-FM-1030_P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			 popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>회원가입</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+		</div>	<!-- //#contents -->
+		<div id="footer_cont">
+		</div>	<!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>	<!-- //#wrap -->
+<style>
+
+</style>
+<!-- #popupArea -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">검색</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<section class="section20">
+							<div class="formWrap typeSrch">
+							<div class="formItem">
+								<div class="inpText"><!-- 2022-10-14 태그삭제 -->
+									<input type="text" title="검색어 입력" value class="tyTxt" placeholder="검색어를 입력하세요.">
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									<button type="button" title="검색" class="btnSearch"><span class="blind">검색</span></button><!-- 2022-10-14 마크업 변경 -->
+								</div>
+							</div>
+							</div>
+						</section>
+
+						<section>
+							<div class="searchWrap">
+							<div class="searchItem">
+								<strong class="tit">최근 검색어</strong>
+								<ul class="keywordList">
+								<li>
+									<a href="javascript:;" role="button">모드변경</a>
+									<button class="delete">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">이벤트</a>
+									<button class="delete">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">금융인증서</a>
+									<button class="delete">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">입출금알림</a>
+									<button class="delete">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">이체</a>
+									<button class="delete">삭제</button>
+								</li>
+								</ul>
+							</div>
+
+							<div class="searchItem">
+								<strong class="tit">인기 검색어</strong>
+								<div class="popularList">
+								<ul>
+									<li><span class="rank">1</span><a href="javascript:;" role="button">콕뱅킹</a></li>
+									<li><span class="rank">2</span><a href="javascript:;" role="button">조회</a></li>
+									<li><span class="rank">3</span><a href="javascript:;" role="button">이체</a></li>
+									<li><span class="rank">4</span><a href="javascript:;" role="button">이벤트</a></li>
+									<li><span class="rank">5</span><a href="javascript:;" role="button">상품가입</a></li>
+								</ul>
+								<ul>
+									<li><span class="rank">6</span><a href="javascript:;" role="button">콕뱅킹</a></li>
+									<li><span class="rank">7</span><a href="javascript:;" role="button">조회</a></li>
+									<li><span class="rank">8</span><a href="javascript:;" role="button">이체</a></li>
+									<li><span class="rank">9</span><a href="javascript:;" role="button">이벤트</a></li>
+									<li><span class="rank">10</span><a href="javascript:;" role="button">상품가입</a></li>
+								</ul>
+								</div>
+							</div>
+
+							<div class="searchItem">
+								<strong class="tit">추천 검색어</strong>
+								<div class="recommList ">
+								<ul>
+									<li><a href="javascript:;" role="button">거래내역</a> <span class="news" title="새글">NEW</span></li>
+									<li><a href="javascript:;" role="button">송금내역</a></li>
+								</ul>
+								<ul>
+									<li><a href="javascript:;" role="button">교통카드</a> <span class="news" title="새글">NEW</span></li>
+									<li><a href="javascript:;" role="button">상품가입</a></li>
+								</ul>
+								</div>
+							</div>
+							</div>
+						</section>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //#popupArea -->
+</body>
+</html>

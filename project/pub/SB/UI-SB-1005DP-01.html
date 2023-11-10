@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1005DP-01</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(dp);
+		})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>송금</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(dp);" role="button" class="popOpen">UI-SB-1005DP</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+
+		<!-- CENTER POPUP -->
+		<div id="dp" class="popupWrap center" style="display:none;">
+			<div class="layerPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popContBox">
+							<div class="Layer_Pop">
+								<div class="Layer_Tit">
+									<h2 tabindex="0">콕뱅크 1일 송금한도 안내</h2>
+								</div>
+								<div class="Layer_Con">
+									<div class="listTbl">
+										<!-- [2022-09-05] 수정 -->
+										<div class="listTit mt14 cockPass">
+											<span>콕뱅크 1일 송금(이체) 한도</span>
+											<span class="badge tspace">콕PASS 사용중</span>
+										</div>
+										<!-- //[2022-09-05] 수정 -->
+										<ul>
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">1회 송금 한도</span>
+													<span class="txt">5,000,000원</span>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<div class="tit">1일 송금 한도</div>
+													<div class="txt"><span class="dataWrap"><em class="data">5,000,000</em><span class="unit">원</span></span></div>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<div class="tit">금일 송금 합산분</div>
+													<div class="txt">500,000원</div>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<div class="tit">1일 송금 잔여한도</div>
+													<div class="txt pColor">4,500,000원</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!-- [2022-09-05] 추가 -->
+									<div class="btnInArea">
+										<button type="button" class="point">송금한도 설정</button>
+										<button type="button" class="point">송금 보안매체 설정</button>
+									</div>
+									<!-- //[2022-09-05] 추가 -->
+								</div>
+								<div class="Layer_Pop_Close">
+									<div class="btnArea">
+										<button type="button" onclick="popClose(this)" class="sel">확인</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SM-003</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_senior.css"><!-- 시니어 큰글모드 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			// toastOpen(toastA);
+			// popOpen(popupBF);
+			// popOpen(popupBA);
+			// popOpen(sp);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap" class="senior"><!-- 시니어 큰글모드 일때 class senior 추가 -->
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>큰글송금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome txtMode">큰글홈</a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu txtMode">메뉴</a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="paymentWrap">
+				<div class="twoToneType">
+					<div class="ttTop">
+						<!-- PAYMENT -->
+						<div class="accTypeWrap">
+							<span class="accInLayout">
+								<div class="accInfo">
+									<div class="accInfoInLayout">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<span class="bankBookName">송금계좌</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">농협 352-1775-6397-03</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</span>
+						</div>
+						<div class="accDataWrap">
+							<div>
+								<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+							</div>
+						</div>
+						<!-- //PAYMENT -->
+						<button type="button" class="full btnMd">다시 입력</button>
+					</div>
+					<div class="ttBottom">
+						<div class="ttContents">
+							<div class="paymentFormWrap">
+								<div class="formWrap">
+									<div class="formItem">
+										<strong class="formTit">출금 계좌</strong>
+										<div class="inpText">
+											<input type="text" title="출금 계좌" value="NH농협 123-1234-1234-12" class="tyTxt" placeholder readonly>
+											<a href="javascript:;" role="button" aria-label="계좌선택" class="accSelectBtn"></a>
+										</div>
+									</div>
+									<div class="formItem">
+										<strong class="formTit">받는계좌에 표시</strong>
+										<div class="inpText">
+											<input type="text" title="받는계좌에 표시" value="" class="tyTxt" placeholder="한글 10자 이내 입력"> <!-- [2022-11-11] 윤지현:placeholder 수정 -->
+											<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+										</div>
+									</div>
+									<div class="formItem">
+										<strong class="formTit">내계좌에 표시</strong>
+										<div class="inpText">
+											<input type="text" title="내 통장 기록사항" value class="tyTxt" placeholder="미입력 시 받는분 이름 표시"> <!-- [2022-11-01] 윤지현:placeholder 문구수정 -->
+											<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+										</div>
+									</div>
+									<div class="formItem">
+										<strong class="formTit">거래메모</strong><!-- [2023-03-31] 김연진 : 거래메모추가 -->
+										<div class="inpText">
+											<input type="text" title="송금메모 기록사항" value class="tyTxt" placeholder="한글 20자 이내 입력"> <!-- [2022-11-11] 윤지현:placeholder 수정 -->
+											<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+										</div>
+									</div>
+									<div class="formItem">
+										<!-- [2022-10-12] 김자영: 마크업 수정 -->
+										<strong class="formTit">경조금메시지
+											<div class="tooltipWrap">
+												<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+												<div class="tooltipCont">
+													경조금 메시지는 농협 계좌간 송금 시에만 선택할 수 있으며, 받는분의 통장에 기록 됩니다.
+													<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+												</div>
+											</div>
+										</strong>
+										<div class="inpText">
+											<input type="text" title="받는 통장 기록사항" value="" class="tyTxt" placeholder="받는분 통장에 기록" readonly>
+											<button type="button" title="입력 텍스트 삭제" class="btnReset" style="display:block;"></button>
+											<a href="javascript:;" role="button" class="btnSm">선택</a>
+										</div>
+										<!-- // [2022-10-12] 김자영: 마크업 수정  -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="sel">다음</button>
+			</div>
+		</div>
+	</div> <!-- //#container -->
+</div> <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- TOAST POPUP -->
+	<div class="toastPopWrap">
+		<div role="alert" aria-atomic="true" aria-hidden="true" aria-live="assertive" id="toast1" class="toastPop fade hide">
+			<span class="toastMessage"><!-- message --></span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

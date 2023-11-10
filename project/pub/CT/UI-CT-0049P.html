@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0049P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);	
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>이용약관</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">약관 설명서</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<!-- 약관 내용 -->
+						<div class="terms">
+							<h3 class="termsTit">개인정보 제3자 제공 동의</h3>
+							<h4 class="termsSubTit">농협은행 주식회사 귀중</h4>
+							<p>귀 은행과의 『계좌이체PG 모바일직불결제』 와 관련하여 귀 은행이 본인의 개인정보를 제3자에게 제공하고자 하는 경우에는 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 및 「개인정보보호법」 제15조 제1항 제1호, 제24조 제1항 제1호에 따라 본인의 동의가 필요합니다.</p>
+							<table>
+									<caption>개인정보를 제공받는자,제공받는자의 이용목적, 제공할 개인정보의 항목으로 제공된 테이블</caption>
+									<colgroup>
+											<col width="*">
+									</colgroup>					
+									<tbody>
+										<tr>
+											<th scope="col">제공받는 자</th>	
+											<th scope="col">제공받는 자의 <br>이용목적</th>	
+											<th scope="col">제공할 <br>개인정보의 항목</th>	
+										</tr>
+										<tr>
+											<td>금융결제원</td>
+											<td>모바일 직불결제 서비스 제공 및 현금영수증 발급</td>	
+											<td>생년월일, 휴대폰번호</td>	
+										</tr>
+										<tr>
+											<th scope="col" colspan="3">제공받는 자의 개인정보 보유·이용기간</th>	
+										</tr>		
+										<tr>
+											<td colspan="3">
+												개인정보는 제공된 날로부터 동의 철회 시 또는 제공된 목적을 달성할 때까지 보유·이용됩니다. 
+												동의 철회 또는 제공된 목적 달성 후에는 위에 기재된 이용 목적과 관련된 사고 조사, 분쟁 해결, 민원처리, 법령상 의무이행 등을 위하여 필요한 범위 내에서만 보유·이용됩니다.
+											</td>
+										</tr>
+										<tr>
+												<th scope="col" colspan="3">동의를 거부할 권리 및 그에 따른 불이익의 내용</th>	
+										</tr>		
+										<tr>
+												<td colspan="3">위 개인정보의 제공에 대한 동의를 거부할 권리가 있습니다. 다만, 동의하지 않는 경우 모바일직불결제 서비스 사용 및 현금영수증 신고업무 등 관련업무 처리에 제한을 받을 수 있습니다.</td>
+										</tr>
+									</tbody>
+							</table>
+							<p>위와 같이 개인정보를 제공하는 것에 동의합니다.</p>
+						</div>
+						<!-- 약관 내용 END -->
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">확인</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

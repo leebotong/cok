@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0040PT</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function () {
+			popOpen(popupA);
+		})
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>외화주머니에서 꺼내기</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(popupA);">외화주머니에서 꺼내기_PT</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- [2022-08-16] 김자영 : 풀팝업으로 마크업 변경 -->
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP -->
+		<div id="popupA" class="popupWrap full">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">외화주머니에서 꺼내기</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div class="tabWrap oneDepth">
+								<div role="tablist" class="tabList">
+									<a href="javascript:;" role="tab" class="active">외화로 꺼내기<br>(영업점에서 수령)</a>
+									<a href="javascript:;" role="tab">원화로 꺼내기<br>(내계좌로 입금)</a>
+								</div>
+							</div>
+							<div class="pgTitWrap">
+								<p class="pTit">외화 수령 <strong>영업점</strong> 및 <strong>수령일자</strong>를<br>선택해주세요.</p>
+							</div>
+
+							<div class="listTblBox">
+								<ul>
+									<li>
+										<span class="tit">외화 수령금액</span>
+										<p class="txt"><strong class="dataWrap"><span class="unit">USD</span><em
+													class="data">100.00</em><span class="unit">달러</span></strong></p>
+									</li>
+									<li>
+										<span class="tit">환전번호</span>
+										<p class="txt">DM293848237482</p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="formWrap">
+								<div class="formItem">
+									<strong class="formTit defTit2">외화 수령 영업점</strong>
+									<div class="boxRdoGroup">
+										<div class="inpChk">
+											<input type="radio" onclick="javascript:popOpen(popupA);" name="radio7" id="radio71">
+											<!--[2022-07-18] 이경아 : 팝업 추가-->
+											<label for="radio71">영업점 검색</label>
+										</div>
+										<div class="inpChk">
+											<input type="radio" name="radio7" id="radio72">
+											<label for="radio72">나의 계좌 관리지점</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<section class="section30">
+								<p class="defTit2 ac">최근 외화 수령을 신청하신 영업점이 있다면<br>해당 영업점으로 다시 선택 가능해요.</p>
+							</section>
+							<div class="btnInArea mt30">
+								<a href="javascript:;" title="펼치기" role="button" class="jsShowBtn">최근 신청 영업점 불러오기</a>
+								<!--[2022-07-18] 이경아 :버튼 수정-->
+							</div>
+							<p class="infoTxt">방문 전 수령하고자 하는 통화 보유 여부를 반드시 확인 후 방문해주세요.</p>
+
+							<hr class="divingLine">
+
+							<div class="hideBox">
+								<!--[2022-07-18] 이경아 :div 추가 -->
+								<div class="listTblBox">
+									<ul>
+										<li>
+											<span class="tit">영업점</span>
+											<p class="txt">안양원예농협 인덕원역지점</p>
+										</li>
+										<li>
+											<span class="tit">전화번호</span>
+											<p class="txt"><a href="tel:031-456-7893;" role="button" class="btnLinkText">031-456-7893</a></p>
+											<!-- [2022-08-08] 이경아 : 전화번호 수정 -->
+										</li>
+										<li>
+											<span class="tit">보유외화</span>
+											<p class="txt">미국달러(USD)/일본<br>엔화(JPY)/유럽연합<br>유로(EUR)/중국 위안(CNY)</p>
+										</li>
+										<!-- [2022-09-07] 김자영 : 외화 미보유일 경우 -->
+										<li>
+											<span class="tit">보유외화</span>
+											<p class="txt">보유외화 없음</p>
+										</li>
+										<!--// [2022-09-07] 김자영 : 외화 미보유일 경우 -->
+									</ul>
+								</div>
+								<p class="infoTxt">방문 전 수령하고자 하는 통화 보유 여부를 반드시 확인 후 방문해주세요.</p>
+							</div>
+
+							<div class="formWrap">
+								<div class="formItem">
+									<strong class="formTit">외화수령일</strong>
+									<div class="inpSel">
+										<a href="javascript:;" title="조회 기준일 선택" role="button" class="btnSelDate placeholder">기준일 선택</a>
+									</div>
+								</div>
+								<div class="formItem">
+									<strong class="formTit">휴대전화번호</strong>
+									<div class="formGroup flex46">
+										<div class="inpSel">
+											<a href="javascript:;" title="휴대폰번호 앞자리 선택" role="button" class="btnSel">010</a>
+										</div>
+										<div class="inpText">
+											<input type="tel" title="휴대폰번호" class="tyTxt" value placeholder="'-'없이 입력">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button type="button" class="btn_full">취소</button>
+								<button type="button" class="btn_full sel">신청</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업
+								닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// [2022-08-16] 김자영 : 풀팝업으로 마크업 변경 -->
+</body>
+
+</html>

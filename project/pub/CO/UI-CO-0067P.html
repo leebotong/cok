@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CO-0067P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button" class="popOpen">팝업열기</a>
+			
+		</div>  <!-- //#contents -->
+		
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0"><span class="blind">팝업</span></h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="pgTitWrap">
+							<p class="pTit">안전한 금융 거래를 위해<br><strong>악성정보 탐지기능 설정</strong>에 대한<br>동의가 필요해요.</p>
+							<ul class="listDot">
+								<li>NH 콕뱅크 앱은 전자금융거래 사고방지를 위해<br>악성정보 탐지기능을 제공하고 있으며 이를 실행하기<br>위해선 고객님의 동의가 필요합니다.</li>
+							</ul>
+						</div>
+
+						<div style="margin-top:30px;padding-top:30px;background:#fcf3f3;height:100px;width:100%;text-align:center;color:#ea4956">
+							update
+						</div>
+						
+						<p class="defTit2">악성정보 탐지기능 이란?</p>
+						<ul class="listDot">
+							<li>단말기에 설치된 금융위험앱, 플레이스토어 미등록앱,
+								위변조앱을 탐지하고 루팅여부를 확인하여
+								전자금융거래 사고를 사전에 방지하는 기능입니다.</li>
+						</ul>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="">동의안함</button>
+							<button class="sel">동의</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

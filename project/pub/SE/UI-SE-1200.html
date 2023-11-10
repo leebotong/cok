@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SE-1200</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>로그인 설정</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<!-- 2022-10-07 수정 -->
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>기본 로그인방식</strong>을<br>설정해주세요.</p>
+				<ul class="listDot">
+					<li>설정하신 로그인방식을<br>기본 로그인방식으로 지정합니다.</li>
+				</ul>
+			</div>
+			<!-- //2022-10-07 수정 -->
+			<section class="section30">
+				<div class="loginSelect setting boxType">  <!--[2022-07-13] 이경아 : 클래스추가-->
+					<ul class="listWrap textType">
+						<li><a href="javascript:;" title role="button" class="jsSelectLink">간편비밀번호</a></li>
+						<li><a href="javascript:;" title="선택됨" role="button" class="jsSelectLink active">지문인증</a></li> <!--[2022-07-26] 이경아 : 지문, Face ID 하나로 수정-->  <!-- [2023-04-17] 로그인 설정 기능 추가 : 변경 -->
+						<li class="finger"><a href="javascript:;" title="선택됨" role="button" class="jsSelectLink active"> Face ID 또는 지문</a></li>
+						<li><a href="javascript:;" title role="button" class="jsSelectLink">금융인증서</a></li>
+						<li><a href="javascript:;" title role="button" class="jsSelectLink">공동인증서</a></li>
+						<li><a href="javascript:;" title role="button" class="jsSelectLink">미설정</a></li>
+					</ul>
+				</div>
+			</section>
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class="btn_full sel">변경사항 적용</button>
+				</div>
+			</div>  <!-- //#footer_cont -->
+		</div>  <!-- //#contents -->
+	</div> <!-- //#container -->
+</div><!-- //#wrap -->
+</body>
+</html>
+

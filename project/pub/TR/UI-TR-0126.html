@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-0110</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		<!--
+			$(document).ready(function(){
+				// 기존스크립트 유지
+				// $('.pointBox').attr('aria-hidden', true);
+				//Switch_Toggle
+				$('#Switch_btn').on("click", function(e){
+					var _move_off = $('#Switch_btn').position().left;
+
+					if(_move_off == 4){
+						$(this).animate({left:"28"},100).css('box-shadow','2px 2px 12px #09515e');
+						$(this).parent('.Switch_bg').addClass('toggle');
+					}else{
+						$(this).animate({left:"4"},100).css('box-shadow','2px 2px 12px #ccc');
+						$('.Switch_bg').removeClass('toggle');
+					}
+				});
+				//목표금액 선택
+				jQuery('.golBox a').on('click',function(){
+					var cnt = jQuery(this).attr('class').substr(-1),
+							heiCnt = cnt*55-18;
+							jQuery('.moneyGrpBox .pointBox').addClass('on');
+							jQuery('.golBox .tipBox').hide();
+					jQuery('.golBox .btnPrice').removeClass('on');
+					jQuery('.golBox .btnPrice i').text('');
+					jQuery(this).addClass('on');
+					jQuery(this).find('i').text('해당 목표금액 달성 시 우대금리를 드려요');
+					jQuery('.inTxt .point').removeClass('on').removeClass('over');
+					jQuery('.inTxt .point.p'+cnt).addClass('on').find('i').text('우대금리');
+					jQuery('.inTxt .inGrp').animate({'height':heiCnt+'px'},500,function(){
+					});
+
+					// ===========================
+					// [S]A11y ▼ 2022-06-21 추가
+					// ===========================
+					jQuery('.inTxt .point').removeAttr('id');
+					jQuery('.inTxt .point.p'+cnt).prop('id', 'targetActive');
+
+					const GET_TEXT  = jQuery('#targetActive').text();
+					const GET_POINT = GET_TEXT.slice(4, -1);
+					const SET_TEXT  = '해당 목표금액 달성 시 우대금리<span class="blind"> ' + GET_POINT + '</span>를 드려요';
+					// console.log(SET_TEXT);
+					jQuery(this).find('i').html(SET_TEXT);
+					// ===========================
+					// [E]A11y
+					// ===========================
+
+					for (var i=1; i<= cnt ; i++ ){
+						//console.log(cnt+"===="+i);
+						jQuery('.inTxt .point.p'+i).addClass('over');
+					}
+				});
+				//마이 포켓 안내팝업
+				jQuery('.btnMoneyBoxPop').on('click',function(){
+					jQuery('#moneyBoxInfoPop').show();
+				});
+				//마이 포켓 안내팝업 닫기
+				jQuery('.btnMoneyBoxPopClose').on('click',function(){
+					jQuery('#moneyBoxInfoPop').hide();
+				});
+
+			});
+		//-->
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>마이 포켓 관리</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<!-- ▼ 2022-07-01 point 마크업 수정 -->
+				<div class="pgTitWrap">
+					<p class="pTit"><strong>목표금액 달성</strong>하고<br>우대금리 받으세요.</p>
+					<ul class="listDot">
+						<li>마이 포켓 설정은 변경 가능하며<br>목표금액을 달성하시면 우대금리를 드립니다.</li>
+					</ul>
+				</div>
+
+				<!-- ▼ 2022-07-01 textItem 추가 및 마크업 수정 -->
+				<div class="layoutWrap textItem">
+					<p class="tit">마이 포켓 사용</p>
+					<div class="toggleSwitch">
+						<input type="checkbox" id="switchS">
+						<label for="switchS"></label>
+					</div>
+				</div>
+
+				<section class="section30">
+					<div class="relative">
+						<!-- ▼ 2022-07-01 마크업 수정 -->
+						<span class="fSmall">우대금리 및 목표금액(평잔액)
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<strong class="tit">우대금리 및 목표금액(평잔액)</strong>
+									<p>결산시점(3월, 6월, 9월, 12월의 넷째 토요일)을 기준으로 평잔액이 선택한 목표금액을 달성할 경우 우대금리를 제공합니다.(단 선택한 목표금액까지만 우대금리가 적용되며 초과금액에 대해서는 기본금리로 적용됩니다.)</p>
+									<p>목표금액을 달성하지 못할 경우 기본금리가 적용 됩니다.</p>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->
+						</span>
+					</div>
+
+					<section class="section30">
+						<div class="moneyBoxSetArea">
+							<div class="moneyGrpBox">
+								<div class="pointBox">
+									<div class="inTxt">
+										<div class="inGrp"></div>
+										<span>우대금리</span>
+										<p class="point p5"><i></i>2.3%p</p>
+										<p class="point p4"><i></i>1.7%p</p>
+										<p class="point p3"><i></i>1.2%p</p>
+										<p class="point p2"><i></i>0.8%p</p>
+										<p class="point p1"><i></i>0.5%p</p>
+									</div>
+								</div>
+							</div>
+							<div class="golBox">
+								<strong>목표금액<i>(평잔액)</i></strong>
+								<a href="#nolink" class="btnPrice p5">500만<i></i></a>
+								<a href="#nolink" class="btnPrice p4">300만<i></i></a>
+								<a href="#nolink" class="btnPrice p3">100만<i></i></a>
+								<a href="#nolink" class="btnPrice p2">50만<i></i></a>
+								<a href="#nolink" class="btnPrice p1">30만<i></i></a>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<div class="btmInfoWrap">
+					<strong class="tit">확인사항</strong>
+					<ul class="listDot">
+						<li>선택한 마이 포켓의 목표금액(평잔액)은 결산시점(3월, 6월, 9월, 12월의 넷째 토요일) 평잔액 기준으로 산출합니다.
+							(평잔액 계산식=이자계산기준일까지 일별 잔액의 합/이자 계산일수)</li>
+						<li>결산시점의 평잔액이 선택한 목표금액(평잔액)이상일 경우 우대금리를 제공합니다.</li>
+						<li>마이 포켓 목표금액 변경은 자유롭게 설정이 가능합니다.</li>
+					</ul>
+				</div>
+			</div> <!-- //#contents -->
+			<!-- <div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class>거래내역</button>
+					<button type="button" class="sel">송금</button>
+				</div>
+			</div> -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea"></div>
+
+</body>
+</html>

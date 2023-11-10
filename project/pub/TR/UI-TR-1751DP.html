@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-1751DP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(dp);
+		})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>조회</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(dp);" role="button" class="popOpen">UI-TR-1751DP</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+
+		<!-- CENTER POPUP -->
+		<div id="dp" class="popupWrap center" style="display:none;">
+			<div class="layerPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popContBox">
+							<div class="Layer_Pop">
+								<div class="Layer_Tit">
+									<h2 tabindex="0">거래내역상세</h2>
+								</div>
+								<div class="Layer_Con">
+									<div class="listTbl">
+										<!-- <div class="listTit">2022.04.04 12:12</div> [2022-10-11] 윤지현:날짜삭제-->
+										<ul>
+											<!-- ▼ [2022-10-11] 윤지현:항목추가 -->
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">거래일시</span>
+													<p>2022.04.04 12:12</p>
+												</div>
+											</li>
+											<!-- //▲ [2022-10-11] 윤지현:항목추가 -->
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">거래내용</span>
+													<p class="txt">국내외환이체</p>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">거래금액</span>
+													<p class="txt">입금 <span class="dataWrap"><span class="unit">USD</span><em class="data">10,000.10</em></span></p>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">적용환율</span>
+													<p class="txt"><span class="dataWrap"><!-- <span class="unit">USD</span> --><em class="data">1,165,10</em></span></p>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">적요</span>
+													<p class="txt">Position(원화)</p>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">잔액</span>
+													<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">10,000</em></span></p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="Layer_Pop_Close">
+									<div class="btnArea">
+										<button type="button" onclick="popClose(this)" class="sel">확인</button>
+									</div>
+								</div>
+								<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

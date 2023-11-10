@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-1146FP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(fullA);
+			// popOpen(cp);
+		})
+	</script>
+	<script type="text/javascript">
+		<!--
+			$(document).ready(function(){
+				//각 카드의 항목 개수 체크
+				jQuery('.msgCardArea .cardBox').each(function(){
+					var cnt = jQuery(this).find('.listBox .elm').length;
+					jQuery(this).find('.cardImgBox .titBox .cardCnt').text('('+cnt+')');
+					//console.log("버튼개수 == "+cnt);
+				});
+				//항목 열기 버튼
+				jQuery('.msgCardArea .cardBox .btnMore').on('click',function(){
+					var btnChk = jQuery(this).parent().next();
+					if(jQuery(this).hasClass('on')){
+						//console.log("닫기");
+						jQuery(this).removeClass('on');
+						jQuery(this).find('.titBox .plus').text('펼치기').removeClass('on');
+						btnChk.removeClass('on');
+						btnChk.slideUp();
+					}else{
+						//console.log("열기");
+						jQuery('.msgCardArea .cardBox .titBox .plus').text('펼치기').removeClass('on');
+						jQuery('.msgCardArea .cardBox .btnMore').removeClass('on')
+						jQuery('.msgCardArea .cardBox .listBox').removeClass('on').slideUp();
+						jQuery(this).addClass('on');
+						jQuery(this).find('.titBox .plus').text('접기').addClass('on');
+						btnChk.addClass('on');
+						btnChk.slideDown();
+					};
+				});
+			});
+		//-->
+		</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>송금확인</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(fullA);" class="popOpen">UI-TR-1146FP</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP -->
+		<div id="fullA" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<!-- ▼ 2022-07-04 텍스트 수정 -->
+								<h2 tabindex="0">메시지 카드</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div class="msgCardArea">
+								<div class="left">
+									<div class="cardBox birth">
+										<div class="cardImgBox">
+											<a href="#nolink" title class="btnMore">
+												<img src="../../images/card/img_msgCard_birth.jpg" alt="생일축하해요! congratulation 태어나줘서 고마워" class="listImg">
+												<div class="titBox">
+													<strong class="cardName">생일</strong>
+													<i class="cardCnt"></i>
+													<span class="plus">펼치기</span>
+												</div>
+											</a>
+										</div>
+										<div class="listBox">
+											<a href="#nolink" title="카드작성 열기" class="elm">생신</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">생일</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">백일</a>
+											<a href="#nolink" title="카드작성 열기" class="elm on">첫돌</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">회갑</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">고희</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">수연</a>
+										</div>
+									</div>
+									<div class="cardBox congr">
+										<div class="cardImgBox">
+											<a href="#nolink" title class="btnMore">
+												<img src="../../images/card/img_msgCard_congr.jpg" alt="축하해요" class="listImg">
+												<div class="titBox">
+													<strong class="cardName">축하</strong>
+													<i class="cardCnt"></i>
+													<span class="plus">펼치기</span>
+												</div>
+											</a>
+										</div>
+										<div class="listBox">
+											<a href="#nolink" title="카드작성 열기" class="elm">축하</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">경축</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">출산</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">합격</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">수상</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">입학</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">졸업</a>
+										</div>
+									</div>
+									<div class="cardBox health">
+										<div class="cardImgBox">
+											<a href="#nolink" title class="btnMore">
+												<img src="../../images/card/img_msgCard_health.jpg" alt="건강하세요!" class="listImg">
+												<div class="titBox">
+													<strong class="cardName">건강</strong>
+													<i class="cardCnt"></i>
+													<span class="plus">펼치기</span>
+												</div>
+											</a>
+										</div>
+										<div class="listBox">
+											<a href="#nolink" title="카드작성 열기" class="elm">건강</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">쾌유</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">만수무강</a>
+										</div>
+									</div>
+									<div class="cardBox meet">
+										<div class="cardImgBox">
+											<a href="#nolink" title class="btnMore">
+												<img src="../../images/card/img_msgCard_meet.jpg" alt="마음담아보내요" class="listImg">
+												<div class="titBox">
+													<strong class="cardName">모임/용돈</strong>
+													<i class="cardCnt"></i>
+													<span class="plus">펼치기</span>
+												</div>
+											</a>
+										</div>
+										<div class="listBox">
+											<a href="#nolink" title="카드작성 열기" class="elm">회비납부</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">장돈</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">곗돈</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">용돈</a>
+										</div>
+									</div>
+									<div class="cardBox prom">
+										<div class="cardImgBox">
+											<a href="#nolink" title class="btnMore">
+												<img src="../../images/card/img_msgCard_prom.jpg" alt="당신의 빛나는 내일을 응원합니다" class="listImg">
+												<div class="titBox">
+													<strong class="cardName">승진/개업</strong>
+													<i class="cardCnt"></i>
+													<span class="plus">펼치기</span>
+												</div>
+											</a>
+										</div>
+										<div class="listBox">
+											<a href="#nolink" title="카드작성 열기" class="elm">승진</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">영전</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">취임</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">퇴임</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">개업</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">창립</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">발전</a>
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<div class="cardBox marri">
+										<div class="cardImgBox">
+											<a href="#nolink" title class="btnMore">
+												<img src="../../images/card/img_msgCard_marri.jpg" alt="결혼축하" class="listImg">
+												<div class="titBox">
+													<strong class="cardName">결혼</strong>
+													<i class="cardCnt"></i>
+													<span class="plus">펼치기</span>
+												</div>
+											</a>
+										</div>
+										<div class="listBox">
+											<a href="#nolink" title="카드작성 열기" class="elm">결혼</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">약혼</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">자녀결혼</a>
+										</div>
+									</div>
+									<div class="cardBox fare">
+										<div class="cardImgBox">
+											<a href="#nolink" title class="btnMore">
+												<img src="../../images/card/img_msgCard_fare.jpg" alt="당신을 잊지 않겠습니다" class="listImg">
+												<div class="titBox">
+													<strong class="cardName">이별</strong>
+													<i class="cardCnt"></i>
+													<span class="plus">펼치기</span>
+												</div>
+											</a>
+										</div>
+										<div class="listBox">
+											<a href="#nolink" title="카드작성 열기" class="elm">부의</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">근조</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">장도</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">입영</a>
+										</div>
+									</div>
+									<div class="cardBox commem">
+										<div class="cardImgBox">
+											<a href="#nolink" title class="btnMore">
+												<img src="../../images/card/img_msgCard_commem.jpg" alt="함께라서 행복한, day" class="listImg">
+												<div class="titBox">
+													<strong class="cardName">명절/기념일</strong>
+													<i class="cardCnt"></i>
+													<span class="plus">펼치기</span>
+												</div>
+											</a>
+										</div>
+										<div class="listBox">
+											<a href="#nolink" title="카드작성 열기" class="elm">새해</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">설날</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">추석</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">연말</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">성탄절</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">석가탄신일</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">결혼기념일</a>
+										</div>
+									</div>
+									<div class="cardBox elec">
+										<div class="cardImgBox">
+											<a href="#nolink" title class="btnMore">
+												<img src="../../images/card/img_msgCard_elec.jpg" alt="당신의 한표를 응원합니다" class="listImg">
+												<div class="titBox">
+													<strong class="cardName">선거</strong>
+													<i class="cardCnt"></i>
+													<span class="plus">펼치기</span>
+												</div>
+											</a>
+										</div>
+										<div class="listBox">
+											<a href="#nolink" title="카드작성 열기" class="elm">당선</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">승리</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">당선기대</a>
+										</div>
+									</div>
+									<div class="cardBox price">
+										<div class="cardImgBox">
+											<a href="#nolink" title class="btnMore">
+												<img src="../../images/card/img_msgCard_price.jpg" alt="대금결제" class="listImg">
+												<div class="titBox">
+													<strong class="cardName">대금결제</strong>
+													<i class="cardCnt"></i>
+													<span class="plus">펼치기</span>
+												</div>
+											</a>
+										</div>
+										<div class="listBox">
+											<a href="#nolink" title="카드작성 열기" class="elm">대금결제</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">공사대금</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">물품대금</a>
+											<a href="#nolink" title="카드작성 열기" class="elm">자재대금</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="popFootBox">
+						</div> -->
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

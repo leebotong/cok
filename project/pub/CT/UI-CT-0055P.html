@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0055P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);	
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>이용약관</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">약관 설명서</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<!-- 약관 내용 -->
+						<div class="terms">
+							<h3 class="termsTit">개인(신용)정보 제3자 제공 동의</h3>
+							<p class="mgT10">본회는 정보통신망 이용촉진 및 정보보호 등에 관한 법률 및 개인정보보호법에 의해 이용자로부터 수집한 개인정보를 아래와 같이 제3자에게 제공 합니다.<br><br>
+							</p>
+							<div class="mgT10">
+								<table class="tb_content2">
+									<caption>제공받는자,제공받는자의이용목적제공할개인정보의 항목으로 제공된 테이블</caption>
+									<colgroup>
+										<col width="*">
+									</colgroup>
+									
+									<tbody>
+										<tr>
+											<th scope="col">제공받는 자</th>	
+											<th scope="col">제공받는 자의 <br>이용목적</th>	
+											<th scope="col">제공할 <br>개인정보의 항목</th>	
+										</tr>
+										<tr>
+											<td>㈜케이지모빌리언스<br>㈜핑거
+											</td>
+											<td>가맹점에서의 직불결제 승인, 취소, 환불처리</td>	
+											<td>제휴회원ID</td>	
+										</tr>	
+										<tr>
+											<th scope="col" colspan="3">제공받는 자의 개인정보 보유·이용기간</th>	
+										</tr>		
+										<tr>
+											<td class="alignL" colspan="3">
+											개인정보는 제공된 날로부터 동의 철회시 또는 제공된 목적을 달성할 때까지 보유·이용됩니다. 
+											동의 철회 또는 제공된 목적 달성 후에는 위에 기재된 이용 목적과 관련된 사고 조사, 분쟁 해결, 민원처리, 법령상 의무이행 등을 위하여 필요한 범위 내에서만 보유·이용됩니다.
+											</td>
+										</tr>
+										<tr>
+											<th scope="col" colspan="3">동의를 거부할 권리 및 그에 따른 불이익의 내용</th>	
+										</tr>		
+										<tr>
+											<td class="alignL" colspan="3">위 개인정보의 제공에 관한 동의는 계약의 체결 및 이행을 위하여 필수적이므로, 위 사항에 동의하셔야만 현금영수증 신고 업무의 처리가 가능합니다.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- 약관 내용 END -->
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">확인</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

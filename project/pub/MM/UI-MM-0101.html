@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0101</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>농협계좌 등록</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">콕뱅크에 <strong>등록</strong>할<br> <strong>계좌 종류</strong>를 <strong>선택</strong>해주세요.</p>
+				<ul class="listDot">
+					<li>비밀번호 확인 후 등록 가능합니다.<br>(<span class="pColor">5회 오류 시 영업점 방문</span>이 필요해요)</li>
+				</ul>
+			</div>
+
+			<div class="noData">
+				<i class="check"></i>
+				<p class="tit">조회된 농협 계좌가 없습니다.</p>
+				<p class="txt">보유하신 농협계좌가 보이지 않는다면<br><span class="pColor">직접입력 등록을 통해 등록</span>해주세요.</p>
+			</div>
+
+			<!-- [2022-06-30]디자인변경 -->		
+			<section class="section40 aa">
+				<div class="jsTgWrap accRegist">
+					<div class="btnInArea">
+						<a href="javascript:;" role="button" class="jsTgBtn point">계좌 직접입력 등록<i></i></a><!-- [2022-10-26] active 삭제 -->		
+					</div>
+					<div class="jsTgCont formExpBox">
+						<div class="formWrap">
+							<div class="formItem">
+								<strong class="formTit">계좌번호</strong>
+								<div class="inpText">
+									<input type="tel" title="계좌번호" class="tyTxt" value placeholder="- 없이 입력">
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+							</div>
+							<div class="formItem">
+								<strong class="formTit">비밀번호</strong>
+								<div class="inpText thin">
+									<button type="button" title="비밀번호 4자리 입력됨" aria-label="4자리 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+									<input type="password" title="비밀번호 4자리 입력" aria-hidden="true" class="tyTxt" value placeholder="4자리 입력" readonly>
+									<a href="javascript:;" role="button" class="btnSm" aria-label="">계좌확인</a>
+								</div>
+							</div>
+							<p class="infoTxt">비밀번호 <span class="pColor">5회 오류 시 영업점 방문</span>이 필요합니다.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //[2022-06-30]디자인변경 -->		
+
+			<!-- [2022-10-26] 스크립트 추가 -->		
+			<script>
+				$(document).ready(function(){
+					$('.jsTgBtn').off('click').on('click', function(){
+						var $this = $(this);
+						var scrollHeight = $(document).height();
+						if (!$this.hasClass("active")) {
+							$("body,html").animate({ scrollTop: scrollHeight }, 800);
+						}
+					});
+				});
+			</script>
+			<!-- //[2022-10-26] 스크립트 추가 -->		
+
+			<!-- 2022-10-07 추가 -->
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>농협계좌는 최대 <span class="pColor">10개</span> 계좌를 등록할 수 있습니다.</li> <!-- [2022-10-18] 윤지현:문구수정 -->
+					<li><span class="pColor">보안계좌, 거래중지계좌</span>는 등록할 수 없습니다.</li> <!-- [2022-10-18] 윤지현:문구수정 -->
+					<li>농협은행 계좌는 일부서비스 이용이 제한됩니다. (예적금, 대출, 외환)</li>
+				</ul>
+			</div>
+			<!-- //2022-10-07 추가 -->
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

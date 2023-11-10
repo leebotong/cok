@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0006_4P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jqueryRotate.js"></script><!-- 룰렛 rotate -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">복불복 이벤트</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="eventSlot">
+							<div class="inBox inPadd">
+								<p class="eventTitle">돌려라 복불복 걸려라 행운!<span>3개의 콕뱅크가 선택되면 당첨됩니다.</span></p>
+								<div class="eventSel">
+									<!-- 공통 셀렉트 -->
+									<div class="formItem">
+										<strong class="formTit">경품 선택</strong>
+										<div class="inpSel">
+											<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel placeholder">선택</a>
+										</div>
+									</div>
+									<!--// 공통 셀렉트 -->
+
+									<!-- as-is 소스 그대로 할 경우 
+									<p class="defTxt2">경품 선택 </p>
+									<div class="Inp_Typ_Txt">
+										<div class="Non_Line_Cont">
+											<span role="button" aria-label="경품을 선택해 주세요." class="selectBox full" tabindex="0">
+												<label for="select01" class="blind">경품 선택</label>
+												<select name="select01" id="select01" class="noLine">
+													<option value="basicTxt">선택</option>
+													<option value="">순금 10돈 (기프티콕 100콕 차감)</option>
+													<option value="">20K 이천쌀 (기프티콕 50콕 차감)</option>
+													<option value="">콕뱅크마스코트인형 (기프티콕 10콕 차감)</option>
+												</select>
+											</span>
+										</div>
+									</div> 
+									 // as-is 소스 그대로 할 경우 -->
+								</div>
+								<div class="eventSlotArea">
+									<form name="form" class="tac">
+										<div class="machineArea">
+											<img src="../../images/cont/slot00.png" alt="슬롯이미지" name="first">
+											<img src="../../images/cont/slot00.png" alt="슬롯이미지" name="second">
+											<img src="../../images/cont/slot00.png" alt="슬롯이미지" name="third">
+
+											<!-- 롤링 이미지 리뉴얼 -->
+											<div class="machineAreaRoll" style="display:none;">
+												<div class="inner">
+													<div name="first" class="roll_1"><div><span class="blind">슬롯이미지</span></div></div>
+													<div name="second" class="roll_2"><div><span class="blind">슬롯이미지</span></div></div>
+													<div name="third" class="roll_3"><div><span class="blind">슬롯이미지</span></div></div>
+												</div>
+											</div>
+											<!--// 롤링 이미지 리뉴얼  -->
+										</div>
+
+										<img src="../../images/cont/bg_eventSlotArea.png" alt class="slot_border">
+
+										<input type="button" value="stop 1" name="firstb" class="mr30" style="display:none;" onClick="end(1)">
+										<input type="button" value="stop 2" name="secondb" class="mr30" style="display:none;" onClick="end(2)">
+										<input type="button" value="stop 3" name="thirdb" style="display:none;" onClick="end(3)">
+										
+										
+										<label for="insertCoin" class="hid">코인 삽입</label>
+										<select id="insertCoin" class="dspNon" NAME="select">
+											<option>INSERT COIN(S)</option>
+											<option>1 COIN</option>
+											<option>2 COINS</option>
+											<option>3 COINS</option>
+											<option>4 COINS</option>
+											<option>5 COINS</option>
+										</select>
+										
+										<input type="button" value="START" id="slotStartAuto" onClick="startGame()">
+										<!-- <input type="button" value=" START " id="slotStart" onClick=startGame() class="mt10 mr20">
+										<input type="button" value=" ALL STOP " id="slotStop" onClick=end(4) class="mt10"> -->
+
+										<input type="text" name="pay_back" class="dspNon" hidden>
+									</form>
+								</div>
+
+								<!-- 콕사용시 -->
+								<div class="eventPoint">
+									<span class="inner">
+										<span>잔여 :<i class="gv">50</i>콕</span>
+									</span>
+								</div>
+								<!--// 콕사용시 -->
+
+								<!-- bg 추가 -->
+								<span class="imgMountain"></span>
+								<!--// bg 추가 -->
+							</div>
+						</div>	
+
+						<div class="btmInfoWrap">
+							<strong class="tit">확인사항</strong>
+							<ul class="listDot">
+								<li>경품 선택 후 ‘START’ 버튼을 누르시면 해당 콕이 차감되고 이벤트가 실행됩니다.</li>
+								<li>이벤트 참여 시 차감된 콕은 “기프티콕 > 적립/사용내역”에서 확인하실 수 있습니다.</li>
+								<li>콕 보유 시 동일한 이벤트에 중복 참여하실 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	coin = 100 //최초코인
+	bet = 1   //배팅금액
+	game = false //현재 게임 진행 상태
+	box1 = true
+	box2 = true
+	box3 = true
+	num = Math.floor(Math.random() * 8)
+
+	//document.write('<center><font size=6 color="red">슬로머신</font></center>')
+
+	IMG = new Array();
+
+	IMG[0] = new Image(); IMG[0].src = "../../images/cont/slot00.png";
+	IMG[1] = new Image(); IMG[1].src = "../../images/cont/slot01.png";
+	IMG[2] = new Image(); IMG[2].src = "../../images/cont/slot02.png";
+	IMG[3] = new Image(); IMG[3].src = "../../images/cont/slot03.png";
+	IMG[4] = new Image(); IMG[4].src = "../../images/cont/slot04.png";
+	IMG[5] = new Image(); IMG[5].src = "../../images/cont/slot05.png";
+	IMG[6] = new Image(); IMG[6].src = "../../images/cont/slot06.png";
+	IMG[7] = new Image(); IMG[7].src = "../../images/cont/slot07.png";
+	//IMG[8] = new Image(); IMG[8].src = "../../images/cont/slot08.png";
+	//IMG[9] = new Image(); IMG[9].src = "../../images/cont/slot09.png";
+
+	function slotGame()	{
+		if((document.images["first"].src == document.images["second"].src) && (document.images["second"].src == document.images["third"].src) && (document.images["third"].src == IMG[7].src)) {
+			coin += bet * 10;
+		}	else if ((document.images["first"].src == document.images["second"].src) && (document.images["second"].src == document.images["third"].src)) {
+			coin += bet * 5;
+		}	else {
+			coin -= bet;
+		}
+		game = false
+		box1 = true
+		box2 = true
+		box3 = true
+	}
+
+	function end(variable) {
+		if (game == true) {
+			if (variable == 1) box1 = false
+			if (variable == 2) box2 = false
+			if (variable == 3) box3 = false
+
+			if(variable == 4) {
+				box1 = box2 = box3 = false
+			}
+		}	else {
+			alert('게임이 시작되지 않았습니다.')
+		}
+
+		if((box1 == false) && (box2 == false) && (box3 == false)) {
+			clearTimeout (tid)
+			slotGame()
+		}
+	}
+
+	//슬롯머신의 숫자패널을 랜덤하게 돌려준다.
+	function eventSlot() {
+		if (num == 8) num = 0
+		if (box1) document.images["first"].src  = IMG[num % 8].src
+		if (box2) document.images["second"].src = IMG[(num + 3) % 8].src
+		if (box3) document.images["third"].src  = IMG[(num + 6) % 8].src
+
+		num += 1
+		tid = setTimeout("eventSlot()",60)
+	}
+
+	function inCoin() {
+		if(document.forms[0].elements[3].options[0].selected) bet = 1; //INSERT COIN(S) 선택되어 있을 경우
+		else if (document.forms[0],elements[3].options[1].selected) bet = 1;
+		else if (document.forms[0],elements[3].options[2].selected) bet = 2;
+		else if (document.forms[0],elements[3].options[3].selected) bet = 3;
+		else if (document.forms[0],elements[3].options[4].selected) bet = 4;
+		else if (document.forms[0],elements[3].options[5].selected) bet = 5;
+
+		if ((coin-bet) < 0) {
+			game = false
+		} else if (bet > 0) {
+			eventSlot()
+		}
+	}
+
+	function startGame() {
+		if(game == false) {
+			game = true
+
+			if(coin <= 0) {
+				document.form.pay_back.value="끝!"
+			}	else {
+				inCoin()
+			}
+		}	else {
+			//alert('이미 게임이 실행중입니다.')
+		}
+		$("#slotStartAuto").addClass("aniOff");//반짝이는 버튼효과 추가: 191114
+	}
+</script>
+<script>
+	$('#slotStart').on('click',function(){
+		$('.machineAreaRoll').show();
+		$('.machineArea').addClass('on');
+	});
+
+	$('#slotStartAuto').on('click',function(){
+		$('.machineAreaRoll').show();
+		$('.machineArea').addClass('on');
+		setTimeout(function(){
+			box1 = box2 = box3 = false;
+		},800);
+		setTimeout(function(){
+			$('.machineAreaRoll').css("background","transparent");
+		},1000);
+		setTimeout(function(){
+			$('.roll_1').hide();
+		},1400);
+		setTimeout(function(){
+			$('.roll_2').hide();
+		},2000);
+		setTimeout(function(){
+			$('.roll_3').hide();
+		},1000);
+	});
+</script>
+
+</body>
+</html>

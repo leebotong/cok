@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-0026</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>이용대금명세서</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<!-- [2023-02-07] 카드명세 조회 화면 UI 개선 : 김연진 -->
+			<div class="pgTitWrap">
+				<p class="pTit">이용대금명세서를 <br><strong>확인</strong>할 수 있어요.</p>
+				<ul class="listDot">
+					<li>최근 1년 이내 월별 청구서를 조회하실 수 있습니다.</li>
+				</ul>
+			</div>
+
+			<div class="rdoBtnsWrap">
+				<ul>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample01">
+							<label for="sample01">1개월</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample02">
+							<label for="sample02">3개월</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample03">
+							<label for="sample03">6개월</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample04">
+							<label for="sample04">1년</label>
+						</span>
+					</li>
+					<li class="filter">
+						<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+					</li>
+				</ul>
+			</div>
+
+			<hr class="divingLine">
+
+			<div class="inqueryList confirmList2">
+				<div class="listTit">
+					<em>2022.12.15 ~ 2023.01.14</em>
+				</div>
+
+				<!-- case: no data -->
+				<div class="noData">
+					<i class="check"></i>
+					<strong class="tit">조회결과가 없습니다.</strong>
+				</div>
+				<!-- //case: no data -->
+
+				<!-- case: no cad -->
+				<div class="noData">
+					<i class="check"></i>
+					<strong class="tit">연결된 카드가 없습니다.</strong>
+					<div class="btnLnkLine">
+						<a href="javascript:;" role="button" class="underLine">카드 발급하기</a>
+					</div>
+				</div>
+				<!-- //case: no cad -->
+
+				<!-- 날짜별 list -->
+				<section>
+					<div class="listItem">
+						<div class="listTit">2022년 12월</div>
+						<ul>
+							<li>
+								<a href="javascript:;" title="상세보기" role="button" class="link">
+									<div class="flex">
+										<span class="cardName">채움(농·축협)카드</span>
+										<p class="date">결제일 2022.12.25</p>
+									</div>
+									<div class="mt10">
+										<div class="cardDataWrap">
+											<p class="cardNumInfo">청구금액</p>
+											<strong class="dataWrap fBig"><em class="data">792,000</em><span class="unit">원</span></strong>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="상세보기" role="button" class="link">
+									<div class="flex">
+										<span class="cardName">BC(농·축협)카드</span>
+										<p class="date">결제일 2022.12.25</p>
+									</div>
+									<div class="mt10">
+										<div class="cardDataWrap">
+											<p class="cardNumInfo">청구금액</p>
+											<strong class="dataWrap fBig"><em class="data">18,992,000</em><span class="unit">원</span></strong>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="상세보기" role="button" class="link">
+									<div class="flex">
+										<span class="cardName">채움(농·축협)카드</span>
+										<p class="date">결제일 2022.12.25</p>
+									</div>
+									<div class="mt10">
+										<div class="cardDataWrap">
+											<p class="cardNumInfo">청구금액</p>
+											<strong class="dataWrap fBig"><em class="data">18,999,992,000</em><span class="unit">원</span></strong>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!--// 날짜별 list -->
+
+				<!-- 날짜별 list -->
+				<section>
+					<div class="listItem">
+						<div class="listTit">2022년 11월</div>
+						<ul>
+							<li>
+								<a href="javascript:;" title="상세보기" role="button" class="link">
+									<div class="flex">
+										<span class="cardName">BC(농·축협)카드</span>
+										<p class="date">결제일 2022.12.25</p>
+									</div>
+									<div class="mt10">
+										<div class="cardDataWrap">
+											<p class="cardNumInfo">청구금액</p>
+											<strong class="dataWrap fBig"><em class="data">102,000</em><span class="unit">원</span></strong>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="상세보기" role="button" class="link">
+									<div class="flex">
+										<span class="cardName">채움(농·축협)카드</span>
+										<p class="date">결제일 2022.12.25</p>
+									</div>
+									<div class="mt10">
+										<div class="cardDataWrap">
+											<p class="cardNumInfo">청구금액</p>
+											<strong class="dataWrap fBig"><em class="data">92,000</em><span class="unit">원</span></strong>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="상세보기" role="button" class="link">
+									<div class="flex">
+										<span class="cardName">채움(농·축협)카드</span>
+										<p class="date">결제일 2022.12.25</p>
+									</div>
+									<div class="mt10">
+										<div class="cardDataWrap">
+											<p class="cardNumInfo">청구금액</p>
+											<strong class="dataWrap fBig"><em class="data">2,000</em><span class="unit">원</span></strong>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!--// 날짜별 list -->
+			</div>
+			<div class="moreBtn"><button type="button">더보기</button></div><!-- [2023-02-15] 김연진 : 더보기 버튼추가-->
+			<!-- //[2023-02-07] 카드명세 조회 화면 UI 개선 : 김연진 -->
+			<figure class="bannerWrap">
+				<a href="javascript:;" role="button" class="bannerLink">
+					<img src="../../images/cont/card_banner01.png" alt>
+					<figcaption class="caption">
+						<strong>단기카드대출(현금서비스)</strong>
+						<p>복잡한 서류없이 간략하게 365일 바로 입금!</p>
+					</figcaption>
+				</a>
+			</figure>
+		</div>  <!-- //#contents -->
+	</div> <!-- //#container -->
+ <!-- //#wrap -->
+</div>
+</body>
+</html>

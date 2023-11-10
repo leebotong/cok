@@ -1,0 +1,386 @@
+@charset 'utf-8';
+/* [SEPTEM] UI Dev Team :: 콕 base css */
+
+/* html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%} */
+body,div,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,span,select,table,td,textarea,th,ul,em,:before,:after,a,label{margin:0;padding:0;box-sizing:border-box;} /* [2022-06-21] 윤지현:label 추가 */
+body,button,input,select,table,textarea{font-family:'Spoqa';font-size:var(--font16);color:var(--body);}
+table{border-collapse:collapse;}
+caption{overflow:hidden;width:1px;height:1px;margin:-1px 0 0 0;color:transparent;}
+img,fieldset,iframe{border:0;}
+img{max-width:100%;height:auto;}
+ol,ul{list-style:none;}
+address,em{font-style:normal;}
+a{position:relative;color:inherit;text-decoration:none;}
+button,input,textarea{border-radius:0;}
+button{border:0;background:transparent;color:inherit;line-height:1;cursor:pointer;} /* [2022-06-29] 윤지현:배경색 user agent reset */
+select{border-radius:0;appearance:none;-webkit-appearance:none;}
+input{border:0;outline:0;appearance:none;-webkit-appearance:none;}
+iframe{overflow:hidden;margin:0;padding:0;border:0;vertical-align:top;}
+mark{background-color:transparent;}
+i{font-style:normal;}
+a,button{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+:focus{-webkit-tap-highlight-color:rgba(0,0,0,0) !important;-webkit-focus-ring-color:transparent !important;outline:none}
+html,body{width:100%;min-height:100vh;margin:0;line-height:1;-webkit-text-size-adjust:none;text-size-adjust:none;}
+body{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;}
+/* iNoBounce : IOS scroll bounce disabled */
+/*.cokWrap{width:100vw;height:100%;top:0;position:fixed;overflow-y:auto;-webkit-overflow-scrolling:touch} */
+
+@font-face{font-family:'Spoqa';font-weight:400;font-display:block;src:local('Spoqa Han Sans Neo Regular'), url('../fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2'), url('../fonts/SpoqaHanSansNeo-Regular.woff') format('woff');}
+@font-face{font-family:'Spoqa';font-weight:bold;font-display:block;src:local('Spoqa Han Sans Neo Medium'), url('../fonts/SpoqaHanSansNeo-Medium.woff2') format('woff2'), url('../fonts/SpoqaHanSansNeo-Medium.woff') format('woff');}
+@font-face{font-family:'Spoqa';font-weight:200;font-display:block;src:local('Spoqa Han Sans Neo Light'), url('../fonts/SpoqaHanSansNeo-Light.woff2') format('woff2'), url('../fonts/SpoqaHanSansNeo-Light.woff') format('woff');}
+
+/* z-index정의 */
+/***************************************
+#header 100
+#footer_cont 100
+.tooltipCont 110
+.btnTransparent 10
+.inpTxt .btnSm 20
+***************************************/
+
+/* 공통 정의 */
+.noBorder{border:none !important;}
+.underLine{border-bottom:1px solid currentColor !important;}
+.through{text-decoration:line-through !important;}
+.underLine.error{border-bottom:1px solid var(--error);}
+.noWrap{word-break:keep-all;}
+.lineHeight{line-height:1.5 !important;}
+.lineHeight13{line-height:22px !important;}
+.lineHeightS{line-height:1.2 !important;}
+.dil{display:inline !important;}
+.dib{display:inline-block !important;}
+.dbl{display:block !important;}
+
+.al{text-align:left !important;}
+.ac{text-align:center !important;}
+.ar{text-align:right !important;}
+.mt0{margin-top:0 !important;}
+.mt5{margin-top:5px !important;}
+.mt10{margin-top:10px !important;}
+.mt14{margin-top:14px !important;}
+.mt12{margin-top:12px !important;}
+.mt15{margin-top:15px !important;}
+.mt20{margin-top:20px !important;}
+.mt25{margin-top:25px !important;}
+.mt30{margin-top:30px !important;}
+.mt40{margin-top:40px !important;}
+.mt50{margin-top:50px !important;}
+.mt70{margin-top:70px !important;}
+.mb0{margin-bottom:0 !important;}
+.mb10{margin-bottom:10px !important;}
+.mb12{margin-bottom:12px !important;}
+.mb14{margin-bottom:14px !important;}
+.mb15{margin-bottom:15px !important;}
+.mb20{margin-bottom:20px !important;}
+.mb30{margin-bottom:30px !important;}
+.mb40{margin-bottom:40px !important;}
+.mb50{margin-bottom:50px !important;}
+.mt-10{margin-top:-10px !important;}
+.mt-14{margin-top:-14px !important;}
+.mt-20{margin-top:-20px !important;}
+.mt-30{margin-top:-30px !important;}
+.mb-10{margin-bottom:-10px !important;}
+.mb-20{margin-bottom:-20px !important;}
+.mb-30{margin-bottom:-30px !important;}
+.mx20{margin-right:20px !important;margin-left:20px !important;}
+.mx-20{margin-right:-20px !important;margin-left:-20px !important;}
+.my14{margin-top:14px !important;margin-bottom:14px !important;}
+.my20{margin-top:20px !important;margin-bottom:20px !important;}
+.pt0{padding-top:0 !important;}
+.pt10{padding-top:10px !important;}
+.pt20{padding-top:20px !important;} /* [2023-03-31] 거래메모 */
+.pb0{padding-bottom:0 !important;}
+.pb10{padding-bottom:10px !important;}
+.pb20{padding-bottom:20px !important;}
+.py20{padding-top:20px !important;padding-bottom:20px !important;}
+.px20{padding-right:20px !important;padding-left:20px !important;}
+.px10{padding-right:10px !important;padding-left:10px !important;}
+.px0{padding-right:0 !important;padding-left:0 !important;}
+.all0{margin:0 !important;padding:0 !important;}
+
+.l-18{left:-18px !important;}
+.l-15{left:-15px !important;}
+.l-20{left:-20px !important;}
+.l-21{left:-21px !important;} /* 라인 포함 */
+.l-40{left:-40px !important;}
+.l-42{left:-42px !important;} /* 라인 포함 */
+
+.ls-05{letter-spacing:-0.5px !important;}
+.ls-1{letter-spacing:-1px !important;}
+
+.eps2,.eps3{display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-box-orient:vertical;}
+.eps2{-webkit-line-clamp:2;}
+.eps3{-webkit-line-clamp:3;}
+
+/*dev*/
+.heightFix{position:fixed;height:100%;}
+.height100{height:100%;}
+
+/* 플렉스 레이아웃용 기본틀 */
+.layoutWrap{display:flex;align-items:center;justify-content:space-between;}
+.layoutWrap.isTitle{margin:20px 0 14px;align-items:flex-end;}
+.layoutWrap.isTitle strong{font-size:16px;color:var(--black);}
+.layoutWrap.isTitle span{font-size:14px;color:var(--txt-color-blue-02);}
+.layoutWrap.isTitle+.listTbl{margin-top:0;}
+.layoutWrap.baseline{align-items:baseline;}
+.alignTop{align-items:flex-start !important;align-self:flex-start !important;}
+.alignCenter{align-self:center !important;}
+.alignBottom{align-self:flex-end !important;}
+.alignLeft{justify-content:left !important;}
+.alignRight{justify-content:right !important;}
+.alignFcenter{justify-content:center !important;}
+
+/* point color */
+.error{color:var(--warning) !important;}
+.txtRed{color:var(--warning) !important;}
+.pColor{color:var(--primary-blue) !important;}
+.pColor *{color:currentColor !important;}
+.sbColor{color:var(--secondary-blue) !important;}
+.sgColor{color:var(--secondary-green) !important;}
+.gColor{color:var(--txt-color-blue-02) !important;}
+.bColor{color:var(--black) !important;}
+.dfColor{color:var(--txt-color-blue-01) !important;}
+
+/* font size : 폰트크기만 변경해야 할 경우 사용 */
+.fXbig,.fXbig>*{font-size:var(--font24) !important;} /* [2023-02-01] 콕모임class 취합 */
+.fBig,.fBig>*{font-size:var(--font20) !important;}
+.fMiddle,.fMiddle>*{font-size:var(--font16) !important;}
+.fSmall,.fSmall>*{font-size:var(--font14) !important;}
+.fXsmall,.fXsmall>*{font-size:var(--font12) !important;}
+.fs18 {font-size:18px;} /* [2023-02-01] 콕모임class 취합 */
+.fs32 {font-size:32px;} /* [2023-02-01] 콕모임class 취합 */
+
+/* position */
+.absolute{position:absolute;}
+.relative{position:relative;}
+/***************************************
+변수는 컬러, 타이포 관련만 관리
+margin, padding, width, height등 크기 지정시는 사용 X
+* font-size, line-height 는 시니어 모드를 위해 사용
+***************************************/
+:root{
+	--white:#fff;
+	--black:#111;
+	--black-deep:#000;
+	--space:20px;
+	--minus-space:-20px;
+
+	/* MAIN COLOR */
+	--primary-blue:#05a5ab;
+	--primary-blue-op20:#05a5ab20; /* [2023-02-01] 콕모임class 취합 */
+	--secondary-top:#821de0;
+	--secondary-gold:#ed9c33;
+	--secondary-royal:#ea4956;
+	--secondary-green:#5ac466;
+	--secondary-blue:#4994eb;
+
+	/* SYSTEM COLOR */
+	--positive:var(--primary-blue);
+	--negative:#8b95a3;
+	--error:#ea4956;
+	--success:var(--primary-blue);
+	--warning:var(--error);
+
+	/* TEXT COLOR */
+	--txt-color-black:var(--black);
+	--txt-color-blue-01:#353d4a;
+	--txt-color-blue-02:#5d6c83;
+	--txt-color-blue-03:#7d8291;
+	--txt-color-blue-04:#54b9d0; /* [2023-02-17] 김연진:*/
+	--txt-color-gray-01:#a8afb7;
+	--txt-color-gray-02:#bbbfc2;
+	--txt-color-white:var(--white);
+	--body:var(--txt-color-blue-01);
+
+	/* DIVIDER COLOR */
+	--divider-color:#e3e4e7;
+	--divider-color2:#bbbfc2;
+	--section-divider-color:#f6f6f6;
+
+	/* BACKGROUND COLOR */
+	--bg-color-ff:var(--white);
+	--bg-color-01:#fafafa;
+	--bg-color-02:#f4f5f6;
+	--bg-color-03:#e3e4e7;
+	--bg-color-04:#dde0e3;
+	--bg-color-05:#f6f7f8;
+	--bg-color-06:#ecfafa;
+	--bg-color-b:#eef5fb;
+	--bg-color-y:#f6f7e4;
+
+	/* BORDER COLOR */
+	--bd-color-ff:var(--white);
+	--bd-color-01:#dde0e3;
+	--bd-color-02:#e3e4e7;
+	--bd-color-03:#cacaca;
+	--bd-color-04:#353d4a;
+	--bd-color-05:#5d6c83;
+
+	/* GRAY COLOR STEP */
+	--gray-color-step-50:var(--black);
+	--gray-color-step-100:#2a2a2a;
+	--gray-color-step-150:#333;
+	--gray-color-step-200:#414141;
+	--gray-color-step-250:#4d4d4d;
+	--gray-color-step-300:#595959;
+	--gray-color-step-350:#666;
+	--gray-color-step-400:#717171;
+	--gray-color-step-450:#7d7d7d;
+	--gray-color-step-500:#8b95a3;
+	--gray-color-step-550:#949494;
+	--gray-color-step-600:#a8afb7;
+	--gray-color-step-650:#acacac;
+	--gray-color-step-700:#b1b7c0;
+	--gray-color-step-750:#c4c4c4;
+	--gray-color-step-800:#d0d0d0;
+	--gray-color-step-850:#dde0e3;
+	--gray-color-step-900:#e7e7e7;
+	--gray-color-step-950:#f2f3f5;
+
+	/* BUTTON COLOR */
+	--btn-line-color:#c9c9c9;
+	--shadow1:0 5px 15px 0 rgba(0, 0, 0, .15);
+
+	/* 컴포넌트별 컬러 지정 */
+	--popup-title-color:var(--gray-color-step-50);
+	--popup-bg:#fff;
+	--page-title:var(--black-deep);
+	--main-title:var(--gray-color-step-50);
+	--sub-title:var(--gray-color-step-150);
+	--placeholder-selected:var(--gray-color-step-50);
+	--placeholder:var(--gray-color-step-700);
+	--list-title:var(--gray-color-step-700);
+	--disabled-bg:var(--gray-color-step-850);
+	--disabled-color:var(--gray-color-step-600);
+	--input-line-color:#e6ebf3;
+
+	/* TYPO */
+	--line-height1:1;
+	--font10:10px;
+	--font12:12px;
+	--font13:13px;
+	--font14:14px;
+	--font15:15px;
+	--font16:16px;
+	--font18:18px;
+	--font20:20px;
+	--font22:22px;
+	--font24:24px;
+	--font26:26px;
+	--font28:28px;
+	--font32:32px;
+
+	/*내맘콕모드*/
+	--purpleC:#8878ff;
+	--greenC:#19a647;
+	--yellowC:#a6942d;
+	--yellowCbg:#fee144;
+	--primaryC:#05a5ab;
+
+	--pinkC:#ba888c;
+	--pinkCbg:#f8b6bc;
+	--lightpurpleC:#778afb;
+	--lightblueC:#4994eb;
+	--skyC:#559db5;
+	--skyCbg:#78deff;
+
+	--blueC:#2c68de;
+	--grayC:#5d6c83;
+	--lightgrayC:#848fb1;
+	--lightskyC:#7797a8;
+	--lightskyCbg:#abd8f1;
+}
+
+.dark:root{
+	--white:#171717;
+	--black:#fff;
+	--black-deep:#fff;
+	--body:var(--txt-color-blue-01);
+
+	/* TEXT COLOR */
+	--txt-color-black:#fff;
+	--txt-color-blue-01:#d2d3d4;
+	--txt-color-blue-02:#8e98a1;
+	--txt-color-blue-03:#4c5156;
+	--txt-color-gray-01:#3d4043; /*as-is : a8afb7*/
+	--txt-color-gray-02:#696b6d;
+	--txt-color-white:#171717;
+
+	/* DIVIDER COLOR */
+	--divider-color:#2c2c2f;
+	--section-divider-color:#252627;
+
+	/* BACKGROUND COLOR */
+	--bg-color-ff:var(--white);
+	--bg-color-01:#2e2e2e;
+	--bg-color-02:#252627;
+	--bg-color-03:#282b2e;
+	--bg-color-04:#2a2c2e;
+
+	/* BUTTON COLOR */
+	--btn-line-color:#707070;
+	--popup-title-color:var(--gray-color-step-50);
+	--popup-bg:#252627;
+	--gray-color-step-50:#f2f3f5;
+	--gray-color-step-100:#e7e7e7;
+	--gray-color-step-150:#dde0e3;
+	--gray-color-step-200:#d0d0d0;
+	--gray-color-step-250:#c4c4c4;
+	--gray-color-step-300:#b1b7c0;
+	--gray-color-step-350:#acacac;
+	--gray-color-step-400:#a8afb7;
+	--gray-color-step-450:#949494;
+	--gray-color-step-500:#8b95a3;
+	--gray-color-step-550:#7d7d7d;
+	--gray-color-step-600:#717171;
+	--gray-color-step-650:#666;
+	--gray-color-step-700:#595959;
+	--gray-color-step-750:#4d4d4d;
+	--gray-color-step-800:#414141;
+	--gray-color-step-850:#333;
+	--gray-color-step-900:#2a2a2a;
+	--gray-color-step-950:#111;
+
+	/* 컴포넌트별 컬러 지정 */
+	--page-title:#fff;
+	--input-line-color:#323538;
+
+	/* 전체적으로 톤다운 시킬 경우 사용
+		-webkit-filter:brightness(80%);
+		filter:brightness(80%);
+	*/
+}
+
+.senior:root{
+	/* TYPO */
+	--font10:12px;
+	--font12:14px;
+	--font13:15px;
+	--font14:16px;
+	--font15:17px;
+	--font16:18px;
+	--font18:20px;
+	--font20:22px;
+	--font22:24px;
+	--font24:26px;
+	--font26:28px;
+	--font28:30px;
+	--font32:34px;
+	--line-height1:1.5;
+}
+
+body{background:var(--bg-color-ff);color:var(--body);}
+
+@media all and (max-width:360px){
+	/* :root{
+		--space: 16px;
+	} */
+}
+
+@media all and (max-width:320px){
+	/* :root{
+		--space: 10px;
+	} */
+}
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CL-1015P</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+	<script>
+		$(function(){
+			popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕모임</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">콕모임</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="pgTitWrap">
+							<p class="pTit thin"><strong>이용 약관 및 유의사항</strong>을<br> 확인해주세요 </p> <!-- [2023-06-09] 콕모임 : QA v0.4 문구수정 -->
+						</div>
+						<!-- [2023-05-22] 콕모임 : .jsTg~ 토글 관련 삭제 -->
+						<div class="allCheckTopBox">
+							<input type="checkbox" name="agreeChk" id="aggrChk10">
+							<label for="aggrChk10">약관 및 필수 항목 전체 동의</label>
+						</div>
+
+						<div class="allCheckBox">
+							<div class="termsHead">
+								<p>콕모임 안내 및 이용약관</p>
+								<a href="javascript:;" role="button" class="btn">모두보기</a>
+							</div>
+							<ul class="termsList">
+								<li>
+									<div class="termsCheck">
+										<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk01">
+										<label for="aggrChk01">[필수] NH콕모임서비스 이용약관</label> <!-- [2023-06-08] 콕모임 : 약관명 수정 -->
+									</div>
+									<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+								</li>
+								<li>
+									<div class="termsCheck">
+										<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk02">
+										<label for="aggrChk02">[필수] NH콕모임서비스 설명서</label> <!-- [2023-06-08] 콕모임 : 약관명 수정 -->
+									</div>
+									<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+								</li>
+								<li>
+									<div class="termsCheck">
+										<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk03">
+										<label for="aggrChk03">[필수] 금융거래정보 제3자 제공 동의</label> <!-- [2023-06-08] 콕모임 : 약관명 수정 -->  <!-- [2023-06-13] 콕모임 : 약관명 수정 -->
+									</div>
+									<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+								</li>
+							</ul>
+
+							<div class="termsList">
+								<div class="termsCheck">
+									<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk04">
+									<label for="aggrChk04">[필수] 모임계좌 거래내역 제공 확인</label>
+								</div>
+								<div>
+									<p class="termsExp">모임개설일 이후 모임계좌의 모든 거래내역과 잔액이 모임원에게 제공됨을 확인합니다.</p> <!-- [2023-06-28] 콕모임 : 0626 문구수정 피드백 반영 -->
+								</div>
+							</div>
+							<div class="termsList">
+								<div class="termsCheck">
+									<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk05">
+									<label for="aggrChk05">[필수] 모임계좌 변경 및 취소 불가 유의사항 확인</label>
+								</div>
+								<div>
+									<p class="termsExp">모임계좌로 연결한 후에는 모임계좌를 변경하거나 취소할 수 없음을 확인합니다. </p> <!-- [2023-06-28] 콕모임 : 0626 문구수정 피드백 반영 -->
+								</div>
+							</div>
+							<div class="termsList">
+								<div class="termsCheck">
+									<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk06">
+									<label for="aggrChk06">[필수] 한도제한계좌를 모임계좌로 연결 시 유의사항 확인</label>
+								</div>
+								<div>
+									<p class="termsExp">한도제한계좌를 모임계좌로 연결하더라도 한도제한이 해제되지는 않으며 인출·이체 한도에 제한을 받음을 확인합니다. </p>
+									<div class="tblWrap">
+										<div class="tbl">
+											<table>
+												<caption>인출·이체 한도에 관한 사항</caption>
+												<colgroup>
+														<col style="width:30%;">
+														<col style="width:30%;">
+														<col style="width:auto;">
+												</colgroup>
+												<thead class="colgroup">
+													<tr>
+														<th scope="col" colspan="2">자동화기기</th>
+														<th scope="col" rowspan="2">전자금융+창구<br>(이체+인출)</th>
+													</tr>
+													<tr>
+														<th scope="col">인출</th>
+														<th scope="col">이체</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>30만원</td>
+														<td>30만원</td>
+														<td>100만원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<ul class="listDot mt10">
+										<li>한도를 해제하시려면 금융거래목적확인 증빙자료를 지참하여 영업점을 방문해주세요. </li>
+									</ul>
+								</div>
+							</div>
+							<div class="termsList">
+								<div class="termsCheck">
+									<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk07">
+									<label for="aggrChk07">[필수] 모임원간 분쟁 발생 시 유의사항 확인</label>
+								</div>
+								<div>
+									<p class="termsExp">농협은 NH콕모임서비스 이용 과정에서 발생한 모임원 간의 분쟁, 사기, 불법행위 등에 대해서는 온/오프라인을 불문하고 책임지지 않으니 이 점 유의해 주시기 바랍니다.</p> <!-- [2023-06-28] 콕모임 : 0626 문구수정 피드백 반영 -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="popFootBox">
+						<div class="allCheck floating">
+							<input type="checkbox" name="agreeChk" id="aggrChk21">
+							<label for="aggrChk21">이용 약관 및 유의사항을 모두 확인했어요.</label> <!-- [2023-06-09] 콕모임 : QA v0.4 문구수정 -->
+						</div>
+						<div class="btnArea">
+							<button type="button" class="btn_full">취소</button>
+							<button type="button" class="btn_full sel dis">다음</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

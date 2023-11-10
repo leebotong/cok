@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0046P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">외환고객등록</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="pgTitWrap">
+							<p class="pTit"><strong>외환고객등록을</strong> 위해<br>아래 정보를 <strong>입력</strong>해주세요.</p>
+						</div>	
+
+						<div class="formWrap">
+
+							<div class="formItem">
+								<strong class="formTit ">실명번호</strong>
+								<div class="formGroup">
+									<div class="inpText readonly">
+										<input type="tel" title="실명번호 앞자리" class="tyTxt" value="821202">
+									</div>
+									<span class="etc">-</span>
+									<div class="inpText readonly">
+										<input type="password" title="실명번호 뒷자리" aria-hidden="true" class="tyTxt" value="1111111" readonly>
+									</div>
+								</div>
+							</div>
+
+							<div class="formItem">
+								<strong class="formTit">영문이름</strong>
+								<div class="formGroup">
+									<div class="inpText">
+										<input type="tel" title="성 입력" class="tyTxt" value placeholder="성 입력">
+									</div>
+									<div class="inpText">
+										<input type="tel" title="이름 입력" class="tyTxt" value placeholder="이름 입력">
+									</div>
+								</div>
+							</div>
+							
+							<div class="formItem">
+								<!-- 2022-10-26 마크업수정 -->
+								<p class="layoutWrap isTitle">
+									<em class="formTit">영문 주소</em>
+									<a href="javascript:;" role="button" aria-label class="btnSm">주소검색</a>
+								</p>
+								<div class="textAreaWrap2 readonly">
+									<textarea readonly title="영문 주소" placeholder=""></textarea>
+								</div>
+								<!-- //2022-10-26 마크업수정 -->
+							</div> <!-- [2022-11-02] 윤지현:마크업분리로 닫는 div 추가 -->
+							<!-- [2022-11-02] 윤지현:상세주소 마크업수정 -->
+							<div class="formItem">
+								<strong class="formTit">영문 상세주소</strong>
+								<div class="inpText">
+									<input type="text" title="상세주소" class="tyTxt" value placeholder> <!-- [2022-11-02] 윤지현:readonly 삭제 -->
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+								<p class="infoTxt"><span class="pColor">영문이름과 주소는 실명확인증표 상의 내용과 일치하게 입력해주세요. 일치하지 않으면 관련법(금융실명법 등) 위반사항으로 해외송금 거절 및 지연처리 사유가 될 수 있습니다.</span></p>
+							</div>
+							<!-- //[2022-11-02] 윤지현:상세주소 마크업수정 -->
+							
+							<div class="formItem">
+								<strong class="formTit">외국환거래법상의 거주구분</strong>
+								<div class="boxRdoGroup">
+									<div class="inpChk">
+										<input type="radio" name="radio7" id="radio71" checked>
+										<label for="radio71">국내 거주자</label>
+									</div>
+									<div class="inpChk">
+										<input type="radio" name="radio7" id="radio72">
+										<label for="radio72">국내 비거주자</label>
+									</div>
+								</div>
+								
+							</div>
+							<p class="mt15 ar"><a href="javascript:popOpen(sp_popup);" title="상세화면이동" role="button" class="btnDetail">거주성 판정기준표</a></p>
+
+							<div class="formItem">
+								<strong class="formTit">국적</strong>
+								<div class="inpSel">
+									<a href="javascript:;" title="국적 선택" role="button" class="btnSel placeholder">한국[REPUBLIC OF KOREA]</a>
+								</div>
+							</div>
+
+							<div class="formItem">
+								<strong class="formTit">외환우편발송처</strong>
+								<div class="inpSel">
+									<a href="javascript:;" title="외환우편발송처 선택" role="button" class="btnSel placeholder">자택</a>
+								</div>
+							</div>
+
+							<div class="formItem">
+								<strong class="formTit">거래주체구분</strong>
+								<div class="inpSel">
+									<a href="javascript:;" title="거래주체구분 선택" role="button" class="btnSel placeholder">개인기타</a>
+								</div>
+							</div>
+			
+						</div>
+
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel">등록</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="sp_popup" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">거주성 판정기준표</h2>
+					</div>
+					<div class="layerSelectContent">
+						
+						<div class="tabWrap oneDepth">
+							<div role="tablist" class="tabList">
+								<a href="javascript:;" role="tab" aria-selected="true" class="active">국내 거주자</a>
+								<a href="javascript:;" role="tab" class>국내 비거주자</a>
+							</div>
+							<div class="tabPanelList">
+								<div role="tabpanel" class="tabPanel show">
+									<section class="section30">
+										<ol class="listNum habitability">
+											<li>대한민국 국민
+												<ul>
+													<li>가. 대한민국 재외공관에서 근무할 목적으로 외국에 파견되어 체재하고 있는 자.</li>
+													<li>나. 비거주자이었던 자로서 입국하여 국내에 3개월 이상 체재하고 있는 자.</li>
+													<li>다. 기타 기획재정부 장관이 정하는 자.</li>
+												</ul>
+											</li>
+										</ol>
+									</section>
+								</div>
+								<div role="tabpanel" class="tabPanel">
+									<section class="section30">
+										<ol class="listNum habitability">
+											<li>국내에 있는 외국정부의 공관과 국제기구.</li>
+											<li>주한미군, 국제연합군 및 군속·초청계약자, 비세출자금기관,  군사우편국, 군용은행시설.</li>
+											<li>외국에 있는 국내법인 등의 영업소 및 사무소.</li>
+											<li>외국에 주된 사무소가 있는 단체·기관, 이에 준하는 조직체.</li>
+											<li>대한민국 국민
+												<ul>
+													<li>가. 대한민국 재외공관에서 근무할 목적으로 외국에 파견되어 체재하고 있는 자.</li>
+													<li>나. 비거주자이었던 자로서 입국하여 국내에 3개월 이상 체재하고 있는 자.</li>
+													<li>다. 기타 기획재정부 장관이 정하는 자.</li>
+												</ul>
+											</li>
+											<li>외국인
+												<ul>
+													<li>가. 국내에 있는 외국정부의 공관 또는 국제기구에서 근무하는 외교관·영사 또는 그 수행원이나 사용인.</li>
+													<li>나. 외국정부 또는 국제기구의 공무로 입국하는 자.</li>
+													<li>다. 거주자였던 외국인으로서 출국하여 외국에서 3개월 이상 체재 중인 자.</li>
+												</ul>
+											</li>
+										</ol>
+									</section>
+								</div>
+							</div>
+						</div>
+						
+				</div>
+
+				<div class="popFootBox">
+					<div class="btnArea">
+						<button type="button" onclick="popClose(this)" class="sel">확인</button>
+					</div>
+				</div>
+
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0006_8</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>경품 수령 정보 등록</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+      <div class="pgTitWrap">
+				<p class="pTit">경품 수령을 위해<br><strong>수령 정보를 입력해주세요.</strong></p>
+				<ul class="listDot">
+					<li>수령 정보 미입력 시 당첨이 취소될 수 있어요.</li>
+				</ul>
+			</div>
+
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">이름</strong>
+					<div class="inpText">
+						<input type="text" title="이름 입력" value class="tyTxt" placeholder="이름입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">휴대전화번호</strong>
+					<div class="formGroup flex46">
+						<div class="inpSel">
+							<a href="javascript:;" title="휴대폰번호 앞자리 선택" role="button" class="btnSel placeholder">선택</a>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="휴대폰번호" value class="tyTxt" placeholder="'-'없이 입력" maxlength="8">
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">주소</strong>
+					<div class="inpText readonly sKey">
+						<input type="text" title="우편번호" value class="tyTxt sKey" placeholder="우편번호" readonly>
+						<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+					</div>
+					<div class="inpText readonly sKey">
+						<input type="text" title="상세주소" value class="tyTxt sKey" placeholder readonly>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<div class="inpText">
+						<input type="text" title="상세주소" value class="tyTxt" placeholder="상세주소를 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="agreeInArea mt30">
+				<div class="inner">
+					<p class="termsExp">1. 개인정보 수집목적 및 항목<br>
+					이벤트 경품당첨자 선정/발표 및 경품배송을 위해 고객님의 성명, 핸드폰 번호를 수집하고 있습니다.</p>
+					<p class="termsExp">2. 개인정보 보유/이용기간<br>
+					수집한 개인정보는 해당이벤트 경품 배송 및 확인완료 기간까지 이용되며 제3자 제공 및 기타용도에 이용되지 않습니다.<br></p>
+					<p class="termsExp">단, 제휴이벤트 진행의 경우에는 이벤트 진행/추첨을 위하여 상기에 명시된 [제휴이벤트 정보제공확인사항]에 따라 진행 됩니다.</p>
+					<p class="termsExp">미동의 시 이벤트 응모 불가</p>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="allCheck floating">
+				<input type="checkbox" name="agreeChk" id="aggrChk11">
+				<label for="aggrChk11">경품 수령을 위한 개인정보 수집·이용·처리위탁에 대한 내용을 확인하였고 이에 동의합니다.</label>
+			</div>
+
+      <div class="btnArea">
+				<button type="button" class="btn_full sel dis">등록</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

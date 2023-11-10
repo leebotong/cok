@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>콕 button</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>버튼</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+
+	<div id="container">
+		<h1 class="gTit">### input button</h1>
+		<!-- <button class="btnSm">input 위</button>
+		<button class="btnSm sel">활성화</button>
+		<button class="btnSm" disabled>disabled</button> -->
+		<div class="formWrap">
+			<div class="formItem">
+				<div class="formGroup mt0">
+					<div class="inpText readonly">
+						<input type="text" title="권유직원" value class="tyTxt" placeholder="권유직원 입력" readonly>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						<a href="javascript:;" role="button" class="btnSm">검색</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<h1 class="gTit" style="margin-top:40px">### button 사이즈</h1>
+		<button type="button" class="btnXXsm">.btnXXsm h20 bg</button>
+		<button type="button" class="btnXsm">.btnXsm h26 bg</button>
+		<button type="button" class="btnSm">+ 채우기 .btnSm h30</button>
+		<button type="button" class="btnMd">.btnMm h40</button>
+
+		<button class="btnLocal">해운대농협</button>
+
+		<section>
+			<p class="ar">
+				<a href="#nolink" class="btnDetail" role="button" title="팝업실행">특판상품 안내</a>
+			</p>
+		</section>
+
+		<div class="btnLnkLine">
+			<a href="javascript:;" class="underLine" role="button">지역에 기부한 만큼 우대금리 제공</a>
+		</div>
+
+		<h1 class="gTit" style="margin-top:40px">### 선택 radio 버튼</h1>
+		<div class="rdoBtnsWrap">
+			<ul>
+				<li>
+					<span class="rdoBtn">
+						<input type="radio" name="sample00" id="sample01">
+						<label for="sample01">6개월</label>
+					</span>
+				</li>
+				<li>
+					<span class="rdoBtn">
+						<input type="radio" name="sample00" id="sample02">
+						<label for="sample02">12개월</label>
+					</span>
+				</li>
+				<li>
+					<span class="rdoBtn">
+						<input type="radio" name="sample00" id="sample03">
+						<label for="sample03">24개월</label>
+					</span>
+				</li>
+				<li>
+					<span class="rdoBtn">
+						<input type="radio" name="sample00" id="sample04">
+						<label for="sample04">60개월</label>
+					</span>
+				</li>
+			</ul>
+		</div>
+
+		<h1 class="gTit" style="margin-top:40px">### 터치 증액 버튼</h1>
+		<div class="touchBtnWrap">
+			<a href="javascript:;" title="전액" role="button">전액</a>
+			<a href="javascript:;" title="100만원 추가" role="button">+100만</a>
+			<a href="javascript:;" title="10만원 추가" role="button">+10만</a>
+			<a href="javascript:;" title="5만원 추가" role="button">+5만</a>
+			<a href="javascript:;" title="1만원 추가" role="button">+1만</a>
+		</div>
+
+		<h1 class="gTit" style="margin-top:40px">### 더보기 버튼</h1>
+			<div class="moreBtn"><button type="button">더보기</button>
+		</div>
+
+		<h1 class="gTit" style="margin-top:40px">### 상세화면이동버튼</h1>
+		<a href="javascript:;" title="상세화면이동" role="button" class="btnDetail">자동차세</a>
+
+		<h1 class="gTit" style="margin-top:40px">### 텍스트밑줄링크</h1>
+		<div class="btnLnkLine">
+			<a href="javascript:;" role="button" class="underLine">ARS 인증 전화가 오지 않아요.</a>
+		</div>
+
+		<h1 class="gTit" style="margin-top:40px">### 새로고침 버튼</h1>
+		<button type="button" class="btnRefresh"><span class="blind">새로고침</span></button>
+
+		<h1 class="gTit" style="margin-top:40px">### inbody 버튼 .btnInArea > button</h1>
+		<div id="contents">
+			<div class="btnInArea">
+				<button type="button">지로 납부내역 조회</button>
+			</div>
+			<div class="btnInArea">
+				<button type="button">지로 납부내역 조회</button>
+				<button type="button">지로 납부내역 조회</button>
+			</div>
+			<div class="btnInArea">
+				<button type="button" class="arrow">다른 농·축협 영업점 선택</button>
+			</div>
+			<div class="btnInArea">
+				<button type="button" class="point">지로 납부내역 조회 .point</button>
+			</div>
+			<div class="btnInArea">
+				<a href="tel:1600-3600" class="point">상담센터(1600-3600) 전화 걸기</a>
+			</div>
+			<div class="btnInArea">
+				<button type="button" class="btnInquery">조회 .btnInquery</button>
+			</div>
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">이전</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+			<div class="btnArea dv64">
+				<button type="button" class="btn_full">6:4버튼 dv64</button>
+				<button type="button" class="btn_full sel">6:4버튼 dv64</button>
+			</div>
+			<div class="btnArea half">
+				<button type="button" class="btn_full">5:5버튼 half</button>
+				<button type="button" class="btn_full sel">5:5버튼 half</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

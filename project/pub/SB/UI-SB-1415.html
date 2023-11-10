@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1415</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			// popOpen(sp);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>자동이체신청</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="paymentWrap">
+					<div class="twoToneType">
+						<div class="ttTop">
+							<!-- PAYMENT -->
+							<div class="roundBox">
+								<div class="roundInBox">
+									<div class="accTypeWrap accAlwaysType">
+										<a href="javascript:;" title="계좌선택" role="button" class="accInLayout">
+											<div class="accInfo">
+												<div class="accInfoInLayout">
+													<div class="logoWrap">
+														<img src="../../images/logo/logo_bnk_011_72x72.png" alt="OO은행" class="logo">
+													</div>
+													<div class="accInfoWrap">
+														<strong class="accName">
+															<!-- <span class="accBank">[NH농협]</span> -->
+															<span class="bankBookName">주거래우대통장</span>
+														</strong>
+														<div class="accNumWrap">
+															<div class="accNumBox">
+																<span class="accNumber">352-1775-6397-03</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="accDataWrap flex">
+										<div>
+											<span class="accNumInfo">출금가능금액</span>
+											<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //PAYMENT -->
+						</div>
+						<div class="ttBottom">
+							<div class="ttContents">
+								<!-- PAYMENT SUB BOX -->
+								<div class="paymentInfoBox">
+									<div class="formWrap">
+										<div class="formItem">
+											<strong class="formTit">출금계좌 비밀번호</strong>
+											<div class="inpText">
+												<!-- <button type="button" title="계좌 비밀번호 4자리 입력됨" aria-label="계좌 비밀번호 4자리 숫자 입력" class="btnTransparent"></button> 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+												<input type="password" title="비밀번호 4자리 숫자" aria-hidden="true" value class="sKey" placeholder="숫자 4자리 입력" maxlength="4" readonly>
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">입금계좌종류</strong>
+											<div class="inpSel">
+												<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel">대출계좌</a><!-- .placeholder -->
+												<!-- 입출금계좌, 예적금계좌, 펀드/신탁/IRP, 대출계좌 -->
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">입금계좌번호</strong>
+											<div class="formGroup flex46">
+												<div class="inpSel">
+													<a href="javascript:;" title="은행선택" role="button" class="btnSel">NH농협</a>
+												</div>
+												<div class="inpText">
+													<input type="tel" title="계좌번호 입력" value class="tyTxt" placeholder="계좌번호 입력" maxlength="8">
+												</div>
+											</div>
+										</div>
+										<div class="btnInArea">
+											<button type="button" class="btmMd">최근입금계좌</button>
+											<button type="button" class="btmMd">내계좌</button>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">이체주기</strong>
+											<div class="inpSel">
+												<a href="javascript:;" title="이체주기 선택" role="button" class="btnSel placeholder">이체주기 선택</a><!-- .placeholder -->
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">이체일</strong>
+											<div class="inpSel">
+												<a href="javascript:;" title="일자 선택" role="button" class="btnSel placeholder">일자 선택</a><!-- .placeholder -->
+											</div>
+										</div>
+										<div class="formItem mt14">
+											<strong class="formTit inpChk">
+												<input type="checkbox" name="chk4" id="chk42">
+												<label for="chk41">오후에 이체할래요.
+													<!-- tooltip -->
+													<div class="tooltipWrap">
+														<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+														<div class="tooltipCont">
+															<p class="infoTxt">농협 계좌간 자동이체는 이체일 오전과 오후에 두 번 처리됩니다. 오전처리를 원하지 않으시면 오후 처리를 신청해 주시면 됩니다. 단, 출금계좌가 대출약정계좌(마이너스통장)이면서 이체금액을 포함한 잔액이 0원 이하인 경우 오후처리 신청 여부와 무관하게 오후처리만 일어납니다.</p>
+															<p class="infoTxt">퇴직연금(090과목)계좌의 경우 오전처리만 가능합니다.</p>
+															<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+														</div>
+													</div>
+													<!-- //tooltip -->
+												</label>
+											</strong>
+										</div>
+									</div>
+								</div>
+
+								<!-- ▼ UI-SB-1415 요소 -->
+								<section class="section30">
+									<div class="titWrap">
+										<strong class="title">대출계좌 자동이체 이용안내</strong>
+									</div>
+									<ul class="listDot">
+										<li>출금계좌와 입금계좌가 모두 농협은행이거나 농·축협인 경우에만 자동이체 등록이 가능합니다.(예비출금계좌 포함)</li>
+										<li>대출계좌 자동이체 시 타인 계좌는 등록이 불가합니다.</li>
+										<li>출금계좌번호 변경 시 만기자동완제기능이 해제되므로 영업점으로 별도 신청하시기 바랍니다.</li>
+									</ul>
+								</section>
+								<!-- //UI-SB-1415 요소 -->
+
+								<div class="btmInfoWrap">
+									<strong class="tit">자동이체 이용안내</strong>
+									<ul class="listDot">
+										<!--[2022-12-05] 이용시간변경 상시운영 : 윤희정-->
+										<li>서비스 이용시간: 평일 00:15~24:00, <strong class="pColor">토요일 00:15~24:00, 일요일/공휴일 거래불가</strong></li>
+										<!--//[2022-12-05] 이용시간변경 상시운영 : 윤희정-->
+										<li>자동이체 재처리 시간은 당행 전산 사정 등에 의해 변경 될 수 있습니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" onclick="popOpen(sp)" class>취소</button>
+					<button type="button" class="sel">다음</button>
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea"></div>
+</body>
+</html>

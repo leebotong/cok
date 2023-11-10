@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0310</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>NH고향사랑기부예금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+			<!-- 영업점선택 -->
+			<div class="marketListBranch">
+				<div class="balloon">
+					<p class="dil">금리를 꼭 확인해주세요</p>
+					<!-- tooltip -->
+					<div class="tooltipWrap jsTooltipPosition">
+						<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+						<div class="tooltipCont">
+							<strong class="tit">금리 확인 안내</strong>
+							<p>조회하신 금리(연%P, 세전)는 가입설계, 우대금리 적용, 금리반영시점에 따라 가입 시 금리와 다를 수 있습니다. (실제 적용금리는 상품가입 단계에서 꼭 확인해주세요.)</p>
+							<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+						</div>
+					</div>
+					<!-- //tooltip -->
+				</div>
+				<div class="box">
+					<div class="formWrap">
+						<div class="formItem">
+							<strong class="formTit">상품 가입 영업점
+								<!-- tooltip -->
+								<div class="tooltipWrap jsTooltipPosition">
+									<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+									<div class="tooltipCont l-15">
+										<strong class="tit">농·축협 영업점 선택 안내</strong>
+										<ul class="listDot">
+											<p>선택하신 농·축협 영업점으로 상품 가입이 진행되며, 농·축협 별로 기본금리와 우대금리는 다를 수 있으므로 상품 가입 영업점을 꼭 확인하신 후 가입을 진행해주세요.</p>
+										</ul>
+										<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+									</div>
+								</div>
+								<!-- //tooltip -->
+							</strong>
+							<!-- [2023-01-05] 김연진: 영업점 셀렉트 삭제
+							<div class="inpSel">
+								<a href="javascript:;" title="상품 판매 영업점 선택" role="button" class="btnSel placeholder">영업점 선택</a>
+							</div>  -->
+							<div class="inpText">
+								<input type="text" title="영업점 검색" class="tyTxt sKey" value placeholder="영업점 검색" readonly><!-- [2022-09-01] readonly추가 -->
+								<button type="button" title="입력 텍스트 삭제" class="btnReset" style="display: none;"></button>
+							</div>
+						</div>
+						<button type="button" class="btnSm">검색</button>
+					</div>
+					<!-- 예상금리 -->
+					<div class="rateBox">
+						<div class="innerBox">
+							최고 연 <strong class="dataWrap"><em class="data">0.05</em><span class="unit">%</span></strong>
+							<button type="button" class="btnSm">자세히</button>
+						</div>
+						<div class="rateEtc">
+							<span>세전</span>
+							<span>우대금리포함</span>
+							<span>6개월 기준</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- [2023-02-17] 김연진 : 이벤트 배너 -->
+			<div class="marketInfoBanner">
+				<a href="#">
+					<img src="../../images/market/cont/ban_hometown.png" art="천만고객 달성 이벤트. 고향사랑기부예적금
+					가입하고 NH포인트도 받아가세요! 2023.03.13(월) ~ 03.26(일)"></span>
+				</a>
+			</div>
+
+			<!-- 상세내용 -->
+			<div class="marketPrdDetail bg11">
+				<strong class="prdName">NH고향사랑기부예금</strong>
+				<p class="prdDesc">고향사랑을 실천하는<br>지역사회공헌 상품이에요!</p>
+				<ul class="listDot">
+					<li>지역사회 발전 기여</li>
+					<li>우대금리 제공</li>
+					<!--[2023-01-05] 김연진: 문구삭제 <li>원하는 지역에 공헌</li> -->
+				</ul>
+				<div class="btnInArea">
+					<button type="button">가입하기</button>
+				</div>
+			</div>
+
+			<!-- [2022-09-05] 마케팅컨텐츠 영역 -->
+			<!-- [2023-01-05] 김연진:마케팅컨텐츠 전체 수정 -->
+			<div class="marketingArea hometownLoveBox">
+				<div class="section aniSec01">
+					<strong class="mktTit"><span class="highlight"><span>'나의 고향</span></span>을 찾아서'</strong>
+					<p class="mktDesc">고향사랑기부금 납부 참여하고<br>상품 가입하면, 우대금리 혜택까지!</p>
+					<div class="imgAreaUnit" aria-hidden="true">
+						<div class="imgArea">
+							<img src="../../images/market/ani/img_hometown01.png" alt="">
+						</div>
+						<div class="btnInArea">
+							<a href="#" class="point">'고향 사랑 기부제'란?</a>
+						</div>
+					</div>
+					<!--차후 개발 진행하기로 함_2022-12-23
+					<div class="btnInArea">
+						<button type="button" class="point">지역별 NH고향사랑 온도계 보기</button>
+					</div>
+					-->
+				</div>
+
+				<!-- aniSec02 -->
+				<div class="section aniSec02 bg">
+					<strong class="mktTit"><span class="highlight"><span>고향사랑기부금</span></span>을<br>납부한 고객님!</strong>
+					<p class="mktDesc">NH고향사랑온도계로<br>예·적금 잔액 현황을 확인할 수 있어요</p>
+					<div class="imgAreaUnit">
+						<div class="imgArea">
+							<img src="../../images/market/ani/img_hometown02.png" alt="">
+						</div>
+					</div>
+					<div class="btnInArea">
+						<a href="javascript:;" class="point">지역별 NH고향사랑 온도계보기</a>
+					</div>
+					<div class="btnInArea">
+						<a href="#" class="point">답례품 신청하러가기</a>
+					</div>
+				</div>
+
+				<!-- aniSec03 -->
+				<div class="section aniSec03">
+					<strong class="mktTit"><span class="highlight"><span>기부 지역명</span></span>을 통장에</strong>
+					<p class="mktDesc">영업점 방문 시<br>고객님이 기부하신 지역명을 인자해 드려요</p>
+					<div class="imgAreaUnit">
+						<div class="imgArea">
+							<img src="../../images/market/ani/img_hometown03.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //[2023-01-05] 김연진:마케팅컨텐츠 전체 수정 -->
+			<!-- //마케팅컨텐츠 영역 -->
+
+			<!-- 상세 토글영역 -->
+			<section class="section40">
+				<ul class="faqList jsAcc marketAcc">
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">상품안내</p>
+						</a>
+						<div class="view">
+							<!-- cms 영역 -->
+							<div class="cmsLoadTest1"> <!-- 퍼블확인용 -->
+								<script>
+										$(document).ready(function(){
+												$(".cmsLoadTest1").load("../../nhsangho/html/sf/mk/dt/dt10001194.html");
+										});
+								</script>
+							</div>
+							<!-- //cms 영역 -->
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">금리안내</p>
+						</a>
+						<div class="view">
+							<!-- cms 영역 -->
+							<div class="cmsLoadTest2"> <!-- 퍼블확인용 -->
+								<script>
+										$(document).ready(function(){
+												$(".cmsLoadTest2").load("../../nhsangho/html/sf/mk/dt/dt10001194_1.html");
+										});
+								</script>
+							</div>
+							<!-- //cms 영역 -->
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">우대금리안내</p> <!-- [2023-01-06] 윤지현: 문구 재수정--> <!-- [2023-01-05] 김연진: 문구수정-->
+						</a>
+						<div class="view">
+							<!-- cms 영역 -->
+							<div class="cmsLoadTest3"> <!-- 퍼블확인용 -->
+								<script>
+										$(document).ready(function(){
+												$(".cmsLoadTest3").load("../../nhsangho/html/sf/mk/dt/dt10001194_2.html");
+										});
+								</script>
+							</div>
+							<!-- //cms 영역 -->
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">설명서 및 약관</p>
+						</a>
+						<div class="view">
+							<!-- [2023-01-09] 김연진 : 약관추가 수정 -->
+							<div class="btnInArea">
+								<button type="button">예탁금거래기본약관</button>
+								<button type="button">거치식예탁금약관</button>
+								<button type="button">상품설명서</button>
+								<button type="button">핵심설명서</button>
+								<button type="button">상품특약</button>
+							</div>
+							<!-- //[2023-01-09] 김연진 : 약관추가 수정 -->
+						</div>
+					</li>
+					<!-- [2023-01-05] 김연진: 기타항목제거 <li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">기타</p>
+						</a>
+						<div class="view">
+
+						</div>
+					</li> -->
+				</ul>
+			</section>
+
+			<!-- [2022-11-04] 윤지현:예금자보호법(iframe), 준법(관리자) 추가 -->
+			<div class="protectIframe">
+				<iframe src="/content/nhsangho/html/dt/SMNMFDE342000_02.html" frameborder="0" width="100%" height="150px"></iframe> <!-- [2022-11-07] 윤지현:경로수정 -->
+			</div>
+			<div class="compliance">
+				<strong class="tit">준법감시인 심의필</strong><!-- [2022-11-04] 윤지현:타이틀추가 -->
+				준법감시인 심의필 : 2022-171(심의일 2022.07.08)<br>
+				유효기간 : 2022.07.08~2025.12.31
+			</div>
+			<!-- //[2022-11-04] 윤지현:예금자보호법, 준법 추가 -->
+
+			<!-- <div class="marketGuide">
+				<p class="defTit2">계좌 가입신청</p>
+				<ul class="listDot">
+					<li><strong>24시간</strong><br>(00:00~00:30 신청불가)</li>
+					<li><strong>스마트상담센터 1600-2800</strong><br>(09:00~18:00 영업일 기준)</li>
+				</ul>
+			</div> -->
+
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class="btn_full sel">가입하기</button>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- [2022-09-05] ▼ 마케팅컨텐츠 애니메이션 -->
+<script>
+	$(document).ready(function(){
+		// ********* [2022-09-27] 푸터 버튼 스크립트 수정 ********** //
+		$('#footer_cont').css({'display':'none'});
+		$(window).scroll(function(){
+			var scrollTop = $('html').scrollTop();
+			var sectionH = $(".marketingArea .aniSec01").offset().top - 90
+			if(scrollTop >= sectionH){
+				$('#footer_cont').fadeIn();
+			} else {
+				$('#footer_cont').fadeOut();
+			}
+		});
+		//********* [2022-09-27] 푸터 버튼 스크립트 수정 **********//
+
+		visualController();
+	});
+
+	// 스크롤 모션 시작
+	// *********** [2022-09-07] 김자영 : 스크립트 수정  ***********
+	function visualController(){
+		$(window).scroll(function(){
+			var windowHeight = $(window).height();
+			$(".marketingArea .section").each(function(i){
+				if ($(window).scrollTop() >= $(".aniSec0"+(i+1)).offset().top - windowHeight /2) {
+					$(".aniCont0"+(i+1)).addClass("active");
+				}
+			});
+		});
+	};
+</script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CO-0005</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>ARS인증</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<h2 tabindex="0"><span class="blind">튜토리얼</span></h2>
+					<div class="popContBox introWrap">
+						<div class="introPopWrap">
+							<!-- swiper -->
+							<div class="introContSwipe">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="slideBox">
+												<div class="txtArea">
+													<strong class="tit">NH콕뱅크</strong>
+													<p class="txt">금융, 정보, 쇼핑을 한번에 <span class="pColor">콕</span></p>
+												</div>
+												<img src="../../../content/images/com/intro01.png" alt="NH콕뱅크 화면">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="slideBox">
+												<div class="txtArea">
+													<strong class="tit">간편한 송금</strong><!-- [2022-10-14] 김자영 : 텍스트수정 -->
+													<p class="txt">가장 쉽고 빠른 송금</p>
+												</div>
+												<img src="../../../content/images/com/intro02.png" alt="송금 화면">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="slideBox">
+												<div class="txtArea">
+													<strong class="tit">금융상품</strong>
+													<p class="txt">간편한 상품 가입</p><!-- [2022-10-14] 김자영 : 텍스트수정 -->
+												</div>
+												<img src="../../../content/images/com/intro03.png" alt="금융상품 화면">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="slideBox">
+												<div class="txtArea">
+													<!--[2022-11-11] 텍스트수정 상시운영 : 윤희정-->
+													<strong class="tit">NH콕마이데이터</strong>
+													<!--//[2022-11-11] 텍스트수정 상시운영 : 윤희정-->
+													<p class="txt">나만을 위한 맞춤 자산관리!</p>
+												</div>
+												<img src="../../../content/images/com/intro04.png" alt="마이데이터 화면">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="slideBox">
+												<div class="txtArea">
+													<strong class="tit">콕팜</strong>
+													<p class="txt">농업인, 조합원/준조합원을 위한<br>다양한 디지털 특화서비스</p>
+												</div>
+												<img src="../../../content/images/com/intro05.png" alt="콕팜 화면">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="slideBox">
+												<div class="txtArea">
+													<strong class="tit">콕세상</strong>
+													<p class="txt">편리한 생활/제휴<br>서비스가 콕세상에!</p>
+												</div>
+												<img src="../../../content/images/com/intro06.png" alt="콕세상 화면">
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="slideBox">
+												<div class="txtArea">
+													<strong class="tit">콕쇼핑</strong>
+													<p class="txt">농협의 쇼핑채널을 한 곳에!<br>다양한 상품을 구매할 수 있어요</p>
+												</div>
+												<img src="../../../content/images/com/intro07.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiperNavigation">
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<!-- //swiper -->
+							<div class="btnArea">
+								<button type="button" onclick="popOpen(popupCCA)" class="sel">콕뱅크 시작하기</button>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								function introSwiper() {
+									$(".introContSwipe").each(function (idx) {
+										var $this = $(this);
+										$this.addClass("type" + idx);
+
+										//슬라이드 초기화
+										if (introSwiper != undefined) {
+											introSwiper.destroy();
+											introSwiper = undefined;
+										}
+
+										var introSwiper = new Swiper(".type" + idx + " .swiper-container", {
+											centeredSlides: true,
+											observer: true,
+											observeParents: true,
+											//observeSlideChildren: true,
+											pagination: {
+												el: $(".type" + idx).find(".swiper-pagination"),
+												clickable: true,
+												bulletElement: "a",
+											},
+											autoplay: false, // [2022-10-14] 김자영 : 수정
+											loop: true,
+											navigation: {
+												nextEl: $(".type" + idx).find(".swiper-button-next"),
+												prevEl: $(".type" + idx).find(".swiper-button-prev"),
+											},
+											on: {
+												init: function () {
+													$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+													$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active").attr("aria-hidden", false).attr("tabindex", 0);
+												},
+												slideChangeTransitionEnd: function () {
+													$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+													$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active").attr("aria-hidden", false).attr("tabindex", 0);
+													$(".type" + idx + " .swiper-pagination").find("a").attr("title", "");
+													$(".type" + idx + " .swiper-pagination").find("a").eq(this.activeIndex).attr("title", "선택됨");
+												},
+											},
+										});
+
+										// autoplay control 옵션
+										// $(".swiper-pagination").append('<a href="javascript:;" class="swiperAuto stop" role="button" aria-label="일시정지">■</a>');
+										// $(".swiperAuto").on("click", function () {
+										// 	if ($(this).hasClass("stop")) {
+										// 		$(this).addClass("start").removeClass("stop").text("▶").attr("aria-label", "재생");
+										// 		introSwiper.autoplay.stop();
+										// 	} else {
+										// 		$(this).addClass("stop").removeClass("start").text("■").attr("aria-label", "일시정지");
+										// 		introSwiper.autoplay.start();
+										// 	}
+										// });
+									});
+								}
+
+								introSwiper();
+							})
+						</script>
+					</div>
+
+					<!-- <div class="popFootBox">
+						<div class="btnArea pt0">
+							<button type="button" onclick="popOpen(popupCCA)" class="sel">확인</button>
+						</div>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

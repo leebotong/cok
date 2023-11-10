@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MN-0001_02</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>푸시알림</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupC);" title="전화오류_P 열기" role="button">푸시알림</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+
+	<!-- CENTER POPUP [전화오류] -->
+	<div id="popupC" class="popupWrap center" style="display:block;">
+		<div class="layerPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="Layer_Tit">
+								<h2 tabindex="0">푸시알림 수신동의 안내</h2>
+							</div>
+							<div class="Layer_Con">
+								<!-- cont -->
+								<div class="textItem">
+									<div class="layoutWrap">
+										<p class="tit">필수 푸시알림 수신동의</p>
+										<div class="toggleSwitch">
+											<input type="checkbox" id="switch01" checked>
+											<label for="switch01"></label>
+										</div>
+									</div>
+									<p class="txt">공지사항 수신</p>
+								</div>
+								<hr aria-hidden="true"> <!-- [2022-10-06] 윤지현:접근성수정. 속성추가 -->
+								<div class="textItem">
+									<div class="layoutWrap">
+										<p class="tit">선택 푸시알림 수신동의</p>
+										<div class="toggleSwitch">
+											<input type="checkbox" id="switch02">
+											<label for="switch02"></label>
+										</div>
+									</div>
+									<p class="txt">새소식, 이벤트, 상품안내, 송금수취, 영업점알림 등 고객혜택 및 서비스 안내 수신</p>
+								</div>
+								<hr aria-hidden="true"> <!-- [2022-10-06] 윤지현:접근성수정. 속성추가 -->
+
+								<div class="infoTxt mt20">수신동의 변경은 <span class="pColor">[전체메뉴 > 설정 > 푸시알림 설정]</span>에서 가능합니다.</div> <!-- [2022-10-06] 윤지현:접근성수정. span태그 감싸기 --> <!-- [2022-08-30] 디자인변경수정 -->
+								<div class="infoTxt">콕팜은 <span class="pColor">[콕팜 > 설정 > 푸시알림설정]</span>에서 별도로 수신동의 설정이 가능합니다.</></div> <!-- [2022-10-06] 윤지현:접근성수정. span태그 감싸기 --> <!-- [2022-08-30] 디자인변경수정 -->
+								<!-- [2022-08-30] 디자인변경수정 -->
+								<div class="alarmBox">
+									<p class="defTit2">기기 알림상태</p>
+									<a href="javascript:;" role="button" class="alarmLink">알림설정하기</a>
+									<div class="rounBgBox ">
+										<p class="txt">접속하신 스마트 기기 내 설정에서 ‘콕뱅크’ 알림이 ‘알림허용’일 때만 푸시알림을 받으실 수 있습니다.</p>
+									</div>
+								</div>
+								<!-- //[2022-08-30] 디자인변경수정 -->
+								<!-- //cont -->
+							</div>
+							<div class="Layer_Pop_Close">
+								<div class="btnArea">
+									<button type="button" onclick="popClose(this)" class="sel">확인</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

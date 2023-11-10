@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0024</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>외화주머니에 담기</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">외화주머니에 아래의 외화를<br>담으시겠습니까?</p>
+			</div>
+
+			<div class="listTblBox">
+				<ul>
+					<li>
+						<span class="tit">출금계좌</span>
+						<p class="txt">123123-56-123123</p>
+					</li>
+					<li>
+						<span class="tit">신청 금액</span><!-- [2022-10-14] 김자영 : 텍스트 수정 -->
+						<p class="txt"><strong class="dataWrap"><span class="unit">USD</span><em class="data">100.00</em><span class="unit">달러</span></strong></p>
+					</li>
+					<li>
+						<span class="tit">원화환산 금액</span><!-- [2022-10-14] 김자영 : 텍스트 수정 -->
+						<p class="txt"><strong class="dataWrap"><em class="data">111,950</em><span class="unit">원</span></strong></p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="listTbl">
+				<div class="listTit">
+					<span>환전정보</span>
+				</div>
+				<ul>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">환전신청일</span> 
+							<p class="txt">2022.05.16</p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">우대율</span> 
+							<p class="txt">50%</p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">고시환율</span> 
+							<p class="txt"><strong class="dataWrap"><em class="data">1,251.61</em><span class="unit">원</span></strong></p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">우대적용환율</span> 
+							<p class="txt"><strong class="dataWrap"><em class="data">1,251.61</em><span class="unit">원</span></strong></p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">우대받은금액</span> 
+							<p class="txt"><strong class="dataWrap"><em class="data">17.66</em><span class="unit">원</span></strong></p>
+						</div>
+					</li>
+				</ul>		
+			</div>
+			<p class="infoTxt">외화주머니 담기 시 최소단위의 금액으로 인하여 인출 원화가 변경 될 수 있습니다.</p>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="toastMessage">[확인]선택 시 전자서명이 진행됩니다.</div>
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0283</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>금융상품</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="tabWrap oneDepth">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab">입출금</a>
+					<a href="javascript:;" role="tab" class="active">예적금</a>
+					<a href="javascript:;" role="tab">대출</a>
+					<a href="javascript:;" role="tab">펀드</a>
+				</div>
+			</div>
+
+			<!-- swiper 영역 -->
+			<div class="marketListSwipe financial"> 	<!-- //[2023-06-08] 금융상품 특판메뉴 및 화면 신설 고도화 financial클래스 추가 -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!-- [2022-08-08] 윤지현:파일명, alt 수정 -->
+						<!--[2022-12-21] 기부상품 개발 상시운영 : 윤희정 -->
+						<div class="swiper-slide">
+							<a href="javascript:;" role="button"><img src="../../images/market/cont/ban_list_25.png" alt="NH고향사랑기부적금. '지역사회 발전에 기여하고 우대금리 혜택까지!자세히보기"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:;" role="button"><img src="../../images/market/cont/ban_list_26.png" alt="NH고향사랑기부예금. '지역사회 발전에 기여하고 우대금리 혜택까지!자세히보기"></a>
+						</div>
+						<!--//[2022-12-21] 기부상품 개발 상시운영 : 윤희정 -->
+						<div class="swiper-slide">
+							<a href="javascript:;" role="button"><img src="../../images/market/cont/ban_list_21.png" alt="NH매일적금. '짠테크'족을 위한 자유적립적금! 자세히보기"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:;" role="button"><img src="../../images/market/cont/ban_list_22.png" alt="주머니금리쇼핑예금. 내게 맞는 우대금리 골라 담고 월복리로 이자는 한번 더 점프! 자세히보기"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:;" role="button"><img src="../../images/market/cont/ban_list_23.png" alt="주머니(money)정기적금. 다른은행 계좌를 등록하고 오픈뱅킹 서비스를 이용하면 우대금리 제공! 자세히보기"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="javascript:;" role="button"><img src="../../images/market/cont/ban_list_24.png" alt="주머니(money)적금. 내가 신경 쓰지 않았던 잔돈! 잔돈만 모아도 우대금리를 드려요! 자세히보기"></a>
+						</div>
+						<!-- //[2022-08-08] 윤지현:파일명, alt 수정 -->
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- //swiper 영역 -->
+
+			<div class="savingBanner">
+				<a href="javascript:;" role="button">농·축협 특판상품<br>알아보기!</a>
+				<a href="javascript:;" role="button">준조합원 가입하고<br>세금우대 혜택 받기!</a>
+			</div>
+
+
+			<!-- 영업점선택 -->
+			<div class="marketListBranch financial"> <!-- //[2023-06-08] 금융상품 특판메뉴 및 화면 신설 고도화 financial클래스 추가 -->
+				<div class="balloon">
+					<p class="dil">선택된 영업점으로 가입을 진행해요.</p>
+					<!-- <p>상품 판매 영업점을 검색해 주세요.</p>
+					<p class="dil">고객님, 선택된 <strong class="pColor">%영업점%</strong>으로 가입이 진행됩니다.</p> -->
+					<!-- tooltip -->
+					<!-- <div class="tooltipWrap jsTooltipPosition">
+						<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+						<div class="tooltipCont">
+							<strong class="tit">상품 가입 영업점</strong>
+							<ul class="listDot">
+								<li>콕뱅크에 등록하신 농·축협 계좌만 출금계좌 지정
+									이 가능하며 NH농협은행 계좌로는 출금계좌 지정
+									및 상품가입이 불가능 합니다.</li>
+							</ul>
+							<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+						</div>
+					</div> -->
+					<!-- //tooltip -->
+				</div>
+				<div class="box list"> <!-- [2022-08-10] 윤지현:클래스추가 -->
+					<div class="formWrap">
+						<div class="formItem">
+							<strong class="formTit">상품 판매 영업점
+								<!-- tooltip -->
+								<div class="tooltipWrap jsTooltipPosition">
+									<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+									<div class="tooltipCont l-15">
+										<strong class="tit">농·축협 영업점 선택 안내</strong>
+										<ul class="listDot">
+											<p>선택하신 농·축협 영업점으로 상품 가입이 진행되며, 농·축협 별로 기본금리와 우대금리는 다를 수 있으므로 상품 가입 영업점을 꼭 확인하신 후 가입을 진행해주세요.</p>
+										</ul>
+										<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+									</div>
+								</div>
+								<!-- //tooltip -->
+							</strong>
+							<div class="inpSel">
+								<a href="javascript:;" title="상품 판매 영업점 선택" role="button" class="btnSel">새서울농협 중앙지점</a>
+							</div>
+							<!-- <div class="inpText">
+								<input type="text" title="영업점 검색" class="tyTxt sKey" value placeholder="영업점 검색" readonly>
+								<button type="button" title="입력 텍스트 삭제" class="btnReset" style="display: none;"></button>
+							</div> -->
+						</div>
+						<button type="button" class="btnSm">검색</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- list -->
+			<section class="marketList mt20">
+				<!-- <p class="defTit2">NH콕뱅크 간편가입 상품</p> -->
+				<ul class="list">
+					<!--[2022-12-21] 기부상품 개발 상시운영 : 윤희정 -->
+					<li>
+						<a href="javascript:;" class="link" role="button">
+							<div class="isArrow">
+								<span class="tagWrap">
+									<em class="tag kword01">NEW</em>
+								</span>
+								<strong class="tit">NH고향사랑기부적금</strong>
+								<p class="desc">지역에 기부한 만큼 우대금리 제공</p>
+							</div>
+							<div class="rateWrap">
+								최고 연 <strong class="dataWrap"> <em class="data">1.50</em><span class="unit">%</span></strong>
+								<span class="defTxt3">(12개월 기준)</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="link" role="button">
+							<div class="isArrow">
+								<span class="tagWrap">
+									<em class="tag kword01">NEW</em>
+								</span>
+								<strong class="tit">NH고향사랑기부예금</strong>
+								<p class="desc">지역에 기부한 만큼 우대금리 제공</p>
+							</div>
+							<div class="rateWrap">
+								최고 연 <strong class="dataWrap"> <em class="data">1.50</em><span class="unit">%</span></strong>
+								<span class="defTxt3">(12개월 기준)</span>
+							</div>
+						</a>
+					</li>
+					<!--//[2022-12-21] 기부상품 개발 상시운영 : 윤희정 -->
+					<li>
+						<a href="javascript:;" class="link" role="button">
+							<div class="isArrow">
+								<span class="tagWrap">
+									<em class="tag kword02">BEST</em><!--//[2022-12-21] 기부상품 개발 상시운영 : 윤희정 -->
+								</span>
+								<strong class="tit">NH매일적금</strong>
+								<p class="desc">짠테크족을 위한 자유적립</p>
+							</div>
+							<div class="rateWrap">
+								최고 연 <strong class="dataWrap"> <em class="data">1.50</em><span class="unit">%</span></strong>
+								<span class="defTxt3">(6개월 기준)</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="link" role="button">
+							<div class="isArrow">
+								<span class="tagWrap">
+									<em class="tag kword02">BEST</em>
+								</span>
+								<strong class="tit">주머니(money)적금</strong>
+								<p class="desc">잔돈으로 목돈만들기</p>
+							</div>
+							<div class="rateWrap">
+								최고 연 <strong class="dataWrap"> <em class="data">1.50</em><span class="unit">%</span></strong>
+								<span class="defTxt3">(12개월 기준)</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="link" role="button">
+							<div class="isArrow">
+								<strong class="tit">주머니(money)정기적금</strong>
+								<p class="desc">오픈뱅킹 이용하면 우대금리 제공</p>
+							</div>
+							<div class="rateWrap">
+								최고 연 <strong class="dataWrap"> <em class="data">1.50</em><span class="unit">%</span></strong>
+								<span class="defTxt3">(12개월 기준)</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="link" role="button">
+							<div class="isArrow">
+								<strong class="tit">주머니금리쇼핑예금</strong>
+								<p class="desc">우대금리쿠폰으로 월복리 이자 제공</p>
+							</div>
+							<div class="rateWrap">
+								최고 연 <strong class="dataWrap"> <em class="data">1.50</em><span class="unit">%</span></strong>
+								<span class="defTxt3">(12개월 기준)</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="marketList">
+				<p class="defTit2">NH스마트뱅킹 가입 상품</p>
+				<ul class="list">
+					<li>
+						<a href="javascript:;" class="link" role="button">
+							<div class="isArrow">
+								<strong class="tit">복리식정기예탁금</strong>
+								<p class="desc">정기예탁금이자를 매월 지급하지 않고 월복리로 계산하여 만기에…</p>
+							</div>
+							<div class="rateWrap">
+								최고 연 <strong class="dataWrap"> <em class="data">2.40</em><span class="unit">%</span></strong>
+								<span class="defTxt3">(12개월 기준)</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="link" role="button">
+							<div class="isArrow">
+								<strong class="tit">다 같이 동행 예금 (정기예탁금)</strong>
+								<p class="desc">상품 가입만으로도 공익가치 실현에 등장하는 ‘선한영향력＇상품으로 상품 가입만으로도 공익가치 실현에 등장하는 ‘선한영향력＇상품으로</p>
+							</div>
+							<div class="rateWrap">
+								최고 연 <strong class="dataWrap"> <em class="data">2.40</em><span class="unit">%</span></strong>
+								<span class="defTxt3">(12개월 기준)</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="link" role="button">
+							<div class="isArrow">
+								<strong class="tit">I(아이)든든적금</strong>
+								<p class="desc">임산부전용상품으로 가입 시 기본 우대금리 및 특별우대금리(05%)임산부전용상품으로 가입 시 기본 우대금리 및 특별우대금리(05%)</p>
+							</div>
+							<div class="rateWrap">
+								최고 연 <strong class="dataWrap"> <em class="data">2.40</em><span class="unit">%</span></strong>
+								<span class="defTxt3">(12개월 기준)</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- //list -->
+
+			<div class="moreBtn"><button type="button">더보기</button></div>
+
+			<figure class="bannerWrap">
+				<a href="javascript:;" role="button" class="bannerLink">
+					<img src="../../images/cont/@tmp_banner03.png" alt="">
+					<figcaption class="caption">
+						<strong>편리한 금융서비스를 바로 이용해보세요!</strong>
+						<p>콕뱅크 APP 다운로드 Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</figcaption>
+				</a>
+			</figure>
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+<script>
+	$(document).ready(function(){
+		function marketListSwipe() {
+			var marketListSwipe = new Swiper(".marketListSwipe .swiper-container", {
+				centeredSlides: true,
+				observer: true,
+				observeParents: true,
+				spaceBetween: 10,
+				pagination: {
+					el: $(".marketListSwipe .swiper-pagination"),
+					clickable: true,
+					bulletElement: "a",
+				},
+				autoplay: {
+					deley: 3000,
+					disableOnInteraction: true,
+				},
+				on: {
+					init: function () {
+						$(".marketListSwipe .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+						$(".marketListSwipe .swiper-container").find(".swiper-slide.swiper-slide-active").attr("aria-hidden", false).attr("tabindex", 0);
+					},
+					slideChangeTransitionEnd: function () {
+						swiperA11y();
+						$(".marketListSwipe .swiper-pagination").find("a").attr("title", "");
+						$(".marketListSwipe .swiper-pagination").find("a").eq(this.activeIndex).attr("title", "선택됨");
+					},
+				},
+			});
+
+			//autoplay control 옵션
+			$(".marketListSwipe .swiper-pagination").append('<a href="javascript:;" class="swiperAuto stop" role="button" aria-label="일시정지"></a>');
+			$(".marketListSwipe .swiperAuto").on("click", function () {
+				if ($(this).hasClass("stop")) {
+					$(this).addClass("start").removeClass("stop").attr("aria-label", "재생");
+					marketListSwipe.autoplay.stop();
+				} else {
+					$(this).addClass("stop").removeClass("start").attr("aria-label", "일시정지");
+					marketListSwipe.autoplay.start();
+				}
+			});
+		}
+		marketListSwipe();
+	})
+
+</script>
+
+
+</body>
+</html>

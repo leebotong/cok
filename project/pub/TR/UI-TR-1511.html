@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-1511</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/iscroll.js"></script>
+	<script src="../../js/jquery.animateNumber.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>계좌정보</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="tabWrap oneDepthSwipe">
+					<div role="tablist" class="tabList tabSwipe">
+						<a href="javascript:;" role="tab">입출금</a>
+						<a href="javascript:;" role="tab">예적금/신탁</a>
+						<a href="javascript:;" role="tab">대출</a>
+						<a href="javascript:;" role="tab">펀드</a>
+						<a href="javascript:;" role="tab" class="active">외화</a>
+					</div>
+				</div>
+				<div class="twoToneType"> <!-- twoToneType -->
+					<div class="ttTop">
+						<!-- ROUND BOX -->
+						<!-- ▼ 2022-07-01 계좌관련 수정 -->
+						<div class="roundBox">
+							<div class="roundInBox">
+								<div class="accTypeWrap accAlwaysType">
+									<!-- ▼ 2022-07-07 접근성 수정 : title 추가 -->
+									<a href="javascript:popOpen(sp2);" title="계좌선택" role="button" class="accInLayout">
+										<div class="accInfo">
+											<div class="logoWrap">
+												<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+											</div>
+											<div class="accInfoWrap">
+												<strong class="accName">
+													<!--<span class="accBank">[농협]</span>-->
+													<span class="bankBookName">자립예탁금</span>
+												</strong>
+												<div class="accNumWrap">
+													<div class="accNumBox">
+														<span class="accNumber">352-1775-6397-03</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="accDataWrap">
+									<div>
+										<span class="accNumInfo">잔액</span>
+										<span class="accUnit">USD</span><strong class="accCash">15,000.02</strong>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //ROUND BOX -->
+					</div>
+					<div class="ttBottom">
+						<div class="ttContents">
+							<div class="listTbl">
+								<ul>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">잔액</span>
+											<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">0</em></span></p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">신규일</span>
+											<p class="txt">2022.03.03</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">만기일</span>
+											<p class="txt">2023.03.03</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="btmInfoWrap">
+								<strong class="tit">확인사항</strong>
+								<ul class="listDot">
+									<li>통장잔액은 예치된 전체 외화의 USD 환산금액으로 표시됩니다.</li>
+									<li>1개의 계좌에 여러 통화를 예치하는 외화예금인 경우 잔액은 미화환산금액으로 표시합니다.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea half"><!-- 2022-09-26 클래스명추가 -->
+					<button type="button" class>거래내역</button>
+					<button type="button" class="sel">통장표지조회</button>
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea"></div>
+
+</body>
+</html>

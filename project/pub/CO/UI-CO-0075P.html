@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CO-0075P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">영업점 찾기</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<section class="section20">
+							<div class="formWrap typeSrch">
+								<div class="formItem">
+									<!-- <strong class="formTit">주소입력</strong> [2022-06-24] 윤지현:삭제 -->
+									<div class="inpText">
+										<input type="text" title="도로명, 건물명 입력" value class="tyTxt" placeholder="영업점 혹은 지역명 입력">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+										<button type="button" title="검색" class="btnSearch"></button>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<hr class="divingLine">
+
+						<!-- list -->
+						<section>
+							<div class="inqueryList branch">
+								<div class="listTit">검색결과</div>
+								<ul class="typeRow">
+									<li>
+										<a href="javascript:;" title="항목을 선택하고 창을 닫습니다." role="button">
+											<p class="tit"><strong>의왕농협 고천지점</strong></p>
+											<p class="txt">경기도 의왕시 경수대로 262 245호</p>
+											<p class="txt">031-454-5353</p>
+											<p class="possess">보유통화 <strong class="unit">USD, JPY, EUR</strong></p>
+										</a>
+										<span class="btnRWrap"><a href="javascript:;" role="button" class="btnSm placeInfo">지점정보</a></span>
+									</li>
+									<li>
+										<a href="javascript:;" title="항목을 선택하고 창을 닫습니다." role="button">
+											<p class="tit"><strong>의왕농협 고천지점</strong></p>
+											<p class="txt">대구광역시 서구 평리동 13OO-3 유성빌딩<br>대구광역시 서구 서대구로 78</p>
+											<p class="txt">031-454-5353</p>
+											<p class="possess">보유통화 <strong class="unit">USD, JPY, EUR</strong></p>
+										</a>
+										<span class="btnRWrap"><a href="javascript:;" role="button" class="btnSm placeInfo">지점정보</a></span>
+									</li>
+								</ul>
+							</div>
+						</section>
+						<!-- //list -->
+
+						<!-- case: no data -->
+						<div class="noData">
+							<i class="check"></i>
+							<p class="tit">검색결과가 없습니다.</p>
+						</div>
+						<div class="moreBtn"><button type="button">더보기</button></div>
+					</div>
+					
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

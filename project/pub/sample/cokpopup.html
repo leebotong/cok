@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>콕 cokpopup</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<!-- <script src="../../js/cok_pub_vanilla.js"></script> 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			// toastOpen(toastA);
+			// popOpen(popupBF);
+			// popOpen(popupBA);
+			// popOpen(popupAC);
+		})
+	</script>
+</head>
+<body class="puble">
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- #header -->
+		<div id="header">
+			<div class="headerL">
+				<a href title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>팝업샘플</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div>
+		<!-- //#header -->
+		<!-- #container -->
+		<div id="container">
+			<!-- #contents -->
+			<div id="contents">
+				<hr class="divingLine">
+				<p style="color: var(--error)">배너형의 경우 타입이 팝업 타입은 .slideBanner, .centerBanner</p><br>
+				<a href="javascript:popOpen(popupBF);" title="슬라이드 팝업 열기" role="button" class="popOpen">슬라이드 BANNER</a><br><br>
+				<a href="javascript:popOpen(popupCQ);" title="중앙 팝업 열기" role="button" class="popOpen">중앙 BANNER</a><br><br>
+				<hr class="divingLine">
+				<p style="color: var(--error)">타이틀이 없는 팝업의 경우 팝업 내부에 confirmMsg 클래스 추가 필요.</p><br>
+				<a href="javascript:popOpen(popupBD);" title="슬라이드 팝업 열기" role="button" class="popOpen">슬라이드 팝업(confirmMsg, 타이틀, 닫기 버튼 X)</a><br><br>
+				<a href="javascript:popOpen(popupD);" title="중앙 팝업 열기" role="button" class="popOpen">중앙 팝업(confirmMsg, 타이틀 X)</a><br><br>
+				<a href="javascript:popOpen(popupCCA);" title="중앙 팝업 열기" role="button" class="popOpen">중앙 팝업(confirmMsg, 타이틀,닫기 버튼 X)</a><br><br>
+				<hr class="divingLine">
+				<div style="color: var(--error)">
+					<ol style="line-height: 1.5rem;list-style-type: decimal;margin-left: 10px;font-size: 14px">
+						<li>팝업 오픈을 위한 링크에 .popOpen 추가(오픈된 팝업을 닫을때 복귀 포인트 생성용)</li>
+						<li>닫기 버튼/요소에 호출 함수 설정
+							<ol style="margin-left: 1rem;list-style-type: disclosure-closed">
+								<li>[A] "javascript:popOpen(popupID);"</li>
+								<li>[BUTTON] onclick="popOpen(popupID)"</li>
+								<li>[INPUT] onclick="popOpen(popupID)"</li>
+							</ol>
+						</li>
+						<li>팝업 유형에 따라 .popupWrap + .full/.slide/.center 클래스 선택 사용</li>
+						<li>각 팝업의 배경 Dim 처리를 투명화 시킬 경우 <mark>.noneBg</mark> 추가</li>
+					</ol>
+				</div>
+				<hr class="divingLine">
+				<ol style="line-height: 1.5rem;list-style-type: decimal;margin-left: 10px;font-size: 14px">
+					<li><mark>#COKPOPUP</mark>을 오픈할 경우</li>
+					<li>a.popOpen 선택시 a.popOpen에 <mark>#COKPOPUP-open</mark> 생성됨 </li>
+					<li>팝업 #COKPOPUP 의 H2에 <mark>data-popup-focus="COKPOPUP"</mark> 생성됨 </li>
+					<li>팝업 #COKPOPUP 의 닫기버튼('.btnPopClose')에 <mark>data-popup-focus-close="COKPOPU-close"</mark> 생성됨 </li>
+				</ol>
+				<hr class="divingLine">
+				<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button" class="popOpen">풀팝업</a><br><br>
+				<a href="javascript:popOpen(popupAB);" title="풀팝업 열기" role="button" class="popOpen">풀팝업(하단 버튼 X)</a><br><br>
+				<a href="javascript:popOpen(popupAC);" title="풀팝업 열기" role="button" class="popOpen">풀팝업(닫기 버튼 X)</a><br><br>
+				<hr class="divingLine">
+				<a href="javascript:popOpen(popupB);" title="슬라이드 팝업 열기" role="button" class="popOpen">슬라이드 팝업</a><br><br>
+				<a href="javascript:popOpen(popupBA);" title="슬라이드 팝업 열기" role="button" class="popOpen">슬라이드 팝업(닫기버튼 X)</a><br><br>
+				<a href="javascript:popOpen(popupBC);" title="슬라이드 팝업 열기" role="button" class="popOpen">슬라이드 팝업(하단 버튼 X)</a><br><br>
+				<a href="javascript:popOpen(popupBG);" title="슬라이드 팝업 열기" role="button" class="popOpen">슬라이드 팝업(touch)</a><br><br>
+				<hr class="divingLine">
+				<a href="javascript:popOpen(popupC);" title="중앙 팝업 열기" role="button" class="popOpen">중앙 팝업</a><br><br>
+				<a href="javascript:popOpen(popupCC);" title="중앙 팝업 열기" role="button" class="popOpen">중앙 팝업(하단 버튼 X)</a><br><br>
+				<a href="javascript:popOpen(popupCCC);" title="중앙 팝업 열기" role="button" class="popOpen">중앙 팝업(닫기 버튼 X)</a><br><br>
+				<hr class="divingLine">
+				<button type="button" onclick="popOpen(popupB)" class="popOpen btnSm">button: 슬라이드 팝업</button><br><br>
+				<div class="formItem">
+					<div class="inpText">
+						<input type="tel" title="이체 금액" onclick="popOpen(popupC)" value class="tyNum popOpen" placeholder="금액 입력" maxlength="16">
+					</div>
+				</div>
+				<hr class="divingLine">
+				<button type="button" onclick="toastOpen(toast1)" class="toastOpen btnMd">TOAST 계좌복사1</button><br><br>
+				<button type="button" onclick="toastOpen(toast1, 'Message in Message')" class="toastOpen">TOAST 계좌복사2</button><br><br>
+				<a href="javascript:toastOpen(toast1, message);" role="button" class="toastOpen">TOAST 계좌복사3</a><br><br>
+				<a href="javascript:toastOpen(toast2, message2, 800);" role="button" class="toastOpen">TOAST 계좌복사4</a>
+				<script>
+					message = '여기는 토스트에 사용될 메시지가 들어가는 곳입니다. OK?';
+					message2 = '타이머 변경으로 표시/숨김 시간 조정';
+				</script>
+				<br><br>
+				<div style="color: var(--error)">
+					<ol style="line-height: 1.5rem;list-style-type: decimal;margin-left: 10px;font-size: 14px">
+						<li>"toastOpen(toastID)" 선택으로 토스트 호출(메시지 없을 경우 디폴트 메시지 노출)</li>
+						<li>"toastOpen(toastID, '토스트 메시지')"</li>
+						<li>"toastOpen(toastID, message)"<br> &lt;script&gt;message = '토스트 메시지'&lt;/script&gt;</li>
+						<li>"toastOpen(toastID, message, 1000)"<br> 3번째 이벤트로 숫자를 넣으면 해당 숫자만큼 조정가능(기본 3초)</li>
+					</ol>
+				</div>
+			</div>
+			<!-- //#contents -->
+			<!-- #footer_cont -->
+			<div id="footer_cont">
+			</div>
+			<!-- //#footer_cont -->
+		</div>
+		<!-- //#container -->
+	</div>
+	<!-- //#wrap -->
+
+	<!-- #popupArea -->
+	<div id="popupArea">
+		<!-- TOAST POPUP -->
+		<div class="toastPopWrap">
+			<div role="alert" aria-hidden="true" aria-live="assertive" id="toast1" class="toastPop fade hide">
+				<span class="toastMessage"><!-- message --></span>
+			</div>
+			<div role="alert" aria-hidden="true" aria-live="assertive" id="toast2" class="toastPop fade hide">
+				<span class="toastMessage"><!-- message --></span>
+			</div>
+		</div>
+
+		<!-- FULL POPUP -->
+		<div id="popupA" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">풀팝업 A</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div>
+								<a href="javascript:popOpen(popupB);" title="슬라이드 팝업 열기" role="button" class="popOpen">슬라이드 팝업</a><br><br>
+								<div style="height: 1000px;background: #ccc;"></div>
+							</div>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button class="sel">다른금융계좌 등록</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FULL POPUP -->
+		<div id="popupAB" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">풀팝업 B</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+								<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vero ratione obcaecati deleniti, blanditiis rerum aperiam dignissimos quidem eaque? Porro excepturi non consequatur recusandae nemo est ab voluptate ipsa laboriosam.</div>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FULL POPUP -->
+		<div id="popupAC" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0"><span class="blind">풀팝업 C</span></h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div>
+								<div style="height: 1000px;background: #ccc;"></div>
+							</div>
+						</div>
+						<div class="popFootBox">
+							<span class="toastMessage">[송금]선택시 전자서명과 동시에 송금됩니다.</span>
+							<div class="btnArea">
+								<button onclick="popClose(this)" class="sel closePop">다른금융계좌 등록A</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SLIDE POPUP -->
+		<div id="popupB" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">슬라이더 팝업 A</h2>
+						</div>
+						<div class="layerSelectContent">
+							<div>
+								<div style="height: 900px;background: #ccc;"></div>
+							</div>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button type="button" onclick="popClose(this)">취소</button>
+								<button type="button" onclick="popClose(this)" class="sel">확인</button>
+							</div>
+						</div>
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SLIDE POPUP -->
+		<div id="popupBA" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">슬라이더 팝업 B 슬라이더 팝업슬라이더 팝업슬라이더 팝업팝업슬라이더 팝업슬라이더 팝업팝업슬라이더 팝업슬라이더 팝업</h2>
+						</div>
+						<div class="layerSelectContent">
+							<div>
+								<div style="height: 200px;background: #ccc;"></div>
+							</div>
+						</div>
+						<div class="popFootBox">
+							<span class="toastMessage">[송금]선택시 전자서명과 동시에 송금됩니다.</span>
+							<div class="btnArea">
+								<button type="button" onclick="popClose(this)">취소</button>
+								<button type="button" onclick="popClose(this)" class="sel">확인</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SLIDE POPUP -->
+		<div id="popupBC" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">슬라이더 팝업 C</h2>
+						</div>
+						<div class="layerSelectContent">
+							<div>
+								<div style="height: 400px;background: #ccc;"></div>
+							</div>
+						</div>
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SLIDE POPUP -->
+		<div id="popupBD" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0"><span class="blind">팝업</span></h2>
+						</div>
+						<div class="layerSelectContent confirmMsg">
+							<img src="../../images/backup/banner.jpg" alt>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eveniet sequi delectus veritatis pariatur facilis voluptas consequuntur in sapiente quasi amet inventore ea eius ex fuga minus, tempore illo modi?</p>
+							<img src="../../images/backup/banner2.jpg" alt>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button type="button" onclick="popClose(this)" class="sel">확인</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SLIDE POPUP -->
+		<div id="popupBF" class="popupWrap slideBanner" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="bannerCont">
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="popupBanner"><img src="../../images/backup/banner.jpg" alt="이벤트 배너" class="bannerFocus"></a>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- SLIDE POPUP -->
+		<div id="popupBG" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner mov">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">슬라이더 팝업 A</h2>
+						</div>
+						<div class="layerSelectContent">
+							<section>
+								<ul class="listWrap accType">
+									<li>
+										<div class="accTypeWrap accSelectType">
+											<a href="javascript:popOpen(sp2);" role="button" class="jsSelectLink accInLayout" title="">
+												<div class="accInfo accInfoInLayoutWrap">
+													<div class="accInfoInLayout">
+														<div class="logoWrap">
+															<img src="../../images/logo/icon_bnk_011.png" alt="계좌 아이콘" class="logo">
+														</div>
+														<div class="accInfoWrap">
+															<strong class="accName">
+																<!--<span class="accBank">[농협]</span>-->
+																<span class="bankBookName">자립예탁금(테니스클럽)</span>
+															</strong>
+															<div class="accNumWrap">
+																<div class="accNumBox">
+																	<span class="accNumber">352-1775-6397-03</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="accTypeWrap accSelectType">
+											<a href="javascript:popOpen(sp2);" role="button" class="jsSelectLink accInLayout" title="">
+												<div class="accInfo accInfoInLayoutWrap">
+													<div class="accInfoInLayout">
+														<div class="logoWrap">
+															<img src="../../images/logo/icon_bnk_020.png" alt="계좌 아이콘" class="logo">
+														</div>
+														<div class="accInfoWrap">
+															<strong class="accName">
+																<span class="accBank">[우리]</span>
+																<span class="bankBookName">자립예탁금(테니스클럽)</span>
+															</strong>
+															<div class="accNumWrap">
+																<div class="accNumBox">
+																	<span class="accNumber">352-1775-6397-03</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="accTypeWrap accSelectType">
+											<a href="javascript:popOpen(sp2);" role="button" class="jsSelectLink accInLayout" title="">
+												<div class="accInfo accInfoInLayoutWrap">
+													<div class="accInfoInLayout">
+														<div class="logoWrap">
+															<img src="../../images/logo/icon_bnk_020.png" alt="계좌 아이콘" class="logo">
+														</div>
+														<div class="accInfoWrap">
+															<strong class="accName">
+																<span class="accBank">[우리]</span>
+																<span class="bankBookName">자립예탁금(테니스클럽)</span>
+															</strong>
+															<div class="accNumWrap">
+																<div class="accNumBox">
+																	<span class="accNumber">352-1775-6397-03</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="accTypeWrap accSelectType">
+											<a href="javascript:popOpen(sp2);" role="button" class="jsSelectLink accInLayout" title="">
+												<div class="accInfo accInfoInLayoutWrap">
+													<div class="accInfoInLayout">
+														<div class="logoWrap">
+															<img src="../../images/logo/icon_bnk_020.png" alt="계좌 아이콘" class="logo">
+														</div>
+														<div class="accInfoWrap">
+															<strong class="accName">
+																<span class="accBank">[우리]</span>
+																<span class="bankBookName">자립예탁금(테니스클럽)</span>
+															</strong>
+															<div class="accNumWrap">
+																<div class="accNumBox">
+																	<span class="accNumber">352-1775-6397-03</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="accTypeWrap accSelectType">
+											<a href="javascript:popOpen(sp2);" role="button" class="jsSelectLink accInLayout" title="">
+												<div class="accInfo accInfoInLayoutWrap">
+													<div class="accInfoInLayout">
+														<div class="logoWrap">
+															<img src="../../images/logo/icon_bnk_020.png" alt="계좌 아이콘" class="logo">
+														</div>
+														<div class="accInfoWrap">
+															<strong class="accName">
+																<span class="accBank">[우리]</span>
+																<span class="bankBookName">자립예탁금(테니스클럽)</span>
+															</strong>
+															<div class="accNumWrap">
+																<div class="accNumBox">
+																	<span class="accNumber">352-1775-6397-03</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="accTypeWrap accSelectType">
+											<a href="javascript:popOpen(sp2);" role="button" class="jsSelectLink accInLayout" title="">
+												<div class="accInfo accInfoInLayoutWrap">
+													<div class="accInfoInLayout">
+														<div class="logoWrap">
+															<img src="../../images/logo/icon_bnk_020.png" alt="계좌 아이콘" class="logo">
+														</div>
+														<div class="accInfoWrap">
+															<strong class="accName">
+																<span class="accBank">[우리]</span>
+																<span class="bankBookName">자립예탁금(테니스클럽)</span>
+															</strong>
+															<div class="accNumWrap">
+																<div class="accNumBox">
+																	<span class="accNumber">352-1775-6397-03</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="accTypeWrap accSelectType">
+											<a href="javascript:popOpen(sp2);" role="button" class="jsSelectLink accInLayout" title="">
+												<div class="accInfo accInfoInLayoutWrap">
+													<div class="accInfoInLayout">
+														<div class="logoWrap">
+															<img src="../../images/logo/icon_bnk_020.png" alt="계좌 아이콘" class="logo">
+														</div>
+														<div class="accInfoWrap">
+															<strong class="accName">
+																<span class="accBank">[우리]</span>
+																<span class="bankBookName">자립예탁금(테니스클럽)</span>
+															</strong>
+															<div class="accNumWrap">
+																<div class="accNumBox">
+																	<span class="accNumber">352-1775-6397-03</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</section>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button type="button" onclick="popClose(this)">취소</button>
+								<button type="button" onclick="popClose(this)" class="sel">확인</button>
+							</div>
+						</div>
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CENTER POPUP -->
+		<div id="popupC" class="popupWrap center" style="display:none;">
+			<div class="layerPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popContBox">
+							<div class="Layer_Pop">
+								<div class="Layer_Tit">
+									<h2 tabindex="0">중앙 팝업 A</h2>
+								</div>
+								<div class="Layer_Con">
+									<div>
+										<div style="height: 900px;background: #ccc;"></div>
+									</div>
+								</div>
+								<div class="Layer_Pop_Close">
+									<div class="btnArea half">
+										<button type="button">계좌등록</button>
+										<button type="button" title class="sel">계좌개설</button>
+									</div>
+								</div>
+								<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CENTER POPUP -->
+		<div id="popupD" class="popupWrap center" style="display:none;">
+			<div class="layerPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popContBox">
+							<div class="Layer_Pop">
+								<div class="Layer_Tit">
+									<h2 tabindex="0"><span class="blind">팝업</span></h2>
+								</div>
+								<div class="Layer_Con">
+									<div class="confirmMsg">
+										<img src="../../images/backup/banner.jpg" alt="이벤트 배너 1">
+										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eveniet sequi delectus veritatis pariatur facilis voluptas consequuntur in sapiente quasi amet inventore ea eius ex fuga minus, tempore illo modi?</p>
+										<img src="../../images/backup/banner2.jpg" alt="이벤트 배너 2">
+									</div>
+								</div>
+								<div class="Layer_Pop_Close">
+									<div class="btnArea">
+										<button type="button" onclick="popClose(this)">계좌등록</button>
+										<button type="button" title onclick="popClose(this)" class="sel">계좌개설</button>
+									</div>
+								</div>
+								<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CENTER POPUP -->
+		<div id="popupCC" class="popupWrap center" style="display:none;">
+			<div class="layerPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popContBox">
+							<div class="Layer_Pop">
+								<div class="Layer_Tit">
+									<h2 tabindex="0">중앙 팝업 B</h2>
+								</div>
+								<div class="Layer_Con">
+									<div>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique excepturi quo corrupti nam nobis ab distinctio ipsam labore assumenda, nostrum, dolorem natus quasi debitis officia libero at incidunt sunt sapiente.
+									</div>
+								</div>
+								<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CENTER POPUP -->
+		<div id="popupCCC" class="popupWrap center" style="display:none;">
+			<div class="layerPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popContBox">
+							<div class="Layer_Pop">
+								<div class="Layer_Tit">
+									<h2 tabindex="0">중앙 팝업 C</h2>
+								</div>
+								<div class="Layer_Con">
+									<div>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique excepturi quo corrupti nam nobis ab distinctio ipsam labore assumenda, nostrum, dolorem natus quasi debitis officia libero at incidunt sunt sapiente.
+									</div>
+								</div>
+								<div class="Layer_Pop_Close">
+									<div class="btnArea">
+										<button type="button" title onclick="popClose(this)" class="sel">계좌개설</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CENTER POPUP -->
+		<div id="popupCCA" class="popupWrap center" style="display:none;">
+			<div class="layerPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popContBox">
+							<div class="Layer_Pop">
+								<div class="Layer_Tit">
+									<h2 tabindex="0"><span class="blind">팝업</span></h2>
+								</div>
+								<div class="Layer_Con">
+									<!-- 컨펌메세지 -->
+									<div class="confirmMsg">
+										<i class="warning"></i>
+										<p class="tit">상품 가입을 취소하시겠습니까?</p>
+										<p class="txt">블라블라블라</p>
+									</div>
+								</div>
+								<div class="Layer_Pop_Close">
+									<div class="btnArea">
+										<button type="button" title onclick="popClose(this)" class="sel">계좌개설</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CENTER POPUP -->
+		<div id="popupCQ" class="popupWrap centerBanner" style="display:none;">
+			<div class="layerPopupDim">
+				<div class="bannerCont">
+					<img src="../../images/backup/banner2.jpg" alt="이벤트 배너" class="bannerFocus">
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //#popupArea -->
+
+</body>
+</html>

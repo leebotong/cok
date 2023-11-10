@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-0024_2</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>카드 승인내역</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+		<!-- [2023-02-03] 카드명세 조회 화면 UI 개선 : 김연진 -->
+			<div class="twoToneType">
+				<div class="ttTop">
+					<!-- roundBox -->
+					<div class="roundBox jsShWrap">
+						<div class="roundInBox confirmList">
+							<div class="layoutWrap">
+								<div class="tagWrap">
+									<em class="tag red">해외승인내역</em>
+								</div>
+								<button type="button" onclick="popOpen(sp_popup)" class="accMore">
+									<span class="blind">계좌관리 보기</span>
+								</button>
+							</div>
+							<div class="cardTypeWrap">
+								<a href="javascript:;" title="상세보기" role="button" class="cardInfo btnSel">
+									<div class="accInfo">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_card_nh_01.png" alt="농협카드" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">전체카드</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="cardDataWrap ac">
+								<span class="cardNumInfo">이용금액</span>
+								<div class="dataWrap fBig"><em class="data">178,000</em><span class="unit">$</span></div>
+							</div>
+						</div>
+					</div>
+					<!-- //roundBox -->
+				</div>
+
+				<div class="ttBottom">
+					<div class="ttContents">
+						<!-- 조회기간선택 -->
+						<div class="rdoBtnsWrap">
+							<ul>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample01">
+										<label for="sample01">1개월</label>
+									</span>
+								</li>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample02">
+										<label for="sample02">3개월</label>
+									</span>
+								</li>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample03">
+										<label for="sample03">6개월</label>
+									</span>
+								</li>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample04">
+										<label for="sample04">1년</label>
+									</span>
+								</li>
+								<li class="filter">
+									<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+								</li>
+							</ul>
+						</div>
+						<!-- //조회기간선택 -->
+
+						<div class="inqueryList">
+							<div class="listTit">
+								<em>2022.03.05 ~ 2022.04.05</em>
+							</div>
+
+							<!-- case: no data -->
+							<div class="noData">
+								<i class="check"></i>
+								<strong class="tit">조회결과가 없습니다.</strong>
+							</div>
+							<!-- //case: no data -->
+
+							<!--  case : no card -->
+							<div class="noData">
+								<i class="check"></i>
+								<strong class="tit">연결된 카드가 없습니다.</strong>
+								<div class="btnLnkLine">
+									<a href="javascript:;" role="button" class="underLine">카드 발급하기</a>
+								</div>
+							</div>
+							<!--  //case : no card -->
+
+							<!-- 날짜별 list -->
+							<section>
+							<div class="listItem">
+								<div class="listTit">2022.03.14</div>
+								<ul>
+									<li>
+										<a href="javascript:;" title="상세보기" role="button" class="cardStatement">
+											<!-- [2023-02-16] 김연진 : 취소,부분취소 스타일변경 -->
+											<div class="flex">
+												<p class="date">17:00:15 일시불</p>
+												<span class="dataWrap fSmall minus">취소</span>
+											</div>
+											<div class="flex">
+												<p class="tit">지에스 의왕포일점지에스 의왕…</p>
+												<span class="dataWrap fSmall cancel"><em class="data">50,000</em><span class="unit">원</span></span>
+											</div>
+											<!-- //[2023-02-16] 김연진 : 취소,부분취소 스타일변경 -->
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" title="상세보기" role="button" class="cardStatement">
+											<!-- [2023-02-16] 김연진 : 취소,부분취소 스타일변경 -->
+											<div class="flex">
+												<p class="date">17:00:15 일시불</p>
+											</div>
+											<div class="flex">
+												<p class="tit">지에스 의왕포일점지에스 의왕…</p>
+												<span class="dataWrap fSmall"><em class="data">50,000</em><span class="unit">원</span></span>
+											</div>
+											<!-- //[2023-02-16] 김연진 : 취소,부분취소 스타일변경 -->
+										</a>
+									</li>
+								</ul>
+							</div>
+							</section>
+							<!--// 날짜별 list -->
+
+							<!-- 날짜별 list -->
+							<section>
+								<div class="listItem">
+									<div class="listTit">2022.03.01</div>
+									<ul>
+										<li>
+											<a href="javascript:;" title="상세보기" role="button" class="cardStatement">
+												<!-- [2023-02-16] 김연진 : 취소,부분취소 스타일변경 -->
+												<div class="flex">
+													<p class="date">17:00:15 일시불</p>
+													<span class="dataWrap fSmall minus">부분취소</span>
+												</div>
+												<div class="flex">
+													<p class="tit">지에스 의왕포일점지에스 의왕…</p>
+													<span class="dataWrap fSmall cancel"><em class="data">50,000</em><span class="unit">원</span></span>
+												</div>
+												<div class="flex">
+													<p class="tit"></p>
+													<span class="dataWrap fSmall"><em class="data">5,000</em><span class="unit">원</span></span>
+												</div>
+												<!-- //[2023-02-16] 김연진 : 취소,부분취소 스타일변경 -->
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" title="상세보기" role="button" class="cardStatement">
+												<!-- [2023-02-16] 김연진 : 취소,부분취소 스타일변경 -->
+												<div class="flex">
+													<p class="date">17:00:15 일시불</p>
+												</div>
+												<div class="flex">
+													<p class="tit">지에스 의왕포일점지에스 의왕…</p>
+													<span class="dataWrap fSmall"><em class="data">50,000</em><span class="unit">원</span></span>
+												</div>
+												<!-- //[2023-02-16] 김연진 : 취소,부분취소 스타일변경 -->
+											</a>
+										</li>
+									</ul>
+								</div>
+							</section>
+								<!--// 날짜별 list -->
+						</div>
+
+						<div class="moreBtn"><button type="button">더보기</button></div>
+
+						<div class="btmInfoWrap">
+							<strong class="tit">확인사항</strong>
+							<ul class="listDot">
+								<li>본 화면의 조회 내역은 카드를 승인하신 내역으로 카드 상품 서비스 제공 기준 실적과는 차이가 있을 수 있습니다. </li>
+								<li>‘부분취소’한 거래는 취소 건 수 및 금액에 포함되며, 부분취소 후 남은 금액은 정상 금액에 포함됩니다.</li>
+								<li>승인내역과 실제 청구내역은 다를 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //[2023-02-03] 카드명세 조회 화면 UI 개선 : 김연진 -->
+		</div>  <!-- //#contents -->
+	</div> <!-- //#container -->
+  <!-- //#wrap -->
+
+</div></body>
+</html>

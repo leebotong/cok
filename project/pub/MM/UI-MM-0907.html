@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0907</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+  <link rel="stylesheet" href="../../css/cok_cont.css">
+  <link rel="stylesheet" href="../../css/cok_market.css">
+  <link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>자금반환청구(오픈뱅킹)</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">신청사유 및 입금받을<br> <strong>계좌번호를 선택</strong>해주세요.</p>
+			</div>
+
+      <section>
+        <p class="defTit2">청구대상거래(원거래정보)</p>
+        <div class="listTblBox">
+          <ul>
+            <li>
+              <span class="tit">받는분</span> 
+              <p class="txt">홍길동</p>
+            </li>
+            <li>
+              <span class="tit">거래일시</span> 
+              <p class="txt">YYYY,MM,DD,  HH:SS:MM</p>
+            </li>	
+            <li>
+              <span class="tit">거래고유번호</span> 
+              <p class="txt">B12233FO123456789</p>
+            </li>
+            <li>
+              <span class="tit">반환기관</span> 
+              <p class="txt">기업</p>
+            </li>
+            <li>
+              <span class="tit">청구대상계좌번호</span> 
+              <p class="txt"><span class="pColor">1234567890123456</span></p>
+            </li>
+            <li>
+              <span class="tit">청구금액</span> 
+              <p class="txt"><strong class="dataWrap"><em class="data">5,273</em><span class="unit">원</span></strong></p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="formWrap">
+          <div class="formItem">
+            <strong class="formTit">입금받을 계좌</strong>
+            <div class="inpSel isLogo">
+              <a href="javascript:;" title="입금받을 계좌 선택" role="button" class="btnSel">
+                <span class="logo">
+                  <img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+                </span>
+                <div class="accNum">
+                  <span class="tit">주머니(money)통장</span>
+                  <span class="num">356-0123-4567-90</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="formItem">
+						<strong class="formTit">신청사유</strong>
+            <div class="inpSel">
+              <a href="javascript:;" title="신청사유 선택" role="button" class="btnSel placeholder">선택</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="listTbl">
+          <div class="listTit"><strong>청구정보</strong></div>
+          <ul>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">신청인</span> 
+                <p class="txt">홍길동</p>
+              </div>
+            </li>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">청구일시</span> 
+                <p class="txt">YYYY,MM,DD,  HH:SS:MM</p>
+              </div>
+            </li>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">연락처</span> 
+                <p class="txt">010-1234-1234</p>
+              </div>
+            </li>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">이메일</span> 
+                <p class="txt">nh@naver.com</p>
+              </div>
+            </li>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">청구구분</span> 
+                <p class="txt">전액청구</p>
+              </div>
+            </li>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">반환받을 금액</span> 
+                <p class="txt"><strong class="dataWrap"><em class="data">5,273</em><span class="unit">원</span></strong></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+        <button type="button" class="btn_full sel">신청</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

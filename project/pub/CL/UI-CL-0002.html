@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CL-0002</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap" class="cokClassMain">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>내 모임관리</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">관리중인 모임이<br><strong>4개</strong> 있어요</p>
+			</div>
+			<div class="CLaccountList">
+				<p class="ar">
+					<a href="#nolink" class="btnDetail" role="button" title="팝업실행">콕모임 안내</a>
+				</p>
+
+				<!--모임계좌카드-->
+				<div class="CLaccountBox type2 primaryC">
+					<div class="CLaccBtnGroup">
+						<button class="btnColor" title="모임카드 배경색상 변경"></button>
+						<div class="CLaccGroup">
+							<div class="accName">고등학교모임모임명노출모임명</div>
+							<div class="accNumBox">
+								<p class="accNumber">352-1775-6397-03<button class="accCopy" aria-label="계좌번호 복사"></button></p>
+								<p class="accMember">1명</p>
+							</div>
+						</div>
+					</div>
+					<div class="accDataWrap">
+						<strong class="accCash">827,216</strong><span class="accUnit">원</span>
+					</div>
+					<button type="button" class="accMore"><span class="blind">더보기</span></button>
+					<div class="mainBtn">
+						<button type="button">모임원 관리</button>
+						<button type="button">회비현황</button>
+						<button type="button">모임설정</button>
+					</div>
+				</div>
+				<!--//모임계좌카드-->
+
+				<div class="CLaccountBox type2 yellowC">
+					<!-- .purpleC, .greenC, .yellowC, .primaryC, .pinkCbg, .lightpurpleC, .lightblueC, .skyCbg, .blueC, .grayC, .lightgrayC, .lightskyCbg 모임 색상에 따라 클래스 추가 -->
+					<div class="CLaccBtnGroup">
+						<button class="btnColor" title="모임카드 배경색상 변경"></button>
+						<div class="CLaccGroup">
+							<div class="accName">등산 모임</div> <!-- .owner 삭제 -->
+							<div class="accNumBox">
+								<p class="accNumber">352-1775-6397-03<button class="accCopy" aria-label="계좌번호 복사"></button></p>
+								<p class="accMember">4명</p>
+							</div>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" class="MemberNobody red under">계좌정보를 확인할 수 없어요.</a> <!-- [2023-06-07] 이경아 텍스트 변경 --> <!-- [2023-06-12] 콕모임 : 링크로 수정 -->
+					<button type="button" class="accMore"><span class="blind">더보기</span></button>
+					<div class="mainBtn">
+						<button type="button">모임원 관리</button>
+						<button type="button">회비현황</button>
+						<button type="button">모임설정</button>
+					</div>
+				</div>
+
+				<div class="CLaccountBox type2 yellowC">
+					<div class="CLaccBtnGroup">
+						<button class="btnColor" title="모임카드 배경색상 변경"></button>
+						<div class="CLaccGroup">
+							<div class="accName">등산 모임</div> <!-- .owner 삭제 -->
+							<div class="accNumBox">
+								<p class="accNumber">352-1775-6397-03<button class="accCopy" aria-label="계좌번호 복사"></button></p>
+								<p class="accMember">4명</p>
+							</div>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" class="MemberNobody red under">재동의가 필요해요.</a> <!-- [2023-06-12] 콕모임 : 링크로 수정 -->
+					<button type="button" class="accMore"><span class="blind">더보기</span></button>
+					<div class="mainBtn">
+						<button type="button">모임원 관리</button>
+						<button type="button">회비현황</button>
+						<button type="button">모임설정</button>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+</div>
+
+</body>
+</html>

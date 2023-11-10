@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TX-0032</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>지방세 납부</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="topAccBox"> <!-- [2022-10-11] 윤지현: 클래스 변경 -->
+				<div class="ttTop">
+					<div class=""> <!-- [2022-10-11] 윤지현:클래스삭제 -->
+						<div class="roundInBox">
+							<div class="accTypeWrap accAlwaysType">
+								<a href="javascript:;" title="계좌선택" role="button" class="jsSelectLink accInLayout"><!--[2022-07-07] 윤지현 : title추가 -->
+									<div class="accInfo">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<!--<span class="accBank">[농협]</span>-->
+												<span class="bankBookName">주머니(money) 통장</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1775-6397-03</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<!-- [2022-06-30] 윤지현:마크업위치이동 -->
+							</div>
+							<!-- ▼ [2022-10-11] 윤지현:계좌선택영역 전체수정 -->
+							<section class="jsOnOffTarget">
+								<hr class="my20">
+								<div class="layoutWrap">
+									<div class="layoutL">
+										<span data-focus="focus" class="accPossible">출금가능금액</span>
+										<button type="button" class="btnSm">+ 채우기</button>
+									</div>
+									<div class="layoutR">
+										<div class="accDataWrap">
+											<strong class="accCash">58,000,000</strong><span class="accUnit">원</span>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- ▲ [2022-10-11] 윤지현:계좌선택영역 전체수정 -->
+
+							<!-- <div class="accDataWrap forInner">
+								<div>
+									<span class="accNumInfo">출금가능금액</span>
+									<strong class="accCash">58,000,000</strong><span class="accUnit">원</span>
+								</div>
+								<button type="button" class="btnSm">+ 채우기</button>
+							</div> [2022-10-11] 윤지현:삭제 -->
+							<!-- //[2022-06-30] 윤지현:마크업위치이동 -->
+						</div>
+					</div>
+					<!-- [2022-10-07] 김자영: 삭제
+					 <div class="accUtility">
+						<button type="button" class="btnSm">+ 채우기</button>
+						<button type="button" class="btnSm">적립금</button>
+					</div> -->
+				</div>
+				<div class="ttBottom">
+					<div class="ttContents">
+						<div class="formWrap">
+							<!-- [2022-06-10] 윤지현:클래스삭제,마크업수정 -->
+							<div class="formItem">
+								<strong class="formTit default">납부금액</strong>
+								<div class="inpText">
+									<input type="tel" title="계좌번호" value="100,000" class="tyNum" placeholder readonly>
+									<span class="unit">원</span>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+							</div>
+							<div class="formItem">
+								<strong class="formTit">계좌 비밀번호</strong><!-- [2022-06-24] 김자영 : 텍스트 띄어쓰기 수정 -->
+								<div class="inpText">
+									<button type="button" title="신규비밀번호 4자리 숫자 입력 팝업열림" aria-label="계좌 비밀번호 4자리 숫자" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+									<input type="password" title="신규비밀번호 4자리 숫자 입력 팝업열림" value class="sKey" placeholder="4자리 숫자 입력" maxlength="4" readonly>
+								</div>
+							</div>
+							<div class="formItem jsTgWrap">
+								<strong class="formTit inpChk">
+									<input type="checkbox" aria-expanded="true" name="chk10" id="chk101" class="jsTgBtn">
+									<label for="chk101">예약납부</label>
+								</strong>
+								<!-- 예약납부 선택시 노출 -->
+								<div class="jsTgCont formExpBox" style="display:none;">
+									<div class="formItem">
+										<strong class="formTit">예약일자</strong><!-- [2022-06-24] 김자영 : 텍스트수정 -->
+										<div class="inpSel">
+											<a href="javascript:;" title="예약납부 선택" role="button" class="btnSelDate">납부 예약일 선택</a><!-- [2022-06-24] 김자영 : 텍스트수정 -->
+										</div>
+										<!-- [2022-07-07] 김자영 : 문구추가 -->
+										<ul class="infoTxt">
+											<li>예약납부 취소는 예약납부 예정일 전영업일까지 가능합니다.</li>
+											<li>토/일/공휴일은 납부희망일로 지정할 수 없습니다.</li>
+										</ul>
+										<!--// [2022-07-07] 김자영 : 문구추가 -->
+									</div>
+								</div>
+								<!-- //예약납부 선택시 노출 -->
+							</div>
+						</div>
+						<div class="btmInfoWrap">
+							<strong class="tit">확인사항</strong>
+							<ul class="infoTxt">
+								<li>이체 이후에는 입력사항 수정이 불가능하므로 정확하게 입력하여 주시기 바랍니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="toastMessage">[납부]를 선택하면 전자서명과 동시에 납부됩니다.</div>
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel dis">납부</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

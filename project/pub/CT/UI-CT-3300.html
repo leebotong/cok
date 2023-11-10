@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-3300</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>FATCA/CRS 본인확인서 제출</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+			<div class="formWrap">
+				<h2 class="defTit2">해외거주자 및 해외납세의무자 확인</h2>
+				<div class="formItem">
+					<div class="inpChk">
+						<input type="checkbox" name="chk11" id="chk11" checked>
+						<label for="chk11">조세 목적상 한국 거주자에 해당합니다.</label>
+					</div>
+					<div class="inpChk mt14">
+						<input type="checkbox" name="chk12" id="chk12">
+						<label for="chk12">한국 이외에 조세 목적상 국가가 있습니다</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="formWrap">
+				<h2 class="defTit2">외국인등록증/영주증 보유자 확인</h2>
+
+				<p class="mt20 mb14">외국인등록증/영주증을 보유하고 있습니다.</p>
+
+				<div class="layoutWrap alignLeft">
+					<div class="inpChk radioCircle" >
+						<input type="radio" name="radio1" id="radio11" checked>
+						<label for="radio11">예</label>
+					</div>
+					<div class="inpChk radioCircle mt0 px20">
+						<input type="radio" name="radio1" id="radio12">
+						<label for="radio12">아니요</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="formWrap foreigner">
+				<h2 class="defTit2">외국인등록증/영주증 확인</h2>
+
+				<div class="formItem">
+					<strong class="formTit">일련변호</strong>
+					<div class="formGroup">
+						<div class="inpText">
+							<input type="tel" title="일련번호 첫번째자리" value="" class="tyTxt" placeholder="1" maxlength="1">
+						</div>
+						<div class="inpText">
+							<input type="tel" title="일련번호 두번째자리" value="" class="tyTxt" placeholder="000" maxlength="3">
+						</div>
+						<div class="inpText">
+							<input type="tel" title="일련번호 세번째자리" value="" class="tyTxt" placeholder="000" maxlength="3">
+						</div>
+						<div class="inpText">
+							<input type="tel" title="일련번호 마지막자리" value="" class="tyTxt" placeholder="0000" maxlength="4">
+						</div>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">허가일자/신고일</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="조회 시작날짜 선택" role="button" class="btnSelDate">2022.12.31</a>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">만료일자/유효기간</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="조회 시작날짜 선택" role="button" class="btnSelDate">2022.12.31</a>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="chk2" id="chk21" checked>
+						<label for="chk21">외국인등록증 만료일자가 ‘신분존속기간’으로 나옵니다.</label>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				$(document).on('click', 'input[name=radio1]', function () {
+					if($(this).prop('checked') && $(this).attr("id") == "radio11"){
+						$(".foreigner").show();
+					}else{
+						$(".foreigner").hide();
+					}
+				});
+			</script>
+
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">이전</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popupArea">
+</div>
+</body>
+</html>

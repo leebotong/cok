@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>콕 내맘대로뱅킹</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_junior.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+<div id="wrap" class="junior">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕 form</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<h1 class="gTit" style="margin-bottom:20px">### 계좌정보</h1>
+			<section>
+				<!-- ROUND BOX -->
+				<div class="roundBox">
+					<div class="roundInBox">
+						<div class="accTypeWrap accAlwaysType">
+							<a href="javascript:;" title="계좌선택" role="button" class="accInLayout">
+								<div class="accInfo">
+									<div class="logoWrap">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="OO은행" class="logo">
+									</div>
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<!--<span class="accBank">[농협]</span>-->
+											<span class="bankBookName">주머니(MONEY)통장</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">
+												<span class="accNumber">352-1775-6397-03</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="accDataWrap">
+							<div>
+								<span class="accNumInfo">출금가능금액</span>
+								<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //ROUND BOX -->
+			</section>
+
+			<hr class="divingLine">
+
+			<h1 class="gTit" style="margin-bottom:20px">### TAB</h1>
+			<section>
+				<div class="tabWrap oneDepth">
+					<div role="tablist" class="tabList">
+						<a href="javascript:;" role="tab" class="active">계좌송금</a>
+						<a href="javascript:;" role="tab">연락처송금</a>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="tabWrap segment">
+					<div role="tablist" class="tabList">
+						<a href="javascript:;" role="tab" class="segmentItem active">계좌송금</a>
+						<a href="javascript:;" role="tab" class="segmentItem">연락처송금</a>
+					</div>
+				</div>
+			</section>
+
+			<hr class="divingLine">
+
+			<h1 class="gTit" style="margin-bottom:20px">### input text</h1>
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">계좌번호</strong>
+					<div class="inpText">
+						<input type="tel" title="계좌번호" value class="tyTxt" placeholder="계좌번호 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+			</div>
+
+			<hr class="divingLine">
+
+			<h1 class="gTit" style>### input type2</h1>
+			<p class="bili txtRed">일반모드와 구분필요 .juniorBothForm으로 감싸고, .formTit과 input 영역을 좌우로 배치하기 위해 마크업 구조 일부 변경</p>
+			<section class="juniorBothForm">
+				<div class="formWrap">
+					<div class="formItem">
+						<div class="inpText layoutWrap">
+							<strong class="formTit">받는계좌에 표시</strong>
+							<input type="text" title="받는 통장 기록사항" value="홍길동" class="tyTxt ar" placeholder="받는 통장에 표시 될 내용을 입력해주세요">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+					<div data-focus="focus" class="formItem">
+						<div class="inpText layoutWrap">
+							<strong class="formTit">내계좌에 표시</strong>
+							<input type="text" title="받는 통장 기록사항" value class="tyTxt ar" placeholder="미입력시 수취인명">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+					<div class="formItem">
+						<div class="inpText layoutWrap">
+							<strong class="formTit">송금메모</strong>
+							<input type="text" title="받는 통장 기록사항" value class="tyTxt ar" placeholder="한글 10자까지 입력">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr class="divingLine">
+
+			<h1 class="gTit" style>### listTblBox</h1>
+			<section>
+				<div class="listTblBox mt0">
+					<ul>
+						<li>
+							<span class="tit">수수료</span>
+							<p class="txt">면제</p>
+						</li>
+						<li>
+							<span class="tit">받는계좌에 표시</span>
+							<p class="txt">홍길동</p>
+						</li>
+						<li>
+							<span class="tit">내계좌에 표시</span>
+							<p class="txt">홍길동</p>
+						</li>
+						<li>
+							<span class="tit">송금메모</span>
+							<p class="txt">축생일</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<hr class="divingLine">
+
+			<h1 class="gTit" style>### jsShowBtn</h1>
+			<section>
+				<a href="javascript:;" title="펼치기" role="button" class="inBoxBtn viewBtn juniorMoreInfo jsShowBtn">송금 상세 정보</a>
+				<div class="hideBox">
+					<div class="listTblBox">
+						<ul>
+							<li>
+								<span class="tit">출금계좌</span>
+								<p class="txt"><span>NH농협</span> <span>123-1234-1234-12</span></p>
+							</li>
+							<li>
+								<span class="tit">입금계좌</span>
+								<p class="txt"><span>신한은행</span> <span>123-1234-123-12</span></p>
+							</li>
+							<li>
+								<span class="tit">받는계좌에 표시</span>
+								<p class="txt">홍길동</p>
+							</li>
+							<li>
+								<span class="tit">송금메모</span>
+								<p class="txt">축생일</p>
+							</li>
+						</ul>
+					</div>
+					<div class="btnInArea">
+						<button type="button">자주쓰는 계좌등록</button>
+						<button type="button">송금내역저장</button>
+					</div>
+				</div>
+			</section>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

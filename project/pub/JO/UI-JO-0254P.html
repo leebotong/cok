@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0254P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupB);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>예적금담보대출</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button" class="popOpen">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupB" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">가입금액 입력</h2>
+					</div>
+					<div class="layerSelectContent">
+						<div class="spinningWrap">
+							<div class="flex">
+								<button type="button" aria-label="더하기" class="btnPlus"></button>
+								<div class="luckyBag active"> <!-- [2022-07-15] 윤지현:값이 있으면 active 추가 -->
+									<p class="num">1</p>
+									<em class="unit">백만원</em>
+								</div>
+								<button type="button" aria-label="빼기" class="btnMinus"></button>
+								<p class="rateTxt">최고 0.1%p</p>
+							</div>
+							<div class="flex">
+								<button type="button" aria-label="더하기" class="btnPlus"></button>
+								<div class="luckyBag">
+									<p class="num">2</p>
+									<em class="unit">천만원</em>
+								</div>
+								<button type="button" aria-label="빼기" class="btnMinus"></button>
+								<p class="rateTxt">최고 0.1%p</p>
+							</div>
+							<div class="flex">
+								<button type="button" aria-label="더하기" class="btnPlus"></button>
+								<div class="luckyBag">
+									<p class="num">3</p>
+									<em class="unit">억원</em>
+								</div>
+								<button type="button" aria-label="빼기" class="btnMinus"></button>
+								<p class="rateTxt">최고 0.1%p</p>
+							</div>
+						</div>
+
+						<div class="formWrap">
+							<div class="formItem">
+								<p class="numVal"><em class="data"></em><span class="unit">원</span></p>
+								<div class="inpText">
+									<input type="tel" title="금액" class="tyNum" value="" placeholder="최소 1백만원 이상 입력">
+									<span class="unit">원</span>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel">확인</button>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

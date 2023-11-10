@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SE-0103</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>입출금 알림 신청</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<section class="section30">
+				<p class="defTit2">알림대상 계좌</p>
+				<div class="btnLnkLine tit2Right">
+					<a href="javascript:;" role="button" class="underLine">+ 계좌추가(1/10)</a>
+				</div>
+
+				<!-- [2022-09-07] -->
+				<div class="jsTgWrap">
+					<!--list-->
+					<div class="accLineBox mt10 type2"> <!-- [2022-09-29] 윤지현:type 클래스추가 -->
+						<div class="accTypeWrap">
+							<div class="accInLayout">
+								<div class="accInfo">
+									<div class="logoWrap">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+									</div>
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<span class="bankBookName">주머니(money)통장</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">
+												<span class="accNumber">352-1736-1551-38</span>
+											</div>
+										</div>
+									</div>
+									<div>
+										<button type="button" class="listClear"><span class="blind">삭제하기</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--//list-->
+					<div class="jsTgCont">
+						<!--list-->
+						<div class="accLineBox mt10">
+							<div class="accTypeWrap">
+								<div class="accInLayout">
+									<div class="accInfo">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<span class="bankBookName">주머니(money)통장</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1736-1551-38</span>
+												</div>
+											</div>
+										</div>
+										<div>
+											<button type="button" class="listClear"><span class="blind">삭제하기</span></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--//list-->
+						</div>
+					</div>
+					<div class="moreBtn"><button type="button"class="listTit jsTgBtn" aria-expanded="false">더보기</button></div> <!-- [2022-09-29] 윤지현:문구수정 -->
+				</div>
+				<!-- //[2022-09-07] -->
+			</section>	
+
+			
+			<!-- <hr class="divingLine"> [2022-09-29] 태그삭제 -->
+			<section class="section40"> <!-- [2022-09-29] 윤지현:클래스수정 -->
+				<p class="defTit2 ac">알림은 어떻게 보내드릴까요?</p>
+
+				<!-- [2022-09-05] radio로 변경 -->
+				<div class="boxRdoGroup jsTgWrap alarmWrap type2"> <!-- [2022-09-29] 윤지현:type 클래스추가 -->
+					<div class="inpChk">
+						<input type="radio" name="radio7" id="radio71" class="jsTgBtn">
+						<label for="radio71">알림을 실시간으로 받을래요.</label>
+					</div>
+					<div class="alarmCont jsTgCont">
+						<p class="tits">알림은 이렇게 보내드려요.</p>
+						<div class="listTbl">
+							<div class="listIn_flex">
+								<span class="tit">알림범위</span> 
+								<p class="txt">전체</p>
+							</div>
+							<div class="listIn_flex">
+								<span class="tit">금액제한</span> 
+								<p class="txt">제한없음</p>
+							</div>
+							<div class="listIn_flex">
+								<span class="tit">발송시간</span> 
+								<p class="txt">실시간</p>
+							</div>
+							<div class="listIn_flex">
+								<span class="tit">방해금지시간</span> 
+								<p class="txt">없음</p>
+							</div>
+							<div class="listIn_flex">
+								<span class="tit">자동이체알림</span> 
+								<p class="txt">제한발송</p>
+							</div>
+						</div>
+					</div>
+					<div class="inpChk link">
+						<input type="radio" name="radio7" id="radio72" class="jsTgBtn2">
+						<label for="radio72">알림 조건을 직접 설정할래요.</label>
+					</div>
+				</div>
+				<script>
+					$(function(){
+						$('.jsTgBtn2').click(function(){
+							$('.alarmCont').hide();
+						});
+					});
+				</script>
+				<!-- //[2022-09-05] radio로 변경 -->
+
+				<div class="formItem mt20">
+					<strong class="inpChk">
+						<input type="checkbox" name="chk1" id="chk11">
+						<label for="chk11">잔액은 표시하지 말아주세요.</label>
+					</strong>
+				</div>
+
+			</section>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button">취소</button>
+				<button type="button" class="sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div><!-- //#wrap -->
+</body>
+</html>
+

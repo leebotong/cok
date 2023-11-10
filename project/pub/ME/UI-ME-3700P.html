@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-ME-3700_P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			 popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>ARS인증</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">타인명의 휴대전화 사용자</h2>
+						</div>
+					</div>
+					<!-- [2022-09-14] 디자인 변경 -->
+					<div class="popContBox">
+						<div class="pgTitWrap"><!-- [2022-08-22] 김자영 : class ac 삭제 -->
+							<p class="pTit"><strong>콕뱅크</strong>는 본인명의 휴대폰 사용자만 가입가능해요!</p><!-- [2022-10-07] 윤지현:문구수정 -->
+							<ul class="listDot">
+								<li>다만 아래 가입절차를 하신 경우 <span class="pColor">타인명의 휴대전화 사용자도 회원가입 가능</span>합니다.</li> <!-- [2022-10-07] 윤지현:문구수정 -->
+							</ul>
+						</div>
+						<section class="section40">
+							<div class="stepDiagram typeCol"><!-- Btype 디자인일 경우 class typeCol 추가 -->
+								<!-- ▼ [2022-08-22] 김자영 : 타이틀 추가 -->
+								<p class="defTit2">가입절차</p>
+								<p class="fSmall mb20">사전준비 안내 : 농협전자금융가입 → 전자금융사기예방서비스가입</p><!-- [2022-10-07] 윤지현:문구추가 --><!-- [2022-10-22] 김자영:화살표수정 -->
+								
+								<ol class="joinStep">
+									<li>
+										<i class="ico"></i>
+										<span class="numb">1.</span>
+										<p>약관동의</p>
+									</li>
+									<li>
+										<i class="ico"></i>
+										<span class="numb">2.</span>
+										<p>농협계좌인증</p>
+									</li>
+									<li>
+										<i class="ico"></i>
+										<span class="numb">3.</span>
+										<p>ARS인증</p>
+									</li>
+								</ol>
+							</div>
+							<div class="btmInfoWrap">
+								<strong class="tit">확인사항</strong>
+								<ul class="infoTxt">
+										<li>ARS인증 전 농협계좌 인증이 필요하므로 농협계좌번호를 사전에 꼭 확인해주세요.</li>
+										<li>휴대폰 본인인증이 안되는 사용자(선불폰, 알뜰폰)는 타인명의 휴대전화 사용자 가입으로 진행해 주세요.</li> <!-- [2022-10-07] 윤지현:문구수정 -->
+								</ul>
+							</div>
+						</section>
+					</div>
+					<!--// [2022-09-14] 디자인 변경 -->
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">회원가입(타인명의 휴대전화 사용자)</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

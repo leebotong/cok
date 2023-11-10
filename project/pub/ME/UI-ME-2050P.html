@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-ME-1100</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>회원가입</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap" style="display:none;">
+				<p class="pTit"><strong>이용약관</strong>을<br><strong>확인</strong>해주세요.</p>
+			</div>
+
+			<div class="jsTgWrap mt0">
+				<div class="allCheckTopBox addArrow"><!-- [2022-06-24] 김자영 : class 수정-->
+					<input type="checkbox" name="agreeChk" id="aggChkAll" class="jsTgBtn"><!-- [2022-06-24] 김자영 : class titFold 삭제-->
+					<label for="aggChkAll">약관 전체동의</label>
+				</div>
+
+				<div class="allCheckBox jsTgCont" style="display:none">
+					<div class="termsHead">
+						<p>콕뱅크 이용약관</p>
+						<a href="javascript:;" role="button" class="btn">전체동의</a>
+					</div>
+					<ul class="termsList">
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk01">
+								<label for="aggrChk01">[필수] ] NH콕뱅크 이용약관</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk02">
+								<label for="aggrChk02">[필수] 농협 전자금융 서비스 이용약관</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk03">
+								<label for="aggrChk03">[필수] 전자금융거래 기본약관</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk04">
+								<label for="aggrChk04">[필수] 개인(신용)정보 수집 및 이용동의</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk05">
+								<label for="aggrChk05">[필수] 개인정보 제3자 제공동의</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+						<li>
+							<div class="termsCheck">
+								<input type="checkbox" title="약관상세보기 팝업열림" name="choCheck" id="aggrChk06">
+								<label for="aggrChk06">[선택] 개인(신용)정보 수집 및 이용동의</label>
+							</div>
+							<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="allAgreeCont" style="display:block">
+					<div class="formWrap">
+						<div class="formItem">
+							<strong class="formTit">이름</strong>
+							<div class="inpText">
+								<input type="text" title="이름" value class="tyTxt" placeholder="이름입력">
+								<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							</div>
+							<p class="infoTxtErr">Error MSG</p>
+						</div>
+						<div class="formItem">
+							<strong class="formTit">주민등록번호</strong>
+							<div class="formGroup">
+								<div class="inpText">
+									<input type="tel" title="주민등록번호 앞자리" value class="tyTxt" placeholder="앞자리 입력">
+								</div>
+								<span class="etc">-</span>
+								<div class="inpText readonly sKey">
+									<button type="button" title="주민등록번호 7자리 입력됨" aria-label="주민등록번호 7자리 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+									<input type="password" title="주민등록번호 뒷자리" aria-hidden="true" value="1111111" class="tyTxt" readonly>
+								</div>
+							</div>
+							<p class="infoTxtErr">Error MSG</p>
+						</div>
+						<ul class="listDot">
+							<li>14세 이상이라면 계좌인증 없이도간편하게 가입 가능해요.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel dis">동의</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- 슬라이드 팝업 -->
+	<div role="dialog" aria-hidden="false" id="popupB" class="popupWrap slide" style="display:block;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner" style="bottom: 0px;">
+					<div class="layerSelectTitle">
+					</div>
+					<div class="layerSelectContent">
+						<div class="confirmMsg">
+							<i class="check"></i>
+							<p class="tit">반갑습니다. 고객님.<br>다시 방문해 주셨군요!</p>
+							<p class="txt">고객님의 소중한 금융자산 보호를 위해<br>
+								농협계좌 인증이 필요해요.<br>
+								계좌인증하시고 콕뱅크의<br>
+								모든 서비스를 자유롭게 이용해보세요.
+							</p>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel">농협계좌 인증</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

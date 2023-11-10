@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-0160</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>계좌정보</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="tabWrap oneDepthSwipe">
+					<div role="tablist" class="tabList tabSwipe">
+						<a href="javascript:;" role="tab">입출금</a>
+						<a href="javascript:;" role="tab" class="active">예적금/신탁</a>
+						<a href="javascript:;" role="tab">대출</a>
+						<a href="javascript:;" role="tab">펀드</a>
+						<a href="javascript:;" role="tab">외화</a>
+					</div>
+				</div>
+				<div class="twoToneType">
+					<div class="ttTop">
+						<!-- ROUND BOX -->
+						<!-- ▼ 2022-07-01 계좌관련 수정 -->
+						<div class="roundBox">
+							<div class="roundInBox">
+								<div class="accTypeWrap accAlwaysType">
+									<!-- ▼ 2022-07-07 접근성 수정 : title 추가 -->
+									<a href="javascript:popOpen(sp2);" title="계좌선택" role="button" class="accInLayout">
+										<div class="accInfo">
+											<div class="logoWrap">
+												<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+											</div>
+											<div class="accInfoWrap">
+												<strong class="accName">
+													<!--<span class="accBank">[농협]</span>-->
+													<span class="bankBookName">자립예탁금</span>
+												</strong>
+												<div class="accNumWrap">
+													<div class="accNumBox">
+														<span class="accNumber">352-1775-6397-03</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="accDataWrap">
+									<div>
+										<span class="accNumInfo">잔액</span>
+										<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //ROUND BOX -->
+						<p class="infoTxt">주머니(money)적금 계좌는 설정된 출금계좌에서 설정한
+							스윙 금액 이하의 돈을 자동으로 저금하는 상품이며 <span class="pColor">스윙금액 설정</span>은 영업일 <span class="pColor">9시~18시에만 설정</span> 가능합니다.</p>
+					</div>
+					<div class="ttBottom">
+						<div class="ttContents">
+							<div class="listTblBox">
+								<ul>
+									<li>
+										<span class="tit">스윙 사용여부</span>
+										<p class="txt pColor">사용중</p>
+									</li>
+									<li>
+										<span class="tit">출금계좌</span>
+										<p class="txt">123-1234-1234-12</p>
+									</li>
+									<li>
+										<span class="tit">스윙 금액</span>
+										<p class="txt pColor">2만원 미만</p>
+									</li>
+									<li>
+										<span class="tit">스윙일</span>
+										<p class="txt">매일(매월 1일 ~ 말일)<br>(공휴일 제외)</p>
+									</li>
+								</ul>
+							</div>
+
+							<!-- listTbl -->
+							<div class="listTbl">
+								<ul>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">납입회차</span>
+											<p class="txt">0회</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">통장개설일</span>
+											<p class="txt">2020.03.13</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">만기일</span>
+											<p class="txt">2023.03.12</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">기본이율</span>
+											<p class="txt"><strong class="dataWrap"><em class="data">0.00</em><span class="unit">%</span></strong></p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">우대이율</span>
+											<p class="txt"><strong class="dataWrap"><em class="data">0.00</em><span class="unit">%</span></strong></p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">우대구분</span>
+											<p class="txt">일반가입</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">일반가입등록금액</span>
+											<p class="txt"><strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong></p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">납입한도</span>
+											<p class="txt">매월 30만원</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">가입채널</span>
+											<p class="txt">비대면</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">질권설정유무</span>
+											<p class="txt">유</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">질권설정내역</span>
+											<p class="txt">유</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">사고유무</span>
+											<p class="txt">유</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">사고내역</span>
+											<p class="txt">통장분실</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit alignTop">관리영업점</span>
+											<p class="txt">
+												도드람양돈 농협 용인지점<br>
+												031-000-0000<br>
+												<button type="button" class="btnSm mt10">영업점정보</button>
+											</p>
+										</div>
+									</li>
+								</ul>
+								<div class="btnInArea halfWidth">
+									<button type="button" class>스윙서비스 관리</button>
+									<button type="button" class>해지예상조회/해지</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea half"><!-- 2022-09-26 클래스명추가 -->
+					<button type="button" class>거래내역</button>
+					<button type="button" class="sel">통장표지조회</button>
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+</body>
+</html>

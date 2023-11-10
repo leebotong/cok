@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0006_3P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jqueryRotate.js"></script><!-- 룰렛 rotate -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">돌림판 이벤트</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="eventRouletteWrap">
+							<!-- 룰렛 -->
+							<p class="eventRouletteTitle">
+								도전, 돌려라 돌림판<i>!</i><br><span>경품이 선택되면 당첨됩니다. </span>
+							</p>
+							<div class="eventRoulette">
+								<img src="../../images/cont/rouletteEvent.png" alt="돌림판 이미지" class="roulette_image">
+								<!--▼ 웹접근성 경품리스트 : 개발요청 경품배열 -->
+								<ul class="blind">
+									<li>경품1</li>
+									<li>다음기회에</li>
+									<li>경품2</li>
+									<li>경품3</li>
+									<li>경품4</li>
+									<li>경품5</li>
+								</ul>
+								<!--// 웹접근성 경품리스트 -->
+							
+								<img src="../../images/cont/rouletteEventBorder.png" alt class="roulette_border">
+								<img src="../../images/cont/rouletteEventPin.png" alt="돌림판 선택표시 화살표" class="roulette_pin">
+								<img src="../../images/cont/rouletteEventBottom.png" alt class="roulette_bottom">
+								
+								<button id="start_btn" class="rouletteBtn"><img src="../../images/cont/rouletteEventBtn.png" alt="돌림판 돌리기"></button>
+								<!-- 콕사용시 -->
+								<div class="eventPoint">
+									<span class="inner">
+										<span>차감 :<i class="me">-5</i>콕 / 잔여 :<i class="gv">50</i>콕</span>
+									</span>
+								</div>
+								<!--// 콕사용시 -->
+
+								<!-- 콕미사용시
+								<div class="eventPoint">
+									<span>응모가능횟수 :<i class="">2</i> / <i class="gv">5</i></span>
+								</div>
+								// 콕미사용시 -->
+
+								<!-- bg 추가 -->
+								<span class="imgMountain"></span>
+								<div class="characterWrap">
+									<span class="imgCharacter01"></span>
+									<span class="imgCharacter02"></span>
+								</div>
+								<!--// bg 추가 -->
+							</div>
+						</div>
+
+						<div class="btmInfoWrap">
+							<strong class="tit">확인사항</strong>
+							<!-- [2022-09-16] db 텍스트 감싸는 태그 수정해주세요 ! -->
+							<div class="dbTxtArea">
+								※ 돌림판의 ‘START’ 버튼을 누르시면 해당 콕이 차감되고 이벤트가 실행됩니다.<br>
+								※ 이벤트 참여 시 차감된 콕은 “기프티콕 &gt; 적립/사용내역” 에서 확인하실 수 있습니다.<br>
+								※ 콕 보유 시 동일한 이벤트에 중복 참여하실 수 있습니다.
+							</div>
+							<!--// [2022-09-16] db 텍스트 감싸는 태그 수정해주세요 ! -->
+						</div>
+					</div>
+
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	window.onload =  function() {
+		var pArr = ["경품1","다음기회에","경품2","경품3","경품4","경품5"];
+		// $('.eventRoulette .noti .btnClose').click(function(){
+		// 	$('.eventRoulette .noti').hide();
+		// });
+		$('.rouletteBtn').click(function() {
+			rotation();
+			// $('.eventRoulette .noti').hide();
+		});
+
+		function rotation() {
+			$('.roulette_image').rotate({
+				angle:0,
+				animateTo:360 * 8 + randomize(0,360),
+				center:["50%","50%"],
+				easing:$.easing.easeOutCirc,
+				callback: function() {
+					var n = $(this).getRotateAngle();
+					endAnimate(n);
+				},
+				duration: 5000
+			});
+		}
+
+		function endAnimate($n) {
+			var n = $n;
+			$('#roulette_id').html("<p>움직인각도:" + n + "</p>");
+			var real_angle = n % 360;
+			var part = Math.floor(n / 60) - + 6 * 8;
+			$('#roulette_id2').html("<p>상품범위:" + part + "</p>");
+			if(part < 1) {
+				$('#roulette_id3').html("<p>당첨내역:" + pArr[0] + "</p>");
+				return;
+			}
+			if(part >= 10) {
+				$('#roulette_id3').html("<p>당첨내역:" + pArr[pArr.length - 1] + "</p>");
+				return;
+			}
+			$('#roulette_id3').html("<p>당첨내역:" + pArr[part] + "</p>");
+		}
+
+		function randomize($min, $max){
+			return Math.floor(Math.random() * ($max - $min + 1)) + $min;
+		}
+	};
+</script>
+</body>
+</html>

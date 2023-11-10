@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CL-1110_1</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>하와이 가자</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		<section class="CLaccountDetail">
+
+			<div class="CLaccountBox primaryC">
+				<div class="accNumBox">
+					<p class="accMember mb10">[한도제한] 23.03.01 모임개설</p> <!-- [2023-06-12] 콕모임 : QA 0.4 반영 -->
+					<!-- <button class="accNumber" onclick="toastOpen(toast1, '계좌번호가 복사되었습니다.')">352-1775-6397-03</button> -->
+					<p class="accNumber">352-1775-6397-03<button class="accCopy" aria-label="계좌번호 복사"></button></p> <!-- [2023-04-26] 콕모임 : 계좌번호 복사 버튼 추가 -->
+				</div>
+
+				<div class="accInfoInBtn confirmCL">
+					<button class="accSetting" aria-label="모임관리"></button>
+				</div>
+
+				<div class="accDataWrap">
+					<strong class="accCash">500,000</strong><span class="accUnit">원</span><button class="roundBorderBtn">+회비입금</button> <!-- [2023-04-25] 버튼으로 수정 -->
+				</div>
+			</div>
+
+			<!--공지가 있을 경우-->
+			<a href="#" class="notice"><span>알림  매월 1일 5만원 입금하기</span></a>
+			<div class="rdoBtnsWrap">
+				<ul>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample01" checked>
+							<label for="sample01">1주일</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample02">
+							<label for="sample02">1개월</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample03">
+							<label for="sample03">3개월</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample04">
+							<label for="sample04">6개월</label>
+						</span>
+					</li>
+					<li class="filter">
+						<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+					</li>
+				</ul>
+			</div>
+			<hr class="divingLine" aria-hidden="true">
+
+			<div class="historyList memoWrap">
+				<div class="listTit">
+					<strong class="formTit"><em>2022.12.15 ~ 2023.01.14</em>
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">모임 거래내역 조회</strong>
+							<ul class="listDot">
+								<li>모임계좌의 거래내역 조회는 모임개설일 이후 거래내역만 조회하실 수 있습니다. </li>
+							</ul>
+								<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<span class="mPee">회비입금현황</span>
+				</div>
+
+				<!--회비내역이 없을 경우-->
+				<!-- <div class="noData type3">
+					<i class="check"></i>
+					<p class="tit">해당 기간 거래내역이 없습니다. <!-- [2023-06-30] 콕모임 : 문구수정 --></p>
+					<p class="txt">모임 개설일 이후 거래내역만 볼 수 있어요.</p>
+				</div> -->
+				<!--//회비내역이 없을 경우-->
+
+				<!--조회 결과가 없을 경우-->
+				<div class="noData type2">
+					<i class="check"></i>
+					<p class="tit">조회 결과가 없습니다.</p>
+				</div>
+				<!--//조회 결과가 없을 경우-->
+			</div>
+		</section>
+
+
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+
+	<!-- TOAST POPUP -->
+	<div class="toastPopWrap">
+		<div role="alert" aria-hidden="true" aria-live="assertive" id="toast1" class="toastPop fade hide">
+			<span class="toastMessage"><!-- message --></span>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

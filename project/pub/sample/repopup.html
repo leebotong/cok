@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>2022 콕뱅크 고도화</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<meta name="description" content="[SEPTEM] UI Dev Team Markup Sample">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/repopup.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<!-- <script src="../../js/cok_pub.js"></script> -->
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/repopup.js"></script>
+	<link rel="manifest" href="./manifest.json">
+	<script>
+		$(function(){
+			// popOpen(full);
+			// popOpen(popupArea);
+			// centerPPP();
+		});
+	</script>
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- #header -->
+		<div id="header">
+			<div class="headerL">
+				<a href="#nolink" title="이전메뉴" class="headBtn btnPrev"></a>
+			</div>
+			<h1>팝업샘플(re)</h1>
+			<div class="headerR">
+				R
+			</div>
+		</div>
+		<!-- //#header -->
+		<!-- #container -->
+		<div id="container">
+			<!-- #contents -->
+			<div id="contents">
+				<!-- <a href="javascript:;" title="풀팝업 열기" role="button" class="">풀팝업</a><br><br> -->
+				<!-- <a href="javascript:popOpen(full);" title="풀팝업 열기" role="button" class="popOpen">풀팝업</a><br><br> -->
+				<button type="button" onclick="popOpen(full)" class="popOpen">풀팝업</button><br><br>
+				<a href="javascript:popOpen(sp);" title="슬라이드 팝업 열기" role="button" class="popOpen">슬라이드 팝업</a><br><br>
+				<a href="javascript:popOpen(cp);" title="확인 팝업 열기" role="button" class="popOpen">중앙 팝업</a>
+			</div>
+			<!-- //#contents -->
+			<!-- #footer_cont -->
+			<div id="footer_cont">
+			</div>
+			<!-- //#footer_cont -->
+		</div>
+		<!-- //#container -->
+	</div>
+	<!-- //#wrap -->
+
+	<!-- 풀 팝업 -->
+	<!--
+		POPUP BOX
+			DIM BOX
+				POPUP CONTENTS BOX
+					POPUP HEAD
+					POPUP CONTENT
+					POPUP FOOT
+					POPUP CLOSER
+	-->
+	<div id="full" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 class="popTitle">잔액 채우기</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div>
+							<p class="subTit">잔액 채우기 기능을 위해 다른금융계좌 등록이 필요해요.</p>
+							<a href="javascript:popOpen(cp);" title="슬라이드 팝업 열기" role="button" class="popOpen">cp 팝업</a><br><br>
+							<br><br>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+							<br><br>
+							<a href="javascript:popOpen(sp);" title="슬라이드 팝업 열기" role="button" class="popOpen">sp 팝업</a><br><br>
+							<br><br>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+							<br><br>
+							<a href="javascript:popOpen(cp2);" title="슬라이드 팝업 열기" role="button" class="popOpen">cp2 팝업</a><br><br>
+							<br><br>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">다른금융계좌 등록</button>
+						</div>
+					</div>
+					<a href="javascript:;" class="btnPopClose">팝업 닫기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="full2" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 class="popTitle">잔액 빼기</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div>
+							<p class="subTit">잔액 채우기 기능을 위해 다른금융계좌 등록이 필요해요.</p>
+							<a href="javascript:popOpen(cp);" title="슬라이드 팝업 열기" role="button" class="popOpen">cp 팝업</a><br><br>
+							<br><br>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+							<br><br>
+							<a href="javascript:popOpen(sp);" title="슬라이드 팝업 열기" role="button" class="popOpen">sp 팝업</a><br><br>
+							<br><br>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+							<br><br>
+							<a href="javascript:popOpen(cp2);" title="슬라이드 팝업 열기" role="button" class="popOpen">cp2 팝업</a><br><br>
+							<br><br>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">다른금융계좌 등록</button>
+						</div>
+					</div>
+					<a href="javascript:;" class="btnPopClose">팝업 닫기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 슬라이드 팝업 -->
+	<div id="sp" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 class="popTitle">계좌 선택</h2>
+					</div>
+					<div class="layerSelectContent">
+						<ul>
+							<li>
+								<a href="javascript:popOpen(cp2);" title="중앙 팝업 열기" role="button" class="popOpen">cp2 팝업</a>
+							</li>
+							<li>
+								<a href="javascript:popOpen(full2);" title="중앙 팝업 열기" role="button" class="popOpen">full2 팝업</a>
+							</li>
+						</ul>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" class="nor">취소</button>
+							<button type="button" class="sel">확인</button>
+						</div>
+					</div>
+					<a href="#none" role="button" class="btnPopClose">팝업 닫기</a>
+				</div>
+			</div>
+			<!--//레이어 셀렉트 팝업 -->
+		</div><!--// 팝업구분용 dim레이어 08/30추가 -->
+	</div>
+
+	<!-- 중앙 팝업 -->
+	<div id="cp" class="popupWrap center" style="display:none;">
+		<div class="rollPopArea">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="newProdTitle">
+								<h2 class="popTitle">중요 내용 확인</h2>
+							</div>
+							<div class="newProdInfo">
+								<div>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+									<br><br>
+									<a href="javascript:popOpen(cp2);" title="중앙 팝업 열기" role="button" class="popOpen">cp3 팝업</a>
+									<br><br>
+									<a href="javascript:popOpen(full2);" title="중앙 팝업 열기" role="button" class="popOpen">full2 팝업</a>
+									<br><br>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+								</div>
+							</div>
+							<div class="popFootBox">
+								<div class="btnArea">
+									<button type="button" title class="line">계좌등록</button>
+									<button type="button" title class="sel">계좌개설</button>
+								</div>
+							</div>
+							<a href="javascript:;" role="button" class="btnPopClose">팝업 닫기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 중앙 팝업 -->
+	<div id="cp2" class="popupWrap center" style="display:none;">
+		<div class="rollPopArea">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="newProdTitle">
+								<h2 class="popTitle">중요하지 않은 내용 확인</h2>
+							</div>
+							<div class="newProdInfo">
+								<div>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+									<br><br>
+									<a href="javascript:popOpen(cp3);" title="중앙 팝업 열기" role="button" class="popOpen">cp3 팝업</a>
+									<br><br>
+									<a href="javascript:popOpen(full2);" title="중앙 팝업 열기" role="button" class="popOpen">중앙 팝업</a>
+									<br><br>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+								</div>
+							</div>
+							<div class="popFootBox">
+								<div class="btnArea">
+									<button type="button" title class="line">계좌등록</button>
+									<button type="button" title class="sel">계좌개설</button>
+								</div>
+							</div>
+							<a href="javascript:;" role="button" class="btnPopClose">팝업 닫기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 중앙 팝업 -->
+	<div id="cp3" class="popupWrap center" style="display:none;">
+		<div class="rollPopArea">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="newProdTitle">
+								<h2 class="popTitle">중요해 보이는 내용 확인</h2>
+							</div>
+							<div class="newProdInfo">
+								<div>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+								</div>
+							</div>
+							<a href="javascript:;" role="button" class="btnPopClose">팝업 닫기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- DIM은 마크업 하단 1개 고정 -->
+	<!-- popWrap centerPopup -->
+	<div class="dim"></div>
+
+</body>
+</html>

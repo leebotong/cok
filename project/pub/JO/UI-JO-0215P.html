@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0215P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupB);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕! BASIC 적금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascrit:;" onclick="popOpen(popupB)">팝업열기</a>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel dis">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- SLIDE POPUP -->
+<div id="popupB" class="popupWrap slide" style="display:none;">
+	<div class="slidePopupDim">
+		<div class="layerSelectCont">
+			<div class="layerSelectContInner">
+				<div class="layerSelectTitle">
+					<h2 tabindex="0">공동인증서 안내</h2>
+				</div>
+				<div class="layerSelectContent">
+					<div>
+						<!-- [2022-08-24] 정렬수정 -->
+						<p class="defTxt2">대출신청을 위해서는 공동인증서가 필요하며<br>
+							본인명의 휴대전화에서만 가능합니다. 공동인증서가 <br>
+							없거나 (타행 공동인증서) 등록하지 않으신 <br>
+							고객님께서는 ‘인증/보안’ 메뉴에서 등록하신 후 <br>
+							대출을 신청해 주세요.</p>
+						<div class="btnInArea">
+							<button type="button" class="point">인증/보안</button>
+						</div>
+						<!-- //[2022-08-24] 정렬수정 -->
+					</div>
+				</div>
+				<div class="popFootBox">
+					<div class="btnArea">
+						<button type="button" onclick="popClose(this)" class="">취소</button>
+						<button type="button" onclick="popClose(this)" class="sel">확인</button>
+					</div>
+				</div>
+				<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose" data-popup-focus-close="popupBC-close"><span class="blind">팝업 닫기</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

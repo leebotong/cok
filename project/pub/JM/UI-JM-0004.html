@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JM-0004</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_junior.css"><!-- 시니어 큰글모드 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body class="purpleC">
+
+	<div id="wrap" class="junior">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>거래내역조회</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<!-- ▼ 2022-07-19 oneDepth > oneDepthSwipe 클래스 수정  -->
+				<div class="tabWrap oneDepthSwipe">
+					<!-- ▼ 2022-07-19 tabSwipe클래스 추가  -->
+					<div role="tablist" class="tabList tabSwipe">
+						<a href="javascript:;" role="tab" class="active">입출금</a>
+						<a href="javascript:;" role="tab">예적금/신탁</a>
+						<a href="javascript:;" role="tab">대출</a>
+						<a href="javascript:;" role="tab">펀드</a>
+					</div>
+				</div>
+
+				<!-- ROUND BOX -->
+				<div class="roundBox">
+					<div class="roundInBox">
+						<div class="accTypeWrap accAlwaysType">
+							<a href="javascript:;" title="계좌선택" role="button" class="accInLayout">
+								<div class="accInfo">
+									<div class="logoWrap">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="OO은행" class="logo">
+									</div>
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<!--<span class="accBank">[농협]</span>-->
+											<span class="bankBookName">주머니(MONEY)통장</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">
+												<span class="accNumber">352-1775-6397-03</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="accDataWrap">
+							<div>
+								<!-- ▼ 2022-07-19 텍스트 수정  -->
+								<span class="accNumInfo">잔액</span>
+								<strong class="accCash">15,000,000,000</strong><span class="accUnit">원</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //ROUND BOX -->
+
+				<div class="topRoundBox">
+					<div class="rdoBtnsWrap">
+						<ul>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample01">
+									<label for="sample01">1주일</label> <!-- [2022-10-19] 윤지현:문구수정 -->
+								</span>
+							</li>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample02">
+									<label for="sample02">1개월</label> <!-- [2022-10-19] 윤지현:문구수정 -->
+								</span>
+							</li>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample03">
+									<label for="sample03">3개월</label> <!-- [2022-10-19] 윤지현:문구수정 -->
+								</span>
+							</li>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample04">
+									<label for="sample04">6개월</label> <!-- [2022-10-19] 윤지현:문구수정 -->
+								</span>
+							</li>
+							<li class="filter">
+								<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<hr class="divingLine">
+
+				<div class="inqueryList">
+					<!-- case: no data -->
+					<div class="noData">
+						<i class="check"></i>
+						<strong class="tit">조회결과가 없습니다.</strong>
+					</div>
+					<!-- //case: no data -->
+					<!-- [2023-03-31] 김연진 : 거래메모추가 -->
+					<div class="listTit flex">
+						<em>2022.03.05 ~ 2022.04.05</em>
+						<span><a href="javascript:;" title="정렬 방법 선택" role="button" class="filterText">거래일자순</a></span>
+					</div>
+					<!--// [2023-03-31] 김연진 : 거래메모추가 -->
+					<div class="historyList memoWrap"><!-- [2023-03-31] 김연진 : 거래메모 CSS추가 -->
+						<ul>
+							<li class="pt20">
+								<a href="javascript:;" title="상세보기" role="button" class="listItem link">
+									<div class="flex">
+										<span class="date">2022.06.29 00:00:00</span>
+										<span class="tag pColor">입금</span> <!-- [2023-04-27] 한은정 : 모드컬러 따라가도록 변경 .sbColor -> .pColor -->
+									</div>
+									<div class="flex">
+										<span class="tit fMiddle">홍길동</span><!-- 2022-10-27 위치이동 -->
+										<strong class="dataWrap fBig pColor"><em class="data">100,000,000</em><span class="unit">원</span></strong><!-- 2022-10-17 클래스 삭제 -->  <!-- [2023-04-27] 한은정 : 모드컬러 따라가도록 변경 .sbColor -> .pColor -->
+									</div>
+									<div class="flex">
+										<span class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></span></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="상세보기" role="button" class="listItem link">
+									<div class="flex">
+										<span class="date">2022.06.29 00:00:00</span>
+										<span class="tag txtRed">출금</span>
+									</div>
+									<div class="flex">
+										<span class="tit fMiddle">홍길동</span><!-- 2022-10-27 위치이동 -->
+										<strong class="dataWrap fBig txtRed"><em class="data">100,000,000</em><span class="unit">원</span></strong><!-- 2022-10-17 클래스 삭제 --> <!-- [2023-04-27] 한은정 : 출금금액 검정색 통일 .txtRed 추가 -->
+									</div>
+									<div class="flex">
+										<span class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000,000</em><span class="unit">원</span></span></span>
+									</div>
+									<!-- [2023-03-31] 김연진 : 거래메모추가 -->
+									<div class="flex">
+										<span class="memoView">전체 메모 내용이 표시됩니다. 넘어가면 두 줄로 표시됩니다.</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="상세보기" role="button" class="listItem link">
+									<div class="flex">
+										<span class="date">2022.06.29 00:00:00</span>
+										<span class="tag txtRed">출금</span>
+									</div>
+									<div class="flex">
+										<span class="tit fMiddle">홍길동</span><!-- 2022-10-27 위치이동 -->
+										<strong class="dataWrap fBig txtRed"><em class="data">100,000,000</em><span class="unit">원</span></strong><!-- 2022-10-17 클래스 삭제 --> <!-- [2023-04-27] 한은정 : 출금금액 검정색 통일 .txtRed 추가 -->
+									</div>
+									<div class="flex">
+										<span class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000,000</em><span class="unit">원</span></span></span>
+									</div>
+									<!-- [2023-03-31] 김연진 : 거래메모추가 -->
+									<div class="flex">
+										<span class="memoView">전체 메모 내용이 보여집니다.넘어가면 두줄로 표시 됩니다.</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="moreBtn"><button type="button">더보기</button></div>
+					</div>
+				</div>
+
+			</div> <!-- //#contents -->
+			<!-- <div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class="sel dis">다음</button>
+				</div>
+			</div> -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+</body>
+</html>

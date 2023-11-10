@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1130FP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			// toastOpen(toastA);
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>음성송금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button" class="popOpen">UI-SB-1130FP</a><br><br>
+		</div>  <!-- //#contents -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popupArea">
+	<!-- TOAST POPUP -->
+	<div class="toastPopWrap">
+		<div role="alert" aria-hidden="true" aria-live="assertive" id="toast1" class="toastPop fade hide">
+			<span class="toastMessage"><!-- message --></span>
+		</div>
+	</div>
+
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">음성송금</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<!-- ▼ 2022-07-07 텍스트 수정외 -->
+						<div class="pgTitWrap">
+							<p class="pTit"><strong>받는분</strong>의 <strong>이름</strong>과<br><strong>금액</strong>을 말씀해주세요.</p>
+							<ul class="listDot">
+								<li>자주쓰는계좌에 등록한 계좌만 가능합니다.<br>(음성예시 &ldquo;김농협 5만원 입금&rdquo;)</li> <!-- [2022-11-09] 윤지현:문구수정 -->
+							</ul>
+						</div>
+						
+						<div class="loadWrap middle">
+							<button role="button" class="loadBox" title="음성검색">
+								<span class="voice2">음성검색</span>
+							</button>
+							<div class="waves"></div>
+							<div class="waves2"></div>
+						</div>
+						<!-- //[2022-07-15] -->	
+					</div>
+					<div class="popFootBox">
+						<!-- !!! 페이지 하단 JS 참조 !!! -->
+						<div class="overTimeWrap">
+							<div class="overTime" style="display:block">
+								<div class="layoutWrap">
+									<p>음성입력 시간이 초과되었습니다</p>
+									<a href="javascript:;" role="button" class="underLine voiceReAction">재시도</a>
+								</div>
+							</div>
+						</div>
+						<!-- //overTimeWrap -->
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function(){
+		// [개발]
+		// 메시지를 보여주기 위한 이벤트 발생시
+		// 하기 코드 실행하여 active 클래스 추가 필요
+		// $('.overTime').addClass('active');
+
+		// setTimeout: 초기 페이지 이벤트 동작 확인용
+		setTimeout(function(){
+			$('.overTime').addClass('active');
+		}, 1000);
+
+		// $('.imgBox') 클릭 이벤트는 확인용
+		$('.imgBox').bind('click', function(){
+			$('.overTime').addClass('active');
+		});
+
+		$('.voiceReAction').bind('click', function(){
+			$('.overTime').removeClass('active');
+		});
+	});
+</script>
+</body>
+</html>

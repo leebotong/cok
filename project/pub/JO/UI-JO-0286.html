@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0286</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>MY콕통장</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+			<!-- 영업점선택 -->
+			<div class="marketListBranch">
+				<div class="balloon">
+					<p class="dil">금리를 꼭 확인해주세요</p>
+					<!-- tooltip -->
+					<div class="tooltipWrap jsTooltipPosition">
+						<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+						<div class="tooltipCont">
+							<strong class="tit">금리 확인 안내</strong>
+							<p>조회하신 금리(연%P, 세전)는 가입설계, 우대금리 적용, 금리반영시점에 따라 가입 시 금리와 다를 수 있습니다. (실제 적용금리는 상품가입 단계에서 꼭 확인해주세요.)</p>
+							<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+						</div>
+					</div>
+					<!-- //tooltip -->
+				</div>
+				<div class="box">
+					<div class="formWrap">
+						<div class="formItem">
+							<strong class="formTit">상품 가입 영업점
+								<!-- tooltip -->
+								<div class="tooltipWrap jsTooltipPosition">
+									<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+									<div class="tooltipCont l-15">
+										<strong class="tit">농·축협 영업점 선택 안내</strong>
+										<ul class="listDot">
+											<p>선택하신 농·축협 영업점으로 상품 가입이 진행되며, 농·축협 별로 기본금리와 우대금리는 다를 수 있으므로 상품 가입 영업점을 꼭 확인하신 후 가입을 진행해주세요.</p>
+										</ul>
+										<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+									</div>
+								</div>
+								<!-- //tooltip -->
+							</strong>
+							<div class="inpSel">
+								<a href="javascript:;" title="상품 판매 영업점 선택" role="button" class="btnSel placeholder">영업점 선택</a>
+							</div>
+							<div class="inpText">
+								<input type="text" title="영업점 검색" class="tyTxt sKey" value placeholder="영업점 검색" readonly><!-- [2022-09-01] readonly추가 -->
+								<button type="button" title="입력 텍스트 삭제" class="btnReset" style="display: none;"></button>
+							</div>
+						</div>
+						<button type="button" class="btnSm">검색</button>
+					</div>
+					<!-- 예상금리 -->
+					<div class="rateBox">
+						<div class="innerBox">
+							최고 연 <strong class="dataWrap"><em class="data">0.0505</em><span class="unit">%</span></strong>
+							<button type="button" class="btnSm">자세히</button>
+						</div>
+						<div class="rateEtc">
+							<span>세전</span>
+							<span>우대금리포함</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 상세내용 -->
+			<div class="marketPrdDetail bg01">
+				<strong class="prdName">MY콕통장</strong>
+				<p class="prdDesc">모바일로 간편 가입<br>내맘에 쏙드는 입출식 통장</p>
+				<ul class="listDot">
+					<li>모바일 전용 자유입출금</li>
+					<li>최고 1.5% 우대금리</li>
+					<li>다양한 금융 수수료 면제</li>
+				</ul>
+				<div class="btnInArea">
+					<button type="button">가입하기</button>
+				</div>
+			</div>
+
+			<!-- [2022-09-05] 마케팅컨텐츠 영역 -->
+			<div class="marketingArea myCokAniBox">
+				<!-- aniSec01 -->
+				<div class="section aniSec01 right">
+					<strong class="mktTit">은행 방문없이 <br><span class="highlight"><span>스마트폰</span></span>으로 통장 개설</strong>
+					<p class="mktDesc">바쁘다 바빠 현대사회! <br>
+					더 이상 은행을 찾지도, 기다리지도 마세요. <br>
+					이제는 365일 누구나 쉽고 간편하게 모바일로 계좌를 개설할 수 있어요.
+					</p>
+					<div class="imgAreaUnit aniCont01">
+						<div class="bankBook"><img src="../../images/market/ani/img_bankBook.png" alt></div>
+						<div class="txtBox bubble">
+							<strong class="sm">365일<br>간편하게</strong>
+						</div>
+						<div class="over"><img src="../../images/market/ani/img_mycokAniBox_coin.png" alt></div>
+						<div class="coin">
+							<span class="c1"><img src="../../images/market/ani/img_coin.png" alt></span>
+							<span class="c2"><img src="../../images/market/ani/img_pocketAni_Coin.png" alt></span>
+							<span class="c3"><img src="../../images/market/ani/img_pocketAni_Coin.png" alt></span>
+						</div>
+
+						<div class="star">
+							<span class="s1"><img src="../../images/market/ani/img_star.png" alt></span>
+						</div>
+					</div>
+				</div>
+
+				<!-- aniSec02 -->
+				<div class="section aniSec02 bg">
+					<strong class="mktTit">복잡한 우대금리? <br>평균 잔고만 유지하면<br> <span class="highlight"><span>우대금리 제공!</span></span></strong>
+					<p class="mktDesc">카드이용 실적, 자동이체 실적…<br>
+					우대금리를 받기 위한 어려운 요건은 더 이상 필요없어요! <br>
+					구간별 평균 잔고를 유지만 해도 손쉽게 우대금리를 받으실 수 있습니다.
+					</p>
+					<p class="infoTxt">기본이율, 우대이율은 농·축협마다 다르므로 가입 전 필히 확인하시기 바랍니다.</p>
+					<div class="imgAreaUnit aniCont02">
+						<div class="graph">
+							<div class="bars">
+								<span class="b1"></span>
+								<span class="b2"></span>
+								<span class="b3"></span>
+								<span class="b4"></span>
+								<span class="b5"></span>
+							</div>
+							<div class="over">
+								<span class="t1">0.5%</span>
+								<div class="txtBox bubble black">
+									<strong class="sm"><span class="sm">최고</span> 1.5%</strong>
+								</div>
+								<div class="flower"><img src="../../images/market/ani/img_flower.png" alt></div>
+							</div>
+							<span class="txt01">30만원</span>
+							<span class="txt02">500만원</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- aniSec03 -->
+				<div class="section aniSec03">
+					<strong class="mktTit">평균 잔고를 유지하면 <br>수수료 면제 서비스!</strong>
+					<p class="mktDesc">인터넷, 모바일, 텔레뱅킹을 통한 타행이체 수수료를 면제해 드립니다. <br>
+						또한, 농&middot;축협(영업시간 외) 및 농협은행과 타행 CD/ATM 현금인출 수수료도 면제받을 수 있어요.
+					</p>
+					<div class="imgAreaUnit aniCont03">
+						<div class="printBack"><img src="../../images/market/ani/img_printBack.png" alt></div>
+						<div class="printFront"><img src="../../images/market/ani/img_printFront.png" alt></div>
+						<div class="coin"><img src="../../images/market/ani/img_mycokAniBox_coin02.png" alt></div>
+						<div class="paper"><img src="../../images/market/ani/img_paper.png" alt></div>
+						<div class="txtBox bubble">
+						<strong class="sm">평균 잔고<br>유지</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //마케팅컨텐츠 영역 -->
+
+			<!-- 상세 토글영역 -->
+			<section class="section40">
+				<ul class="faqList jsAcc marketAcc">
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">상품안내</p>
+						</a>
+						<div class="view">
+							<div class="product_sec">
+								<h6 class="tit_type1"></h6>
+								<ul class="txt_type1 depth1">
+									<li>
+										<table class="tb_col">
+											<caption>금리확인, 상품전환</caption>
+											<colgroup>
+												<col style="width:40%;" />
+												<col style="width:auto;" />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th class="first">금리확인</th>
+													<td>기본금리 및 우대금리는 농·축협별로 상이하므로 가입 전 필히 확인</td>
+												</tr>
+												<tr>
+													<th class="first">상품전환</th>
+													<td>타 상품에서 본 상품으로 전환 불가<br>본 상품에서 자립예탁금(기본상품)으로 전환 가능</td>
+												</tr>
+											</tbody>
+										</table>
+									</li>
+									<li>※ 우대이율은 우대조건을 충족하는 경우에만 적용됩니다.</li>
+									<li>※ 세부사항은 상품 관련 특약 및 상품설명서를 참조하거나 창구로 문의하시기 바랍니다.</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">금리안내</p>
+						</a>
+						<div class="view">
+							<div class="product_sec">
+								<h6 class="tit_type1">기본이율(연%, 세전)</h6>
+								<ul class="txt_type1 depth1">
+									<li>- 신규 가입일의 해당 농&middot;축협이 고시한 기본금리 적용</li>
+									<li>- 기본금리의 이율은 각 농&middot;축협별로 상이하므로 가입 전 필히 확인</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">유의사항</p>
+						</a>
+						<div class="view">
+							<div class="product_sec">
+								<h6 class="tit_type1"></h6>
+								<ul class="txt_type1 depth1">
+									<li>
+										<table class="tb_col">
+											<caption>금리확인, 상품전환</caption>
+											<colgroup>
+												<col style="width:40%;" />
+												<col style="width:auto;" />
+											</colgroup>
+											<tbody>
+												<tr>
+													<th class="first">금리확인</th>
+													<td>기본금리 및 우대금리는 농·축협별로 상이하므로 가입 전 필히 확인</td>
+												</tr>
+												<tr>
+													<th class="first">상품전환</th>
+													<td>타 상품에서 본 상품으로 전환 불가<br>본 상품에서 자립예탁금(기본상품)으로 전환 가능</td>
+												</tr>
+											</tbody>
+										</table>
+									</li>
+									<li>※ 우대이율은 우대조건을 충족하는 경우에만 적용됩니다.</li>
+									<li>※ 세부사항은 상품 관련 특약 및 상품설명서를 참조하거나 창구로 문의하시기 바랍니다.</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">설명서 및 약관</p>
+						</a>
+						<div class="view">
+							<div class="btnInArea">
+								<button type="button">변경이력보기</button>
+								<button type="button">상품설명서</button>
+								<button type="button">약관</button>
+								<button type="button">기본약관</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">기타</p>
+						</a>
+						<div class="view">
+							<div class="product_sec">
+								<h6 class="tit_type1"></h6>
+								<ul class="txt_type1 depth1">
+									<li>- 상품가입 후 의문사항 또는 불만(민원)이 있을 경우 고객행복센터(1588-2100,1544-2100)  또는 인터넷 홈페이지(http://banking.nonghyup.com)에 문의할 수 있습니다.</li>
+									<li>- 분쟁이 발생한 경우에는 금융감독원(국번없이 1332) 등에 도움을 요청할 수 있습니다. (상품개발부서 : 상호금융수신지원부)</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<!-- [2022-11-04] 윤지현:예금자보호법(iframe), 준법(관리자) 추가 -->
+			<div class="protectIframe">
+				<iframe src="/content/nhsangho/html/dt/SMNMFDE342000_02.html" frameborder="0" width="100%" height="150px"></iframe> <!-- [2022-11-07] 윤지현:경로수정 -->
+			</div>
+			<div class="compliance">
+				<strong class="tit">준법감시인 심의필</strong><!-- [2022-11-04] 윤지현:타이틀추가 -->
+				준법감시인 심의필 : 2022-171(심의일 2022.07.08)<br>
+				유효기간 : 2022.07.08~2025.12.31
+			</div>
+			<!-- //[2022-11-04] 윤지현:예금자보호법, 준법 추가 -->
+
+			<div class="marketGuide">
+				<p class="defTit2">계좌 가입신청</p>
+				<ul class="listDot">
+					<!--[2022-12-05] 이용시간변경 상시운영 : 윤희정-->
+					<li><strong>24시간</strong><br>(00:00~00:15 신청불가)</li>
+					<!--//[2022-12-05] 이용시간변경 상시운영 : 윤희정-->
+					<li><strong>스마트상담센터 1600-2800</strong><br>(09:00~18:00 영업일 기준)</li>
+				</ul>
+			</div>
+
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class="btn_full sel">가입하기</button>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- [2022-09-05] ▼ 마케팅컨텐츠 애니메이션 -->
+<script>
+	$(document).ready(function(){
+		// ********* [2022-09-27] 푸터 버튼 스크립트 수정 ********** //
+		$('#footer_cont').css({'display':'none'});
+		$(window).scroll(function(){
+			var scrollTop = $('html').scrollTop();
+			var sectionH = $(".marketingArea .aniSec01").offset().top - 90
+			if(scrollTop >= sectionH){
+				$('#footer_cont').fadeIn();
+			} else {
+				$('#footer_cont').fadeOut();
+			}
+		});
+		//********* [2022-09-27] 푸터 버튼 스크립트 수정 **********//
+
+		visualController();
+	});
+
+	// 스크롤 모션 시작
+	// *********** [2022-09-07] 김자영 : 스크립트 수정  ***********
+	function visualController(){
+		$(window).scroll(function(){
+			var windowHeight = $(window).height();
+			$(".marketingArea .section").each(function(i){
+				if ($(window).scrollTop() >= $(".aniSec0"+(i+1)).offset().top - windowHeight /2) {
+					$(".aniCont0"+(i+1)).addClass("active");
+
+					// NH매일 적금 텀블러
+					if($('.marketingArea').hasClass('everydayAniBox') && $(this).hasClass('aniSec01')){ /* [2022-09-16] hasClass aniSec01 로 수정 */
+						setTimeout(function(){
+							$('.aniCont01.active').find(".water").css("display","block");
+							$('.aniCont01.active').find(".waterBt").css("display","block");
+						},1800);
+					}
+
+					// 주머니통장 그래프 금액 animate효과
+					if($('.marketingArea').hasClass('myPocketAniBox')){
+						textAnimate();
+					}
+
+					// 주머니적금 저금통 금액 animate효과
+					if($('.marketingArea').hasClass('myPocketAniBox02') && $(this).hasClass('aniSec02') ){
+						setTimeout(function(){
+							textAnimate();
+						},1800);
+					}
+				}
+			});
+		});
+	};
+
+
+	// *********** [2022-09-07] 김자영 : 스크립트 추가  ***********
+	//금액 animate효과
+	function textAnimate(){
+		var comma_separator_number_step = jQuery.animateNumber.numberStepFactories.separator(',');
+		jQuery('.myPocketAniBox .active .over5 .pay i').animateNumber(
+		{
+			number:5000000,
+			numberStep:comma_separator_number_step
+		}
+		,2000);
+
+		jQuery('.myPocketAniBox02 .aniCont02.active .txtBox i').animateNumber(
+		{
+			number:3800,
+			numberStep:comma_separator_number_step
+		}
+		,1200);
+	};
+</script>
+
+<!-- *********** [2022-09-07] ▼ 금액 animate 플러그인 추가 *********** -->
+<script type="text/javascript" src="../../js/jquery.animateNumber.js"></script>
+</body>
+</html>

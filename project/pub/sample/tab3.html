@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>콕 tab</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>탭</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="tabWrap oneDepthSwipe">
+				<div role="tablist" class="tabList"> <!-- swiper 유형의 경우 .tabSwipe 추가 -->
+					<a href="javascript:;" role="tab" aria-selected="true" class="active">입출금</a>
+					<a href="javascript:;" role="tab">예적금/신탁</a>
+					<a href="javascript:;" role="tab">대출</a>
+					<a href="javascript:;" role="tab">펀드</a>
+					<a href="javascript:;" role="tab">외화</a>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="tabWrap ellipse">
+			<div role="tablist" class="tabList tabSwipe"> <!-- swiper 유형의 경우 .tabSwipe 추가 -->
+				<a href="javascript:;" role="tab" aria-selected="true" class=" active">입출금1111111</a>
+				<a href="javascript:;" role="tab" class>입출금22222</a>
+				<a href="javascript:;" role="tab" class>입출금3333</a>
+				<a href="javascript:;" role="tab" id="test1" class>입출금44444</a>
+				<a href="javascript:;" role="tab" class>입출금5555555</a>
+				<a href="javascript:;" role="tab" class>입출금6666</a>
+				<a href="javascript:;" role="tab" class>입출금77777777</a>
+				<a href="javascript:;" role="tab" class>입출금888</a>
+				<a href="javascript:;" role="tab" class>입출금999</a>
+			</div>
+			<div class="tabPanelList">
+				<div role="tabpanel" class="tabPanelSticky show" style="height:500px;background:pink">
+					<p>11111</p>
+				</div>
+				<div role="tabpanel" class="tabPanelSticky" style="height:700px;background:rgb(222, 241, 187)"><p>22222</p></div>
+				<div role="tabpanel" class="tabPanelSticky" style="height:700px;background:rgb(174, 186, 255)"><p>3333</p></div>
+				<div role="tabpanel" class="tabPanelSticky" style="height:700px;background:rgb(255, 197, 121)"><p>444</p></div>
+				<div role="tabpanel" class="tabPanelSticky" style="height:700px;background:rgb(176, 250, 255)"><p>555</p></div>
+				<div role="tabpanel" class="tabPanelSticky" style="height:700px;background:rgb(187, 255, 244)"><p>6666</p></div>
+				<div role="tabpanel" class="tabPanelSticky" style="height:700px;background:rgb(255, 238, 160)"><p>77777777</p></div>
+				<div role="tabpanel" class="tabPanelSticky" style="height:700px;background:rgb(150, 234, 255)"><p>8888888</p></div>
+				<div role="tabpanel" class="tabPanelSticky" style="height:700px;background:rgb(255, 234, 238)"><p>999</p></div>
+			</div>
+		</div>
+
+		</div>  <!-- //#contents -->
+	</div> <!-- //#container -->
+  <!-- //#wrap -->
+
+</body>
+</html>

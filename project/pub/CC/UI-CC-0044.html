@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CC-0044</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>제로페이 모바일 상품권</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">환불하실 <strong>상품권</strong>과 <strong>환불금액</strong>을<br> 확인해주세요</p>
+			</div>
+
+			<div class="listTblBox mb10">
+				<ul>
+					<li>
+						<span class="tit">상품권명</span>
+						<p class="txt">모바일 온누리상품권</p>
+					</li>
+					<li>
+						<span class="tit">결제금액</span>
+						<p class="txt"><strong class="dataWrap"><em class="data">10,000</em><span class="unit">원</span></strong></p>
+					</li>
+				</ul>
+			</div>
+			<p class="infoTxt">상품권과 결제금액을 다시 한번 확인해주세요.</p>
+
+			<section class="section40">
+				<p class="defTit2">환불계좌(입금받을 계좌) </p>
+				<div class="roundBox mt14"><!-- option: noBorder -->
+					<div class="roundInBox">
+						<div class="accTypeWrap accAlwaysType">
+							<a href="javascript:popOpen(popupB);" role="button" class="accInLayout">
+								<div class="accInfo">
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<!--<span class="accBank">[농협]</span>-->
+											<span class="bankBookName">자립예탁금(테니스클럽)</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">
+												<span class="accNumber">352-1775-6397-03</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="roundBoxUtility">
+						<div class="accDataWrap">
+							<span class="accNumInfo">출금가능금액</span>
+							<span class="dataWrap">
+								<strong class="accCash">15,768,000</strong>
+								<span class="accUnit">원</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<p class="infoTxt">콕뱅크에 등록된 농협 계좌만 선택 가능해요.</p>
+			</section>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="toastMessage">[환불] 선택 시 전자서명과 동시에 거래 완료됩니다.</div>
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">환불하기</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popupArea">
+</div>
+</body>
+</html>

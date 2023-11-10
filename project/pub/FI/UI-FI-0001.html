@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-FI-0001</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>환율조회</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+
+				<section class="section30"> <!--[2022-07-18] 이경아 : section 추가-->
+					<div class="formWrap">
+						<div class="formItem">
+							<strong class="formTit">통화종류</strong>
+							<div class="inpSel">
+								<a href="javascript:;" title="통화종류 선택" role="button" class="btnSel ">USD(미국달러)</a>
+							</div>
+						</div>
+
+						<div class="formItem">
+							<strong class="formTit">조회구분</strong>
+							<div class="inpSel">
+								<a href="javascript:;" title="조회구분 선택" role="button" class="btnSel ">매입율 및 매도율</a>
+							</div>
+						</div>
+
+						<div class="formItem">
+							<strong class="formTit">조회기준일</strong>
+							<div class="inpSel">
+								<a href="javascript:;" title="조회기준일 선택" role="button" class="btnSelDate">YYYY.MM.DD</a>
+							</div>
+							<p class="infoTxt">조회기준일은 오늘 이전 날짜로 설정해주세요.</p>
+						</div>
+					</div>
+				</section>
+				
+				
+				<div class="btnInArea">
+					<button type="button">조회</button>
+				</div>
+				<hr class="divingLine">
+				<section>
+					<p class="defTit2">매입율 및 매도율</p>
+					<!-- [2022-10-14] 김자영 : 마크업추가 -->
+					<div class="accInfo currency mt10">
+						<span class="logoWrap"><img src="../../images/logo/icon_USD.png" alt="미국국기"></span>
+						<span class="accInfoWrap">USD<br><span class="fSmall">미국달러</span></span>
+					</div>
+					<!-- <p class="dateWrap ar">기준시간 <span class="pColor">2022.05.31 15:12:51</span></p> -->
+					<!--// [2022-10-14] 김자영 : 마크업추가 -->
+					<div class="listTblBox mt10"><!-- [2022-10-14] 김자영 : mt10 추가 -->
+						<ul>
+							<li>
+								<span class="tit">매매기준율</span>
+								<p class="txt"><span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span></p>
+							</li>
+							<li>
+								<span class="tit">전일대비</span>
+								<p class="txt"><span class="dataWrap"><span class="imgIncrease"><img src="../../images/com/img_increase.png" alt="상승"></span><em class="data">4.10</em><span class="unit">원</span></span></p>
+							</li>
+						</ul>
+					</div>
+					<!-- [2022-10-14] 김자영 : 삭제  -->
+					<p class="dateWrap ar">기준시간 <span class="pColor">2022.05.31 15:12:51</span></p>
+				</section>
+				<section class="section40">
+					<div class="listTbl">
+						<div class="listTit alignFcenter"> <!--[2022-07-12] 이경아 : 가운데 고정할 수 있는 클래스 추가--> 
+							<a href="javascript:;" role="button" class="btnDetailPrev">이전회차</a>
+							<strong>36회차</strong>
+							<a href="javascript:;" role="button" class="btnDetail">다음회차</a>
+						</div>
+						<ul>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">현찰 사실때</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">현찰 파실때</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">송금을 보내실 때</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">송금을 받으실 때</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- [2022-09-30] 김자영 : 마크업 변경 -->
+				<section>
+					<div class="listTbl">
+						<div class="listTit">
+							<strong>여행자수표</strong>
+							<!-- [2022-10-14] 김자영 : 삭제 
+							<p class="dateWrap ar">기준시간 <span class="pColor">2022.05.31 15:12:51</span></p>
+							-->
+						</div>
+						<!-- [2022-10-14] 김자영 : 마크업추가 -->
+						<div class="accInfo currency">
+							<span class="logoWrap"><img src="../../images/logo/icon_USD.png" alt="미국국기"> <!--[2022-08-02] 이경아 : 이미지명 수정--></span>
+							<span class="accInfoWrap">USD<br><span class="fSmall">미국달러</span></span>
+						</div>
+						<p class="dateWrap ar">기준시간 <span class="pColor">2022.05.31 15:12:51</span></p>
+						<!--// [2022-10-14] 김자영 : 마크업추가 -->
+
+						<ul>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">기준회자</span> 
+									<p class="txt">30회차</p>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">매매기준율</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">미화환산율</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">전일대비</span> 
+									<span class="dataWrap"><span class="imgDecrease"><img src="../../images/com/img_decrease.png" alt="하락"></span><em class="data">1.10</em><span class="unit">원</span></span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">여행자수표 사실 때</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">주화를 파실 때</span> 
+									<span class="dataWrap"><em class="data">548,05</em><span class="unit">원</span></span>
+								</div>
+							</li>
+						</ul>
+						
+					</div>
+				</section>
+
+				<section>
+					<div class="listTbl">
+						<div class="listTit">
+							<strong>환가료율</strong>
+						</div>
+						<div class="accInfo currency">
+							<span class="logoWrap"><img src="../../images/logo/icon_USD.png" alt="미국국기"> <!--[2022-08-02] 이경아 : 이미지명 수정--></span>
+							<span class="accInfoWrap">USD<br><span class="fSmall">미국달러</span></span>
+						</div>
+						<p class="dateWrap ar">기준시간 <span class="pColor">2022.05.31 15:12:51</span></p>
+						<ul>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">1개월 이하</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">3개월 이하</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">6개월 이하</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">9개월 이하</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">9개월 초과</span> 
+									<span class="dataWrap"><em class="data">1,1344.90</em><span class="unit">원</span></span>
+								</div>
+							</li>
+						</ul>
+						
+					</div>
+				</section>
+				<!--// [2022-09-30] 김자영 : 마크업 변경 -->
+
+				<div class="btmInfoWrap">
+					<strong class="tit">확인사항</strong>
+					<ul class="listDot">
+						<li>일부 통화는 환전 또는 송금거래가 제한 될 수 있으니 영업점에 가능여부를 문의하시기 바랍니다.</li>
+						<li>중국 위안화(CNY)환율은 홍콩시장에서 거래되는 위안화 환율이 적용됩니다.</li>
+						<li>중국 위안화(CNY)환율은 홍콩시장에서 거래되는 위안화 환율이 적용됩니다.</li>
+						<li>송금받으실 때 = 외화예금지급시 = 전신환매입율입니다.</li>
+					</ul>
+				</div>
+
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea half">
+					<button type="button">다시계산</button>
+					<button type="button" class="sel">환전신청</button>
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+	
+</body>
+</html>
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1315FP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+			//popOpen(popupC);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>음성송금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button" class="popOpen">UI-SB-1315FP</a><br><br>
+		</div>  <!-- //#contents -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popupArea">
+
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">송금내역 저장</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<!-- ▼ 2022-07-25 09:46 남협수 [MODIFY] section30 클래스 삭제 -->
+						<section class="receiptWrap">
+							<div class="defTit1 ac">송금내역 명세</div>
+							<section>
+								<p class="layoutWrap isTitle">
+									<strong>송금액</strong>
+									<!-- ▼ 2022-07-25 09:43 남협수 [MODIFY] fBig 클래스 삭제 -->
+									<strong class="dataWrap pColor"><em class="data">10,000,000</em><span class="unit">원</span></strong>
+								</p>
+								<div class="listTblBox">
+									<ul>
+										<li>
+											<span class="tit">거래일</span>
+											<!-- ▼ 2022-07-25 11:19 남협수 [MODIFY] 날짜표시 수정 -->
+											<span class="txt">2022.06.24 00:00:00</span>
+										</li>
+										<li>
+											<span class="tit">처리결과</span>
+											<span class="txt">정상</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<div class="listTbl">
+									<div class="listTit">
+										<strong>받는 분</strong>
+										<span>김철수</span>
+									</div>
+									<section>
+										<ul>
+											<li>
+												<div class="listIn_flex">
+													<span>입금은행</span>
+													<span>기업은행</span>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<span>입금계좌</span>
+													<span>324456678679****</span>
+												</div>
+											</li>
+										</ul>
+									</section>
+								</div>
+
+								<div class="listTbl">
+									<div class="listTit">
+										<strong>보내는 분</strong>
+										<span>김철수</span>
+									</div>
+									<section>
+										<ul>
+											<li>
+												<div class="listIn_flex">
+													<span>출금은행</span>
+													<span>기업은행</span>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<span>출금계좌</span>
+													<span>324-4566-78**-**</span>
+												</div>
+											</li>
+										</ul>
+									</section>
+								</div>
+							</section>
+
+							<!-- ---------------------------------------
+							2022-07-25 13:45 남협수 [MODIFY]
+							- infoTxt > bili 클래스 수정
+							- mt30 > mt20 클래스 수정
+							---------------------------------------- -->
+							<p class="mt20 bili">해당 화면은 고객 편의를 위해 제공되는 기능으로 법적 효력이 없으며, 거래 참고용으로만 사용하실 수 있습니다.</p>
+
+						</section>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popOpen(popupC)" class="popOpen point">이미지 저장</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CENTER POPUP -->
+	<div id="popupC" class="popupWrap center" style="display:none;">
+		<div class="layerPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="Layer_Tit">
+								<h2 tabindex="0"><span class="blind">팝업</span></h2>
+							</div>
+							<div class="Layer_Con">
+								<div class="ac">
+									이미지 저장이 완료되었습니다.
+								</div>
+							</div>
+							<div class="Layer_Pop_Close">
+								<div class="btnArea">
+									<button type="button" title onclick="popClose(this)" class="sel">확인</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

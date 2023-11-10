@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TX-0046P.html</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>아파트관리비 납부</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="twoToneType">
+				<div class="ttTop">
+					<div class="roundBox">
+						<div class="roundInBox">
+							<div class="accTypeWrap accAlwaysType">
+								<a href="javascript:;" title role="button" class="jsSelectLink accInLayout">
+									<div class="accInfo">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<!--<span class="accBank">[농협]</span>-->
+												<span class="bankBookName">주머니(money) 통장</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1775-6397-03</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<div class="accDataWrap">
+									<span class="accNumInfo">출금가능금액</span>
+									<strong class="accCash">58,000,000</strong><span class="accUnit">원</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accUtility">
+						<button type="button" class="btnSm">+ 채우기</button>
+						<button type="button" class="btnSm">적립금</button>
+					</div>
+				</div>
+				<div class="ttBottom">
+					<div class="ttContents">
+						<div class="formWrap">
+							<div class="formItem">
+								<strong class="formTit">관리비 입금은행
+									<!-- tooltip -->
+									<div class="tooltipWrap">
+										<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+										<div class="tooltipCont">
+											<ul class="listDot">
+												<li>관리비 고지서에 기재된 계좌번호 입력</li>
+												<li>타행 계좌로 관리비를 납부하는 경우, 고객조건에 따라 송금 수수료가 부과될 수 있습니다.</li>
+												<li>납부금액은 송금한도에서 차감됩니다.</li>
+											</ul>
+											<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+										</div>
+									</div>
+									<!-- //tooltip -->
+								</strong>
+								<div class="formGroup flex37">
+									<div class="inpSel">
+										<a href="javascript:;" title="은행선택" role="button" class="btnSel">
+											은행선택
+										</a>
+									</div>
+									<div class="inpText">
+										<input type="tel" title="계좌번호" class="tyTxt" placeholder="계좌번호 ‘-’없이 입력">
+									</div>
+								</div>
+							</div>
+							<div class="formItem">
+								<strong class="formTit">관리비 금액</strong>
+								<div class="inpText">
+									<input type="tel" title="납부할 금액" class="tyNum" placeholder="금액을 입력해주세요">
+									<span class="unit">원</span>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+							</div>
+							<div class="formItem">
+								<strong class="formTit">아파트 동/호수</strong>
+								<div class="formGroup">
+									<div class="inpText">
+										<input type="tel" title="아파트 동 입력" class="sKey" placeholder="동 입력" maxlength="4"> 동
+									</div>
+									<div class="inpText">
+										<input type="tel" title="아파트 호수 입력" class="sKey" placeholder="호수 입력" maxlength="4"> 호
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel dis">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+<!-- 슬라이드 팝업 -->
+<div id="popupB" class="popupWrap slide" style="display: block;">
+	<div class="slidePopupDim">
+		<div class="layerSelectCont">
+			<div class="layerSelectContInner">
+				<div class="layerSelectTitle">
+					<h2 tabindex="0">계좌 선택</h2>
+				</div>
+				<div class="layerSelectContent">
+					<ul class="listWrap accType">
+						<li>
+							<div class="accTypeWrap accSelectType">
+								<a href="javascript:;" role="button" class="jsSelectLink accInLayout active">
+									<div class="accInfo">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<span class="bankBookName">주머니(money) 통장</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">352-1775-6397-03</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="accTypeWrap accSelectType">
+								<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+									<div class="accInfo">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<span class="bankBookName">콕!BASIC통장</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">352-1775-6397-03</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="accTypeWrap accSelectType">
+								<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+									<div class="accInfo">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<span class="bankBookName">콕!BASIC통장</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">352-1775-6397-03</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+					</ul>
+
+					<div class="btnInArea">
+						<button type="button" class="point">+ 계좌등록</button>
+					</div>
+
+					<!-- case: 계좌가 없을경우
+					<div class="noData">
+						<i class="check"></i>
+						<p class="tit">등록한 계좌가 없습니다.</p>
+					</div>
+					 // case: 계좌가 없을경우 -->
+				</div>
+				<a href="#nolink" role="button" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

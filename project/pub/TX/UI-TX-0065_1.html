@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TX-0065_1</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>국세납부(재정자금) 납부</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="topAccBox"> <!-- [2022-10-11] 윤지현: 클래스 변경 -->
+				<div class="ttTop">
+					<div class=""> <!-- [2022-10-11] 윤지현:클래스삭제 -->
+						<div class="roundInBox">
+							<div class="accTypeWrap accAlwaysType">
+								<a href="javascript:;" title="계좌선택" role="button" class="accInLayout"><!-- [2022-07-06] 윤지현:title추가 --><!-- [2022-06-30] 김자영 : class jsSelectLink 삭제 -->
+									<div class="accInfo">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<!--<span class="accBank">[농협]</span>-->
+												<span class="bankBookName">[농협]자립예탁금&별칭여섯자리</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1775-6397-03</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<!-- [2022-06-30] 윤지현:마크업위치이동 -->
+							</div>
+							<!-- ▼ [2022-10-11] 윤지현:계좌선택영역 전체수정 -->
+							<section class="jsOnOffTarget">
+								<hr class="my20">
+								<div class="layoutWrap">
+									<div class="layoutL">
+										<span data-focus="focus" class="accPossible">출금가능금액</span>
+										<button type="button" class="btnSm">+ 채우기</button>
+									</div>
+									<div class="layoutR">
+										<div class="accDataWrap">
+											<strong class="accCash">58,000,000</strong><span class="accUnit">원</span>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- ▲ [2022-10-11] 윤지현:계좌선택영역 전체수정 -->
+							
+							<!-- <div class="accDataWrap">
+								<span class="accNumInfo">출금가능금액</span>
+								<strong class="accCash">58,000,000</strong><span class="accUnit">원</span>
+							</div> [2022-10-11] 윤지현:삭제 -->
+						</div>
+					</div>
+					<!-- <div class="accUtility">
+						<button type="button" class="btnSm">+ 채우기</button>
+						<button type="button" class="btnSm">적립금</button>
+					</div> [2022-10-11] 윤지현:삭제 -->
+				</div>
+				<div class="ttBottom">
+					<div class="ttContents">
+						<div class="formWrap">
+							<div class="formItem">
+								<strong class="formTit">납부금액</strong>
+								<div class="inpText">
+									<input type="tel" title="납부금액" class="tyNum" value="100,000" placeholder="납부금액 입력" readonly> 
+									<span class="unit">원</span>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+							</div>
+							<div class="formItem">
+								<strong class="formTit">계좌 비밀번호</strong><!-- [2022-06-24] 김자영 : 텍스트 띄어쓰기 수정 -->
+								<div class="inpText">
+									<button type="button" title="계좌 비밀번호 4자리 숫자 입력됨" aria-label="계좌 비밀번호 4자리 숫자 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+									<input type="password" title="계좌 비밀번호 4자리 숫자" class="sKey" value="" placeholder="4자리 숫자 입력" maxlength="4" readonly="" aria-hidden="true">
+								</div>
+							</div>
+							<div class="formItem">
+								<strong class="formTit">연락가능전화번호</strong>
+								<div class="inpText">
+									<input type="tel" title="연락가능전화번호" value="" placeholder="‘-’없이 입력">
+								</div>
+							</div>
+						</div>
+
+						<div class="btmInfoWrap">
+							<strong class="tit">확인사항</strong>
+							<ul class="listDot">
+								<li>서비스 이용시간: 평일 00:30~23:00</li>
+								<li>결정구분이 1-4인 자진신고 납부대상 국세를 납부할 수 있습니다.</li>
+								<li>전자번호 19자리인 경우 조회납부/연대납부로 납부하시기 바랍니다.</li>
+								<li>10원 이상 금액만 수납처리 됩니다. (단수금액은 수납불가)</li>
+								<li>납부하실 요금은 해당기관 요청에 따라 취소가 허용되지 않습니다.</li>
+								<li>납부하실 요금에 대한 최종 수납여부는 계좌송금 여부에 따라 결정되오니 납부시도오류가 발생하여 납부완료를 정확히 확인할 수 없는 경우 반드시 출금여부를 확인하시기 바랍니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="toastMessage">[납부]를 선택하면 전자서명과 동시에 납부됩니다.</div>
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">납부</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

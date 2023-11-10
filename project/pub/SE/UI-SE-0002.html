@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SE-0002</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>입출금 알림</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">입출금 알림 서비스를<br>이용중인 계좌가 <strong>3</strong>개 있어요.</p>
+			</div>
+			<div class="ar">
+				<button type="button" class="btnDetail">입출금 알림 안내</button>
+			</div>
+			<section class="mt15">
+				<ul class="accChkBankList">
+					<li>
+						<div class="accLineBox type2"> <!-- [2022-09-29] 윤지현:type 클래스추가 -->
+							<div class="accTag dels">
+								<span class="tagItem tag5">문자<button type="button" class="tagClear"><span class="blind">삭제하기</span></button></span>
+								<span class="tagItem tag5 fill">푸시<button type="button" class="tagClear2"><span class="blind">삭제하기</span></button></span>
+							</div>
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<span class="bankBookName">주머니(money)통장</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btnInArea">
+								<button type="button">알림변경</button>
+								<button type="button">알림삭제</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="accLineBox type2"> <!-- [2022-09-29] 윤지현:type 클래스추가 -->
+							<!-- <div class="accTag dels">
+								<span class="tagItem tag5">장기미사용<button type="button" class="tagClear"><span class="blind">삭제하기</span></button></span>
+							</div> -->
+							<!-- [2023-02-22] 김연진:추가 -->
+							<div class="accTag">
+								<span class="tagItem tag5">문자</span>
+							</div>
+							<!-- //[2023-02-22] 김연진:type 클래스추가 -->
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<span class="bankBookName">주머니(money)통장</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btnInArea">
+								<!-- <button type="button">장기미사용</button> [2023-02-22] 김연진:버튼삭제 -->
+								<!-- [2023-02-22] 김연진:버튼수정 -->
+								<button type="button">알림변경</button>
+								<button type="button">알림삭제</button>
+								<!-- //[2023-02-22] 김연진:버튼수정 -->
+							</div>
+						</div>
+					</li>
+					<!-- [2023-02-22] 김연진:항목추가 -->
+					<li>
+						<div class="accLineBox type2">
+							<div class="accTag">
+								<span class="tagItem tag5 fill">푸시</span>
+							</div>
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<span class="bankBookName">주머니(money)통장</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btnInArea">
+								<button type="button">알림변경</button>
+								<button type="button">알림삭제</button>
+							</div>
+						</div>
+					</li>
+					<!-- //[2023-02-22] 김연진:항목추가 -->
+				</ul>
+				<div class="btnLnkLine">
+					<a href="javascript:;" role="button" class="underLine">서비스 해지하기</a>
+				</div>
+			</section>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea half">
+				<button type="button" class="point"><span class="clips"><span class="clip">유료</span>문자알림추가</button>
+				<button type="button" class="sel">푸시알림추가</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0186P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>예적금담보대출</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button" class="popOpen">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">대출 가능금액 조회</h2>
+						</div>
+					</div>
+	
+					<div class="popContBox">
+						<p class="defTit2">대출 가능 금액</p>
+	
+						<div class="listTblBox">
+							<ul>
+								<li>
+									<span class="tit">담보 예·적금<br>(신탁)계좌</span><!-- [2022-08-19] 문구수정 -->
+									<p class="txt">123-4567-8912-34</p>
+								</li>
+								<li>
+									<span class="tit">예금주명</span>
+									<p class="txt">김농협</p>
+								</li>
+								<li>
+									<span class="tit">대출 한도 금액</span>
+									<p class="txt">1,000,000<span class="unit">원</span></strong></p>
+								</li>
+								<li>
+									<span class="tit">기설정금액</span>
+									<p class="txt"><span class="dataWrap"><em class="data">0</em><span class="unit">원</span></span></p>
+								</li>
+								<li>
+									<span class="tit">영업점대출가능금액</span>
+									<p class="txt">100,000,000<span class="unit">원</span></strong></p>
+								</li>
+								<li>
+									<span class="tit">대출가능금액</span><!-- [2022-08-19] 문구수정 -->
+									<p class="txt">
+										<strong class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></strong><br>
+										(1회 최고한도 5천만원)
+									</p>
+								</li>
+								<li>
+									<span class="tit">대출(예상)금리</span>
+									<p class="txt"><strong class="dataWrap"><em class="data">2.11</em><span class="unit">%</span></strong></p>
+								</li>
+							</ul>
+						</div>
+	
+						<div class="btmInfoWrap">
+							<strong class="tit">확인사항</strong>
+							<ul class="listDot">
+								<li>해당 계좌로 담보대출을 받은 경우 모든 금액 상환 시까지 대출 최고 신청금액(기 설정금액)이 표시됩니다. 일부 상환금액을 포함하여 대출을 희망하실 경우 영업점을 방문하셔야 합니다.</li>
+							</ul>
+						</div>
+					</div>
+	
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="">취소</button>
+							<button class="sel">대출신청</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

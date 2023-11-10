@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-1013</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>착오송금 반환동의</h1>
+		<div class="headerR">
+			<!-- <a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a> -->
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<section>
+				<div class="listTbl">
+					<div class="listTit"><strong>착오송금 반환내용</strong></div>
+					<ul>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">착오입금일</span> 
+								<p class="txt">2022.04.21</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">착오입금자명</span>  <!-- [2022-10-18] 윤지현:문구수정 -->
+								<p class="txt">홍길동</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">사유</span> 
+								<p class="txt">금액입력오류</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">반환예정금액</span> 
+								<p class="txt"><strong class="dataWrap"><em class="data">5,273</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+      <section>
+        <p class="defTit2">반환출금예정계좌</p>
+				<!-- [2022-07-28] -->
+				<div class="inpText">
+					<input type="text" title="받는 통장 기록사항" value="356-0123-4567-90" class="tyTxt" placeholder="받는 통장에 표시 될 내용을 입력해주세요" readonly>
+					<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+				</div>
+				<!-- //[2022-07-28] -->
+        <div class="formWrap">
+          <div class="formItem">
+            <strong class="formTit">출금계좌 비밀번호</strong>
+            <div class="inpText">
+              <button type="button" title="출금계좌비밀번호 4자리 입력됨" aria-label="출금계좌비밀번호 4자리 숫자 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+              <input type="password" title="출금계좌비밀번호 4자리 숫자" aria-hidden="true" value="0000" class="sKey" placeholder="숫자 4자리 입력" maxlength="4" readonly>
+            </div>
+            <div class="inpText">
+              <button type="button" title="출금계좌비밀번호 4자리 입력됨" aria-label="출금계좌비밀번호 4자리 다시 입력" class="btnTransparent"></button>
+              <input type="password" title="출금계좌비밀번호 4자리 다시 입력" aria-hidden="true" value class="sKey" placeholder="숫자 4자리 입력" maxlength="4" readonly> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+            </div>
+          </div>
+        </div>
+      </section>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+        <button type="button" class="btn_full sel">착오송금 반환동의</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

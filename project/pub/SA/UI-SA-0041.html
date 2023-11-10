@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SA-0041</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<!-- 개발페이지에는 적용 X -->
+	<script>
+		// 스크롤 show 퍼블 확인용 실제 적용 X
+		$(document).ready(function(){
+			var scrollHeight = $(document).height();
+			$('.btnSm').click(function(){
+				// $(this).attr("aria-expanded", "true");
+				 $(".hideBox").slideDown();
+				$("body,html").animate({ scrollTop: scrollHeight }, 800);
+				return false; 
+			});
+		});
+	</script>
+	<!--// 개발페이지에는 적용 X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>OTP 정보입력</h1> <!--[2022-07-21] 이경아 : 문구수정-->
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->	
+	<div id="container">
+		<div id="contents">
+			<!-- ▼ [2022-09-27] 김자영 : 이미지 추가 -->
+			<div class="imgBox cokPass"></div>
+
+			<p class="defTit2 mt40">보안매체 등록현황</p><!-- [2022-09-27] 김자영 : class mt40 추가-->
+			<div class="listTblBox"><!-- [2022-09-27] 김자영 : class accredit 삭제-->
+				<ul>
+					<li>
+						<span class="tit">종류</span>
+						<span class="txt">모바일OTP-A형</span>
+					</li>
+					<li>
+						<span class="tit">상태</span>
+						<span class="txt">정상</span>
+					</li>
+					<li>
+						<span class="tit">등록일</span>
+						<span class="txt">2022.03.11</span>
+					</li>
+				</ul>
+			</div>
+
+			<!-- [2022-08-11] 이경아 :설계변경 반영 -->
+			<div class="formWrap">  
+				<div class="formItem">
+					<strong class="formTit">농협계좌
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<ul class="listDot">
+									<li>콕뱅크에 등록된 농 · 축협 계좌로만 계좌인증이 가능합니다</li>
+								</ul>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					
+					<div class="inpSel">
+						<a href="javascript:;" title="출금계좌 선택" role="button" class="btnSel placeholder">출금계좌 선택</a>
+					</div>
+				</div>
+				
+				<div class="formItem">
+					<strong class="formTit">계좌 비밀번호</strong>
+					<div class="inpText error readonly">
+						<button type="button" title="계좌비밀번호 4자리 입력됨" aria-label="계좌비밀번호" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+						<input type="password" title="계좌비밀번호 4자리 입력" aria-hidden="true" class="tyTxt" value placeholder="비밀번호 입력" readonly>
+						<a href="javascript:;" role="button" aria-label class="btnSm">계좌확인</a>
+					</div>
+					<!-- <p class="infoTxtOk">인증 완료되었습니다.</p>
+					<p class="infoTxtErr">비밀번호가 일치하지 않습니다. (1/5)</p> -->
+				</div>
+
+				<!-- case : 계좌인증 완료 시 -->
+				<section class="section30 hideBox">
+	
+					<div class="formItem">
+						<strong class="formTit">신규 등록할 보안매체 제조사
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<strong class="tit">보안매체(OTP발생기)</strong>
+									<!-- ▼ [2022-09-28] 김자영 : 이미지로 수정 -->
+									<img src="../../images/cont/img_tooltip_otp.jpg" alt="otp 뒷면 이미지 - 일련번호, 제조사 포함">
+									<!-- <ul class="listDot">
+										<li>일련번호</li>
+										<li>제조사</li>
+									</ul> -->
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->
+						</strong>
+						<div class="inpSel">
+							<a href="javascript:;" title="선택" role="button" class="btnSel placeholder">선택</a>
+						</div>
+					</div>
+	
+					<div class="formItem">
+						<strong class="formTit">보안매체 S/N일련번호</strong>
+						<div class="inpText">
+							<!-- ▼ [2022-10-22] type 수정 및 class 삭제 -->
+							<input type="tel" title="신규보안 매체 일련번호 입력" value placeholder="신규보안 매체 일련번호 입력">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset" style="display: none;"></button>
+						</div>
+						<!-- <p class="infoTxtErr">Error MSG</p> -->
+					</div>
+					<p class="bili">새로 등록할 OTP의 이용등록 가능여부를 조회합니다.</p>
+	
+					<div class="formItem">
+						<strong class="defTit2">본인인증 방법선택</strong>
+						<div class="boxRdoGroup ls-1"> <!-- [2022-08-09] 이경아 : 클래스 추가 -->
+							<div class="inpChk">
+								<input type="radio" name="radio7" id="radio71" checked>
+								<label for="radio71">휴대폰인증</label>
+							</div>
+							<div class="inpChk">
+								<input type="radio" name="radio7" id="radio72">
+								<label for="radio72">ARS인중</label>
+							</div>
+							<div class="inpChk">
+								<input type="radio" name="radio7" id="radio73">
+								<label for="radio73">기존보안매체</label>
+							</div>
+						</div>
+					</div>
+				
+				</section>
+				<!--// case : 계좌인증 완료 시 -->
+			</div>
+			<!-- //[2022-08-11] 이경아 :설계변경 반영 -->
+			
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div> <!-- //#wrap -->
+</body>
+</html>

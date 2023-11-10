@@ -1,0 +1,1106 @@
+@charset 'utf-8';
+/* [SEPTEM] UI Dev Team ::콕 junior css */
+
+.junior{min-height:100vh;}
+.junior .pColor{color:var(--purpleC) !important;}
+.junior hr.divingLine{margin:20px -20px;}
+.junior .fBig,.junior .fBig>*{font-size:16px !important;}
+.junior li a.link{padding-right:0;} /* 2022-11-09 거래내역 운영이행 */
+.junior li a.link:after{display:none; position:absolute;top:28px;right:-5px;margin-left:5px;width:24px;height:24px;vertical-align:-5px;transform:rotate(-90deg);background:url('../images/com/arrow_bottom3.png') 0 0/24px no-repeat;content:'';} /* 2022-11-09 거래내역 운영이행 */
+
+
+/************************
+		MAIN
+************************/
+/* .junior .juniorMain{padding-top:60px !important;} */
+.juniorMain{height:100%;color:#fff;}
+.juniorMain .juniorContent{display:block;position:relative;height:100%;/*height:100vh;*/flex-direction:column;justify-content:space-between;}
+.junior.main #header{color:currentColor;background-color:#7d59ff}
+.junior.main #header .menu{display:block;}
+.junior.main #header .menuItem{display:inline-block;position:relative;width:30px;height:30px;}
+.junior.main #header .menuItem:not(:first-child){margin-left:3px;}
+.junior.main #header .scan{background:url(../images/com/junior/main_scan.png) no-repeat 0 0/30px;}
+.junior.main #header .search{background:url(../images/com/junior/main_search.png) no-repeat 0 0/30px;}
+.junior.main #header .alarm{background:url(../images/com/junior/main_alerm.png) no-repeat 0 0/30px;}
+.junior.main #header .alarm em{display:none;}
+.junior.main #header .alarm.on::after{position:absolute;top:3px;right:3px;width:4px;height:4px;border-radius:100%;background-color:#ea4956;content:'';}
+.junior.main #header .alarm.on em{display:initial;}
+.junior.main #header .btnMenu{background:url(../images/com/junior/main_allmenu.png) no-repeat 0 0/30px;}
+
+.junior.main #container{padding-right:0;padding-left:0;padding-bottom:100px}
+.OS164 .junior.main #container{padding-bottom:0}
+.junior .juniorMain .accInfo .logoWrap {width:36px;height:36px;flex:0 0 36px;}
+.junior .juniorMain .accInfo .logoWrap .logo{width:36px;}
+.junior .juniorMain .accAlwaysType .accInLayout::after{background-image:url(../images/com/junior/arrow_bottom_main.png);transform:rotate(0deg);}
+.junior .juniorMain .bankBookName{font-size:16px;}
+.junior .juniorMain .accInfo .accNumber{opacity:0.8;}
+
+.junior .juniorMain .accDataWrap {display:flex;margin:23px -5px 0;color:#fff;align-items:center;justify-content:center;flex-wrap:wrap} /*[2023-02-28] 김연진:flex-wrap추가*/
+.junior .juniorMain .accDataWrap .accCash {font-size:34px;}
+.junior .juniorMain .accDataWrap .accCash.active,.junior .juniorMain .accDataWrap .accUnit {font-size:28px; line-height:34px;}
+.junior .juniorMain .accDataWrap .accCash.active{opacity:.5;}
+.junior .juniorMain .accDataWrap .toggleSwitch label{opacity:1}
+
+.juniorMain .userWrap{display:inline-block;position:relative;width:100%;margin-top:2px;margin-bottom:20px;padding:0 10px;}
+.juniorMain .userWrap .userName{display:flex;font-size:18px;}
+.juniorMain .userWrap .userMessage{font-size:18px;font-weight:300;}
+.juniorMain .userWrap .btnBranch{margin-top:10px;display:inline-block;padding-right:20px;font-size:14px;color:#fff;opacity:0.8;line-height:20px;}
+.juniorMain .userWrap .btnBranch::after{position:absolute;display:inline-block;width:20px;height:20px;align-self:center;content:'';background-repeat:no-repeat;background-position:center;background-size:24px;background-image:url(../images/com/junior/arrow_right.png)}
+.juniorMain .userWrap .userIcon{position:relative;}
+.juniorMain .userWrap .imgArea{display:inline-block;overflow:hidden;width:50px;height:50px;border-radius:20px;background:#f2f3f5}
+.juniorMain .userWrap .imgArea img{width:100%;}
+/* .juniorMain .userWrap .userIcon .photoModify {position:absolute;width:25px;height:25px;right:0;top:25px;display: block;background:url(../images/com/junior/ico_modifys.png) no-repeat right bottom;background-size:18px;} */
+
+.juniorMain .juniorAccInfo{padding:0 10px;flex-direction:row;}
+.juniorMain .juniorAccInfo .accBank{flex:0 0 auto;}
+.juniorMain .juniorAccInfo .accTypeWrap{flex:1;}
+.juniorMain .accInfoInBtn .btnRefrash {width:25px;height:25px;margin-left:10px;background-position:center;background-size:20px;background-repeat:no-repeat;background-image:url(../images/com/junior/ico_refrash.png)}
+.juniorMain .juniorAccInfo .accMore{width:25px;height:25px;background-position:right center;background-size:contain;background-repeat:no-repeat;background-image:url(../images/com/junior/btn_more_main.png);}
+.juniorMain .juniorAccInfo .accInfo .accInfoWrap{width:100%;padding-right:5px}
+.juniorMain .juniorAccInfo .accInfo .accInfoInLayout{margin-right:24px;}
+.juniorMain .juniorAccInfo .accInfo .accNumBox{padding-right:0}
+
+
+@media screen and (max-width:320px){
+.juniorMain .juniorAccInfo .accAlwaysType{min-width:auto;}
+/* .juniorMain .juniorAccInfo .accAlwaysType{min-width:160px;} */
+}
+@media (min-width:321px) and (max-width:360px){
+	.juniorMain .juniorAccInfo .accAlwaysType{min-width:230px;}
+}
+@media (min-width:361px){
+	.juniorMain .juniorAccInfo .accAlwaysType{min-width:230px;}
+}
+/* [2023-02-28] 김연진:toggleSwitch width변경 */
+.juniorMain .toggleSwitch{ width:auto;height:30px;margin:5px 0 5px 7px;line-height:30px}
+.juniorMain .toggleSwitch input[type='checkbox']{width:auto}
+.juniorMain .toggleSwitch label:before{display:none}
+.juniorMain .toggleSwitch input[type='checkbox']+label{position:relative;display:inline-block;width:auto;min-width:50px;font-size:16px;line-height:30px;padding:0 10px;color:#fff;text-align:center;background:none;opacity:.8}
+.juniorMain .toggleSwitch input[type='checkbox']+label:after{position:absolute;top:0;left:0;display:block;content:'';width:100%;height:30px;border:1px solid #fff;opacity:.6;border-radius:15px}
+.juniorMain .toggleSwitch input[type='checkbox']:checked+label{color:#fff;opacity:1}
+
+.junior .modeChange{position:relative;padding:0 10px;line-height:28px;font-size:14px;color:#fff;}
+.junior .modeChange::before{position:absolute;display:block;top:0;left:0;width:100%;height:28px;border:1px solid #fff;border-radius:20px;opacity:0.6;content:'';}
+.juniorMain .juniorContentTop{display:block;padding:0 20px 0;flex-direction:column;/* display:flex;flex:1;flex-direction:column;*/}/* 2022-07-27 11:22 남협수 [MODIFY] padding top 변경  */
+.juniorMain .juniorContentTop .accDataWrap .accUnit{margin-top:0;font-size:28px;vertical-align:2px;/*padding-left:4px;*/}
+.juniorMain .juniorContentTop .accDataWrap .showMessage{font-size:26px;font-weight:400;color:#fff;line-height:41px;}
+
+.junior .juniorMain .accDataWrap .stateOn .accCash{font-size:34px;}
+.junior .juniorMain .accDataWrap .stateOn{margin:42px 0;}
+
+@media screen and (max-width:320px){
+	.junior .juniorMain .accDataWrap .stateOn .accCash{font-size:30px;}
+	.junior .juniorMain .accDataWrap .stateOn .accUnit{font-size:24px;}
+}
+
+.juniorMain .juniorContentBottom{display:block;width:100%;}
+/* .junior #header{background-color:transparent;} *//*윤혜영주석*/
+.juniorMain .juniorBG{display:block;position:absolute;top:0;left:0;width:100%;height:600px;}
+.junior #header.fixed,.junior .juniorMain .juniorBG{background:#7d59ff;}
+.juniorMain .userWrap>.layoutWrap{position:relative;padding-bottom:15px;}
+.juniorMain .userWrap>.layoutWrap:after{position:absolute;display:block;left:0;bottom:0;width:100%;height:1px;border-bottom:1px solid #fff;opacity:0.2;content:'';}
+.juniorMain .juniorMainBtn .history{background:#353d4a;color:#fff;}
+.juniorMain .juniorMainBtn .trans{margin-left:8px;background:#fff;color:#111}
+
+.junior.type2 #header.fixed,.junior.type2 .juniorMain .juniorBG{background:#28a86d;}
+.junior.type2 .userWrap>.layoutWrap{border-bottom:1px solid #32ae75;}
+.junior.type2 .juniorMain .juniorMainBtn .trans{margin-left:8px;background:#005742;}
+
+.junior.type3 #header.fixed,.junior.type3 .juniorMain .juniorBG{background:#e6d357;}
+.junior.type3 .userWrap>.layoutWrap{border-bottom:1px solid #dac749;}
+.junior.type3 .juniorMain .juniorMainBtn .trans{margin-left:8px;background:#df6900;}
+.junior.type3 .juniorMain .juniorContentTop>*{color:#323232 !important;}
+
+.juniorMain .bottomArea{padding:20px 0 0;background-color:#fff;}
+.juniorMain .juniorMenu{position:relative;color:#111;padding-bottom:6px;}
+.juniorMain .juniorMenu .nav_scroll{margin-bottom:20px;}
+.juniorMain .juniorMenu::after{position:absolute;display:inline-block;left:16px;bottom:0;width:calc(100% - 32px);height:1px;background-color:#f1f2f3; content:'';}
+.juniorMain .juniorMenu .menu section{position:relative;}
+.juniorMain .juniorMenu .tit{display:block;margin-bottom:18px;font-size:18px;font-weight:400;}
+.juniorMain .juniorMenu .noMenu{padding:30px 0;border:1px dashed #d2d2d2;border-radius:10px;background-color:#f8f8f8;text-align:center;}
+.juniorMain .juniorMenu .noMenu .tit{margin:0;margin-top:14px;font-size:16px;color:#828282;}
+.juniorMain .juniorMenu .noMenu .addMenu{display:inline-block;width:40px;height:40px;border-radius:100%;background-color:#e3e3e3;}
+
+.juniorMain .juniorMenuList{display:flex;justify-content:space-evenly;}
+.juniorMain .juniorMenuList li{width:calc(100%/4);max-width:77px;}
+.juniorMain .juniorMenuList li:not(:first-child){margin-left:7px;}
+.juniorMain .juniorMenuList li a{display:block;width:100%;font-size:14px;color:#323232;text-align:center;}
+.juniorMain .juniorMenuList li .icon{display:block;width:100%;height:20.27%;max-height:75px;margin-bottom:10px;border-radius:10px;background-color:#f5f5f5 !important;font-size:14px;text-align:center;}
+
+.juniorMain .juniorMenuList li .addMenu .icon{display:block;width:100%;height:20.27%;max-height:75px;border:1px dashed #d2d2d2;}
+.juniorMain .juniorMenuModify{position:absolute;top:0;right:0;font-size:14px;color:#969696;}
+
+.juniorMain .juniorMainBtn{margin-top:30px;display:flex;width:100%;font-size:16px;text-align:center;justify-content:center;}
+.juniorMain .juniorMainBtn .btn{display:flex;width:150px;height:50px;padding:10px 20px;font-size:18px;border-radius:10px;align-items:center;justify-content:center;}
+
+.juniorMainLink{padding:30px 0 15px;text-align:center;}
+.juniorMainLink a{font-size:14px;border-bottom: 1px solid #fff;font-weight:normal;}
+
+.juniorMain .myMenuArea .btnAllView{color:#353d4a;font-weight: normal;}
+
+.juniorMain .mainBannerArea{overflow:hidden;/*margin-top:15px;padding:0 20px 20px 20px;*/margin:17px 20px 0;}
+.juniorMain .swiper-container{overflow:inherit;}
+.juniorMain .ContSwipe{position:relative;}
+.juniorMain .swiper-pagination{right:0;bottom:0;}
+.juniorMain .banBottom{margin-top:45px;}
+.juniorMain .slideBox{width:100%;}
+.juniorMain .slideBox .inner{overflow:hidden;}
+.juniorMain .slideBox .inner a{display:block;width:100%;height:100%;}
+.juniorMain .slideBox .inner a img{width:100%;height:100%;}
+.juniorMain .swiper-slide{padding-bottom:20px;}
+.juniorMain .swiper-pagination-bullet{width:6px;height:6px;background-color:#b7c1cc;}
+.juniorMain .swiper-pagination-bullet-active{width:14px;background-color:#6a7688;}
+
+.juniorMain .slideBtnArea{position:absolute;bottom:0;right:25px;z-index:100;}
+.juniorMain .banBottom .slideBtnArea{bottom:-9px;right:20px;}
+.juniorMain .slideNumber{display:inline-block;font-size:14px;color:#5d6c83;z-index:100;letter-spacing:1px;}
+.juniorMain .slideNumber .page{color:#353d4a;}
+.juniorMain .slideBtnArea .btnList{display:inline-block;width:20px;height:20px;margin-left:7px;vertical-align:1px;background:url('../images/main/ico_banList.png') no-repeat 4px 5px /11px 10px;vertical-align:middle}
+
+.juniorMain .auto{display:inline-block;width:10px;height:10px;margin-right:10px;}
+.juniorMain .swiperAuto{position:relative;display:block;width:10px;height:10px;}
+.juniorMain .swiperAuto:after{position:absolute;top:0;left:0;display:block;content:'';width:10px;height:10px;background-image:url(../images/main/spr_autoplay.png);background-repeat:no-repeat;background-size:20px 10px;}
+.juniorMain .swiperAuto.start:after{background-position:-12px 0;}
+.juniorMain .swiperAuto.stop:after{background-position:0 0;}
+
+.juniorMain .characterWrap{display:flex;overflow:hidden;position:relative;width:100%;height:98px;min-height:98px;}
+.juniorMain .characterArea{display:block;position:relative;height:98px;}
+.juniorMain .characterBG{display:block;position:relative;flex:1;}
+/* [2023-02-21] 김연진:이미지파일명변경 */
+@media screen and (max-width:320px){
+	.juniorMain .characterArea{background:url(../images/com/junior/img_junior_mascot.png) no-repeat right bottom/contain;flex:0 0 280px;}
+	.juniorMain .characterBG{height:98px;background:url(../images/com/junior/img_junior_mascot_bg.png) repeat-x right bottom/100% 73px;}/* [2023-03-03]김연진:세로사이즈변경 */
+}
+@media screen and (max-width:360px){
+	.juniorBothForm .formTit{width:60% !important;}
+}
+@media (min-width:321px) and (max-width:360px){
+	.juniorMain .characterArea{background:url(../images/com/junior/img_junior_mascot.png) no-repeat right bottom/contain;flex:0 0 360px;}
+}
+@media (min-width:361px){
+	.juniorMain .characterArea{background:url(../images/com/junior/img_junior_mascot.png) no-repeat right bottom/375px auto;flex:0 0 375px;}
+	.juniorMain .characterBG{height:98px;background:url(../images/com/junior/img_junior_mascot_bg.png) repeat-x right bottom/100% 98px;} /* [2023-03-03]김연진:세로사이즈변경 */
+}
+/* //[2023-02-21] 김연진:이미지파일명변경 */
+
+/************************
+		layout
+************************/
+.junior .btnArea button{border-color:#323232;color:#000;}
+.junior .btnArea button.sel{background-color:var(--purpleC);color:#fff;}
+
+/************************
+		round box
+************************/
+.junior .roundBox{margin-top:30px;border-radius:20px;}
+.junior .roundBox .roundInBox{padding:25px 20px;border:none;border-radius:20px;background-color:var(--purpleC);box-shadow:0 8px 19px 0 rgba(0, 0, 0, .35);}
+
+/************************
+		IMG
+************************/
+.imgBox{text-align:center;}
+.imgBox .imgWrap{max-width:300px;margin:0 auto;}
+.imgBox .endMessagePicture{display:inline-block;width:100%;height:150px;margin:0 auto 20px;background:url(../images/com/junior/img_end01.png) no-repeat 0 0/100%;}
+
+/************************
+		LIST
+************************/
+.junior .listTblBox{border:1px solid #ddd;background:#f8f8f8;font-size:14px;color:#888;}
+.junior .listTblBox strong.dataWrap{font-size:16px;color:#7900c6;}
+.junior .listTblBox strong.dataWrap * {color:var(--purpleC);}
+/************************
+		FORM
+************************/
+.junior .formTit{font-size:18px;}
+.junior .inpSel,.junior .inpText{border:none;justify-content:center;}
+.junior .inpText.focus{border-color:#7900c6;}
+.junior input{caret-color:#7900c6;}
+.junior .btnArea button.sel:disabled{background-color:#dde0e3 !important;color:var(--txt-color-gray-01);}
+.junior .btnArea button:disabled{border-color:#dde0e3;background-color:#dde0e3;color:var(--txt-color-gray-01);}
+.junior .btnArea.half button:first-child {border:1px solid var(--bd-color-01);color:var(--deep-black);}
+/* .junior .inpText{display:flex;position:relative;height:44px;border-bottom:2px solid #7900c6;align-items:center;} */
+.juniorBothForm .formItem{margin-top:0;}
+.juniorBothForm .formTit{width:55%;margin:0;font-size:14px;color:#888;}
+.juniorBothForm .inpText{height:30px;}
+.juniorBothForm input[type='text'],.juniorBothForm input[type='password'],.juniorBothForm input[type='tel'],.juniorBothForm input[type='number']{font-size:14px;}
+.juniorBothForm input::-webkit-input-placeholder{font-weight:400;}
+.juniorBothForm input::placeholder{font-weight:400;}
+.juniorBothForm .juniorSingleInput{margin-top:35px;padding:10px 15px;border:1px solid #ddd;border-radius:10px;background:#f8f8f8}
+
+.juniorAddress .formTit{width:45%;min-width:115px;margin:0;font-size:14px;color:#888;flex:0 1 115px;}
+.juniorAddress .formTit{font-size:16px;}
+.juniorAddress .formGroup>div+div{margin:0;}
+.juniorAddress input[type='text'],.juniorAddress input[type='password'],.juniorAddress input[type='tel'],.juniorAddress input[type='number']{font-size:16px;}
+.juniorAddress .listSearchBtn{width:50px;height:30px;border:1px solid #ddd;border-radius:20px;background-image:none;font-size:14px;text-align:center;line-height:30px;flex:1 0 50px;}
+
+/************************
+		탭
+************************/
+.junior .tabWrap.segment{display:inline-block;width:100%;/* height:50px; */}
+.junior .tabWrap.segment .segmentItem.active{border-color:var(--purpleC);background-color:var(--purpleC)}
+
+.junior .tabWrap.oneDepth .tabList{display:block;height:50px;}
+.junior .tabWrap.oneDepth [role='tab'], .junior .tabWrap.oneDepth [role='button']{display:inline-block;height:50px;margin:0 13px;padding:0;font-size:16px;font-weight:bold;color:#969696;line-height:50px;}
+.junior .tabWrap.oneDepth .tabList .active{color:var(--black-deep);}
+.junior .tabWrap.oneDepth .tabList::after{top:49px;}
+.junior .tabWrap.oneDepth [role='tab'].active:after, .junior .tabWrap.oneDepth [role='button'].active:after{border-bottom:3px solid #7900c6;}
+.junior .pgTitWrap+.tabWrap.oneDepth{margin-top:30px;}
+
+.tabWrap.oneDepthSwipe{overflow:auto;position:relative;margin:0 -20px;}
+.tabWrap.oneDepthSwipe .tabList::after{position:absolute;top:44px;left:0;z-index:0;width:100%;border-bottom:1px solid var(--divider-color);content:'';}
+.tabWrap.oneDepthSwipe .tabList{overflow-y:hidden;height:45px;padding:0 20px;font-weight:bold;color:#969696;/* margin:0 var(--space);*/}
+.tabWrap.oneDepthSwipe .tabList .active{z-index:1;color:#000;}
+.tabWrap.oneDepthSwipe [role='tab'], .tabWrap.oneDepthSwipe [role='button']{position:relative;padding:0 16px;text-align:center;white-space:nowrap;line-height:44px;}
+.tabWrap.oneDepthSwipe [role='tab'].active:after, .tabWrap.oneDepthSwipe [role='button'].active:after{position:absolute;right:0;bottom:0;left:0;border-bottom:3px solid #323232;content:'';}
+.tabWrap.oneDepthSwipe [role='tab']:last-child::before, .tabWrap.oneDepthSwipe [role='button']:last-child::before{display:block;position:absolute;right:-20px;bottom:0;width:20px;height:1px;content:'';}
+.tabWrap.oneDepthSwipe [role='tab']:last-child.active::before, .tabWrap.oneDepthSwipe [role='button']:last-child.active::before{position:absolute;right:-20px;bottom:0;left:initial;border-bottom:none;content:'';}
+
+.junior .tabWrap.ellipse .tabList{margin:0 var(--minus-space);padding:0 var(--space) 10px;justify-content:center;}
+.junior .tabWrap.ellipse [role='tab'], .junior .tabWrap.ellipse [role='button']{display:inline-block;position:relative;height:36px;padding:0 15px;border-radius:18px;background:var(--bg-color-02);font-size:14px;color:#323232;line-height:36px;scroll-snap-align:start;}
+.junior .tabWrap.ellipse [role='tab']:not(:first-child), .junior .tabWrap.ellipse [role='button']:not(:first-child){margin-left:5px;}
+.junior .tabWrap.ellipse [role='tab'].active, .junior .tabWrap.ellipse [role='button'].active{background-color:var(--txt-color-blue-01);color:var(--txt-color-white);}
+
+/************************
+		버튼
+************************/
+/* .junior .rdoBtnsWrap ul{display:flex;align-items:center;}*/ /*  [2023-03-31] 김연진 : 거래메모추가 */
+.junior .rdoBtnsWrap li{padding:0 3px;}
+.junior .rdoBtnsWrap li.filter{margin-left:auto;}
+.junior .rdoBtn input[type='radio']+label,.junior .rdoBtn input[type='checkbox']+label{height:35px;padding:0;border:1px solid #ddd;border-radius:17.5px;color:#888;line-height:35px;} /*  [2023-03-31] 김연진 : 거래메모추가 */
+.junior .rdoBtn input:checked+label{border-color:var(--black-deep);background-color:var(--black-deep);font-weight:normal;color:var(--txt-color-white);}
+.junior .rdoBtn input[type='radio']:checked+label:after{display:none;}
+
+.junior .btnFilter{display:inline-block;width:28px;height:28px;background:url(../images/com/junior/btn_filter2.png) no-repeat 0 0/cover;vertical-align:top;}
+.junior .filterText{color:#323232;}
+
+.junior .juniorMoreInfo{display:block;width:100%;padding:18px 15px;border:1px solid #ddd;border-radius:10px;font-size:16px;color:#323232;}
+.junior .juniorMoreInfo:after{position:absolute;top:50%;right:15px;width:26px;height:26px;margin-top:-13px;background:url(../images/com/junior/arrow_bottom_black.png) center right/cover no-repeat;content:'';}
+.junior .juniorMoreInfo.active{border-radius:10px 10px 0 0;}
+.junior .juniorFormWrap{padding-right:45px;font-size:14px;}
+.junior .juniorFormWrap.active{border:1px solid #ddd;border-bottom:0;}
+.junior .juniorFormWrap.active+.formWrap.moreBox{margin-top:0;padding:0 17px 10px;border:1px solid #ddd;border-top:none;border-radius:0 0 10px 10px;}
+.junior .juniorFormWrap.active+.formWrap.moreBox .formItem{padding-top:10px;}
+.junior .juniorFormWrap.active:after{transform:rotate(180deg);}
+.junior .hideBox .listTblBox{margin-top:0 !important;border:1px solid #ddd;border-top:0;border-radius:0 0 10px 10px;background:#fff;}
+.junior .hideBox .listTblBox .txt>span{display:inline-block;}
+
+.junior .juniorSHBtnWrap{padding-top:14px;border-top:1px solid #ebebeb;font-size:14px;text-align:right;}
+.junior .juniorSHBtn{display:inline-block;position:relative;height:24px;padding-right:24px;line-height:24px;}
+.junior .juniorSHBtn::after{display:inline-block;position:absolute;top:0;right:0;width:24px;height:24px;background:url(../images/com/arrow_bottom3.png) no-repeat 0 0/24px;content:'';}
+.junior .juniorSHBtn.active::after{display:inline-block;position:absolute;top:0;right:0;width:24px;height:24px;background:url(../images/com/arrow_bottom3.png) no-repeat 0 0/24px;content:'';-webkit-transform:rotate(180deg);transform:rotate(180deg);}
+
+.junior .touchBtnWrap{margin:0 -3px;}
+.junior .touchBtnWrap [role='button']{height:30px;margin:0 3px;font-size:14px;line-height:28px;}
+.junior .touchBtnWrap a.active,.touchBtnWrap [role='button']:active,.touchBtnWrap a.active,.touchBtnWrap [role='button'].active{border-color:#7900c6;background-color:#fff;color:#7900c6;}
+
+.junior ~ #popupArea .btnArea button.sel:disabled{background-color: #dde0e3 !important;}
+
+/************************
+		타이틀, 텍스트
+************************/
+.junior .listTit{margin-top:20px;font-size:14px;color:#323232;}
+.junior .pgTitWrap{margin-bottom:15px;margin-top:10px;}
+.junior .pgTitWrap .pTit{display:block;font-size:24px;font-weight:normal;}
+.junior .pgTitWrap .pTit strong{font-weight:normal;color:var(--purpleC);}
+.junior .pgTitWrap .infoTxt{margin-top:10px;font-size:14px;color:#787878;}
+.junior .pgTitWrap .infoTxt::before{display:none;}
+.junior .pgTitWrap.second .pTit strong{font-weight:normal;}
+.junior .pgTitWrap .pTit.underline {text-decoration:underline;text-underline-position:from-font}
+.junior .btnInArea button{padding:0 5px;}
+/************************
+		조회
+************************/
+/* s: 2022-11-09 거래내역 운영이행 */
+.junior .topRoundBox{margin-top:30px;}
+
+.junior .accName{font-size:17px;color:var(--txt-color-white);}
+.junior .accName>*{font-size:17px;color:var(--txt-color-white);}
+.junior .accInfo .accNumber{font-size:14px;font-weight:normal;color:var(--txt-color-white);}
+.junior .accName+.accNumWrap{margin-top:2px;}
+.junior .accInfo .logoWrap{width:26px;height:26px;flex:0 0 26px;}
+.junior .accInfo .logoWrap .logo{width:26px;}
+.junior .accAlwaysType .accInLayout::after{background-image:url(../images/com/junior/arrow_bottom_main.png);transform:rotate(0deg);}
+.junior .accDataWrap{margin-top:15px;letter-spacing:-1px}
+.junior .accDataWrap .accNumInfo{color:var(--txt-color-white);margin:17px 10px 0 35px;} /*  [2023-03-31] 김연진 : 거래메모추가 */
+.junior .accDataWrap .accCash{font-size:26px;font-weight:bold;color:var(--txt-color-white);}
+.junior .accDataWrap .accUnit{margin-top:10px;font-size:24px;font-weight:normal;color:var(--txt-color-white);}
+@media screen and (max-width:335px){
+	.junior .accDataWrap .accNumInfo{margin-top:13px}
+	.junior .accDataWrap .accCash{font-size:20px;}
+	.junior .accDataWrap .accUnit{font-size:18px;}
+}
+.junior .inqueryList li{padding:20px 0;}
+.junior .inqueryList li:first-child{padding-top:0;}
+.junior .inqueryList li .tit{min-width:50%;word-break:break-all;font-size:16px;font-weight:bold;color:var(--black-deep);line-height:1.3;}
+.junior .inqueryList li .date{color:#969696;}
+.junior .inqueryList li .remainder{padding-top:3px;flex-shrink:0;color:#646464;line-height:1.3;}
+
+
+.junior .historyList ul{margin:0 -20px;}
+.junior .historyList ul li{padding:20px 20px 20px 25px;}
+.junior .historyList .flex:nth-child(1){min-height:14px;}
+/* .junior .historyList .flex:nth-child(2){justify-content:flex-end;}
+.junior .historyList .flex:nth-child(3){justify-content:space-between;align-items:flex-start;} */
+.junior .historyList .listItemArrow{position:relative;background:none;padding-right:25px;}
+.junior .historyList .listItemArrow:after{position:absolute;top:19px;right:-5px;display:block;margin-left:5px;width:24px;height:24px;vertical-align:-5px;transform:rotate(-90deg);background:url('../images/com/arrow_bottom3.png') 0 0/24px no-repeat;content:'';}
+.junior .historyList .tag{position:relative;padding-right:15px;}
+.junior .historyList .tag::after{position:absolute;top:-5px;right:-8px;display:block;width:24px;height:24px;background:url(../images/com/arrow_bottom3.png) 0 0/24px no-repeat;transform:rotate(-90deg);content:'';}
+.junior .historyList.loanList .tag{padding-right:0;}
+.junior .historyList.loanList .tag::after{display:none;}
+/* e: 2022-11-09 거래내역 운영이행 */
+
+.junior .noData{margin-top:40px;text-align:center;}
+.junior .noData i{display:block;width:67px;height:65px;margin:0 auto 17px;}
+.junior .noData i.check{background:url('../images/com/junior/img_info01_web.png') no-repeat 0 0/cover;}
+.junior .noData .tit{font-size:16px;font-weight:normal;color:#323232;line-height:22px;}
+.junior .noData .txt{font-size:var(--font14);color:var(--txt-color-blue-02);line-height:20px;}
+
+/************************
+		송금
+************************/
+.junior .toSendMonyWrap .formWrap{display:table;width:100%;min-height:150px;}
+.junior .toSendMonyWrap .formItem{display:table-cell;margin-bottom:70px;vertical-align:middle;}
+.junior .toSendMonyWrap .formItem .priceWrap{margin-top:0;}
+.junior .toSendMonyWrap .formItem .priceWrap .btnReset{background:url(../images/com/junior/btn_reset.png) center/24px 24px no-repeat;}
+.junior .toSendMonyWrap .formItem .placeholder{font-size:30px;}
+.junior .toSendMonyWrap .formItem .price{font-size:38px;color:#000;}
+/* .junior .toSendMonyWrap .formItem.error .price{color:#ea4956;} */
+.junior .toSendSelect .formItem [type='tel']{position:relative;width:auto;font-size:16px;color:#111;opacity:1;}
+.junior .toSendSelect .formItem [type='tel']::-webkit-input-placeholder{font-size:16px;}
+.junior .toSendSelect .formItem [type='tel']::placeholder{font-size:16px;color:#b4b4b4;text-align:center;}
+/* .junior .toSendMonyWrap .priceMessage{color:#7900c6;} */
+.junior .limitMoney{margin-bottom:15px;font-size:14px;color:#111;text-align:center;}
+.junior .limitMoney [role=button]{display:inline-block;margin-bottom:5px;padding:7px 10px;border:1px solid #ddd;border-radius:20px;}
+.junior .limitMoney .inner:after{display:inline-block;content:'';margin-left:2px;width:8px;height:13px;vertical-align:-1px;background:url('../images/com/arrow_munu_user.png') no-repeat center center / 8px;}
+/* .junior .inpText .btnReset{display:block !important;} */
+.junior .toSendMonyWrap .priceMessage{margin-top:0;color:var(--purpleC);line-height:20px;}
+.junior .limitMoney a + a{margin-left:5px;}
+
+.junior .sendInfoWrap{margin-top:0;padding:0 18px 19px;color:#000;text-align:center;}
+.junior .sendInfoWrap strong.dataWrap{color:var(--purpleC);}
+.junior .sendInfoWrap>div+div{margin-top:9px;}
+
+.junior .inpSel.isLogo .btnSel{width:auto;margin:0 auto;padding:0;padding-right:30px;}
+.junior .inpSel.isLogo .btnSel .logo{display:inline-block;width:21px !important;margin:initial;margin-right:4px;}
+.junior .inpSel.isLogo .btnSel .logo img{width:21px;}
+.junior .inpSel .tit{font-size:16px;}
+
+.junior .sendInfoWrap .accSelect,.junior .sendInfoWrap .dataWrap{font-size:16px;font-weight:bold;color:#787878;}
+.junior .sendInfoWrap .accSelect{padding-right:16px;background:url(../images/com/junior/arrow_bottomS.png) no-repeat 100% 50%/10px 6px;color:#000;}
+.junior .sendInfoWrap .dataWrap .data,.junior .sendInfoWrap .dataWrap .unit{color:currentColor;}
+
+.junior .sendMoneyCheck{position:relative;padding:20px;border-radius:10px;background-color:var(--purpleC);padding-right:90px;}
+.junior .sendMoneyCheck::after{display:block;position:absolute;bottom:12px;right:10px;width:65px;height:60px;background:url(../images/com/junior/img_check01.png) no-repeat 0 0/65px auto;content:'';}
+.junior .sendMoneyCheck .dataWrap{font-size:26px;color:#fff;}
+.junior .sendMoneyCheck .dataWrap .data{font-size:26px;font-weight:normal}
+.junior .sendMoneyCheck .dataWrap .unit{font-size:24px;}
+.junior .checkHangul{margin-top:10px;font-weight:300;color:#fff;opacity:0.7;font-size:14px;}
+
+
+@media screen and (max-width:320px){
+	.junior .sendMoneyCheck{padding-right:20px;}
+	.junior .sendMoneyCheck .dataWrap .data{font-size:22px;}
+	.junior .sendMoneyCheck .dataWrap .unit{font-size:20px;}
+	.junior .sendMoneyCheck .checkHangul{font-size:12px;}
+	.juniorBothForm .formTit{width:48%}
+	.junior .btnInArea button{padding:0 0;}
+}
+
+@media screen and (max-height:640px){
+	.junior .toSendMonyWrap .formWrap{min-height:70px;}
+	.junior .deviceSmall .pgTitWrap {margin-bottom:10px;margin-top:0;}
+	.junior .deviceSmall .sendInfoWrap{padding-bottom:10px;}
+	.junior .deviceSmall .limitMoney{margin-bottom:8px}
+	.junior .deviceSmall .toSendMonyWrap .formItem .placeholder{line-height:32px}
+}
+
+@media screen and (max-height:670px){
+	.junior .toSendMonyWrap .formWrap{min-height:70px;}
+}
+
+@media screen and (min-height:740px){
+	.junior .toSendMonyWrap .formWrap{min-height:180px;}
+}
+
+/*main-bgcolor-change*/
+.junior.main #header,
+.junior.main .juniorMain .juniorBG,
+.colorChg.purple input[type='radio']+label{background-color:var(--purpleC);}/*purple*/
+.greenC .junior.main #header,
+.greenC .junior.main .juniorMain .juniorBG,
+.colorChg.green input[type='radio']+label{background-color:var(--greenC);}/*green*/
+.yellowC .junior.main #header,
+.yellowC .junior.main .juniorMain .juniorBG,
+.colorChg.yellow input[type='radio']+label{background-color:var(--yellowCbg);}/*yellow*/
+.primaryC .junior.main #header,
+.primaryC .junior.main .juniorMain .juniorBG,
+.colorChg.primary input[type='radio']+label{background-color:var(--primaryC);}/*primary*/
+.pinkC .junior.main #header,
+.pinkC .junior.main .juniorMain .juniorBG,
+.colorChg.pink input[type='radio']+label{background-color:var(--pinkCbg);}/*pink*/
+.lightpurpleC .junior.main #header,
+.lightpurpleC .junior.main .juniorMain .juniorBG,
+.colorChg.lightpurple input[type='radio']+label{background-color:var(--lightpurpleC);}/*lightpurple*/
+.lightblueC .junior.main #header,
+.lightblueC .junior.main .juniorMain .juniorBG,
+.colorChg.lightblue input[type='radio']+label{background-color:var(--lightblueC);}/*ligntblue*/
+.skyC .junior.main #header,
+.skyC .junior.main .juniorMain .juniorBG,
+.colorChg.sky input[type='radio']+label{background-color:var(--skyCbg);}/*sky*/
+.blueC .junior.main #header,
+.blueC .junior.main .juniorMain .juniorBG,
+.colorChg.blue input[type='radio']+label{background-color:var(--blueC);}/*blue*/
+.grayC .junior.main #header,
+.grayC .junior.main .juniorMain .juniorBG,
+.colorChg.gray input[type='radio']+label{background-color:var(--grayC);}/*gray*/
+.lightgrayC .junior.main #header,
+.lightgrayC .junior.main .juniorMain .juniorBG,
+.colorChg.lightgray input[type='radio']+label{background-color:var(--lightgrayC);}/*lightgray*/
+.lightskyC .junior.main #header,
+.lightskyC .junior.main .juniorMain .juniorBG,
+.colorChg.lightsky input[type='radio']+label{background-color:var(--lightskyCbg);}/*lightsky*/
+/**/
+.lightskyC .junior.main #header .scan,
+.lightskyC .junior.main #header .search,
+.lightskyC .junior.main #header .alarm,
+.lightskyC .junior.main #header .btnMenu,
+.skyC .junior.main #header .scan,
+.skyC .junior.main #header .search,
+.skyC .junior.main #header .alarm,
+.skyC .junior.main #header .btnMenu,
+.pinkC .junior.main #header .scan,
+.pinkC .junior.main #header .search,
+.pinkC .junior.main #header .alarm,
+.pinkC .junior.main #header .btnMenu,
+.yellowC .junior.main #header .scan,
+.yellowC .junior.main #header .search,
+.yellowC .junior.main #header .alarm,
+.yellowC .junior.main #header .btnMenu{background-position:0 -30px;}
+.lightskyC .junior .modeChange,
+.lightskyC .junior .juniorMain,
+.lightskyC .junior .juniorMain .userWrap .btnBranch,
+.lightskyC .junior .accName>*,
+.lightskyC .junior .accInfo .accNumber,
+.lightskyC .junior .juniorMain .accDataWrap .accCash,
+.lightskyC .junior .juniorMain .juniorContentTop .accDataWrap .accUnit,
+.lightskyC .junior .juniorMain .toggleSwitch input[type='checkbox']+label,
+.skyC .junior .modeChange,
+.skyC .junior .juniorMain,
+.skyC .junior .juniorMain .userWrap .btnBranch,
+.skyC .junior .accName>*,
+.skyC .junior .accInfo .accNumber,
+.skyC .junior .juniorMain .accDataWrap .accCash,
+.skyC .junior .juniorMain .juniorContentTop .accDataWrap .accUnit,
+.skyC .junior .juniorMain .toggleSwitch input[type='checkbox']+label,
+.pinkC .junior .modeChange,
+.pinkC .junior .juniorMain,
+.pinkC .junior .juniorMain .userWrap .btnBranch,
+.pinkC .junior .accName>*,
+.pinkC .junior .accInfo .accNumber,
+.pinkC .junior .juniorMain .accDataWrap .accCash,
+.pinkC .junior .juniorMain .juniorContentTop .accDataWrap .accUnit,
+.pinkC .junior .juniorMain .toggleSwitch input[type='checkbox']+label,
+.yellowC .junior .modeChange,
+.yellowC .junior .juniorMain,
+.yellowC .junior .juniorMain .userWrap .btnBranch,
+.yellowC .junior .accName>*,
+.yellowC .junior .accInfo .accNumber,
+.yellowC .junior .juniorMain .accDataWrap .accCash,
+.yellowC .junior .juniorMain .juniorContentTop .accDataWrap .accUnit,
+.yellowC .junior .juniorMain .toggleSwitch input[type='checkbox']+label{color:#111;}
+.lightskyC .junior .juniorMain .userWrap .btnBranch::after,
+.skyC .junior .juniorMain .userWrap .btnBranch::after,
+.pinkC .junior .juniorMain .userWrap .btnBranch::after,
+.yellowC .junior .juniorMain .userWrap .btnBranch::after{background-image:url(../images/com/junior/arrow_bottom_revers.png)}
+.lightskyC .junior .juniorMain .accAlwaysType .accInLayout::after,
+.skyC .junior .juniorMain .accAlwaysType .accInLayout::after,
+.pinkC .junior .juniorMain .accAlwaysType .accInLayout::after,
+.yellowC .junior .juniorMain .accAlwaysType .accInLayout::after{background-image:url(../images/com/junior/arrow_bottom_main_revers.png);}
+.lightskyC .junior .juniorMain .accInfoInBtn .btnRefrash,
+.skyC .junior .juniorMain .accInfoInBtn .btnRefrash,
+.pinkC .junior .juniorMain .accInfoInBtn .btnRefrash,
+.yellowC .junior .juniorMain .accInfoInBtn .btnRefrash{background-image:url(../images/com/junior/ico_refrash_revers.png)}
+.lightskyC .junior .juniorMain .juniorAccInfo .accMore,
+.skyC .junior .juniorMain .juniorAccInfo .accMore,
+.pinkC .junior .juniorMain .juniorAccInfo .accMore,
+.yellowC .junior .juniorMain .juniorAccInfo .accMore{background-image:url(../images/com/junior/btn_more_main_revers.png);}
+.lightskyC .junior .juniorMain .toggleSwitch input[type='checkbox']+label:after,
+.skyC .junior .juniorMain .toggleSwitch input[type='checkbox']+label:after,
+.pinkC .junior .juniorMain .toggleSwitch input[type='checkbox']+label:after,
+.yellowC .junior .juniorMain .toggleSwitch input[type='checkbox']+label:after{border:1px solid #111;}
+.lightskyC .junior .modeChange::before,
+.skyC .junior .modeChange::before,
+.pinkC .junior .modeChange::before,
+.yellowC .junior .modeChange::before{border:1px solid #111;}
+.lightskyC .junior .juniorMainLink a,
+.skyC .junior .juniorMainLink a,
+.pinkC .junior .juniorMainLink a,
+.yellowC .junior .juniorMainLink a{border-bottom:1px solid #403b1b;}
+
+/*sub-page-point*/
+.greenC .junior .pColor{color:var(--greenC) !important;}
+.greenC .junior .listTblBox strong.dataWrap *,
+.greenC .junior .sendMoneyCheck,
+.greenC .junior .pgTitWrap .pTit strong,
+.greenC .junior .toSendMonyWrap .priceMessage,
+.greenC .junior .sendInfoWrap strong.dataWrap,
+.greenC .junior .pgTitWrap .pTit strong{color:var(--greenC);}
+.greenC .junior .btnArea button.sel,
+.greenC .junior .sendMoneyCheck,
+.greenC .junior .roundBox .roundInBox,
+.greenC .junior .tabWrap.segment .segmentItem.active{background-color:var(--greenC);}
+.greenC .junior .tabWrap.segment .segmentItem.active{border-color:var(--greenC);}
+
+.yellowC .junior .pColor{color:var(--yellowC) !important;}
+.yellowC .junior .listTblBox strong.dataWrap *,
+.yellowC .junior .sendMoneyCheck,
+.yellowC .junior .pgTitWrap .pTit strong,
+.yellowC .junior .toSendMonyWrap .priceMessage,
+.yellowC .junior .sendInfoWrap strong.dataWrap,
+.yellowC .junior .pgTitWrap .pTit strong{color:var(--yellowC);}
+.yellowC .junior .btnArea button.sel,
+.yellowC .junior .sendMoneyCheck,
+.yellowC .junior .roundBox .roundInBox,
+.yellowC .junior .tabWrap.segment .segmentItem.active{background-color:var(--yellowCbg);}
+.yellowC .junior .tabWrap.segment .segmentItem.active{border-color:var(--yellowCbg);}
+.yellowC .junior .tabWrap.segment .segmentItem.active,
+.yellowC .junior .sendMoneyCheck .dataWrap,
+.yellowC .junior .checkHangul{color:#323232;}
+.yellowC .junior .accDataWrap .accNumInfo,
+.yellowC .junior .accDataWrap .accCash,
+.yellowC .junior .accDataWrap .accUnit,
+.yellowC .junior .accName>*,
+.yellowC .junior .accInfo .accNumber,
+.yellowC .junior .btnArea button.sel{color:#111 !important;}
+
+.primaryC .junior .pColor{color:var(--primaryC) !important;}
+.primaryC .junior .listTblBox strong.dataWrap *,
+.primaryC .junior .sendMoneyCheck,
+.primaryC .junior .pgTitWrap .pTit strong,
+.primaryC .junior .toSendMonyWrap .priceMessage,
+.primaryC .junior .sendInfoWrap strong.dataWrap,
+.primaryC .junior .pgTitWrap .pTit strong{color:var(--primaryC);}
+.primaryC .junior .btnArea button.sel,
+.primaryC .junior .sendMoneyCheck,
+.primaryC .junior .roundBox .roundInBox,
+.primaryC .junior .tabWrap.segment .segmentItem.active{background-color:var(--primaryC);}
+.primaryC .junior .tabWrap.segment .segmentItem.active{border-color:var(--primaryC);}
+
+.pinkC .junior .pColor{color:var(--pinkC) !important;}
+.pinkC .junior .listTblBox strong.dataWrap *,
+.pinkC .junior .sendMoneyCheck,
+.pinkC .junior .pgTitWrap .pTit strong,
+.pinkC .junior .toSendMonyWrap .priceMessage,
+.pinkC .junior .sendInfoWrap strong.dataWrap,
+.pinkC .junior .pgTitWrap .pTit strong{color:var(--pinkC);}
+.pinkC .junior .btnArea button.sel,
+.pinkC .junior .sendMoneyCheck,
+.pinkC .junior .roundBox .roundInBox,
+.pinkC .junior .tabWrap.segment .segmentItem.active{background-color:var(--pinkCbg);}
+.pinkC .junior .tabWrap.segment .segmentItem.active{border-color:var(--pinkCbg);}
+.pinkC .junior .tabWrap.segment .segmentItem.active,
+.pinkC .junior .sendMoneyCheck .dataWrap,
+.pinkC .junior .checkHangul{color:#323232;}
+.pinkC .junior .accDataWrap .accNumInfo,
+.pinkC .junior .accDataWrap .accCash,
+.pinkC .junior .accDataWrap .accUnit,
+.pinkC .junior .accName>*,
+.pinkC .junior .accInfo .accNumber,
+.pinkC .junior .btnArea button.sel{color:#111}
+
+.lightpurpleC .junior .pColor{color:var(--lightpurpleC) !important;}
+.lightpurpleC .junior .listTblBox strong.dataWrap *,
+.lightpurpleC .junior .sendMoneyCheck,
+.lightpurpleC .junior .pgTitWrap .pTit strong,
+.lightpurpleC .junior .toSendMonyWrap .priceMessage,
+.lightpurpleC .junior .sendInfoWrap strong.dataWrap,
+.lightpurpleC .junior .pgTitWrap .pTit strong{color:var(--lightpurpleC);}
+.lightpurpleC .junior .btnArea button.sel,
+.lightpurpleC .junior .sendMoneyCheck,
+.lightpurpleC .junior .roundBox .roundInBox,
+.lightpurpleC .junior .tabWrap.segment .segmentItem.active{background-color:var(--lightpurpleC);}
+.lightpurpleC .junior .tabWrap.segment .segmentItem.active{border-color:var(--lightpurpleC);}
+
+.lightblueC .junior .pColor{color:var(--lightblueC) !important;}
+.lightblueC .junior .listTblBox strong.dataWrap *,
+.lightblueC .junior .sendMoneyCheck,
+.lightblueC .junior .pgTitWrap .pTit strong,
+.lightblueC .junior .toSendMonyWrap .priceMessage,
+.lightblueC .junior .sendInfoWrap strong.dataWrap,
+.lightblueC .junior .pgTitWrap .pTit strong{color:var(--lightblueC);}
+.lightblueC .junior .btnArea button.sel,
+.lightblueC .junior .sendMoneyCheck,
+.lightblueC .junior .roundBox .roundInBox,
+.lightblueC .junior .tabWrap.segment .segmentItem.active{background-color:var(--lightblueC);}
+.lightblueC .junior .tabWrap.segment .segmentItem.active{border-color:var(--lightblueC);}
+
+.skyC .junior .pColor{color:var(--skyC) !important;}
+.skyC .junior .listTblBox strong.dataWrap *,
+.skyC .junior .sendMoneyCheck,
+.skyC .junior .pgTitWrap .pTit strong,
+.skyC .junior .toSendMonyWrap .priceMessage,
+.skyC .junior .sendInfoWrap strong.dataWrap,
+.skyC .junior .pgTitWrap .pTit strong{color:var(--skyC);}
+.skyC .junior .btnArea button.sel,
+.skyC .junior .sendMoneyCheck,
+.skyC .junior .roundBox .roundInBox,
+.skyC .junior .tabWrap.segment .segmentItem.active{background-color:var(--skyCbg);}
+.skyC .junior .tabWrap.segment .segmentItem.active{border-color:var(--skyCbg);}
+.skyC .junior .tabWrap.segment .segmentItem.active,
+.skyC .junior .sendMoneyCheck .dataWrap,
+.skyC .junior .checkHangul{color:#323232;}
+.skyC .junior .accDataWrap .accNumInfo,
+.skyC .junior .accDataWrap .accCash,
+.skyC .junior .accDataWrap .accUnit,
+.skyC .junior .accName>*,
+.skyC .junior .accInfo .accNumber,
+.skyC .junior .btnArea button.sel{color:#111 !important;}
+
+.blueC .junior .pColor{color:var(--blueC) !important;}
+.blueC .junior .listTblBox strong.dataWrap *,
+.blueC .junior .sendMoneyCheck,
+.blueC .junior .pgTitWrap .pTit strong,
+.blueC .junior .toSendMonyWrap .priceMessage,
+.blueC .junior .sendInfoWrap strong.dataWrap,
+.blueC .junior .pgTitWrap .pTit strong{color:var(--blueC);}
+.blueC .junior .btnArea button.sel,
+.blueC .junior .sendMoneyCheck,
+.blueC .junior .roundBox .roundInBox,
+.blueC .junior .tabWrap.segment .segmentItem.active{background-color:var(--blueC);}
+.blueC .junior .tabWrap.segment .segmentItem.active{border-color:var(--blueC);}
+
+.grayC .junior .pColor{color:var(--grayC) !important;}
+.grayC .junior .listTblBox strong.dataWrap *,
+.grayC .junior .sendMoneyCheck,
+.grayC .junior .pgTitWrap .pTit strong,
+.grayC .junior .toSendMonyWrap .priceMessage,
+.grayC .junior .sendInfoWrap strong.dataWrap,
+.grayC .junior .pgTitWrap .pTit strong{color:var(--grayC);}
+.grayC .junior .btnArea button.sel,
+.grayC .junior .sendMoneyCheck,
+.grayC .junior .roundBox .roundInBox,
+.grayC .junior .tabWrap.segment .segmentItem.active{background-color:var(--grayC);}
+.grayC .junior .tabWrap.segment .segmentItem.active{border-color:var(--grayC);}
+
+.lightgrayC .junior .pColor{color:var(--lightgrayC) !important;}
+.lightgrayC .junior .listTblBox strong.dataWrap *,
+.lightgrayC .junior .sendMoneyCheck,
+.lightgrayC .junior .pgTitWrap .pTit strong,
+.lightgrayC .junior .toSendMonyWrap .priceMessage,
+.lightgrayC .junior .sendInfoWrap strong.dataWrap,
+.lightgrayC .junior .pgTitWrap .pTit strong{color:var(--lightgrayC);}
+.lightgrayC .junior .btnArea button.sel,
+.lightgrayC .junior .sendMoneyCheck,
+.lightgrayC .junior .roundBox .roundInBox,
+.lightgrayC .junior .tabWrap.segment .segmentItem.active{background-color:var(--lightgrayC);}
+.lightgrayC .junior .tabWrap.segment .segmentItem.active{border-color:var(--lightgrayC);}
+
+.lightskyC .junior .pColor{color:var(--lightskyC) !important;}
+.lightskyC .junior .listTblBox strong.dataWrap *,
+.lightskyC .junior .sendMoneyCheck,
+.lightskyC .junior .pgTitWrap .pTit strong,
+.lightskyC .junior .toSendMonyWrap .priceMessage,
+.lightskyC .junior .sendInfoWrap strong.dataWrap,
+.lightskyC .junior .pgTitWrap .pTit strong{color:var(--lightskyC);}
+.lightskyC .junior .btnArea button.sel,
+.lightskyC .junior .sendMoneyCheck,
+.lightskyC .junior .roundBox .roundInBox,
+.lightskyC .junior .tabWrap.segment .segmentItem.active{background-color:var(--lightskyCbg);}
+.lightskyC .junior .tabWrap.segment .segmentItem.active{border-color:var(--lightskyCbg);}
+.lightskyC .junior .tabWrap.segment .segmentItem.active,
+.lightskyC .junior .sendMoneyCheck .dataWrap,
+.lightskyC .junior .checkHangul{color:#323232;}
+.lightskyC .junior .accDataWrap .accNumInfo,
+.lightskyC .junior .accDataWrap .accCash,
+.lightskyC .junior .accDataWrap .accUnit,
+.lightskyC .junior .accName>*,
+.lightskyC .junior .accInfo .accNumber,
+.lightskyC .junior .btnArea button.sel{color:#111 !important}
+
+.completeWrap i.check,
+.popupWrap .confirmMsg i.check{display:none;}
+
+
+/*내맘콕모드 버튼컬러*//*button외*/
+.purpleC .btnArea button.sel{background-color:var(--purpleC);}
+.purpleC .btnInArea button.point,
+.purpleC .btnArea.half button:first-child {border-color:var(--purpleC);color:var(--purpleC);}
+.purpleC div.infoTxt .pColor,
+.purpleC p.infoTxt .pColor,
+.purpleC .dataWrap,
+.purpleC .pColor{color:var(--purpleC) !important;}
+.purpleC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.purpleC .listIn_flex .txt.pColor .dataWrap{color:var(--purpleC) !important;}
+.purpleC .remainder .dataWrap{color:var(--black) !important}
+.purpleC .rdoBtn input:checked+label:after{border:2px solid var(--purpleC);}
+.purpleC .rdoBtn input:checked+label{color:var(--purpleC);}
+/* .purpleC .inpText.focus{border-color:var(--purpleC);} input 포커스라인 삭제 */
+.purpleC .listWrap.textType a.jsSelectLink::after,
+.purpleC .accSelectType::after{background:url(../images/com/popup_list_check_purpleC.png) 0 0/48px 24px no-repeat;}
+.purpleC .simplePay ul li a.active:after{border:2px solid var(--purpleC);}
+.purpleC .toggleSwitch input[type='checkbox']:checked+label{background-color:var(--purpleC);}
+.purpleC .accDataWrap, .purpleC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--purpleC)}
+.purpleC div.infoTxt.pColor::before, .purpleC p.infoTxt.pColor::before{background-color:var(--purpleC)}
+.purpleC .junior .sendMoneyCheck .dataWrap{color:#fff !important}
+.purpleC .colorCase{color:var(--purpleC) !important;}
+.purpleC .toastMessage{border-color:var(--purpleC);color:var(--purpleC);}
+.purpleC .toastMessage:after{background:url(../images/com/junior/foot_tip_purpleC.png) no-repeat 0 0 /cover;}
+
+.greenC .btnArea button.sel{background-color:var(--greenC);}
+.greenC .btnInArea button.point,
+.greenC .btnArea.half button:first-child {border-color:var(--greenC);color:var(--greenC);}
+.greenC div.infoTxt .pColor,
+.greenC p.infoTxt .pColor,
+.greenC .dataWrap,
+.greenC .pColor{color:var(--greenC) !important;}
+.greenC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.greenC .listIn_flex .txt.pColor .dataWrap{color:var(--greenC) !important;}
+.greenC .remainder .dataWrap{color:var(--black) !important}
+.greenC .rdoBtn input:checked+label:after{border:2px solid var(--greenC);}
+.greenC .rdoBtn input:checked+label{color:var(--greenC);}
+/* .greenC .inpText.focus{border-color:var(--greenC);} input 포커스라인 삭제  */
+.greenC .listWrap.textType a.jsSelectLink::after,
+.greenC .accSelectType::after{background:url(../images/com/popup_list_check_greenC.png) 0 0/48px 24px no-repeat;}
+.greenC .simplePay ul li a.active:after{border:2px solid var(--greenC);}
+.greenC .toggleSwitch input[type='checkbox']:checked+label{background-color:var(--greenC);}
+.greenC .accDataWrap, .greenC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--greenC)}
+.greenC div.infoTxt.pColor::before, .greenC p.infoTxt.pColor::before{background-color:var(--greenC)}
+.greenC .junior .sendMoneyCheck .dataWrap{color:#fff !important}
+.greenC .colorCase{color:var(--greenC) !important;}
+.greenC .toastMessage{border-color:var(--greenC);color:var(--greenC);}
+.greenC .toastMessage:after{background:url(../images/com/junior/foot_tip_greenC.png) no-repeat 0 0 /cover;}
+
+.primaryC .btnArea button.sel{background-color:var(--primaryC);}
+.primaryC .btnInArea button.point,
+.primaryC .btnArea.half button:first-child {border-color:var(--primaryC);color:var(--primaryC);}
+.primaryC div.infoTxt .pColor,
+.primaryC p.infoTxt .pColor,
+.primaryC .dataWrap,
+.primaryC .pColor{color:var(--primaryC) !important;}
+.primaryC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.primaryC .listIn_flex .txt.pColor .dataWrap{color:var(--primaryC) !important;}
+.primaryC .remainder .dataWrap{color:var(--black) !important}
+.primaryC .rdoBtn input:checked+label:after{border:2px solid var(--primaryC);}
+.primaryC .rdoBtn input:checked+label{color:var(--primaryC);}
+/* .primaryC .inpText.focus{border-color:var(--primaryC);} input 포커스라인 삭제  */
+.primaryC .listWrap.textType a.jsSelectLink::after,
+.primaryC .accSelectType::after{background:url(../images/com/popup_list_check_primaryC.png) 0 0/48px 24px no-repeat;}
+.primaryC .simplePay ul li a.active:after{border:2px solid var(--primaryC);}
+.primaryC .toggleSwitch input[type='checkbox']:checked+label{background-color:var(--primaryC);}
+.primaryC .accDataWrap, .primaryC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--primaryC)}
+.primaryC div.infoTxt.pColor::before, .primaryC p.infoTxt.pColor::before{background-color:var(--primaryC)}
+.primaryC .junior .sendMoneyCheck .dataWrap{color:#fff !important}
+.primaryC .colorCase{color:var(--primaryC) !important;}
+.primaryC .toastMessage{border-color:var(--primaryC);color:var(--primaryC);}
+.primaryC .toastMessage:after{background:url(../images/com/junior/foot_tip_primaryC.png) no-repeat 0 0 /cover;}
+
+.lightpurpleC .btnArea button.sel{background-color:var(--lightpurpleC);}
+.lightpurpleC .btnInArea button.point,
+.lightpurpleC .btnArea.half button:first-child {border-color:var(--lightpurpleC);color:var(--lightpurpleC);}
+.lightpurpleC div.infoTxt .pColor,
+.lightpurpleC p.infoTxt .pColor,
+.lightpurpleC .dataWrap,
+.lightpurpleC .pColor{color:var(--lightpurpleC) !important;}
+.lightpurpleC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.lightpurpleC .listIn_flex .txt.pColor .dataWrap{color:var(--lightpurpleC) !important;}
+.lightpurpleC .remainder .dataWrap{color:var(--black) !important}
+.lightpurpleC .rdoBtn input:checked+label:after{border:2px solid var(--lightpurpleC);}
+.lightpurpleC .rdoBtn input:checked+label{color:var(--lightpurpleC);}
+/* .lightpurpleC .inpText.focus{border-color:var(--lightpurpleC);} input 포커스라인 삭제  */
+.lightpurpleC .listWrap.textType a.jsSelectLink::after,
+.lightpurpleC .accSelectType::after{background:url(../images/com/popup_list_check_lightpurpleC.png) 0 0/48px 24px no-repeat;}
+.lightpurpleC .simplePay ul li a.active:after{border:2px solid var(--lightpurpleC);}
+.lightpurpleC .toggleSwitch input[type='checkbox']:checked+label{background-color:var(--lightpurpleC);}
+.lightpurpleC .accDataWrap, .lightpurpleC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--lightpurpleC)}
+.lightpurpleC div.infoTxt.pColor::before, .lightpurpleC p.infoTxt.pColor::before{background-color:var(--lightpurpleC)}
+.lightpurpleC .junior .sendMoneyCheck .dataWrap{color:#fff !important}
+.lightpurpleC .colorCase{color:var(--lightpurpleC) !important;}
+.lightpurpleC .toastMessage{border-color:var(--lightpurpleC);color:var(--lightpurpleC);}
+.lightpurpleC .toastMessage:after{background:url(../images/com/junior/foot_tip_lightpurpleC.png) no-repeat 0 0 /cover;}
+
+.lightblueC .btnArea button.sel{background-color:var(--lightblueC);}
+.lightblueC .btnInArea button.point,
+.lightblueC .btnArea.half button:first-child {border-color:var(--lightpurpleC);color:var(--lightblueC);}
+.lightblueC div.infoTxt .pColor,
+.lightblueC p.infoTxt .pColor,
+.lightblueC .dataWrap,
+.lightblueC .pColor{color:var(--lightblueC) !important;}
+.lightblueC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.lightblueC .listIn_flex .txt.pColor .dataWrap{color:var(--lightblueC) !important;}
+.lightblueC .remainder .dataWrap{color:var(--black) !important}
+.lightblueC .rdoBtn input:checked+label:after{border:2px solid var(--lightblueC);}
+.lightblueC .rdoBtn input:checked+label{color:var(--lightblueC);}
+/* .lightblueC .inpText.focus{border-color:var(--lightpurpleC);} input 포커스라인 삭제  */
+.lightblueC .listWrap.textType a.jsSelectLink::after,
+.lightblueC .accSelectType::after{background:url(../images/com/popup_list_check_lightblueC.png) 0 0/48px 24px no-repeat;}
+.lightblueC .simplePay ul li a.active:after{border:2px solid var(--lightblueC);}
+.lightblueC .toggleSwitch input[type='checkbox']:checked+label{background-color:var(--lightblueC);}
+.lightblueC .accDataWrap, .lightpurpleC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--lightblueC)}
+.lightblueC div.infoTxt.pColor::before, .lightpurpleC p.infoTxt.pColor::before{background-color:var(--lightblueC)}
+.lightblueC .junior .sendMoneyCheck .dataWrap{color:#fff !important}
+.lightblueC .colorCase{color:var(--lightblueC) !important;}
+.lightblueC .toastMessage{border-color:var(--lightblueC);color:var(--lightblueC);}
+.lightblueC .toastMessage:after{background:url(../images/com/junior/foot_tip_lightblueC.png) no-repeat 0 0 /cover;}
+
+.blueC .btnArea button.sel{background-color:var(--blueC);}
+.blueC .btnInArea button.point,
+.blueC .btnArea.half button:first-child {border-color:var(--blueC);color:var(--blueC);}
+.blueC div.infoTxt .pColor,
+.blueC p.infoTxt .pColor,
+.blueC .dataWrap,
+.blueC .pColor{color:var(--blueC) !important;}
+.blueC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.blueC .listIn_flex .txt.pColor .dataWrap{color:var(--blueC) !important;}
+.blueC .remainder .dataWrap{color:var(--black) !important}
+.blueC .rdoBtn input:checked+label:after{border:2px solid var(--blueC);}
+.blueC .rdoBtn input:checked+label{color:var(--blueC);}
+/* .blueC .inpText.focus{border-color:var(--blueC);} input 포커스라인 삭제  */
+.blueC .listWrap.textType a.jsSelectLink::after,
+.blueC .accSelectType::after{background:url(../images/com/popup_list_check_blueC.png) 0 0/48px 24px no-repeat;}
+.blueC .simplePay ul li a.active:after{border:2px solid var(--blueC);}
+.blueC .toggleSwitch input[type='checkbox']:checked+label{background-color:var(--blueC);}
+.blueC .accDataWrap, .blueC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--blueC)}
+.blueC div.infoTxt.pColor::before, .blueC p.infoTxt.pColor::before{background-color:var(--blueC)}
+.blueC .junior .sendMoneyCheck .dataWrap{color:#fff !important}
+.blueC .colorCase{color:var(--blueC) !important;}
+.blueC .toastMessage{border-color:var(--blueC);color:var(--blueC);}
+.blueC .toastMessage:after{background:url(../images/com/junior/foot_tip_blueC.png) no-repeat 0 0 /cover;}
+
+.grayC .btnArea button.sel{background-color:var(--grayC);}
+.grayC .btnInArea button.point,
+.grayC .btnArea.half button:first-child {border-color:var(--grayC);color:var(--grayC);}
+.grayC div.infoTxt .pColor,
+.grayC p.infoTxt .pColor,
+.grayC .dataWrap,
+.grayC .pColor{color:var(--grayC) !important;}
+.grayC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.grayC .listIn_flex .txt.pColor .dataWrap{color:var(--grayC) !important;}
+.grayC .remainder .dataWrap{color:var(--black) !important}
+.grayC .rdoBtn input:checked+label:after{border:2px solid var(--grayC);}
+.grayC .rdoBtn input:checked+label{color:var(--grayC);}
+/* .grayC .inpText.focus{border-color:var(--grayC);} input 포커스라인 삭제  */
+.grayC .listWrap.textType a.jsSelectLink::after,
+.grayC .accSelectType::after{background:url(../images/com/popup_list_check_grayC.png) 0 0/48px 24px no-repeat;}
+.grayC .simplePay ul li a.active:after{border:2px solid var(--grayC);}
+.grayC .toggleSwitch input[type='checkbox']:checked+label{background-color:var(--grayC);}
+.grayC .accDataWrap, .grayC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--grayC)}
+.grayC div.infoTxt.pColor::before, .grayC p.infoTxt.pColor::before{background-color:var(--grayC)}
+.grayC .junior .sendMoneyCheck .dataWrap{color:#fff !important}
+.grayC .colorCase{color:var(--grayC) !important;}
+.grayC .toastMessage{border-color:var(--grayC);color:var(--grayC);}
+.grayC .toastMessage:after{background:url(../images/com/junior/foot_tip_grayC.png) no-repeat 0 0 /cover;}
+
+.lightgrayC .btnArea button.sel{background-color:var(--lightgrayC);}
+.lightgrayC .btnInArea button.point,
+.lightgrayC .btnArea.half button:first-child {border-color:var(--lightgrayC);color:var(--lightgrayC);}
+.lightgrayC div.infoTxt .pColor,
+.lightgrayC p.infoTxt .pColor,
+.lightgrayC .dataWrap,
+.lightgrayC .pColor{color:var(--lightgrayC) !important;}
+.lightgrayC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.lightgrayC .listIn_flex .txt.pColor .dataWrap{color:var(--lightgrayC) !important;}
+.lightgrayC .remainder .dataWrap{color:var(--black) !important}
+.lightgrayC .rdoBtn input:checked+label:after{border:2px solid var(--lightgrayC);}
+.lightgrayC .rdoBtn input:checked+label{color:var(--lightgrayC);}
+/* .lightgrayC .inpText.focus{border-color:var(--lightgrayC);} input 포커스라인 삭제  */
+.lightgrayC .listWrap.textType a.jsSelectLink::after,
+.lightgrayC .accSelectType::after{background:url(../images/com/popup_list_check_lightgrayC.png) 0 0/48px 24px no-repeat;}
+.lightgrayC .simplePay ul li a.active:after{border:2px solid var(--lightgrayC);}
+.lightgrayC .toggleSwitch input[type='checkbox']:checked+label{background-color:var(--lightgrayC);}
+.lightgrayC .accDataWrap, .lightgrayC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--lightgrayC)}
+.lightgrayC div.infoTxt.pColor::before, .lightgrayC p.infoTxt.pColor::before{background-color:var(--lightgrayC)}
+.lightgrayC .junior .sendMoneyCheck .dataWrap{color:#fff !important}
+.lightgrayC .colorCase{color:var(--lightgrayC) !important;}
+.lightgrayC .toastMessage{border-color:var(--lightgrayC);color:var(--lightgrayC);}
+.lightgrayC .toastMessage:after{background:url(../images/com/junior/foot_tip_lightgrayC.png) no-repeat 0 0 /cover;}
+
+.yellowC .btnArea button.sel{background-color:var(--yellowCbg);color:#111 !important;}
+.yellowC div.infoTxt .pColor,
+.yellowC p.infoTxt .pColor,
+.yellowC .dataWrap,
+.yellowC .pColor{color:var(--yellowC) !important;}
+.yellowC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.yellowC .listIn_flex .txt.pColor .dataWrap{color:var(--yellowC) !important;}
+.yellowC .remainder .dataWrap{color:var(--black) !important}
+.yellowC .remainder .dataWrap{color:var(--black) !important}
+.yellowC .rdoBtn input:checked+label:after{border:2px solid var(--yellowCbg);}
+.yellowC .rdoBtn input:checked+label{color:var(--yellowC);}
+/* .yellowC .inpText.focus{border-color:var(--yellowCbg);} input 포커스라인 삭제  */
+.yellowC .listWrap.textType a.jsSelectLink::after,
+.yellowC .accSelectType::after{background:url(../images/com/popup_list_check_yellowC.png) 0 0/48px 24px no-repeat;}
+.yellowC .simplePay ul li a.active:after{border:2px solid var(--yellowCbg);}
+.yellowC .toggleSwitch input[type='checkbox']:checked+label{background-color:var(--yellowCbg);}
+.yellowC .accDataWrap, .yellowC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--yellowC)}
+.yellowC div.infoTxt.pColor::before, .yellowC p.infoTxt.pColor::before{background-color:var(--yellowC)}
+.yellowC .junior .sendMoneyCheck .dataWrap{color:var(--black) !important}
+.yellowC .junior .accAlwaysType .accInLayout::after{background-image:url(../images/com/junior/arrow_bottom_main_revers.png);}
+.yellowC .colorCase{color:var(--yellowC) !important;}
+.yellowC .toastMessage{border-color:var(--yellowC);color:var(--yellowC);}
+.yellowC .toastMessage:after{background:url(../images/com/junior/foot_tip_yellowC.png) no-repeat 0 0 /cover;}
+
+.pinkC .btnArea button.sel{background-color:var(--pinkCbg);color:#111 !important;}
+.pinkC div.infoTxt .pColor,
+.pinkC p.infoTxt .pColor,
+.pinkC .dataWrap,
+.pinkC .pColor{color:var(--pinkC) !important;}
+.pinkC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.pinkC .listIn_flex .txt.pColor .dataWrap{color:var(--pinkC) !important;}
+.pinkC .remainder .dataWrap{color:var(--black) !important}
+.pinkC .rdoBtn input:checked+label:after{border:2px solid var(--pinkCbg);}
+.pinkC .rdoBtn input:checked+label{color:var(--pinkC);}
+/* .pinkC .inpText.focus{border-color:var(--pinkCbg);} input 포커스라인 삭제  */
+.pinkC .listWrap.textType a.jsSelectLink::after,
+.pinkC .accSelectType::after{background:url(../images/com/popup_list_check_pinkC.png) 0 0/48px 24px no-repeat;}
+.pinkC .simplePay ul li a.active:after{border:2px solid var(--pinkCbg);}
+.pinkC .toggleSwitch input[type='checkbox']:checked+label{background-color:var(--pinkCbg);}
+.pinkC .accDataWrap, .pinkC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--pinkC)}
+.pinkC div.infoTxt.pColor::before, .pinkC p.infoTxt.pColor::before{background-color:var(--pinkC)}
+.pinkC .junior .sendMoneyCheck .dataWrap{color:var(--black) !important}
+.pinkC .junior .accAlwaysType .accInLayout::after{background-image:url(../images/com/junior/arrow_bottom_main_revers.png);}
+.pinkC .colorCase{color:var(--pinkC) !important;}
+.pinkC .toastMessage{border-color:var(--pinkC);color:var(--pinkC);}
+.pinkC .toastMessage:after{background:url(../images/com/junior/foot_tip_pinkC.png) no-repeat 0 0 /cover;}
+
+.skyC .btnArea button.sel{background-color:var(--skyCbg);color:#111 !important;}
+.skyC div.infoTxt .pColor,
+.skyC p.infoTxt .pColor,
+.skyC .dataWrap,
+.skyC .pColor{color:var(--skyC) !important;}
+.skyC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.skyC .listIn_flex .txt.pColor .dataWrap{color:var(--skyC) !important;}
+.skyC .remainder .dataWrap{color:var(--black) !important}
+.skyC .rdoBtn input:checked+label:after{border:2px solid var(--skyCbg);}
+.skyC .rdoBtn input:checked+label{color:var(--skyC);}
+/* .skyC .inpText.focus{border-color:var(--skyCbg);} input 포커스라인 삭제  */
+.skyC .listWrap.textType a.jsSelectLink::after,
+.skyC .accSelectType::after{background:url(../images/com/popup_list_check_skyC.png) 0 0/48px 24px no-repeat;}
+.skyC .simplePay ul li a.active:after{border:2px solid var(--skyCbg);}
+.skyC .toggleSwitch input[type='checkbox']:checked+label{background-color:none;}
+.skyC .accDataWrap, .skyC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--skyC)}
+.skyC div.infoTxt.pColor::before, .skyC p.infoTxt.pColor::before{background-color:var(--skyC)}
+.skyC .junior .sendMoneyCheck .dataWrap{color:var(--black) !important}
+.skyC .junior .accAlwaysType .accInLayout::after{background-image:url(../images/com/junior/arrow_bottom_main_revers.png);}
+.skyC .colorCase{color:var(--skyC) !important;}
+.skyC .toastMessage{border-color:var(--skyC);color:var(--skyC);}
+.skyC .toastMessage:after{background:url(../images/com/junior/foot_tip_skyC.png) no-repeat 0 0 /cover;}
+
+.lightskyC .btnArea button.sel{background-color:var(--lightskyCbg);color:#111 !important;}
+.lightskyC div.infoTxt .pColor,
+.lightskyC p.infoTxt .pColor,
+.lightskyC .dataWrap,
+.lightskyC .pColor{color:var(--lightskyC) !important;}
+.lightskyC .listIn_flex .txt .dataWrap{color:var(--body) !important;}
+.lightskyC .listIn_flex .txt.pColor .dataWrap{color:var(--lightskyC) !important;}
+.lightskyC .remainder .dataWrap{color:var(--black) !important}
+.lightskyC .rdoBtn input:checked+label:after{border:2px solid var(--lightskyCbg);}
+.lightskyC .rdoBtn input:checked+label{color:var(--lightskyC);}
+/* .lightskyC .inpText.focus{border-color:var(--lightskyCbg);} input 포커스라인 삭제  */
+.lightskyC .listWrap.textType a.jsSelectLink::after,
+.lightskyC .accSelectType::after{background:url(../images/com/popup_list_check_lightskyC.png) 0 0/48px 24px no-repeat;}
+.lightskyC .simplePay ul li a.active:after{border:2px solid var(--lightskyCbg);}
+.lightskyC .toggleSwitch input[type='checkbox']:checked+label{background-color:var(--lightskyCbg);}
+.lightskyC .accDataWrap, .lightskyC .accTypeWrap .accDataWrap .accPossible .underLine{color:var(--lightskyC)}
+.lightskyC div.infoTxt.pColor::before, .lightskyC p.infoTxt.pColor::before{background-color:var(--lightskyC)}
+.lightskyC .junior .sendMoneyCheck .dataWrap{color:var(--black) !important}
+.lightskyC .junior .accAlwaysType .accInLayout::after{background-image:url(../images/com/junior/arrow_bottom_main_revers.png);}
+.lightskyC .colorCase{color:var(--lightskyC) !important;}
+.lightskyC .toastMessage{border-color:var(--lightskyC);color:var(--lightskyC);}
+.lightskyC .toastMessage:after{background:url(../images/com/junior/foot_tip_lightskyC.png) no-repeat 0 0 /cover;}
+
+.purpleC .listWrap.textType a.active::after,
+.purpleC .accSelectType.active::after,
+.lightpurpleC .listWrap.textType a.active::after,
+.lightpurpleC .accSelectType.active::after,
+.greenC .listWrap.textType a.active::after,
+.greenC .accSelectType.active::after,
+.primaryC .listWrap.textType a.active::after,
+.primaryC .accSelectType.active::after,
+.lightblueC .listWrap.textType a.active::after,
+.lightblueC .accSelectType.active::after,
+.blueC .listWrap.textType a.active::after,
+.blueC .accSelectType.active::after,
+.grayC .listWrap.textType a.active::after,
+.grayC .accSelectType.active::after,
+.lightgrayC .listWrap.textType a.active::after,
+.lightgrayC .accSelectType.active::after,
+.yellowC .listWrap.textType a.active::after,
+.yellowC .accSelectType.active::after,
+.pinkC .listWrap.textType a.active::after,
+.pinkC .accSelectType.active::after,
+.skyC .listWrap.textType a.active::after,
+.skyC .accSelectType.active::after,
+.lightskyC .listWrap.textType a.active::after,
+.lightskyC .accSelectType.active::after {background-position-x:-24px;}
+
+.dataWrap.txtRed{color:var(--warning) !important;}
+
+/* [2023-02-14] 콕뱅크 송금 수수료 면제 정책 적용 : 김연진 */
+.junior .smallTip{background-color:var(--purpleC);line-height:1.6}
+.junior .smallTip:after{border-bottom:6px solid var(--purpleC)}
+
+/*항상 마지막에*/
+.junior .tag.sbColor{color:var(--primary-blue) !important;}
+.junior .fBig.sbColor{color:var(--primary-blue) !important;}
+.inqueryList li .dataWrap{color:var(--black) !important;}
+.topRoundBox .rdoBtn input:checked+label{color:var(--white);}
+.toastPopWrap .toastMessage{color:var(--white) !important;}
+
+/* [2023-04-27] 요구불계좌거래메모편집기능 */
+.junior .dataWrap.txtRed{color:var(--black) !important;}
+.junior,
+.purpleC .junior,
+.purpleC .junior ~ #popupArea{
+	--neamomC : var(--purpleC);
+}
+.lightpurpleC .junior,
+.lightpurpleC .junior ~ #popupArea{
+	--neamomC : var(--lightpurpleC);
+}
+.greenC .junior,
+.greenC .junior ~ #popupArea{
+	--neamomC : var(--greenC);
+}
+.primaryC .junior,
+.primaryC .junior ~ #popupArea{
+	--neamomC : var(--primaryC);
+}
+.lightblueC .junior,
+.lightblueC .junior ~ #popupArea{
+	--neamomC : var(--lightblueC);
+}
+.blueC .junior,
+.blueC .junior ~ #popupArea{
+	--neamomC : var(--blueC);
+}
+.grayC .junior,
+.grayC .junior ~ #popupArea{
+	--neamomC : var(--grayC);
+}
+.lightgrayC .junior,
+.lightgrayC .junior ~ #popupArea{
+	--neamomC : var(--lightgrayC);
+}
+.yellowC .junior,
+.yellowC .junior ~ #popupArea{
+	--neamomC : var(--yellowC);
+}
+.pinkC .junior,
+.pinkC .junior ~ #popupArea{
+	--neamomC : var(--pinkC);
+}
+.skyC .junior,
+.skyC .junior ~ #popupArea{
+	--neamomC : var(--skyC);
+}
+.lightskyC .junior,
+.lightskyC .junior ~ #popupArea{
+	--neamomC : var(--lightskyC);
+}
+.junior .inpText.focus,
+.junior ~ #popupArea .inpText.focus{border-color:var(--neamomC);}
+.junior .inqueryList .dataWrap.pColor{color:var(--neamomC) !important;}
+
+/* [2023-04-12] 금감원 착오송금 */
+.junior ~ #popupArea .rounBgBox.attachBox .dataWrap,
+.junior ~ #popupArea .rounBgBox strong.dataWrap *,
+.junior ~ #popupArea .rounBgBox .pColor{color:var(--neamomC) !important;}

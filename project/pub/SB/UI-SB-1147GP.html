@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1147GP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupB);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕! BASIC 적금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupB)">UI-SB-1147GP</a>
+		</div>  <!-- //#contents -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+
+	<!-- SLIDE POPUP -->
+	<div id="popupB" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">생신</h2>
+					</div>
+
+					<div class="layerSelectContent">
+						<!-- swiper -->
+						<div class="sendMessage">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<!-- ▼ 2022-07-15 [개발] 경로는 개발 편의대로 적용 / 카드 이미지 경로 수정 -->
+											<img src="../../images/card/img_msgCard_birth_txt04.jpg" alt>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<img src="../../images/card/img_msgCard_birth_txt03.jpg" alt>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<img src="../../images/card/img_msgCard_birth_txt02.jpg" alt>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<img src="../../images/card/img_msgCard_birth_txt01.jpg" alt>
+										</div>
+									</div>
+								</div>
+								<div class="swiperNavigation">
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<script>
+							$(document).ready(function(){
+								function sendMessage() {
+									$('.sendMessage').each(function (idx) {
+										var $this = $(this);
+										$this.addClass('type' + idx);
+
+										//슬라이드 초기화
+										if (termsSwiper != undefined){
+											termsSwiper.destroy();
+											termsSwiper = undefined;
+										}
+
+										var termsSwiper = new Swiper(".type" + idx + " .swiper-container", {
+											centeredSlides: true,
+											observer: true,
+											observeParents: true,
+											//observeSlideChildren: true,
+											pagination: {
+												el: $(".type" + idx).find(".swiper-pagination"),
+												clickable: true,
+												bulletElement: "a",
+											},
+											// autoplay: {
+											// 	deley: 3000,
+											// 	disableOnInteraction: true,
+											// },
+											navigation: {
+												nextEl: $(".type" + idx).find(".swiper-button-next"),
+												prevEl: $(".type" + idx).find(".swiper-button-prev"),
+											},
+											on: {
+												init: function () {
+													$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+													$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active").attr("aria-hidden", false).attr("tabindex", 0);
+												},
+												slideChangeTransitionEnd: function () {
+													$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+													$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active")	.attr("aria-hidden", false)	.attr("tabindex", 0);
+													$(".type" + idx + " .swiper-pagination").find('a').attr('title', '');
+													$(".type" + idx + " .swiper-pagination").find('a').eq(this.activeIndex).attr('title','선택됨');
+												},
+											},
+										});
+									})
+								}
+
+								sendMessage();
+							})
+						</script>
+						<!-- //swiper -->
+
+						<div class="formWrap">
+							<!-- ▼ 2022-07-15 메시지카드 영역 마크업 수정 -->
+							<div class="formItem">
+								<div class="textAreaWrap">
+									<textarea title="제안내용 입력" style="height:50px;" placeholder="전하는 메시지를 입력해보세요(선택)" cols="20" rows="10"></textarea>
+								</div>
+								<div class="wordCnt ar">
+									<span class="now">0</span>/<span class="tot">30</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel">카카오톡 보내기</button>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

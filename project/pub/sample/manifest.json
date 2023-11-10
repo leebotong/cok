@@ -1,0 +1,9 @@
+{
+	"short_name": "쿡 리뉴얼 샘플",
+	"name": "COOK",
+	"start_url": "./popup2.html",
+	"display": "standalone",
+	"orientation": "portrait",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}

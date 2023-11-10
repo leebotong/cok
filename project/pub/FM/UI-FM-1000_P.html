@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-FM-1000P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			 popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>회원가입</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+<style>
+
+</style>
+<!-- #popupArea -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">음성검색</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<!-- [2022-07-15] -->	
+						<div class="pgTitWrap">
+							<p class="pTit thin"><strong class="pColor">찾고자 하는 검색어</strong>를<br> 말씀하세요.</p>
+						</div>
+						<div class="loadWrap middle">
+							<button role="button" class="loadBox" title="음성검색">
+								<span class="voice2">음성검색</span>
+							</button>
+							<div class="waves"></div>
+							<div class="waves2"></div>
+						</div>
+						<!-- //[2022-07-15] -->	
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //#popupArea -->
+</body>
+</html>

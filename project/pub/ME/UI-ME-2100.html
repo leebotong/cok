@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-ME-2100</title><!--[2022-06-20] 김자영 수정-->
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>회원가입</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<!-- [2023-05-19] 권유직원 입력 UI개선// -->
+				<p class="pTit"><strong>6자리 간편비밀번호</strong>를<br>등록해주세요</p>
+				<ul class="listDot">
+					<li>동일한 숫자의 반복 또는 연속된 숫자,<br>
+						개인정보와 관련된 숫자는 등록하실 수 없어요.
+						</li>
+				</ul>
+				<!-- //[2023-05-19] 권유직원 입력 UI개선 -->
+			</div>
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">간편비밀번호</strong>
+					<div class="inpText">
+						<button type="button" title="간편비밀번호 6자리 입력됨" aria-label="간편비밀번호 6자리 숫자 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+						<input type="password" title="간편비밀번호 6자리 숫자" aria-hidden="true" class="sKey" placeholder="숫자 6자리" maxlength="6">
+					</div>
+					<p class="infoTxtErr">Error MSG</p>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">간편비밀번호 확인</strong>
+					<div class="inpText">
+						<button type="button" title="간편비밀번호 6자리 입력됨" aria-label="간편비밀번호 6자리 숫자 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+						<input type="password" title="간편비밀번호 6자리 숫자" aria-hidden="true" class="sKey" placeholder="숫자 6자리" maxlength="6">
+					</div>
+					<p class="infoTxtErr">Error MSG</p>
+				</div>
+				<div class="formItem jsTgWrap">
+					<strong class="formTit inpChk">
+						<input type="checkbox" name="chk10" id="chk101" class="jsTgBtn">
+						<label for="chk101">권유직원이 있어요.(선택)</label>
+					</strong>
+					<!-- 권유직원 선택시 노출 -->
+					<div class="jsTgCont">
+						<div class="formWrap">
+							<!-- [2023-05-19] 권유직원 입력 UI개선// -->
+							<div class="formItem">
+								<div class="inpText">
+									<input type="text" title="권유직원 선택" value="" class="tyTxt sKey" placeholder="권유직원 선택" readonly>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									<button role="button" class="btnSm">검색</button>
+								</div>
+								<div class="inpText mt14">
+									<input type="text" title="영업점 선택" value="" class="tyTxt sKey" placeholder="영업점 선택" readonly>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									<button role="button" class="btnSm">검색</button>
+								</div>
+								<!-- readonly case -->
+								<!-- <div class="inpText mt10">
+									<input type="text" title="영업점" value="북아현지점" class="tyTxt" placeholder="영업점" readonly>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									<button role="button" class="btnSm disabled">검색</button>
+								</div> -->
+							</div>
+						</div>
+						<ul class="infoTxt mt20">
+							<li>등록된 권유점(직원)은 변경하실 수 없어요.</li>
+							<li>권유점(직원)을 재등록 하실 수 있어요.</li>
+						</ul>
+						<!--//[2023-05-19] 권유직원 입력 UI개선 -->
+					</div>
+					<!-- //권유직원 선택시 노출 -->
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel dis">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

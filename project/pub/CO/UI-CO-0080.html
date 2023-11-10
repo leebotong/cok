@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title></title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>콕뱅크 등록계좌</h1>
+			<div class="headerR">
+				<a href="javascript:;" role="button" class="headAdd">추가</a><!-- 추가 -->
+				<!-- <a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a> -->
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="pgTitWrap">
+					<p class="pTit thin">콕뱅크에 등록된<br> <strong class="pColor">총10개의 계좌</strong>가 있습니다.</p>
+				</div>
+
+				<section>
+					<!-- [2022-08-29] 김자영 : 버튼 추가 -->
+					<div class="topSmBtnWrap ar">
+						<button type="button" class="btnSm">등록해제</button>
+					</div>
+					<!--// [2022-08-29] 김자영 : 버튼 추가 -->
+					<ul class="roundBoxList">
+						<li>
+							<div class="roundBox">
+								<div class="roundInBox">
+									<div class="accLayout">
+										<div class="accTag">
+											<span class="tagItem tag0">주거래</span><span class="tagItem tag5">입출금</span>
+										</div>
+										<!-- 기본 영역  -->
+										<div class="accInfo">
+											<div class="logoWrap">
+												<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+											</div>
+											<div class="accInfoWrap">
+												<strong class="accName">
+													<!-- <span class="accBank">[하나은행]</span> -->
+													<span class="bankBookName">자립예탁금</span>
+												</strong>
+												<div class="accNumWrap">
+													<div class="accNumBox">
+														<span class="accNumber">352-1775-6397-03</span>
+														<button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button>
+													</div>
+												</div>
+											</div>
+											<!-- 계좌관리 보기 영역 -->
+											<button type="button" onclick="popOpen(sp2)" class="accMore">
+												<span class="blind">더보기</span>
+											</button>
+										</div>
+										<!-- 금액 영역 -->
+										<div class="accDataWrap flex">
+											<div>
+												<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+											</div>
+											<button type="button" class="btnSm">+ 채우기</button>
+										</div>
+									</div>
+									<div class="btnInArea mt15"> <!-- [2022-09-23]윤지현:간격수정 -->
+										<!-- [2022-08-30] 버튼 클래스추가 -->
+										<button type="button" class="point">거래내역</button>
+										<button type="button" class="point">송금</button>
+										<!-- //[2022-08-30] 버튼 클래스추가 -->
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="roundBox">
+								<div class="roundInBox">
+									<div class="accLayout">
+										<div class="accTag">
+											<span class="tagItem tag5">입출금</span>
+										</div>
+										<!-- 기본 영역  -->
+										<div class="accInfo">
+											<div class="logoWrap">
+												<img src="../../images/logo/logo_bnk_kb_72x72.png" alt="계좌 아이콘" class="logo">
+											</div>
+											<div class="accInfoWrap">
+												<strong class="accName">
+													<span class="accBank">[국민은행]</span>
+													<span class="bankBookName">주거래우대통장</span>
+												</strong>
+												<div class="accNumWrap">
+													<div class="accNumBox">
+														<span class="accNumber">352-1775-6397-03</span>
+														<button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button>
+													</div>
+												</div>
+											</div>
+											<!-- 더보기 영역 -->
+											<button type="button" onclick="popOpen(sp2)" class="accMore">
+												<span class="blind">계좌관리 보기</span>
+											</button>
+										</div>
+										<!-- 금액 영역 -->
+										<div class="accDataWrap flex">
+											<div>
+												<button type="button"><strong class="underLine">잔액보기</strong></button><!-- 2022-09-23 클래스명 변경 -->
+											</div>
+										</div>
+									</div>
+									<div class="btnInArea mt15"> <!-- [2022-09-23]윤지현:간격수정 -->
+										<!-- [2022-08-30] 버튼 클래스추가 -->
+										<button type="button" class="point">거래내역</button>
+										<button type="button" class="point">송금</button>
+										<!-- //[2022-08-30] 버튼 클래스추가 -->
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="roundBox">
+								<div class="roundInBox">
+									<div class="accLayout">
+										<div class="accTag">
+											<span class="tagItem tag5">예적금</span>
+										</div>
+										<!-- 기본 영역  -->
+										<div class="accInfo">
+											<div class="logoWrap">
+												<img src="../../images/logo/logo_bnk_sh_72x72.png" alt="계좌 아이콘" class="logo">
+											</div>
+											<div class="accInfoWrap">
+												<strong class="accName">
+													<span class="accBank">[신한은행]</span>
+													<span class="bankBookName">주거래통장</span>
+												</strong>
+												<div class="accNumWrap">
+													<div class="accNumBox">
+														<span class="accNumber">352-1775-6397-03</span>
+														<button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button>
+													</div>
+												</div>
+											</div>
+											<!-- 더보기 영역 -->
+											<button type="button" onclick="popOpen(sp2)" class="accMore">
+												<span class="blind">계좌관리 보기</span>
+											</button>
+										</div>
+										<!-- 금액 영역 -->
+										<div class="accDataWrap flex">
+											<div>
+												<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+											</div>
+										</div>
+									</div>
+									<div class="btnInArea mt15"> <!-- [2022-09-23]윤지현:간격수정 -->
+										<!-- [2022-08-30] 버튼 클래스추가 -->
+										<button type="button" class="point">거래내역</button>
+										<button type="button" class="point">송금</button>
+										<!-- //[2022-08-30] 버튼 클래스추가 -->
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="btnLnkLine">
+						<a href="javascript:;" role="button" class="underLine">+ 계좌등록</a>
+					</div>
+				</section>
+
+
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class="sel">확인</button>
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+</body>
+</html>

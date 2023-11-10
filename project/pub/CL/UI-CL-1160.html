@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CL-1160</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap"> <!-- [2023-05-08] 콕모임 수정 -->
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>회비 입금 현황</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="tabWrap oneDepth feeHistory">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" class="active">기간별</a>
+					<a href="javascript:;" role="tab">모임원별</a>
+				</div>
+				<div class="tabPanelList">
+					<div role="tabpanel" class="tabPanel show">
+						<div class="twoToneType feeHistoryByDate">
+							<div class="ttTop">
+								<a href="javascript:;" title="조회기간 선택" role="button" class="filterText">2022년 9월</a>
+								<div class="layoutWrap">
+									<div class="accDataWrap">
+										<strong class="accCash">5,000,000</strong><span class="accUnit">원</span>
+									</div>
+									<button type="button" class="btnSm">회비 입금 요청</button>
+								</div>
+							</div>
+							<div class="ttBottom">
+								<div class="ttContents">
+									<div class="listTbl">
+										<ul>
+											<li>
+												<div class="listIn_flex">
+													<span class="name">김농협김농협김농협김농협김농협김농협김농협김농협김농협김농협김농협</span><span class="statusCount">12건</span>
+													<div class="accDataWrap">
+														<strong class="accCash">5,000,000,000,000</strong><span class="accUnit">원</span>
+													</div>
+												</div>
+											</li>
+											<li class="owner">
+												<div class="listIn_flex">
+													<span class="name">이농축</span><span class="statusCount">1건</span>
+													<div class="accDataWrap">
+														<strong class="accCash">0</strong><span class="accUnit">원</span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<span class="name">송무럭</span><span class="statusCount">2건</span>
+													<div class="accDataWrap">
+														<strong class="accCash">0</strong><span class="accUnit">원</span>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+
+									<div class="btmInfoWrap mtBig"> <!-- [2023-06-13] .mtBig 추가 -->
+										<strong class="tit">확인사항</strong>
+										<ul class="listDot">
+											<!-- [2023-06-28] 콕모임 : 0626 문구수정 피드백 반영 -->
+											<li>회비 입금현황은 모임원 실명(성+이름)을 포함한 입금 거래내역 기준으로 집계됩니다.</li>
+											<li>회비 입금 시 본인의 실명으로 입금하지 않으면 정상적으로 집계가 되지 않으니, 이 점 반드시 유의해 주시기 바랍니다. </li>
+											<li>동명이인 또는 여러 명의 모임원 이름을 포함한 입금내역은 중복 집계될 수 있습니다.</li>
+											<li>재가입된 모임원의 입금내역은 정상적으로 집계되지 않을 수 있습니다. </li>
+											<li>탈퇴한 모임원의 입금내역은 집계되지 않습니다. </li>
+											<li>회비 입금현황은 최근 2년까지만 확인할 수 있습니다.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+					<div role="tabpanel" class="tabPanel">
+					</div>
+				</div>
+			</div>
+
+			<script>
+				$(document).on('click', '.feeHistory .tabList a', function(){
+					if($(this).index() == 1){
+						var con_h = parseInt($(window).outerHeight() - $("#header").outerHeight() - $(".tabList").outerHeight() - 30);
+						$(".feeHistory .tabPanelList .tabPanel").eq($(this).index()).height(con_h);
+					}
+				})
+			</script>
+		</div>  <!-- //#contents -->
+		<!-- <div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">등록</button>
+			</div>
+		</div>   -->
+		<!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+</div>
+
+</body>
+</html>

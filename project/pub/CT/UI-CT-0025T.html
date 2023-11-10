@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0025T</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>영업점검색</h1>
+		<div class="headerR">
+			<!-- <a href="javascript:;" title="지도로보기" role="button" class="headBtn btnLocation"></!-->
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="tabWrap oneDepth">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" aria-selected="true" class="active">영업점</a>
+					<a href="javascript:;" role="tab">하나로마트</a>
+				</div>
+			</div>
+
+			<section class="section30">
+				<div class="tabWrap segment">
+					<div role="tablist" class="tabList mb20">
+						<a href="javascript:;" role="tab" aria-selected="true" class="segmentItem active">영업점명</a>
+						<a href="javascript:;" role="tab" class="segmentItem">주소</a>
+						<a href="javascript:;" role="tab" class="segmentItem">지하철</a>
+					</div>
+				
+					<div class="tabPanelList">
+						<!-- 영업점명 -->
+						<div role="tabpanel" class="tabPanel show">
+							<div class="formWrap typeSels">
+								<div class="formItem">
+									<div class="inpSel">
+										<a href="javascript:;" title="법인 선택" role="button" id="inp1" class="btnSel placeholder">전체</a>
+									</div>
+									<div class="inpText">
+										<input type="text" title="영업점명 입력" value class="tyTxt" placeholder="영업점명 입력">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+										<button type="button" title="검색" class="btnSearch"></button>
+									</div>
+								</div>
+							</div>
+
+							<!-- 검색 리스트 -->
+							<section class="section40">
+								<p class="defTxt3">총 <em class="pColor">20</em>건이 검색 되었습니다.</p>
+								<div class="officeListBox">
+									<ul class="officeList">
+										<li>
+											<a href="javascript:;" role="button" class="link">
+												<span class="tag black">ATM</span>
+												<strong class="tit">NH통합IT센터(113m)</strong>
+												<ul class="listDot">
+													<li>주소 : 경기도 의왕시 검고개로 59</li>
+													<li>전화 : 000.0000.0000</li>
+												</ul>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" role="button" class="link">
+												<span class="tag green">NH농협은행</span>
+												<strong class="tit">NH통합IT센터(113m)</strong>
+												<ul class="listDot">
+													<li>주소 : 경기도 의왕시 검고개로 59</li>
+													<li>전화 : 000.0000.0000</li>
+												</ul>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" role="button" class="link">
+												<span class="tag primary">농축협</span>
+												<strong class="tit">경기동부과수농협 태평지점 ATM (15.3km)</strong>
+												<ul class="listDot">
+													<li>주소 : 경기도 의왕시 검고개로 59</li>
+													<li>전화 : 000.0000.0000</li>
+												</ul>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" role="button" class="link">
+												<span class="tag black">ATM</span>
+												<strong class="tit">경기의왕 오전지점 ATM (18.0km)</strong>
+												<ul class="listDot">
+													<li>주소 : 경기도 의왕시 검고개로 59</li>
+													<li>전화 : 000.0000.0000</li>
+												</ul>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!--// 검색 리스트 -->
+						</div>
+						<!--// 영업점명 -->
+
+						<!-- 주소 -->
+						<div role="tabpanel" class="tabPanel">
+							<div class="formWrap typeSels">
+								<div class="formItem">
+									<div class="inpSel">
+										<a href="javascript:;" title="법인 선택" role="button" id="inp1" class="btnSel">농협은행</a>
+									</div>
+									<div class="inpSel">
+										<a href="javascript:;" title="광역 시/도 선택" role="button" id="inp2" class="btnSel placeholder">광역 시/도 선택</a>
+									</div>
+								</div>
+								<div class="formItem">
+									<div class="inpSel">
+										<a href="javascript:;" title role="button" id="inp2" class="btnSel placeholder">시/군/구 선택</a>
+									</div>
+								</div>
+								<div class="formItem">
+									<div class="inpText">
+										<input type="text" title="검색하실 주소 또는 지역명 입력" value class="tyTxt" placeholder="검색하실 주소 또는 지역명 입력">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+										<button type="button" title="검색" class="btnSearch"></button>
+									</div>
+								</div>
+							</div>
+
+							<!-- 검색 리스트 -->
+							<section class="section40">
+								<!-- 검색 결과 없음 -->
+								<div class="noData">
+									<i class="check"></i>
+									<p class="tit">조회결과가 없습니다.</p>
+								</div>
+								<!--// 검색 결과 없음 -->
+							</section>
+							<!--// 검색 리스트 -->
+						</div>
+						<!--// 주소 -->
+
+						<!-- 지하철 -->
+						<div role="tabpanel" class="tabPanel">
+							<div class="formWrap typeSels">
+								<div class="formItem">
+									<div class="inpSel">
+										<a href="javascript:;" title="법인 선택" role="button" id="inp1" class="btnSel">농&middot;축협</a>
+									</div>
+									<div class="inpText">
+										<input type="text" title="지하철명 입력" value class="tyTxt" placeholder="지하철명 입력">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+										<button type="button" title="검색" class="btnSearch"></button>
+									</div>
+								</div>
+							</div>
+
+							<!-- 검색 리스트 -->
+							<section class="section40">
+								<p class="defTxt3">총 <em class="pColor">20</em>건이 검색 되었습니다.</p>
+								<div class="officeListBox">
+									<ul class="officeList">
+										<li>
+											<a href="javascript:;" title="상세보기" role="button" class="link"><!-- [2022-07-15] 김자영: title추가 -->
+												<span class="tag black">ATM</span>
+												<strong class="tit">NH통합IT센터(113m)</strong>
+												<ul class="listDot">
+													<li>주소 : 경기도 의왕시 검고개로 59</li>
+													<li>전화 : 000.0000.0000</li>
+												</ul>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" title="상세보기" role="button" class="link">
+												<span class="tag green">NH농협은행</span>
+												<strong class="tit">NH통합IT센터(113m)</strong>
+												<ul class="listDot">
+													<li>주소 : 경기도 의왕시 검고개로 59</li>
+													<li>전화 : 000.0000.0000</li>
+												</ul>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" title="상세보기" role="button" class="link">
+												<span class="tag primary">농축협</span>
+												<strong class="tit">경기동부과수농협 태평지점 ATM (15.3km)</strong>
+												<ul class="listDot">
+													<li>주소 : 경기도 의왕시 검고개로 59</li>
+													<li>전화 : 000.0000.0000</li>
+												</ul>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" title="상세보기" role="button" class="link">
+												<span class="tag black">ATM</span>
+												<strong class="tit">경기의왕 오전지점 ATM (18.0km)</strong>
+												<ul class="listDot">
+													<li>주소 : 경기도 의왕시 검고개로 59</li>
+													<li>전화 : 000.0000.0000</li>
+												</ul>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!--// 검색 리스트 -->
+						</div>
+						<!--// 지하철 -->
+					</div>
+				</div>
+			</section>
+		</div>  <!-- //#contents -->
+		<!--<div id="footer_cont">
+		</div>   //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

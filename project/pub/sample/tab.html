@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>콕 tab</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>탭</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<h1 class="gTit">### .tabWrap oneDepthSwipe : 링크</h1>
+			<div class="tabWrap oneDepthSwipe">
+				<div role="tablist" class="tabList tabSwipe"> <!-- swiper 유형의 경우 .tabSwipe 추가 -->
+					<a href="javascript:;" role="tab" aria-selected="true" class="active">입출금</a>
+					<a href="javascript:;" role="tab">예적금/신탁</a>
+					<a href="javascript:;" role="tab">대출</a>
+					<a href="javascript:;" role="tab">펀드</a>
+					<a href="javascript:;" role="tab">외화</a>
+				</div>
+				<div class="tabPanelList" style="height:100px">
+					<div role="tabpanel" class="tabPanel show">
+						<p class="error mx20">.oneDepth에서 메뉴가 4개를 넘을 경우 .oneDepthSwipe를 사용</p>
+					</div>
+					<div role="tabpanel" class="tabPanel"><p>22222</p></div>
+					<div role="tabpanel" class="tabPanel"><p>3333</p></div>
+					<div role="tabpanel" class="tabPanel"><p>444</p></div>
+				</div>
+			</div>
+
+			<h1 class="gTit">### .tabWrap oneDepth : 링크</h1>
+			<div class="tabWrap oneDepth">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" class="active">납부</a>
+					<a href="javascript:;" role="tab">예약납부내역</a>
+					<a href="javascript:;" role="tab">납부내역</a>
+				</div>
+				<div class="tabPanelList">
+					<div role="tabpanel" class="tabPanel show">
+					111
+					</div>
+					<div role="tabpanel" class="tabPanel">
+					222
+					</div>
+					<div role="tabpanel" class="tabPanel">
+						333
+					</div>
+				</div>
+			</div>
+
+			<h1 class="gTit">### .tabWrap ellipse</h1>
+			<div class="tabWrap ellipse">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" class="active">납부</a>
+					<a href="javascript:;" role="tab">예약납부내역</a>
+					<a href="javascript:;" role="tab">납부내역</a>
+				</div>
+				<div class="tabPanelList" style="height:250px">
+					<div role="tabpanel" class="tabPanel show">
+						<p>11111</p>
+						<!-- TAB IN TAB -->
+						<div class="tabWrap jsTabInTab segment" style="padding-top: 30px">
+							<div role="tablist" class="tabList">
+								<a href="javascript:;" role="tab" aria-selected="true" class="segmentItem active">tab in tab</a>
+								<a href="javascript:;" role="tab" class="segmentItem">tab in tab</a>
+							</div>
+							<div class="tabPanelList" style="height:150px"><!-- tab 안에 tab 구조가 필요한 경우 .tabInTab 클래스 추가 -->
+								<div role="tabpanel" class="tabPanel show">
+									<p style="color:#c00">탭안에 탭이 들어가야 할 경우</p>
+									<ul style="color:#c00">
+										<li>Tab in Tab 의 대상 '.tabWrap'에 '.jsTabInTab' 클래스 추가</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tabPanel"><p>3333</p></div>
+							</div>
+						</div>
+						<!-- //TAB IN TAB -->
+					</div>
+					<div role="tabpanel" class="tabPanel"><p>22222</p></div>
+					<div role="tabpanel" class="tabPanel"><p>3333</p></div>
+				</div>
+			</div>
+
+			<div class="tabWrap ellipse">
+				<div role="tablist" class="tabList tabSwipe"> <!-- swiper 유형의 경우 .tabSwipe 추가 -->
+					<a href="javascript:;" role="tab" aria-selected="true" class=" active">1111111</a>
+					<a href="javascript:;" role="tab" class>22222</a>
+					<a href="javascript:;" role="tab" class>3333</a>
+					<a href="javascript:;" role="tab" id="test1" class>4444444</a>
+					<a href="javascript:;" role="tab" class>5555555</a>
+					<a href="javascript:;" role="tab" class>6666</a>
+					<a href="javascript:;" role="tab" class>7777777777777</a>
+					<a href="javascript:;" role="tab" class>888</a>
+					<a href="javascript:;" role="tab" class>999</a>
+				</div>
+				<div class="tabPanelList" style="height:100px">
+					<div role="tabpanel" class="tabPanel show">
+						<p>11111</p>
+					</div>
+					<div role="tabpanel" class="tabPanel"><p>22222</p></div>
+					<div role="tabpanel" class="tabPanel"><p>3333</p></div>
+					<div role="tabpanel" class="tabPanel"><p>444</p></div>
+					<div role="tabpanel" class="tabPanel"><p>555</p></div>
+					<div role="tabpanel" class="tabPanel"><p>6666</p></div>
+					<div role="tabpanel" class="tabPanel"><p>77777777</p></div>
+					<div role="tabpanel" class="tabPanel"><p>8888888</p></div>
+					<div role="tabpanel" class="tabPanel"><p>999</p></div>
+				</div>
+			</div>
+
+			<h1 class="gTit" style="margin-top:40px">### .tabWrap.segment</h1>
+			<div class="tabWrap segment">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" aria-selected="true" class="segmentItem active">.segmentItem</a>
+					<a href="javascript:;" role="tab" class="segmentItem">.segmentItem</a>
+				</div>
+			</div>
+
+			<h1 class="gTit" style="margin-top:40px">###  .tabWrap.box</h1>
+			<div class="tabWrap box">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" class="active">SMS</a>
+					<a href="javascript:;" role="tab">이메일</a>
+				</div>
+				<div class="tabPanelList">
+					<div role="tabpanel" class="tabPanel show">
+						<div class="formGroup flex46">
+							<div class="inpSel">
+								<a href="javascript:;" title="휴대전화번호앞자리" role="button" class="btnSel">010</a>
+							</div>
+							<div class="inpText">
+								<input type="tel" title="휴대폰뒷자리입력" class="tyTxt" placeholder="1234568">
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tabPanel">
+						<div class="formGroup">
+							<div class="inpText">
+								<input type="tel" title="아이디" value class="tyTxt" placeholder="E-MAIL" maxlength="4">
+							</div>
+							<span class="etc">@</span>
+							<div class="inpSel">
+								<a href="javascript:;" title="도메인 선택" role="button" class="btnSel placeholder">직접입력</a>
+							</div>
+						</div>
+						<div class="inpText">
+							<input type="text" title="도메일직접입력" value class="tyTxt" placeholder="이메일 주소 입력">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h1 class="gTit" style="margin-top:40px">### .tabWrap.box2</h1>
+			<div class="tabWrap box2">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" aria-selected="true" class="active">일괄조회</a>
+					<a href="javascript:;" role="tab">단건조회</a>
+				</div>
+			</div>
+			<div class="tabWrap box2">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab">11111</a>
+					<a href="javascript:;" role="tab" aria-selected="true" class="active">2222</a>
+					<a href="javascript:;" role="tab">33333</a>
+				</div>
+			</div>
+			<div class="tabWrap box2">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab">11111</a>
+					<a href="javascript:;" role="tab">2222</a>
+					<a href="javascript:;" role="tab">33333</a>
+					<a href="javascript:;" role="tab" aria-selected="true" class="active">4444444</a>
+				</div>
+			</div>
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">이전</button>
+				<button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

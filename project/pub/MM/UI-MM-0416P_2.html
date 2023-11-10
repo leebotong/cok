@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0416P_2</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			 popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>한도제한 해제</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- #popupArea -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0"></h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<section class="mt30">
+							<div class="defTit2">한도제한 자동해제 가능 계좌란?</div>
+							<ul class="listDot">
+								<li class="one"><span class="pColor">2022년 12월 1일 이후</span>비대면으로 개설하신 한도제한이 적용된 농·축협 입출금 계좌로 특정 조건의 예적금 만기금액 입금 시 자동으로 한도제한이 해제 되는 계좌 입니다.</li>
+							</ul>
+							<div class="defTit2">어떻게 하면 한도제한이 자동해제 되나요?</div>
+							<ul class="listDot">
+								<li class="one">아래 조건에 해당하는 예적금의 <span class="pColor">만기금액을 입금 받으면</span> 자동으로 해제 됩니다. </li>
+							</ul>
+						</section>
+						<div class="tblWrap mt20">
+							<div class="defTit3">자동해제를 위한 예적금 조건</div>
+							<div class="tbl">
+								<table>
+									<caption></caption>
+									<colgroup>
+										<col style="width:auto;">
+										<col style="width:37%">
+										<col style="width:35%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">가입채널</th>
+											<td colspan="2">비대면채널<br/>(인터넷뱅킹, 스마트뱅킹, 콕뱅크)</td>
+										</tr>
+										<tr>
+											<th scope="row">가입연령</th>
+											<td colspan="2">만 19세 이상</td>
+										</tr>
+										<tr>
+											<th scope="row">가입구분</th>
+											<td colspan="2">만기자동해지</td>
+										</tr>
+										<tr>
+											<th scope="row">계약기간</th>
+											<td colspan="2">12개월 이상</td>
+										</tr>
+										<tr>
+											<th scope="row">만기금액</th>
+											<td colspan="2">100만원 초과</td>
+										</tr>
+										<tr>
+											<th scope="row">가입상품</th>
+											<td>적립식</td>
+											<td>거치식</td>
+										</tr>
+										<tr>
+											<th scope="row">가입상품</th>
+											<td>3회 이상</td>
+											<td>1회 이상</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="bili colorCase">위 조건에 해당하지 않은 예적금일 경우 만기금액을 입금 받으시더라도 한도제한 해제 신청을 할 수 없어요.</p>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel" onclick="popClose(this)">확인</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">확인</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //#popupArea -->
+</body>
+</html>

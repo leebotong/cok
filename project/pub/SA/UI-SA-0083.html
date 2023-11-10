@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SA-0083</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>금융인증서 발급/재발급</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">추가정보를 <br><strong>확인</strong>해주세요.</p>
+			</div>
+
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">이름</strong>
+					<div class="inpText">
+						<input type="tel" title="이름입력" value="홍길동" class="tyTxt" placeholder readonly>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">이메일</strong>
+					<div class="formGroup">
+						<div class="inpText">
+							<input type="tel" title="아이디" value class="tyTxt" placeholder="E-MAIL" maxlength="4">
+						</div>
+						<span class="etc">@</span>
+						<div class="inpSel">
+							<a href="javascript:;" title="도메인 선택" role="button" class="btnSel placeholder">직접입력</a>
+						</div>
+					</div>
+					<div class="inpText">
+						<input type="text" title="도메일직접입력" value class="tyTxt" placeholder="이메일 주소 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxtErr">Error MSG</p>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">연락처</strong>
+					<div class="inpText">
+						<input type="tel" title="휴대폰번호 입력" value="01012345678" class="tyTxt" placeholder="'-'없이 입력" maxlength="11">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<!-- <p class="infoTxtErr">Error MSG</p> -->
+					<p class="infoTxt">금융인증서 발급을 위한 금융결제원에 제출되는 연락처입니다.</p>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">발급</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+</body>
+</html>

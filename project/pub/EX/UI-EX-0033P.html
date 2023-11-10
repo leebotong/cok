@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0033P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(sp_popup);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1></h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(sp_popup);" class="popOpen">UI-EX-0033P</a>
+			</div> 
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea">
+		<!-- SLIDE POPUP -->
+		<div id="sp_popup" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">외화선물 받는 분 수정</h2>
+						</div>
+						<div class="layerSelectContent">
+							<div class="formWrap">
+								<div class="formItem">
+									<strong class="formTit">받는 분 휴대전화번호</strong>
+										<div class="inpText">
+											<input type="tel" title="휴대전화번호" class="tyTxt" value placeholder="전화번호 입력">
+											<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											<a href="javascript:;" role="button" aria-label class="btnSm">연락처</a>
+										</div>
+								</div>
+
+								<div class="formItem">
+									<!-- [2022-10-04] 김자영: 툴팁추가 -->
+									<strong class="formTit">받는 분 이름
+										<!-- tooltip -->
+										<div class="tooltipWrap">
+											<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+											<div class="tooltipCont">
+												<strong class="tit">받는분 이름 입력 주의사항</strong>
+												<ul class="listDot">
+													<li>받는 분의 실명이름(성+이름)을 정확히 입력해주시기 바랍니다.</li>
+													<li>입력하신 받는 분 이름이 받는 분의 실명과 다를 경우 선물하신 외화를 수령하실 수 없습니다.
+													</li>
+												</ul>
+												<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+											</div>
+										</div>
+										<!-- //tooltip -->
+									</strong>
+									<!--// [2022-10-04] 김자영: 툴팁추가 -->
+									
+									<div class="inpText">
+										<input type="text" title="이름 입력" class="tyTxt" value placeholder="실명 입력(성+이름)">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+								</div>
+							</div>
+							<p class="infoTxt">받는 분 수정 후 반드시 외화선물 메시지를 재발송 해주셔야 받는 분께서 외화수령을 하실 수 있습니다.</p>
+
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button type="button" onclick="popClose(this)">취소</button>
+								<button type="button" onclick="popClose(this)" class="sel">확인</button>
+							</div>
+						</div>
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

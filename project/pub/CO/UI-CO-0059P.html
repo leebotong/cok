@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CO-0059P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupCCA);
+		})
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupCCA);" title="풀팝업 열기" role="button" class="popOpen">팝업열기</a>
+			
+		</div>  <!-- //#contents -->
+		
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- CENTER POPUP -->
+	<div id="popupCCA" class="popupWrap center">
+		<div class="layerPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="Layer_Tit">
+								<h2 tabindex="0"><span class="blind">팝업</span></h2>
+							</div>
+							<div class="Layer_Con">
+								<div class="calendarWrap">
+									<div class="calControl">
+										<!-- ▼ [2022-10-05] 김자영 : 웹접근성 title 오늘 날짜 선택으로 수정 -->
+										<button type="button" class="btnXsmLine" title="오늘 날짜 선택">오늘</button>
+										<button type="button" aria-label="이전년도" class="prevYear" disabled></button> <!-- 비활성화 시 disabled -->
+										<button type="button" aria-label="이전월" class="prevMonth" disabled></button>
+										<strong class="date">2022.10</strong>
+										<button type="button" aria-label="다음월" class="nextMonth"></button>
+										<button type="button" aria-label="다음년도" class="nextYear"></button>
+									</div>
+									<div class="calCont">
+										<div class="typeDay">
+											<table>
+												<caption>날짜선택 달력</caption>
+												<colgroup>
+													<col style="width:15%;">
+													<col style="width:14%;">
+													<col style="width:14%;">
+													<col style="width:14%;">
+													<col style="width:14%;">
+													<col style="width:14%;">
+													<col style="width:15%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">일</th>
+														<th scope="col">월</th>
+														<th scope="col">화</th>
+														<th scope="col">수</th>
+														<th scope="col">목</th>
+														<th scope="col">금</th>
+														<th scope="col">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><button type="button" title="" disabled>30</a></td>  <!-- 선택할 수 없는 날짜의 경우 title 삭제 -->
+														<td><button type="button" title="" disabled>31</button></td>
+														<td><button type="button" title="1일을 선택하고 창을 닫습니다.">1</button></td>
+														<td><button type="button" title="2일을 선택하고 창을 닫습니다.">2</button></td>
+														<td><button type="button" title="3일을 선택하고 창을 닫습니다.">3</button></td>
+														<td><button type="button" title="4일을 선택하고 창을 닫습니다.">4</button></td>
+														<td><button type="button" title="5일을 선택하고 창을 닫습니다.">5</button></td>
+													</tr>
+													<tr>
+														<td><button type="button" title="6일을 선택하고 창을 닫습니다.">6</button></td>
+														<td><button type="button" title="7일을 선택하고 창을 닫습니다.">7</button></td>
+														<td><button type="button" title="8일을 선택하고 창을 닫습니다.">8</button></td>
+														<td><button type="button" title="9일을 선택하고 창을 닫습니다.">9</button></td>
+														<td><button type="button" title="10일을 선택하고 창을 닫습니다.">10</button></td>
+														<td><button type="button" title="11일을 선택하고 창을 닫습니다.">11</button></td>
+														<td><button type="button" title="12일을 선택하고 창을 닫습니다.">12</button></td>
+													</tr>
+													<tr>
+														<td><button type="button" title="13일을 선택하고 창을 닫습니다.">13</button></td>
+														<td><button type="button" title="14일을 선택하고 창을 닫습니다.">14</button></td>
+														<!-- ▼ [2022-10-05] 김자영 : 웹접근성 title 오늘 날짜 선택됨으로 수정 -->
+														<td><button type="button" title="오늘" class="current active">15</button></td>
+														<td><button type="button" title="16일을 선택하고 창을 닫습니다." class="">16</button></td>
+														<td><button type="button" title="17일을 선택하고 창을 닫습니다.">17</button></td>
+														<td><button type="button" title="18일을 선택하고 창을 닫습니다.">18</button></td>
+														<td><button type="button" title="19일을 선택하고 창을 닫습니다.">19</button></td>
+													</tr>
+													<tr>
+														<td><button type="button" title="20일을 선택하고 창을 닫습니다.">20</button></td>
+														<td><button type="button" title="21일을 선택하고 창을 닫습니다.">21</button></td>
+														<td><button type="button" title="22일을 선택하고 창을 닫습니다.">22</button></td>
+														<td><button type="button" title="23일을 선택하고 창을 닫습니다.">23</button></td>
+														<td><button type="button" title="24일을 선택하고 창을 닫습니다.">24</button></td>
+														<td><button type="button" title="25일을 선택하고 창을 닫습니다.">25</button></td>
+														<td><button type="button" title="26일을 선택하고 창을 닫습니다.">26</button></td>
+													</tr>
+													<tr>
+														<td><button type="button" title="27일을 선택하고 창을 닫습니다.">27</button></td>
+														<td><button type="button" title="28일을 선택하고 창을 닫습니다.">28</button></td>
+														<td><button type="button" title="29일을 선택하고 창을 닫습니다.">29</button></td>
+														<td><button type="button" title="30일을 선택하고 창을 닫습니다.">30</button></td>
+														<td><button type="button" title="" disabled>1</button></td>
+														<td><button type="button" title="" disabled>2</button></td>
+														<td><button type="button" title="" disabled>3</a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	// ▼ [2022-10-05] 윤지현 : 접근성수정 달력 다 로드하고 함수 호출
+	$(function(){
+		dateActiveInit();
+	})
+</script>
+
+
+</body>
+</html>

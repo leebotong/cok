@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CL-1016P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupB);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕모임 서비스 안내</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupB);" title="팝업 열기" role="button">UI-CL-1016P</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupB" class="popupWrap slide" style="display: block;" role="dialog" aria-hidden="false">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner" style="bottom: 0px;">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0" class="closerSpace" id="popupB-title" data-popup-focus="popupB"></h2>
+					</div>
+					<div class="layerSelectContent">
+						<div class="confirmMsg ac">
+							<i class="warning"></i>
+							<p class="tit">선택하신 계좌로<br><span class="pColor">모임을 개설</span>하시겠습니까?</p>
+							<p class="txt">모임개설일 이후의 <strong>모든 거래내역</strong>은<br>승인하신 <strong>모임원에게 모두 공개</strong>돼요. </p> <!-- [2023-06-09] 콕모임 : QA v0.4 문구수정 -->
+						</div>
+						<div class="listTblBox mt20">
+							<ul>
+								<li>
+									<span class="tit">모임명</span>
+									<p class="txt">하와이가자</p>
+								</li>
+								<li>
+									<span class="tit">모임계좌</span>
+									<p class="txt">MY콕통장<br>351-1029-1234-01</p>
+								</li>
+							</ul>
+						</div>
+						<p class="infoTxt">모임계좌 변경 및 취소는 지원하지 않습니다.</p> <!-- [2023-06-09] 콕모임 : QA v0.4 문구수정 -->
+
+						<div class="btmInfoWrap mtBig"> <!-- [2023-06-13] .mtBig 추가 -->
+							<strong class="tit">확인사항</strong>
+							<ul class="listDot">
+								<li>모임계좌의 변경 및 취소는 지원하지 않으며, 변경 및 취소를 원하시면 해당 모임 폐쇄 후 모임을 다시 개설하셔야 합니다.</li>  <!-- [2023-06-28] 콕모임 : 0626 문구수정 피드백 반영 -->
+								<li>1모임 1계좌 원칙으로 1개의 통장을 2개 이상의 모임에서 동시 사용할 수 없습니다.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="toastMessage">
+							[개설] 선택 시 전자서명과 동시에 개설 완료됩니다.
+						</div>
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)">취소</button>
+							<button type="button" onclick="popClose(this)" class="sel">개설</button>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose" data-popup-focus-close="popupB-close"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

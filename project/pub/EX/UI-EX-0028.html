@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0028</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕 외화기프팅!</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<p class="defTit2">외화선물 환전금액</p>
+
+		<!-- ROUND BOX -->
+			<div class="roundBox">
+				<div class="roundInBox">
+					<div class="accTypeWrap accAlwaysType">
+							<a href="javascript:;" title="펼치기" role="button" aria-expanded="false" class="inBoxBtn jsShowBtn">
+							<div class="accInfo currency">
+								<div class="logoWrap">
+									<img src="../../images/logo/icon_USD.png" alt="미국국기">  <!--[2022-08-02] 이경아 : 이미지명 수정-->
+								</div>
+								<div class="accInfoWrap">
+									<strong class="dataWrap"><em class="data">17,658</em><span class="unit">달러</span></strong>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="accDataWrap">
+							<span class="accNumInfo">원화 환산 신청금액</span>
+							<strong class="accCash">111,340</strong><span class="accUnit">원</span>
+					</div>
+					<div class="hideBox">
+						<div class="listTblBox">
+							<ul>
+								<li>
+									<span class="tit">우대율</span>
+									<p class="txt">50%</p>
+								</li>
+								<li>
+									<span class="tit">고시환율</span>
+									<p class="txt"><span class="dataWrap"><em class="data">1,141.32</em><span class="unit">원</span></span></p>
+								</li>
+								<li>
+									<span class="tit">우대적용환율</span>
+									<p class="txt"><span class="dataWrap"><em class="data">1,123.66</em><span class="unit">원</span></span></p>
+								</li>
+								<li>
+									<span class="tit">우대받은금액</span>
+									<p class="txt"><span class="dataWrap"><em class="data">17.66</em><span class="unit">원</span></span></p>
+								</li>
+							</ul>
+						</div>
+						<p class="infoTxt">
+							<span class="pColor">환전금액 계산 정보는 조회 시점의 환율 적용 결과로 참고용 입니다. 실제 환전 거래 시, 고객님의 실제 우대율 및 거래 시 적용환율에 따라 환전금액이 변동될 수 있습니다.</span>
+						</p>
+					</div>
+					
+					<div class="btnInArea">
+						<button type="button" class="point">환전금액 재입력</button>
+					</div>
+				</div>
+			
+			</div>
+			<!-- //ROUND BOX -->
+			
+			<!-- [2022-10-25] 김자영 : 마크업 삭제 
+			<div class="defTit2">출금계좌
+				<div class="tooltipWrap">
+					<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+					<div class="tooltipCont">
+						<strong class="tit">출금계좌안내</strong>
+						<p>콕뱅크에 등록하신 농·축협 계좌만 출금계좌 지정이 가능하며 NH농협은행 계좌로는 출금계좌 지정 및 상품가입이 불가능 합니다.</p>
+						<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="roundBox">
+				<div class="roundInBox">
+					<div class="accTypeWrap accAlwaysType">
+						<a href="javascript:;" title="계좌선택" role="button" class="accInLayout">
+							<div class="accInfo">
+								<div class="accInfoInLayout">
+									<div class="logoWrap">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="농협은행" class="logo">
+									</div>
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<span class="bankBookName">주머니(MONEY)통장</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">
+												<span class="accNumber">352-1775-6397-03</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="accDataWrap forInner">
+							<div>
+								<span class="accNumInfo">출금가능금액</span>
+								<strong class="accCash">827,216</strong>
+								<span class="accUnit">원</span>
+							</div>
+							<button type="button" class="btnSm">+채우기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+			
+			<!-- //ROUND BOX -->
+			<section class="section30">
+				<!-- formwrap -->
+				<div class="formwrap">
+					<!-- [2022-10-25] 김자영 : 마크업 추가 -->
+					<div class="formItem">
+						<strong class="formTit">출금계좌
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<strong class="tit">출금계좌</strong>
+									<p>콕뱅크에 등록된 지역 농·축협 계좌만 출금계좌로 선택할 수 있습니다.</p>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->
+						</strong>
+						<div class="inpSel isLogo">
+							<a href="javascript:;" title="출금계좌 선택" role="button" class="btnSel placeholder">
+								<span class="logo">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+								</span>
+								<div class="accNum">
+									<span class="tit"><!--<span class="accBank">[농협]</span>--> 주머니(money)통장</span>
+									<span class="num">555368-12-023456</span>
+								</div>
+							</a>
+						</div>
+						<div class="inpOpenM">출금가능금액 <strong class="pColor">0원</strong>
+							<button type="button" class="btnSm">+ 채우기</button>
+						</div>
+					</div>
+					<!--// [2022-10-25] 김자영 : 마크업 추가 -->
+
+					<div class="formItem jsTgWrap">
+						<strong class="formTit">출금계좌 비밀번호</strong>
+						<div class="inpText">
+							<button type="button" title="출금계좌 비밀번호 4자리 입력됨" aria-label="출금계좌 비밀번호 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+							<input type="password" title="출금계좌 비밀번호" aria-hidden="true" class="tyTxt sKey" value placeholder="숫자 4자리 입력 " readonly> <!-- [2022-06-24] 윤지현:문구수정,클래스추가  -->
+						</div>
+						<!-- 비번 동일 해제시 노출 -->
+						<div class="jsTgCont formExpBox">
+							<div class="formItem">
+								<div class="inpText">
+									<button type="button" title="비밀번호 4자리 입력됨" aria-label="비밀번호 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+									<input type="password" title="비밀번호" aria-hidden="true" class="sKey" placeholder="신규계좌 비밀번호 입력" maxlength="4" readonly>
+								</div>
+								<div class="inpText error">
+									<button type="button" title="비밀번호 4자리 입력됨" aria-label="비밀번호 재입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+									<input type="password" title="비밀번호 재입력" aria-hidden="true" class="sKey" placeholder="신규계좌 비밀번호 재입력" maxlength="4" readonly>
+								</div>
+								<p class="infoTxtErr">비밀번호가 일치하지 않습니다.</p>
+							</div>
+						</div>
+						<!-- 비번 동일 해제시 노출 -->
+					</div>
+				</div>
+				<!-- //formwrap -->
+			</section>
+			
+			<!-- [2022-10-25] 김자영 : 마크업 위치 변경
+			<div class="formItem jsTgWrap">
+				<strong class="formTit inpChk">
+					<input type="checkbox" name="chk10" id="chk101" class="jsTgBtn">
+					<label for="chk101">권유직원이 있어요. (선택)</label>
+				</strong>
+				<div class="jsTgCont formExpBox">
+					<div class="formWrap">
+						<div class="formGroup mt0">
+							<div class="inpText">
+								<input type="text" title="권유직원" class="tyTxt" value placeholder="권유직원 입력" readonly>
+								<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+				
+			<hr class="divingLine">
+
+			<div class="formWrap">
+				<p class="defTit2">외화선물 받는분</p>
+				<div class="formItem">
+					<strong class="formTit">받는 분 휴대전화번호</strong>
+						<div class="inpText">
+							<input type="tel" title="휴대전화번호" class="tyTxt" value placeholder="전화번호 입력">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							<a href="javascript:;" role="button" aria-label class="btnSm">연락처</a>
+						</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">받는 분 이름
+						<!-- tooltip -->
+						<div class="tooltipWrap"> <!--[2022-07-21] 이경아 : 툴팁수정-->
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">받는 분 이름을 확인해주세요.</strong>
+								<ul class="listDot">
+									<li>실명을 정확히 입력해주세요.</li>
+									<li>받는 분 이름을 잘못 입력하신 경우, 받는 분이 외화를 수령하실 수 없어요.</li>
+								</ul>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="inpText">
+						<input type="text" title="이름 입력" class="tyTxt" value placeholder="실명 입력(성+이름)">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+			</div>
+
+			<!-- [2022-10-25] 김자영 삭제
+			<p class="infoTxt">받는 분 수정 후 반드시 외화선물 메시지를 재발송 해주셔야 받는 분께서 외화수령을 하실 수 있습니다.</p>
+			-->
+
+			<!-- [2022-10-25] 김자영 : 마크업 위치 변경-->
+			<div class="formItem jsTgWrap">
+				<strong class="formTit inpChk">
+					<input type="checkbox" name="chk10" id="chk101" class="jsTgBtn">
+					<label for="chk101">권유직원이 있어요. (선택)</label>
+				</strong>
+				<!-- 권유직원 선택시 노출 -->
+				<div class="jsTgCont formExpBox">
+					<div class="formWrap">
+						<div class="formGroup mt0">
+							<div class="inpText">
+								<input type="text" title="권유직원" class="tyTxt" value placeholder="권유직원 입력" readonly>
+								<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //권유직원 선택시 노출 -->
+			</div>
+			<!--// [2022-10-25] 김자영 : 마크업 위치 변경-->
+
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

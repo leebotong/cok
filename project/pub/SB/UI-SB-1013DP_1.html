@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>송금</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(spA);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>송금</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(spA);" title="송금확인 팝업" role="button">송금확인 팝업</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- TOAST POPUP -->
+		<div class="toastPopWrap">
+			<div role="alert" aria-atomic="true" aria-hidden="true" aria-live="assertive" id="toast1" class="toastPop fade hide">
+				<span class="toastMessage"><!-- message --></span>
+			</div>
+		</div>
+
+		<!-- SLIDE POPUP -->
+		<div id="spA" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 class="popTitle">송금확인</h2>
+						</div>
+						<div class="layerSelectContent">
+							<div class="completeWrap">
+								<p class="tit"><strong class="pColor">김수현</strong>님께 <strong class="pColor">12,567,000원</strong>을<br>송금하시겠습니까?</p>
+							</div>
+							<div class="accData">
+								<div class="logo">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accDataWrap">
+									<!--<span class="accBank">[농협]</span>-->
+									<span class="accNumber">352-1775-6397-03</span>
+								</div>
+							</div>
+							<!-- ROUND BOX -->
+							<section class="roundBox type2 section30">
+								<div class="roundInBox">
+									<section>
+										<!-- 추가송금 -->
+										<div class="accTypeWrap">
+											<div class="listTblBox">
+												<ul>
+													<li>
+														<span data-focus="focus" class="tit">출금계좌</span>
+														<p class="txt">NH농협
+															123-123456-123456<br></p>
+													</li>
+													<li>
+														<span class="tit">수수료</span>
+														<p class="txt">면제</p>
+													</li>
+													<li>
+														<span class="tit">받는계좌에 표시</span>
+														<p class="txt">박축협</p>
+													</li>
+													<li>
+														<span class="tit">내계좌에 표시</span>
+														<p class="txt">친구</p>
+													</li>
+													<li>
+														<span class="tit">송금메모</span>
+														<p class="txt">용돈</p>
+													</li>
+													<li>
+														<span class="tit">경조메세지</span>
+														<p class="txt">축하</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- 추가송금 -->
+									</section>
+								</div>
+								<div class="roundBoxUtility">
+									<a href="javascript:;" role="button" class="utilItem">수수료 면제 조회</a>
+									<a href="javascript:;" role="button" class="utilItem">보이스피싱 유의안내</a>
+								</div>
+							</section>
+							<!-- //ROUND BOX -->
+						</div>
+						<div class="popFootBox">
+							<span class="toastMessage">[송금]선택시 전자서명과 동시에 송금됩니다.</span>
+							<div class="btnArea">
+								<button type="button" class="nor">취소</button>
+								<button type="button" class="sel">송금</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose">팝업 닫기</a>
+					</div>
+				</div>
+				<!--//레이어 셀렉트 팝업 -->
+			</div><!--// 팝업구분용 dim레이어 08/30추가 -->
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1610_01</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<!-- <script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script> -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕창구출금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+			<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">창구에서 <strong>간편하게</strong><br><strong>출금</strong>할 수 있어요!</p>
+			</div>
+
+			<!-- 2022-10-07 추가 -->
+			<div class="storeBtn">
+				<button type="button">영업점 검색</button>
+			</div>
+			<!-- //2022-10-07 추가 -->
+
+			<!-- [2022-09-26] 김자영 : 마크업 수정 -->
+			<div class="roundBox nameTag">
+				<div class="roundInBox">
+					<div class="accTypeWrap accAlwaysType">
+						<a href="javascript:;" title="계좌선택" role="button" class="accInLayout">
+							<!-- 기본 영역  -->
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="OO은행" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<!-- <span class="accBank">[NH농협]</span> -->
+										<span class="bankBookName">주머니통장</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- 금액 영역 -->
+						
+						<div class="accDataWrap forInner cmStyle"><!-- [2022-11-09] 윤지현: 클래스추가 -->
+							<div>
+								<span class="accNumInfo">출금가능금액</span>
+								<button type="button" class="btnSm">+ 채우기</button> <!-- [2022-11-09] 윤지현: 위치변경 -->
+							</div>
+							<div class="cashWrap"><strong class="accCash">15,000,000,000</strong><span class="accUnit">원</span></div><!-- [2022-11-09] 윤지현: 위치변경하고 div로 감싸기 -->
+						</div>
+					</div>
+
+					<div class="relative">
+						<!-- case : ARS 요청전 -->
+						<div class="infoARSreq beforeReq">
+							<!-- ▼ 2022-08-11 08:43 남협수 [MODIFY] 버튼위에 위치하는 툴팁 수정 -->
+							<div class="btnInArea toastPosition">
+								<button type="button" class="reqARSbtn point">인증번호 발급</button><!-- [2022-11-09] 윤지현:버튼명수정 -->
+								<!-- <p class="smallTip">콕PASS발급이 필요해요</p> -->
+							</div>
+							<!-- <div class="btnInArea">
+								<!~~ ▼ 2022-07-19 수정 onclick이벤트, toastOpen 클래스 삭제  ~~>
+								<!~~ ▼ 2022-07-19 수정 point 추가  ~~>
+								<button type="button" class=" reqARSbtn point">인증번호 생성</button>
+								<!~~ ▼ 2022-07-19 삭제  ~~>
+								<!~~ <script>
+									message = '콕PASS발급이 필요해요';
+								</script> ~~>
+							</div> -->
+						</div>
+						<!--// case : ARS 요청전 -->
+
+						<!-- case : ARS 요청후 -->
+						<div class="infoARSreq afterReq">
+							<div class="arsNumber">
+								<p>생성된 인증번호를 입력해주세요</p>
+								<strong>345098</strong>
+								<span class="time infoTxtErr">05분00초</span>
+								<div class="btnInArea">
+									<button type="button" class="reqARSbtn point">인증번호 재발급</button><!-- [2022-11-09] 윤지현:버튼명수정 -->
+								</div>
+							</div>
+						</div>
+						<!--// case : ARS 요청후 -->
+					</div>
+				</div>
+			</div>
+			<!--// [2022-09-26] 김자영 : 마크업 수정 -->
+			
+			<section class="section30">
+				<div class="btnLnkLine">
+					<a href="javascript:popOpen(popupC);" role="button" class="underLine">콕창구출금 이용 절차가 궁금해요</a>
+				</div>
+
+				<div class="btmInfoWrap">
+					<strong class="tit">확인사항</strong>
+					<ul class="listDot">
+						<li>인증번호는 스마트폰에 수신 후 5분간 유효하며 인증번호 재생성 시 기존 인증번호는 사용이 불가합니다.</li>
+						<li>1일 출금 한도는 <strong class="pColor">제한없이 이용</strong> 가능합니다. (단 한도계좌일 경우 별도의 창구 출금한도가 적용됩니다.)</li>
+						<li><strong class="pColor">콕PASS발급 고객</strong>만 콕창구출금 이용이 가능합니다.</li>
+						<li>전국 <strong class="pColor">농협 영업점</strong>에서 이용 가능합니다.</li>
+						<li>본인확인 절차를 위해 반드시 본인 <strong class="pColor">신분증을 지참</strong>하셔야 콕창구출금이 가능합니다.</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- <p class="defTit2">OTP 분실해제 절차</p>
+			<ol class="listNumBg">
+				<li><span class="tit">신분증 확인</span><br><span class="txt">주민등록증 또는 운전면허증 촬영</span></li>
+				<li><span class="tit">당행계좌 인증</span><br><span class="txt">본인명의 당행 계좌</span></li>
+			</ol> -->
+		</div>  <!-- //#contents -->
+
+		<!-- <div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>   -->
+		<!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popupArea">
+	<!-- TOAST POPUP -->
+	<!-- ▼ 2022-07-19 popup 삭제  -->
+</div>
+
+<!-- ▼ [2022-09-26] 김자영 : 영수증 에니메이션 스크립트 추가 -->
+<script type="text/javascript">
+	// $(document).ready(function(){
+	// 	setTimeout(function(){
+	// 		$(".beforeReq .btnInArea").addClass("fold");
+	// 	},500);
+	// 	setTimeout(function(){
+	// 		//$(".btnArea.fix.inTipBox").removeClass("fold");
+	// 		$(".roundBox.nameTag").addClass("reChoe");
+	// 	},1000);
+	// });
+</script>
+</body>
+</html>

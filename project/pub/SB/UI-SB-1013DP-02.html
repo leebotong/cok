@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1013DP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupB);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕! BASIC 적금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupB)">UI-SB-1013DP</a>
+		</div>  <!-- //#contents -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupB" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">수수료면제조회</h2>
+					</div>
+					<div class="layerSelectContent">
+						<!-- [2022-09-14] -->
+						<!-- UI-SB-1013DP-02 -->
+						<div class="confirmMsg etc">
+							<i class="check"></i>
+							<p class="tit">당행(농협은행 포함) 송금인 경우,<br>수수료는 면제입니다.</p>
+						</div>
+						<!-- UI-SB-1013DP-03 -->
+						<div class="confirmMsg etc">
+							<i class="check"></i>
+							<p class="tit">송금액이 50만원 이하일 경우,<br>수수료는 면제 입니다.</p>
+						</div>
+						<!-- UI-SB-1013DP-04 -->
+						<div class="confirmMsg etc">
+							<i class="warning"></i>
+							<p class="tit">수수료 면제 항목이 없습니다.</p>
+						</div>
+						<!-- //[2022-09-14] -->
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel">확인</button>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

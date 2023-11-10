@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CL-1005P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script type="text/javascript">
+	<!--
+		$(document).ready(function(){
+			popOpen(popupB);
+			//동의선택
+			jQuery('#cokClaSvc').on('change',function(){
+				var checked = jQuery(this).prop('checked');
+				if(checked){
+					jQuery('.btnArea .sel').removeAttr('disabled');
+				}else{
+					jQuery('.btnArea .sel').attr('disabled','disabled');
+				};
+			});
+		});
+	//-->
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>UI-CL-1005P</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupB" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0"></h2>
+					</div>
+					<div class="layerSelectContent">
+						<div class="confirmMsg">
+							<p class="tit">콕모임 이용을 위해<br><span class="pColor">약관 동의</span>가 필요해요.</p>
+							<div class="alramLink highLightType">
+								<div class="formItem">
+									<strong class="formTit inpChk">
+										<input type="checkbox" name="chk1" id="chk11">
+										<label for="cokClaSvc">[필수] NH콕모임서비스 이용약관</label> <!-- [2023-06-08] 콕모임 : 약관명 수정 -->
+										<button class="alramAgreeBtn">서비스 이용약관</button>
+									</strong>
+								</div>
+							</div>
+							<div class="alramLink highLightType">
+								<div class="formItem">
+									<strong class="formTit inpChk">
+										<input type="checkbox" name="chk2" id="chk21">
+										<label for="chk22">[필수] NH콕모임서비스 설명서</label> <!-- [2023-06-08] 콕모임 : 약관명 수정 -->
+										<button class="alramAgreeBtn">서비스 이용약관</button>
+									</strong>
+								</div>
+							</div>
+							<!-- [2023-06-09] 오픈미정 -->
+							<!-- [2023-06-21] 콕모임 : 오픈 -->
+							<div class="alramLink highLightType">
+								<div class="formItem">
+									<strong class="formTit inpChk">
+										<input type="checkbox" name="chk2" id="chk31">
+										<label for="chk22">[필수] 개인정보 제3자 제공 동의서</label>
+										<button class="alramAgreeBtn">서비스 이용약관</button>
+									</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel dis">동의하고 가입신청 하기</button>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

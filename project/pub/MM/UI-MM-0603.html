@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0603</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>입출금 계좌 해지</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">해지하실 계좌 확인 후<br> <strong>승인번호</strong>를 입력해주세요.</p>
+			</div>
+
+      <div class="listTblBox thin">
+        <ul>
+					<li>
+						<span class="tit">상품명</span>
+						<p class="txt">NH근로자급여통장(자유입출금)</p>
+					</li>
+					<li>
+						<span class="tit">계좌번호</span>
+						<p class="txt">123-1234-1234-122</p>
+					</li>	
+					<li>
+						<span class="tit">예금주</span>
+						<p class="txt">홍길동</p>
+					</li>
+					<li>
+						<span class="tit">해지구분</span>
+						<p class="txt">일반해지</p>
+					</li>
+				</ul>
+			</div>
+
+			<section>
+				<div class="listTbl">
+					<div class="listTit">
+						<strong>해지 지급액</strong>
+					</div>
+					<ul>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">세후지급액</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">해지 요청금액</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">이자합계액</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">소득세</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">지방소득세</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">농특세</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">세금합계액</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+      <section class="section30">
+        <div class="formWrap">
+          <div class="formItem">
+            <strong class="formTit">해지 시 입금받을 계좌</strong>
+            <div class="inpSel">
+              <a href="javascript:;" title="해지시 입금받을 계좌 선택" role="button" class="btnSel ">계좌 선택</a>
+            </div>
+          </div>
+
+          <div class="formItem">
+            <strong class="formTit">휴대전화번호</strong>
+            <div class="inpText readonly">
+              <input type="text" title="휴대전화번호" class="tyTxt" value="010-123*-123*" placeholder="휴대전화번호" readonly>
+              <!-- <button type="button" title="입력 텍스트 삭제" class="btnReset"></button> -->
+            </div>
+            <!-- <p class="infoTxt">휴대전화번호가 다른 경우 NH스마트뱅킹앱 <a href="javascript:;">고객센터>고객정보관리>고객정보 변경</a> 메뉴에서 변경 하실 수 있습니다.</p> --><!-- [2022-07-15]삭제 -->
+          </div>
+
+          <div class="formItem">
+            <strong class="formTit">승인번호</strong>
+            <div class="inpText">
+              <input type="tel" title="승인번호 입력" value class="tyTxt" placeholder="6자리 승인번호 입력">
+              <span class="time">05:00</span>
+              <button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+            </div>
+            <p class="infoTxt">NH농협 회원정보에 등록된 고객님의 휴대전화로 승인번호가 자동으로 발송됩니다.</p>
+          </div>
+        </div>  
+      </section>
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+          <li>현재 잔액이 0원이어도 아직 지급받지 않은 이자가 있을 수 있습니다.</li>
+          <li>해외 체류 고객의 경우 승인번호를 수신 받지 못하실 수 있습니다.</li>
+          <li>해지가 완료된 후에는 취소하거나 정정 하실 수 없습니다.</li>
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="toastMessage">[해지]선택 시 전자서명과 동시에 해지 완료 됩니다.</div>
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">해지</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

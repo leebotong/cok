@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>콕 terms</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕 terms</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<!-- <div class="stepUnit">
+				<p class="stepTit">약관동의</p>
+				<ul class="stepVal">
+					<li class="current"  aria-label="step1" aria-current="step">1</li>
+					<li aria-label="step2">2</li>
+					<li aria-label="step3">3</li>
+					<li aria-label="step4">4</li>
+				</ul>
+			</div> -->
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>설명서 및 약관</strong>을<br><strong>동의</strong>해주세요</p>
+			</div>
+
+			<div class="allCheckTopBox">
+				<input type="checkbox" name="agreeChk" id="aggChkAll">
+				<label for="aggChkAll">약관 및 유의사항 전체 동의</label>
+				<!-- <a href="#none" class="termsArrow" role="button" title="약관상세보기 팝업열림">&#xE001;</a> -->
+			</div>
+			
+			<div class="allCheckBox">
+				<div class="termsHead">
+					<p>상품안내 및 이용약관</p>
+					<a href="javascript:;" role="button" class="btn">모두보기</a><!-- [2022-07-13] 윤지현:문구수정 -->
+				</div>
+				<ul class="termsList">
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk01">
+							<label for="aggrChk01">[필수] NH콕뱅크 이용약관 NH콕뱅크 이용약관NH콕뱅크 이용약관</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+					</li>
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk02">
+							<label for="aggrChk02">[필수] 농협 전자금융 서비스 이용약관</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+					</li>
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk03">
+							<label for="aggrChk03">[필수] 전자금융거래 기본약관</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+					</li>
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk04">
+							<label for="aggrChk04">[필수] 개인(신용)정보 수집·이용 동의</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+					</li>
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk05">
+							<label for="aggrChk05">[필수] 개인정보 제3자 제공동의</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+					</li>
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk06">
+							<label for="aggrChk06">[선택] 위치정보 수집 및 이용 동의</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+					</li>
+				</ul>
+
+				<div class="termsList">
+					<div class="jsTgWrap">
+						<div class="termsCheck">
+							<input type="checkbox" name="nPartCheck" id="aggrChk07" class="jsTgBtn">
+							<label for="aggrChk07">[필수] 불법/탈법 차명거래금지 설명 확인</label>
+						</div>
+						<div class="jsTgCont" style="display:block">
+							<p class="termsExp">
+								「금융실명거래 및 비밀보장에 관한 법률」 제 3조 제3항에 따라 누구든지 불법재산의 은닉, 자금세탁행위, 공중협박자금조달행위 및 강제집행의 면탈 그 밖의 탈법행위를 목적으로 타인의 실명으로 금융거래를 하여서는 아니 되며, 이를 위한 시 5년 이하의 징역 또는 5천만원 이하의 벌금에 처해질 수 있습니다.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="termsList">
+					<div class="jsTgWrap">
+						<div class="termsCheck">
+							<input type="checkbox" name="nPartCheck" id="aggrChk08" class="jsTgBtn">
+							<label for="aggrChk08">[필수] 예금자보호법 설명 확인</label>
+						</div>
+						<div class="jsTgCont" style="display:block">
+							<p class="termsExp">
+								본인이 가입하는 금융상품의 예금자보호여부 및 보호한도(원금과 소정의 이자를 합하여 1인당 5천만원)에 대한 설명을 보고, 충분히 이해하였음을 확인합니다.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="termsList">
+					<div class="jsTgWrap">
+						<div class="termsCheck">
+							<input type="checkbox" name="nPartCheck" id="aggrChk09" class="jsTgBtn">
+							<label for="aggrChk09">[필수] 해외 거주자 및 납세의무자 여부 확인</label>
+						</div>
+						<div class="jsTgCont" style="display:block">
+							<p class="termsExp">
+								대한민국 이외의 조세 목적상 거주지가 없습니다.
+								외국 국적자(이중국적 포함), 해외 거주자인 경우에는 비대면 계좌 개설이 불가하며, 정보가 변경될 경우, 금융기관이 본인확인서 정보를 요청할 수 있으며, 요청일로부터 60일 이내에 영업점을 방문하여 수정하시기 바랍니다. 해당 사항에 대해 관련 정보를 제공하지 않거나 허위로 제공할 경우, 관련 법에 따라 국세청에 의무이행방해자로 신고될 수 있음을 알려 드립니다.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="termsList">
+					<div class="jsTgWrap">
+						<div class="termsCheck">
+							<input type="checkbox" name="nPartCheck" id="aggrChk10" class="jsTgBtn">
+							<label for="aggrChk10">[선택] 마케팅 정보수신동의</label>
+						</div>
+						<div class="jsTgCont">
+							<p class="termsExp">
+								마케팅수신 채널 선택
+							</p>
+							<div class="chkGroup flex11">
+								<div class="inpChk">
+									<input type="checkbox" name="check5" id="check51">
+									<label for="check51">전화</label>
+								</div>
+								<div class="inpChk">
+									<input type="checkbox" name="check5" id="check52">
+									<label for="check52">SMS</label>
+								</div>
+								<div class="inpChk">
+									<input type="checkbox" name="check5" id="check53">
+									<label for="check53">우편물</label>
+								</div>
+								<div class="inpChk">
+									<input type="checkbox" name="check5" id="check54">
+									<label for="check54">이메일</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="allCheck">
+				<input type="checkbox" name="agreeChk" id="aggrChk11">
+				<label for="aggrChk11">상품 약관 및 주요 안내사항을 읽고 충분히 이해하며 이에 동의합니다.</label>
+			</div>
+			
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<p class="infoTxt">상품안내/약관 및 주요 안내사항을 읽고 충분히 이해하며 이에 동의합니다.</p>
+			</div>
+			
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">이전</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

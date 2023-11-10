@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SA-0036</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕PASS 해지</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">콕PASS를 <br><strong>해지</strong>하시겠습니까?</p>
+				<!-- OTP 미이용시 -->
+				<!-- [2022-09-26] 김자영 : 텍스트 수정-->
+				<ul class="listDot">
+					<li>현재 고객님은 <strong class="pColor">콕PASS</strong>를 사용하고 계십니다.<br>
+					콕PASS 해지 후 설정 가능한<br>
+					1회/1일 최대 송금한도는 <strong class="pColor">500만원</strong> 입니다.
+					</li>
+				</ul>
+				<!--// [2022-09-26] 김자영 : 텍스트 수정-->
+
+				<!-- OTP 이용시 -->
+				<ul class="listDot">
+					<li>현재 고객님은 <strong class="pColor">콕PASS</strong>를 사용하고 계십니다.<br>
+					콕PASS 해지 후에도 1회/1일 설정된 한도는 유지됩니다.
+					</li>
+				</ul>
+			</div>
+
+			<!-- OTP 미이용시 -->
+			<div class="listTblBox">
+				<ul>
+					<li>
+						<span class="tit">1회 송금한도</span>
+						<p class="txt"><em class="pColor">30</em>만원 &#8594 <em class="pColor">500</em>만원</p><!-- [2022-09-26] 김자영 : 금액수정 수정-->
+					</li>
+					<li>
+						<span class="tit">1일 송금한도</span>
+						<p class="txt"><em class="pColor">30</em>만원 &#8594 <em class="pColor">500</em>만원</p><!-- [2022-09-26] 김자영 : 금액수정 수정-->
+					</li>
+				</ul>
+			</div>
+			<!--// OTP 미이용시 -->
+
+			<!-- OTP 이용시 -->
+			<div class="listTblBox">
+				<ul>
+					<li>
+						<span class="tit">1회 송금한도</span>
+						<p class="txt"><em class="pColor">30</em>만원</p>
+					</li>
+					<li>
+						<span class="tit">1일 송금한도</span>
+						<p class="txt"><em class="pColor">30</em>만원</p>
+					</li>
+				</ul>
+			</div>
+			<!--// OTP 이용시 -->
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">해지</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

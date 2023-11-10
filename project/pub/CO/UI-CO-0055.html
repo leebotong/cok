@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CO-0055</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(sp);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>송금</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(sp);">금액입력 ></a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- SLIDE POPUP -->
+		<div id="sp" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">보낼금액 입력</h2>
+							<!-- 퍼블확인용 -->
+							<!-- <div style="background: rgba(255,0,0,0.2);position: absolute;top: 0">
+								<button type="button" class="uicheck">&#xE001; 금액입력 확인</button>
+								<button type="button" class="errorcheck">&#xE001; ERROR 텍스트 확인</button>
+							</div> -->
+							<!-- //퍼블확인용 -->
+						</div>
+						<div class="layerSelectContent">
+							<div>
+								<div class="toSendMonyWrap">
+									<div class="formWrap">
+										<div class="formItem"><!-- error 문구 노출 시 .error 추가 -->
+											<div class="priceWrap">
+												<div class="priceInput" role="button" aria-label="보낼금액입력" title="이체금액 000원"><!-- native 키패드 호출. 입력전 title="" -->
+													<input type="tel" title="보낼 금액" class="toSendMony inpText" placeholder="">
+													<div class="placeholder">보낼 금액 입력</div>
+													<!-- <div class="price">
+														5,320,000<span>원</span>
+													</div> -->
+												</div>
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											</div>
+											<div class="priceMessage">
+												<!-- <span>오백삼십이만원</span> -->
+												<span>1일 송금한도 초과 / 1억5천 한도 증액 가능</span>
+											</div>
+										</div>
+										<!-- <div class="limitMoney">
+											<div class="layoutWrap">
+												<div>출금가능금액</div>
+												<div>4,000,000원</div>
+											</div>
+											<div class="layoutWrap">
+												<div>
+													<strong class="formTit mb0">이체한도
+														<div class="tooltipWrap jsTooltipPosition">
+															<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+															<div class="tooltipCont al">
+																<strong class="tit">이체한도</strong>
+																<p>이체한도이체한도이체한도이체한도</p>
+																<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+															</div>
+														</div>
+													</strong>
+												</div>
+												<div>1회 1,000,000원 / 1일 5,000,000원</div>
+											</div>
+										</div> -->
+									</div>
+								</div>
+								<div style="background-color: var(--bd-color-ff);height: 230px;color: var(--txt-color-blue-03);display: table;width: 100%;text-align: center;background:rgb(233, 179, 179)">
+									<!-- <div class="roundBoxUtility">
+										<div class="touchBtnWrap">
+											<a href="javascript:;" role="button" title="전액">전액</a>
+											<a href="javascript:;" role="button" title="100만원 추가">+100만</a>
+											<a href="javascript:;" role="button" title="10만원 추가">+10만</a>
+											<a href="javascript:;" role="button" title="5만원 추가">+5만</a>
+											<a href="javascript:;" role="button" title="1만원 추가">+1만</a>
+										</div>
+									</div> -->
+									<div style="display: table-cell;vertical-align:middle">native keyboard area</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="popFootBox">
+							<div class="btnArea">
+								<button type="button" onclick="popClose(this)" class="sel">확인</button>
+							</div>
+						</div> -->
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose" data-popup-focus-close="popupA-close"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+	// 송금금액입력. 해당 페이지에서만 사용
+	$(document)
+		.on('keypress, keyup', '.toSendMonyWrap .toSendMony', function(e){
+			if(this.value.length>9){
+				$(this).addClass('full').next('.price').addClass('sfont');
+			} else{
+				$(this).removeClass('full').next('.price').removeClass('sfont');
+			}
+			$(this).next('div').removeClass('placeholder').addClass('price').html(this.value + '<span>원</span>');
+			$(this).parent('.priceInput').next('.btnReset').show();
+		})
+		//reset 버튼
+		.off('click', '.priceWrap .btnReset')
+		.on('click', '.priceWrap .btnReset', function(e){
+			$(this).parent('.priceWrap').find('.price').html('');
+			$(this).parent('.priceWrap').find('.toSendMony').val('');
+			$(this).parent('.priceWrap').children('.priceInput').find('div').removeClass('price').addClass('placeholder').html('보낼 금액 입력');
+		});
+
+	// 퍼블확인용
+	// $(document).ready(function(){
+	// 	$('.errorcheck').hide();
+	// 	$('.uicheck').bind('click', function(){
+	// 		$('.toSendMonyWrap').toggleClass('active');
+	// 		$('.errorcheck').fadeToggle();
+	// 	});
+	// 	$('.errorcheck').bind('click', function(){
+	// 		$('.formItem').toggleClass('error');
+	// 	});
+	// });
+</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0803</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>오픈뱅킹 관리</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">오픈뱅킹 관리</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<!-- 2022-11-01 윤지현:계좌없을시 노출되는 안내 추가 -->
+						<div class="noData">
+							<i class="check"></i>
+							<p class="tit">등록된 다른금융계좌가 없습니다.</p>
+						</div>
+						<div class="btnInArea mt30">
+							<button type="button" class="point">다른금융계좌 등록</button>
+						</div>
+						<!-- //2022-11-01 윤지현:계좌없을시 노출되는 안내 추가 -->
+
+            <div class="pgTitWrap">
+              <p class="pTit">이규호님<br> <strong>5개 기관의 5개 계좌</strong>가<br> 등록되어 있습니다.</p>
+            </div>
+
+            <section class="section30">
+              <ul class="accChkBankList">
+                <li>
+                  <div class="roundBox noBorder accChkBank">
+                    <div class="roundInBox">
+                      <div class="accTypeWrap accCheckType">
+                        <div class="accInLayout">
+                          <div class="accStoreIn">
+                            <div class="accTag">
+                              <span class="tagItem tag1">입출금</span>
+                            </div>
+                            <div class="accInfo accInfoInLayoutWrap">
+                              <div class="accInfoInLayout">
+                                <div class="logoWrap">
+                                  <img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+                                </div>
+                                <div class="accInfoWrap">
+                                  <strong class="accName">
+                                    <!-- <span class="accBank">[NH농협]</span> -->
+                                    <span class="bankBookName">주머니(MONEY)통장 or 별칭여섯자리 </span>
+                                  </strong>
+                                  <div class="accNumWrap">
+                                    <div class="accNumBox">
+                                      <span class="accNumber">352-1775-6397-03</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="btnInArea">
+                          <button type="button">통지 이메일 변경</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="roundBox noBorder accChkBank">
+                    <div class="roundInBox">
+                      <div class="accTypeWrap accCheckType">
+                        <div class="accInLayout">
+                          <div class="accStoreIn">
+                            <div class="accTag">
+                              <span class="tagItem tag3">예적금</span>
+                            </div>
+                            <div class="accInfo accInfoInLayoutWrap">
+                              <div class="accInfoInLayout">
+                                <div class="logoWrap">
+                                  <img src="../../images/logo/icon_bnk_004.png" alt="국민은행" class="logo">
+                                </div>
+                                <div class="accInfoWrap">
+                                  <strong class="accName">
+                                    <span class="accBank">[국민]</span>
+                                    <span class="bankBookName">주머니(MONEY)통장 or 별칭여섯자리 </span>
+                                  </strong>
+                                  <div class="accNumWrap">
+                                    <div class="accNumBox">
+                                      <span class="accNumber">352-1775-6397-03</span>
+                                    </div>
+                                  </div>
+                                  <!-- <p class="bankDate">2022.04.14 11:20</p> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="btnInArea">
+                          <button type="button">통지 이메일 변경</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- [2023-04-07] 추가-->
+              <div class="btnLnkLine">
+                <a href="javascript:popOpen(popupC);" role="button" class="underLine">오픈뱅킹 서비스 해지</a>
+              </div>
+            </section>
+					</div>
+          <div class="popFootBox">
+
+          </div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

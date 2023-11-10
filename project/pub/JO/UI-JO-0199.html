@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0199</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>단기카드대출(현금서비스)</h1>
+		<!-- <div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div> -->
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<!-- ▼ [2022-10-11] 김자영: 타이틀 수정-->
+				<p class="pTit"><strong>카드 선택</strong> 후<br> 비밀번호를 <strong>입력</strong>해주세요.</p>
+			</div>
+
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">카드번호</strong>
+					<!-- [2022-10-11] 김자영 : 마크업 변경 -->
+					<div class="inpSel">
+						<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel placeholder">
+							<div class="accNum">
+								<span class="tit">채움 패밀리카드</span>
+								<span class="num">1234-****-****-5678</span>
+							</div>
+						</a>
+					</div>
+					<!--// [2022-10-11] 김자영 : 마크업 변경 -->
+					
+					<!-- 직접입력 선택시// -->
+					<div class="inpText">
+						<input type="text" title="카드번호 직접입력" value class="tyTxt" placeholder="숫자 16자리 –없이 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<!-- //직접입력 선택시 -->
+				</div>
+				<div class="formItem">
+					<strong class="formTit">카드비밀번호</strong>
+					<div class="inpText">
+						<input type="password" title="카드비밀번호" value="1111" class="tyTxt" placeholder="숫자 4자리 입력 "> <!-- [2022-06-24] 윤지현:문구수정  -->
+						<a href="javascript:;" role="button" aria-label class="btnSm">확인</a>
+					</div>
+					<p class="infoTxtErr">비밀번호가 일치하지 않습니다.</p>
+					<p class="infoTxt">비밀번호 3회 오류 시 카드 소지 후 NH농협카드 고객상담센터(1644-4000) 또는 영업점으로 문의해주세요.</p>
+				</div>
+
+				<hr class="divingLine">
+
+				<section>
+					<div class="listTblBox">
+						<ul>
+							<li>
+								<span class="tit">대출가능금액</span><!-- [2022-07-13] 윤지현:문구수정 -->
+								<!-- ▼ [2022-10-11] 김자영: 금액수정 -->
+								<p class="txt"><strong class="dataWrap"><em class="data">50</em><span class="unit">만원</span></strong></p>
+							</li>
+							<li>
+								<span class="tit">대출금리</span><!-- [2022-07-13] 윤지현:문구수정 -->
+								<p class="txt">
+									<!-- [2022-08-19] -->
+									<span class="dataWrap through" style="color:#111 !important">연<em class="data">15</em><span class="unit">%</span></span><br>
+									<span class="dataWrap">연<em class="data">15</em><span class="unit">%</span></span>
+									<!-- //[2022-08-19] -->
+								</p> 
+							</li>
+						</ul>
+					</div>
+	
+					<div class="formItem action">
+						<strong class="formTit rePose">신청금액</strong><!-- ▼ [2022-10-11] 김자영: class rePose 추가 -->
+						<!-- 삭제 <p class="numVal"><em class="data"></em><span class="unit">만원</span></p> -->
+						<div class="inpText">
+							<input type="tel" title="신청금액" value class="tyNum" placeholder="금액 입력">
+							<span class="unit">만원</span>
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+						<p class="infoTxtErr">대출가능금액 이하로 입력해주세요.</p>
+						<p class="infoTxt ar">최소 1만원 이상 1만원 단위</p><!-- [2022-07-05] 윤지현:문구추가 -->
+					</div>
+	
+					<div class="btnInArea">
+						<button type="button" class="point">예상이자조회</button>
+					</div>
+	
+					<div class="formItem"> <!-- [2022-07-07] 윤지현:div감싸기 -->
+						<div class="readonlyBox mt15"> <!-- [2022-07-05] 윤지현:클래스삭제 -->
+							<ul>
+								<li>
+									<strong class="formTit">예상이자<br>(결제일기준)</strong>
+									<p class="value"><span class="dataWrap"><em class="data">-</em><span class="unit">원</span></span></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+	
+					<div class="formItem">
+						<strong class="formTit">대출금 입금받을 계좌<!-- [2022-07-13] 윤지현:문구수정 -->
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<strong class="tit">대출금 입금받을 계좌</strong> <!-- [2022-07-13] 윤지현:문구수정 -->
+									<ul class="listDot">
+										<li>선택하신 카드 결제계좌로 자동 지정됩니다.</li>
+										<li>결제계좌 변경을 원하신다면, NH농협카드 홈페이지 및 모바일을 이용하시거나 NH농협카드 고객상담센터 또는 영업점을 이용해 주세요.</li>
+									</ul>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->
+						</strong>
+						<div class="readonlyBox"> <!-- [2022-07-05] 윤지현:클래스삭제 -->
+							<div class="inpSel isLogo">
+								<div class="btnSel">
+									<span class="logo">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+									</span>
+									<div class="accNum">
+										<span class="tit"><!--<span class="accBank">[농협]</span>--> 바로N콕통장(내주거래통장)</span>
+										<span class="num">555368-12-023456</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="btmInfoWrap">
+						<strong class="tit">확인사항</strong>
+						<ul class="infoTxt">
+							<li>서비스 이용가능 시간은 01:30~23:55입니다.</li>
+							<li>단기카드대출 신청 전 NH농협카드 홈페이지의 상품설명서와 약관을 반드시 읽어 보시기 바랍니다.</li>
+							<li><em class="txtRed">과도한 빚, 고통의 시작입니다.</em></li>
+							<li>여신금융상품 이용 시 귀하의 신용등급 또는 개인신용평점이 하락 할 수 있으며, 취업, 소득증가 등의 사유로 신용등급 또는 개인신용 평점이 개선된 경우 합리적 근거를 토대로 <em class="pColor">금리인하를 요구할 수 있습니다.</em> </li>
+						</ul>
+					</div>
+				</section>
+			</div>
+
+			
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

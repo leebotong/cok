@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0239</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>NH매일적금</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<!-- [2022-07-04] 윤지현:twoToneType 걷어냄 -->
+			<div class="pgTitWrap">
+				<!-- [2022-07-04] 윤지현:브랜치 위치변경 및 마크업변경  -->
+				<div class="branchBox">
+					<p class="name">서울경기축산농협 디지털미디어시티지점</p>
+				</div>
+				<!-- //[2022-07-04] 윤지현:브랜치 위치변경 및 마크업변경  -->
+				<p class="pTit"><strong>상품가입</strong><br>정보를 <strong>입력</strong>해주세요.</p>
+			</div>
+
+			<!-- formwrap -->
+			<div class="formWrap">
+				<div class="formItem action">
+					<strong class="formTit">신규가입금액</strong>
+					<p class="numVal"><em class="data"></em><span class="unit">원</span></p>
+					<div class="inpText">
+						<input type="tel" title="신규가입금액" value class="tyNum" placeholder="금액 입력">
+						<span class="unit">원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxt ar">1,000원 이상 100,000원 이하</p> <!-- [2022-07-04] 윤지현:문구수정 -->
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit action">계약기간</strong>
+					<!-- <div class="rangeWrap">
+						<span class="circle"></span>
+						<span class="bar"></span>
+						<ul>
+							<li><button type="button" title="">6개월<span>(최소)</span></button></li>
+							<li><button type="button" title="선택됨" class="active">12개월</button></li>
+							<li><button type="button" title="">24개월</button></li>
+							<li><button type="button" title="">60개월<span>(최대)</span></button></li>
+						</ul>
+					</div>
+					<script>
+						$(function(){
+							var bar = $('.rangeWrap .bar');
+							var circle = $('.rangeWrap .circle');
+							var btn = $('.rangeWrap button');
+
+							$('.rangeWrap button').each(function(){
+								if($(this).hasClass('active')){
+									var objoffset = $(this).offset().left -20;
+									var objWidth = $(this).outerWidth(true) / 2;
+									var objoffsetMov = objoffset + objWidth -13;
+									$(this).attr('title','').removeClass('active');
+									$(this).attr('title','선택됨').addClass('active');
+									circle.animate({left:objoffsetMov},200);
+									bar.animate({width:objoffsetMov},200);
+								}
+							});
+							btn.click(function(){
+								var objoffset = $(this).offset().left - 20;
+								var objWidth = $(this).outerWidth(true) / 2;
+								var objoffsetMov = objoffset + objWidth - 13;
+								$('.rangeWrap button').attr('title','').removeClass('active');
+								$(this).attr('title','선택됨').addClass('active');
+								circle.animate({left:objoffsetMov},200);
+								bar.animate({width:objoffsetMov},200);
+							})
+						});
+					</script> -->
+					<div class="rdoBtnsWrap">
+						<ul>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample01">
+									<label for="sample01">3개월</label> <!-- [2022-07-22] 윤지현:문구수정 -->
+								</span>
+							</li>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample02">
+									<label for="sample02">4개월</label><!-- [2022-07-22] 윤지현:문구수정 -->
+								</span>
+							</li>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample03">
+									<label for="sample03">5개월</label><!-- [2022-07-22] 윤지현:문구수정 -->
+								</span>
+							</li>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample04">
+									<label for="sample04">6개월</label><!-- [2022-07-22] 윤지현:문구수정 -->
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">출금계좌
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">출금계좌</strong>
+								<p>콕뱅크에 등록하신 농·축협 계좌만 출금계좌 지정이
+									가능하며 NH농협은행 계좌로는 출금계좌 지정 및
+									상품가입이 불가능 합니다.</p>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="inpSel isLogo">
+						<a href="javascript:;" title="출금계좌 선택" role="button" class="btnSel placeholder">
+							<span class="logo">
+								<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+							</span>
+							<div class="accNum">
+								<span class="tit"><!--<span class="accBank">[농협]</span>--> 주머니(money)통장</span>
+								<span class="num">555368-12-023456</span>
+							</div>
+						</a>
+					</div>
+					<div class="inpOpenM">출금가능금액 <strong class="pColor">0원</strong>
+						<button type="button" class="btnSm">+ 채우기</button>
+					</div>
+				</div>
+				<div class="formItem jsTgWrap">
+					<strong class="formTit">출금계좌 비밀번호</strong>
+					<div class="inpText">
+						<button type="button" title="출금계좌 비밀번호 4자리 입력됨" aria-label="출금계좌 비밀번호 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+						<input type="password" title="출금계좌 비밀번호" aria-hidden="true" value class="tyTxt sKey" placeholder="숫자 4자리 입력 " readonly> <!-- [2022-06-24] 윤지현:문구수정,클래스추가  -->
+					</div>
+					<div class="inpChk inpChk dib"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 dib 클래스 추가 -->
+						<input type="checkbox" title="약관상세보기 팝업열림" name="chk2" id="chk21" class="jsTgBtn" checked>
+						<label for="chk21">신규계좌 비밀번호와 동일하게 설정</label>
+					</div>
+					<!-- 비번 동일 해제시 노출 -->
+					<div class="jsTgCont formExpBox">
+						<div class="formItem">
+							<div class="inpText">
+								<button type="button" title="비밀번호 4자리 입력됨" aria-label="비밀번호 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+								<input type="password" title="비밀번호" aria-hidden="true" class="sKey" placeholder="신규계좌 비밀번호 입력" maxlength="4" readonly>
+							</div>
+							<div class="inpText error">
+								<button type="button" title="비밀번호 4자리 입력됨" aria-label="비밀번호 재입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+								<input type="password" title="비밀번호 재입력" aria-hidden="true" class="sKey" placeholder="신규계좌 비밀번호 재입력" maxlength="4" readonly>
+							</div>
+							<p class="infoTxtErr">비밀번호가 일치하지 않습니다.</p>
+						</div>
+					</div>
+					<!-- 비번 동일 해제시 노출 -->
+				</div>
+			</div>
+			<!-- //formwrap -->
+
+			<hr class="divingLine">
+
+			<!-- formwrap -->
+			<div class="formWrap">
+				<div class="formItem jsTgWrap">
+					<strong class="formTit inpChk dib"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 dib 클래스 추가 -->
+						<input type="checkbox" name="chk4" id="chk41" class="jsTgBtn">
+						<label for="chk41">(준)조합원 세금우대 혜택 받을래요.</label>
+
+						<!-- [2022-11-01] 윤지현:툴팁 마크업위치 변경(label과 동일한 뎁스) tooltip -->
+						<div class="tooltipWrap jsTooltipPosition"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 jsTooltipPosition 클래스 추가 -->
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">세금우대예탁금</strong>
+								<p>만 19세 이상 대한민국 거주자(소득세법 기준)라면 농·축협 (준)조합원에 가입하
+									고 예적금 신규 가입 시 3000만원까지 이자소득세 감면 혜택을 받으실 수 있습니다.<br>
+								<p class="bili">2022년 1월 1일 이후 세금우대예탁금 가입자는 직전 3개연도 내 1회 이상 금융소득종합과세 대상자에 해당될 경우 가입대상에서 제외되면, 이후 관련 법령에서 정하는 절차에 따라 세금우대예탁금이 해지(일반과세 전환)되는 등 불이익을 받을 수 있습니다.</p>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+
+					</strong>
+					<!-- 조합원 세금우대 체크시 노출 -->
+					<!-- [2022-07-15] 마크업수정 -->
+					<div class="jsTgCont formExpBox">
+						<ul class="listTbl">
+							<li>
+								<div class="listIn_flex">
+									<strong class="formTit">세금우대예탁금 가입금액</strong>
+									<p class="value">최대 <strong class="dataWrap"><em class="data">30,000,000</em><span class="unit">원</span></strong></p>
+								</div>
+							</li>
+						</ul>
+						<!-- 2022-08-19 -->
+						<div class="inpText">
+							<input type="tel" title="가입금액" value class="tyNum" placeholder="가입금액 입력" maxlength="">
+							<span class="unit">원</span>
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+						<!-- //2022-08-19 -->
+					</div>
+					<!-- //[2022-07-15] 마크업수정 -->
+					<!-- 조합원 세금우대 체크시 노출 -->
+				</div>
+
+				<div class="pColorLineBox isImg">
+					<p class="txt"><strong class="pColor">조합원, 준조합원 고객님~</strong><br>3000만원까지 예적금 이자소득세 감면<br>혜택을 받아보세요!</p>
+				</div>
+
+				<div class="formItem jsTgWrap">
+					<strong class="formTit inpChk dib"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 dib 클래스 추가 -->
+						<input type="checkbox" name="chk5" id="chk51" class="jsTgBtn">
+						<label for="chk51">비과세종합저축 혜택 받을래요.</label>
+
+						<!-- [2022-11-01] 윤지현:툴팁 마크업위치 변경(label과 동일한 뎁스) tooltip -->
+						<div class="tooltipWrap jsTooltipPosition"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 jsTooltipPosition 클래스 추가 -->
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">비과세종합저축</strong>
+								<p>비과세종합저축 대상자는 예적금 신규 가입 시 5000만원까지 이자소득세 비과세 혜택을 받으실 수 있습니다.</p>
+								<p class="bili">2022년 1월 1일 이후 비과세종합저축 가입자는 직전 3개년도 내 1회 이상 금융소득 종합과세대상자에 해당될 경우 가입대상에서 제외되며, 이후 관련 법령에서 정하는 절차에 따라 비과세종합저축이 해지(일반과세 전환)되는 등 불이익을 받을 수 있습니다.</p>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+
+					</strong>
+					<!-- 비과세종합저축 혜택 체크시 노출 -->
+					<!-- [2022-07-15] 마크업수정 -->
+					<div class="jsTgCont formExpBox">
+						<ul class="listTbl">
+							<li>
+								<div class="listIn_flex">
+									<strong class="formTit">비과세종합저축 가입금액</strong>
+									<p class="value">최대 <strong class="dataWrap"><em class="data">3,000,000</em><span class="unit">원</span></strong></p>
+								</div>
+							</li>
+						</ul>
+						<!-- 2022-08-19 -->
+						<div class="inpText">
+							<input type="tel" title="가입금액" value class="tyNum" placeholder="가입금액 입력" maxlength="">
+							<span class="unit">원</span>
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+						<!-- //2022-08-19 -->
+					</div>
+					<!-- //[2022-07-15] 마크업수정 -->
+					<!-- 비과세종합저축 혜택 체크시 노출 -->
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit inpChk dib"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 dib 클래스 추가 -->
+						<input type="checkbox" name="chk6" id="chk61" checked>
+						<label for="chk61">자동이체 할게요.</label>
+
+						<!-- [2022-11-01] 윤지현:툴팁 마크업위치 변경(label과 동일한 뎁스) tooltip -->
+						<div class="tooltipWrap jsTooltipPosition"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 jsTooltipPosition 클래스 추가 -->
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">자동이체</strong>
+								<p>정기적금인 경우, 자동이체일을 신규일 이후 일자로
+									선택하시면, 지연일수에 해당하는 이자가 해지일에
+									차감됩니다.</p>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+
+					</strong>
+				</div>
+				<div class="formExpBox">
+					<div class="formWrap">
+						<div class="formItem">
+							<strong class="formTit">시작일</strong>
+							<div class="inpSel">
+								<a href="javascript:;" title="시작일 선택" role="button" class="btnSelDate readonly">2022.03.10</a> <!-- [2022-07-15] 윤지현:날짜선택 불가의 경우 disabled 추가 -->
+							</div>
+						</div>
+						<div class="formItem">
+							<strong class="formTit">금액</strong>
+							<p class="numVal"><em class="data"></em><span class="unit">원</span></p>
+							<div class="inpText">
+								<input type="tel" title="금액" value class="tyNum" placeholder="금액 입력">
+								<span class="unit">원</span>
+								<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							</div>
+							<p class="infoTxt ar">1,000원 이상 100,000원 이하</p> <!-- [2022-07-13] 윤지현:문구수정 -->
+						</div>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit inpChk dib"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 dib 클래스 추가 -->
+						<input type="checkbox" name="chk7" id="chk71" checked>
+						<label for="chk71">만기 시 자동해지 할게요. (필수)</label>
+						<!-- [2022-11-01] 윤지현:툴팁 마크업위치 변경(label과 동일한 뎁스) tooltip -->
+						<div class="tooltipWrap jsTooltipPosition"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 jsTooltipPosition 클래스 추가 -->
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">만기 자동해지</strong> <!-- [2023-03-06] 김연진:문구수정 -->
+								<ul class="listDot">
+									<li>만기 시, 만기일 00시 이전에 자동으로 해지되어 가입 당시 선택한 출금계좌로 입금됩니다.</li>
+									<li>질권 설정, 사고 신고된 계좌, 전 회차가납입되지 않은 정기적금은 만기일에 자동 입금처리가 되지 않습니다.</li>
+									<li>모든 회차가 납입은 되었으나 지연 일수가 있는 정기적금은 확정만기일로 만기일이 연기됩니다.</li>
+								</ul>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+
+					</strong>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit inpChk dib"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 dib 클래스 추가 -->
+						<input type="checkbox" name="chk8" id="chk81" checked>
+						<label for="chk81">만기안내 SMS 알림을 받을래요.</label>
+						<!-- [2022-11-01] 윤지현:툴팁 마크업위치 변경(label과 동일한 뎁스) tooltip -->
+						<div class="tooltipWrap jsTooltipPosition"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 jsTooltipPosition 클래스 추가 -->
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">만기안내 SMS</strong>
+								<!-- [2022-06-24] 윤지현:문구수정 -->
+								<ul class="listDot">
+									<li>만기안내서비스는 가입시, 동의하신 계좌의 만기일 5영업일 전 1회에 한하여 발송 합니다. 만기 안내는 발송일 기준 NH스마트뱅킹, NH인터넷뱅킹 고객정보에 등록된 휴대전화번호로 통지 되오니, 가입 전에 휴대전화 번호를 확인해 주십시오.</li>
+									<li>[NH콕뱅크&gt;MY뱅크&gt;마케팅 활용동의]에서 마케팅 동의 및 SMS 등의 등록을 하셔야 만기안내 서비스를 받으실 수 있습니다. </li>
+								</ul>
+								<!-- //[2022-06-24] 윤지현:문구수정 -->
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+
+					</strong>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit inpChk dib"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 dib 클래스 추가 -->
+						<input type="checkbox" name="chk9" id="chk91">
+						<label for="chk91">예금잔액통보(우편) 신청해요.</label>
+						<!-- [2022-11-01] 윤지현:툴팁 마크업위치 변경(label과 동일한 뎁스) tooltip -->
+						<div class="tooltipWrap jsTooltipPosition"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 jsTooltipPosition 클래스 추가 -->
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">예금잔액통보(우편)</strong> <!-- [2022-06-24] 윤지현:문구수정 -->
+								<p>신청계좌의 기준잔액이 매월 말일 기준으로 5억원 이상인 경우 사고예방을  위하여 예금잔액을 우편(등기)발송합니다.</p>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+
+					</strong>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit inpChk dib"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 dib 클래스 추가 -->
+						<input type="checkbox" name="chk10" id="chk101">
+						<label for="chk101">적립금 푸시 알림 받을래요.</label>
+						<!-- [2022-11-01] 윤지현:툴팁 마크업위치 변경(label과 동일한 뎁스) tooltip -->
+						<div class="tooltipWrap jsTooltipPosition"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 jsTooltipPosition 클래스 추가 -->
+							<button type="button" aria-label="툴팁보기" class="btnToolTip" id="test"></button>
+							<div class="tooltipCont">
+								<strong class="tit">적립금 푸시 알림</strong>
+								<p>푸시 일림 서비스는 적립일 익 영업일에 푸시 알림으로 발송되며, 콕뱅크 혜택정보 PUSH 알림 수신 동의 시에만 발송 진행됩니다.</p>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+
+					</strong>
+				</div>
+
+				<div class="formItem jsTgWrap">
+					<strong class="formTit inpChk dib"> <!-- [2022-11-01] 윤지현:label 영역수정을 위해 dib 클래스 추가 -->
+						<input type="checkbox" name="chk11" id="chk111" class="jsTgBtn">
+						<label for="chk111">권유직원이 있어요. (선택)</label>
+					</strong>
+					<!-- 권유직원 선택시 노출 -->
+					<div class="jsTgCont formExpBox">
+						<div class="formWrap">
+							<div class="formGroup mt0">
+								<div class="inpText">
+									<input type="text" title="권유직원" value class="tyTxt" placeholder="권유직원 입력" readonly>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //권유직원 선택시 노출 -->
+				</div>
+
+				<!-- [2022-07-29] 윤지현:삭제 <div class="formItem jsTgWrap">
+					<strong class="formTit inpChk">
+						<input type="checkbox" name="chk10" id="chk102" class="jsTgBtn">
+						<label for="chk102">추천인이 있어요. (선택)
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<strong class="tit">추천인번호</strong>
+									<ul class="listDot">
+										<li>추천인번호는 상품가입 완료 시 자동으로 생성되며 SMS로 자동발송 됩니다.</li>
+										<li>상대방이 추천인번호를 입력하여 NH매일적금을 가입 완료 할 경우 본인 및 상대방 모두 우대금리를 받으실 수 있습니다.</li>
+										<li>추천인번호 입력을 통한 우대금리는 가입 계좌당 1회만 적용 가능합니다.</li>
+									</ul>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+						</label>
+					</strong>
+					<div class="jsTgCont formExpBox">
+						<div class="formWrap">
+							<div class="formGroup mt0">
+								<div class="inpText">
+									<input type="text" title="추천인" value class="tyTxt" placeholder="추천인번호 10자리 입력">
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+			<!-- //formwrap -->
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel dis">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

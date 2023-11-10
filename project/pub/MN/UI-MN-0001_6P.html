@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MN-0001_6P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(sp_popup);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>농협 전계좌 조회</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				&gt; <a href="javascript:popOpen(sp_popup);" class="popOpen">계좌관리 팝업 오픈</a>
+				<p class="txtRed mt40">** UI-TR-0110DP 기획서 각 내용들 전부 포함된 리스트 </p>
+			</div> <!-- //#contents -->
+			<!-- <div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class>거래내역</button>
+					<button type="button" class="sel">송금</button>
+				</div>
+			</div> -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea">
+
+		<!-- SLIDE POPUP -->
+		<div id="sp_popup" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">주거래지점 한도변경안내</h2>
+						</div>
+						<div class="layerSelectContent">
+							<div class="confirmMsg">
+								<!-- ▼ [2022-09-21] 김자영 : ! 아이콘 추가 -->
+								<i class="warning mt10"></i>
+								<p>주거래 농협인 <em class=pColor>고양축산농협</em><br>농협의 한도가 변동되었습니다.</p>
+							</div>
+							<div class="tblWrap mt15">
+								<div class="tbl tdLeft">
+									<table>
+										<caption>주거래지점 변경일자, 변경 한도금액</caption>
+										<colgroup>
+											<col width="40%">
+											<col width="">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row">변경일자</th>
+												<td>2022.09.11</td>
+											</tr>
+											<tr>
+												<th scope="row">변경 한도금액</th>
+												<td class="ar"><strong class="dataWrap"><em class="data">10,000</em><span class="unit">원</span></strong></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button type="button" onclick="popClose(this)" class="sel">확인</button>
+							</div>
+						</div>
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

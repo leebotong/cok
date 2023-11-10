@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1434</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>자동이체변경</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="paymentWrap">
+					<div class="twoToneType">
+						<div class="ttTop">
+							<!-- PAYMENT -->
+							<div class="roundBox">
+								<div class="roundInBox">
+									<!-- ▼ 2022-08-04 10:37 남협수 [MODIFY] accAlwaysType 클래스 삭제 -->
+									<div class="accTypeWrap">
+										<a href="javascript:;" title="계좌선택" role="button" class="accInLayout">
+											<div class="accInfo">
+												<div class="accInfoInLayout">
+													<div class="logoWrap">
+														<img src="../../images/logo/logo_bnk_011_72x72.png" alt="OO은행" class="logo">
+													</div>
+													<div class="accInfoWrap">
+														<strong class="accName">
+															<!-- <span class="accBank">[NH농협]</span> -->
+															<span class="bankBookName">주거래우대통장</span>
+														</strong>
+														<div class="accNumWrap">
+															<div class="accNumBox">
+																<span class="accNumber">352-1775-6397-03</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="accDataWrap flex">
+										<div>
+											<span class="accNumInfo">출금가능금액</span>
+											<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //PAYMENT -->
+						</div>
+						<div class="ttBottom">
+							<div class="ttContents">
+								<!-- PAYMENT SUB BOX -->
+								<div class="paymentInfoBox">
+									<div class="formWrap">
+										<div class="formItem">
+											<strong class="formTit">변경항목 선택</strong>
+											<div class="inpSel">
+												<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel placeholder">이체금액 변경</a>
+												<!-- [개발] sp_list.html 사용 이체금액 변경 : 금액이체변경, 이체일변경, 이체종료일변경, 받는계좌에 표시변경, 내계좌에 표시변경, 오후이체등록변경 -->
+												<!-- 선택시 placeholder 클래스 제거 -->
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">출금계좌 비밀번호</strong>
+											<div class="inpText">
+												<!-- <button type="button" title="계좌 비밀번호 4자리 입력됨" aria-label="계좌 비밀번호 4자리 숫자 입력" class="btnTransparent"></button> 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+												<input type="password" title="비밀번호 4자리 숫자" aria-hidden="true" value class="sKey" placeholder="숫자 4자리 입력" maxlength="4" readonly>
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">입금계좌번호</strong>
+											<div class="formGroup flex46">
+												<div class="inpSel">
+													<a href="javascript:;" title="은행선택" role="button" class="btnSel">NH농협</a>
+												</div>
+												<div class="inpText">
+													<input type="tel" title="계좌번호 입력" value class="tyTxt" placeholder="계좌번호 입력" maxlength="8">
+												</div>
+											</div>
+										</div>
+										<!-- ▼ 2022-08-04 10:40 남협수 [ADD] 이체금액 영역 추가 -->
+										<div class="formItem"><!-- .error -->
+											<strong class="formTit">이체금액</strong>
+											<div class="inpText">
+												<input type="tel" title="이체 금액" value="10,000,000,000" class="tyNum" placeholder="이체금액 입력" maxlength="16"> <!-- fn_change_hangul_money 퍼블 테스트용 -->
+												<span class="unit">원</span>
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">이체주기</strong>
+											<div class="inpSel">
+												<a href="javascript:;" title="이체주기 선택" role="button" class="btnSel">매월</a><!-- .placeholder -->
+											</div>
+										</div>
+										<!-- ▼ 2022-08-04 11:25 남협수 [ADD] 이체주기 선택불가 상태 추가 -->
+										<div class="formItem">
+											<strong class="formTit">이체주기</strong>
+											<div class="inpSel readonly">
+												<div class="btnSel">매월</div>
+												<!-- <a href="javascript:;" title="이체주기 선택" role="button" class="btnSel">매월</a>.placeholder -->
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">이체일</strong>
+											<div class="inpSel">
+												<a href="javascript:;" title="일자 선택" role="button" class="btnSel">03일</a><!-- .placeholder -->
+											</div>
+										</div>
+										<div class="formWrap">
+											<div class="formItem">
+												<strong class="formTit">이체시작월/종료월</strong>
+												<div class="formGroup">
+													<div class="inpSel">
+														<a href="javascript:;" title="조회 시작날짜 선택" role="button" class="btnSelDate">2022.07</a> <!-- placeholder는 값 선택 후 삭제 --> <!-- [2022-06-30] 윤지현:클래스추가, 문구수정 -->
+													</div>
+													<span class="etc">~</span>
+													<div class="inpSel">
+														<a href="javascript:;" title="조회 끝날짜 선택" role="button" class="btnSelDate">2022.09</a><!-- placeholder는 값 선택 후 삭제 --> <!-- [2022-06-30] 윤지현:클래스추가, 문구수정 -->
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="formItem">
+											<strong class="formTit">(선택)내계좌에 표시</strong>
+											<div class="inpText">
+												<input type="text" title="내 통장 기록사항" value class="tyTxt" placeholder="김철수">
+												<!-- <button type="button" title="입력 텍스트 삭제" class="btnReset"></button> -->
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">(선택)받는계좌에 표시</strong>
+											<div class="inpText">
+												<input type="text" title="받는 분 통장 기록사항" value class="tyTxt" placeholder="홍길동">
+												<!-- <button type="button" title="입력 텍스트 삭제" class="btnReset"></button> -->
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="titWrap">
+									<strong class="title">자동이체 이용안내</strong>
+								</div>
+								<ul class="listDot">
+									<li>이체주기가 매일 납입 경우 00시~09시까지 변경 거래를 제한합니다.</li>
+								</ul>
+
+								<div class="titWrap">
+									<strong class="title">입금계좌가 대출계좌일 경우</strong>
+								</div>
+								<ul class="listDot">
+									<li>당일자로 등록 시 다음달부터 이체가 발생합니다.</li>
+									<li>이체(변경)일자가 당초 이자납입 당일 이후 일자일 경우, 지연 배상금이 발생될 수도 있으니 이체일자를 반드시 확인 하시기 바랍니다.</li>
+								</ul>
+
+								<div class="titWrap">
+									<strong class="title">입금계좌가 적금 계좌일 경우</strong>
+								</div>
+								<ul class="listDot">
+									<li>자동이체일을 신규일 이후 일자로 선택하면 당월에 2회 입금 처리되며, 지연일수에 해당하는 이자가 해지일에 차감됩니다.</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class>취소</button>
+					<button type="button" class="sel">다음</button>
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea"></div>
+</body>
+</html>

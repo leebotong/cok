@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>콕 리스트</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕 list</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents pubGuide">
+			<h1 class="gTit">### list Dot</h1>
+			<ul class="listDot">
+				<li>계좌확인을 하신 계좌는 콕뱅크 주거래 계좌로 등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다.</li>
+				<li>계좌확인을 하신 계좌는 콕뱅크 주거래 계좌로 등록합니다.</li>
+			</ul>
+
+			<h1 class="gTit mt20">### list Dash</h1>
+			<ul class="listDash">
+				<li>계좌확인을 하신 계좌는 콕뱅크 주거래 계좌로 등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다.</li>
+				<li>계좌확인을 하신 계좌는 콕뱅크 주거래 계좌로 등록합니다.</li>
+			</ul>
+
+			<h1 class="gTit mt20">### list Dot>Dash</h1>
+			<ul class="listDot">
+				<li>계좌확인을 하신 계좌는 콕뱅크 주거래 계좌로 등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다.
+					<ul class="listDash">
+						<li>계좌확인을 하신 계좌는 콕뱅크 주거래 계좌로 등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다등록합니다.</li>
+						<li>계좌확인을 하신 계좌는 콕뱅크 주거래 계좌로 등록합니다.</li>
+					</ul>
+				</li>
+				<li>계좌확인을 하신 계좌는 콕뱅크 주거래 계좌로 등록합니다.</li>
+			</ul>
+
+			<h1 class="gTit mt20">### list Number</h1>
+			<ol class="listNum">
+				<li>PC에서 농협인터넷뱅킹에 접속합니다.<br>
+						(http://banking.nonghyup.com)
+				</li>
+				<li>‘공동인증서 가져오기‘ 버튼 선택 후 공동인증서 암호를 입력합니다.</li>
+			</ol>
+			<h1 class="gTit mt20">### list NumberBg</h1>
+			<ol class="listNumBg">
+				<li>PC에서 농협인터넷뱅킹에 접속합니다.<br>
+						(http://banking.nonghyup.com)
+				</li>
+				<li>‘공동인증서 가져오기‘ 버튼 선택 후 공동인증서 암호를 입력합니다.</li>
+			</ol>
+
+			<h1 class="gTit" style="margin-top:40px">### 테이블형 리스트</h1>
+			<!-- list -->
+			<section>
+				<div class="listTbl">
+					<div class="listTit">
+						<strong>리스트 타이틀</strong><span class="unit">(연/세전)</span>
+					</div>
+					<div class="listTit">
+						<strong>리스트 타이틀</strong>
+						<a href="javascript:;" role="button" class="btnDetail">상세보기</a>
+					</div>
+					<ul>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">기본금리</span>
+								<p class="txt">연1.80%</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">콕!BASIC적금<br>신규고객 우대금리</span>
+								<p class="txt">+0.40%p</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">콕!BASIC적금<br>기존고객 우대금리</span>
+								<p class="txt">+0.10%p</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- //list -->
+			<br>
+
+			<!-- list -->
+			<section>
+				<div class="listBoxTit"> 
+					<strong>총 3건</strong>
+					<span class="date">최근 보관 날짜 : 2022.04.12</span>
+				</div>
+				<div class="listTblBox">
+					<ul>
+						<li>
+							<span class="tit">신규가입금액</span>
+							<p class="txt"><strong class="dataWrap"><em class="data">100000</em><span class="unit">원</span></strong></p>
+						</li>
+						<li>
+							<span class="tit">적용금리</span>
+							<p class="txt"><strong class="dataWrap">연<em class="data">1.80</em><span class="unit">%</span></strong></p>
+						</li>
+						<li>
+							<span class="tit">계약기간</span>
+							<p class="txt">12개월</p>
+						</li>
+						<li>
+							<span class="tit">관리점</span>
+							<p class="txt">새서울농협 중앙지점 </p>
+						</li>
+					</ul>
+				</div>
+	
+				<div class="listTblBox complete">
+					<ul>
+						<li>
+							<span class="tit">신규가입금액</span>
+							<p class="txt"><strong class="dataWrap"><em class="data">100000</em><span class="unit">원</span></strong></p>
+						</li>
+						<li>
+							<span class="tit">적용금리</span>
+							<p class="txt"><strong class="dataWrap">연<em class="data">1.80</em><span class="unit">%</span></strong></p>
+						</li>
+						<li>
+							<span class="tit">계약기간</span>
+							<p class="txt">12개월</p>
+						</li>
+						<li>
+							<span class="tit">관리점</span>
+							<p class="txt">새서울농협 중앙지점 </p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- //list -->
+
+			<h1 class="gTit" style="margin-top:40px">### 확인사항 .btmInfoWrap</h1>
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>상품안내/약관 및 주요 안내사항을 읽고 충분히 이해하며 이에 동의합니다.</li>
+					<li>상품안내/약관 및 주요 안내사항을 읽고 충분히 이해하며 이에 동의합니다.</li>
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+		</div> <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

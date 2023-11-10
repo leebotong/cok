@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0904</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+  <link rel="stylesheet" href="../../css/cok_cont.css">
+  <link rel="stylesheet" href="../../css/cok_market.css">
+  <link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>송금내역 상세</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+      <section>
+        <p class="defTit2">송금내용</p>
+        <div class="listTblBox">
+          <ul>
+            <li>
+              <span class="tit">받는분</span> 
+              <p class="txt">홍길동</p>
+            </li>
+            <li>
+              <span class="tit">보내는분</span> 
+              <p class="txt">김농협</p>
+            </li>	
+            <li>
+              <span class="tit">송금상태</span> 
+              <p class="txt">입금정상</p>
+            </li>
+            <li>
+              <span class="tit">이용채널</span> 
+              <p class="txt">콕뱅크</p>
+            </li>	
+            <li>
+              <span class="tit">자금반환청구</span> 
+              <p class="txt">
+                <span class="pColor">신청가능</span>
+                <!--span class="error">불가</span--><!--불가일때-->
+              </p>
+            </li>
+          </ul>
+        </div>
+        <p class="infoTxt">받는분 계좌가 농협 계좌이거나, 오픈뱅킹을 이용한 이체가 아니면 가까운 영업점 또는 고객행복센터(1661-3000)으로 문의하여 주시기 바랍니다.</p>
+
+        <div class="listTbl">
+          <div class="listTit"><strong>받는 분 정보</strong></div>
+          <ul>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">수취인</span> 
+                <p class="txt">홍길동</p>
+              </div>
+            </li>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">입금은행</span> 
+                <p class="txt">NH농협</p>
+              </div>
+            </li>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">입금계좌</span> 
+                <p class="txt">123-3456-2233-1</p>
+              </div>
+            </li>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">송금액</span> 
+                <p class="txt"><strong class="dataWrap"><em class="data">5,273</em><span class="unit">원</span></strong></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="listTbl">
+          <div class="listTit"><strong>보내는 분 정보</strong></div>
+          <ul>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">송금인</span> 
+                <p class="txt">이대박</p>
+              </div>
+            </li>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">출금은행</span> 
+                <p class="txt">국민은행</p>
+              </div>
+            </li>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">출금계좌</span> 
+                <p class="txt">318281920002</p>
+              </div>
+            </li>
+            <li>
+              <div class="listIn_flex">
+                <span class="tit">송금일</span> 
+                <p class="txt">2022.04.21 12:30:29</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea half">
+				<button type="button" class="btn_full point">자금반환청구 신청</button><!-- [2022-07-15] -->
+        <button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

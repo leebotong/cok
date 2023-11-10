@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0002</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>환전 유의사항</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="imgBox exchangeNote"></div>  <!--[2022-07-08] 이경아 : 클래스명 수정-->
+			<section class="section30">
+				<!-- [2023-03-03]폰트스타일추가:김연진 -->
+				<ul class="listDot">
+					<li>환전신청 가능 고객 : 국민인 거주자(개인)<br>(비거주자,외국인,법인,개인사업자 : 영업점 환전만 가능)</li>
+					<li>환전금액 : 1일 누계 미화기준 1만 달러 상당액 이하입니다.</li>
+					<li>전체 비대면(인터넷/스마트뱅킹, 콕뱅크) 환전신청 후 미 수령한 외화금액이 미화환산 1만 달러 초과시 추가 환전신청이 불가능합니다. 영업점에서 해당 외화를 수령 후, 추가 신청이 가능합니다.</li>
+					<li>환전신청은 농·축협 계좌만 가능합니다.(농협은행 계좌 불가)</li>
+					<!-- [2023-05-02] 환전 거래한도 : 문구수정// -->
+					<li><b class="pColor">고객님께서 지정하신 수령일 다음 영업일로부터 7영업일 이내 미 수령시 자동 재환전(되팔기) 처리</b>되어 (8영업일 1회 차 매매기준율 적용) 당초 환전신청 시 선택한 입출금계좌로 입금됩니다. 재환전 처리시 환율변동으로 인한 손실이 발생할 수 있으니 유의하시기 바랍니다.</li>
+					<!-- <li>재환전(되팔기) 처리시 <b class="pColor">환율변동으로 인한 손실</b>이 발생할 수 있습니다.</li> -->
+					<li>기존에 제공되던 재환전(되팔기) 서비스는 외화주머니에서 원화로 꺼내기 기능으로 통합되었습니다. </li>
+					<li>원화 재환전이 필요하신 경우 외화주머니 옮겨담기 후 원화꺼내기로 처리하실 수 있으며 환율은 거래시점의 현찰매입율이 적용됩니다. (단, 주말/공휴일은 직전영업일 최종고시 현찰매입률 적용)
+					</li><!-- [2023-05-17] 환전 거래한도 : 문구수정 v1.14 -->
+					<!-- //[2023-05-02] 환전 거래한도 : 문구수정 -->
+					<li>거래가 완료된 후에는 <b class="pColor">취소나 변경이 불가</b>하니 정확하게 입력해 주시기 바랍니다.</li>
+					<li>환전 신청 완료 전에 <b class="pColor">외화 수령점의 통화보유량 및 희망 권종 보유 여부</b>를 확인하시기 바랍니다.</li>
+				</ul>
+				<!--// [2023-03-03]폰트스타일추가:김연진 -->
+			</section>
+
+			<!-- [2022-09-07] 복원 -->
+			<section class="section30">
+				<div class="allCheck">
+					<input type="checkbox" name="agreeChk" id="aggrChk11">
+					<label for="aggrChk11">상기 내용을 확인하였습니다.</label>
+				</div>
+			</section>
+			<!--// [2022-09-07] 복원 -->
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

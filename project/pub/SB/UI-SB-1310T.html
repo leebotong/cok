@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1310T</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>송금내역</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="tabWrap oneDepth">
+					<div role="tablist" class="tabList">
+						<a href="javascript:;" role="tab" class="active">농협계좌</a>
+						<a href="javascript:;" role="tab">다른금융계좌</a>
+					</div>
+					<div class="tabPanelList">
+						<!-- 농협계좌 -->
+						<div role="tabpanel" class="tabPanel show">
+							<!-- <div class="pgTitWrap">
+								<p class="pTit">내가 보유한<strong>농협계좌</strong>의<br><strong>송금내역</strong>을 확인할 수 있습니다.</p>
+							</div> -->
+
+							<div class="rdoBtnsWrap">
+								<ul>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample00" id="sample01">
+											<label for="sample01">1주일</label>
+										</span>
+									</li>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample00" id="sample02">
+											<label for="sample02">1개월</label>
+										</span>
+									</li>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample00" id="sample03">
+											<label for="sample03">3개월</label>
+										</span>
+									</li>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample00" id="sample04">
+											<label for="sample04">6개월</label>
+										</span>
+									</li>
+									<li class="filter">
+										<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+									</li>
+								</ul>
+							</div>
+
+							<hr class="divingLine">
+
+							<div class="historyList None"><!-- 2022-10-05 클래스명추가 -->
+								<div class="listTit">
+									<em>2022.03.05 ~ 2022.04.05</em>
+								</div>
+								<section>
+									<ul>
+										<!-- 2022-10-05 위치수정 -->
+										<li>
+											<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+												<div class="flex">
+													<span class="date">2022.06.29 00:00:00</span>
+													<span class="tag pColor">입금정상</span>
+												</div>
+												<div class="flex">
+													<!-- 2022-10-13 수정 -->
+													<span class="accBank">[NH농협]</span>
+													<span class="banktobank">352-1775-6397-03</span>
+													<!-- //2022-10-13 수정 -->
+													<!-- <span class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></span></span> -->
+												</div>
+												<div class="flex">
+													<span class="tit fMiddle">홍길동</span>
+													<strong class="dataWrap fBig"><em class="data">100,000,000</em><span class="unit">원</span></strong>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+												<div class="flex">
+													<span class="date">2022.06.29 00:00:00</span>
+													<span class="tag txtRed">송금대기</span>
+												</div>
+												<div class="flex">
+													<span class="accBank">[NH농협]</span>
+													<span class="banktobank">352-1775-6397-03</span>
+													<!-- <span class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></span></span> -->
+												</div>
+												<div class="flex">
+													<span class="tit fMiddle">홍길동</span>
+													<strong class="dataWrap fBig"><em class="data">100,000,000</em><span class="unit">원</span></strong>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+												<div class="flex">
+													<span class="date">2022.06.29 00:00:00</span>
+													<span class="tag txtRed">송금자취소</span>
+												</div>
+												<div class="flex">
+													<span class="accBank">[NH농협]</span>
+													<span class="banktobank">352-1775-6397-03</span>
+													<!-- <span class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></span></span> -->
+												</div>
+												<div class="flex">
+													<span class="tit fMiddle">홍길동</span>
+													<strong class="dataWrap fBig"><em class="data">100,000,000</em><span class="unit">원</span></strong>
+												</div>
+											</a>
+										</li>
+										<!-- //2022-10-05 위치수정 -->
+									</ul>
+								</section>
+								<!-- <div class="moreBtn"><button type="button">더보기</button></div> -->
+							</div>
+						</div>
+
+						<!-- 다른금융계좌 -->
+						<div role="tabpanel" class="tabPanel">
+
+							<!-- <div class="pgTitWrap">
+								<p class="pTit">등록된 <strong>다른금융</strong>의<br><strong>송금내역</strong>을 확인할 수 있습니다.</p>
+							</div> -->
+
+							<!-- 2022-10-05 추가 -->
+							<div class="roundBox mt20"><!-- 2022-10-13 클래스 추가 -->
+								<div class="roundInBox">
+									<div class="accTypeWrap accAlwaysType">
+										<a href="javascript:popOpen(sp2);" title="계좌선택" role="button" class="accInLayout">
+											<div class="accInfo">
+												<div class="logoWrap">
+													<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+												</div>
+												<div class="accInfoWrap">
+													<div class="accNumWrap">
+														<div class="accNumBox">
+															<span class="accNumber">다른금융계좌 전체</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- //2022-10-05 추가 -->
+
+							<!-- 2022-10-06 추가 -->
+							<div class="roundBox">
+								<div class="roundInBox">
+									<div class="accTypeWrap accAlwaysType">
+										<a href="javascript:;" title="계좌선택" role="button" class="accInLayout">
+											<div class="accInfo">
+												<div class="logoWrap">
+													<img src="../../images/logo/logo_bnk_011_72x72.png" alt="OO은행" class="logo">
+												</div>
+												<div class="accInfoWrap">
+													<strong class="accName">
+														<span class="accBank">[우리]</span>
+														<span class="bankBookName">내맘콕예금</span>
+													</strong>
+													<div class="accNumWrap">
+														<div class="accNumBox">
+															<span class="accNumber">352-1775-6397-03</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- //2022-10-06 추가 -->
+
+							<div class="rdoBtnsWrap">
+								<ul>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample01" id="sample11">
+											<label for="sample11">1개월</label>
+										</span>
+									</li>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample01" id="sample12">
+											<label for="sample12">3개월</label>
+										</span>
+									</li>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample01" id="sample13">
+											<label for="sample13">6개월</label>
+										</span>
+									</li>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample01" id="sample14">
+											<label for="sample14">12개월</label>
+										</span>
+									</li>
+									<li class="filter">
+										<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+									</li>
+								</ul>
+							</div>
+
+							<hr class="divingLine">
+
+							<div class="historyList None"><!-- 2022-10-05 클래스명추가 -->
+								<div class="listTit">
+									<em>2022.03.05 ~ 2022.04.05</em>
+								</div>
+								<section>
+									<ul>
+										<!-- 2022-10-05 위치수정 -->
+										<li>
+											<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+												<div class="flex">
+													<span class="date">2022.06.29 00:00:00</span>
+													<span class="tag pColor">입금정상</span>
+												</div>
+												<div class="flex">
+													<span class="accBank">[NH농협]</span>
+													<span class="banktobank">352-1775-6397-03</span>
+													<!-- <span class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></span></span> -->
+												</div>
+												<div class="flex">
+													<span class="tit fMiddle">홍길동</span>
+													<strong class="dataWrap fBig"><em class="data">100,000,000</em><span class="unit">원</span></strong>
+												</div>
+
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+												<div class="flex">
+													<span class="date">2022.06.29 00:00:00</span>
+													<span class="tag txtRed">출금오류</span>
+												</div>
+												<div class="flex">
+													<span class="accBank">[NH농협]</span>
+													<span class="banktobank">352-1775-6397-03</span>
+													<!-- <span class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></span></span> -->
+												</div>
+												<div class="flex">
+													<span class="tit fMiddle">홍길동</span>
+													<strong class="dataWrap fBig"><em class="data">100,000,000</em><span class="unit">원</span></strong>
+												</div>
+											</a>
+										</li>
+										<!-- //2022-10-05 위치수정 -->
+									</ul>
+								</section>
+								<!-- <div class="moreBtn"><button type="button">더보기</button></div> -->
+							</div>
+
+							<!-- 조회 결과 없을때 -->
+							<div class="noData">
+								<i class="check"></i>
+								<strong class="tit">조회내역이 없습니다.</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<!-- <div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class="sel dis">다음</button>
+				</div>
+			</div> -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+</body>
+</html>

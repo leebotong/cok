@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MN-0001_2</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>모드 설정</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" onclick="popOpen(popupA)" class="btn_full sel">변경사항 적용</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- #popupArea -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupA" class="popupWrap slide" style="display:block;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">뱅킹모드 설정</h2><!-- [2022-10-11] 윤지현:문구수정 -->
+					</div>
+					<div class="layerSelectContent">
+						<!-- <p class="homeTit">뱅킹모드를 설정할 수 있어요.</p> --><!-- [2022-10-14] 삭제 -->
+						<div class="tabWrap box2 homeModeTab modeChange">
+							<div class="tabPanelList">
+								<div role="tabpanel" class="tabPanel ac show">
+									<p>콕뱅크의 다양한 금융서비스를<br>이용할 수 있어요.</p><!-- [2022-10-14] 위치이동 -->
+									<div class="imageBox"><img src="../../images/cont/img_home_mode11.png" alt="일반모드 화면"></div><!-- [2022-09-30] 웹접근성 이슈로 대체텍스트 추가 -->
+								</div>
+								<div role="tabpanel" class="tabPanel ac">
+									<p>조합원, 준조합원에게 특화된<br> 맞춤형 모드를 제공합니다.</p><!-- [2022-10-14] 위치이동 -->
+									<div class="imageBox"><img src="../../images/cont/img_home_mode12.png" alt="조합원모드 화면"></div><!-- [2022-09-30] 웹접근성 이슈로 대체텍스트 추가 -->
+								</div>
+								<div role="tabpanel" class="tabPanel ac">
+									<p>송금, 거래내역 조회를 큰 글씨로<br> 이용할 수 있어요.</p><!-- [2022-10-14] 위치이동 -->
+									<div class="imageBox"><img src="../../images/cont/img_home_mode13.png" alt="큰글모드 화면"></div><!-- [2022-09-30] 웹접근성 이슈로 대체텍스트 추가 -->
+								</div>
+								<div role="tabpanel" class="tabPanel ac">
+									<p>나만의 배경화면 색상을 설정하고<br>간편하게 뱅킹을 이용해보세요.</p><!-- [2022-10-14] 위치이동,문구수정 -->
+									<div class="imageBox"><img src="../../images/cont/img_home_mode14.png" alt="내맘콕모드 화면"></div><!-- [2022-09-30] 웹접근성 이슈로 대체텍스트 추가 -->
+								</div>
+							</div>
+							<!-- [2022-10-14] 위치이동 -->
+							<div role="tablist" class="tabList">
+								<a href="javascript:;" role="tab" class="active">일반</a>
+								<a href="javascript:;" role="tab">조합원</a>
+								<a href="javascript:;" role="tab">큰글</a>
+								<a href="javascript:;" role="tab">내맘콕</a>
+							</div>
+							<!-- //[2022-10-14] 위치이동 -->
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popOpen(popupCCA)" class="sel">확인</button>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+

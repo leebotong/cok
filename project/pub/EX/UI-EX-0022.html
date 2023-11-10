@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0022</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<!-- <div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>환전신청</h1> -->
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<!-- <a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a> -->
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="completeWrap">
+				<i class="check"></i>
+				<p class="tit"><strong class="pColor">외화주머니 담기</strong> 완료</p>
+				<p class="txt">신청하신 환전이 완료 되어 외화주머니에<br>안전하게 보관 되었습니다.</p>
+			</div>
+
+				<!-- listTblBox complete -->
+				<div class="listTblBox complete">
+					<ul>
+						<li>
+							<span class="tit">보관된 외화금액</span>
+							<p class="txt"><strong class="dataWrap"><span class="unit">USD</span><em class="data">100.00</em><span class="unit">달러</span></strong></p>
+						</li>
+						<li>
+							<span class="tit">환산 금액</span>
+							<p class="txt"><strong class="dataWrap"><em class="data">1,000,000</em><span class="unit">원</span></strong></p>
+						</li>
+					</ul>
+				</div>
+
+				<section class="section40">
+					<div class="listTbl">
+						<div class="listTit">
+							<span>환전정보</span>
+						</div>
+						<ul>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">환전일자</span>
+									<span class="txt">2022.04.12</span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<div class="tit">적용환율</div>
+									<div class="txt"><strong class="dataWrap"><em class="data">1,000,000</em><span class="unit">원</span></strong></div>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<div class="tit">우대율</div>
+									<div class="txt">50%</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!--[2022-12-08] 환전 신청 1일 거래금액 한도 조정 재수정 상시운영 : 윤희정-->
+				<hr class="divingLine" aria-hidden="true">
+
+				<div class="btmInfoWrap">
+					<strong class="tit">확인사항</strong>
+					<ul class="listDot">
+						<li>외화주머니에 보관된 외화는 당일 외화현찰로 수령하실 수 있습니다. (신청가능 통화 : USD, EUR, JPY, CNY)</li>
+						<li>외화주머니에 보관된 외화는 당일 원화로 즉시 수령이 가능합니다.</li>
+						<li>외화주머니에 「담기」 거래 후 당일자에 「원화 꺼내기」 신청할 경우 10% 추가우대를 비롯하여 환율우대 미적용 (토/일/공휴일 외화주머니에 「담기」 거래 후 익영업일에 「원화 꺼내기」 거래한 경우도 환율우대 미적용)</li>
+					</ul>
+				</div>
+				<!--//[2022-12-08] 환전 신청 1일 거래금액 한도 조정 재수정 상시운영 : 윤희정-->
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

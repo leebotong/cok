@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SM-001P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_senior.css"><!-- 시니어 큰글모드 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupB);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap" class="senior"><!-- 시니어 큰글모드 일때 class senior 추가 -->
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕! BASIC 적금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome txtMode">큰글홈</a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu txtMode">메뉴</a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="headerL">
+				<a href="javascript:popOpen(popupB)">UI-SB-1214GP</a>
+			</div>
+		</div>  <!-- //#contents -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupB" class="popupWrap slide">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner mov">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0"><span class="blind">팝업</span></h2>
+					</div>
+					<div class="layerSelectContent">
+						<div class="accountSelComm">
+							<section class="tabWrap ellipse jsTabInTab">
+								<!-- 탭 -->
+								<div role="tablist" class="tabList layoutWrap inTabList">
+									<div class="senior"><!-- 시니어 큰글모드 일때 class senior 추가 -->
+										<a href="javascript:;" role="tab" aria-selected="true" class="active inTabMenu">최근입금</a>
+										<a href="javascript:;" role="tab" class="inTabMenu">내계좌</a>
+										<a href="javascript:;" role="tab" class="inTabMenu">자주쓰는</a>
+									</div>
+								</div>
+								<!-- //탭 -->
+
+								<!-- 탭 컨텐츠 -->
+								<div class="tabPanelList">
+									<!-- 최근입금 -->
+									<div role="tabpanel" class="show inTabPanel">
+										<!-- 리스트 있을 경우 -->
+										<section>
+											<ul class="listWrap accType">
+												<li class="flex">
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_012.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<span class="bankBookName">김수현</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<!-- <span class="accBank">NH농협</span> -->
+																				<span class="accNumber">352-1775-6397-03</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+														<div class="accDataWrap">
+															<div>
+																<div class="accPossible">2022.03.18</div>
+															</div>
+														</div>
+													</div>
+													<div class="accUtilBox">
+														<button type="button" aria-label="자주쓰는계좌 추가" class="accAdd"></button>
+														<button type="button" aria-label="삭제하기" class="listClear"></button>
+														<script>
+															message = '토스트 메시지가 들어갑니다'
+														</script>
+													</div>
+												</li>
+												<li class="flex">
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_012.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<span class="bankBookName">김수현</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<!-- <span class="accBank">NH농협</span> -->
+																				<span class="accNumber">352-1775-6397-03</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+														<div class="accDataWrap">
+															<div>
+																<div class="accPossible">2022.03.18</div>
+															</div>
+														</div>
+													</div>
+													<div class="accUtilBox">
+														<button type="button" aria-label="자주쓰는계좌 추가" class="accAdd"></button>
+														<button type="button" aria-label="삭제하기" class="listClear"></button>
+														<script>
+															message = '토스트 메시지가 들어갑니다'
+														</script>
+													</div>
+												</li>
+												<li class="flex">
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_012.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<span class="bankBookName">김수현</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<!-- <span class="accBank">NH농협</span> -->
+																				<span class="accNumber">352-1775-6397-03</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+														<div class="accDataWrap">
+															<div>
+																<div class="accPossible">2022.03.18</div>
+															</div>
+														</div>
+													</div>
+													<div class="accUtilBox">
+														<button type="button" aria-label="자주쓰는계좌 추가" class="accAdd"></button>
+														<button type="button" aria-label="삭제하기" class="listClear"></button>
+														<script>
+															message = '토스트 메시지가 들어갑니다'
+														</script>
+													</div>
+												</li>
+												<li class="flex">
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_003.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<span class="bankBookName">홍길동</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<span class="accBank">기업</span>
+																				<span class="accNumber">352-1775-6397-03</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+														<div class="accDataWrap">
+															<div>
+																<div class="accPossible">2022.03.18</div>
+															</div>
+														</div>
+													</div>
+													<div class="accUtilBox">
+														<button type="button" aria-label="자주쓰는계좌 추가" class="accAdd"></button>
+														<button type="button" aria-label="삭제하기" class="listClear"></button>
+														<script>
+															message = '토스트 메시지가 들어갑니다'
+														</script>
+													</div>
+												</li>
+												<li class="flex">
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_003.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<span class="bankBookName">홍길동</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<span class="accBank">기업</span>
+																				<span class="accNumber">352-1775-6397-03</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+														<div class="accDataWrap">
+															<div>
+																<div class="accPossible">2022.03.18</div>
+															</div>
+														</div>
+													</div>
+													<div class="accUtilBox">
+														<button type="button" aria-label="자주쓰는계좌 추가" class="accAdd"></button>
+														<button type="button" aria-label="삭제하기" class="listClear"></button>
+														<script>
+															message = '토스트 메시지가 들어갑니다'
+														</script>
+													</div>
+												</li>
+											</ul>
+										</section>
+
+										<div class="moreBtn"><button type="button">더보기</button></div>
+
+										<!-- 리스트 없을 경우 -->
+										<div class="noData">
+											<i class="check"></i>
+											<strong class="tit">최근 입금 내역이 없습니다.</strong>
+										</div>
+									</div>
+
+									<!-- 내계좌 -->
+									<div role="tabpanel" class="inTabPanel">
+										<!-- 리스트 있을 경우 -->
+										<section>
+											<ul class="listWrap accType">
+												<li>
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_012.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<!-- <span class="accBank">[NH농협]</span> -->
+																			<span class="bankBookName">수출입통장</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<span class="accNumber">352-1775-6397-03</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+														<div class="accDataWrap">
+															<div>
+																<div class="accPossible">잔액 <strong class="dataWrap"><em class="data">12,000,000</em><span class="unit">원</span></strong></div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_012.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<!-- <span class="accBank">[NH농협]</span> -->
+																			<span class="bankBookName">수출입통장</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<span class="accNumber">352-1775-6397-03</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+														<div class="accDataWrap">
+															<div>
+																<div class="accPossible">잔액 <strong class="dataWrap"><em class="data">12,000,000</em><span class="unit">원</span></strong></div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_012.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<!-- <span class="accBank">[NH농협]</span> -->
+																			<span class="bankBookName">수출입통장</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<span class="accNumber">352-1775-6397-03</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+														<div class="accDataWrap">
+															<div>
+																<div class="accPossible">잔액 <strong class="dataWrap"><em class="data">12,000,000</em><span class="unit">원</span></strong></div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_003.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<span class="accBank">[기업]</span>
+																			<span class="bankBookName">보통예금(IBK급여통장)</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<span class="accNumber">42005676466764</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+														<div class="accDataWrap">
+															<div>
+																<div class="accPossible">출금가능금액 <strong class="dataWrap"><em class="data">12,000,000</em><span class="unit">원</span></strong></div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_003.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<span class="accBank">[기업]</span>
+																			<span class="bankBookName">보통예금(IBK급여통장)</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<span class="accNumber">42005676466764</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+														<div class="accDataWrap">
+															<div>
+																<div class="accPossible"><button type="button" class="underLine">잔액보기</button></div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_003.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<span class="accBank">[기업]</span>
+																			<span class="bankBookName">보통예금(IBK급여통장)</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<span class="accNumber">42005676466764</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+														<div class="accDataWrap">
+															<div>
+																<div class="accPossible"><div class="underLine error">잔액 미조회</div></div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</section>
+
+										<!-- case: 버튼 필요시 -->
+										<div class="btnInArea">
+											<button type="button" class="point">+ 계좌등록</button>
+										</div>
+
+										<!-- case : 데이터없음 -->
+										<div class="noData">
+											<i class="check"></i>
+											<p class="tit">등록된 계좌가 없습니다.</p>
+										</div>
+										<!-- //데이터없음 -->
+
+									</div>
+
+									<!-- 자주쓰는 -->
+									<div role="tabpanel" class="inTabPanel">
+										<!-- 리스트 있을 경우 -->
+										<section>
+											<ul class="listWrap accType">
+												<li class="flex">
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_012.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<span class="bankBookName">김수현(생활비)</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<!-- <span class="accBank">NH농협</span> -->
+																				<span class="accNumber">352-1775-6397-03</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+													</div>
+													<div class="accUtilBox">
+														<button type="button" aria-label="삭제하기" class="listClear"></button>
+														<script>
+															message = '토스트 메시지가 들어갑니다'
+														</script>
+													</div>
+												</li>
+												<li class="flex">
+													<div class="accTypeWrap accSelectType">
+														<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+															<div class="accInfo accInfoInLayoutWrap">
+																<div class="accInfoInLayout">
+																	<div class="logoWrap">
+																		<img src="../../images/logo/icon_bnk_012.png" alt="OO은행" class="logo">
+																	</div>
+																	<div class="accInfoWrap">
+																		<strong class="accName">
+																			<span class="bankBookName">김수현(생활비)</span>
+																		</strong>
+																		<div class="accNumWrap">
+																			<div class="accNumBox">
+																				<!-- <span class="accBank">NH농협</span> -->
+																				<span class="accNumber">352-1775-6397-03</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+													</div>
+													<div class="accUtilBox">
+														<button type="button" aria-label="삭제하기" class="listClear"></button>
+														<script>
+															message = '토스트 메시지가 들어갑니다'
+														</script>
+													</div>
+												</li>
+											</ul>
+										</section>
+										<div class="moreBtn"><button type="button">더보기</button></div>
+
+										<!-- case: 버튼 필요시 -->
+										<div class="btnInArea">
+											<button type="button" class="point">+ 자주쓰는 계좌 설정</button>
+										</div>
+
+										<!-- 리스트 없을 경우 -->
+										<section>
+											<div class="noData">
+												<i class="check"></i>
+												<strong class="tit">자주쓰는계좌 등록 내역이 없습니다.</strong>
+											</div>
+										</section>
+									</div>
+								</div>
+								<!-- //탭 컨텐츠 -->
+							</section>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

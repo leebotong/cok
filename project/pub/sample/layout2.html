@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>콕 layout</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>타이틀</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="twoToneType">
+				<div class="ttTop">
+					<div class="topImgWrap qr"> <!-- .qr bg이미지 -->
+						<p class="topImgWrapTxt">
+							조회방법을 선택하시거나<br>고지서의 <strong>QR코드를 촬영</strong><br>해주세요.
+						</p>
+					</div>
+				</div>
+				<div class="ttBottom">
+					<div class="ttContents">
+						<div style="width: 100%;overflow: hidden;background: rgba(255,0,0, 0.2);margin-bottom: 20px">
+							<pre style="margin: 0;">
+								<code>
+.twoToneType
+  .ttTop
+  .ttBottom
+    .ttContents
+								</code>
+							</pre>
+						</div>
+						<p style="color: var(--txt-color-blue-02)">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<hr class="divingLine">
+						<p style="color: var(--txt-color-blue-02)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum, ut voluptas reprehenderit quae praesentium exercitationem eos dicta, aperiam animi vero maxime non. Magnam minima reiciendis ea, eveniet eligendi aperiam.</p>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">이전</button>
+				<button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

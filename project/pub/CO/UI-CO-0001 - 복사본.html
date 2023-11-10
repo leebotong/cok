@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SE-0011_1</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/lottie.min-5.11.0.js"></script>
+	<script>
+		$(document).ready(function(){
+			var charArea = $('.loading_charactor')[0];
+			var dotArea = $('.loading_dot')[0];
+			var charactor = lottie.loadAnimation({
+				container: charArea,
+				renderer : 'svg',
+				loop: true,
+				autoplay: true,
+				path: '/content/images/main/loading_charactor_120.json'
+			});
+			var dot = lottie.loadAnimation({
+				container: dotArea,
+				renderer : 'svg',
+				loop: true,
+				autoplay: true,
+				path: '/content/images/main/loading_dot_120.json'
+			});
+		});
+	</script>
+	<style>
+		#wrap {position:fixed;left:0;right:0;top:0;bottom:0;}
+		#header {border-bottom:2px solid #ddd;}
+		.headBox {width:100%;height:100%;background:#ff0000;}
+		#container {height:100%;}
+		#contents {position:relative;height:100%;}
+		#contents strong {font-size:20px;color:#fff;}
+		.contentBox {position:relative;width:100%;height:100%;}
+		.content {background:#aaa;text-align:center;width:100%;height:100%;}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>알림</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="메인메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+			</div>  <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class="btn_full">이전</button>
+					<button type="button" class="btn_full sel">확인</button>
+				</div>
+			</div>  <!-- //#footer_cont -->
+
+			<div title="로딩중" role="img" class="loadingWrap">
+				<!-- <div class="loadingChaWrap">
+					<span class="cha1"></span>
+					<span class="cha2"></span>
+					<span class="cha3"></span>
+				</div>
+				<div class="loadingDotWrap">
+					<span class="dotC"></span>
+					<span class="dotL"></span>
+					<span class="dotR"></span>
+				</div> -->
+				<!-- [2023-04-18] 로딩이미지 로티이미지로 변경 -->
+				<div class="loading_charactor"></div>
+				<div class="loading_dot"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

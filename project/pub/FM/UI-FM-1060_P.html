@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-FM-1060_P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+		<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+	<script>
+		$(function(){
+			$('.btnMenu').click(function(){
+				$('#fullPopMenu').show()
+				$('.popContent.allMenu').animate({'right':'0'},500,function(){});
+				mainMenuHeiCall(); //팝업 오픈 후 호출
+			});
+		});
+
+		$(document).ready(function(){
+			$('.btnMenu').trigger('click');
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>전체메뉴</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- #popupArea -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="fullPopMenu" class="popupWrap full" ><!--style="display: block;" -->
+		<div class="fullPopupDim">
+			<div class="popContent allMenu"><!-- style="right: 0;"-->
+				<div class="popContentBox">
+					<!-- [2022-08-08] -->
+					<div class="popHead">
+						<!-- 2022-10-07 마크업수정 -->
+						<div class="mainMenuHead">
+							<div class="menuHeadLink">
+								<a href="javascript:;" class="user" role="button"><span>김농협</span> 님</a>
+								<button type="button" class="btn" tabindex="0">앱종료</button>
+								<div class="btnBox">
+									<a href="javascript:;" role="button" class="home popFocus">홈</a>
+									<a href="javascript:;" role="button" class="setting">설정</a>
+								</div>
+							</div>
+							<div class="menuMyArea">
+								<section class="section20">
+									<div class="formWrap typeSrch">
+									<div class="formItem">
+										<div class="inpText icoSearch">
+											<input type="text" title="검색어 입력" value class="tyTxt" placeholder="검색어를 입력하세요.">
+											<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											<button type="button" title="검색" class="voiceSearch">음성검색</button>
+										</div>
+									</div>
+									</div>
+								</section>
+								<ul class="menuLink">
+									<a href="javascript:;" role="button">고객센터</a>
+									<a href="javascript:;" role="button">인증/보안</a>
+									<a href="javascript:;" role="button">공지사항</a>
+									<a href="javascript:;" role="button">이벤트</a>
+								</ul>
+							</div>
+						</div>
+						<!-- //2022-10-07 마크업수정 -->
+					</div>
+					<div class="popContBox">
+						<div class="mainMenuBox">
+							<div class="tabWrap oneDepth">
+								<div role="tablist" class="tabList allMenuTab">
+									<a href="javascript:;" role="tab" class="active">뱅킹</a>
+									<a href="javascript:;" role="tab">금융상품</a>
+									<a href="javascript:;" role="tab">콕팜</a>
+									<a href="javascript:;" role="tab">콕쇼핑</a>
+									<a href="javascript:;" role="tab">콕세상</a>
+								</div>
+								<div class="tabPanelList">
+									<div role="tabpanel" class="tabPanel show">
+										<!-- 뱅킹T -->
+										<div class="tabWrap jsTabInTab menuBoxWrap">
+											<!-- 1depth -->
+											<div role="tablist" class="boxLeft menuScroll">
+												<a href="javascript:;" role="tab" aria-selected="true" class="active">조회</a>
+												<a href="javascript:;" role="tab">송금/출금</a>
+												<a href="javascript:;" role="tab">공과금</a>
+												<a href="javascript:;" role="tab">관리</a>
+												<a href="javascript:;" role="tab">NH콕모임</a> <!--- [2023-05-12] 콕모임 서비스 신설 -->
+												<a href="javascript:;" role="tab">마이데이터</a>
+												<a href="javascript:;" role="tab">카드</a>
+												<a href="javascript:;" role="tab">외환</a>
+												<a href="javascript:;" role="tab">간편결제</a>
+											</div>
+											<!-- //1depth -->
+											<div class="tabPanelList boxRight menuScroll">
+												<div role="tabpanel" class="tabPanel show">
+													<!-- 조회 -->
+													<div class="menuWrap">
+														<strong class="menuTit menuico11">계좌보기</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">농협 전계좌 조회</a>
+															<a href="javascript:;" role="button">다른금융계좌 조회<br>(어카운트 인포)</a>
+															<a href="javascript:;" role="button">콕 등록계좌 조회</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<strong class="menuTit menuico12">거래보기</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">거래내역 조회</a>
+															<a href="javascript:;" role="button">송금내역 조회</a>
+														</div>
+													</div>
+													<!-- //조회 -->
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 송금/출금 -->
+													<div class="menuWrap">
+														<strong class="menuTit menuico21">보내기</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">콕송금</a>
+															<a href="javascript:;" role="button">빠른송금</a>
+							 								<a href="javascript:;" role="button">송금내역</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<strong class="menuTit menuico22">찾기</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">ATM출금</a>
+															<a href="javascript:;" role="button">콕창구출금</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<strong class="menuTit menuico23">모으기</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">잔액채우기</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<strong class="menuTit menuico24">자동보내기</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">자동이체 신청</a>
+															<a href="javascript:;" role="button">자동이체 조회</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<strong class="menuTit menuico25">돌려받기</strong>
+														<div class="jsTgWrap accRegist menusBox">
+															<a href="javascript:;" role="button" aria-expanded="false" class="jsTgBtn menus">오픈뱅킹 자금반환청구</a>
+															<div class="jsTgCont subMenus">
+																<a href="javascript:;" role="button">자금반환청구 안내</a>
+																<a href="javascript:;" role="button">자금반환청구 신청</a>
+																<a href="javascript:;" role="button">신청결과 조회</a>
+															</div>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<strong class="menuTit menuico26">돌려주기</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">착오송금 반환동의</a>
+														</div>
+													</div>
+													<!-- //송금/출금 -->
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 공과금 -->
+													<div class="menuWrap">
+														<strong class="menuTit menuico31">지로/생활요금</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">지로납부</a>
+															<a href="javascript:;" role="button">전기요금</a>
+															<a href="javascript:;" role="button">상하수도요금</a>
+															<a href="javascript:;" role="button">아파트관리비</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico32">연금/사회보험</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">국민연금추납/반납금</a>
+															<a href="javascript:;" role="button">통합사회보험료</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico33">지방세/범칙금</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">지방세 납부</a>
+															<a href="javascript:;" role="button">교통범칙금</a>
+														</div>
+													</div>
+													<!-- //공과금 -->
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 관리 -->
+													<div class="menuWrap">
+														<div class="menuTit menuico41">계좌관리</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">계좌등록</a>
+															<a href="javascript:;" role="button">등록계좌 관리</a>
+															<a href="javascript:;" role="button">자주쓰는계좌 관리</a>
+															<a href="javascript:;" role="button">한도제한 해제(농·축협)</a>
+														</div>
+													</div>
+													<!-- [2023-05-17] 입출금알림 접근성 개선 -->
+													<div class="menuWrap">
+														<div class="menuTit menuico75">계좌알림</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">입출금알림</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico42">계좌해지</div>
+														<div class="jsTgWrap accRegist menusBox">
+															<a href="javascript:;" role="button" class="jsTgBtn menus" aria-expanded="false">입출금계좌해지</a>
+															<div class="jsTgCont subMenus">
+																<a href="javascript:;" role="button">해지신청</a>
+																<a href="javascript:;" role="button">해지내역</a>
+																<a href="javascript:;" role="button">비대면 해지 설정</a>
+															</div>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico43">송금한도</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">송금한도설정</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico44">오픈뱅킹</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">오픈뱅킹관리</a>
+															<a href="javascript:;" role="button">오픈뱅킹 서비스 해지</a>
+														</div>
+													</div>
+													<!-- //관리 -->
+												</div>
+												<!-- [2023-05-12] 콕모임 서비스 신설// -->
+												<div role="tabpanel" class="tabPanel">
+													<!-- NH콕모임 -->
+													<div class="menuWrap">
+														<strong class="menuTit menuico61">콕모임</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">콕모임 안내</a>
+															<a href="javascript:;" role="button">콕모임 홈</a>
+														</div>
+													</div>
+
+													<div class="menuWrap">
+														<strong class="menuTit menuico62">관리(모임주 전용)</strong> <!-- [2023-05-31] 텍스트 수정 -->
+														<div class="jsTgWrap accRegist menusBox">
+															<a href="javascript:;" role="button" aria-expanded="true" class="jsTgBtn menus">콕모임 관리</a> <!-- [2023-05-30] 접근성 수정 -->
+															<div class="jsTgCont subMenus" style="display: block;"> <!-- [2023-05-30] display- 수정 -->
+																<a href="javascript:;" role="button">내 모임관리</a>
+																	<a href="javascript:;" role="button">내 모임원 관리</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- //[2023-05-12] 콕모임 서비스 신설 -->
+												<div role="tabpanel" class="tabPanel">
+													<!-- 마이데이터 -->
+													<div class="menuWrap">
+														<div class="menuTit menuico90">NH콕마이데이터</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button" title="새창열림">마이데이터 홈</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico91">자산</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button" title="새창열림">전체자산</a>
+															<a href="javascript:;" role="button" title="새창열림">자산현황</a>
+															<a href="javascript:;" role="button" title="새창열림" >부채관리</a>
+															<a href="javascript:;" role="button" title="새창열림">자산진단</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico92">지출</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button" title="새창열림">금융달력</a>
+															<a href="javascript:;" role="button" title="새창열림">지출내역</a>
+															<a href="javascript:;" role="button" title="새창열림">지출분석</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico93">금융생활</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button" title="새창열림">나의목표</a>
+															<a href="javascript:;" role="button" title="새창열림">상품추천</a>
+															<a href="javascript:;" role="button" title="새창열림">금융통통</a>
+															<a href="javascript:;" role="button" title="새창열림">금융브리핑</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico94">제휴서비스</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button" title="새창열림">NH콕마이카</a>
+															<a href="javascript:;" role="button" title="새창열림">NH콕부동산</a>
+															<a href="javascript:;" role="button" title="새창열림">귀농귀촌</a>
+															<a href="javascript:;" role="button" title="새창열림">마이농가</a>
+														</div>
+													</div>
+													<!-- //마이데이터 -->
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 카드 -->
+													<div class="menuWrap">
+														<div class="menuTit menuico45">카드명세</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">카드 승인내역</a>
+															<a href="javascript:;" role="button">이용대금 명세서</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico46">카드로 빌리기</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">단기카드대출(현금서비스)</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico47">카드 만들기</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button" title="새창열림">카드신청</a>
+															<a href="javascript:;" role="button" title="새창열림">농협카드앱 바로가기</a>
+														</div>
+													</div>
+													<!-- //카드 -->
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 외환 -->
+													<div class="menuWrap">
+														<div class="menuTit menuico51">환전하기</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">환전신청</a>
+															<a href="javascript:;" role="button">환전내역</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico52">환율조회/계산</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">환율조회</a>
+															<a href="javascript:;" role="button">환율계산기</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico53">외화보내기</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">해외송금안내</a>
+															<a href="javascript:;" role="button">해외송금신청</a>
+															<a href="javascript:;" role="button">해외송금내역</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico54">외화보관하기</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">내 외화주머니</a>
+															<a href="javascript:;" role="button">외화주머니 거래내역</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<div class="menuTit menuico55">외화선물하기</div>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">콕 외화기프팅!</a>
+															<a href="javascript:;" role="button">외화선물내역</a>
+														</div>
+													</div>
+													<!-- //외환 -->
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 간편결제 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">제로페이</a>
+															<a href="javascript:;" role="button">제로페이 모바일 상품권</a>
+															<a href="javascript:;" role="button">모바일현금카드</a>
+														</div>
+													</div>
+													<!-- //간편결제 -->
+												</div>
+											</div>
+										</div>
+										<!-- //뱅킹T -->
+									</div>
+									<div role="tabpanel" class="tabPanel">
+										<!-- 금융상품T -->
+										<div class="tabWrap jsTabInTab menuBoxWrap">
+											<!-- 1dpth -->
+											<div role="tablist" class="boxLeft menuScroll">
+												<a href="javascript:;" role="tab" aria-selected="true" class="active">입출금</a>
+												<a href="javascript:;" role="button" class="links">특판상품</a> <!-- [2023-05-09] 금융상품 특판 메뉴 -->
+												<a href="javascript:;" role="tab">예금/적금</a>
+												<a href="javascript:;" role="tab">대출</a>
+												<a href="javascript:;" role="button" class="links">펀드</a>
+											</div>
+											<!-- 1dpth -->
+											<div class="tabPanelList boxRight menuScroll">
+												<div role="tabpanel" class="tabPanel show">
+													<!-- 입출금 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">MY콕통장</a>
+															<a href="javascript:;" role="button">주머니(money)통장</a>
+														</div>
+													</div>
+													 <!-- //입출금 -->
+												</div>
+												<!-- [2023-05-09] 금융상품 특판 메뉴// -->
+												<div role="tabpanel" class="tabPanel">
+													<!-- 특판상품 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button"></a>
+														</div>
+													</div>
+													 <!-- //특판상품 -->
+												</div>
+												<!-- //[2023-05-09] 금융상품 특판 메뉴 -->
+												<div role="tabpanel" class="tabPanel">
+													<!-- 예금/적금 -->
+													<div class="menuWrap">
+														<strong class="menuTit menuico81">예금/적금</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">NH고향사랑기부적금</a>
+															<a href="javascript:;" role="button">NH고향사랑기부예금</a>
+															<a href="javascript:;" role="button">NH매일적금</a>
+															<a href="javascript:;" role="button">주머니(money)적금</a>
+															<a href="javascript:;" role="button">주머니(money)정기적금</a>
+															<a href="javascript:;" role="button">주머니금리쇼핑예금</a>
+														</div>
+													</div>
+													<!-- //예금/적금 -->
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 대출 -->
+													<div class="menuWrap">
+														<strong class="menuTit menuico82">대출신청</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">NH콕마이카신용대출</a>
+															<a href="javascript:;" role="button">NH콕비상금대출</a>
+															<a href="javascript:;" role="button">NH모바일바로대출</a>
+															<a href="javascript:;" role="button">예&middot;적금담보대출</a>
+															<a href="javascript:;" role="button">단기카드대출(현금서비스)</a>
+														</div>
+													</div>
+													<div class="menuWrap">
+														<strong class="menuTit menuico83">대출관리</strong>
+														<div class="subMenus">
+															<a href="javascript:;" role="button">비대면 기한연장</a>
+															<a href="javascript:;" role="button">대출약정서 조회</a>
+														</div>
+													</div>
+													<!-- //대출 -->
+												</div>
+											</div>
+										</div>
+										<!-- //금융상품T -->
+									</div>
+									<div role="tabpanel" class="tabPanel">
+										<!-- 콕팜T -->
+										<div class="tabWrap jsTabInTab menuBoxWrap">
+											<!-- 1dpth -->
+											<div role="tablist" class="boxLeft menuScroll">
+												<!-- [2023-05-12] 콕뱅크 전체메뉴 내 제휴서비스 업데이트// -->
+												<a href="javascript:;" role="tab" aria-selected="true" class="active">나의농축협</a> <!-- [2023-06-14] 콕팜/콕세상 서비스 메뉴 변경건 -->
+												<a href="javascript:;" role="tab" aria-selected="false">준조합원가입</a>
+												<a href="javascript:;" role="tab" aria-selected="false">직거래장터</a>
+												<a href="javascript:;" role="tab" aria-selected="false">영농라이프</a>
+												<a href="javascript:;" role="tab" aria-selected="false">농&middot;축협 소식</a>
+												<!-- //[2023-05-12] 콕뱅크 전체메뉴 내 제휴서비스 업데이트 -->
+												<a href="javascript:;" role="button" class="links">콕팜정보통</a>
+											</div>
+											<!-- 1dpth -->
+											<div class="tabPanelList boxRight menuScroll">
+												<!-- //[2023-05-25] 이경아 : 전체메뉴 내 제휴서비스 업데이트 홈메뉴 추가 -->
+												<div class="menuWrap">
+													<strong class="menuTit menuico03">콕팜</strong>
+													<div class="subMenus">
+														<a href="javascript:;" role="button">콕팜 홈</a>
+													</div>
+												</div>
+													<!-- [2023-05-12] 콕뱅크 전체메뉴 내 제휴서비스 업데이트// -->
+													<div role="tabpanel" class="tabPanel show">
+														<!-- 나의농축협 -->
+														<div class="menuWrap">
+															<div class="subMenus">
+																<a href="javascript:;" role="button">나의농축협 홈</a> <!-- [2023-06-14] 콕팜/콕세상 서비스 메뉴 변경건 -->
+																<a href="javascript:;" role="button">소통광장</a> <!-- [2023-06-14] 콕팜/콕세상 서비스 메뉴 변경건 -->
+																<a href="javascript:;" role="button">복지몰</a>
+																<a href="javascript:;" role="button">출자/배당금</a>
+																<!-- <a href="javascript:;" role="button">조합원소통광장</a> --> <!-- [2023-06-14] 콕팜/콕세상 서비스 메뉴 변경건 -->
+																<a href="javascript:;" role="button">가입금/이용고배당금</a>
+																<a href="javascript:;" role="button">농산물경락/출하</a>
+																<a href="javascript:;" role="button">영농자재구매내역</a>
+																<a href="javascript:;" role="button">휴양관예약</a>
+																<a href="javascript:;" role="button">농작업일지</a>
+																<a href="javascript:;" role="button">조합원교육신청</a>
+																<a href="javascript:;" role="button">장례지원</a>
+																<a href="javascript:;" role="button">면세유현황</a>
+															</div>
+														</div>
+													</div>
+												<div role="tabpanel" class="tabPanel">
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">가입신청</a>
+															<a href="javascript:;" role="button">가입상황 확인</a>
+														</div>
+													</div>
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 직거래장터 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">직거래장터 홈</a>
+															<a href="javascript:;" role="button">농축산직거래</a>
+															<a href="javascript:;" role="button">중고농기계</a>
+															<a href="javascript:;" role="button">중고장터</a>
+														</div>
+													</div>
+												</div>
+												<!-- //[2023-05-12] 콕뱅크 전체메뉴 내 제휴서비스 업데이트 -->
+												<div role="tabpanel" class="tabPanel">
+													<!-- 영농라이프 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">영농라이프 홈</a>
+															<a href="javascript:;" role="button">농협공동방제</a>
+															<a href="javascript:;" role="button">드로니아</a>
+															<a href="javascript:;" role="button">이지스팜</a>
+															<a href="javascript:;" role="button">고향사랑기부제</a>
+															<a href="javascript:;" role="button">농촌인력중개</a>
+															<a href="javascript:;" role="button">농업인행복콜센터</a>
+															<a href="javascript:;" role="button">취약농가인력지원</a>
+															<!-- <a href="javascript:;" role="button">농업인 지원제도</a> -->  <!-- [2023-05-12] 콕뱅크 전체메뉴 내 제휴서비스 업데이트 -->
+															<a href="javascript:;" role="button">NH오늘농사</a>
+															<a href="javascript:;" role="button" title="새창열림">오늘의 농산물 시세</a>
+															<a href="javascript:;" role="button" title="새창열림">오늘의 축산물 시세</a>
+															<!-- <a href="javascript:;" role="button">오늘의 농/축산물 시세</a> -->
+															<a href="javascript:;" role="button">작물종합기술정보</a>
+															<a href="javascript:;" role="button">농가경영관리</a>
+														</div>
+													</div>
+													<!-- //영농라이프 -->
+												</div>
+												<!-- [2023-05-12] 콕뱅크 전체메뉴 내 제휴서비스 업데이트// -->
+												<div role="tabpanel" class="tabPanel">
+													<!-- 농&middot;축협 소식 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">농·축협소식 홈</a>
+															<a href="javascript:;" role="button">전국농축협소식</a>
+															<a href="javascript:;" role="button">범농협소식</a>
+															<a href="javascript:;" role="button">농업인 지원제도</a>
+														</div>
+													</div>
+												</div>
+												<!-- //[2023-05-12] 콕뱅크 전체메뉴 내 제휴서비스 업데이트 -->
+											</div>
+										</div>
+										<!-- //콕팜T -->
+									</div>
+									<div role="tabpanel" class="tabPanel">
+										<!-- 콕쇼핑T -->
+										<div class="tabWrap jsTabInTab menuBoxWrap">
+											<!-- 1depth -->
+											<div role="tablist" class="boxLeft menuScroll">
+												<a href="javascript:;" role="tab" aria-selected="true" class="active">종합몰</a>
+												<a href="javascript:;" role="tab">식품/건강</a>
+												<a href="javascript:;" role="tab">생활/정보</a>
+												<a href="javascript:;" role="tab">문화/여행</a>
+												<a href="javascript:;" role="tab">판매자전용</a>
+											</div>
+											<!-- 1edpth -->
+											<div class="tabPanelList boxRight menuScroll">
+												<!-- //[2023-05-25] 이경아 : 전체메뉴 내 제휴서비스 업데이트 홈메뉴 추가 -->
+												<div class="menuWrap">
+													<strong class="menuTit menuico04">콕쇼핑</strong>
+													<div class="subMenus">
+														<a href="javascript:;" role="button">콕쇼핑 홈</a>
+													</div>
+												</div>
+												<div role="tabpanel" class="tabPanel show">
+													<!-- 종합몰 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">농협몰</a>
+															<a href="javascript:;" role="button">농축협직영몰</a>
+															<!-- [2023-05-16] 콕뱅크 전체메뉴 내 제휴서비스 업데이트// -->
+															<a href="javascript:;" role="button">e-하나로마트</a>
+															<a href="javascript:;" role="button">농축산직거래</a>
+															<!-- //[2023-05-16] 콕뱅크 전체메뉴 내 제휴서비스 업데이트 -->
+															<a href="javascript:;" role="button">중고장터</a>
+														</div>
+													</div>
+													<!-- //종합몰 -->
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 식품/건강 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">라이블리</a>
+															<a href="javascript:;" role="button">한삼인</a>
+															<a href="javascript:;" role="button">목우촌</a>
+															<a href="javascript:;" role="button">또래오래</a>
+															<a href="javascript:;" role="button">농협양곡</a>
+														</div>
+													</div>
+												<!-- //식품/건강 -->
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 생활/정보 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">K플라워</a>
+															<a href="javascript:;" role="button">박사장골프몰</a>
+															<a href="javascript:;" role="button">농협벌초대행</a>
+															<a href="javascript:;" role="button">농협장례식장</a>
+														</div>
+													</div>
+													<!-- //생활/정보 -->
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 문화/여행 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">NH여행</a>
+															<a href="javascript:;" role="button">팜스테이</a>
+															<a href="javascript:;" role="button">안성팜랜드</a>
+															<a href="javascript:;" role="button">농업박물관</a>
+														</div>
+													</div>
+													<!-- //문화/여행 -->
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<!-- 판매자전용 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">농협방문택배</a>
+															<a href="javascript:;" role="button">개인간카드거래</a>
+														</div>
+													</div>
+													<!-- //판매자전용 -->
+												</div>
+											</div>
+										</div>
+										<!-- //콕쇼핑T -->
+									</div>
+									<div role="tabpanel" class="tabPanel">
+										<!-- 콕세상T -->
+										<div class="tabWrap jsTabInTab menuBoxWrap">
+											<!-- 1dpth -->
+											<div role="tablist" class="boxLeft menuScroll">
+												<a href="javascript:;" role="tab" aria-selected="true" class="active">콕통신비절약</a>
+												<a href="javascript:;" role="button" class="links">증권추천</a>
+												<a href="javascript:;" role="tab">콕생활</a>
+												<a href="javascript:;" role="tab">MY콕</a>
+												<!-- <a href="javascript:;" role="button" class="links">제휴혜택ZONE</a> -->
+											</div>
+											<!-- 1dpth -->
+											<div class="tabPanelList boxRight menuScroll">
+												<!-- //[2023-05-25] 이경아 : 전체메뉴 내 제휴서비스 업데이트 홈메뉴 추가 -->
+												<div class="menuWrap">
+													<strong class="menuTit menuico05">콕세상</strong>
+													<div class="subMenus">
+														<a href="javascript:;" role="button">콕세상 홈</a>
+													</div>
+												</div>
+												<div role="tabpanel" class="tabPanel show">
+													<!-- 콕제휴 -->
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button" title="새창열림">알뜰폰 전용몰</a>
+															<a href="javascript:;" role="button" title="새창열림">홈상품 전용몰</a>
+															<a href="javascript:;" role="button" title="새창열림">휴대폰 전용몰</a>
+														</div>
+													</div>
+												</div>
+												<div role="tabpanel" class="tabPanel"></div>
+												<div role="tabpanel" class="tabPanel">
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button" title="새창열림">운세</a>
+															<a href="javascript:;" role="button" title="새창열림">휴대폰가족보호</a>
+															<a href="javascript:;" role="button" title="새창열림">아파트NH콕</a>
+															<a href="javascript:;" role="button" title="새창열림">원키퍼</a>
+															<a href="javascript:;" role="button" title="새창열림">스마트피싱보호</a>
+															<a href="javascript:;" role="button" title="새창열림">더치트</a>
+															<!-- <a href="javascript:;" role="button" title="새창열림">선물하기</a> --> <!-- [2023-05-12] 콕뱅크 전체메뉴 내 제휴서비스 업데이트 -->
+															<a href="javascript:;" role="button" title="새창열림">교통카드</a>
+															<a href="javascript:;" role="button" title="새창열림">혜택365</a>
+														</div>
+													</div>
+												</div>
+												<div role="tabpanel" class="tabPanel">
+													<div class="menuWrap">
+														<div class="subMenus">
+															<a href="javascript:;" role="button">MY콕 홈</a> <!-- [2023-06-14] 콕팜/콕세상 서비스 메뉴 변경건 -->
+															<a href="javascript:;" role="button" title="새창열림">카드포인트입금</a>  <!-- [2023-05-12] 콕뱅크 전체메뉴 내 제휴서비스 업데이트 -->
+															<a href="javascript:;" role="button" title="새창열림">보험정보</a>
+															<a href="javascript:;" role="button" title="새창열림">연금정보</a>
+															<a href="javascript:;" role="button" title="새창열림">차량/운전정보</a>
+															<a href="javascript:;" role="button" title="새창열림">부동산정보</a>
+															<a href="javascript:;" role="button" title="새창열림">건강정보</a>
+															<a href="javascript:;" role="button" title="새창열림">복지/정책자금</a>
+															<a href="javascript:;" role="button" title="새창열림">귀농/귀촌정보</a>
+															<a href="javascript:;" role="button" title="새창열림">여행정보</a>
+															<a href="javascript:;" role="button" title="새창열림">평생학습강좌</a>
+														</div>
+													</div>
+												</div>
+												<div role="tabpanel" class="tabPanel"></div>
+											</div>
+										</div>
+										<!-- //콕세상T -->
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<a href="#none" role="button" class="btnPopClose btnAllMenuClose"><span class="blind">닫기</span></a>
+					<!-- //[2022-08-08] -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //#popupArea -->
+
+</body>
+</html>

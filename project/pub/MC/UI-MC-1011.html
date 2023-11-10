@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0042P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);	
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>이용약관</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">MY콕 서비스 정보제공 동의</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+            <!-- 개인정보 수집 및 이용 동의 내용 -->
+							<div class="terms">
+								<h3 class="termsTit">MY콕 서비스 정보 이용 동의</h3>
+								<p>본인은 “MY콕” 서비스를 신청하기 위해 본인 차량번호 및 공동인증서로 대법원 전자가족관계등록시스템(가족관계증명서, 혼인관계증명서), 건강보험공단(건강보험료 납부확인서, 자격득실확인서), 정보24(주민등록등본), 건강보험공단(검진이력, 진료 및 투약정보, 진료받은 내용), 보험개발원(보험계약조회), 경찰청교통민원24(운전경력증명서, 면허정보, 면허결격, 면허벌점, 면허정지, 운전면허, 미납과태료, 미납범칙금) 자동차민원 대국민포털(자동차등록원부, 미납통행료), 하이패스서비스통합(미납통행료확인), 중앙부터복지서비스, 국토교통부, 자동차365(자동차시세), 국민연금공단(가입내역, 예상연금내역)을 전자적 방식으로 조회, 제출하는 것에 대해 충분히 이해하였으며, MY콕서비스에 이용하는 것에 동의합니다.</p>
+							</div>
+							<!-- 개인정보 수집 및 이용 동의 내용 END -->
+          </div>
+          <div id="footer_cont">
+            <div class="btnArea">
+              <button type="button" class="btn_full sel">확인</button>
+            </div>
+          </div>  <!-- //#footer_cont -->
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

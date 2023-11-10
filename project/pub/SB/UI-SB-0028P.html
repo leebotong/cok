@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-0028P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(fullA);
+		})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1></h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(fullA);" class="popOpen">승인내역상세 팝업</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP -->
+		<div id="fullA" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">승인내역 상세</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div class="cardDetailInfoWrap">
+								<span class="cardSpotName">지에스 의왕포일점</span>
+								<div class="dataWrap through">
+									<em class="data">50,000</em><span class="unit">원</span>
+								</div>
+							</div>
+
+							<section>
+								<div class="listTbl">
+									<ul>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">카드번호</span>
+												<span class="txt">1234-****-****-1234</span>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">거래방법</span>
+												<span class="txt">일시불</span>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">거래일시</div>
+												<div class="txt">2022.12.20 17:00:15</div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">승인번호</div>
+												<div class="txt">12345678</div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">취소여부</div>
+												<div class="txt">취소</div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">거래금액</div>
+												<div class="txt"><span class="dataWrap error through"><em class="data">50,000</em><span class="unit">원</span></span></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<div class="listTbl">
+									<div class="listTit">
+										<span>가맹점정보</span>
+									</div>
+									<ul>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">가맹점명</span>
+												<span class="txt">지에스 의왕포일점</span>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">가맹점번호</span>
+												<span class="txt">123456789</span>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">대표자명</div>
+												<div class="txt">홍길동</div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">전화번호</div>
+												<div class="txt">02-332-2472</div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">주소</div>
+												<div class="txt">경기 의왕시 성고개로 53<br> A동 123호</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button class="sel">확인</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0005T</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>이벤트</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="tabWrap oneDepth">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" aria-selected="true" class="active">진행중</a>
+					<a href="javascript:;" role="tab">당첨자 발표</a>
+				</div>
+			</div>
+
+      <section>
+        <div class="eventList">
+          <ul>
+            <li>
+              <a href="javascript:;" title="상세보기" role="button">
+                <div class="boardImg">
+                  <img src="../../images/cont/img_event.png" alt>
+                </div>
+                <div class="boardTxt">
+                  <span class="badge">D-25</span>
+                  <span class="title">콕뱅크 이벤트 콕뱅크 이벤트 콕뱅크 <i aria-label="새글" class="new">N</i></span>
+									<span class="date">2022.05.23 ~ 2022.06.19</span>
+                </div>
+							</a>
+							<!-- [2022-09-22] 김자영: 좋아요 button태그 추가 -->
+							<span class="likes">
+								<button type="button" class="ico jsLike"><span class="blind">좋아요</span></button>
+								좋아요 <span class="pColor">1,700</span>개
+							</span>
+							<!--// [2022-09-22] 김자영: 좋아요 button태그 추가 -->
+							<!-- [2022-09-22] 김자영: 삭제 <button class="likeChk jsLike"><span class="blind">좋아요</span></button> -->
+            </li>
+            <li>
+              <a href="javascript:;" title="상세보기" role="button">
+                <div class="boardImg">
+                  <img src="../../images/cont/img_event.png" alt>
+                </div>
+                <div class="boardTxt">
+                  <span class="badge">D-25</span>
+                  <span class="title">콕뱅크 이벤트 콕뱅크 이벤트 콕뱅크 <i aria-label="새글" class="new">N</i></span>
+                  <span class="date">2022.05.23 ~ 2022.06.19</span>
+                </div>
+							</a>
+							<!-- [2022-09-22] 김자영: 좋아요 button태그 추가 -->
+							<span class="likes">
+								<button type="button" class="ico jsLike"><span class="blind">좋아요</span></button>
+								좋아요 <span class="pColor">1,700</span>개
+							</span>
+							<!--// [2022-09-22] 김자영: 좋아요 button태그 추가 -->
+							<!-- [2022-09-22] 김자영: 삭제 <button class="likeChk jsLike"><span class="blind">좋아요</span></button> -->
+            </li>
+          </ul>
+        </div>
+        <div class="btnInArea">
+          <button type="button" class="point">종료된 이벤트</button>
+        </div>
+      </section>
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+          <li>즉석 경품 이벤트는 참여 시 해당 콕이 차감됩니다.</li>
+          <li>즉석 경품 이벤트는 콕 보유 시 중복 참여 가능합니다.</li>
+          <li>&lsquo;참여가능 콕&rsquo;이 없는 이벤트는 상세페이지에서 응모 및 지급조건을 확인 후 참여하시기 바랍니다.</li>
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+
+		<!--<div id="footer_cont">
+		</div>   //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+<script>
+	// 좋아요버튼 (취소기능 없음)
+	$(document)
+	.off("click", ".jsLike")
+		.on("click", ".jsLike", function () {
+			var $this = $(this);
+			// 사용자 선택상태 확인
+			if (!$this.hasClass("active")) {
+				$(this).addClass("active").attr("aria-pressed", "true");
+				$(this).attr("title", "선택됨"); // [2022-09-22] 김자영: 추가 
+			} 
+		})
+</script>
+</body>
+</html>

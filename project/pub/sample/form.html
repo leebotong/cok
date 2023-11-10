@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>콕 form</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕 form</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<h1 class="gTit" style="margin-bottom:20px">### input text</h1>
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">기본인풋
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">제목제목제목</strong>
+								<ul class="listDot">
+									<li>콕뱅크에 등록하신 농·축협 계좌만 출금계좌 지정
+										이 가능하며 NH농협은행 계좌로는 출금계좌 지정
+										및 상품가입이 불가능 합니다.</li>
+									<li>콕뱅크에 등록하신 농·축협 계좌만 출금계좌 지정
+										이 가능하며 NH농협은행 계좌로는 출금계좌 지정
+										및 상품가입이 불가능 합니다.</li>
+								</ul>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="inpText">
+						<input type="text" title="받는 통장 기록사항" value class="tyTxt" placeholder="받는 통장에 표시 될 내용을 입력해주세요">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxtErr">가입가능금액을 확인해주세요.</p>
+					<p class="infoTxt pColor">가입가능금액 <strong>30,000,000원</strong></p>
+					<p class="infoTxt">2022년 1월 1일 이후 세금우대예탁금 가입자는 직전
+						3개년도 내 1회 이상 금융소득 종합과세대상자에
+						해당될 경우 가입대상에서 제외되며, 이후 관련 법령
+						에서 정하는 절차에 따라 비과세종합저축이 해지
+						(일반과세 전환)되는 등 불이익을 받을 수 있습니다.</p>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">기본인풋</strong>
+					<div class="inpText">
+						<input type="text" title="받는 통장 기록사항" value class="tyTxt" placeholder="받는 통장에 표시 될 내용을 입력해주세요">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						<button type="button" title="검색" class="btnSearch"></button>
+					</div>
+				</div>
+				<div class="formItem action">
+					<strong class="formTit">금액입력(action ui의 경우)</strong>
+					<p class="numVal"><em class="data"></em><span class="unit">원</span></p>
+					<div class="inpText">
+						<input type="tel" title="계좌번호" value="1234567890123" class="tyNum" placeholder="금액입력">
+						<span class="unit">원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxt ar">10,000원~1,000,000원</p>
+				</div>
+				<div class="formItem action"> <!-- action ui의 경우 class action 추가 -->
+					<strong class="formTit">이체 금액(action ui의 경우)</strong>
+					<p class="numVal"><em class="data"></em><span class="unit">원</span></p>
+					<div class="inpText">
+						<input type="tel" title="이체 금액" value class="tyNum" placeholder="'-'없이 금액입력'" maxlength="16"> <!-- fn_change_hangul_money 퍼블 테스트용 -->
+						<span class="unit">원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<div class="inpOpenM">잔액 <strong class="pColor">0원</strong>
+						<button type="button" class="btnSm">+ 채우기</button>
+					</div>
+				</div>
+				<div class="formItem action">
+					<strong class="formTit">이체 금액(action ui의 경우)</strong>
+					<p class="numVal"><em class="data"></em><span class="unit">원</span></p>
+					<div class="inpText">
+						<input type="tel" title="금액" value class="tyNum" placeholder="'-'없이 금액입력" maxlength="16"> <!-- fn_change_hangul_money 퍼블 테스트용 -->
+						<span class="unit">만원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">읽기전용(Readonly) input형</strong>
+					<div class="inpText">
+						<input type="text" title="받는 통장 기록사항" value="value" class="tyTxt" placeholder="받는 통장에 표시 될 내용을 입력해주세요" readonly>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">읽기전용(Readonly) 리스트형</strong>
+					<div class="rounBgBox readonlyBox">
+						<ul>
+							<li>
+								<strong class="formTit">고객명</strong>
+								<p class="value">홍길동</p>
+							</li>
+							<li>
+								<strong class="formTit">생년월일</strong>
+								<p class="value">1990년 1월 1일</p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="formItem">
+					<strong class="formTit">읽기전용(Readonly) only 텍스트형</strong>
+					<div class="readonlyBox">
+						<div class="branchInfo">
+							<strong class="name">서울경기축산농협<br>디지털미디어시티지점</strong>
+							<button type="button" class="btnSm point">영업점정보</button>
+						</div>
+						<p class="defTxt">경기도 의왕시 포일대로 123 포일빌딩1층<br>031-2345-6789</p>
+					</div>
+					<div class="readonlyBox">
+						<p class="defTxt">12345<br>서울시 강남구 봉은사로 111한국빌딩<br>5층 101호</p>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">비활성화(Disable)</strong>
+					<div class="inpText">
+						<input type="text" title="받는 통장 기록사항" value="value" class="tyTxt" placeholder="받는 통장에 표시 될 내용을 입력해주세요" disabled>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem error">
+					<strong class="formTit">에러 .formItem 에 .error 추가</strong>
+					<p class="numVal"><em class="data"></em><span class="unit">원</span></p>
+					<div class="inpText">
+						<input type="tel" title="이체 금액" value class="tyNum" placeholder="'-'없이 숫자만 입력해주세요" maxlength="16"> <!-- fn_change_hangul_money 퍼블 테스트용 -->
+						<span class="unit">원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxtErr">영업점 심사시 추가로 서류를 요청할 수 있습니다.</p>
+					<p class="infoTxt ar">10,000원~1,000,000원</p>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">계좌비밀번호</strong>
+					<div class="inpText">
+						<button type="button" title="계좌비밀번호 4자리 입력됨" aria-label="계좌비밀번호 4자리 숫자 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+						<input type="password" title="신규비밀번호 4자리 숫자" aria-hidden="true" value="0000" class="sKey" placeholder="신규계좌 비밀번호 4자리를 입력해주세요" maxlength="4" readonly>
+					</div>
+					<div class="inpText">
+						<button type="button" title="계좌비밀번호 4자리 입력됨" aria-label="계좌비밀번호 4자리 다시 입력" class="btnTransparent"></button>
+						<input type="password" title="계좌비밀번호 4자리 다시 입력" aria-hidden="true" value class="sKey" placeholder="비밀번호를 다시 한번 입력해주세요" maxlength="4" readonly> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">라인위에버튼(버튼길이유동)</strong>
+					<div class="inpText">
+						<input type="password" title="계좌비밀번호" value class="tyTxt" placeholder="라인위에버튼">
+						<a href="javascript:;" role="button" aria-label class="btnSm">라인위에버튼</a>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="chk2" id="chk21">
+						<label for="chk21">신규계좌 비밀번호와 동일하게 설정</label>
+					</div>
+				</div>
+				<!-- <div class="formItem">
+					<strong class="formTit">계좌비밀번호(버튼길이유동)</strong>
+					<div class="formGroup">
+						<div class="inpText">
+							<input type="text" value="" title="계좌비밀번호" class="tyTxt" placeholder="라인옆에버튼">
+							<button type="button" class="btnReset" title="입력 텍스트 삭제"></button>
+						</div>
+						<button class="btnSm" disabled>라인+버튼</button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">인풋+버튼(7:3)</strong>
+					<div class="formGroup flex73">
+						<div class="inpText">
+							<input type="text" value="" title="계좌비밀번호" class="tyTxt" placeholder="라인옆에버튼">
+							<button type="button" class="btnReset" title="입력 텍스트 삭제"></button>
+						</div>
+						<button class="btnSm">라인+버튼</button>
+					</div>
+				</div> -->
+
+				<div class="formItem">
+					<strong class="formTit">인풋+카운트</strong>
+					<div class="inpText">
+						<input type="tel" title="승인번호" value class="tyTxt" placeholder="승인번호입력" maxlength="16">
+						<span class="time">05:00</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxtOk">인증 완료되었습니다.</p>
+				</div>
+				<div class="formItem">
+					<div class="formTit inpChk">
+						<input type="checkbox" id="chk01">
+						<label for="chk01">받는 통장 기록사항 (선택)</label>
+					</div>
+					<div class="inpText">
+						<input type="text" title="받는 통장 기록사항" value class="tyTxt" placeholder="받는 통장에 표시 될 내용을 입력해주세요">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">출금계좌</strong>
+					<!-- case : 계좌 선택시 노출 -->
+					<div class="inpSel selectAccount">
+						<a href="javascript:;" title="출금 계좌선택" role="button" id="inp1" class="btnSel placeholder">계좌를 선택해주세요.</a>
+						<a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" role="button" aria-controls="inp2" class="btnSm">직접입력</a>
+					</div>
+					<!--// case : 계좌 선택시 노출 -->
+
+					<!-- case : 계좌번호 직접입력 선택시 노출 -->
+					<div class="inpText insertAccount">
+						<input type="tel" title="계좌번호" value id="inp2" class="tyTxt" placeholder="계좌번호 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						<a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" role="button" aria-controls="inp1" class="btnSm">계좌선택</a>
+					</div>
+					<!-- // case : 계좌번호 직접입력 선택시 노출 -->
+				</div>
+
+				<div class="formItem inquiry">
+					<strong class="formTit">지급가능금액</strong>
+					<button type="button" class="btnSm">조회</button>
+					<strong class="dataWrap"><em class="data">783,250</em><span class="unit">원</span></strong>
+				</div>
+			</div>
+
+			<hr class="divingLine">
+
+			<h1 class="gTit" style="margin-bottom:20px">### 조회성</h1>
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">조회설정</strong>
+					<div class="formGroup">
+						<div class="inpSel">
+							<a href="javascript:;" title="조회 시작날짜 선택" role="button" class="btnSelDate">YYYY.MM.DD</a>
+						</div>
+						<span class="etc">~</span>
+						<div class="inpSel">
+							<a href="javascript:;" title="조회 끝날짜 선택" role="button" class="btnSelDate">YYYY.MM.DD</a>
+						</div>
+					</div>
+					<div class="rdoBtnsWrap">
+						<ul>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample01">
+									<label for="sample01">1개월</label>
+								</span>
+							</li>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample02">
+									<label for="sample02">3개월</label>
+								</span>
+							</li>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample03">
+									<label for="sample03">6개월</label>
+								</span>
+							</li>
+							<li>
+								<span class="rdoBtn">
+									<input type="radio" name="sample00" id="sample04">
+									<label for="sample04">12개월</label>
+								</span>
+							</li>
+							<li class="filter">
+								<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">날짜입력</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="조회 시작날짜 선택" role="button" class="btnSelDate">YYYY.MM.DD</a>
+					</div>
+				</div>
+			</div>
+			<hr class="divingLine">
+
+			<h1 class="gTit" style="margin-bottom:20px">### select</h1>
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">셀렉박스 타이틀</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel ">셀렉트팝업</a>
+					</div>
+				</div>
+
+				<div class="formItem error">
+					<strong class="formTit">셀렉박스 에러</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel ">셀렉트팝업</a>
+					</div>
+					<p class="infoTxtErr">에러문구 에러문구 에러문구 에러문구 </p>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">셀렉박스 readonly</strong>
+					<div class="inpSel readonly">
+						<!-- <a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel ">셀렉트팝업</a> -->
+						<div class="btnSel">셀렉트팝업</div>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">셀렉박스 타이틀</strong>
+					<div class="inpSel isLogo">
+						<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel placeholder">
+							<span class="logo">
+								<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+							</span>
+							<div class="accNum">
+								<span class="tit"><!--<span class="accBank">[농협]</span>--> 바로N콕통장(내주거래통장)</span>
+								<span class="num">555368-12-023456</span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">계좌셀렉트 readonly</strong>
+					<div class="readonlyBox">
+						<div class="inpSel isLogo">
+							<div class="btnSel">
+								<span class="logo">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+								</span>
+								<div class="accNum">
+									<span class="tit"><!--<span class="accBank">[농협]</span>--> 바로N콕통장(내주거래통장)</span>
+									<span class="num">555368-12-023456</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="divingLine">
+
+			<h1 class="gTit" style="margin-bottom:20px">### multi</h1>
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">분할(5:5) 구분자 有</strong>
+					<div class="formGroup">
+						<div class="inpText">
+							<input type="tel" title="우편번호 앞자리" value class="tyTxt" maxlength="4">
+						</div>
+						<span class="etc">-</span>
+						<div class="inpText">
+							<input type="tel" title="우편번호 뒷자리" value class="tyTxt" maxlength="4">
+						</div>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">분할(5:5) 구분자 無 / 단위 有</strong>
+					<!-- <div class="inpChk">
+						<input type="checkbox" id="chk02">
+						<label for="chk02">아파트 동/호수</label>
+					</div> -->
+					<div class="formGroup">
+						<div class="inpText">
+							<input type="tel" title="동" value class="tyTxt" placeholder="동 입력" maxlength="4">
+							<div class="unit">동</div>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="호수" value class="tyTxt" placeholder="호수 입력" maxlength="4">
+							<div class="unit">호</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">주민등록번호</strong>
+					<div class="formGroup">
+						<div class="inpText">
+							<input type="tel" title="주민등록번호 앞자리" value="111111" class="tyTxt">
+						</div>
+						<span class="etc">-</span>
+						<div class="inpText">
+							<button type="button" title="주민등록번호 7자리 입력됨" aria-label="주민등록번호 7자리 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+							<input type="password" title="주민등록번호 뒷자리" aria-hidden="true" value="1111111" class="tyTxt sKey" readonly>
+						</div>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">이메일</strong>
+					<div class="formGroup">
+						<div class="inpText">
+							<input type="tel" title="아이디" value class="tyTxt">
+						</div>
+						<span class="etc">@</span>
+						<div class="inpSel">
+							<a href="javascript:;" title="도메인 선택" role="button" class="btnSel placeholder">nonghyup.com</a>
+						</div>
+					</div>
+					<div class="inpText">
+						<input type="text" title="이메일주소 직접입력" value class="tyTxt" placeholder="직접입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">자택 주소</strong>
+					<div class="inpText">
+						<input type="text" title="우편번호" value class="tyTxt sKey" placeholder="우편번호" readonly>
+						<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+					</div>
+					<div class="inpText">
+						<input type="text" title="상세주소" value class="tyTxt sKey" placeholder " readonly>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<div class="inpText">
+						<input type="text" title="상세주소" value class="tyTxt" placeholder="상세주소 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">분할(3:3:3)</strong>
+					<div class="formGroup">
+						<div class="inpSel">
+							<a href="javascript:;" title="휴대폰번호 앞자리 선택" role="button" class="btnSel">010</a>
+						</div>
+						<span class="etc">-</span>
+						<div class="inpText">
+							<input type="tel" title="휴대폰번호 가운데자리" value class="tyTxt" maxlength="4">
+						</div>
+						<span class="etc">-</span>
+						<div class="inpText">
+							<input type="tel" title="휴대폰번호 뒷자리" value class="tyTxt" maxlength="4">
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">분할(3:7)</strong>
+					<div class="formGroup flex46">
+						<div class="inpSel">
+							<a href="javascript:;" title="휴대폰번호 앞자리 선택" role="button" class="btnSel">010</a>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="휴대폰번호 가운데자리('-'없이 입력)" value class="tyTxt" placeholder="'-'없이 입력" maxlength="8">
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">분할(4:6)</strong>
+					<div class="formGroup flex46">
+						<div class="inpSel">
+							<a href="javascript:;" title="휴대폰번호 앞자리 선택" role="button" class="btnSel">010</a>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="휴대폰번호번호('-'없이 입력)" value class="tyTxt" placeholder="'-'없이 입력" maxlength="8">
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">분할(7:3)</strong>
+					<div class="formGroup flex73">
+						<div class="inpSel">
+							<a href="javascript:;" title="휴대폰번호 앞자리 선택" role="button" class="btnSel">010</a>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="휴대폰번호번호('-'없이 입력)" value class="tyTxt" placeholder="'-'없이 입력" maxlength="8">
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">분할(6:4)</strong>
+					<div class="formGroup flex64">
+						<div class="inpSel">
+							<a href="javascript:;" title="휴대폰번호 앞자리 선택" role="button" class="btnSel">010</a>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="휴대폰번호 가운데자리('-'없이 입력)" value class="tyTxt" placeholder="'-'없이 입력" maxlength="8">
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">운전면허번호</strong>
+					<div class="formGroup">
+						<div class="inpText">
+							<input type="text" title="운전면허번호 첫번째자리" value class="tyTxt" placeholder>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="운전면허번호 두번째자리" value class="tyTxt" placeholder maxlength="2">
+						</div>
+						<div class="inpText">
+							<input type="tel" title="운전면허번호 세번째자리" value class="tyTxt" placeholder maxlength="4">
+						</div>
+						<div class="inpText">
+							<input type="tel" title="운전면허번호 마지막자리" value class="tyTxt" placeholder maxlength="2">
+						</div>
+					</div>
+				</div>
+			</div>  <!-- //.formWrap -->
+
+			<hr class="divingLine">
+
+			<h1 class="gTit">### textarea</h1>
+			<div class="formWrap mt0">
+				<div class="formItem">
+					<div class="textAreaWrap">
+						<textarea title="제안내용 입력" style="height:100px;" placeholder="제안 아이디어를 섬세하게 적어주세요. 문의 및 상담은 상담센터(1600-2800)에서 도와드립니다." cols="30" rows="23"></textarea>
+					</div>
+				</div>
+			</div> <!-- //.formWrap -->
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="toastMessage">[가입]을 선택하시면 전자서명과 동시에 가입 완료 됩니다.</div>
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

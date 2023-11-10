@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>UI-SB-1314FP_05</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_junior.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>공통</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="팝업 열기" role="button" class="popOpen">UI-SB-1314FP_05</a><br><br>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<!-- <div class="btnArea">
+				<button type="button" class="btn_full sel">조회</button>
+			</div> -->
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- 슬라이드 팝업 -->
+	<div id="popupA" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">과거 송금메모
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<ul class="listDot">
+										<li>2023년 MM월 DD일 이전 입력하신 송금메모는 과거 송금메모 조회를 통해 확인하실 수 있어요. </li>
+									</ul>
+									<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+								</div>
+							</div>
+						</h2>
+					</div>
+					<div class="layerSelectContent">
+						<!--메모영역 : 비활성 경우-->
+						<div class="formWrap">
+							<div class="textAreaWrap readyonly">
+								<textarea title="거래메모내용" readonly placeholder="2023.MM.DD 이전 송금메모 데이터가 노출됩니다."></textarea>
+							</div>
+						</div>
+						<ul class="listDot mt10">
+							<li>2023.MM.DD 이전에 입력하신 송금메모 입니다</li>
+						</ul>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel">조회</button>
+						</div>
+					</div>
+					<a href="#nolink" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

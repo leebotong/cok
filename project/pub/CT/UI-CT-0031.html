@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0031</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>제안하기</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">콕뱅크를 발전 시킬 수 있는<br>
+					고객님의 반짝이는<br> <strong>아이디어를 제안</strong>해주세요.</p>
+					<ul class="listDot">
+						<li>관련 문의는 스마트상담센터(1600-2800)에서<br>도와드립니다.</li>
+					</ul>
+			</div>
+
+			<div class="jsTgWrap">
+				<div class="allCheckTopBox addArrow noImg">
+					<input type="checkbox" name="agreeChk" id="aggChkAll" class="jsTgBtn">
+					<label for="aggChkAll">약관 전체동의</label>
+				</div>
+
+				<div class=" jsTgCont" style="display:block">
+					<div class="allCheckBox">
+						<div class="termsHead">
+							<p>제안작성을 위한 동의</p>
+							<!-- <a href="javascript:;" role="button" class="btn">모두보기</a> -->
+						</div>
+						<ul class="termsList">
+							<li>
+								<div class="termsCheck">
+									<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk01">
+									<label for="aggrChk01">[필수] 개인정보 수집 및 이용 동의</label>
+								</div>
+								<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+							</li>
+						</ul>
+					</div>
+					<div class="allCheck">
+						<input type="checkbox" name="agreeChk" id="aggrChk11">
+						<label for="aggrChk11">[필수] 제안의 모든 권리는 콕뱅크에 귀속되는 것에 동의합니다.</label>
+					</div>
+				</div>
+
+				<div class="allAgreeCont">
+					<div class="formWrap">
+						<div class="formItem">
+							<strong class="formTit">제안종류</strong>
+							<div class="inpSel">
+								<a href="javascript:;" title="제안종류 선택" role="button" class="btnSel placeholder">선택</a>
+							</div>
+						</div>
+						<div class="formItem">
+							<strong class="formTit">연락 받으실 연락처</strong>
+							<div class="inpText">
+								<input type="text" title="연락 받으실 연락처" value="010-123-5647" class="tyTxt" readonly><!-- [2022-07-20] 김자영 readonly로 수정 -->
+							</div>
+						</div>
+						<div class="formItem jsTgWrap active">
+							<strong class="formTit inpChk">
+								<input type="checkbox" aria-expanded="true" name="chk6" id="chk52" class="jsShowBtnScroll">
+								<label for="chk52">다른 연락처로 받을래요</label>
+							</strong>
+							<section data-focus class="section30 hideBox">
+								<div class="formWrap">
+									<div class="formItem">
+										<strong class="formTit">휴대전화번호</strong>
+										<div class="formGroup flex46">
+											<div class="inpSel">
+												<a href="javascript:;" title="휴대폰번호 앞자리 선택" role="button" class="btnSel">010</a>
+											</div>
+											<div class="inpText">
+												<!-- ▼ [2022-10-04] 김자영 : 웹접근성 title 수정 -->
+												<input type="tel" title="휴대폰 번호" value class="tyTxt" placeholder="'-'없이 입력" maxlength="8">
+											</div>
+										</div>
+									</div>
+								</div>
+								<p class="infoTxt mt10">
+									연락 받으실 연락처는 <em class="pColor">일회성</em>으로만 등록이 가능합니다.
+									등록된 개인정보 수정은 <em class="pColor">가까운 영업점</em>이나 <em class="pColor">스마트뱅킹</em>을
+									이용해주세요. 제안이 채택되실 경우 등록하신 연락처로
+									연락드립니다.
+								</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel dis">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+<script>
+	// [2022-07-26] 김자영: 스크롤 show 스크립트 내부 파일로 이동
+	$(document).ready(function(){
+		$('.jsShowBtnScroll').off('click').on('click', function(){
+			var $this = $(this);
+			var scrollHeight = $(document).height();
+			if (!$this.hasClass("active")) {
+				$this.addClass("active").attr("aria-expanded", "true");
+				$(".hideBox")
+					.slideDown()
+					.attr("data-focus", "focus")
+					.attr("tabindex", "0")
+					.focus();
+				$("body,html").animate({ scrollTop: scrollHeight }, 800);
+			}
+
+			if(!$this.is(":checked") && !$(this).hasClass('btnSm')){
+				$this.removeClass("active").attr("aria-expanded", "false");
+				$(".hideBox")
+					.slideUp();
+			}
+		});
+	});
+</script>
+</body>
+</html>

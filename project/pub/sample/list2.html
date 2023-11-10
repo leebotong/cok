@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>콕 조회 list</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕 조회 리스트</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents pubGuide">
+			<h1 class="gTit">### 기본 텍스트형(아이콘없음)</h1>
+			<h2 class="gTit">( .inqueryList ul.typeRow a)</h2>
+			<!-- list -->
+			<section>
+				<div class="inqueryList">
+					<div class="listTit">검색결과</div>
+					<ul class="typeRow">
+						<li>
+							<a href="javascript:;" title="항목을 선택하고 창을 닫습니다." role="button">
+								<p class="tit"><strong>421-23</strong></p>
+								<p class="txt">대구광역시 서구 평리동 13OO-3 유성빌딩대구광역시 서구 서대구로 78</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="항목을 선택하고 창을 닫습니다." role="button">
+								<p class="tit"><strong>421-23</strong></p>
+								<p class="txt">대구광역시 서구 평리동 13OO-3 유성빌딩대구광역시 서구 서대구로 78</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- //list -->
+
+			<hr class="divingLine">
+
+			<h1 class="gTit" style="margin-top:40px">### 조회결과 리스트(선택 링크형) a.link</h1>
+			<h2 class="gTit">(.inqueryList ul a.link)</h2>
+			<!-- list -->
+			<section>
+				<div class="inqueryList">
+					<div class="listTit">총 <strong class="pColor">82</strong>건</div>
+					<ul>
+						<li>
+							<a href="javascript:;" title="상세보기" role="button" class="link">
+								<div class="flex">
+									<span class="date">2022.06.29</span>
+									<p class="date2">예약납부일 2022.06.28</p>
+								</div>
+								<div class="flex">
+									<p class="tit">과태료</p>
+									<strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="상세보기" role="button" class="link">
+								<div class="flex">
+									<span class="date">2022.06.29</span>
+									<p class="date2">예약납부일 2022.06.28</p>
+								</div>
+								<div class="flex">
+									<p class="tit">과태료과태료과태료과태료과태료과태료</p>
+									<strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" role="button" class="link" title="상세보기">
+								<div class="flex">
+									<span class="date">123-4567-8901-21</span>
+								</div>
+								<div class="flex">
+									<p class="tit">사용</p>
+									<strong class="dataWrap"><em class="data">1</em><span class="unit">콕</span></strong>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- //list -->
+
+			<hr class="divingLine">
+
+			<h1 class="gTit" style="margin-top:40px">### 조회결과 리스트(선택 체크형) a.sel.jsSelectLink</h1>
+			<h2 class="gTit">(.inqueryList ul a.sel.jsSelectLink)</h2>
+			<!-- list -->
+			<section>
+				<div class="inqueryList">
+					<div class="listTit">총 <strong class="pColor">82</strong>건</div>
+					<ul>
+						<li>
+							<a href="javascript:;" role="button" class="sel jsSelectLink active">
+								<div class="flex">
+									<span class="date">2022.06.29</span>
+									<p class="date2">예약납부일 2022.06.28</p>
+								</div>
+								<div class="flex">
+									<p class="tit">과태료</p>
+									<strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" role="button" class="sel jsSelectLink">
+								<div class="flex">
+									<span class="date">2022.06.29</span>
+									<p class="date2">예약납부일 2022.06.28</p>
+								</div>
+								<div class="flex">
+									<p class="tit">과태료과태료과태료과태료과태료과태료</p>
+									<strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- //list -->
+
+			<hr class="divingLine">
+
+			<h1 class="gTit" style="margin-top:40px">### 기본 선택형 리스트 .listWrap.textType a.jsSelectLink</h1>
+			<h2 class="gTit">(.listWrap.textType a.jsSelectLink)</h2>
+			<ul class="listWrap textType">
+				<li><a href="javascript:;" title role="button" class="jsSelectLink">6개월</a></li>
+				<li><a href="javascript:;" title="선택됨" role="button" class="jsSelectLink active">7개월</a></li>
+				<li><a href="javascript:;" title role="button" class="jsSelectLink">8개월</a></li>
+				<li><a href="javascript:;" title role="button" class="jsSelectLink">9개월</a></li>
+				<li><a href="javascript:;" title role="button" class="jsSelectLink">10개월</a></li>
+			</ul>
+
+			<hr class="divingLine">
+
+			<h1 class="gTit" style="margin-top:40px">### history .inqueryList ul.historyList</h1>
+			<h2 class="gTit">(.inqueryList ul.historyList)</h2>
+			<!-- list -->
+			<section>
+				<div class="inqueryList">
+					<div class="listTit ar">
+						<a href="javascript:;" title="정렬 방법 선택" role="button" class="filterText">거래일자순</a>
+					</div>
+					<div class="historyList">
+						<div class="listTit">
+							<em>2022.03.05 ~ 2022.04.05</em>
+						</div>
+						<section>
+							<ul>
+								<li>
+									<div class="flex">
+										<span class="date">2022.06.29 00:00:00</span>
+										<span class="tag txtRed">출금</span>
+									</div>
+									<div class="flex">
+										<span class="tit fMiddle">중도인출</span>
+										<strong class="dataWrap fBig"><em class="data">100,000,000</em><span class="unit">원</span></strong>
+									</div>
+									<div class="flex">
+										<span class="banktobank">내 농협계좌 &rarr; 기업은행</span>
+										<span class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></span></span>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+										<div class="flex">
+											<span class="date">2022.06.29 00:00:00</span>
+											<span class="tag sbColor">입금</span>
+										</div>
+										<div class="flex">
+											<span class="tit fMiddle">중도인출</span>
+											<strong class="dataWrap fBig"><span class="unit">USD</span><em class="data">100,000.00</em></strong>
+										</div>
+										<div class="flex">
+											<span class="remainder">잔액 <span class="dataWrap"><span class="unit">USD</span><em class="data">100,000.00</em></span></span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" title="상세보기" role="button" class="listItem">
+										<div class="flex">
+											<span class="date">2022.06.29 00:00:00</span>
+											<span class="tag txtRed">출금</span>
+										</div>
+										<div class="flex">
+											<span class="tit fMiddle">중도인출</span>
+											<strong class="dataWrap fBig"><em class="data">100,000,000</em><span class="unit">원</span></strong>
+										</div>
+										<div class="flex">
+											<span class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></span></span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+
+						<div class="moreBtn"><button type="button">더보기</button></div>
+					</div>
+				</div>
+			</section>
+			<!-- //list -->
+
+			<!-- list -->
+			<section>
+				<div class="inqueryList type2">
+					<div class="listTit">
+						대출약정 총 <strong class="pColor">2</strong>건
+					</div>
+					<div class="roundBox"><!-- option: noBorder -->
+						<div class="roundInBox">
+							<div class="accInfo">
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<!--<span class="accBank">[농협]</span>-->
+										<span class="bankBookName">(가계일반)(종합통장대출금)NH모바일바로대출</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="inqueryList">
+								<ul>
+									<li>
+										<div class="flex">
+											<span class="tit">대출금액</span>
+											<p class="txt"><strong class="dataWrap"><em class="data">5,800</em><span class="unit">원</span></strong></p>
+										</div>
+									</li>
+									<li>
+										<div class="flex">
+											<span class="tit">약정일</span>
+											<p class="txt">2022.04.30</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="roundBoxUtility button">
+							<a href="javascript:;" role="button" class="utilItem">대출약정서 확인</a>
+						</div>
+					</div>
+				</div>
+				<div class="moreBtn"><button type="button">더보기</button></div>
+
+				<div class="inqueryList type2">
+					<div class="listTit">
+						대출약정 총 <strong class="pColor">2</strong>건
+					</div>
+					<ul>
+						<li>
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<span class="date2">약정일 2022.06.28</span>
+									<span class="accName">
+										<!--<span class="accBank">[농협]</span>-->
+										<span class="bankBookName">자립예탁금</span>
+									</span>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accDataWrap">
+								<div>
+									<span class="accNumInfo">대출금액</span>
+									<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+								</div>
+							</div>
+							<div class="btnInArea">
+								<button type="button" class="point">대출약정서 확인</button>
+							</div>
+						</li>
+						<li>
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<span class="date2">약정일 2022.06.28</span>
+									<span class="accName">
+										<!--<span class="accBank">[농협]</span>-->
+										<span class="bankBookName">자립예탁금</span>
+									</span>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accDataWrap">
+								<div>
+									<span class="accNumInfo">대출금액</span>
+									<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+								</div>
+							</div>
+							<div class="btnInArea">
+								<button type="button" class="point">대출약정서 확인</button>
+							</div>
+						</li>
+					</ul>
+					<div class="moreBtn"><button type="button">더보기</button></div>
+				</div>
+			</section>
+			<!-- //list -->
+			<hr class="divingLine">
+
+			<h1 class="gTit" style="margin-top:40px">### 날짜별리스트<br> .inqueryList .listItem</h1>
+			<h2 class="gTit" style="margin-bottom:20px;">(.inqueryList .listItem)</h2>
+			<section>
+				<div class="inqueryList">
+					<!-- 날짜별 list -->
+					<div class="listItem">
+						<div class="listTit">2022.06.29</div>
+						<ul>
+							<li>
+								<a href="javascript:;" title="상세보기" role="button" class="link">
+									<div class="flex">
+										<span class="date">14:12:12</span>
+										<span class="state error">결제취소</span>
+									</div>
+									<div class="flex">
+										<p class="tit">편의점</p>
+										<strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="상세보기" role="button" class="link">
+									<div class="flex">
+										<span class="date">14:12:12</span>
+										<span class="state pColor">결제완료</span>
+									</div>
+									<div class="flex">
+										<p class="tit">편의점</p>
+										<strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--// 날짜별 list -->
+
+					<!-- 날짜별 list -->
+					<div class="listItem">
+						<div class="listTit">2022.07.01</div>
+						<ul>
+							<li>
+								<a href="javascript:;" title="상세보기" role="button" class="link">
+									<div class="flex">
+										<span class="date">14:12:12</span>
+										<span class="state error">결제취소</span>
+									</div>
+									<div class="flex">
+										<p class="tit">편의점</p>
+										<strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--// 날짜별 list -->
+				</div>
+			</section>
+
+			<hr class="divingLine">
+
+			<h1 class="gTit" style="margin-top:40px">### 기본 선택형 계좌 .listWrap.accType a.jsSelectLink</h1>
+			<!-- list -->
+			<section>
+				<ul class="listWrap accType">
+					<li>
+						<div class="accTypeWrap accSelectType">
+							<a href="javascript:;" title role="button" class="jsSelectLink accInLayout active">
+								<div class="accInfo">
+									<div class="logoWrap">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+									</div>
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<span class="bankBookName">주머니(money) 통장</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">352-1775-6397-03</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="accTypeWrap accSelectType">
+							<a href="javascript:;" title role="button" class="jsSelectLink accInLayout">
+								<div class="accInfo">
+									<div class="logoWrap">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+									</div>
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<span class="bankBookName">콕!BASIC통장</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">352-1775-6397-03</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<!-- //list -->
+
+			<h1 class="gTit" style="margin-top:40px">### 기본 선택형 계좌 타입2 .listWrap.accType2 a.jsSelectLink</h1>
+			<!-- list -->
+			<section>
+				<ul class="listWrap accType2">
+					<li>
+						<div class="accTypeWrap accSelectType">
+							<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+								<div class="accInfo accInfoInLayoutWrap">
+									<div class="accInfoInLayout">
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<!--<span class="accBank">[농협]</span>-->
+												<span class="bankBookName">자립예탁금(테니스클럽)</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1775-6397-03</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="accTypeWrap accSelectType">
+							<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+								<div class="accInfo accInfoInLayoutWrap">
+									<div class="accInfoInLayout">
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<span class="accBank">[우리]</span>
+												<span class="bankBookName">자립예탁금(테니스클럽)</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1775-6397-03</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+								</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<!--// list -->
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+		</div> <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

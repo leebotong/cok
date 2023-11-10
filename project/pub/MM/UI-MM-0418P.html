@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0418P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupBD);
+		})
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupBD);" title="팝업 열기" role="button" class="popOpen">팝업열기</a>
+
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupBD" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+            <!-- <h2 tabindex="0"></h2> -->
+					</div>
+					<div class="layerSelectContent">
+						<!-- 컨펌메세지 -->
+						<div class="confirmMsg">
+							<p class="tit">선택하신 계좌의 한도제한 해제를<br/> 신청 하시겠습니까?</p>
+						</div>
+						<div class="listTblBox mt20">
+							<ul>
+								<li>
+									<span class="tit">상품명</span>
+									<p class="txt">자립예탁금</p>
+								</li>
+								<li>
+									<span class="tit">계좌번호</span>
+									<p class="txt">114-7120-149-24</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="toastMessage">[확인] 선택 시 전자서명과 동시에 신청됩니다.</div>
+						<div class="btnArea">
+							<button type="button" title onclick="popClose(this)" class="">취소</button>
+							<button type="button" title onclick="popClose(this)" class="sel">확인</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

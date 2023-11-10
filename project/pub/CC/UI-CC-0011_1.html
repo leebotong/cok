@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CC-0011_1</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>제로페이</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>결제를 위해 QR코드/바코드를</strong><br>매장 직원에게 보여주세요.</p><!-- [2022-08-19] 김자영 : 마침표 추가 -->
+			</div>
+
+			<div class="roundBox">
+				<div class="roundBoxUtility">
+						<span class="timerArea">
+							<span class="txt">유효시간<span class="timer pColor">02:25</span></span>
+							<button type="button" class="btnRefresh"><span class="blind">시간추가</span></button>
+						</span>
+				</div>
+				<div class="roundInBox">
+					<!-- 코드보기 -->
+					<div class="codeViewWrap">
+						<div class="codeItem">
+							<a href="javascript:;" onclick="popOpen(popupA)" role="button" title="qr코드 크게보기" class="btnQr">
+								<span class="img"><img src="../../images/cont/@tmp_qr.png" alt="qr코드"></span>
+								<span class="btnZoom">크게보기</span>
+							</a>
+						</div>
+						<div class="codeItem">
+							<a href="javascript:;" onclick="popOpen(popupB)" role="button" title="바코드 크게보기" class="btnBarCord">
+								<span class="img"><img src="../../images/cont/@tmp_barcord.png" alt="바코드"></span>
+								<span class="btnZoom">크게보기</span>
+							</a>
+						</div>
+					</div>
+					<!--// 코드보기 -->
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">결제확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">제로페이</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<!-- 코드보기 -->
+					<div class="codeViewWrap zoom">
+						<div class="codeItem ItemQr">
+							<span class="imgQr"><img src="../../images/cont/@tmp_qr.png" alt="qr코드"></span>
+							<span class="timerArea ac">
+								<span class="txt">유효시간<span class="timer pColor">02:25</span></span>
+								<button type="button" class="btnRefresh"><span class="blind">시간추가</span></button>
+							</span>
+						</div>
+					</div>
+					<!--// 코드보기 -->
+						
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popupB" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">제로페이</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<!-- 코드보기 -->
+						<div class="codeViewWrap zoom">
+							<div class="codeItem ItemBarCord">
+								<span class="imgBarCord"><img src="../../images/cont/@tmp_barcord.png" alt="바코드"></span>
+								<span class="timerArea ac">
+									<span class="txt">유효시간<span class="timer pColor">02:25</span></span>
+									<button type="button" class="btnRefresh"><span class="blind">시간추가</span></button>
+								</span>
+							</div>
+						</div>
+						<!--// 코드보기 -->
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

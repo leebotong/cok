@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JM-001T</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_junior.css"><!-- 시니어 큰글모드 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+
+<body class="purpleC">
+	<div id="wrap" class="junior ">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>내맘콕송금</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="pgTitWrap">
+					<!-- ▼ 2022-07-12 ac 클래스 추가  -->
+					<a href="javascript:;" class="pTit ac underline"><strong>어느분에게</strong><br>돈을 보낼까요?</a><!-- 2022-08-18 -->
+				</div>
+
+				<!-- ▼ 2022-07-12 마크업 수정  -->
+				<div class="tabWrap segment">
+					<div role="tablist" class="tabList">
+						<a href="javascript:;" role="tab" class="segmentItem active">계좌송금</a>
+						<a href="javascript:;" role="tab" class="segmentItem">휴대전화 송금</a>
+					</div>
+
+					<!-- ▼ 2022-07-19 마크업 수정 -->
+					<div class="tabPanelList">
+						<!-- [계좌송금] -->
+						<div role="tabpanel" class="tabPanel show">
+							<!-- ▼ 2022-07-12 마크업 수정  -->
+							<div class="toSendSelect">
+								<section class="section30">
+									<div class="formWrap ac">
+										<div class="formItem">
+											<strong class="formTit"><span class="pColor">은행</span>을 선택해주세요</strong>
+											<div class="inpSel isLogo">
+												<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel">
+													<span class="logo">
+														<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+													</span>
+													<div class="accNum">
+														<span class="tit">NH농협</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="formItem">
+											<!-- ▼ 2022-07-13 텍스트 수정 -->
+											<strong class="formTit"><span class="pColor">계좌번호</span>를 입력해주세요.</strong>
+											<div class="inpText">
+												<input type="tel" title="계좌번호 입력" value class="tyNum ac sKey" placeholder="계좌번호 입력" maxlength="16" readonly> <!-- [2023-05-25] readonly, .sKey 추가 -->
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+
+							<section class="section30 tabWrap ellipse">
+								<div class="tabList">
+									<a href="javascript:;" role="tab">최근입금</a>
+									<a href="javascript:;" role="tab">내계좌</a>
+									<a href="javascript:;" role="tab">자주쓰는</a>
+								</div>
+							</section>
+
+							<!-- ▼ 2022-07-12 마크업 수정  -->
+							<section class="juniorBothForm">
+								<!-- ▼ 2022-08-08 17:52 남협수 [ADD] input 요소변경에 따라 추가 -->
+								<div class="formWrap">
+									<div class="formItem juniorSingleInput">
+										<div class="inpText layoutWrap">
+											<strong class="formTit">받는계좌에 표시</strong>
+											<input type="text" title="받는 통장 기록사항" value="홍길동" class="tyTxt ar" placeholder>
+											<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+										</div>
+									</div>
+								</div>
+
+								<!-- ▼ 2022-08-08 17:43 남협수 [DEL] input 요소변경에 따라 삭제 -->
+								<!-- <div class="listTblBox">
+									<ul>
+										<li>
+											<span class="tit">받는계좌에 표시</span>
+											<p class="txt">홍길동</p>
+										</li>
+									</ul>
+								</div> -->
+
+								<section class="mt10">
+									<!-- ▼ 2022-07-13 텍스트 수정 -->
+									<a href="javascript:;" title="펼치기" role="button" class="juniorMoreInfo juniorFormWrap jsShowBtn">추가정보
+										입력(선택)</a>
+									<div class="formWrap moreBox">
+										<div class="hideBox">
+											<div data-focus="focus" class="formItem">
+												<div class="inpText layoutWrap">
+													<strong class="formTit">내계좌에 표시</strong>
+													<input type="text" title="받는 통장 기록사항" value class="tyTxt ar" placeholder="미입력 시 받는분 이름 표시">
+													<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+												</div>
+											</div>
+											<div class="formItem">
+												<div class="inpText layoutWrap">
+													<strong class="formTit">거래메모</strong><!-- [2023-03-31] 김연진 : 거래메모추가 -->
+													<input type="text" title="받는 통장 기록사항" value class="tyTxt ar" placeholder="한글 20자 이내 입력">
+													<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</section>
+						</div>
+
+						<!-- [연락처 송금] -->
+						<div role="tabpanel" class="tabPanel">
+							<section class="juniorBothForm juniorAddress">
+								<div class="formWrap">
+									<div class="formItem">
+										<div class="formGroup layoutWrap">
+											<strong class="formTit">휴대전화번호</strong>
+											<div class="inpText noBorder">
+												<input type="tel" title="휴대전화번호 입력" id="subjecter01" class="tyTxt" placeholder="휴대전화번호 입력">
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+												<a href="javascript:;" role="button" class="listSearchBtn">찾기</a>
+											</div>
+										</div>
+									</div>
+									<div class="formItem">
+										<div class="formGroup layoutWrap">
+											<!-- tooltip -->
+											<div class="formTit">받는 분 이름
+												<div class="tooltipWrap jsTooltipPosition">
+													<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+													<div class="tooltipCont">
+														<strong class="tit">받는 분 이름 입력 주의사항</strong>
+														<ul class="listDot">
+															<li>받는 분 계좌의 예금주명과 받는 분 이름이 일치해야 송금된 금액을 상대방이 입금 받을 수 있습니다.</li>
+															<li>받는 분의 실명이름(성+이름 형식)또는 예금주명을 정확히 입력해주시기 바랍니다.</li>
+														</ul>
+														<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+													</div>
+												</div>
+												<!-- //tooltip -->
+											</div>
+											<div class="inpText noBorder">
+												<input type="text" title="받는 분 입력" class="tyTxt" placeholder="실명 입력(성+이름)" maxlength="16">
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											</div>
+										</div>
+									</div>
+
+									<section class="juniorBothForm">
+										<div class="formWrap">
+											<div class="formItem juniorSingleInput">
+												<div class="inpText layoutWrap">
+													<strong class="formTit">받는계좌에 표시</strong>
+													<input type="text" title="받는 통장 기록사항" value="홍길동" class="tyTxt ar" placeholder>
+													<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+												</div>
+											</div>
+										</div>
+
+										<section class="mt10">
+											<a href="javascript:;" title="펼치기" role="button" class="juniorMoreInfo juniorFormWrap jsShowBtn">추가정보
+												입력(선택)</a>
+											<div class="formWrap moreBox">
+												<div class="hideBox">
+													<div data-focus="focus" class="formItem">
+														<div class="inpText layoutWrap">
+															<strong class="formTit">내계좌에 표시</strong>
+															<input type="text" title="받는 통장 기록사항" value class="tyTxt ar" placeholder="미입력 시 받는분 이름 표시">
+															<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+														</div>
+													</div>
+													<div class="formItem">
+														<div class="inpText layoutWrap">
+															<strong class="formTit">거래메모</strong><!-- [2023-03-31] 김연진 : 거래메모추가 -->
+															<input type="text" title="받는 통장 기록사항" value class="tyTxt ar" placeholder="한글 20자 이내 입력">
+															<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+									</section>
+									<!-- //2022-08-16 -->
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+
+
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea">
+					<!-- ▼ 2022-08-08 17:58 남협수 [MODIFY] disabled 속성 추가시 스타일 수정 -->
+					<button type="button" class="sel dis">다음</button>
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<script>
+		// 송금금액입력. 해당 페이지에서만 사용
+		$(document)
+			.on('keypress, keyup', '.toSendMonyWrap .toSendMony', function (e) {
+				if (this.value.length > 9) {
+					$(this).addClass('full').next('.price').addClass('sfont');
+				} else {
+					$(this).removeClass('full').next('.price').removeClass('sfont');
+				}
+				$(this).next('div').removeClass('placeholder').addClass('price').html(this.value + '<span>원</span>');
+				$(this).parent('.priceInput').next('.btnReset').show();
+			})
+			//reset 버튼
+			.off('click', '.priceWrap .btnReset')
+			.on('click', '.priceWrap .btnReset', function (e) {
+				$(this).parent('.priceWrap').find('.price').html('');
+				$(this).parent('.priceWrap').find('.toSendMony').val('');
+				$(this).parent('.priceWrap').children('.priceInput').find('div').removeClass('price').addClass('placeholder').html('보낼 금액 입력');
+			});
+	</script>
+</body>
+
+</html>

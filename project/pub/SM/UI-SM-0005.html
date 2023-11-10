@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SM-0005</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_senior.css"><!-- 시니어 큰글모드 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap" class="senior"><!-- 시니어 큰글모드 일때 class senior 추가 -->
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>거래내역</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome txtMode">큰글홈</a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu txtMode">메뉴</a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="tabWrap oneDepth">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab" class="active">입출금</a>
+					<a href="javascript:;" role="tab">예적금/신탁</a>
+					<a href="javascript:;" role="tab">대출</a>
+					<a href="javascript:;" role="tab">펀드</a>
+				</div>
+			</div>
+			<div class="twoToneType">
+				<div class="ttTop">
+					<!-- PAYMENT -->
+					<div class="accTypeWrap accAlwaysType">
+						<a href="javascript:popOpen(sp2);" title="계좌선택" role="button" class="accInLayout">
+							<div class="accInfo">
+								<div class="accInfoInLayout">
+									<div class="logoWrap">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+									</div>
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<!--<span class="accBank">[농협]</span>-->
+											<span class="bankBookName">자립예탁금</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">
+												<span class="accNumber">352-1775-6397-03</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="accDataWrap">
+						<div>
+							<span class="accNumInfo">잔액</span>
+							<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+						</div>
+					</div>
+					<!-- //PAYMENT -->
+				</div>
+				<div class="ttBottom">
+					<div class="ttContents">
+						<div class="topRoundBox">
+							<div class="rdoBtnsWrap"> <!-- [2023-04-27] mt-10 삭제 -->
+								<ul>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample00" id="sample01">
+											<label for="sample01">1주일</label>
+										</span>
+									</li>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample00" id="sample02">
+											<label for="sample02">1개월</label>
+										</span>
+									</li>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample00" id="sample03">
+											<label for="sample03">3개월</label>
+										</span>
+									</li>
+									<li>
+										<span class="rdoBtn">
+											<input type="radio" name="sample00" id="sample04">
+											<label for="sample04">6개월</label>
+										</span>
+									</li>
+									<li class="filter">
+										<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="inqueryList">
+
+							<hr class="divingLine">
+
+							<!-- [2023-03-31] 김연진 : 거래메모추가 -->
+							<div class="listTit line">
+								<em>2022.03.05 ~ 2022.04.05</em>
+								<span><a href="javascript:;" title="정렬 방법 선택" role="button" class="filterText">거래일자순</a></span>
+							</div>
+							<!--// [2023-03-31] 김연진 : 거래메모추가 -->
+
+							<ul class="historyList memoWrap"><!-- [2023-03-31] 김연진 : 거래메모추가 css -->
+								<li>
+									<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+										<div class="flex">
+											<span class="date">2022.06.29 00:00:00</span>
+											<p class="tag pColor">입금</p><!-- 입금일 경우 class pColor 추가-->
+										</div>
+										<div class="flex"><!-- [2022-10-27] 김자영 : class right 삭제 -->
+											<!-- ▼ [2022-10-27] 김자영 : 마크업 위치 이동-->
+											<p class="tit">홍길동</p>
+											<!-- <strong class="dataWrap pColor"><em class="data">1</em><span class="unit">원</span></strong> [2022-11-01] 윤지현:아래로 분리로 인해 삭제. 이하 동 --><!-- 입금일 경우 class pColor 추가-->
+										</div>
+
+										<!-- [2022-11-01] 윤지현:라인분리로 추가 -->
+										<div class="flex right">
+											<!-- [2023-04-27] 한은정 : 모드컬러 따라가도록 변경 -->
+											<strong class="dataWrap pColor"><em class="data">1</em><span class="unit">원</span></strong>
+										</div>
+										<!-- //[2022-11-01] 윤지현:라인분리로 추가 -->
+
+										<div class="flex right">
+											<!-- [2022-10-27] 김자영 : 마크업 위치 이동  <p class="tit">달나라가자@@@@@@@@@@@@</p> -->
+											<p class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000,000,000</em><span class="unit">원</span></span></p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+										<div class="flex">
+											<span class="date">2022.06.29 00:00:00</span>
+											<p class="tag txtRed">출금</p><!-- 출금일 경우 class txtRed 추가-->
+										</div>
+										<div class="flex"><!-- [2022-10-27] 김자영 : class right 삭제 -->
+											<!-- ▼ [2022-10-27] 김자영 : 마크업 위치 이동-->
+											<p class="tit">강감찬</p>
+											<!-- <strong class="dataWrap txtRed"><em class="data">170,000</em><span class="unit">원</span></strong> --><!-- 출금일 경우 class txtRed 추가-->
+										</div>
+
+										<!-- [2022-11-01] 윤지현:라인분리로 추가 -->
+										<div class="flex right"><!-- [2022-10-27] 김자영 : class right 추가 -->
+											<strong class="dataWrap txtRed"><em class="data">170,000</em><span class="unit">원</span></strong>
+										</div>
+										<!-- //[2022-11-01] 윤지현:라인분리로 추가 -->
+
+										<div class="flex right">
+											<!-- [2022-10-27] 김자영 : 마크업 위치 이동  <p class="tit">강감찬</p> -->
+											<p class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000,000</em><span class="unit">원</span></span></p>
+										</div>
+										<!-- [2023-03-31] 김연진 : 거래메모추가 -->
+										<div class="flex">
+											<span class="memoView">전체 메모 내용이 표시됩니다. 넘어가면 두 줄로 표시됩니다.</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+										<div class="flex">
+											<span class="date">2022.06.29 00:00:00</span>
+											<p class="tag txtRed">출금</p>
+										</div>
+										<div class="flex">
+											<p class="tit">강감찬</p>
+										</div>
+										<div class="flex right">
+											<strong class="dataWrap txtRed"><em class="data">170,000</em><span class="unit">원</span></strong>
+										</div>
+										<div class="flex right">
+											<p class="remainder">잔액 <span class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></span></p>
+										</div>
+										<!-- [2023-03-31] 김연진 : 거래메모추가 -->
+										<div class="flex">
+											<span class="memoView">전체 메모 내용이 보여집니다.넘어가면 두줄로 표시 됩니다.</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="moreBtn"><button type="button">더보기</button></div>
+						</div>
+
+						<!-- 조회 결과 없을경우 -->
+						<div class="noData">
+							<i class="check"></i>
+							<strong class="tit">조회결과가 없습니다.</strong>
+						</div>
+						<!--// 조회 결과 없을경우 -->
+					</div>
+				</div>
+			</div>
+		</div> <!-- //#contents -->
+		<!-- <div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="sel dis">다음</button>
+			</div>
+		</div> -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

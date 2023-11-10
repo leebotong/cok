@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-1413</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/iscroll.js"></script>
+	<script src="../../js/jquery.animateNumber.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>계좌정보</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="tabWrap oneDepthSwipe">
+					<div role="tablist" class="tabList tabSwipe">
+						<a href="javascript:;" role="tab">입출금</a>
+						<a href="javascript:;" role="tab">예적금/신탁</a>
+						<a href="javascript:;" role="tab">대출</a>
+						<a href="javascript:;" role="tab" class="active">펀드</a>
+						<a href="javascript:;" role="tab">외화</a>
+					</div>
+				</div>
+				<div class="twoToneType"> <!-- twoToneType -->
+					<div class="ttTop">
+						<!-- ROUND BOX -->
+						<!-- ▼ 2022-07-01 계좌관련 수정 -->
+						<div class="roundBox">
+							<div class="roundInBox">
+								<div class="accTypeWrap accAlwaysType">
+									<!-- ▼ 2022-07-07 접근성 수정 : title 추가 -->
+									<a href="javascript:popOpen(sp2);" title="계좌선택" role="button" class="accInLayout">
+										<div class="accInfo">
+											<div class="logoWrap">
+												<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+											</div>
+											<div class="accInfoWrap">
+												<strong class="accName">
+													<!--<span class="accBank">[농협]</span>-->
+													<span class="bankBookName">자립예탁금</span>
+												</strong>
+												<div class="accNumWrap">
+													<div class="accNumBox">
+														<span class="accNumber">352-1775-6397-03</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="accDataWrap">
+									<div>
+										<span class="accNumInfo">잔액</span>
+										<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+									</div>
+								</div>
+								<div class="accDataWrap">
+									<div>
+										<span class="accNumInfo">단순수익률</span>
+										<strong class="accCash">120.2</strong><span class="accUnit">%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //ROUND BOX -->
+					</div>
+					<div class="ttBottom">
+						<div class="ttContents">
+							<div class="tabWrap segment">
+								<div role="tablist" class="tabList">
+									<a href="javascript:;" role="tab" aria-selected="true" class="segmentItem active">기본정보</a>
+									<a href="javascript:;" role="tab" id="mypocket" class="segmentItem">수익률 정보</a>
+								</div>
+
+								<div class="tabPanelList">
+									<section class="section30">
+										<!-- 기본정보 -->
+										<div role="tabpanel" class="tabPanel show">
+											<div class="listTbl">
+												<ul>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">펀드유형</span>
+															<p class="txt">채권혼합형</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">저축종류</span>
+															<p class="txt">자유적립식</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">상품구분</span>
+															<p class="txt">일반</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">연결계좌</span>
+															<p class="txt">000-0000-000-00</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">계좌상태</span>
+															<p class="txt">정상</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">신규일</span>
+															<p class="txt">2022.03.03</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">가입경로</span>
+															<p class="txt">모바일</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit alignTop">관리영업점</span>
+															<p class="txt">NH농협은행 종로1가지점<br>
+																02-2345-6789<br>
+																<button type="button" class="btnSm mt10">영업점정보</button></p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">총 납입회차</span>
+															<p class="txt">2회</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">잔고좌수</span>
+															<p class="txt">1,000좌</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">납입잔액</span>
+															<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">1,000.00</em></span></p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">재투자 후 잔액</span>
+															<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">1,000.00</em></span></p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">예약입금액</span>
+															<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">0</em></span></p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">단순수익률</span>
+															<p class="txt"><strong class="dataWrap"><em class="data">0.00</em><span class="unit">%</span></strong></p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">한도금액</span>
+															<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">0</em></span></p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">수익률통보</span>
+															<p class="txt">월단위 / SMS신청</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">운용보고서통보</span>
+															<p class="txt">미신청</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">실질투자수익률보고서통보</span>
+															<p class="txt">미신청</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">목표수익통보</span>
+															<p class="txt">미신청</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">위험수익통보</span>
+															<p class="txt">미신청</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">질권 설정유무</span>
+															<p class="txt">무</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">사고유무</span>
+															<p class="txt">무</p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">포토폴리오구분</span>
+															<p class="txt">일반</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+										<!-- 수익률 정보 -->
+										<div role="tabpanel" class="tabPanel">
+											<div class="listTbl">
+												<ul>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">총입금액</span>
+															<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">0</em></span></p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">총출금액</span>
+															<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">0</em></span></p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">평가금액</span>
+															<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">0</em></span></p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">총수익금</span>
+															<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">0</em></span></p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">총누적수익률</span>
+															<p class="txt"><strong class="dataWrap"><em class="data">0.00</em><span class="unit">%</span></strong></p>
+														</div>
+													</li>
+													<li>
+														<div class="listIn_flex">
+															<span class="tit">선취판매수수료</span>
+															<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">0</em></span></p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</section>
+									<div class="btmInfoWrap">
+										<strong class="tit">확인사항</strong>
+										<ul class="listDot">
+											<li>총 누적 수익률 정보는 신규일로부터 금일(공휴일 또는 기준가 등록전은 전영업일)까지 총 출금된(세전)금액으로 계산된 누적 수익률입니다.(선취수수료 제외)</li>
+											<li>평가금액은 금일(공휴일 또는 기준가 등록전은 전영업일)의 기준가격을 이용하여 조화되며, 결산 처리중에는 평가금액이 차이가 있을 수 있으므로 영업일 09시 이후 조회하시기 바랍니다. 총 누적수익률=(평가금액+총출금액-총입금액)/총입금액*100</li>
+											<li>외화펀드의 원화평가금액=외화평가금액*매매기준율로 조회되며 실제 지급되는 원화금액과 달라질 수 있습니다.(공휴일 및 매매 기준율 고시전 전영업일의 매매기준율 적용)</li>
+											<li>외화펀드의 계약내용변경/입금.지급(해지)신청 및 취소 거래는 영업점에서만 가능합니다.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea half"><!-- 2022-09-26 클래스명추가 -->
+					<button type="button" class>거래내역</button>
+					<button type="button" class="sel">통장표지조회</button>
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea"></div>
+
+</body>
+</html>

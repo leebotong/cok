@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-0137DP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(cpA)
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>해지예상조회/해지</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+			<button type="button" onclick="popOpen(cpA)">POPUP</button>
+
+		</div>  <!-- //#contents -->
+
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- CENTER POPUP -->
+	<div id="cpA" class="popupWrap center" style="display:none;">
+		<div class="layerPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="Layer_Tit">
+								<h2 tabindex="0"><span class="blind">팝업</span></h2>
+							</div>
+							<div class="Layer_Con">
+								<div class="confirmMsg al">
+									<p class="tit">농·축협 입출식 계좌를 가진 고객님만 해지 가능합니다.</p>
+									<p class="txt">농·축협 입출식 계좌가 없으시다면 ‘NH콕뱅크’에서 ‘비대면계좌 개설'을 진행하시고 더 자세한 상담을 원하시는 고객님께서는 가까운 영업점을 방문해주시기 바랍니다.</p>
+									<p class="bili pColor">'계좌등록'을 선택하시면 고객님이 보유한 농·축협 입출식 계좌를 확인하실 수 있습니다.</p>
+								</div>
+							</div>
+							<div class="Layer_Pop_Close">
+								<div class="btnArea">
+									<button type="button" onclick="popClose(this)">계좌개설</button>
+									<button type="button" onclick="popClose(this)" class="sel">계좌등록</button>
+								</div>
+							</div>
+							<!-- <a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

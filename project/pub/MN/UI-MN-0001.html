@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MN-0001</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_main.css"><!-- 일반모드 메인페이지 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+	<div id="wrap" class="mainWrap"><!-- 일반모드 메인페이지 class mainWrap -->
+		<!-- #header -->
+		<div id="header">
+			<div class="headerL">
+				<button type="button" class="btn myBank">MY</button>
+				<button type="button" class="btn modeChange">모드변경</button>
+			</div>
+			<div class="headerR">
+				<a href="javascript:;" title="QR코드스캔" role="button" class="scan"></a>
+				<a href="javascript:;" title="검색" role="button" class="search"></a>
+				<a href="javascript:;" title="알림" role="button" class="alarm on"><span title="새알람" class="news"></span></a><!-- 알람있을 경우 on 클래스 추가 -->
+				<a href="javascript:;" title="전체메뉴" role="button" class="btnMenu"></a>
+			</div>
+		</div>
+		<!-- //#header -->
+
+		<!-- [2022-07-27] 김자영: 위치 및 아이디 변경
+		<div id="header-bottom">
+			<nav role="group" class="menuBottom">
+				<a href="javascript:;" title="선택됨" role="button" class="menuItem active">뱅킹</a>
+				<a href="javascript:;" role="button" class="menuItem">금융상품</a>
+				<a href="javascript:;" role="button" class="menuItem">콕팜</a>
+				<a href="javascript:;" role="button" class="menuItem">콕쇼핑</a>
+				<a href="javascript:;" role="button" class="menuItem">콕생활</a>
+			</nav>
+		</div>
+		// [2022-07-27] 김자영: 위치 및 아이디 변경 -->
+
+		<div id="container">
+			<div id="contents">
+				<div class="contentTop">
+					<!-- user info -->
+					<div class="userWrap">
+						<div class="userWelcome">
+							<strong>김농협</strong>님
+							<span class="userMessage">반갑습니다.</span>
+						</div>
+						<!-- <a href="javascript:;" role="button" class="btnBranch">의왕농협 포일지점</a> -->
+					</div>
+
+					<div class="accountBox">
+						<!-- account information -->
+						<div class="accTypeWrap">
+							<div class="accInLayout">
+								<div class="accInfo">
+									<a href="javascript:;" role="button">
+										<div class="accInfoInLayout">
+											<div class="logoWrap">
+												<img src="../../images/logo/icon_bnk_221.png" alt="OO은행" class="logo">
+												<span class="major">주거래계좌</span><!-- [2022-09-19] 아이콘 추가 -->
+											</div>
+											<div class="accInfoWrap">
+												<strong class="accName">
+													<span class="accBank"></span>
+													<span class="bankBookName">주머니(MONEY)통장주머니(MONEY)통장</span>
+												</strong>
+												<div class="accNumWrap">
+													<div class="accNumBox">
+														<span class="accNumber">352-1775-6397-03</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="accInfoInBtn">
+										<button type="button" class="btnRefrash"><span class="blind">새로고침</span></button>
+										<button type="button" class="accMore"><span class="blind">더보기</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accDataWrap ac">
+							<strong class="accCash">2,427,216</strong><span class="accUnit">원</span>
+							<!-- [2022-08-25] 김자영 : 버튼 수정 -->
+							<div class="toggleSwitch">
+								<input type="checkbox" id="btnPrice">
+								<label for="btnPrice">숨김</label>
+							</div>
+							<!--// [2022-08-25] 김자영 : 버튼 수정 -->
+						</div>
+						<!-- main utility -->
+						<div class="ac mainBtn addTip">
+							<button type="button" class="btn history">거래내역</button>
+							<button type="button" class="btn trans">송금</button>
+							<!-- [2023-02-14] 콕뱅크 송금 수수료 면제 정책 적용 : 김연진 -->
+							<div class="eventWrap">
+								<p class="eventBox"></p>
+								<p class="MainTip"><span class="blind">평생 수수료 무료!</span></p>
+								<p class="close"><span class="blind">닫기</span></p>
+							</div>
+							<!-- //[2023-02-14] 콕뱅크 송금 수수료 면제 정책 적용 : 김연진 -->
+						</div>
+					</div>
+
+					<div class="btnLnkLine">
+						<a href="javascript:;" role="button" class="underLine">등록계좌 보기</a>
+					</div>
+
+				</div>
+
+				<div class="contentBottom">
+					<!-- my menu -->
+					<div class="myMenuArea">
+						<!-- [2022-07-29] 김자영:삭제
+						<div class="titBox">
+							<strong class="defTit2">나의 즐겨찾기</strong>
+							<a href="javascript:;" role="button" class="btn">더보기</a>
+						</div>
+						-->
+
+						<!-- [2022-09-19] 김자영: 수정 -->
+						<nav class="nav_scroll">
+							<ul class="menuList">
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="atm"></i></span>
+										<span class="name">ATM출금</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="card"></i></span>
+										<span class="name">카드명세</span>
+									</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="quickRemit"></i></span>
+										<span class="name">제로페이<br>모바일상품권</span>
+									</a>
+								</li> -->
+								<!-- [2022-11-08] 윤지현:마이데이터 추가 -->
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="nhmyd"></i></span>
+										<span class="name">마이데이터</span>
+									</a>
+								</li>
+								<!-- //[2022-11-08] 윤지현:마이데이터 추가 -->
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="accIn"></i></span>
+										<span class="name">계좌등록</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="nhAllAcc"></i></span>
+										<span class="name">농협 전계좌</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="remitt"></i></span>
+										<span class="name">송금내역</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="dues"></i></span>
+										<span class="name">공과금</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="exchange"></i></span>
+										<span class="name">환전</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="event"></i></span>
+										<span class="name">이벤트</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="nhPoint"></i></span>
+										<span class="name">NH포인트</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="stock"></i></span>
+										<span class="name">증권추천</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="cokWith"></i></span>
+										<span class="name">콕창구출금</span>
+									</a>
+								</li>
+								<!-- [2022-09-16] ▼ 삭제
+								<li>
+									<a href="javascript:;" role="button">
+										<span class="ico"><i class="menuAdd"></i></span>
+										<span class="name">메뉴추가</span>
+									</a>
+								</li>
+								-->
+							</ul>
+							<a href="javascript:;" role="button" class="btnAllView"><span>전체<br>보기</span></a><!-- [2022-09-19] 김자영: 전체보기 플로팅 버튼 추가 -->
+						</nav>
+						<!--// [2022-09-19] 김자영:수정 -->
+					</div>
+
+					<!-- 배너 -->
+					<div class="mainBannerArea">
+						<!-- 추천상품 -->
+						<div class="ContSwipe banTop">
+							<em class="cokrecTit">콕!추천</em> <!-- [2023-05-22] 홈 콕추천배너 신규 디자인 가이드 적용 -->
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<div class="inner">
+												<a href="#">
+													<img src="../../images/backup/cokrec_banner_01.png" alt="25개월동안 매월 150GB 추가제공! NH콕 이야기 11GB+">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<div class="inner">
+												<a href="#">
+													<img src="../../images/backup/cokrec_banner_01.png" alt="25개월동안 매월 150GB 추가제공! NH콕 이야기 11GB+">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<div class="inner">
+												<a href="#">
+													<img src="../../images/backup/cokrec_banner_01.png" alt="25개월동안 매월 150GB 추가제공! NH콕 이야기 11GB+">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- [2022-09-30] 김자영 : 웹접근성 이슈로 추가 -->
+							<div class="swiperNavigation">
+								<div class="btnPrev00"></div>
+								<div class="btnNext00"></div>
+							</div>
+							<!--// [2022-09-30] 김자영 : 웹접근성 이슈로 추가 -->
+
+							<!-- [2022-09-19] 마크업변경 -->
+							<div class="slideBtnArea">
+								<div class="auto"></div>
+								<div class="slideNumber"></div>
+							</div>
+							<!--// [2022-09-19] 마크업변경 -->
+						</div>
+
+						<!-- 이벤트 -->
+
+						<div class="ContSwipe banBottom">
+							<!-- ▼ [2022-09-19] 타이틀 추가 -->
+							<h3 class="tit">이벤트</h3>
+
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<div class="inner">
+												<a href="#">
+													<img src="../../images/backup/main_banner0201.jpg" alt="펀드가입. 편의점갈래? 빵집갈래? 둘 다 GO! 2022.10.04(화) ~ 10.31(월)">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<div class="inner">
+												<a href="#">
+													<img src="../../images/backup/main_banner0202.jpg" alt="스마트피싱보호. 보이스피싱 예방하면 이모티콘 쏜다! 휴대폰번호 1개당 1회 참여">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- [2022-09-30] 김자영 : 웹접근성 이슈로 추가 -->
+							<div class="swiperNavigation">
+								<div class="btnPrev01"></div>
+								<div class="btnNext01"></div>
+							</div>
+							<!--// [2022-09-30] 김자영 : 웹접근성 이슈로 추가 -->
+
+							<!-- [2022-09-19] 마크업변경 -->
+							<div class="slideBtnArea">
+								<div class="auto"></div>
+								<div class="slideNumber"></div>
+								<!-- ▼ [2022-10-07] 버튼 마크업 수정 -->
+								<a href="#" role="button" class="btnList">전체보기</a>
+							</div>
+							<!--// [2022-09-19] 마크업변경 -->
+						</div>
+					</div>
+					<!--// 배너 -->
+
+					<!-- 퀵메뉴 [2022-10-12] : 김자영 타이틀 메뉴버튼명 수정 -->
+					<section class="quickMenuArea">
+						<strong class="defTit2">콕!서비스</strong>
+						<ul>
+							<li><a href="#" role="button">입출금개설</a></li>
+							<li><a href="#" role="button">예적금가입</a></li>
+							<li><a href="#" role="button">빠른송금</a></li>
+							<li><a href="#" role="button">입출금알림</a></li>
+							<li><a href="#" role="button">콕창구출금</a></li>
+							<li><a href="#" role="button">외화선물</a></li>
+						</ul>
+					</section>
+					<!--// 퀵메뉴 -->
+				</div>
+			</div><!-- //#contents -->
+
+
+			<!-- [2022-09-19] 김자영: 메뉴변경 -->
+			<div id="footer_cont">
+				<nav role="group" class="menuBottom">
+					<a href="javascript:;" role="button" class="menuItem active">마이데이터</a>
+					<a href="javascript:;" role="button" class="menuItem">금융상품</a>
+					<a href="javascript:;" role="button" class="menuItem">콕팜</a>
+					<a href="javascript:;" role="button" class="menuItem">콕쇼핑</a><!-- [2022-10-05] 김자영 : 메뉴명 수정 -->
+					<a href="javascript:;" role="button" class="menuItem">콕세상</a><!-- [2022-10-05] 김자영 : 메뉴명 수정 -->
+				</nav>
+			</div>
+			<!--// [2022-09-19] 김자영: 메뉴변경 -->
+			<!-- //#footer_cont -->
+		</div><!-- //#container -->
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			/*  [2022-07-27] 김자영: 헤더 고정 스크립트 추가 */
+			function scrollMain(){
+				$(window).on('scroll', function() {
+            if ($(window).scrollTop() > 50) {
+                $('#header').addClass("fixed");
+            } else {
+                $('#header').removeClass("fixed");
+            }
+        })
+			}
+
+			/*  [2022-08-25] 김자영: 잔액표시 토글 추가 */
+			$('#btnPrice').on("click", function(e){
+				var priceBox = $(".accDataWrap")
+				if($(this).is(":checked")){
+					priceBox.find('label').text('보기');
+					priceBox.find('.accCash').addClass('active').text('잔액 숨김 중'); //2022-09-19 수정
+					priceBox.find('.accUnit').hide();
+				} else{
+					$('label').text('숨김');
+					priceBox.find('.accCash').removeClass('active').text('2,427,216');
+					priceBox.find('.accUnit').show();
+				}
+			});
+
+			// ************* [2022-09-19] 배너슬라이드 전체 수정 *************
+			function bannerSwiper() {
+				$('.ContSwipe').each(function (idx) {
+					var $this 			= $(this);
+					var slideNumber 	= $this.find('.slideNumber');
+					var slideTotalCnt	= $this.find("div.swiper-slide").length;
+					$this.addClass('type' + idx);
+
+					//슬라이드 초기화
+					if (bannerSwiper != undefined){
+						bannerSwiper.destroy();
+						bannerSwiper = undefined;
+					}
+
+					var bannerSwiper = new Swiper(".type" + idx + " .swiper-container", {
+						slidesPerView: 1,
+						spaceBetween: 10,
+						initialSlide : 0,
+						autoplay:{delay:3000},
+						loop: (slideTotalCnt > 1 ) ? true : false,
+						centeredSlides: true,
+						observer: true,
+						observeParents: true,
+						//observeSlideChildren: true,
+
+						// [2022-09-30] 김자영 : 웹접근성 이슈로 추가
+						navigation:{
+							prevEl: ".btnPrev0" +idx,
+							nextEl: ".btnNext0" +idx,
+						},
+
+						on: {
+							init: function () {
+								$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+								$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active").attr("aria-hidden", false).attr("tabindex", 0);
+							},
+							slideChangeTransitionEnd: function () {
+								$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+								$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active")	.attr("aria-hidden", false)	.attr("tabindex", 0);
+							},
+							//추가
+							slideChange: function () {
+								var realIndex = this.realIndex + 1;
+								slideNumber.html('<span class="page">' + realIndex +'</span>' +'/' + slideTotalCnt);
+
+								if(realIndex >= 2){
+									$this.addClass('none');
+								} else {
+									$this.removeClass('none');
+								}
+							}
+						},
+					});
+
+					// 터치슬라이드시
+					$this.on("touchstart", function(e){
+						$this.addClass('none');
+					});
+
+					//autoplay control 옵션 [2022-08-25] 김자영 : 추가
+					$this.find('.auto').append('<a href="javascript:;" class="swiperAuto stop" role="button" aria-label="일시정지"></a>');
+					$this.find('.swiperAuto').on("click", function () {
+						if ($(this).hasClass("stop")) {
+							$(this).addClass("start").removeClass("stop").attr("aria-label", "재생");
+							bannerSwiper.autoplay.stop();
+						} else {
+							$(this).addClass("stop").removeClass("start").attr("aria-label", "일시정지");
+							bannerSwiper.autoplay.start();
+						}
+					});
+				})
+			}
+			// ************* [2022-09-19] 배너슬라이드 전체 수정 *************
+
+			scrollMain();
+			bannerSwiper();
+		})
+	</script>
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupB" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">송금 미수취 내역 안내</h2>
+					</div>
+					<div class="layerSelectContent">
+						<div class="confirmMsg">
+							<i class="warning"></i>
+							<p class="txt">아직 상대방(수취인)이 받지 않은 송금내역이 있습니다.<br>
+								자세한 내용은 송금내역조회에서 확인하시기 바랍니다.</p>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel">확인</button>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- [2023-02-14] 콕뱅크 송금 수수료 면제 정책 적용 : 김연진 -->
+<script>
+	$(function(){
+		$(".addTip .close").on("click", function (){
+			$(".eventWrap").hide();
+		});
+	});
+</script>
+<!-- //[2023-02-14] 콕뱅크 송금 수수료 면제 정책 적용 : 김연진 -->
+</body>
+</html>

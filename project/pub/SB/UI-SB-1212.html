@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1212</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>빠른송금 등록</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<!-- ###########################################
+				# 2022-08-22 페이지 기획/디자인 변경으로 전체적으로 변경 되었음
+				############################################ -->
+				<section class="section30">
+					<div class="formWrap">
+
+						<div class="formItem">
+							<strong class="formTit">출금계좌</strong>
+							<div class="inpSel isLogo">
+								<a href="javascript:;" title="출금계좌 선택" role="button" class="btnSel placeholder">
+									<span class="logo">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+									</span>
+									<div class="accNum">
+										<span class="tit"><!--<span class="accBank">[농협]</span>--> 주머니(money)통장</span>
+										<span class="num">555368-12-023456</span>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<!-- 받는 분 -->
+						<div class="formItem">
+							<div class="layoutWrap">
+								<strong class="formTit">받는 분</strong>
+								<a href="javascript:;" role="button" class="btnDetail">최근/내계좌/자주쓰는</a><!-- [2022-11-09] 윤지현:문구수정 -->
+							</div>
+							<div class="formGroup flex46">
+								<div class="inpSel isLogo">
+									<a href="javascript:;" title="은행 선택" role="button" class="btnSel placeholder">
+										<span class="logo">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+										</span>
+										<div class="accNum">
+											<span class="bankName">NH농협</span>
+										</div>
+									</a>
+								</div>
+								<div class="inpText big">
+									<input type="tel" title="계좌번호 입력" value id="subjecter" class="tyTxt" placeholder="계좌번호 입력"><!-- [2022-11-09] 윤지현:문구수정 -->
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+							</div>
+						</div>
+						<!-- 보낼금액 -->
+						<div class="formItem"><!-- .error -->
+							<strong class="formTit">금액</strong>
+							<div class="inpText">
+								<input type="tel" title="이체 금액" value class="tyNum" placeholder="보내는 금액 입력" maxlength=""> <!-- fn_change_hangul_money 퍼블 테스트용 -->
+								<span class="unit">원</span>
+								<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							</div>
+						</div>
+
+						<!-- 송금별명 --><!-- 2022-10-28 위치이동 -->
+						<div class="formItem">
+							<strong class="formTit">송금별명</strong>
+							<div class="inpText nickNameCustomInput">
+								<!-- 송금별명용 이미지 선택 전 -->
+								<div class="nickNameInputImg"><!-- <img src="../../images/cont/@temp_ico_nickpic.png" alt class="nickNameImg"> --></div>
+								<!-- ▼ 2022-08-09 14:30 남협수 [MODIFY] placeholder 수정 -->
+								<input type="text" title="별명 입력" value class="tyTxt" placeholder="한글10자리 이내" maxlength="20">
+								<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								<a href="javascript:;" role="button" aria-label class="btnSm">이미지 선택</a>
+							</div>
+						</div>
+
+						<div class="moreInformation">
+							<div class="view">
+								<div class="formWrap">
+									<!-- 2022-10-28 마크업수정 -->
+									<a href="javascript:;" title="펼치기" role="button" class="inBoxBtn jsShowBtn">추가정보 입력(선택)</a>
+									<div class="hideBox">
+										<div class="formItem">
+											<strong class="formTit">받는계좌에 표시</strong><!-- [2022-10-11] 윤지현:문구수정 -->
+											<div class="inpText">
+												<input type="text" title="받는계좌에 표시" value class="tyTxt" placeholder="한글 10자 이내 입력"><!-- [2022-11-09] 윤지현:문구수정 -->
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">내계좌에 표시</strong><!-- [2022-10-11] 윤지현:문구수정 -->
+											<div class="inpText">
+												<input type="text" title="내계좌에 표시" value class="tyTxt" placeholder="미입력 시 받는분 이름 표시"><!-- [2022-11-09] 윤지현:문구수정 -->
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">거래메모</strong><!-- [2023-03-31] 김연진:문구수정 -->
+											<div class="inpText">
+												<input type="text" title="거래메모" value class="tyTxt" placeholder="한글 20자 이내 입력">
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											</div>
+										</div>
+									</div>
+									<!-- //2022-10-28 마크업수정 -->
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class>취소</button>
+					<button type="button" class="sel dis">등록</button><!-- [2022-08-22] -->
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+</body>
+</html>

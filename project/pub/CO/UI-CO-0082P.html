@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(sp_popup);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>농협 전계좌 조회</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				&gt; <a href="javascript:popOpen(sp_popup);" class="popOpen">계좌관리 팝업 오픈</a>
+				<p class="txtRed mt40">** UI-TR-0110DP 기획서 각 내용들 전부 포함된 리스트 </p>
+			</div> <!-- //#contents -->
+			<!-- <div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class>거래내역</button>
+					<button type="button" class="sel">송금</button>
+				</div>
+			</div> -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea">
+
+		<!-- SLIDE POPUP -->
+		<div id="sp_popup" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">계좌관리</h2>
+						</div>
+						<div class="layerSelectContent">
+							<ul class="listWrap textType txtBig"> <!-- [2022-11-01] 윤지현:txtBig 클래스 추가  -->
+								<li><a href="javascript:;" role="button" class="">입출금알림</a></li> <!-- [2023-05-17] 입출금알림 접근성 개선 -->
+								<li class="relative">
+									잔액숨김
+									<div class="toggleRight">
+										<div class="toggleSwitch">
+											<input type="checkbox" id="switch02">
+											<label for="switch02"></label>
+										</div>
+									</div>
+								</li>
+								<li><a href="javascript:;" role="button" class="">계좌정보</a></li>
+								<li><a href="javascript:;" role="button" class="">주거래계좌 변경</a></li>
+								<li><a href="javascript:;" role="button" class="">계좌번호복사</a></li><!-- [2022-10-18] 김자영 : 텍스트수정 -->
+								<li><a href="javascript:;" role="button" class="">계좌별칭 등록/수정</a></li>
+								<li><a href="javascript:;" role="button" class="">통장표지조회</a></li>
+								<li><a href="javascript:;" role="button" class="">QR코드 발급</a></li>
+								<li><a href="javascript:;" role="button" class="">ATM출금</a></li>
+								<li><a href="javascript:;" role="button" class="">콕창구출금</a></li>
+							</ul>
+						</div>
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0016</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>재환전(되팔기)신청</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+			<section>
+				<div class="listTbl">
+					<div class="listTit">
+						<strong>환전신청내역</strong>
+					</div>
+					<ul>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">환전번호</span> 
+								<p class="txt">C5151315478541351</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">고객명</span> 
+								<p class="txt">홍길동</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">금액/해당통화</span> 
+								<p class="txt"><strong class="dataWrap"><span class="unit">USD</span><em class="data">1.00</em></strong></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">외화수령(예정)일</span> 
+								<p class="txt">2022.03.19</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">재환전(되팔기)예정일</span> 
+								<p class="txt">2022.03.19</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">입금 예정일</span> 
+								<p class="txt">2022.03.19</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">재환전 입금계좌</span> 
+								<p class="txt">202-4564-21585</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">환전적용</span> 
+								<p class="txt">재환전(되팔기) 신청일의<br>익영업일 1회차 매매<br>기준율이 적용됩니다.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section class="section40">
+				<p class="defTit2">재환전(되팔기)이란?</p>
+				<ul class="listDot">
+					<li>환전신청 후 정정이나 취소는 원칙적으로 불가합니다.(미 수령시, 수령예정일로부터 8영업일째 되는 날 1회차 매매기준율로 자동 재환전(되팔기)되어 고객님의 당초 원화계좌로 입금 됩니다.</li>
+					<li>다만, 해당 메뉴는 고객님 편의를 위해 당초 재환전(되팔기) 예정일보다 빠르게 재환전(되팔기) 신청 가능하도록 도와드리는 메뉴입니다.
+						</li>
+				</ul>
+
+				<p class="defTit2">재환전(되팔기) 시 유의사항</p>
+				<ul class="listDot">
+					<li>신청하신 환전 건 중 미수령 건만 재환전(되팔기)신청이 가능합니다(일부 금액 재환전은 불가)</li>
+					<li>재환전(되팔기) 신청 후 익 영업일에 고객님의 당초 원화출금 계좌로 입금되며, 적용환율은 신청일 익영업일의 1회차 매매기준율입니다.</li>
+					<li>당초 원화출금계좌 해지 등의 이유로 계좌가 존재하지 않으면 입금이 불가합니다.</li>
+					<li>재환전(되팔기) 신청완료 후에는 취소가 불가하오니, 신청 시 유의바랍니다.</li>
+				</ul>
+			</section>
+			<div class="allCheck">
+				<input type="checkbox" name="agreeChk" id="aggrChk11">
+				<label for="aggrChk11">상기 내용을 확인하였습니다.</label>
+			</div>
+		
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="toastMessage">[재환전] 선택 시 전자서명과 동시에 신청됩니다.</div>
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">재환전</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

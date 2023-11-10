@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SA-0062</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>송금 보안매체 설정</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu" `></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<!-- [2022-10-06] 김자영: 문구수정 -->
+				<div class="pgTitWrap">
+					<p class="pTit">콕뱅크에서 <strong>송금 거래</strong> 시<br> 이용할 <strong>보안매체</strong>를 <br><strong>설정</strong>해주세요.</p>
+				</div>
+
+				<div class="rounBgBox">
+					<p class="defTit2 mt0">사용중인 보안매체</p>
+					<p class="infoTxt">현재 사용중인 보안매체는 <em class="pColor">OTP</em>입니다.</p>
+				</div>
+
+				<hr class="divingLine">
+
+				<div class="textItem">
+					<div class="layoutWrap">
+						<!-- [2022-10-27] 김자영 : 마크업 추가 -->
+						<div class="tit relative">OTP 이용설정
+							<!-- tooltip -->
+							<div class="tooltipWrap jsTooltipPosition">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont" style="padding-right:14px;">
+									<strong class="tit">OTP 이용설정 안내</strong>
+									<img src="../../images/cont/img_otp_info.png" alt="OPT 이용설정 on일경우 off일 경우 안내">
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->
+						</div>
+						<!-- //[2022-10-27] 김자영 : 마크업 추가 -->
+
+						<div class="toggleSwitch">
+							<input type="checkbox" id="switch01" checked>
+							<label for="switch01"></label>
+						</div>
+					</div>
+					<p class="txt">설정 시 1일 최대 <em class="pColor">5억원</em>까지 송금가능 </p>
+				</div>
+
+				<div class="textItem mt40">
+					<div class="layoutWrap">
+						<p class="tit">현재 송금한도</p>
+						<a href="#" role="button" class="linkBtn">송금한도 설정</a>
+					</div>
+					<div class="listTblBox">
+						<ul>
+							<li>
+								<span class="tit">현재 송금한도</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">2700</em><span class="unit">만원</span></strong></p>
+							</li>
+							<li>
+								<span class="tit">1일 송금 한도</span>
+								<p class="txt"><strong class="dataWrap"><em class="data">3500</em><span class="unit">만원</span></strong></p>
+								</li>
+							</ul>
+						</div>
+				</div>
+
+				<!-- [2023-05-16] 송금한도 설정 화면 UI 개선 -->
+				<ul class="infoTxt">
+					<li>보안매체를 설정하시면 송금 시 1일 누적 송금액이 5백만원을 초과한 경우 등록된 보안매체로 인증을 진행합니다.</li>
+					<li>금융인증서로 로그인한 경우, 금융결제원 정책에 따라 금융인증서로도 인증을 진행합니다. </li>
+				</ul>
+
+				<div class="btmInfoWrap">
+					<strong class="tit">확인사항</strong>
+					<ul class="listDot">
+						<!-- [2023-05-16] 송금한도 설정 화면 UI 개선// -->
+						<li>OTP(실물) 설정 시 1회 1억원 / 1일 최대 5억원까지 송금 할 수 있습니다.</li>
+						<li class="pColor">OTP(실물) 이용 설정은 농·축협 입출금 계좌 등록 후 설정할 수 있습니다.</li>
+						<li>OTP(실물) 이용 설정 해제 시 콕PASS 발급 후 OTP(실물)를 등록한 경우, 보안매체가 콕PASS로 자동 설정됩니다.</li>
+						<!-- //[2023-05-16] 송금한도 설정 화면 UI 개선 -->
+					</ul>
+				</div>
+			</div>  <!-- //#contents -->
+		 <!--<div id="footer_cont">
+		</div>  //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+</body>
+</html>

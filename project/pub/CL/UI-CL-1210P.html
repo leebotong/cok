@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CL-1210P</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cokClas.css"><!-- 콕모임 전용 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+		</div>
+		<h1></h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">모임멤버(4)</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="CLmembers">
+							<div class="owner">
+								<div>총무</div>
+								<strong class="pColor">김농협</strong>
+							</div>
+							<div class="linkItem">
+								<div class="tit">참여중인 멤버
+									<div class="btnLnkLine">
+										<a href="javascript:;" role="button" class="underLine">전체멤버끊기</a>
+									</div>
+								</div>
+								<ul>
+									<li>최축협<span>(가입 2022.01.01)</span><button class="btnSm">멤버끊기</button></li>
+									<li>최축협<span>(가입 2022.01.01)</span><button class="btnSm">멤버끊기</button></li>
+									<li>최축협<span>(가입 2022.01.01)</span><button  class="btnSm">멤버끊기</button></li>
+								</ul>
+							</div>
+							<div class="linkItem">
+								<div class="tit">참여 대기중</div>
+								<ul>
+									<li>유재석<button class="btnSm">초대취소</button></li>
+									<li>송은이<button class="btnSm">초대취소</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0132-01</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+  <style>
+    /* body{line-height:initial;}
+    .btmInfoWrap .tit, .accPossible{line-height:1;} */
+  </style>
+	<!-- [2022-06-30] -->
+  <script type="text/javascript">
+		//sticky
+		$(document).ready(function(){
+			var wind = $(window),
+					headerFixed = $('#header'),
+					tabNav = $('.tabNav'),
+					headerOffsetTop = tabNav.position().top - (headerFixed.outerHeight());
+
+			var $menu = $('.tabNav a');
+			var	$contents = $('#sectionAll > .sections');
+
+			$menu.click(function(e){
+				e.preventDefault();
+				var idx = $(this).index();
+				var section = $contents.eq(idx);
+				var sectionDistance = section.position().top;
+				$('html,body').stop().animate({scrollTop:sectionDistance - 104});
+			});
+
+			$(window).scroll(function(){
+				$contents.each(function(){
+					if($(this).position().top <= $(window).scrollTop() + 104){
+						var idx = $(this).index();
+						$menu.removeClass('active');
+						$menu.eq(idx).addClass('active');
+					}
+				});
+			});
+		});
+  </script>
+	<!-- //[2022-06-30] -->
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>다른금융계좌 등록</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+      <div class="pgTitWrap">
+				<p class="pTit">등록할 계좌를<br><strong>선택</strong> 또는 <strong>입력</strong>해주세요.</p>
+				<ul class="listDot">
+					<li>최대 50개 계좌를 등록할 수 있습니다. <br>(한번에 10개까지 선택해서 등록 가능해요.)</li>
+				</ul>
+			</div>
+
+      <div class="tabWrap segment sticky"><!-- [2022-06-30] -->
+				<div role="tablist" class="tabList tabNav">
+          <a href="#section1" class="segmentItem">제1금융권</a>
+          <a href="#section2" class="segmentItem">제2금융권</a>
+          <a href="#section3" class="segmentItem">증권사</a>
+				</div>
+			</div>
+      <div id="sectionAll">
+        <div id="section1" class="sections">
+          <p class="defTit2">제1금융권</p>
+          <p class="titResult"><span class="pColor">3</span>계좌</p>
+          <!-- 에러메시지  -->
+					<div class="noData">
+						<i class="check"></i>
+						<strong class="tit">어카운트인포서비스(계좌통합관리)를 제공하는<br> 금융결제원과의 통신이 원활하지 않습니다.</strong><br><br>
+						<p class="txt">잠시 후 <span class="pColor">재조회</span>나 <span class="pColor">계좌직접입력등록</span> 버튼을<br>클릭하여 등록해 주세요.</p>
+					</div>
+          <!-- //에러메시지  -->
+        </div>
+        <div id="section2" class="sections">
+          <p class="defTit2">제2금융권</p>
+          <div class="btnInArea mt15">
+            <button type="button" class="">계좌 조회하기</button>
+          </div>
+        </div>
+        <div id="section3" class="sections">
+          <p class="defTit2">증권사</p>
+          <div class="btnInArea mt15">
+            <button type="button" class="">계좌 조회하기</button>
+          </div>
+        </div>
+
+				<hr class="divingLine">
+				<section class="section40">
+					<div class="jsTgWrap accRegist">
+						<div class="btnInArea">
+							<a href="javascript:;" role="button" class="jsTgBtn point active">계좌 직접입력 등록<i></i></a>
+						</div>
+						<div class="jsTgCont formExpBox">
+							<div class="formWrap">
+								<div class="formItem">
+									<strong class="formTit">계좌번호</strong>
+									<div class="inpText">
+										<input type="tel" title="계좌번호" class="tyTxt" value placeholder="- 없이 입력">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+								</div>
+								<div class="formItem">
+									<strong class="formTit">비밀번호</strong>
+									<div class="inpText thin">
+										<button type="button" title="비밀번호 4자리 입력됨" aria-label="4자리 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+										<input type="password" title="비밀번호 4자리 입력" aria-hidden="true" class="tyTxt" value placeholder="4자리 입력" readonly>
+										<a href="javascript:;" role="button" class="btnSm" aria-label="">계좌확인</a>
+									</div>
+								</div>
+								<p class="infoTxt">비밀번호 <span class="pColor">5회 오류 시 영업점 방문</span>이 필요합니다.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+        <div class="btmInfoWrap">
+          <strong class="tit">확인사항</strong>
+          <ul class="listDot">
+            <li>다른금융계좌는 입출금, 예적금, 펀드 계좌 등록이 가능하며 최대 50개 계좌를 등록할 수 있습니다.</li>
+            <li>한번에 10개 계좌를 선택하여 등록 가능합니다. </li>
+            <li>찾으시는 계좌가 보이지 않는다면 &lsquo;계좌 직접입력 등록&rsquo;을 통해 등록해 주시기 바랍니다.</li>
+            <li>계좌등록이 되지 않는 경우 해당 금융기관에 문의하시기 바랍니다.</li>
+          </ul>
+        </div>
+
+      </div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="toastMessage tooltip">선택한 <strong class="pColor">0/10</strong> 계좌를 등록합니다.</div>
+			<div class="btnArea">
+				<button type="button" class="btn_full">재조회</button>
+        <button type="button" class="btn_full sel">계좌직접입력 등록</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+</body>
+</html>

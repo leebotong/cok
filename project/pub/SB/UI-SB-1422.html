@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1422</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			// popOpen(sp);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>자동이체신청</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="paymentWrap">
+					<div class="twoToneType">
+						<div class="ttTop">
+							<!-- PAYMENT -->
+							<div class="roundBox">
+								<div class="roundInBox">
+									<div class="accTypeWrap accAlwaysType">
+										<a href="javascript:;" title="계좌선택" role="button" class="accInLayout">
+											<div class="accInfo">
+												<div class="accInfoInLayout">
+													<div class="logoWrap">
+														<img src="../../images/logo/logo_bnk_011_72x72.png" alt="OO은행" class="logo">
+													</div>
+													<div class="accInfoWrap">
+														<strong class="accName">
+															<!-- <span class="accBank">[NH농협]</span> -->
+															<span class="bankBookName">주거래우대통장</span>
+														</strong>
+														<div class="accNumWrap">
+															<div class="accNumBox">
+																<span class="accNumber">352-1775-6397-03</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="accDataWrap flex">
+										<div>
+											<span class="accNumInfo">출금가능금액</span>
+											<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //PAYMENT -->
+						</div>
+						<div class="ttBottom">
+							<div class="ttContents">
+								<!-- PAYMENT SUB BOX -->
+								<div class="paymentInfoBox">
+									<div class="formWrap">
+										<div class="formItem">
+											<strong class="formTit">출금계좌 비밀번호</strong>
+											<div class="inpText">
+												<!-- <button type="button" title="계좌 비밀번호 4자리 입력됨" aria-label="계좌 비밀번호 4자리 숫자 입력" class="btnTransparent"></button> 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+												<input type="password" title="비밀번호 4자리 숫자" aria-hidden="true" value class="sKey" placeholder="숫자 4자리 입력" maxlength="4" readonly>
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">입금계좌종류</strong>
+											<div class="inpSel">
+												<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel">입출금계좌</a><!-- .placeholder -->
+												<!-- 입출금계좌, 예적금계좌, 펀드/신탁/IRP, 대출계좌 -->
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">입금계좌번호</strong>
+											<div class="formGroup flex46">
+												<div class="inpSel">
+													<a href="javascript:;" title="은행선택" role="button" class="btnSel">NH농협</a>
+												</div>
+												<div class="inpText">
+													<input type="tel" title="계좌번호 입력" value class="tyTxt" placeholder="계좌번호 입력" maxlength="8">
+												</div>
+											</div>
+										</div>
+										<div class="btnInArea">
+											<button type="button" class="btmMd">최근입금계좌</button>
+											<!-- <button type="button" class="btmMd">내계좌</button> -->
+										</div>
+										<div class="formItem"><!-- .error -->
+											<strong class="formTit">이체금액</strong>
+											<div class="inpText">
+												<input type="tel" title="이체 금액" onclick="popOpen(sp)" value class="tyNum" placeholder="이체금액 입력" maxlength="16"> <!-- fn_change_hangul_money 퍼블 테스트용 -->
+												<span class="unit">원</span>
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">이체주기</strong>
+											<div class="inpSel">
+												<a href="javascript:;" title="이체주기 선택" role="button" class="btnSel placeholder">이체주기 선택</a><!-- .placeholder -->
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">이체일</strong>
+											<div class="inpSel">
+												<a href="javascript:;" title="일자 선택" role="button" class="btnSel placeholder">일자 선택</a><!-- .placeholder -->
+											</div>
+										</div>
+
+										<div class="formItem">
+											<strong class="formTit">(선택)내계좌에 표시</strong>
+											<div class="inpText">
+												<input type="text" title="내 통장 기록사항" value class="tyTxt" placeholder="미입력시 받는 분 이름 표시">
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											</div>
+										</div>
+										<div class="formItem">
+											<strong class="formTit">(선택)받는계좌에 표시</strong>
+											<div class="inpText">
+												<input type="text" title="받는 분 통장 기록사항" value class="tyTxt" placeholder="미입력시 보내는 분 이름 표시">
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="btmInfoWrap">
+									<strong class="tit">자동이체 이용안내</strong>
+									<ul class="listDot">
+										<!--[2022-12-05] 이용시간변경 상시운영 : 윤희정-->
+										<li>서비스 이용시간: 평일 00:15~24:00, <strong class="pColor">토요일 00:15~24:00, 일요일/공휴일 거래불가</strong></li>
+										<!--//[2022-12-05] 이용시간변경 상시운영 : 윤희정-->
+										<li>타행 수수료는 300원입니다. 단, 출금일 기준으로 그린등급 이상 하나로가족 고객인 경우 수수료가 면제됩니다.</li>
+										<li>타행자동이체는 이체일 영업개시 전(8시 전후)에 출금해야 하므로, 이체금액에 수수료를 합산한 금액을 사전에 입금하셔야 합니다. 다만, 영업개시 전 잔액부족으로 이체처리가 되지 않는 경우에는 이체일 오전 10시 30분 전후로 1회에 한하여 재처리합니다.</li>
+										<li>자동이체 재처리 시간은 당행 전산 사정 등에 의해 변경 될 수 있습니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class>취소</button>
+					<button type="button" class="sel">다음</button>
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea">
+		<!-- SLIDE POPUP -->
+		<div id="sp" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0"><span class="blind">팝업</span></h2>
+						</div>
+						<div class="layerSelectContent">
+							<div class="confirmMsg">
+								<i class="error"></i>
+								<p class="tit">자동이체 신청을 취소하시겠습니까?</p>
+								<p class="txt">취소하시면 자동이체 신청정보가 삭제됩니다</p>
+							</div>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button type="button" onclick="popClose(this)">취소</button>
+								<button type="button" onclick="popClose(this)" class="sel">확인</button>
+							</div>
+						</div>
+						<!-- <a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>2022 콕뱅크 고도화</title>
+ <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			// popOpen(sp1);
+			// popOpen(full);
+			// centerPPP();
+		});
+	</script>
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- #header -->
+		<div id="header">
+			<div class="headerL">
+				<a href="#nolink" title="이전메뉴" class="headBtn btnPrev"></a>
+			</div>
+			<h1>팝업샘플</h1>
+			<div class="headerR">
+			</div>
+		</div>
+		<!-- //#header -->
+		<!-- #container -->
+		<div id="container">
+			<!-- #contents -->
+			<div id="contents">
+				<a href="javascript:popOpen(sp1);" title="슬라이드 팝업1 열기" role="button">슬라이드 팝업1(제목 여러줄)</a><br><br>
+				<a href="javascript:popOpen(sp3);" title="슬라이드 팝업2 열기" role="button">슬라이드 팝업2(제목/하단버튼 있음)</a><br><br>
+				<a href="javascript:popOpen(sp2);" title="슬라이드 팝업3 열기" role="button">슬라이드 팝업3(제목,버튼 X)</a><br><br>
+				<a href="javascript:popOpen(cp1);" title="센터 팝업 열기" role="button">센터 팝업1(제목/하단버튼 있음)</a><br><br>
+				<a href="javascript:popOpen(cp2);" title="센터 팝업 열기" role="button">센터 팝업2(하단버튼 X)</a><br><br>
+				<a href="javascript:popOpen(full);" title="풀팝업 열기" role="button">풀팝업</a>
+			</div>
+			<!-- //#contents -->
+			<!-- #footer_cont -->
+			<div id="footer_cont">
+			</div>
+			<!-- //#footer_cont -->
+		</div>
+		<!-- //#container -->
+	</div>
+	<!-- //#wrap -->
+
+	<!-- 드래그 팝업 -->
+	<div id="drag1" class="popWrap dragPop" style="display: none">
+		<div class="popLayout">
+			<div class="popInner">
+				<div class="popHeader">
+					<a href="javascript:;" role="button" data-popup-focus="drag1" aria-hidden="true" class="dragLine"><span class="blind">드래그 영역</span></a>
+				</div>
+				<div aria-hidden="true" class="popCont">
+					<div class="popCont_content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque totam perspiciatis eveniet commodi molestiae, quibusdam reiciendis quo aspernatur mollitia, dolores consectetur eos. Voluptas eum illum ea ipsam deleniti exercitationem repellendus.</p>
+						<ul>
+							<li>
+								<div>
+									<a href="#nolink" title="레이어 셀렉트 선택">
+										<span class="accName" style="font-size: 14px;color: #333;line-height: 20px;"><b class="">바로N콕통장</b><i class="">(농협일)</i></span><br>
+										<span class="accNum" style="font-size: 18px;color: #137986;font-weight: 600;line-height: 1.3">123-4566-7879-12</span>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div aria-hidden="true" class="popBtnWrap">
+					<div class="btnArea">
+						<button type="button">btn</button>
+					</div>
+				</div>
+				<a href="javascript:;" role="button" data-popup-focus-close="drag1-close" aria-hidden="true" onclick="popClose(this);" class="popClose"><span class="blind">팝업닫기</span></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 전체 화면 슬라이드 팝업 -->
+	<div id="full" class="popWrap fullPop">
+		<div class="popLayout">
+			<div class="popInner">
+				<div class="popHeader with_line">
+					<h2 data-popup-focus="full" class="popTitle">슬라이드 풀팝업슬라이드 풀팝업슬라이드 풀팝업슬라이드 풀팝업</h2>
+				</div>
+				<div class="popCont">
+					<div class="popCont_content">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p style="padding: 2rem"><a href="javascript:popOpen(sp3);" title="슬라이드 팝업 열기" role="button">슬라이드 팝업3열기</a></p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<br>
+						<a href="javascript:popOpen(cp1);" title="센터팝업 열기" role="button">센터팝업1 열기</a>
+						<br>
+						<br>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+					</div>
+				</div>
+				<div class="popBtnWrap">
+					<div class="btnArea">
+						<button type="button">btn</button>
+					</div>
+				</div>
+				<a href="javascript:;" role="button" data-popup-focus-close="full-close" onclick="popClose(this);" class="popClose"><span class="blind">팝업닫기</span></a>
+			</div>
+		</div> 
+	</div>
+
+	<!-- 슬라이드 팝업 -->
+	<div id="sp1" class="popWrap slidePop">
+		<div class="popLayout">
+			<div class="popInner">
+				<div class="popHeader with_line">
+					<h2 data-popup-focus="sp1" class="popTitle">슬라이드 슬라이드 슬라이드 슬라이드 슬라이드 슬라이드 슬라이드 슬라이드 슬라이드 팝업2</h2>
+				</div>
+				<div class="popCont">
+					<div class="popCont_content">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p style="padding: 2rem 1rem"><a href="javascript:popOpen(sp2);" title="슬라이드 팝업 열기" role="button">슬라이드 팝업: 헤더 타이틀, 하단 버튼 없을 경우</a></p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<br>
+						<a href="javascript:popOpen(cp1);" title="센터 팝업 열기" role="button">센터팝업1 열기</a>
+						<br>
+						<br>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit quod, laboriosam assumenda temporibus aspernatur qui accusantium labore odio enim alias perferendis, nam tenetur et voluptas voluptate ea similique architecto.</p>
+					</div>
+				</div>
+				<div class="popBtnWrap">
+					<div class="btnArea">
+						<button type="button">btn</button>
+						<button type="button">btn</button>
+					</div>
+				</div>
+				<a href="javascript:;" role="button" data-popup-focus-close="sp1-close" onclick="popClose(this);" class="popClose"><span class="blind">팝업닫기</span></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 슬라이드 팝업: 헤더 타이틀, 하단 버튼 없을 경우 -->
+	<div id="sp2" class="popWrap slidePop">
+		<div class="popLayout">
+			<div class="popInner">
+				<div class="popHeader"><span data-popup-focus="sp2"></span></div>
+				<div class="popCont">
+					<div class="popCont_content">
+						<div>
+							<img src="https://via.placeholder.com/500x150.png" alt="img">
+						</div>
+						<div style="padding: 20px 0">
+							<a href="javascript:popOpen(cp2);" title="센터팝업 열기" role="button">센터팝업2 열기</a>
+						</div>
+						<div>
+							<img src="https://via.placeholder.com/500x150.png" alt="img">
+						</div>
+					</div>
+				</div>
+				<!-- <div class="popBtnWrap">
+					<div class="btnArea">
+						<button type="button">btn</button>
+					</div>
+				</div> -->
+				<a href="javascript:;" role="button" data-popup-focus-close="sp2-close" onclick="popClose(this);" class="popClose"><span class="blind">팝업닫기</span></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 슬라이드 팝업 -->
+	<div id="sp3" class="popWrap slidePop">
+		<div class="popLayout">
+			<div class="popInner">
+				<div class="popHeader">
+					<h2 data-popup-focus="sp3" class="popTitle">슬라이드 팝업 3</h2>
+				</div>
+				<div class="popCont">
+					<div class="popCont_content">
+						<div class="example_layout">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sequi odio? Accusantium quas voluptatem quae dicta quisquam! Non, libero iure eligendi ea asperiores quam officiis a nemo aspernatur molestias adipisci.</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sequi odio? Accusantium quas voluptatem quae dicta quisquam! Non, libero iure eligendi ea asperiores quam officiis a nemo aspernatur molestias adipisci.</p>
+						</div>
+					</div>
+				</div>
+				<div class="popBtnWrap">
+					<div class="btnArea">
+						<button type="button">btn</button>
+					</div>
+				</div>
+				<a href="javascript:;" role="button" data-popup-focus-close="sp3-close" onclick="popClose(this);" class="popClose"><span class="blind">팝업닫기2</span></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 중앙 위치 팝업 -->
+	<div id="cp1" class="popWrap centerPop">
+		<div class="popLayout">
+			<div class="popInner">
+				<div class="popHeader with_line">
+					<h2 data-popup-focus="cp1" class="popTitle">센터팝업 1</h2>
+				</div>
+				<div class="popCont">
+					<div class="popCont_content">
+						<div style="padding-bottom: 20px">
+							<img src="https://via.placeholder.com/400x100.png" alt="img">
+						</div>
+						<p>Lorem ipsum dolor</p>
+						<p>Lorem ipsum dolor</p>
+					</div>
+				</div>
+				<div class="popBtnWrap">
+					<div class="btnArea">
+						<button type="button">btn</button>
+						<button type="button">btn</button>
+					</div>
+				</div>
+				<a href="javascript:;" role="button" data-popup-focus-close="cp1-close" onclick="popClose(this);" class="popClose"><span class="blind">팝업닫기2</span></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 중앙 위치 팝업 -->
+	<div id="cp2" class="popWrap centerPop">
+		<div class="popLayout">
+			<div class="popInner">
+				<div class="popHeader with_line">
+					<h2 data-popup-focus="cp2" class="popTitle">센터팝업 2</h2>
+				</div>
+				<div class="popCont">
+					<div class="popCont_content">
+						<p>Lorem ipsum dolor atque magnam tenetur sapiente ipsum eaque expedita, omnis voluptates accusantium unde est aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corporis qui quos cupiditate?</p>
+					</div>
+				</div>
+				<a href="javascript:;" role="button" data-popup-focus-close="cp2-close" onclick="popClose(this);" class="popClose"><span class="blind">팝업닫기2</span></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- DIM은 마크업 하단 1개 고정 -->
+	<div class="dim"></div>
+
+</body>
+</html>

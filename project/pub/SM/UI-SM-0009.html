@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SM-0009</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_senior.css"><!-- 시니어 큰글모드 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap" class="senior"><!-- 시니어 큰글모드 일때 class senior 추가 -->
+	<div id="header">
+		<!-- [2022-07-13] 김자영 : 타이틀 추가 -->
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>큰글송금 확인</h1>
+		<!--// [2022-07-13] 김자영 : 타이틀 추가 -->
+		<!-- <div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome txtMode">큰글홈</a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu txtMode">메뉴</a>
+		</div> -->
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>김수현</strong>님께<br> <strong>120,567,000원</strong>을<br>송금하시겠습니까?</p><!-- [2022-07-13] 김자영 : 님께 다음 br 추가 -->
+			</div>
+
+			<!-- [2022-11-11] 윤지현:마크업 추가 -->
+			<div class="listTblBox complete">
+				<ul>
+					<li>
+						<span class="tit">보낼금액</span>
+						<p class="txt"><strong class="dataWrap"><em class="data">12,567,000</em><span class="unit">원</span></strong></p>
+					</li>
+					<li>
+						<span class="tit alignTop">입금계좌</span>
+						<p class="txt">KB국민은행<br>123-1234-123412</p>
+					</li>
+					<li>
+						<span class="tit">받는분</span>
+						<p class="txt pColor">김수현</p><!-- [2022-11-09] 윤지현:pColor 추가 -->
+					</li>
+				</ul>
+			</div>
+			<!-- //[2022-11-11] 윤지현:마크업 추가 -->
+
+			<!-- listTbl -->
+			<div class="listTbl">
+				<ul>
+					<!-- [2022-11-11] 윤지현:항목삭제. 위로 이동 -->
+
+					<li>
+						<div class="listIn_flex">
+							<span class="tit alignTop">출금계좌</span>
+							<p class="txt"> <!-- [2022-11-01] 윤지현:pColor 클래스삭제 -->
+								<span>NH농협</span>
+								<span>123-1234-1234-12</span>
+							</p>
+						</div>
+					</li>
+					<!-- [2023-02-14] 송금수수료 발생시 보이는 항목 : 김연진 -->
+					<li>
+						<div class="listIn_flex">
+							<span class="tit peeAddTit">수수료</span>
+							<div class="peeAddTip">
+								<span class="smallTip">수수료는 콕뱅크가 낼께요</span>
+								<span class="txt">0원</span>
+							</div>
+						</div>
+					</li>
+					<!-- //[2023-02-14] 송금수수료 발생시 보이는 항목 : 김연진 -->
+					<!-- [2023-02-14] 송금수수료 무료시 보이는 항목
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">수수료</span>
+							<p class="txt">0원</p>
+						</div>
+					</li> -->
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">받는계좌에 표시</span>
+							<p class="txt">홍길동</p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">내계좌에 표시</span>
+							<p class="txt">김수현</p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">거래메모</span><!-- [2023-03-31] 거래메모 : 김연진 -->
+							<p class="txt">용돈</p>
+						</div>
+					</li>
+					<!-- [2022-11-11] 윤지현:항목추가 -->
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">경조메세지</span>
+							<p class="txt">축결혼</p>
+						</div>
+					</li>
+					<!-- //[2022-11-11] 윤지현:항목추가 -->
+				</ul>
+			</div>
+
+			<div class="btnInArea">
+				<!-- [2023-02-03] 콕뱅크 송금 수수료 면제 정책 적용 : 김연진 <button type="button" class="sm">수수료면제조회</button> -->
+				<button type="button">보이스피싱 유의안내</button>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<!-- ▼ [2022-10-12] 김자영 : 마크업 추가 -->
+			<div class="toastMessage">[송금] 선택시 전자서명과 동시에 송금됩니다.</div>
+			<div class="btnArea half">
+				<button type="button" class>취소</button>
+				<button type="button" class="sel">송금</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

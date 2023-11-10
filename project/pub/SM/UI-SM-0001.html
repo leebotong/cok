@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SM-001</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_senior.css"><!-- 시니어 큰글모드 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			// toastOpen(toastA);
+			// popOpen(popupBF);
+			// popOpen(popupBA);
+			// popOpen(sp);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap" class="senior"><!-- 시니어 큰글모드 일때 class senior 추가 -->
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>큰글송금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome txtMode">큰글홈</a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu txtMode">메뉴</a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="paymentWrap">
+				<div class="twoToneType">
+					<div class="ttTop">
+						<!-- PAYMENT -->
+						<div class="accTypeWrap accAlwaysType">
+							<a href="javascript:popOpen(sp2);" title="계좌선택" role="button" class="accInLayout">
+								<div class="accInfo">
+									<div class="accInfoInLayout">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<!--<span class="accBank">[농협]</span>-->
+												<span class="bankBookName">자립예탁금</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1775-6397-03</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="accDataWrap">
+							<div>
+								<span class="accNumInfo">출금가능금액</span>
+								<strong class="accCash">15,000,000</strong><span class="accUnit">원</span>
+							</div>
+						</div>
+						<!-- //PAYMENT -->
+					</div>
+					<div class="ttBottom">
+						<div class="ttContents">
+							<p class="defTit1">어디로 돈을 보낼까요?</p>
+
+							<section class="btnWrap ellipse section30">
+								<div class="btnList">
+									<a href="javascript:;" role="button" class="active">최근입금</a>
+									<a href="javascript:;" role="button">내계좌</a>
+									<a href="javascript:;" role="button">자주쓰는</a>
+								</div>
+							</section>
+
+							<div class="formWrap">
+								<div class="formItem">
+									<strong class="formTit">은행선택</strong>
+									<div class="inpSel isLogo">
+										<a href="javascript:;" title="은행계좌 선택" role="button" class="btnSel placeholder">
+											<span class="logo">
+												<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+											</span>
+											<div class="accNum">
+												<span class="tit">NH 농협</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="formItem">
+									<strong class="formTit">계좌번호 입력</strong>
+									<div class="inpText">
+										<input type="tel" title="계좌번호" value class="tyTxt sKey" placeholder="계좌번호 입력" readonly> <!-- [2023-05-25] readonly, .sKey 추가 -->
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="topRoundBox">
+				<!-- PAYMENT SUB BOX -->
+				</div>
+			</div>
+		</div> <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="sel dis">다음</button>
+			</div>
+		</div>
+	</div> <!-- //#container -->
+</div> <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- TOAST POPUP -->
+	<div class="toastPopWrap">
+		<div role="alert" aria-atomic="true" aria-hidden="true" aria-live="assertive" id="toast1" class="toastPop fade hide">
+			<span class="toastMessage"><!-- message --></span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

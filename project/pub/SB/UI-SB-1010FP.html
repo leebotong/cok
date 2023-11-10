@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-1010FP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(fullA);
+			// popOpen(cp);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>금융사기 예방 안내</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(fullA);" class="popOpen">UI-TR-1010FP</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP -->
+		<div id="fullA" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">금융사기 예방 안내</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div class="pgTitWrap">
+								<p class="pTit"><strong>보이스피싱</strong>,<br>한번 더 확인하고 <strong>예방</strong>하세요.</p>
+							</div>
+
+							<!-- 2022-10-06 추가 및 수정 -->
+							<div class="imgWrap">
+								<img src="../../images/cont/img_fraud.png" alt>
+							</div>
+
+							<section class="section40">
+								<ul class="listNumBg normal">
+									<li>대출상황자금이나 수수료를 개인계좌로 송금하고 있으신가요?</li>
+									<li>구매한 적이 없는 업체로부터 결제 문자를 받으셨나요?</li>
+									<li>가족·지인이 카톡으로 긴급히 송금하라고 부탁하여 송금하고 있으신가요?</li>
+									<li>출처가 불분명한 앱을 설치해야 한다는 안내를 받으셨나요?</li>
+								</ul>
+							</section>
+							<p class="fraudTxt">위 항목 중 하나라도 해당된다면 금융사기 혹은 보이스피싱이 의심됩니다.</p>
+							<div class="rounBgBox fraudBox">
+								금융사기 예방을 위해 <span class="pColor">고객행복센터(1588-2100)</span> 또는 <span class="pColor">금융감독원(1322)</span> 상담을 요청하거나 즉시 112에 신고 하세요
+							</div>
+							<!-- //2022-10-06 추가 및 수정 -->
+
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea half"><!-- 2022-09-30 클래스명 추가 -->
+								<button type="button" class>송금계속</button>
+								<button type="button" class="sel">송금취소</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

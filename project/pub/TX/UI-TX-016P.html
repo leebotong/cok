@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TX-016P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			 popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- #header -->
+		
+		<!-- //#header -->
+		<!-- #container -->
+		<div id="container">
+			<!-- #contents -->
+			<div id="contents">
+				<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+			</div>
+			<!-- //#contents -->
+			<!-- #footer_cont -->
+			<div id="footer_cont">
+			</div>
+			<!-- //#footer_cont -->
+		</div>
+		<!-- //#container -->
+	</div>
+	<!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP	-->
+		<div id="popupA" class="popupWrap full">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">국민연금 추납/반납금 납부상세</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<section>
+								<div class="listTbl">
+									<div class="listTit">
+										<strong>국민연금</strong>
+									</div>
+									<ul>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">납부의무자명(사업자명)</span>
+												<p class="txt">홍길동</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">전자납부번호</span>
+												<p class="txt">123456789134556</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">납부기한</span>
+												<p class="txt">2022.03.09</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">납기 후 기한</span>
+												<p class="txt">2022.03.09</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">납기 내 금액</span>
+												<p class="txt"><strong class="dataWrap"><em class="data">2,100,000</em><span class="unit">원</span></strong></p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">납기 후 금액</span>
+												<p class="txt"><strong class="dataWrap"><em class="data">2,100,000</em><span class="unit">원</span></strong></p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">납부금액</span>
+												<p class="txt"><strong class="dataWrap"><em class="data">2,100,000</em><span class="unit">원</span></strong></p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+	
+							<!-- 환불 가능일 경우 -->
+							<div class="btmInfoWrap">
+								<strong class="tit">확인사항</strong>
+								<ul class="infoTxt">
+									<li>농협 인터넷뱅킹을 통해 납부하신 경우 <span class="pColor">납부당일 19:00까지 납부취소</span>가 가능합니다.</li><!-- [2022-10-11] 윤지현:문구색상변경 -->
+								</ul>
+							</div>
+	
+							<div class="formWrap">
+								<div class="formItem">
+									<strong class="formTit">환급계좌번호</strong>
+									<div class="inpText">
+										<input type="tel" title="환급계좌번호" class="tyTxt" value="123-1234-1234-12" placeholder="" readonly="">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									</div>
+								</div>
+								<div class="formItem">
+									<strong class="formTit">계좌 비밀번호</strong><!-- [2022-06-24] 김자영 : 텍스트 띄어쓰기 수정 -->
+									<div class="inpText">
+										<button type="button" title="계좌 비밀번호 4자리 숫자 입력됨" aria-label="계좌 비밀번호 4자리 숫자" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+										<input type="password" title="계좌 비밀번호 4자리 숫자 입력 팝업열림" class="sKey" value placeholder="4자리 숫자 입력" maxlength="4" readonly aria-hidden="true" >
+									</div>
+								</div>
+							</div>
+							<!--// 환불 가능일 경우 -->
+	
+							<!-- 환불 불가능일 경우 -->
+							<div class="btmInfoWrap">
+								<strong class="tit">확인사항</strong>
+								<ul class="infoTxt">
+									<li>고객님은 납부취소 기간이 지나 납부취소가 불가능합니다. </li>
+								</ul>
+							</div>
+							<!--// 환불 불가능일 경우 -->
+						</div>
+	
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button class="sel">납부취소</button>
+	
+								<!-- 환불불가능일 경우
+								<button class="sel">확인</button>
+								// 환불불가능일 경우 -->
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CO-0038P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>ARS인증</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupB);" title="팝업 열기" role="button">인증번호 생성안내P</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">ARS인증</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="pgTitWrap">
+							<p class="pTit"><strong>ARS인증</strong>을<br>진행해주세요.</p>
+						</div>
+						
+						<div class="formWrap">
+							<strong class="defTit2">등록된 휴대전화번호 선택</strong>
+							<div class="formItem">
+								<div class="inpChk radioCircle">
+									<input type="radio" name="radio3" id="radio31" checked>
+									<label for="radio31">010-1234-****</label>
+								</div>
+								<div class="inpChk radioCircle">
+									<input type="radio" name="radio3" id="radio32">
+									<label for="radio32">010-9987-****</label>
+								</div>
+							</div>
+						</div>
+
+						<section class="section20">
+							<p class="infoTxt">ARS 전화를 받으신 후 안내 음성에 따라 생성된 인증번호 입력 후 ARS인증을 완료해주세요.</p>
+						</section>
+						
+						<section class="section30">
+							<!-- case : ARS 요청전 -->
+							<div class="infoARSreq beforeReq off">
+								<div class="btnInArea">
+									<button type="button" class="reqARSbtn point">ARS 인증전화 받기</button>
+								</div>
+							</div>
+							<!--// case : ARS 요청전 -->
+	
+							<!-- case : ARS 요청후 -->
+							<div class="infoARSreq afterReq">
+								<div class="rounBgBox arsNumber">
+									<p>인증번호</p>
+									<strong>40</strong>
+									<span class="time infoTxtErr">05:00</span>
+									<div class="btnInArea">
+										<button type="button" class="reqARSbtn point">인증번호 재발급</button>
+									</div>
+								</div>
+								
+							</div>
+							<!--// case : ARS 요청후 -->
+	
+							<div class="btnLnkLine">
+								<a href="javascript:popOpen(popupC);" role="button" class="underLine">ARS 인증 전화가 오지 않아요.</a><!-- [2022-06-30] 김자영 : class명 수정 -->
+							</div>
+
+							<div class="btmInfoWrap">
+								<strong class="tit">확인사항</strong>
+								<ul class="listDot">
+									<li>ARS 인증을 위해 <strong class="pColor">고객행복센터(1588-2100)</strong>에서 콕뱅크에 등록된고객님의 휴대전화번호로 전화를 합니다.</li>
+									<li>수신차단 앱이나 착신전환 기능을 쓰시면 ARS 인증 전화를 받으실 수 없습니다.</li>
+								</ul>
+							</div> 
+						</section>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">ARS인증완료(결과확인)</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 슬라이드 팝업 [인증번호 생성안내] -->
+	<div role="dialog" aria-hidden="false" id="popupB" class="popupWrap slide" style="display:block;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner" style="bottom: 0px;">
+					<div class="layerSelectTitle">
+						<h2 data-popup-focus="popupB" id="popupB-title" class="closerSpace" tabindex="0">인증번호 생성안내</h2>
+					</div>
+					<div class="layerSelectContent">
+						<p class="defTxt1">인증번호 생성이 완료되었습니다.<br>ARS안내를 듣고 <em class="pColor">화면에 나타난 인증번호</em>를 입력해 주세요.</p>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel">확인</button>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" data-popup-focus-close="popupB-close" onclick="popClose(this)" class="btnPopClose">슬라이더 팝업 B 팝업 닫기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- CENTER POPUP [전화오류] -->
+	<div id="popupC" class="popupWrap center" style="display:none;">
+		<div class="layerPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="Layer_Tit">
+								<h2 tabindex="0"></h2>
+							</div>
+							<div class="Layer_Con">
+								<!-- 컨펌메세지 type1 -->
+								<div class="confirmMsg">
+									<i class="error"></i>
+									<p class="txt">죄송합니다. 전화를 중간에 끊으셨거나 통신사 오류가 발생하였습니다. 잠시 후 다시 이용하시거나 자세한 사항은 가까운 영업점 또는 고객센터로 문의하시기 바랍니다.</p>
+									<p class="txt2"><strong>스마트 상담센터(1600-2800)</strong></p>
+								</div>
+								<div class="errorCode jsTgWrap">
+									<a href="javascript:;" role="button" class="jsTgBtn">상세안내코드</a>
+									<div class="box jsTgCont">
+										EAMOROGGR()>EAMOROGGR()>EACO03378>591>MCWS52SM0173477901
+									</div>
+								</div>
+							</div>
+							<div class="Layer_Pop_Close">
+								<div class="btnArea">
+									<button type="button" onclick="popClose(this)" class="sel">확인</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0184</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>예적금담보대출</h1>
+		<!-- <div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div> -->
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>대출신청 계좌</strong>를<br><strong>선택</strong>해주세요.</p>
+				<ul class="listDot">
+					<li>예·적금 담보대출을 신청하시려면 해당 예·적금/신탁계좌의 [대출가능금액조회] 후 [대출신청]을 선택하여 주십시오.<br>[대출가능금액조획] 버튼이 비활성화 된 경우 NH콕뱅크로 예·적금/신탁담보 대출이 불가한 상품이므로 계좌관리 영업점으로 문의하시기 바랍니다.</li>
+				</ul>
+			</div>
+
+			<hr class="divingLine">
+
+			<!-- no Data -->
+			<div class="noData">
+				<i class="check"></i>
+				<p class="tit">현재 대출가능한 예·적금 상품이 없습니다.<br>다음에 이용해주세요.</p> <!-- [2022-07-21] 윤지현:클래스 수정 -->
+			</div>
+
+			<section>
+				<div class="loanListWrap">
+					<ul>
+						<li>
+							<div class="roundBox">
+								<div class="roundInBox">
+									<div class="loanListTit">
+										<div class="loneAcc">
+											<p class="tit">주머니(money) 적금주머니(money) 적금주머니(money) 적금주머니(money) 적금주머니(money) 적금</p>
+											<p class="num">123-1234-1234</p>
+										</div>
+										<em class="tag success">신청가능</em>
+									</div>
+									<div class="loanListTxt">
+										<div class="flex">
+											<span class="tit">잔액</span>
+											<span class="dataWrap"><strong class="data">1,000,000</strong><span class="unit">원</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="roundBoxUtility">
+									<button type="button" class="btn">대출가능금액조회</button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="roundBox">
+								<div class="roundInBox">
+									<div class="loanListTit">
+										<div class="loneAcc">
+											<p class="tit">주머니(money) 적금</p>
+											<p class="num">123-1234-1234</p>
+										</div>
+										<em class="tag faild">신청불가</em>
+									</div>
+									<div class="loanListTxt">
+										<div class="flex">
+											<span class="tit">잔액</span>
+											<span class="dataWrap"><strong class="data">1,000,000</strong><span class="unit">원</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="roundBoxUtility">
+									<button type="button" class="btn" disabled>대출가능금액조회</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- 배너영역 -->
+			<figure class="bannerWrap">
+				<a href="https://google.com" role="button" class="bannerLink">
+					<img src="../../images/market/cont/ban_foot01.png" alt>
+					<figcaption class="caption">
+						<strong>NH모바일바로대출</strong>
+						<p>최대 1,000만원까지 모바일로 바로 대출! 중도상환수수료無</p>
+					</figcaption>
+				</a>
+			</figure>
+			<!-- //배너영역 -->
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

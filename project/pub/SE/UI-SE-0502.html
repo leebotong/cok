@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SE-0502</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>입출금 알림 신청</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<section class="section30">
+				<p class="defTit2">알림대상 계좌</p>
+				<div class="accLineBox mt10 type2"> <!-- [2022-09-29] 윤지현:type 클래스추가 -->
+					<div class="accTypeWrap">
+						<div class="accInLayout">
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<span class="bankBookName">주머니(money)통장</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1736-1551-38</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section30">
+				<div class="formWrap">
+					<div class="formItem">
+						<strong class="formTit">알림범위</strong>
+						<div class="boxRdoGroup">
+							<div class="inpChk">
+								<input type="radio" name="radio0" id="radio01" checked>
+								<label for="radio71">전체</label>
+							</div>
+							<div class="inpChk">
+								<input type="radio" name="radio0" id="radio02">
+								<label for="radio72">입금</label>
+							</div>
+							<div class="inpChk">
+								<input type="radio" name="radio0" id="radio03">
+								<label for="radio72">출금</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<div class="formTit">금액제한
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<p class="tit">금액제한 설정</p>
+									<p>입금 또는 출금된 금액이 설정하신 금액 이상일 경우에만 입출금 알림을 보내드려요.</p>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->
+						</div>
+						<div class="inpSel">
+							<a href="javascript:;" title="금액선택" role="button" class="btnSel">제한없음</a>
+						</div>
+					</div>
+
+					<!-- [2023-02-22] 김연진 : 잔액표시 항목 추가 -->
+					<div class="formItem">
+						<div class="formTit">잔액표시
+						</div>
+						<div class="boxRdoGroup">
+							<div class="inpChk">
+								<input type="radio" name="radio3" id="radio31" checked>
+								<label for="radio71">표시</label>
+							</div>
+							<div class="inpChk">
+								<input type="radio" name="radio3" id="radio32">
+								<label for="radio72">미표시</label>
+							</div>
+						</div>
+					</div>
+					<!-- //[2023-02-22] 김연진 : 잔액표시 항목 추가 -->
+
+					<div class="formItem">
+						<div class="formTit">알림받을 시간
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<p class="tit">알림받을 시간</p>
+									<p><span class="txt">실시간 선택</span><br>알림 발생 즉시 알림을 실시간으로 받으실 수 있습니다. (특정 시간대에 알림을 받지 않도록 방해금지 시간대를 설정하실 수 있습니다.)</p>
+									<p><span class="txt">지정시간 선택</span><br>지정하신 시간대에만 알림을 받으실 수 있습니다.</p>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->
+						</div>
+						<div class="tabWrap box">
+							<div role="tablist" class="tabList">
+								<a href="javascript:;" role="tab" class="active">실시간</a>
+								<a href="javascript:;" role="tab">지정시간</a>
+							</div>
+							<div class="tabPanelList">
+								<div role="tabpanel" class="tabPanel show">
+									<div class="jsTgWrap">
+										<strong class="formTit inpChk">
+											<input type="checkbox" name="chk5" id="chk51" class="jsTgBtn">
+											<label for="chk51">방해금지 시간대를 설정 할래요.</label>
+										</strong>
+										<div class="jsTgCont formExpBox">
+											<div class="formGroup">
+												<div class="inpSel">
+													<a href="javascript:;" title="시작 시간대설정 선택" role="button" class="btnSel">선택</a>
+												</div>
+												<span class="etc">~</span>
+												<div class="inpSel">
+													<a href="javascript:;" title="끝 시간대설정 선택" role="button" class="btnSel">선택</a>
+												</div>
+												<span class="etc">59분</span><!--[2023-02-22] 김연진 : 입출금알림 텍스트 추가-->
+											</div>
+											<p class="bili">선택하신 시간대는 알림을 보내드리지 않아요.</p>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tabPanel">
+									<div class="formExpBox mt0">
+										<div class="formGroup">
+											<div class="inpSel">
+												<a href="javascript:;" title="시작 시간대설정 선택" role="button" class="btnSel">선택</a>
+											</div>
+											<div class="inpSel">
+												<a href="javascript:;" title="끝 시간대설정 선택" role="button" class="btnSel">선택</a>
+											</div>
+											<div class="inpSel">
+												<a href="javascript:;" title="끝 시간대설정 선택" role="button" class="btnSel">선택</a>
+											</div>
+										</div>
+										<p class="bili">선택하신 시간에만 알림을 보내드려요.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<div class="formTit">자동이체 알림
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<p class="tit">자동이체 알림</p>
+									<p>제한발송’을 선택하시면, 수면시간(22시~8시)에 발생하는 자동이체 입출금 알림은 익일 08시 이후에 전송됩니다.</p>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->
+						</div>
+						<div class="boxRdoGroup">
+							<div class="inpChk">
+								<input type="radio" name="radio2" id="radio21" checked>
+								<label for="radio71">제한발송</label>
+							</div>
+							<div class="inpChk">
+								<input type="radio" name="radio2" id="radio22">
+								<label for="radio72">실시간발송</label>
+							</div>
+							<div class="inpChk">
+								<input type="radio" name="radio2" id="radio23">
+								<label for="radio72">미발송</label>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button">취소</button>
+				<button type="button" class="sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div><!-- //#wrap -->
+</body>
+</html>
+

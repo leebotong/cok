@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0038</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>외화주머니에서 꺼내기</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>찾으실 외화</strong>를 선택해주세요.</p>
+				<ul class="listDot">
+					<li>보관된 외화가 보이지 않는다면<br><span class="pColor">조회기간을 변경</span>해주세요.</li>
+				</ul>
+			</div>
+			<!--[2022-09-07] 김자영: 마크업 삭제
+			<div class="listBoxTit">
+				<strong>총 3건</strong>
+				<span class="date">최근 보관 날짜 : 2022.04.12</span>
+			</div> -->
+			<div class="listTblBox">
+				<ul>
+					<li>
+						<span class="tit">외화금액</span>
+						<p class="txt"><strong class="dataWrap"><span class="unit">USD</span><em class="data">100.00</em><span class="unit">달러</span></strong></p>
+					</li>
+				</ul>
+			</div>
+
+			<section class="section30">
+				<div class="formWrap">
+					<div class="formItem">
+						<strong class="formTit">조회설정</strong>
+						<div class="rdoBtnsWrap">
+							<ul>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample01">
+										<label for="sample01">1개월</label>
+									</span>
+								</li>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample02">
+										<label for="sample02">3개월</label>
+									</span>
+								</li>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample03">
+										<label for="sample03">6개월</label>
+									</span>
+								</li>
+								<li>
+									<span class="rdoBtn">
+										<input type="radio" name="sample00" id="sample04">
+										<label for="sample04">12개월</label>
+									</span>
+								</li>
+								<li class="filter">
+									<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</section>
+
+				<hr class="divingLine">
+
+				<div class="inqueryList">
+					<div class="listTit">
+						<em>2022.03.05 ~ 2022.04.05</em>
+					</div>
+				</div>
+				<section class="section20">
+					<ul class="roundBoxList">
+						<li>
+							<div class="roundBox">
+								<div class="roundInBox exchange">
+									<div class="layoutWrap">
+										<strong>2020.04.05</strong>
+										<a href="javascript:;" title="상세화면이동" role="button" class="btnDetail alignBottom">상세보기</a>
+									</div>
+									<div class="layoutWrap">
+										<div class="accInfo currency">
+											<span class="logoWrap"><img src="../../images/logo/icon_USD.png" alt="미국국기">  <!--[2022-08-02] 이경아 : 이미지명 수정--></span>
+											<span class="accInfoWrap">USD</span>
+										</div>
+										<strong class="dataWrap"><em class="data">100.00</em><span class="unit">달러</span></strong>
+									</div>
+									<div class="btnInArea">
+										<button type="button" class="point">외화로 꺼내기</button>
+										<button type="button" class="point">원화로 꺼내기</button>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+
+				<!-- <div class="moreBtn"><button type="button">더보기</button></div> -->
+				<!-- 검색결과없음 -->
+				<!-- <div class="noData">
+					<i class="check"></i>
+					<p class="tit">조회 내역이 없습니다.</p>
+				</div> -->
+				<!-- //검색결과없음 -->
+
+		</div>  <!-- //#contents -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>UI-TX-026T</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>통합사회보험료</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="tabWrap oneDepth">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab">납부</a>
+					<a href="javascript:;" role="tab" class="active">납부내역</a>
+				</div>
+			</div>
+
+			<!-- [2022-06-09] 김자영 : 내계좌정보 영역 추가 -->
+			<div class="roundBox">
+				<div class="roundInBox">
+					<div class="accTypeWrap accAlwaysType">
+						<a href="javascript:;" title="계좌선택" role="button" class="accInLayout"><!--[2022-07-07] 윤지현 : title추가, jsSelectLink삭제 -->
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<!--<span class="accBank">[농협]</span>-->
+										<span class="bankBookName">주머니(money) 통장</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- <div class="accDataWrap">
+							<span class="accNumInfo">출금가능금액</span>
+							<strong class="accCash">58,000,000</strong><span class="accUnit">원</span>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<!--// [2022-06-09] 김자영 : 내계좌정보 영역 추가 -->
+
+			<!-- [2022-10-13] 김자영: 삭제
+			<p class="defTit2">조회설정</p>
+			 -->
+			 
+			<div class="rdoBtnsWrap">
+				<!-- [2022-07-07] 김자영 : label 수정-->
+				<ul>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample01">
+							<label for="sample01">1주일</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample02">
+							<label for="sample02">1개월</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample03">
+							<label for="sample03">3개월</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample04">
+							<label for="sample04">6개월</label>
+						</span>
+					</li>
+					<li class="filter">
+						<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+					</li>
+				</ul>
+				<!--// [2022-07-07] 김자영 : label 수정-->
+			</div>
+
+			<hr class="divingLine">
+
+			<div class="inqueryList">
+				<div class="listTit">총 <strong class="pColor">82</strong>건</div>
+				<ul>
+					<li>
+						<a href="javascript:;" title="상세보기" role="button" class="link">
+							<div class="flex">
+								<span class="date">2022.06.29</span>
+								<span class="date2">모바일뱅킹</span>
+							</div>
+							<div class="flex">
+								<p class="tit">김농협</p>
+								<strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" title="상세보기" role="button" class="link">
+							<div class="flex">
+								<span class="date">2022.06.29</span>
+								<span class="date2">창구수납</span>
+							</div>
+							<div class="flex">
+								<p class="tit">김농협</p>
+								<strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="moreBtn"><button type="button">더보기</button></div>
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>해당기관의 실시간 납부반영 시행으로 <span class="pColor">납부 후 취소가 불가</span>하니 환급문의는 해당기관으로 문의하시기 바랍니다.</li> <!-- [2022-10-11] 윤지현:문구색상변경 -->
+					<li>건강보험: 국민건강보험공단(1577-1000)</li>
+					<li>고용보험료 및 산재보험료: 근로복지공단(1588-0075)</li>
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<!-- <div class="btnArea">
+				<button type="button" class="btn_full sel">조회</button>
+			</div> -->
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

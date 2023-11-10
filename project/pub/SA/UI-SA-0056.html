@@ -1,0 +1,82 @@
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SA-0056</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>OTP 분실신고해제</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<section class="section30">
+				<div class="formWrap">
+					<div class="formItem">
+						<strong class="formTit">보안매체 제조사 선택</strong>
+						<div class="inpSel">
+							<a href="javascript:;" title="선택" role="button" class="btnSel placeholder">타행 OTP (001 한국정보인증(구.미래...</a>
+						</div>
+					</div>
+					<div class="formItem">
+						<strong class="formTit">보안매체 일련번호 입력</strong>
+						<div class="inpText">
+							<button type="button" title="보안매체 일련번호 입력됨" aria-label="보안매체 일련번호 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+							<input type="password" title="일련번호 입력" aria-hidden="true" class="sKey" placeholder="일련번호 입력">
+						</div>
+						<p class="infoTxtErr">Error MSG</p>
+						<p class="bili">보안매체 일련번호는 기기 뒷면을 참조하세요.</p>
+					</div>
+				</div>
+			</section>
+			<p class="defTit2">분실신고 해제 요건</p>
+			<p class="defTxt2 mt15">비대면 실명확인이 필요한 경우</p>
+			<ul class="listDot mt5">
+				<li>다른 금융기관과 농협에 공동 이용등록 된 OTP</li>
+				<li>해당OTP로 다른 금융기관에서 분실신고 해제 처리가 완료된경우(등록된 금융기관 중 한 곳에서 분실신고 해제되면 이용가능)</li>
+				<li class="pColor">서비스 제한사항으로 본 서비스 적용이 어려운 고객님들은 가까운 영업점을 방문하여 OTP 분실신고 해제를 하시기 바랍니다.</li>
+			</ul>
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<!--[2023-02-16] 이용시간변경 : 김연진-->
+					<li>서비스 이용시간 : 평일 00:15~24:00,<br>토요일  00:15~24:00, 일요일/공휴일 00:15~24:00</li>
+					<!--//[2023-02-16] 이용시간변경 : 김연진-->
+					<li>본 서비스는 농협에 분실신고 등록 된 OTP의 분실신고 해제를 위한 거래입니다.</li>
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+  <!-- //#wrap -->
+
+</div></body>
+</html>

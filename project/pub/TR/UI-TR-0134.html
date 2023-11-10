@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-0134</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		// $(function(){
+		// 	popOpen(popupC)
+		// })
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>회차별중도인출</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">아래와 같이<br><strong>중도인출</strong>을 진행하시겠습니까?</p>
+			</div>
+			<div class="listTblBox">
+				<ul>
+					<li>
+						<span class="tit">상품명</span>
+						<p class="txt">콕!BASIC 예금(정기)</p>
+					</li>
+					<li>
+						<span class="tit">계좌번호</span>
+						<p class="txt">123-1234-1234-12</p>
+					</li>
+					<li>
+						<span class="tit">예금주명</span>
+						<p class="txt">김농협</p>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">입금받을계좌</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="입금받을계좌 선택" role="button" class="btnSel placeholder">계좌선택</a>
+					</div>					
+					<!-- <div class="inpSel isLogo">
+						<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel placeholder">
+							<span class="logo">
+								<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+							</span>
+							<div class="accNum">
+								<span class="tit">바로N콕통장(내주거래통장)</span>
+								<span class="num">555368-12-023456</span>
+							</div>
+						</a>
+					</div> -->
+				</div>
+			</div>
+			<div class="listTbl">
+				<div class="listTit">
+					<strong>중도인출예상금액</strong>
+				</div>
+				<ul>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">인출회차</span>
+							<p class="txt">4개 회차</p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">원금</span>
+							<p class="txt">40,000원</p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">이자</span>
+							<p class="txt">300원</p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">세금</span>
+							<p class="txt">30원</p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">세금공제후지급액</span>
+							<p class="txt">40,100원</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">승인번호</strong>
+					<div class="inpText">
+						<input type="tel" title="승인번호" value class="tyTxt" placeholder="승인번호입력" maxlength="16">
+						<span class="time">05:00</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+
+					<!-- <p class="infoTxt">휴대폰 번호가 올바르지 않습니다.</p> -->
+					<!-- <p class="infoTxt">아래 고객정보변경 메뉴를 통해 휴대폰번호를 변경하시기 바랍니다.</p> -->
+					<p class="infoTxt">휴대폰 010-234*-323*으로 통지되었습니다.</p>
+					<p class="infoTxt">휴대폰 번호가 다른 경우 NH스마트뱅킹&gt;고객센터&gt;고객정보관리&gt;고객정보 변경을 이용하시기 바랍니다.</p>
+					<p class="infoTxt">해외 체류 고객의 경우 승인번호를 수신 받지 못하실 수 있습니다.</p>
+					<div class="btmInfoWrap">
+						<ul class="listDot">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="toastMessage">
+				[중도인출]을 선택하면 전자서명과 동시에 중도인출됩니다.
+			</div>
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">중도인출</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+</div>
+
+</body>
+</html>

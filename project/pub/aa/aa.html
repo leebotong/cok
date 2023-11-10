@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>2022 콕뱅크 고도화</title>
+	<meta http-equiv="Cache-Control" content="no-store">
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-3.6.0.min.js"></script>
+	<!-- <script src="../../js/jquery-1.9.1.min.js"></script> -->
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<nav class="topmenu">
+				<a href="javascript:;">MY</a>
+				<ul class="gnb">
+					<li><a href="javascript:;" class="active">뱅킹</a></li>
+					<li><a href="javascript:;">금융상품</a></li>
+					<li><a href="javascript:;">마이데이터</a></li>
+					<li><a href="javascript:;">콕생활/쇼핑</a></li>
+				</ul>
+				<a href="javascript:;">전체메뉴</a>
+			</nav>
+		</header>
+		<main>
+			<nav class="submenu">
+				<ul role="tablist" class="lnb">
+					<li role="presentation"><a href="javascript:;" role="tab" class="active">조회</a></li>
+					<li role="presentation"><a href="javascript:;" role="tab">이체/출금</a></li>
+					<li role="presentation"><a href="javascript:;" role="tab">상품가입</a></li>
+					<li role="presentation"><a href="javascript:;" role="tab">관리/해지</a></li>
+					<li role="presentation"><a href="javascript:;" role="tab">마이데이터</a></li>
+					<li role="presentation"><a href="javascript:;" role="tab">공과금</a></li>
+					<li role="presentation"><a href="javascript:;" role="tab">외환</a></li>
+				</ul>
+			</nav>
+			<a href="javascript:popOpen(sp2);" title="슬라이드 팝업 열기" role="button">슬라이드 팝업2 열기</a>
+			<a href="javascript:popOpen(sp4);" title="슬라이드 팝업 열기" role="button">슬라이드 팝업4 열기</a>
+			
+			vvv
+		</main>
+		<footer></footer>
+	</div>
+
+	<div id="popup1" class="popWrap slidePop draggable">
+		<div class="popInner">
+			<div class="popHeader">
+				<a href="javascript:;" role="button" class="dragLine"></a>
+			</div>
+			<div class="popCont">
+				popup1
+			</div>
+			<div class="popBtnWrap"></div>
+		</div>
+	</div>
+
+	<div id="sp2" class="popWrap slidePop">
+		<div class="popInner">
+			<div class="popHeader">
+				<a href="javascript:;" role="button" onclick="popClose(this);">팝업닫기</a>
+			</div>
+			<div class="popCont">
+				<p>2222222222222<br>2222</p>
+				<a href="javascript:popOpen(sp3);" title="슬라이드 팝업 열기" role="button">슬라이드 팝업3열기</a>
+			</div>
+			<div class="popBtnWrap"></div>
+		</div>
+	</div>
+
+	<div id="sp3" class="popWrap slidePop">
+		<div class="popInner">
+			<div class="popHeader">
+				<a href="javascript:;" role="button" onclick="popClose(this);">팝업닫기</a>
+			</div>
+			<div class="popCont">
+				<p>3333333</p>
+				<a href="javascript:popOpen(cp1);" title="센터" role="button" 팝업 열기">센터팝업1 열기</a>
+			</div>
+			<div class="popBtnWrap"></div>
+		</div>
+	</div>
+
+	<div id="cp1" class="popWrap centerPop">
+		<div class="popInner">
+			<div class="popHeader">
+				<a href="javascript:;" role="button" onclick="popClose(this);">팝업닫기</a>
+			</div>
+			<div class="popCont">
+				센터팝업
+			</div>
+			<div class="popBtnWrap"></div>
+		</div>
+	</div>
+
+	<div id="sp4" class="popWrap slidePop">
+		<div class="popInner">
+			<div class="popHeader">
+				<a href="javascript:;" role="button" onclick="popClose(this);">팝업닫기</a>
+			</div>
+			<div class="popCont">
+				44444
+			</div>
+			<div class="popBtnWrap"></div>
+		</div>
+	</div>
+
+	<div class="dim"></div> <!-- 마크업 하단 1개 고정 -->
+</body>
+</html>

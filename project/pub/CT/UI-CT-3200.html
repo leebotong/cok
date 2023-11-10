@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-3200</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>FATCA/CRS 본인확인서 제출</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+			<div class="formWrap">
+				<h2 class="defTit2">해외거주자 및 해외납세의무자 확인</h2>
+				<div class="formItem">
+					<div class="inpChk">
+						<input type="checkbox" name="chk11" id="chk11" checked>
+						<label for="chk11">조세 목적상 한국 거주자에 해당합니다.</label>
+					</div>
+					<div class="inpChk mt14">
+						<input type="checkbox" name="chk12" id="chk12" checked>
+						<label for="chk12">한국 이외에 조세 목적상 국가가 있습니다</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="formWrap">
+				<div class="layoutWrap">
+					<h2 class="defTit2 mt0">한국 외 조세목적상국가 1</h2>
+				</div>
+
+				<div class="mt20 details">
+					<div class="formItem">
+						<strong class="formTit">국가</strong>
+						<div class="inpText">
+							<input type="text" title="Country" value="" class="tyTxt" placeholder="Country">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							<button type="button" title="검색" class="btnSearch"></button>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">구분</strong>
+						<div class="inpSel">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel ">선택해주세요</a>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">납세자번호</strong>
+						<div class="inpText">
+							<input type="tel" title="국가" value="" class="tyTxt" placeholder="납세자번호를 입력해주세요.">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">미제출사유</strong>
+						<div class="inpSel">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel">선택해주세요</a>
+						</div>
+						<div class="inpText">
+							<input type="text" title="국가" value="" class="tyTxt" placeholder="미취득 사유를 입력해 주세요.">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+
+					<!--납세자번호 입력시-->
+					<div class="formItem">
+						<strong class="formTit">미제출사유</strong>
+						<div class="inpSel readonly">
+							<div class="btnSel placeholder">선택해주세요</div> <!-- [2023-02-06] 김연진: placeholder 추가(폰트색상) -->
+						</div>
+					</div>
+					<!--납세자번호 입력시-->
+
+					<div class="formItem">
+						<strong class="formTit">조세목적상 국가 내 주소지 (영문)</strong>
+						<div class="inpText">
+							<input type="text" title="Country" value="" class="tyTxt" placeholder="Country">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							<button type="button" title="검색" class="btnSearch"></button>
+						</div>
+						<div class="inpText">
+							<input type="text" title="House Apt. Suite" value="" class="tyTxt" placeholder="House Apt. Suite">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+						<div class="inpText">
+							<input type="text" title="City" value="" class="tyTxt" placeholder="City">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="PostCode(선택)" value="" class="tyTxt" placeholder="PostCode(선택)">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="formWrap">
+				<div class="layoutWrap">
+					<h2 class="defTit2 mt0">한국 외 조세목적상국가 2</h2>
+					<button type="button" class="btnSm" aria-expended=false aria-controls="details1">+ 국가추가하기</button>
+				</div>
+
+				<div class="mt20 details" style="display:none" id="details1">
+					<div class="formItem">
+						<strong class="formTit">국가</strong>
+						<div class="inpText">
+							<input type="text" title="Country" value="" class="tyTxt" placeholder="Country">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							<button type="button" title="검색" class="btnSearch"></button>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">구분</strong>
+						<div class="inpSel">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel ">선택해주세요</a>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">납세자번호</strong>
+						<div class="inpText">
+							<input type="tel" title="국가" value="" class="tyTxt" placeholder="납세자번호를 입력해주세요.">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">미제출사유</strong>
+						<div class="inpSel">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel">선택해주세요</a>
+						</div>
+						<div class="inpText">
+							<input type="text" title="국가" value="" class="tyTxt" placeholder="미취득 사유를 입력해 주세요.">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">조세목적상 국가 내 주소지 (영문)</strong>
+						<div class="inpText">
+							<input type="text" title="Country" value="" class="tyTxt" placeholder="Country">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							<button type="button" title="검색" class="btnSearch"></button>
+						</div>
+						<div class="inpText">
+							<input type="text" title="House Apt. Suite" value="" class="tyTxt" placeholder="House Apt. Suite">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+						<div class="inpText">
+							<input type="text" title="City" value="" class="tyTxt" placeholder="City">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="PostCode(선택)" value="" class="tyTxt" placeholder="PostCode(선택)">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="formWrap">
+				<div class="layoutWrap">
+					<h2 class="defTit2 mt0">한국 외 조세목적상국가 3</h2>
+					<button type="button" class="btnSm" aria-expended=false aria-controls="details2">+ 국가추가하기</button>
+				</div>
+				<div class="mt20 details" style="display:none" id="details2">
+					<div class="formItem">
+						<strong class="formTit">국가</strong>
+						<div class="inpText">
+							<input type="text" title="Country" value="" class="tyTxt" placeholder="Country">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							<button type="button" title="검색" class="btnSearch"></button>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">구분</strong>
+						<div class="inpSel">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel ">선택해주세요</a>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">납세자번호</strong>
+						<div class="inpText">
+							<input type="tel" title="국가" value="" class="tyTxt" placeholder="납세자번호를 입력해주세요.">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">미제출사유</strong>
+						<div class="inpSel">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel">선택해주세요</a>
+						</div>
+						<div class="inpText">
+							<input type="text" title="국가" value="" class="tyTxt" placeholder="미취득 사유를 입력해 주세요.">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">조세목적상 국가 내 주소지 (영문)</strong>
+						<div class="inpText">
+							<input type="text" title="Country" value="" class="tyTxt" placeholder="Country">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							<button type="button" title="검색" class="btnSearch"></button>
+						</div>
+						<div class="inpText">
+							<input type="text" title="House Apt. Suite" value="" class="tyTxt" placeholder="House Apt. Suite">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+						<div class="inpText">
+							<input type="text" title="City" value="" class="tyTxt" placeholder="City">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="PostCode(선택)" value="" class="tyTxt" placeholder="PostCode(선택)">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				$(document).on('click', '.formWrap .btnSm', function (){
+					if($(this).attr("aria-expended") == "false"){
+						$(this).attr("aria-expended", true);
+						$(this).text("입력정보 삭제");
+						$(".details", $(this).parents(".formWrap")).show();
+					}else{
+						$(this).attr("aria-expended", false);
+						$(this).text("+ 국가추가하기");
+						$(".details", $(this).parents(".formWrap")).hide();
+					}
+				});
+			</script>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">이전</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popupArea">
+</div>
+</body>
+</html>

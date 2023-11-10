@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MN-0005</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_junior.css"><!-- 시니어 큰글모드 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+	<div id="wrap" class="junior main">
+		<div id="header">
+			<div class="headerL">
+				<button type="button" class="modeChange">일반모드</button>
+			</div>
+			<!-- <h1>송금</h1> -->
+			<div class="headerR menu">
+				<a href="javascript:;" title role="button" class="menuItem scan"><span class="blind">QR코드스캔</span></a>
+				<a href="javascript:;" title role="button" class="menuItem search"><span class="blind">검색</span></a>
+				<a href="javascript:;" title role="button" class="menuItem alarm on"><span class="blind">알림<em>이 있습니다</em></span></a><!-- [개발]알람있을 경우 on 클래스 추가 -->
+				<a href="javascript:;" title role="button" class="menuItem btnMenu"><span class="blind">전체메뉴</span></a>
+			</div>
+		</div>
+		<!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="juniorMain">
+					<div aria-hidden="true" class="juniorBG"></div>
+					<div class="juniorContent">
+						<div class="juniorContentTop">
+		
+							<!-- user info -->
+							<div class="userWrap">
+								<div class="layoutWrap">
+									<div class="userWelcome">
+										<p class="userName"><strong>김농협</strong>님 반갑습니다.</p>
+										<a href="javascript:;" role="button" class="btnBranch">의왕농협 포일지점</a>
+									</div>
+									<span class="userIcon">
+										<span class="imgArea">
+											<img src="../../images/com/junior/main_userdefault.png" alt=""><!-- [2022-08-30] 이미지로 마크업변경 -->
+										</span>
+										<button class="photoModify" type="button"><span class="blind">사진수정</span></button>
+									</span>
+								</div>
+							</div>
+		
+							<!-- account information -->
+							<div class="juniorAccInfo layoutWrap">
+								<div class="accAlwaysType">
+									<a href="javascript:;" role="button" class="accInLayout">
+										<div class="accInfo">
+											<div class="accInfoInLayout">
+												<div class="logoWrap">
+													<img src="../../images/logo/logo_bnk_011_72x72.png" alt="OO은행" class="logo">
+													<span class="major">주거래계좌</span>
+												</div>
+												<div class="accInfoWrap">
+													<strong class="accName">
+														<!-- <span class="accBank">[NH농협]</span> -->
+														<span class="bankBookName">자립예탁금(테니스클럽)</span>
+													</strong>
+													<div class="accNumWrap">
+														<div class="accNumBox">
+															<span class="accNumber">352-1775-6397-03</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+										<div class="accInfoInBtn layoutWrap">
+									<button type="button" class="btnRefrash"><span class="blind">새로고침</span></button>
+									<button type="button" class="accMore"><span class="blind">더보기</span></button>
+								</div>
+							</div>
+		
+							<div class="accDataWrap ac">
+								<!-- 금액표시 -->
+								<strong class="accCash">15,000,000,000</strong><span class="accUnit">원</span>
+								<div class="toggleSwitch">
+									<input type="checkbox" id="btnPrice">
+									<label for="btnPrice">숨김</label>
+								</div>
+								<script>
+									$(document).ready(function(){
+										/*  잔액표시 토글 추가 */
+										$('#btnPrice').on("click", function(e){
+											var priceBox = $(".accDataWrap")
+											if($(this).is(":checked")){
+												priceBox.find('label').text('보기');
+												priceBox.find('.accCash').addClass('active').text('잔액 숨김 중');
+												priceBox.find('.accUnit').hide();
+											} else{
+												$('label').text('숨김');
+												priceBox.find('.accCash').removeClass('active').text('15,000,000,000');
+												priceBox.find('.accUnit').show();
+											}
+										});
+									})
+								</script>
+								<!-- //금액표시 -->
+							</div>
+		
+							<!-- main utility -->
+							<div class="ac juniorMainBtn">
+								<button type="button" class="btn history">거래내역</button>
+								<button type="button" class="btn trans">송금</button>
+							</div>
+							<div class="ac juniorMainLink">
+								<a href="#">등록계좌 보기</a>
+							</div>							
+						</div>
+
+						<div class="juniorContentBottom">
+							<div aria-hidden="true" class="characterWrap">
+								<div class="characterBG"></div>
+								<div class="characterArea"></div>
+							</div>
+							<div class="bottomArea">
+								<!-- junior menu -->
+								<div class="juniorMenu">
+									<div class="myMenuArea">
+										<nav class="nav_scroll">
+											<ul class="menuList">
+												<li>
+													<a href="javascript:;" role="button">
+														<span class="ico"><i class="atm"></i></span>
+														<span class="name">ATM출금</span>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" role="button">
+														<span class="ico"><i class="card"></i></span>
+														<span class="name">카드명세</span>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" role="button">
+														<span class="ico"><i class="quickRemit"></i></span>
+														<span class="name">빠른송금</span>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" role="button">
+														<span class="ico"><i class="accIn"></i></span>
+														<span class="name">계좌등록</span>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" role="button">
+														<span class="ico"><i class="event"></i></span>
+														<span class="name">이벤트</span>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" role="button">
+														<span class="ico"><i class="atm"></i></span>
+														<span class="name">ATM출금</span>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" role="button">
+														<span class="ico"><i class="card"></i></span>
+														<span class="name">카드명세</span>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" role="button">
+														<span class="ico"><i class="quickRemit"></i></span>
+														<span class="name">빠른송금</span>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" role="button">
+														<span class="ico"><i class="accIn"></i></span>
+														<span class="name">계좌등록</span>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" role="button">
+														<span class="ico"><i class="event"></i></span>
+														<span class="name">이벤트</span>
+													</a>
+												</li>
+											</ul>
+											<a href="javascript:;" role="button" class="btnAllView"><span>전체<br>보기</span></a>
+										</nav>
+									</div>
+								</div>
+								<!-- junior menu -->
+								<!-- swiper 영역 -->
+								<div class="mainBannerArea">
+									<div class="ContSwipe banTop">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="slideBox">
+														<div class="inner">
+															<a href="#">
+																<img src="../../images/com/junior/img_seniorBannerNew01.png" alt="주머니 적금. 내가 신결 쓰지 않아던 잔돈!">
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slideBox">
+														<div class="inner">
+															<a href="#">
+																<img src="../../images/com/junior/img_seniorBannerNew01.png" alt="주머니 적금. 내가 신결 쓰지 않아던 잔돈!">
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="slideBox">
+														<div class="inner">
+															<a href="#">
+																<img src="../../images/com/junior/img_seniorBannerNew01.png" alt="주머니 적금. 내가 신결 쓰지 않아던 잔돈!">
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+								</div>
+								<!-- //swiper 영역 -->
+								<script>
+									$(document).ready(function(){
+										function bannerSwiper() {
+											$('.ContSwipe').each(function (idx) {
+												var $this = $(this);
+												$this.addClass('type' + idx);
+
+												//슬라이드 초기화
+												if (bannerSwiper != undefined){
+													bannerSwiper.destroy();
+													bannerSwiper = undefined;
+												}
+
+												var bannerSwiper = new Swiper(".type" + idx + " .swiper-container", {
+													slidesPerView: 1,
+													spaceBetween: 10,
+													initialSlide : 0,
+													loop: false, //loop
+													breakpoints: { 
+														640: { 
+															slidesPerView: 2, 
+														}
+													},
+													autoplay: {
+														deley: 3000,
+														disableOnInteraction: true,
+													},
+													centeredSlides: true,
+													observer: true,
+													observeParents: true,
+													//observeSlideChildren: true,
+													pagination: {
+														el: $(".type" + idx).find(".swiper-pagination"),
+														clickable: true,
+														bulletElement: "a",
+													},
+													on: {
+														init: function () {
+															$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+															$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active").attr("aria-hidden", false).attr("tabindex", 0);
+														},
+														slideChangeTransitionEnd: function () {
+															$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+															$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active")	.attr("aria-hidden", false)	.attr("tabindex", 0);
+															$(".type" + idx + " .swiper-pagination").find('a').attr('title', '');
+															$(".type" + idx + " .swiper-pagination").find('a').eq(this.activeIndex).attr('title','선택됨');
+														},
+													},
+												});
+
+												//autoplay control 옵션
+												$this.find('.swiper-pagination').append('<a href="javascript:;" class="swiperAuto stop" role="button" aria-label="일시정지"></a>');
+												$this.find('.swiperAuto').on("click", function () {
+													if ($(this).hasClass("stop")) {
+														$(this).addClass("start").removeClass("stop").attr("aria-label", "재생");
+														bannerSwiper.autoplay.stop();
+													} else {
+														$(this).addClass("stop").removeClass("start").attr("aria-label", "일시정지");
+														bannerSwiper.autoplay.start();
+													}
+												});
+											})
+										}
+										bannerSwiper();
+									})
+								</script>
+								<!-- //swiper 영역 -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //#wrap -->
+
+<!-- #popupArea -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupA" class="popupWrap slide" style="display:block;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">메인 색상변경</h2>
+					</div>
+					<div class="layerSelectContent">
+						<ul class="colorChkList">
+							<li>
+								<div class="colorChg purple">
+									<input type="radio" name="colorChange" id="purpleC" checked>
+									<label for="purpleC">purple</label>
+								</div>
+							</li>
+							<li>
+								<div class="colorChg green">
+									<input type="radio" name="colorChange" id="greenC">
+									<label for="greenC">green</label>
+								</div>
+							</li>
+							<li>
+								<div class="colorChg yellow">
+									<input type="radio" name="colorChange" id="yellowC">
+									<label for="yellowC">yellow</label>
+								</div>
+							</li>
+							<li>
+								<div class="colorChg primary">
+									<input type="radio" name="colorChange" id="primaryC">
+									<label for="primaryC">primary</label>
+								</div>
+							</li>
+							<li>
+								<div class="colorChg pink">
+									<input type="radio" name="colorChange" id="pinkC">
+									<label for="pinkC">purple</label>
+								</div>
+							</li>
+							<li>
+								<div class="colorChg lightpurple">
+									<input type="radio" name="colorChange" id="lightpurpleC">
+									<label for="lightpurpleC">lightpurple</label>
+								</div>
+							</li>
+							<li>
+								<div class="colorChg lightblue">
+									<input type="radio" name="colorChange" id="lightblueC">
+									<label for="lightblueC">lightblue</label>
+								</div>
+							</li>
+							<li>
+								<div class="colorChg sky">
+									<input type="radio" name="colorChange" id="skyC">
+									<label for="skyC">skyblue</label>
+								</div>
+							</li>
+							<li>
+								<div class="colorChg blue">
+									<input type="radio" name="colorChange" id="blueC">
+									<label for="blueC">blue</label>
+								</div>
+							</li>
+							<li>
+								<div class="colorChg gray">
+									<input type="radio" name="colorChange" id="grayC">
+									<label for="grayC">gray</label>
+								</div>
+							</li>
+							<li>
+								<div class="colorChg lightgray">
+									<input type="radio" name="colorChange" id="lightgrayC">
+									<label for="lightgrayC">lightgray</label>
+								</div>
+							</li>
+							<li>
+								<div class="colorChg lightsky">
+									<input type="radio" name="colorChange" id="lightskyC">
+									<label for="lightskyC">primary</label>
+								</div>
+							</li>
+						</ul>
+						<script>
+							$(document).on('click', '.colorBtn', function () {
+								var radios = $('input[name=colorChange]');
+					
+								for(var i = 0; i < radios.length; i++) {   
+									var $this = $(radios[i]);   
+									
+									if($this.is(":checked")) {	// 체크된 애 확인
+										var selClass = $this.attr('id');
+										$("body").removeClass();
+										$("body").addClass(selClass);
+										return;   
+									} 
+								}
+							});
+						</script>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel colorBtn">확인</button>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

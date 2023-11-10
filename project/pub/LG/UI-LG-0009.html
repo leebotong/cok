@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-LG-0009</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<!-- <div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div> -->
+		<h1></h1>
+		<div class="headerR">
+			<!-- <a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a> -->
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a> 
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="loginWrap">
+				<div>
+					<div class="loginTit">
+						<strong>간편비밀번호 로그인</strong>
+						<p>간편비밀번호 6자리를 입력해주세요.</p>
+					</div>
+					<div class="password" aria-label="간편비밀번호 6자리 입력" role="button" title="간편비밀번호 6자리 입력됨"> <!-- 개발전달: title의 내용은 default 빈값, 보안키패드에서 입력 완료 후 입력된 자릿수 문구 삽입 -->
+						<span class="active" role="img" aria-label=""></span> <!-- 개발전달: 보안키패드에서 입력될 때 active 클래스 추가 -->
+						<span class="active" role="img" aria-label=""></span>
+						<span class="" role="img" aria-label=""></span>
+						<span class="" role="img" aria-label=""></span>
+						<span class="" role="img" aria-label=""></span>
+						<span class="" role="img" aria-label=""></span>
+					</div>
+				</div>
+				
+				<div class="loginBtns">
+					<a href="javascript:;">간편비빌번호 재설정</a>
+					<a href="javascript:;">로그인 방식 선택</a>
+				</div>
+
+				<div style="position:absolute;bottom:0;left:0;margin-top:30px;padding-top:30px;background:#fcf3f3;height:250px;width:100%;text-align:center;color:#ea4956">
+					네이티브
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+		<script>
+			$(function(){
+				if($('.loginWrap').length > 0){
+					$('html').addClass('h100p');
+				}
+				$('.password span').each(function(){
+					if($(this).hasClass('active')){
+						$(this).attr('aria-label','입력됨')
+						console.log(1);
+					} else {
+						$(this).attr('aria-label','')
+					}
+				})
+			})
+		</script>
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

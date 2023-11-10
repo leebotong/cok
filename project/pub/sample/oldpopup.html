@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>2022 콕뱅크 고도화</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<meta name="description" content="[SEPTEM] UI Dev Team Markup Sample">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/oldpop.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/oldpop.js"></script>
+	<link rel="manifest" href="./manifest.json">
+	<script>
+		$(function(){
+			// popOpen(sp1);
+			// popOpen(popupArea);
+			// centerPPP();
+		});
+		$(document).ready(function(){
+			// FULL
+			$('.selectBtn').on('click', function(){
+				$('#popupArea').show();
+			});
+			$('.btnPopClose').on('click', function(){
+				$('#popupArea').hide();
+			});
+
+			// SLIDE
+			$('.selectBtn2').on('click', function(){
+				$('#popupArea2').show();
+			});
+			$('.btnLayerSelectPopClose').on('click', function(){
+				$('#popupArea2').hide();
+			});
+
+			// CENTER
+			$('.selectBtn3').on('click', function(){
+				$('#popupArea3').show();
+			});
+			$('.btnPopClose').on('click', function(){
+				$('#popupArea3').hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- #header -->
+		<div id="header">
+			<div class="headerL">
+				<a href="#nolink" title="이전메뉴" class="headBtn btnPrev"></a>
+			</div>
+			<h1>팝업샘플(old)</h1>
+			<div class="headerR">
+			</div>
+		</div>
+		<!-- //#header -->
+		<!-- #container -->
+		<div id="container">
+			<!-- #contents -->
+			<div id="contents">
+				<a href="javascript:;" title="풀팝업 열기" role="button" class="selectBtn">풀팝업</a><br><br>
+				<a href="javascript:;" title="슬라이드 팝업 열기" role="button" class="selectBtn2 layerSelectBtnBox">슬라이드 팝업</a><br><br>
+				<a href="javascript:;" title="중앙 팝업 열기" role="button" class="selectBtn3">중앙 팝업</a>
+			</div>
+			<!-- //#contents -->
+			<!-- #footer_cont -->
+			<div id="footer_cont">
+			</div>
+			<!-- //#footer_cont -->
+		</div>
+		<!-- //#container -->
+	</div>
+	<!-- //#wrap -->
+
+	<!-- 풀 팝업 -->
+	<div id="popupArea" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent full">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2>잔액 채우기</h2>
+							<a href="#none" id class="btnPopClose">팝업 닫기</a>
+						</div>
+					</div>
+					<div class="popContBox inBtn">
+						<div class="msgUnit">
+							<p class="tit">이제 흩어진 내 돈!<br>내 농협계좌로 <em>한번에 채워</em>보세요.</p>
+						</div>
+						<div>
+							<p class="subTit">잔액 채우기 기능을 위해 다른금융계좌 등록이 필요해요.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat impedit assumenda, quidem quasi odit, alias, sapiente unde nesciunt dignissimos maxime eum repellendus voluptatibus temporibus. Fugiat similique placeat neque cumque ipsum.</p>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">다른금융계좌 등록</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 슬라이드 팝업 -->
+	<!-- popWrap slidePopup -->
+	<div id="popupArea2" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner"><!--  btomBtnBox middleSize -->
+					<div class="layerSelectTitle">
+						<h2 data-popup-focus="popupArea2" class="popTitle" tabindex="0">계좌 선택</h2>
+					</div>
+					<div class="layerSelectContent">
+						<div class="layerSelectBox">
+							<a href="#nolink" title="레이어 셀렉트 선택">
+								<span class="accName"><b class="">바로N콕통장</b><i class="">(농협일)</i></span>
+								<span class="accNum">123-4566-7879-12</span>
+							</a>
+						</div>
+						<div class="layerSelectBox">
+							<a href="#nolink" title="레이어 셀렉트 선택">
+								<span class="accName"><b class="">바로N콕통장</b><i class="">(농협일)</i></span>
+								<span class="accNum">123-4566-7879-12</span>
+							</a>
+						</div>
+						<div class="layerSelectBox">
+							<a href="#nolink" title="레이어 셀렉트 선택">
+								<span class="accName"><b class="">바로N콕통장</b><i class="">(농협일)</i></span>
+								<span class="accNum">123-4566-7879-12</span>
+							</a>
+						</div>
+						<div class="layerSelectBox">
+							<a href="#nolink" title="레이어 셀렉트 선택">
+								<span class="accName"><b class="">바로N콕통장</b><i class="">(농협일)</i></span>
+								<span class="accNum">123-4566-7879-12</span>
+							</a>
+						</div>
+						<div class="layerSelectBox">
+							<a href="#nolink" title="레이어 셀렉트 선택">
+								<span class="accName"><b class="">바로N콕통장</b><i class="">(농협일)</i></span>
+								<span class="accNum">123-4566-7879-12</span>
+							</a>
+						</div>
+						<div class="layerSelectBox">
+							<a href="#nolink" title="레이어 셀렉트 선택">
+								<span class="accName"><b class="">바로N콕통장</b><i class="">(농협일)</i></span>
+								<span class="accNum">123-4566-7879-12</span>
+							</a>
+						</div>
+						<div class="layerSelectBox">
+							<a href="#nolink" title="레이어 셀렉트 선택">
+								<span class="accName"><b class="">바로N콕통장</b><i class="">(농협일)</i></span>
+								<span class="accNum">123-4566-7879-12</span>
+							</a>
+						</div>
+						<div class="layerSelectBox">
+							<a href="#nolink" title="레이어 셀렉트 선택">
+								<span class="accName"><b class="">바로N콕통장</b><i class="">(농협일)</i></span>
+								<span class="accNum">123-4566-7879-12</span>
+							</a>
+						</div>
+						<div class="layerSelectBox">
+							<a href="#nolink" title="레이어 셀렉트 선택">
+								<span class="accName"><b class="">바로N콕통장</b><i class="">(농협일)</i></span>
+								<span class="accNum">123-4566-7879-12</span>
+							</a>
+						</div>
+						<div class="layerSelectBox">
+							<a href="#nolink" title="레이어 셀렉트 선택">
+								<span class="accName"><b class="">바로N콕통장</b><i class="">(농협일)</i></span>
+								<span class="accNum">123-4566-7879-12</span>
+							</a>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" class="nor">취소</button>
+							<button type="button" class="sel">확인</button>
+						</div>
+					</div>
+					<a href="#none" title="선택 화면 닫기" role="button" data-popup-focus-close="popupArea2-close" onclick="popClose(this);" class="btnLayerSelectPopClose"></a>
+				</div>
+			</div>
+			<!--//레이어 셀렉트 팝업 -->
+		</div><!--// 팝업구분용 dim레이어 08/30추가 -->
+	</div>
+
+	<!-- 중앙 팝업 -->
+	<div id="popupArea3" class style="display:none;">
+		<div class="rollPopArea inPaddPop">
+			<div class="popContent full fix">
+				<div class="popContentBox openbank">
+					<div class="popContBox">
+						<div id="Layer_Pop" class="Layer_Pop layerPopEvent nhAccou Layer_Pop_Center">
+							<div class="newProdTitle">
+								<h2>ddd</h2>
+							</div>
+							<div class="newProdInfo">
+								<div>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p><br><br>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p><br><br>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati accusantium natus dicta autem incidunt. Ullam, earum laboriosam maxime quas ad id commodi modi fuga expedita necessitatibus aut consequuntur nobis.</p>
+								</div>
+								<div class="mt10">
+									<a href="#nolink" title>농협 금융상품 둘러보기</a>
+								</div>
+							</div>
+							<div class="Layer_Pop_Close">
+								<div class="btnArea">
+									<button type="button" title class="line">계좌등록</button>
+									<button type="button" title class="sel">계좌개설</button>
+								</div>
+							</div>
+							<button type="button" href="#nolink" class="btnPopClose">팝업 닫기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- DIM은 마크업 하단 1개 고정 -->
+	<!-- popWrap centerPopup -->
+	<div class="dim"></div>
+
+</body>
+</html>

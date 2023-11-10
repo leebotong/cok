@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SE-0605</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>입출금 알림 신청</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<section class="section30">
+				<p class="defTit2">알림대상 계좌</p>
+				<div class="accLineBox mt10 type2">
+					<div class="accTypeWrap">
+						<div class="accInLayout">
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<span class="bankBookName">주머니(money)통장</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1736-1551-38</span>
+										</div>
+									</div>
+								</div>
+								<div>
+									<button type="button" class="btnSm point">재선택</button><!-- [2022-09-29] 윤지현:클래스추가,문구수정 -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="formWrap">
+					<div class="formItem">
+						<div class="formTit">이용요금 출금계좌
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<p class="tit">이용요금 출금계좌</p>
+									<p>알림대상계좌가 농협은행 계좌인 경우 이용료 납부계좌는 농협은행 계좌만 선택 가능합니다.<br>
+										알림대상 계좌가 농·축협 계좌인 경우 이용료 납부계좌는 농·축협 계좌만 선택 가능합니다.<br>
+										거래중지계좌는 입출금 알림 서비스를 이용할 수 없습니다.</p>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->	
+						</div>
+						<div class="inpSel isLogo">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel placeholder">
+								<span class="logo">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+								</span>
+								<div class="accNum">
+									<span class="tit">주머니(money)통장</span>
+									<span class="num">352-1736-1551-38</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>	
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button">취소</button>
+				<button type="button" class="sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div><!-- //#wrap -->
+</body>
+</html>
+

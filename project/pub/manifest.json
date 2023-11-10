@@ -1,0 +1,9 @@
+{
+	"short_name": "쿡 리뉴얼",
+	"name": "COOK",
+	"start_url": "./manifest.html",
+	"display": "standalone",
+	"orientation": "portrait",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}

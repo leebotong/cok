@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0501</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>계좌비밀번호 변경</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<p class="defTit2">계좌번호 선택</p>
+      <div class="formItem">
+        <!-- case : 계좌 선택시 노출 -->
+        <div class="inpSel selectAccount">
+          <a href="javascript:;" title="계좌선택" role="button" id="inp1" class="btnSel placeholder">계좌번호 선택</a>
+          <a href="javascript:CrossShowHideClick('selectAccount','insertAccount');" role="button" aria-controls="inp2" class="btnSm">직접입력</a>
+        </div>
+        <!--// case : 계좌 선택시 노출 -->
+        <!-- case : 계좌번호 직접입력 선택시 노출 -->
+        <div class="inpText insertAccount">
+          <input type="tel" title="계좌번호 입력" value id="inp2" class="tyTxt" placeholder="‘-’없이 입력해주세요.">
+          <button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+          <a href="javascript:CrossShowHideClick('insertAccount','selectAccount');" role="button" aria-controls="inp1" class="btnSm">계좌선택</a>
+        </div>
+        <!-- // case : 계좌번호 직접입력 선택시 노출 -->
+      </div>
+
+      <div class="formWrap">
+        <strong class="defTit2">거래구분</strong>
+        <div class="formItem">
+          <div class="inpChk radioCircle">
+            <input type="radio" name="radio3" id="radio31" checked>
+            <label for="radio31">비밀번호를 잊으신 경우</label>
+          </div>
+          <div class="inpChk radioCircle">
+            <input type="radio" name="radio3" id="radio32">
+            <label for="radio32">비밀번호를 알고 계신 경우</label>
+          </div>
+        </div>
+      </div>
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>계좌와 연결된 현금(체크)카드의 비밀번호는 변경되지 않습니다.</li>
+          <li>신규 비밀번호 입력 시 생년월일, 연속된 4자리 숫자, 전화번호 등은 사용하실 수 없습니다.</li>
+          <li>비밀번호를 잊으신 경우(비밀번호 신규등록 및 오류회수 초과 포함)는 입출식, 저축성, 신탁 계좌만 변경가능하며, 신분증 및 본인명의 휴대폰 인증이 필요합니다.<br>
+            (단, 미성년자, 외국인, 공동명의계좌, 임의단체계좌는 영업점에서 변경 가능합니다.)</li>
+          <li>서비스 이용시간:평일 00:30~24:00, <span class="pColor">토요일 00:30~24:00, 일요일/공휴일 00:30~24:00</span></li>
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel dis">확인</button><!-- 조건충족시 disabled 제거-->
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

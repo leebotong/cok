@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0602</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>입출금 계좌 해지</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">해지하실 <strong>농&middot;축협 입출금 계좌를</strong><br> <strong>선택</strong>해주세요.</p>
+				<ul class="listDot">
+					<li>비밀번호 확인 후 등록 가능합니다.<br>(5회 오류 시 영업점 방문이 필요해요.)</li>
+				</ul>
+			</div>
+
+			<section class="section40">
+				<ul class="accChkBankList" title="계좌선택">
+					<li>
+						<div class="roundBox noBorder accChkBank state"><!--checkbox있을때 state있어야함.-->
+							<div class="roundInBox">
+								<div class="accTypeWrap accCheckType">
+									<div class="accInLayout">
+										<div class="accStoreIn">
+											<p class="bankStore">대구경북양돈농협 삼성창조캠퍼스지점</p>
+											<div class="accInfo accInfoInLayoutWrap">
+												<div class="accInfoInLayout">
+													<div class="logoWrap">
+														<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+													</div>
+													<div class="accInfoWrap">
+														<strong class="accName">
+															<span class="bankBookName">NH농협채움샐러리맨우대통장</span>
+														</strong>
+														<div class="accNumWrap">
+															<div class="accNumBox">
+																<span class="accNumber">352-1775-6397-03</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="accDataWrap">
+													<div class="accPossible">잔액 <strong class="dataWrap"><em class="data">1,200,000</em><span class="unit">원</span></strong></div>
+												</div>
+											</div>
+										</div>
+										<div class="checkBox">
+											<input type="checkbox" name="agreeChk" id="aggrChk10">
+											<label for="aggrChk10"><span class="blind">계좌선택</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="roundBox noBorder accChkBank state"><!--checkbox있을때 state있어야함.-->
+							<div class="roundInBox">
+								<div class="accTypeWrap accCheckType">
+									<div class="accInLayout">
+										<div class="accStoreIn">
+											<p class="bankStore">대구경북양돈농협 삼성창조캠퍼스지점</p>
+											<div class="accInfo accInfoInLayoutWrap">
+												<div class="accInfoInLayout">
+													<div class="logoWrap">
+														<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+													</div>
+													<div class="accInfoWrap">
+														<strong class="accName">
+															<span class="bankBookName">보통예금</span>
+														</strong>
+														<div class="accNumWrap">
+															<div class="accNumBox">
+																<span class="accNumber">352-1775-6397-03</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="accDataWrap">
+													<div class="accPossible">잔액 <strong class="dataWrap"><em class="data">1,200,000</em><span class="unit">원</span></strong></div>
+												</div>
+											</div>
+										</div>
+										<div class="checkBox">
+											<input type="checkbox" name="agreeChk" id="aggrChk20">
+											<label for="aggrChk20"><span class="blind">계좌선택</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					//계좌선택
+					$('.roundBox.state').on("click", function(e){
+						if ($(this).hasClass('active')) { // 계좌선택됨 상태
+							$(this).removeClass('active');
+							$(this).find('input[type=checkbox]').prop("checked", false);
+						} else {
+							$(this).addClass('active');
+							$(this).find('input[type=checkbox]').prop("checked", true);
+						}
+					});
+				});
+			</script>
+
+			<section class="section40">
+				<div class="jsTgWrap accRegist">
+					<div class="btnInArea">
+						<a href="javascript:;" role="button" class="jsTgBtn point active">계좌 직접입력 해지<i></i></a>
+					</div>
+					<div class="jsTgCont formExpBox">
+						<div class="formWrap">
+							<div class="formItem">
+								<strong class="formTit">계좌번호</strong>
+								<div class="inpText">
+									<input type="tel" title="계좌번호" class="tyTxt" value placeholder="- 없이 입력">
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+							</div>
+							<div class="formItem">
+								<strong class="formTit">비밀번호</strong>
+								<div class="inpText thin">
+									<button type="button" title="비밀번호 4자리 입력됨" aria-label="4자리 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+									<input type="password" title="비밀번호 4자리 입력" aria-hidden="true" class="tyTxt" value placeholder="숫자 4자리 입력" readonly>
+									<a href="javascript:;" role="button" class="btnSm" aria-label="">계좌확인</a>
+								</div>
+							</div>
+							<p class="infoTxt">비밀번호 <span class="pColor">5회 오류 시 영업점 방문</span>이 필요합니다.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+          <li>농&middot;축협 입출금 계좌를 해지할 수 있으며, 해지가 완료된 후에는 취소하거나 정정 하실 수 없습니다.</li>
+          <li>NH농협은행의 입출금 계좌를 해지하시려면 영업점을 방문하시거나 스마트(인터넷뱅킹)을 이용해주시기 바랍니다.</li>
+          <li>계좌에 잔액이 있는 경우 비대면 해지를 위해 잔액을 입금 받을 농&middot;축협 입출금 계좌가 필요합니다.(현재 잔액이 0원이어도 아직 지급받지 않은 이자가 있을 수 있습니다.)</li>
+					<li>입금 받을 계좌는 콕뱅크에 등록된 농&middot;축협 계좌만 선택 가능하며, 입력 받을 농&middot;축협 계좌가 없다면 영업점을 방문하시어 해지 하시기 바랍니다.</li>
+					<!--[2022-11-14] 안내문구 수정 상시운영 : 윤희정-->
+					<li>인터넷환전 신청이 있는 경우 통장을 해지하시면 외화수령 기간 경과 후 자동 재환전이 불가능하며 신분증 지참 후 가까운 농·축협 영업점에 방문하여 외화를 수령하시기 바랍니다. (단, 환전금액이 10달러 이상일 경우 외화주머니에 보관 가능)</li>
+					<!--//[2022-11-14] 안내문구 수정 상시운영 : 윤희정-->
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

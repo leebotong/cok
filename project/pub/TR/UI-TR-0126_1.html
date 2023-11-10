@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-0110</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/iscroll.js"></script>
+	<script src="../../js/jquery.animateNumber.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script type="text/javascript">
+		<!--
+			$(document).ready(function(){
+				$('#contents').animate({scrollTop:200},600);
+				//iscroll 실행
+				var myScroll;
+				loaded ();
+				moneyBoxSet();
+			});
+			//iscroll 생성
+			function loaded () {
+				myScroll = new IScroll('#bankStateMenu', {
+					eventPassthrough: true,
+					scrollX: true,
+					scrollY: false,
+					preventDefault: false
+				});
+			}
+			//마이 포켓 세팅
+			function moneyBoxSet(){
+				var moneyPay = jQuery('.moneyBoxPay em').text().replace(/,/g,''), //목표금액
+						moneyAvg = jQuery('.moneyAvg em').text().replace(/,/g,''), //평잔액
+						//myMoneyDay = jQuery('.myMoney p').text().substr(1,10), //변경예정일
+						myMoneyPay = jQuery('.myMoney em').text().replace(/,/g,''), //변경목표액
+						pointBox = jQuery('.moneyBoxViewArea .moneyGrpBox .pointBox'), //그래프 박스
+						_pointGuidOnStd = jQuery('.pointGuid.on.std'),
+						_pointGuidOn = jQuery('.pointGuid.on'),
+						_gradBox = jQuery('.gradBox'),
+						inTxt = pointBox.find('.inTxt'), //전체그래프
+						_outStd = inTxt.find('.std'), //목표오버 그래프
+						_inGrp = inTxt.find('.inGrp'), //목표 그래프
+						cntAvg,
+						goalCheckTF;
+						moneyHey = inTxt.height(); //그래프 높이값
+						moneyBy = moneyPay - moneyAvg; //목표대비
+				jQuery('#moneyBoxPay').text(moneyPay/10000+"만"); //목표금액
+				jQuery('#moneyAvg i').text(jQuery('.moneyAvg em').text()); //평잔액
+				jQuery('.moneyBy em').text(String(moneyBy).replace(/(\d)(?=(?:\d{3})+(?!\d))/g,'$1,'));
+				//console.log('현재 그래프 값 = '+moneyHey);
+				//금액 animate효과
+				textAnimate();
+				var strCnt,
+						MT5 = 187,/* 100만 ~ 300만 구간 최대높이 */
+						MT4 = 127,/* 50만 ~ 100만 구간 최대높이 */
+						MT3 = 72,/* 30만 ~ 50만 구간 최대높이 */
+						MT2 = 26,/* ~ 30만 구간 최대높이 */
+						CT5 = 60,/* 300만 ~ 500만 구간높이 */
+						CT4 = 55,/* 100만 ~ 300만 구간높이 */
+						CT3 = 48,/* 50만 ~ 100만 구간높이 */
+						CT2 = 56;/* 30만 ~ 50만 구간높이 */
+				goalCheck();//목표체크
+				//목표값 설정
+				//console.log('목표금액 = '+moneyPay/10000);
+				switch(moneyPay/10000){
+					case 500:
+						_gradBox.find('.p5').addClass('on').text('목표금액 500만원');
+						_pointGuidOnStd.addClass('p5');
+						inTxt.addClass('p5');
+						break;
+					case 300:
+						_gradBox.find('.p4').addClass('on').text('목표금액 300만원');
+						_pointGuidOnStd.addClass('p4');
+						inTxt.addClass('p4');
+						break;
+					case 100:
+						_gradBox.find('.p3').addClass('on').text('목표금액 100만원');
+						_pointGuidOnStd.addClass('p3');
+						inTxt.addClass('p3');
+						break;
+					case 50:
+						_gradBox.find('.p2').addClass('on').text('목표금액 50만원');
+						_pointGuidOnStd.addClass('p2');
+						inTxt.addClass('p2');
+						break;
+					case 30:
+						_gradBox.find('.p1').addClass('on').text('목표금액 30만원');
+						_pointGuidOnStd.addClass('p1');
+						inTxt.addClass('p1');
+						break;
+				};
+				//변경 목표값 설정
+				//console.log('변경목표금액 = '+myMoneyPay/10000);
+				switch(myMoneyPay/10000){
+					case 500:
+						_pointGuidOn.addClass('p5');
+						break;
+					case 300:
+						_pointGuidOn.addClass('p4');
+						break;
+					case 100:
+						_pointGuidOn.addClass('p3');
+						break;
+					case 50:
+						_pointGuidOn.addClass('p2');
+						break;
+					case 30:
+						_pointGuidOn.addClass('p1');
+						break;
+				};
+				//평잔액 구하기
+				if(moneyAvg==0){
+					pointBox.removeClass('on');
+					pointBox.find('.inTxt').css('height','65px').removeClass('over').removeClass('std').removeClass('out');
+					//console.log('평잔액 없을때 = '+moneyAvg);
+				}else if(moneyAvg > 0 && moneyAvg < 150000){
+					pointBox.addClass('on');
+					//console.log('평잔액 15만 이하 = '+moneyAvg);
+				}else if(moneyAvg >= 150000 && moneyAvg <= 300000){
+					pointBox.addClass('on');
+					inTxt.addClass('std');
+					cntAvg = (moneyAvg / 300000) * 20;
+					inTxt.animate({'height':Number(cntAvg+45)},900)
+					//console.log('평잔액 30만 = '+moneyAvg);
+				}else if((moneyAvg > 300000 && moneyAvg <= 500000) || moneyPay == 500000){
+					pointBox.addClass('on');
+					inTxt.addClass('std');
+					strCnt = (CT2/200000) * (Number(moneyAvg)-300000);
+					if(goalCheckTF){
+						//inTxt.animate({'height':123},900);
+						goalOver();
+					}else{
+						/* 목표미달 금액은 전체 박스에서 상단 텍스트 공간을 포함으로 css calc로 계산해서 생기는 편차값을 보정해준다 */
+						inTxt.animate({'height':strCnt+45+MT2-10},900);
+					};
+					//console.log('평잔액 50만 = '+moneyAvg);
+				}else if((moneyAvg > 500000 && moneyAvg <= 1000000) || moneyPay == 1000000){
+					pointBox.addClass('on');
+					inTxt.addClass('std');
+					strCnt = (CT3/500000) * (Number(moneyAvg)-500000);
+					if(goalCheckTF){
+						//inTxt.animate({'height':178},900);
+						goalOver();
+					}else{
+						inTxt.animate({'height':strCnt+45+MT3+7},900);
+					};
+					//console.log('평잔액 100만 = '+moneyAvg);
+				}else if((moneyAvg > 1000000 && moneyAvg <= 3000000) || moneyPay == 3000000){
+					pointBox.addClass('on');
+					inTxt.addClass('std');
+					strCnt = (CT4/2000000) * (Number(moneyAvg)-1000000);
+					if(goalCheckTF){
+						//inTxt.animate({'height':238},900);
+						goalOver();
+					}else{
+						inTxt.animate({'height':strCnt+45+MT4+5},900);
+					};
+					//console.log('평잔액 300만 = '+moneyAvg);
+				}else if((moneyAvg > 3000000 && moneyAvg <= 5000000) || moneyPay == 5000000){
+					pointBox.addClass('on');
+					inTxt.addClass('std');
+					strCnt = (CT5/2000000) * (Number(moneyAvg)-3000000);
+					//console.log('목표달성 = '+goalCheckTF);
+					if(goalCheckTF){
+						//inTxt.animate({'height':298},900);
+						goalOver();
+					}else{
+						inTxt.animate({'height':strCnt+45+MT5},900);
+					};
+					//console.log('평잔액 500만 = '+moneyAvg);
+				}else{
+					pointBox.addClass('on');
+					inTxt.addClass('std');
+					inTxt.addClass('over');
+					inTxt.addClass('out');
+					//inTxt.animate({'height':312},900);
+					goalOver();
+					//console.log('평잔액 500만 이상 = '+moneyAvg);
+				};
+				//console.log('그래프 높이 계산값 = '+cntAvg);
+				//목표금액을 초과한 경우
+				function goalOver(cnt){
+					if(inTxt.hasClass('out')){
+						//inTxt.css('height',inTxt.height()+20);
+						//var heiDiff = 318 - Number(inTxt.height()),
+						//		moneyDiff = 5000000 + parseInt(moneyBy);
+						//console.log('그래프 높이 차이 = '+heiDiff+' === 금액 차이 = '+moneyDiff);
+						if((moneyAvg > 3000000 && moneyAvg <= 5000000)){
+							strCnt = (CT5/2000000) * (Number(moneyAvg)-3000000);
+							if(strCnt>CT5-16){
+								_outStd.css('height',CT5+MT5);
+							}else{
+								_outStd.css('height',strCnt+16+MT5);
+							};
+							grpAnimate();
+						}else if((moneyAvg > 1000000 && moneyAvg <= 3000000)){
+							strCnt = (CT4/2000000) * (Number(moneyAvg)-1000000);
+							if(strCnt>CT4-16){
+								//console.log('결과값 최종 = '+CT4);
+								_outStd.css('height',CT4+MT4);
+							}else{
+								//console.log('결과값 최종 = '+strCnt);
+								_outStd.css('height',strCnt+16+MT4);
+							};
+							grpAnimate();
+						}else if((moneyAvg > 500000 && moneyAvg <= 1000000)){
+							/* 금액대비구간단위수치 = (구간높이값/구간차액) * (평잔액/구간최저금액) */
+							strCnt = (CT3/500000) * (Number(moneyAvg)-500000);
+							/*이구간 최대 높이 48 텍스트가 들어가는 최소 높이 16을 뺀다
+							그래서 남은 평잔액을 높이로 환산했을때 32보다 크면 무조건 48을 넣는다 */
+							if(strCnt>CT3-16){
+								_outStd.css('height',CT3+MT3);
+							}else{
+								/* 계산된 값에 텍스트 높이를 더해준다. 그래야 최소값이 나오더라도 글씨가 보인다. 전단계 최대 높이값을 넣어 준다. */
+								_outStd.css('height',strCnt+16+MT3);
+							};
+							grpAnimate();
+						}else if((moneyAvg > 300000 && moneyAvg <= 500000)){
+							strCnt = (CT2/200000) * (Number(moneyAvg)-300000);
+							if(strCnt>CT2-16){
+								_outStd.css('height',CT2+MT2);
+							}else{
+								_outStd.css('height',strCnt+16+MT2);
+							};
+							grpAnimate();
+						}else{
+							_outStd.css('height',280);
+							inTxt.animate({'height':'317px'},900);
+						}
+						//console.log('오버 높이 = '+Number(_outStd.height())+' === 목표 높이 = '+Number(_inGrp.height()));
+					};
+				};
+				function grpAnimate(){
+					inTxt.animate({'height':Number(_outStd.height())+35},900);
+				};
+				function goalCheck(){
+					//목표달성
+					//console.log('목표액 = '+moneyPay+' === 평잔액'+moneyAvg);
+					if(Number(moneyPay) > Number(moneyAvg)){
+						jQuery('.moneySumTxt').text('목표금액 미달성');
+						_pointGuidOnStd.find('.txt').text('목표금액 달성 시');
+						_pointGuidOnStd.find('.pot').text('우대금리 2.3%p');
+						_pointGuidOnStd.removeClass('over');
+						goalCheckTF = false;
+					}else{
+						jQuery('.moneySumTxt').text('목표금액 달성');
+						_pointGuidOnStd.find('.txt').text('짝짝짝');
+						_pointGuidOnStd.find('.pot').text('목표금액 달성!');
+						_pointGuidOnStd.addClass('over');
+						inTxt.addClass('over');
+						if(Number(moneyPay) < Number(moneyAvg)){inTxt.addClass('out');}
+						goalCheckTF = true;
+					}
+					//jQuery('.pointGuid .date').text(myMoneyDay+" 부터");
+				};
+			};
+			//금액 animate효과
+			function textAnimate(){
+				var comma_separator_number_step = jQuery.animateNumber.numberStepFactories.separator(',');
+				jQuery('#moneyAvg i').animateNumber(
+				{
+					number:5100000,
+					numberStep:comma_separator_number_step
+				}
+				,2000);
+			};
+		//-->
+		</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>농협 전계좌 조회</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div id="bankStateMenu">
+					<p>moneyBoxViewArea</p>
+					<div role="img" class="moneyBoxViewArea">
+						<div class="moneyGrpBox">
+							<div class="pointBox on">
+								<div class="inTxt"><!-- 최대치297 초과시 317 over:달성 std:15만 out:초과 -->
+									<div class="infoBxo">
+										<span class="alert">아직 부족해요</span>
+										<span class="txt">내 예상 평잔</span>
+										<p id="moneyAvg" class="sum"><i>0</i>원</p>
+									</div>
+									<div class="std">기본금리 0.1% 적용</div>
+									<div class="inGrp"><i>우대금리 2.5% 예정</i></div>
+								</div>
+								<div class="gradBox">
+									<span class="p5">500만원</span>
+									<span class="p4">300만원</span>
+									<span class="p3">100만원</span>
+									<span class="p2">50만원</span>
+									<span class="p1">30만원</span>
+								</div>
+							</div>
+						</div>
+						<div class="golBox">
+							<div class="pointGuid on std">
+								<span class="date"></span>
+								<p class="txt"></p>
+								<p class="pot"></p>
+							</div>
+							<!--div class="pointGuid on">
+								<span class="date"></span>
+								<p class="txt">목표금액 변경 예정</p>
+								<p class="pot">우대금리 0.5%P</p>
+							</div-->
+						</div>
+					</div>
+
+					<div class="listTbl">
+						<div class="listTit">
+							<strong>리스트 타이틀</strong>
+							<a href="javascript:;" role="button" class="btnDetail">상세보기</a>
+						</div>
+						<ul>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">목표금액(평잔액)</span>
+									<p class="txt"><span class="moneyBoxPay"><em class="pColor">1,000,000</em>원</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">내 예상 평잔액
+										<!-- tooltip -->
+										<div class="tooltipWrap">
+											<button type="button" aria-label="툴팁보기"  class="btnToolTip"></button>
+											<div class="tooltipCont">
+												<strong class="tit">내 예상 평잔액이란?</strong>
+												<p>전일기준, 이자계산기준일까지의 예상 평잔액 입니다.</p>
+												<p>이자계산기준일 : 매월 3월, 6월, 9월, 12월의 넷째 토요일</p>
+												<p>평잔액=이자계산기준일까지의 일별 잔액의 합/이자계산일 수</p>
+												<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+											</div>
+										</div>
+										<!-- //tooltip -->
+									</span>
+									<p class="txt">
+										<span><em class="pColor">500,000</em>원</span>
+										<span>(전일 기준 예상 평잔액)</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">목표금액 대비<br>부족 평잔액</span>
+									<span class="moneyAvg"><em class="pColor">4,000,000</em>원</span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">목표금액 달성을<br>위한 필요 입금액
+										<!-- tooltip -->
+										<div class="tooltipWrap">
+											<button type="button" aria-label="툴팁보기"  class="btnToolTip"></button>
+											<div class="tooltipCont">
+												<strong class="tit">목표금액 달성을 위한 필요 입금액</strong>
+												<p>목표금액 달성을 위해 현재 필요한 입금액입니다. 입금 후 목표금액 달성을 위해서는 기존 잔액과 필요 입금액을 합산한 잔액을 결산일까지 유지해야만 우대금리 지급이 가능합니다.(조회일 당시 목표금액 달성된 경우에는 '0원'으로 표기됩니다.)</p>
+												<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+											</div>
+										</div>
+										<!-- //tooltip -->
+									</span>
+									<span><em class="pColor">1,000,000</em>원</span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">마이 포켓 상태</span>
+									<span>목표금액 달성</span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">우대금리 기준일</span>
+									<span>2022년 5월 3일</span>
+								</div>
+							</li>
+							<li>
+								<div class="listIn_flex">
+									<span class="tit">우대금리 지급일</span>
+									<span>2022년 12월 3일</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<!-- <div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class>거래내역</button>
+					<button type="button" class="sel">송금</button>
+				</div>
+			</div> -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<div id="popupArea"></div>
+
+</body>
+</html>

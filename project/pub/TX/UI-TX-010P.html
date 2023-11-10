@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TX-010P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			 popOpen(popupA);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- #header -->
+		
+		<!-- //#header -->
+		<!-- #container -->
+		<div id="container">
+			<!-- #contents -->
+			<div id="contents">
+				<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+			</div>
+			<!-- //#contents -->
+			<!-- #footer_cont -->
+			<div id="footer_cont">
+			</div>
+			<!-- //#footer_cont -->
+		</div>
+		<!-- //#container -->
+	</div>
+	<!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP	-->
+		<div id="popupA" class="popupWrap full">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">지방세 납부상세</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<section>
+								<!-- [2022-07-07] 김자영 : 전체 마크업수정 -->
+								<div class="listTbl">
+									<div class="listTit">
+										<strong>지방세 총괄납부(다건)</strong>
+									</div>
+									<ul>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">납부일시</span> 
+												<p class="txt">2022.03.19 15:41:34</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">총 납부건수</span>
+												<p class="txt">5건</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">총 납부금액</span>
+												<p class="txt"><strong class="dataWrap"><em class="data">100,000</em><span class="unit">원</span></strong></p>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="listTbl">
+									<div class="listTit">
+										<strong>총괄납부 내역</strong>
+									</div>
+									<section>
+										<div class="inqueryList">
+											<ul class="historyList">
+												<li>
+													<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+														<div class="flex">
+															<p class="tit">재산세(주택)</p>
+															<strong class="dataWrap pColor"><em class="data">170,000</em><span class="unit">원</span></strong>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+														<div class="flex">
+															<p class="tit">재산세(건축물)</p>
+															<strong class="dataWrap pColor"><em class="data">170,000</em><span class="unit">원</span></strong>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+														<div class="flex">
+															<p class="tit">자동차세(자동차)</p>
+															<strong class="dataWrap pColor"><em class="data">170,000</em><span class="unit">원</span></strong>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+														<div class="flex">
+															<p class="tit">재산세(건축물)</p>
+															<strong class="dataWrap pColor"><em class="data">170,000</em><span class="unit">원</span></strong>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;" title="상세보기" role="button" class="listItemArrow">
+														<div class="flex">
+															<p class="tit">자동차세(자동차)</p>
+															<strong class="dataWrap pColor"><em class="data">170,000</em><span class="unit">원</span></strong>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</section>
+								</div>
+								<!--// [2022-07-07] 김자영 : 전체 마크업수정 -->
+							</section>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button class="sel">확인</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

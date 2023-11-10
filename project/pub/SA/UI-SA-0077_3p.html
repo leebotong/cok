@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SA-0077_1p</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);	
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>이용약관</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">약관 설명서</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<!-- CMS 관리 영역// -->
+						<div class="terms">
+							<p>금융결제원은 인증서 부정발급 및 부정사용 방지 등 관리를 위해 다음과 같이 가입자 개인정보를 제3자에게 제공하고자 합니다.</p>
+							<h4 class="termsSubTit">개인정보 제3자 제공 내역</h4>
+							<div class="wrapTblDefault">
+								<table class="thCenter tdCenter">
+									<caption>개인정보 제3자 제공 내역</caption>
+									<colgroup>
+										<col style="width:15%;">
+										<col style="width:auto;">
+										<col style="width:20%;">
+										<col style="width:25%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th>제공받는 자</th>
+											<th>제공 목적</th>
+											<th>제공 항목</th>
+											<th>보유기간</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>등록대행기관</td>
+											<td>인증서 파일 탈취, 인증서 부정발급 및 부정사용 등이 확인 또는 의심되는 경우 전자금융거래 사고 등 금전적인 피해가 발생하지 않도록 고객 앞 안내하기 위함<br>(인증서 유효기간 만료일 안내 포함)</td>
+											<td>성명, 생년월일, 연락처(전화번호 또는 휴대폰번호, 이메일주소), 기기정보</td>
+											<td><strong style="font-size:16px"><u>10년</u></strong><br><p style="font-size:12px">(YesKey 전자서명인증업무준칙에 의거 10년 동안 안전하게 보관하며, 보관기간 경과 시 지체 없이 파기)</p></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p>상기 개인정보 제3자 제공에 대한 동의를 거부할 권리가 있으나, 동의를 거부할 경우 인증서를 발급받으실 수 없습니다.</p>
+						</div>
+						<!-- //CMS 관리 영역 -->
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">확인</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

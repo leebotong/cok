@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0101P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupB);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupB" class="popupWrap slide">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">추천인 입력</h2>
+					</div>
+					<div class="layerSelectContent">
+						<div class="fomrWrap">
+							<div class="formItem">
+								<strong class="formTit">추천인번호
+									<!-- [2022-08-19] 삭제 tootip -->
+									<!-- <div class="tooltipWrap">
+										<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+										<div class="tooltipCont">
+											<strong class="tit">추천인번호</strong>
+											<ul class="listDot">
+												<li>추천인번호는 상품가입 완료 시 자동으로 생성되며 SMS로 자동발송 됩니다.</li>
+												<li>상대방이 추천인번호를 입력하여 NH매일적금을 가입 완료 할 경우 본인 및 상대방 모두 우대금리를 받으실 수 있습니다.</li>
+												<li>추천인번호 입력을 통한 우대금리는 가입 계좌당 1회만 적용 가능합니다.</li>
+											</ul>
+											<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+										</div>
+									</div> -->
+									<!-- //tootip -->
+									<div class="smTxt"><a href="javascript:;" class="underLine pColor">추천인번호 안내</a></div>
+									<!-- //[2022-08-19] -->
+								</strong>
+
+								<div class="inpText">
+									<input type="text" title="추천인번호" value="" class="tyTxt" placeholder="추천인번호 입력">
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea dv64">
+							<button type="button">추천인번호가 없어요</button>
+							<button type="button" class="sel">확인</button>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

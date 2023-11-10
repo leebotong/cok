@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SE-0103</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>입출금 알림 신청</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<section class="section30">
+				<p class="defTit2">알림대상 계좌</p>
+				<div class="accLineBox mt10 type2"> <!-- [2022-09-29] 윤지현:type 클래스추가 -->
+					<div class="accTypeWrap">
+						<div class="accInLayout">
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<span class="bankBookName">주머니(money)통장</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1736-1551-38</span>
+										</div>
+									</div>
+								</div>
+								<!-- [2022-09-29] 윤지현:div 태그삭제 -->
+								<button type="button" class="btnSm point">재선택</button><!-- [2022-09-29] 윤지현:클래스추가,문구수정 -->
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>	
+			<!-- <hr class="divingLine"> [202-09-29] 윤지현:삭제 -->
+			<section class="section40"> <!-- [2022-09-29] 윤지현:클래스수정 -->
+				<p class="defTit2 ac">알림은 어떻게 보내드릴까요?</p>
+				<!-- [2022-09-05] radio로 변경 -->
+				<div class="boxRdoGroup jsTgWrap alarmWrap type2">
+					<div class="inpChk">
+						<input type="radio" name="radio7" id="radio71" class="jsTgBtn">
+						<label for="radio71">알림을 실시간으로 받을래요.</label>
+					</div>
+					<div class="alarmCont jsTgCont">
+						<p class="tits">알림은 이렇게 보내드려요.</p>
+						<div class="listTbl">
+							<div class="listIn_flex">
+								<span class="tit">알림범위</span> 
+								<p class="txt">전체</p>
+							</div>
+							<div class="listIn_flex">
+								<span class="tit">금액제한</span> 
+								<p class="txt">제한없음</p>
+							</div>
+							<div class="listIn_flex">
+								<span class="tit">발송시간</span> 
+								<p class="txt">실시간</p>
+							</div>
+							<div class="listIn_flex">
+								<span class="tit">방해금지시간</span> 
+								<p class="txt">없음</p>
+							</div>
+							<div class="listIn_flex">
+								<span class="tit">자동이체알림</span> 
+								<p class="txt">제한발송</p>
+							</div>
+						</div>
+					</div>
+					<div class="inpChk link">
+						<input type="radio" name="radio7" id="radio72" class="jsTgBtn2">
+						<label for="radio72">알림 조건을 직접 설정할래요.</label>
+					</div>
+				</div>
+				<script>
+					$(function(){
+						$('.jsTgBtn2').click(function(){
+							$('.alarmCont').hide();
+						});
+					});
+				</script>
+				<!-- //[2022-09-05] radio로 변경 -->
+
+				<div class="formItem mt30"> <!-- [2022-09-29] 윤지현:클래스수정 -->
+					<strong class="inpChk">
+						<input type="checkbox" name="chk1" id="chk11">
+						<label for="chk11">잔액은 표시하지 말아주세요.</label>
+					</strong>
+				</div>
+			</section>
+
+			<hr class="divingLine">
+
+			<section class="section30">
+				<div class="formWrap">
+					<div class="formItem">
+						<div class="formTit">요금제 선택
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<p class="tit">요금제 선택</p>
+									<p>정액제(매월9백원), 종량제(건당 20원)<br> 
+									요금제는 계좌별로 설정 가능하며, 다음달 10일 이용요금 납부 계좌에서 자동출금처리됩니다. (계좌별 휴대폰별 각각 계산 후 청구)</p>
+									<p>변경된 이용요금으로 바로 적용을 원하시는 경우 반드시 입추금알림 해지 후 재가입하시기 바랍니다.</p>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->	
+						</div>
+						<div class="boxRdoGroup multi type2"> <!-- [2022-09-29] 윤지현:type 클래스추가 -->
+							<div class="inpChk">
+								<input type="radio" name="radio2" id="radio21" checked>
+								<label for="radio21">정액제<span class="txt">매월 <span class="pColor">900원</span>이<br>청구돼요</span></label> <!-- [2022-09-29] 윤지현:문구수정,br추가 -->
+							</div>
+							<div class="inpChk">
+								<input type="radio" name="radio2" id="radio22">
+								<label for="radio22">종량제<span class="txt">건당 <span class="pColor">20원</span>이<br>청구돼요</span></label> <!-- [2022-09-29] 윤지현:문구수정,br추가 -->
+							</div>
+						</div>
+					</div>
+					<div class="formItem">
+						<div class="formTit">이용요금 출금계좌
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<p class="tit">이용요금 출금계좌</p>
+									<p>알림대상계좌가 농협은행 계좌인 경우 이용료 납부계좌는 농협은행 계좌만 선택 가능합니다.<br>
+										알림대상 계좌가 농·축협 계좌인 경우 이용료 납부계좌는 농·축협 계좌만 선택 가능합니다.<br>
+										거래중지계좌는 입출금 알림 서비스를 이용할 수 없습니다.</p>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->	
+						</div>
+						<div class="inpSel isLogo">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel placeholder">
+								<span class="logo">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+								</span>
+								<div class="accNum">
+									<span class="tit">주머니(money)통장</span>
+									<span class="num">352-1736-1551-38</span>
+								</div>
+							</a>
+						</div>
+						<div class="inpText mt5">
+							<button type="button" title="계좌 비밀번호 4자리 입력됨" aria-label="계좌 비밀번호 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+							<input type="password" title="계좌 비밀번호 입력" aria-hidden="true" value class="sKey" placeholder="숫자 4자리 입력" maxlength="4" readonly>
+							<a href="javascript:;" role="button" class="btnSm">계좌확인</a>
+							<!-- <a href="javascript:;" role="button" class="btnSm active">확인완료</a> --><!--완료상태-->
+							<!-- <a href="javascript:;" role="button" class="btnSm disabled">계좌확인</a> --><!--비활성상태-->
+						</div>
+					</div>
+					<div class="formItem">
+						<div class="formTit">알림받을 휴대전화
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<p class="tit">알림 받을 휴대전화</p>
+									<p>계좌별로 휴대전화는 최대 10개까지 등록이 가능합니다.<br>
+										휴대전화는 1개이상 필수 등록되어 있어야 합니다.<br>
+										새로 알림 받으실 휴대전화를 추가 후 삭제 가능합니다.</p>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->	
+						</div>
+						<div class="alarmList type2">
+							<div class="accLineBox mt10">
+								<span>010-1234-****</span>
+								<button type="button" class="listClear"><span class="blind">삭제하기</span></button> <!-- [2022-09-29] 윤지현:버튼 태그위치이동 -->
+							</div>
+							<div class="accLineBox mt10">
+								<span>010-1234-****</span>
+								<button type="button" class="listClear"><span class="blind">삭제하기</span></button> <!-- [2022-09-29] 윤지현:버튼 태그위치이동 -->
+							</div>
+						</div>
+					</div>
+					<div class="btnLnkLine">
+						<a href="javascript:;" role="button" class="underLine">+ 휴대전화 추가(2/10)</a>
+					</div>
+				</div>
+			</section>
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button">취소</button>
+				<button type="button" class="sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div><!-- //#wrap -->
+</body>
+</html>
+

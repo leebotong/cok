@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0180</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		// $(function(){popOpen(popupC)})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>NH모바일바로대출</h1>
+		<div class="headerR">
+			<!-- <a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a> -->
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>대출신청정보</strong>를<br><strong>확인</strong>해주세요.</p>
+			</div>
+
+			<ul class="termsList">
+				<li>
+					<div class="termsCheck" >
+						<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk01">
+						<label for="aggrChk01">[필수] 대출약정서 확인</label>
+					</div>
+					<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow"></a>
+				</li>
+			</ul>
+
+			<section>
+				<!-- [2022-07-15] 마크업분리, 클래스수정 -->
+				<div class="listTblBox">
+					<ul>
+						<li>
+							<span class="tit">상품명</span> <!-- [2022-07-15] 윤지현:문구수정 -->
+							<p class="txt">NH모바일바로대출</p> <!-- [2022-07-15] 윤지현:문구수정 -->
+						</li>
+						<li>
+							<span class="tit">고객명</span> <!-- [2022-07-15] 윤지현:문구수정 -->
+							<p class="txt">홍길동</p> <!-- [2022-07-15] 윤지현:문구수정 -->
+						</li>
+						<li>
+							<span class="tit">대출금액</span>
+							<p class="txt"><strong class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></strong></p>
+						</li>
+						<li>
+							<span class="tit">입금계좌번호</span> <!-- [2022-07-15] 윤지현:문구수정 -->
+							<p class="txt">123-4567-890-12</p>
+						</li>
+						<li>
+							<span class="tit">대출관리점</span>
+							<p class="txt">의왕농협 포일지점<br>031-123-4567</p>
+						</li>
+						<li>
+							<span class="tit">대출개시일</span><!-- [2022-08-19] 오타수정 -->
+							<p class="txt">2022.04.20</p>
+						</li>
+						<li>
+							<span class="tit">대출만료일</span>
+							<p class="txt">2022.04.20</p>
+						</li>
+						<li>
+							<span class="tit">대출이자율</span>
+							<p class="txt"><strong class="dataWrap">고정금리 연<em class="data">8.5</em><span class="unit">%</span></strong></p> <!-- [2022-07-07] 윤지현:마크업수정 -->
+						</li>
+					</ul>
+				</div><!-- //[2022-07-15] 마크업분리, 클래스수정 -->
+
+				<!-- [2022-07-15] 마크업분리 -->
+				<div class="listTbl">
+					<ul>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">지연배상금율</span>
+								<p class="txt"><span class="dataWrap">최고 연<em class="data">18.00</em><span class="unit">%</span></span></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">대출상환방법</span>
+								<p class="txt">최종상환기일로부터 소급하여 매 1개월마다 정한 납입일에 지급</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">이자율</span>
+								<p class="txt">농·축협이 정한 수신금리가 변동될 경우에는 본 대출 이자율도 그에 따라 변동되며, 기한연기로 대출기간이 1년을 초과하게 되는 경우 매 1년마다 농·축협이 정한 기간가산금리를 적용할 수 있습니다.</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">이자 지급<br>시기 및 방법</span>
+								<p class="txt">이자 납입 일은 대출개시일자로 설정되며 고객님의 대출약정계좌에서 매월 자동으로 출금됩니다.
+									이자 납입 일이 휴무(금융휴무일 포함)일인 경우 다음 영업 일에 인출됩니다.
+									이자납입일 변경은 영업점에 문의 바랍니다.</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">이자 및 지연배상금<br>계산 방법</span>
+								<p class="txt">1년을 365일(윤년은 366일)로 보고 1일 단위로 계산합니다.</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">대출실행방법</span>
+								<p class="txt">대출개시일에 전액 실행합니다.</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">우편수령지</span>
+								<p class="txt">직장</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- <hr class="divingLine"> [2022-07-07] 윤지현:삭제 -->
+
+			<section class="section40"> <!-- [2022-07-07] 윤지현:section태그로 감싸기 -->
+				<div class="listTbl">
+					<div class="listTit">
+						<strong>보증서 정보</strong>
+					</div>
+					<ul>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">지급보증과목</span>
+								<p class="txt">NH모바일바로대출</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">거래구분</span>
+								<p class="txt">개별거래</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">지급보증액</span>
+								<p class="txt"><span class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></span></p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">지급보증개시일</span>
+								<p class="txt">2022.04.20</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">지급보증만료일</span>
+								<p class="txt">2023.04.20</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">지급보증 신청방법</span>
+								<p class="txt">회사가 정하는 지급보증<br>신청서에 의합니다.</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">지급보증의 시기</span>
+								<p class="txt">지급보증개시일에 전액<br></ve>보증합니다.</p><!-- [2022-07-05] 윤지현:문구수정 -->
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">지급보증의 방법</span>
+								<p class="txt">지급보증서의 발급</p>
+							</div>
+						</li>
+						<li>
+							<div class="listIn_flex">
+								<span class="tit">보증료율</span>
+								<p class="txt"><span class="dataWrap">연<em class="data">2.09</em><span class="unit">%</span></span></p>
+							</div>
+						</li>
+						<!-- [2022-07-07] 윤지현:항목삭제. 아래의 별도 마크업으로 변경 -->
+					</ul>
+				</div>
+			</section>
+
+			<!-- [2022-07-07] 윤지현:추가 -->
+			<p class="defTit2">상환방법</p>
+			<p class="defTxt2">최종 상환기일로부터 소급하여 매 1개월마다 정한 납입일에 
+				지급합니다.</p>
+			<ul class="listDot">
+				<li class="pColor">영업점 영업시간 마감 이후 자동화기기 또는 전자금융을 
+					통한 계좌입금분은 당일 중 상환으로 처리되지 않을 수 
+					있음을 유의하시기 바랍니다.</li>
+			</ul>	
+
+			<p class="defTit2">연체이자율 (지연배상금률)</p>
+			<p class="defTxt2">연체이자율(지연배상금률)발생은 대출금리(지급보증료율 
+				포함)에 연체기간별 가산금리를 더하는 방식으로 산출
+				됩니다. 연체기간별 가산금리(NH 모바일바로대출 연체
+				이자율(지연배상금률)과 동일)</p>
+			<ul class="listDot">
+				<li>연체기간이 30일 이하인 경우 연 3%</li>
+				<li>연체기간이 31일 이상 90일 이하인 경우 연 3%</li>
+				<li>연체기간이 91일 이상인 경우 연 3%</li>
+				<li>지연배상금률(연체이자율)은 연 최고 18% 이내로 합니다.</li>
+			</ul>
+
+			<p class="defTit2">보증료의 지급시기 및 방법</p>
+			<p class="defTxt2">보증수수료는 NH모바일바로대출 대출원리금에 포함되어 매월 본인이 지정한 대출원리금 납부일에 납부하게 됩니다.</p>
+
+			<p class="defTit2">보증료 및 연체이자(지연배상금의 계산방법)</p>
+			<p class="defTxt2">1년을 365일(윤년은 366일)로 보고 1일 단위로 계산하되, 
+				보증료 지급을 지체한 때에는 곧 지급하여야 할 금액에 
+				대하여 연체이자율(지연배상금률)로 계산한 지체일수에 
+				해당하는 연체이자(지연배상금)를 더하여 지급하여야 
+				합니다.</p>
+			<!-- //[2022-07-07] 윤지현:추가 -->
+
+			<!-- 계약서류 수령방식 -->
+			<section class="section40">
+				<div class="formItem">
+					<strong class="formTit">계약서류 수령방식</strong>
+					<div class="tabWrap box">
+						<div role="tablist" class="tabList">
+							<a href="javascript:;" role="tab" class="active" aria-selected="true">SMS</a>
+							<a href="javascript:;" role="tab" class="disabled">이메일</a> <!-- 이메일 정보가 없을 경우 disabled 추가 -->
+						</div>
+						<div class="tabPanelList">
+							<div role="tabpanel" class="tabPanel show">
+								<div class="formItem">
+									<div class="inpText">
+										<input type="tel" title="휴대전화번호" class="tyTxt" value="010-1234-5678" placeholder="1234568" readonly>
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tabPanel">
+								<div class="formItem">
+									<div class="inpText">
+										<input type="tel" title="이메일" class="tyTxt" value="nonghyup@nonghyup.com" placeholder="1234568" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="allCheck">
+					<input type="checkbox" name="agreeChk" id="aggrChk11" checked="">
+					<label for="aggrChk11">계약서류를 SMS로 수령하는 것에 동의합니다.</label>
+				</div>
+				<!-- //계약서류 수령방식 -->
+
+				<div class="btmInfoWrap">
+					<strong class="tit">확인사항</strong>
+					<ul class="listDot">
+						<li>대출이 실행된 이후에는 정정/취소가 불가능하오니 다시한번 신청내역을 확인해주세요.</li>
+						<li>부득이 대출이 잘못 실행되어 취소를 원하실 경우에는 대출금을 완제(인터넷에서 완제 가능)하셔야 하며, 이 경우 1일 이자를 부담하셔야 합니다.</li>
+					</ul>
+				</div>
+			</section>
+			
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="toastMessage">[대출신청] 선택 시 전자서명과 동시에 신청 완료 됩니다. </div>
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">대출신청</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1510</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			// popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>ATM출금</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+			<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>인증번호</strong>를 <strong>발급</strong>해주세요.</p>
+				<ul class="listDot">
+					<!-- <li>인증번호 발급 후 ATM기기에 인증번호를 입력해주세요.</li> [2022-11-10] 윤지현:문구삭제 -->
+				</ul>
+			</div>
+
+			<!-- ▼ [2022-11-10] 윤지현:추가 -->
+			<div class="storeBtn">
+				<button type="button">영업점/ATM 검색</button>
+			</div>
+			<!-- //▲ [2022-11-10] 윤지현:추가 -->
+
+			<div class="roundBox">
+				<div class="roundInBox">
+					<div class="accTypeWrap accAlwaysType">
+						<!-- ▼ 2022-07-07 접근성 수정 : title 추가 -->
+						<a href="javascript:;" title="계좌선택" role="button" class="accInLayout">
+							<!-- 기본 영역  -->
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="OO은행" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<!-- <span class="accBank">[NH농협]</span> -->
+										<span class="bankBookName">내맘콕예금</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						<!-- 금액 영역 -->
+						<div class="accDataWrap forInner cmStyle"><!-- [2022-11-10] 윤지현: 클래스추가 -->
+							<div>
+								<span class="accNumInfo">출금가능금액</span>
+								<button type="button" class="btnSm">+ 채우기</button> <!-- [2022-11-10] 윤지현: 위치변경 -->
+							</div>
+							<div class="cashWrap"><strong class="accCash">15,000,000,000</strong><span class="accUnit">원</span></div><!-- [2022-11-10] 윤지현: 위치변경하고 div로 감싸기 -->
+						</div>
+					</div>
+					<!-- ▼ [2022-11-10] 윤지현:버튼 이동됨 -->
+					<div class="infoARSreq beforeReq">
+						<div class="btnInArea">
+							<button type="button" class="primary">인증번호 발급</button><!-- 2022-10-24 클래스명 수정 -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <ul class="listDot mt10">
+				<li>등록계좌당 <span class="pColor">1일 최대 30만원</span>까지 출금 가능합니다.</li>
+			</ul> [2022-11-10] 윤지현:문구삭제 -->
+
+			<section> <!-- [2022-11-10] 윤지현: 클래스삭제 -->
+				<!-- case : ARS 요청전 -->
+				<!-- <div class="infoARSreq beforeReq">
+					<div class="btnInArea">
+						<button type="button" class="primary">인증번호 발급</button><!~~ 2022-10-24 클래스명 수정 ~~>
+					</div>
+				</div> ▲ [2022-11-10] 윤지현:이동으롤 삭제 -->
+
+				<ul class="listDot mt10">
+					<li>인증번호 발급 후 ATM기기에 인증번호를 입력해주세요.</li><!-- [2022-11-10] 윤지현:문구추가 -->
+					<li><span class="pColor">[인증번호 발급]</span>을 선택하시면 전자서명과 동시에 인증번호가 생성됩니다.</li>
+				</ul>
+				<!--// case : ARS 요청전 -->
+
+				<!-- case : ARS 요청후 -->
+				<div class="infoARSreq afterReq off">
+					<div class="rounBgBox arsNumber">
+						<p>인증번호</p>
+						<strong>345098</strong>
+						<span class="time infoTxtErr">05분00초</span><!-- 2022-10-06 접근성수정 -->
+						<div class="btnInArea">
+							<button type="button" class="reqARSbtn point">인증번호 재발급</button>
+						</div>
+					</div>
+
+				</div>
+				<!--// case : ARS 요청후 -->
+				
+				<!-- 2022-10-06 추가 -->
+				<!-- <div class="btnInArea">
+					<button type="button">ATM위치확인</button>
+					<button type="button">다른 출금계좌 선택</button>
+				</div> [2022-11-10] 윤지현:삭제 -->
+				<!-- //2022-10-06 추가 -->
+
+				<div class="guideInfo jsTgWrap">
+					<a href="javascript:;" role="button" aria-expanded="false" class="jsTgBtn listItemArrow">ATM출금 이용방법</a>
+					<div class="jsTgCont">
+						<div class="ContSwipe">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<p class="slideInfo">1. ATM 거래선택시 예금인출을 누르세요.</p>
+											<img src="../../images/cont/img_atm_guide01.jpg" alt="ATM 이용방법 안내 화면1">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<p class="slideInfo">2. 원하시는 거래선택 시 콕뱅크를 누르세요.</p>
+											<img src="../../images/cont/img_atm_guide02.jpg" alt="ATM 이용방법 안내 화면2">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<p class="slideInfo">3. 생년월일 6자리를 입력하세요.</p>
+											<img src="../../images/cont/img_atm_guide03.jpg" alt="ATM 이용방법 안내 화면3">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<p class="slideInfo">4. 콕뱅크 앱 ATM출금 화면 상단에 부여된 인증번호를 ATM에 입력한 후 버튼을 누르세요.</p>
+											<img src="../../images/cont/img_atm_guide04.jpg" alt="ATM 이용방법 안내 화면4">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<p class="slideInfo">5. 출금계좌 번호 확인 후 확인 버튼을 누르세요.</p>
+											<img src="../../images/cont/img_atm_guide05.jpg" alt="ATM 이용방법 안내 화면5">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<p class="slideInfo">6. 찾으실 금액을 만원 단위로 입력한 후 확인 버튼을 누르세요.</p>
+											<img src="../../images/cont/img_atm_guide06.jpg" alt="ATM 이용방법 안내 화면6">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slideBox">
+											<p class="slideInfo">7. 계좌 비밀번호 4자리를 입력한 후 확인 버튼을 누르세요.</p>
+											<img src="../../images/cont/img_atm_guide07.jpg" alt="ATM 이용방법 안내 화면7">
+										</div>
+									</div>
+								</div>
+								<div class="swiperNavigation">
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<script>
+							$(document).ready(function(){
+								// ▼ 2022-07-20 접근성 관련 스크립트 추가
+								// [접근성] ATM출금 이용방법 아코디언 온오프 스와이프 관련 스크립트
+								$('.guideInfo.jsTgWrap').bind('click', function(){
+									if ( $('.jsTgWrap').hasClass('active') === true ) {
+										$('.ContSwipe .swiper-slide:first-child').attr('aria-hidden', true);
+									} else {
+										$('.ContSwipe .swiper-slide:first-child').attr('aria-hidden', false);
+										// jsTgWrap click 시점에 바로 반영되지 않아서 setTimeout 적용
+										setTimeout(function() {
+											$('.swiper-pagination-bullet:first-child').attr('title', '선택됨');
+										}, 0);
+									}
+								});
+
+								// ATM출금 이용방법 스와이프 스크립트
+								function ContSwipe() {
+									$('.ContSwipe').each(function (idx) {
+										var $this = $(this);
+										$this.addClass('type' + idx);
+
+										//슬라이드 초기화
+										if (termsSwiper != undefined){
+											termsSwiper.destroy();
+											termsSwiper = undefined;
+										}
+
+										var termsSwiper = new Swiper(".type" + idx + " .swiper-container", {
+											centeredSlides: true,
+											observer: true,
+											observeParents: true,
+											observeSlideChildren: true,
+											pagination: {
+												el: $(".type" + idx).find(".swiper-pagination"),
+												clickable: true,
+												bulletElement: "a",
+											},
+											navigation: {
+												nextEl: $(".type" + idx).find(".swiper-button-next"),
+												prevEl: $(".type" + idx).find(".swiper-button-prev"),
+											},
+											on: {
+												init: function () {
+													$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+													$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active").attr("aria-hidden", false).attr("tabindex", 0);
+												},
+												slideChangeTransitionEnd: function () {
+													$(".type" + idx + " .swiper-container").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+													$(".type" + idx + " .swiper-container").find(".swiper-slide.swiper-slide-active")	.attr("aria-hidden", false)	.attr("tabindex", 0);
+													$(".type" + idx + " .swiper-pagination").find('a').attr('title', '');
+													$(".type" + idx + " .swiper-pagination").find('a').eq(this.activeIndex).attr('title','선택됨');
+												},
+											},
+										});
+									})
+								}
+								ContSwipe();
+							})
+						</script>
+					</div>
+				</div>
+			</section>
+			
+			<!-- 2022-10-06 위치이동 -->
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>인증번호는 스마트폰에 수신 후 5분간 유효하며 인증번호 재생성 시 기존 인증번호는 사용이 불가합니다.</li>
+					<li>출금 한도는 등록 계좌당 <span class="pColor">1일 최대 30만원</span>입니다.</li> <!-- [2022-11-10] 윤지현: 문구강조 클래스추가 -->
+					<li>출금 수수료가 발생할 수 있습니다.</li>
+					<li>농협자동화기기에서 이용 가능합니다.</li>
+				</ul>
+			</div>
+			<!-- //2022-10-06 위치이동 -->
+
+		</div>  <!-- //#contents -->
+
+		<!-- <div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>   -->
+		<!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popupArea"></div>
+</body>
+</html>

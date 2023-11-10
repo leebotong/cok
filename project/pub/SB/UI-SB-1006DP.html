@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1006DP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(dp);
+		})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>송금</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(dp);" role="button" class="popOpen">UI-SB-1006DP</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+
+		<!-- CENTER POPUP -->
+		<div id="dp" class="popupWrap center" style="display:none;">
+			<div class="layerPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popContBox">
+							<div class="Layer_Pop">
+								<div class="Layer_Tit">
+									<h2 tabindex="0">오픈뱅킹 1일 송금 한도 안내</h2>
+								</div>
+								<div class="Layer_Con">
+									<div class="listTbl">
+										<div class="listTit mt14">
+											<span>오픈뱅킹 1일 송금 한도
+												<!-- tooltip -->   <!-- 202-05-18 이경아 : 오픈뱅킹 1일 잔여 이체한도 실시간 조회 기능 추가 -->
+												<div class="tooltipWrap">
+													<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+													<div class="tooltipCont">
+														<strong class="tit">오픈뱅킹 1일 송금 한도</strong>
+														<ul class="listDot">
+															<li>다른금융계좌를 통한 송금 및 잔액채우기 등의 오픈뱅킹 서비스 이용 시 적용되는 한도입니다.</li>
+															<li>오픈뱅킹 송금 한도는 금융결제원 정책에 따라 전 금융기관 합산 1일 1,000만원으로 콕뱅크 송금 한도와 별도로 운영됩니다.</li>
+														</ul>
+														<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+													</div>
+												</div>
+												<!-- //tooltip -->
+											</span>
+										</div>
+										<ul>
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">1일 송금 한도</span>
+													<span class="txt">10,000,000원</span>
+												</div>
+											</li>
+											<li>
+												<div class="listIn_flex">
+													<span class="tit">1일 송금 잔여 한도</span>
+													<span class="txt pColor">10,000,000원</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<p class="infoTxt">오픈뱅킹 송금 한도 소진 시 콕뱅크 잔여 한도와 상관없이 송금할 수 없어요.</p>
+								</div>
+								<div class="Layer_Pop_Close">
+									<div class="btnArea">
+										<button type="button" onclick="popClose(this)" class="sel">확인</button>
+									</div>
+								</div>
+								<!-- <a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

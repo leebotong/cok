@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0176</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>NH모바일바로대출</h1>
+		<!-- <div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div> -->
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>대출심사정보</strong>를<br><strong>입력</strong>해주세요.</p><!-- [2022-07-13] 윤지현:문구수정 -->
+			</div>
+
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">직업정보</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="직업 선택" role="button" class="btnSel placeholder">직업선택</a>
+					</div>
+					<div class="inpText">
+						<input type="text" title="직장명" class="tyTxt" value="" placeholder="직장명 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<div class="inpSel">
+						<a href="javascript:;" title="직위 선택" role="button" class="btnSel placeholder">직위선택</a>
+					</div>
+					<div class="inpText">
+						<input type="text" title="연소득 금액입력" class="tyNum" value="" placeholder="연소득 금액 입력">
+						<span class="unit">만원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+			</div>
+
+			<hr class="divingLine">
+
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">대출금 입금계좌 <!-- [2022-07-13] 윤지현:문구수정 --> <!-- [2022-07-07] 윤지현:오타수정 -->
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">대출금 입금계좌</strong> <!-- [2022-07-13] 윤지현:문구수정 --> <!-- [2022-07-07] 윤지현:오타수정 -->
+								<p>대출금 입금계좌는 농·축협 계좌만 가능합니다. (농협은행 제외) 
+									대출금 입금계좌에서 대출이자가 자동이체됩니다. 자동이체계좌 변경은 [개인 인터넷뱅킹>자동이체] 메뉴를 이용하시면 됩니다.</p><!-- [2022-07-13] 윤지현:문구수정 --><!-- [2022-07-07] 윤지현:문구수정 --> <!-- [2022-07-05] 윤지현:문구수정 -->
+								<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="대출금 입금/ 자동이체 계좌 선택" role="button" class="btnSel placeholder">대출금 입금계좌 선택</a><!-- [2022-07-13] 윤지현:문구수정 -->
+					</div>
+					<p class="infoTxtOk pColor">입금 가능한 계좌입니다.</p>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">대출만기일</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="대출만기일 선택" role="button" class="btnSelDate">2023.04.10</a>
+					</div>
+					<p class="infoTxt">대출만기일은 12개월 이상 13개월 미만으로 지정 가능합니다.</p>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">대출관리점</strong>
+					<div class="readonlyBox">  <!-- [2022-07-05] 윤지현:point 클래스삭제 -->
+						<div class="branchInfo">
+							<strong class="name">서울경기축산농협<br>디지털미디어시티지점</strong>
+							<button type="button" class="btnSm point">영업점정보</button> <!-- [2022-07-05] 윤지현:point 클래스추가 -->
+						</div>
+						<p class="defTxt">경기도 의왕시 포일대로 123 포일빌딩1층<br>031-2345-6789</p>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">자동이체일</strong>
+					<div class="inpText readonly">
+						<input type="text" title="자동이체일" value="매월 10일" class="tyTxt" placeholder="" readonly>
+					</div>
+					<!-- case: 대출만기일 2월28일, 매월 말일이 30일, 31일 시 -->
+					<div class="boxRdoGroup">
+						<div class="inpChk">
+							<input type="radio" name="radio1" id="radio11">
+							<label for="radio11">매월 28일</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio1" id="radio12">
+							<label for="radio12">매월 말일</label>
+						</div>
+					</div>
+					<div class="boxRdoGroup">
+						<div class="inpChk">
+							<input type="radio" name="radio2" id="radio21">
+							<label for="radio21">매월 29일</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio2" id="radio22">
+							<label for="radio22">매월 말일</label>
+						</div>
+					</div>
+					<div class="boxRdoGroup">
+						<div class="inpChk">
+							<input type="radio" name="radio3" id="radio31">
+							<label for="radio31">매월 30일</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio3" id="radio32">
+							<label for="radio32">매월 말일</label>
+						</div>
+					</div>
+					<!-- //case: 대출만기일 2월28일, 매월 말일이 30일, 31일 시 -->
+				</div>
+				<div class="formItem">
+					<strong class="formTit">상환방법</strong>
+					<div class="inpText readonly">
+						<input type="text" title="상환방법" value="매월 원금균등할부상환" class="tyTxt" placeholder="" readonly>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">원금할부회차</strong>
+					<div class="inpText readonly">
+						<input type="text" title="원금할부회차" value="12회차" class="tyTxt" placeholder="" readonly>
+					</div>
+				</div>
+			</div>
+
+			<section class="section30">
+				<ul class="termsList">
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk01">
+							<label for="aggrChk01">[필수] 개인(신용)정보 수집·이용 동의(비여신거래)</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow"></a>
+					</li>
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk02">
+							<label for="aggrChk02">[필수] 개인정보 위탁 동의</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow"></a>
+					</li>
+				</ul>
+			</section>
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>대출만기일의 일자는 자동이체일자로 자동 지정되며, 추후 자동이체일자 변경은 불가합니다.</li><!-- [2022-07-05] 윤지현:문구수정 -->
+					<li>최초 자동이체일이 대출실행일로부터 1개월 미경과 시 최초 자동이체일에는 이자만 자동이체되며, 다음 자동이체일부터 원금이 함께 상환됨에 유의하시기 바랍니다.</li>
+					<li>대출금입금계좌는 농·축협(농협은행 제외) 계좌만 가능합니다.</li> <!-- [2022-07-05] 윤지현:문구수정 -->
+					<li>대출관리점은 대출금입금계좌 본점으로 자동 지정됩니다.</li>
+					<li>고객님의 대출심사와 관련된 사항이니 정확하게 입력하여 주시기 바라며, 만약 허위가 있는 경우 농·축협의 제재조치에 대하여 이의가 없음을 확인합니다.</li>
+				</ul>
+			</div>
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

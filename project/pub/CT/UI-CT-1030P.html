@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-1030P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupBD);
+		})
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupBD);" title="풀팝업 열기" role="button" class="popOpen">팝업열기</a>
+
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupBD" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0"><span class="blind">고객확인 등록완료</span></h2>
+					</div>
+					<!--[2022-12-19] 1.2버전 수정반영 상시운영 : 윤희정-->
+					<div class="layerSelectContent">
+						<!-- 컨펌메세지 -->
+						<div class="confirmMsg noWrap">
+							<i class="warning"></i>
+							<p class="tit"><span class="pColor">고객확인 등록</span>을 완료하시겠습니까?</p>
+							<div class="rounBgBox">확인하신 고객정보는 고객확인 수단으로만 활용되며 고객님의 개인정보에 반영되지 않습니다.</div>
+							<p class="infoTxt al">고객정보 변경을 원하시는 고객님은 스마트(인터넷)뱅킹 또는 가까운 영업점을 방문해주시기 바랍니다.
+							</p>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="toastMessage">[확인] 선택 시 전자서명과 동시에 고객확인 등록이 완료됩니다.</div>
+						<div class="btnArea">
+							<button type="button" title onclick="popClose(this)" class="">취소</button>
+									<button type="button" title onclick="popClose(this)" class="sel">확인</button>
+						</div>
+					</div>
+					<!--//[2022-12-19] 1.2버전 수정반영 상시운영 : 윤희정-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

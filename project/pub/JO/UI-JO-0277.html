@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0277</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>NH콕마이카신용대출</h1>
+		<div class="headerR">
+			<!-- <a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a> -->
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<div class="branchBox">
+					<p class="name">서울경기축산농협 디지털미디어시티지점</p>
+				</div>
+				<p class="pTit"><strong>대출신청정보</strong>를<br><strong>입력</strong>해주세요.</p>
+			</div>
+
+			<div class="rounBgBox readonlyBox">
+				<ul>
+					<li>
+						<strong class="formTit">대출가능금액</strong>
+						<p class="value"><strong class="dataWrap"><em class="data">50,000,000</em><span class="unit">원</span></strong></p>
+					</li>
+					<li>
+						<strong class="formTit">대출금리</strong>
+						<p class="value"><strong class="dataWrap">연<em class="data">3.5</em><span class="unit">%</span></strong></p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="formWrap">
+				<div class="formItem action">
+					<strong class="formTit default">대출신청금액</strong>
+					<p class="numVal"><em class="data"></em><span class="unit">만원</span></p>
+					<div class="inpText">
+						<input type="tel" title="대출신청금액" class="tyNum" value="" placeholder="금액입력">
+						<span class="unit">만원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxt ar">최소 300만원 이상 10만원 단위</p>
+				</div>
+			</div>
+
+			<div class="listTbl">
+				<strong class="listTit">금리정보</strong>
+				<ul>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">대출금리(A+B-C)</span> 
+							<p class="txt"><span class="dataWrap"><em class="data">3.5</em><span class="unit">%</span></span></p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">기준금리(A)</span> 
+							<p class="txt"><span class="dataWrap"><em class="data">1.5</em><span class="unit">%</span></span></p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">가산금리(B)</span> 
+							<p class="txt"><span class="dataWrap"><em class="data">2.0</em><span class="unit">%</span></span></p>
+						</div>
+					</li>
+					<li>
+						<div class="listIn_flex">
+							<span class="tit">우대금리(C=<i class="txtNum n1"></i>+<i class="txtNum n2"></i>)</span> <!-- [2022-07-22] 윤지현:원문자 마크업추가 -->
+							<p class="txt"><span class="dataWrap"><em class="data">0.1</em><span class="unit">%</span></span></p>
+						</div>
+						<div class="listIn_flex subList mt10">
+							<span class="tit">상호금융 신규고객<i class="txtNum n1"></i></span> <!-- [2022-07-22] 윤지현:원문자 마크업추가 -->
+							<p class="txt"><span class="dataWrap"><em class="data">-0.05</em><span class="unit">%</span></span></p>
+						</div>
+						<div class="listIn_flex subList">
+							<span class="tit">마이데이터 콕마이카 고객<i class="txtNum n2"></i></span> <!-- [2022-07-22] 윤지현:원문자 마크업추가 -->
+							<p class="txt"><span class="dataWrap"><em class="data">-0.05</em><span class="unit">%</span></span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">대출금 입금계좌
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">대출금 입금계좌</strong>
+								<p>대출금 입금계좌는 농·축협 계좌만 가능합니다. (농협은행 제외)<br>
+									대출금 입금계좌에서 대출이자가 자동이체됩니다. 자동이체계좌 변경은 [개인 인터넷뱅킹&gt;자동이체] 메뉴를 이용하시면 됩니다.</p>
+								<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="대출금 입금계좌 선택" role="button" class="btnSel placeholder">대출금 입금계좌 선택</a>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">대출만기일</strong>
+					<div class="inpText">
+						<input type="text" title="대출만기일" class="tyTxt" value="2024.07.06" placeholder="" readonly>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">우편수령지 선택</strong>
+					<div class="boxRdoGroup">
+						<div class="inpChk">
+							<input type="radio" name="radio7" id="radio71" checked="">
+							<label for="radio71">자택</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio7" id="radio72" disabled> <!-- 직장주소지 없을 경우 disabled 추가 -->
+							<label for="radio72">직장</label>
+						</div>
+					</div>
+					<div class="readonlyBox">
+						<p class="defTxt">12345<br>서울시 강남구 봉은사로 111한국빌딩<br>5층 101호</p>
+					</div>
+				</div>
+				<div class="formItem jsTgWrap">
+					<strong class="formTit inpChk">
+						<input type="checkbox" name="chk10" id="chk101" class="jsTgBtn" aria-expanded="false">
+						<label for="chk101">권유직원이 있어요. (선택)</label>
+					</strong>
+					<!-- 권유직원 선택시 노출 -->
+					<div class="jsTgCont formExpBox">
+						<div class="formWrap">
+							<div class="formGroup mt0">
+								<div class="inpText readonly">
+									<input type="text" title="권유직원" class="tyTxt" value="" placeholder="권유직원 입력" readonly="">
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									<a href="javascript:;" role="button" aria-label="" class="btnSm">검색</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //권유직원 선택시 노출 -->
+				</div>
+			</div>
+
+			<!-- <div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>대출은 직접 입력한 대출신청금액으로 최종 신청됩니다.</li>
+					<li>대출 기간중에는 대출한도 내에서 수시로 상환 및 재사용이 가능합니다. 이자는 매일의 잔액에 대해 하루 단위로 계산하여 매 월마다 정한 납입일에 대출원금에 가산됩니다.</li>
+				</ul>
+			</div> --><!-- [2022-08-19] 삭제 -->
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

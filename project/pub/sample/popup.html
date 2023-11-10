@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>콕 popup</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>	
+	<script>
+		$(function(){
+			popOpen(cp1);
+		})
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="#nolink" title="이전메뉴" class="headBtn btnPrev">&#xE000;</a>
+		</div>
+		<h1>팝업샘플</h1>
+		<div class="headerR">
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(sp2);" title="슬라이드 팝업 열기" role="button">슬라이드 팝업2 열기</a>
+			<a href="javascript:popOpen(sp4);" title="슬라이드 팝업 열기" role="button">슬라이드 팝업4 열기</a>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+		</div> <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popup1" class="popWrap slidePop draggable">
+	<div class="popInner">
+		<div class="popHeader">
+			<a href="javascript:;" role="button" class="dragLine"></a>
+		</div>
+		<div class="popCont">
+			드래그팝업 모바일에서만 동작
+		</div>
+		<div class="popBtnWrap"></div>
+	</div>
+</div>
+
+<div id="sp2" class="popWrap slidePop">
+	<div class="popInner">
+		<div class="popHeader">
+			<a href="javascript:;" role="button" onclick="popClose(this);" class="popClose">팝업닫기</a>
+		</div>
+		<div class="popCont">
+			<p>2222222222222<br>2222</p>
+			<a href="javascript:popOpen(sp3);" title="슬라이드 팝업 열기" role="button">슬라이드 팝업3열기</a>
+		</div>
+		<div class="popBtnWrap"></div>
+	</div>
+</div>
+
+<div id="sp3" class="popWrap slidePop">
+	<div class="popInner">
+		<div class="popHeader">
+			<a href="javascript:;" role="button" onclick="popClose(this);" class="popClose">팝업닫기</a>
+		</div>
+		<div class="popCont">
+			<p>3333333</p>
+			<a href="javascript:popOpen(cp1);" title="센터" role="button" 팝업 열기">센터팝업1 열기</a>
+		</div>
+		<div class="popBtnWrap"></div>
+	</div>
+</div>
+
+<div id="cp1" class="popWrap centerPop">
+	<div class="popInner">
+		<div class="popHeader">
+			<a href="javascript:;" role="button" onclick="popClose(this);" class="popClose">팝업닫기</a>
+		</div>
+		<div class="popCont">
+			센터팝업
+		</div>
+		<div class="popBtnWrap"></div>
+	</div>
+</div>
+
+<div id="sp4" class="popWrap slidePop">
+	<div class="popInner">
+		<div class="popHeader">
+			<a href="javascript:;" role="button" onclick="popClose(this);" class="popClose">팝업닫기</a>
+		</div>
+		<div class="popCont">
+			44444
+		</div>
+		<div class="popBtnWrap"></div>
+	</div>
+</div>
+
+<div class="dim"></div> <!-- 마크업 하단 1개 고정 -->
+
+</body>
+</html>

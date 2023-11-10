@@ -1,0 +1,230 @@
+/* @charset 'utf-8'; */
+/* [SEPTEM] UI Dev Team ::콕 main css */
+
+.mainWrap #header{position:fixed;height:60px;background:#fff;color:currentColor;align-items:center;justify-content:space-between;box-sizing:border-box;}
+.OS164 .mainWrap #header{position:relative}
+.mainWrap .toggleSwitch label{color:#fff;}
+.mainWrap .headerL .btn{height:28px;padding:0 10px;border:1px solid #80d7da;border-radius:20px;background:#04949a;box-shadow: 1px 1px 1px rgba(0,0,0,.1);font-size:14px;color:#fff;line-height:28px;}
+.mainWrap .headerL .myBank::before{display:inline-block;position:relative;top:2px;width:13px;height:14px;margin-right:5px;background:url('../images/main/btn_my.png') no-repeat 0 0/13px;content:'';}
+
+.mainWrap #header .headerR{display:block;}
+.mainWrap #header .headerR > a{display:inline-block;position:relative;width:24px;height:24px;margin:0 7px;}
+.mainWrap #header .headerR > a:last-child{margin-right:0;}
+.mainWrap .scan{width:22px;background:url('../images/main/btn_scan.png') no-repeat center center/22px 21px;}
+.mainWrap .search{background:url('../images/main/btn_search.png') no-repeat center center/24px;}
+.mainWrap .alarm{background:url('../images/main/btn_alerm.png') no-repeat center center/24px;}
+.mainWrap .btnMenu{background:url('../images/main/btn_allmenu.png') no-repeat center center/24px;}
+.mainWrap .alarm .news{display:none;}
+.mainWrap .alarm.on .news{display:block;}
+.mainWrap .alarm.on .news:after{display:block;position:absolute;top:1.5px;right:0;width:3px;height:3px;border-radius:10px;background:#ea4956;content:'';}
+.mainWrap .alarm em{display:none;}
+.mainWrap .alarm.on em{display:initial;}
+
+/* .mainWrap #header.fixed{position:fixed;top:0;right:0;left:0;z-index:100;background:#fff;box-shadow: 0 1px 10px rgba(0,0,0,.1);align-items:center;} */
+.mainWrap #header .headerL .btn{border:1px solid #d6dfe2;background:none;box-shadow:none;color:var(--black);}
+.mainWrap #header .headerL,.mainWrap #header.fixed .menu{position:relative;z-index:101;}
+.mainWrap #header .scan{width:22px;background:url('../images/main/btn_scan_b.png') no-repeat center center/22px 21px;}
+.mainWrap #header .search{background:url('../images/main/btn_search_b.png') no-repeat center center/24px;}
+.mainWrap #header .alarm{background:url('../images/main/btn_alerm_b.png') no-repeat center center/24px;}
+.mainWrap #header .btnMenu{background:url('../images/main/btn_allmenu_b.png') no-repeat center center/24px;}
+.mainWrap #header .headerL .myBank::before{background:url('../images/main/btn_my_b.png') no-repeat 0 0/13px;}
+.mainWrap #header-bottom{position:fixed;right:0;bottom:0;left:0;z-index:100;opacity:1;}
+
+.mainWrap #container{padding:60px 0 100px 0 !important;}
+.OS164 .mainWrap #container{padding:10px 0 0 0 !important;}
+.mainWrap .userWrap{position:relative; z-index:2;  display:table;height:50px;padding:10px 0 0 10px;}
+.mainWrap .userWelcome{display:table-cell;vertical-align:top;}
+.mainWrap .userWelcome, .mainWrap .userWelcome .userMessage{font-size:18px;font-weight:normal;color:#111;line-height:1.5;}
+.mainWrap .userWelcome .userMessage+p{margin-top:10px;}
+.mainWrap .userWrap a.btnBranch{display:inline-block;margin-top:10px;font-size:14px;color:#353d4a;}
+.mainWrap .userWrap a.btnBranch:after{display:inline-block;position:relative;top:3px;width:18px;height:17px;margin-left:5px;background:url('../images/main/ico_branch.png') no-repeat 0 0 / 18px auto;content:'';}
+.mainWrap .contentTop{position:relative;padding:0 16px 0 16px;}
+/* .mainWrap .contentTop:after{display:block;position:absolute;top:-1px;left:0;z-index:-1;width:100%;height:calc(100% - 83px);min-height:213px;background:#05a5ab;content:'';} */
+.mainWrap .accountBox{position:relative;height:100%;margin-top:16px;padding:20px 20px 52px 20px;border-radius:20px;background:#05a5ab;box-sizing:border-box;}
+.mainWrap .accountBox .logText{position:relative;padding-bottom:20px;height:100%;}
+.mainWrap .accountBox .logText:after{display:block;position:absolute;bottom:0;width:100%;height:1px;border-bottom:1px solid #fff;content:'';opacity: .4;}
+.mainWrap .accountBox .logText .tit{font-size:18px;color:#fff;line-height:25px;}
+.mainWrap .accountBox .logText .tit em{display:inline-block;position:relative;}z
+.mainWrap .accountBox .logText .tit em:after{display:none;position:absolute;bottom:0;left:0;content:'';width:100%;height:8px;border-radius:10px;background:#f9bb0d;opacity:.3;}
+.mainWrap .accountBox .logText .defTxt3{margin-top:5px;color:#fff;opacity: .8;}
+.mainWrap .accountBox+.btnLnkLine{position:relative;margin:12px auto 0 auto;}
+.mainWrap .accountBox:after{display:block;position:absolute;top:-65px;right:-16px;width:191px;height:80px;background:url('../images/main/img_seasonal_mascot.png') no-repeat right bottom/191px 80px;content:'';} /* [2023-02-20]김연진:캐릭터사이즈확대 */
+.mainWrap .unionMode .accountBox:after{right:0;width:82px;height:83px;background:url('../images/main/img_mascot_union.png') no-repeat 0 0/82px;}
+
+.mainWrap .accountBox .accName>*{font-size:16px;font-weight:bold;color:#fff;}
+.mainWrap .accountBox .accInfo{justify-content: space-between;}
+.mainWrap .accountBox .accInfo .accInfoInLayout{width:100%;}
+.mainWrap .accountBox .accInfo .accInfoInLayout:after{width:25px;height:25px;background:url('../images/main/arrow_bottom.png') center center/24px no-repeat;content:'';}
+/* .mainWrap .accountBox .accName{position:relative;}
+.mainWrap .accountBox .accName:after{display:block;width:25px;height:25px;background:url('../images/main/arrow_bottom.png') center center/24px no-repeat;content:'';}
+.mainWrap .accInfo .logoWrap+.accInfoWrap{min-width:185px;margin-right:10px;} */
+
+.mainWrap .accountBox .logoWrap.major:after{display:block;content:'';}
+
+.mainWrap .accInfo .logoWrap+.accInfoWrap{min-width:150px;margin-right:10px;}
+.mainWrap .accountBox .accInfo .accNumber{font-size:14px;font-weight:normal;color:#fff;opacity:.8;}
+.mainWrap .accountBox .accInfo .accInfoInBtn{display:flex;margin:0 -9px 0 0;}
+.mainWrap .accountBox .accInfo .accInfoInBtn .btnRefrash{width:25px;height:25px;margin-left:10px;background: url(../images/com/ico_refrash02.png) no-repeat center center/auto 20px;opacity:.8}
+.mainWrap .accountBox .accInfo .accInfoInBtn .accMore{width:25px;height:25px;margin-left:10px;background: url(../images/main/btn_more.png) no-repeat center center/auto 18px;opacity:.8}
+.mainWrap .accountBox .accNumBox{font-size:12px;color:var(--txt-color-gray-01);}
+.mainWrap .accountBox .accDataWrap{display:flex;padding-bottom:20px;margin-top:25px;color:#fff;align-items:center;justify-content:center;line-height:28px}
+.mainWrap .accountBox .accDataWrap .accCash{font-size:28px;}
+.mainWrap .accountBox .accDataWrap .accCash.active{font-size:24px;opacity:.5;}
+.mainWrap .accountBox .accDataWrap .accUnit{font-size:24px;padding-left:4px;}
+.mainWrap .accountBox .toggleSwitch{ width:40px;height:24px;margin-left:5px;line-height:23px;}
+.mainWrap .accountBox .toggleSwitch input[type='checkbox']{width:40px;}
+.mainWrap .accountBox .toggleSwitch label:before{display:none;}
+.mainWrap .accountBox .toggleSwitch input[type='checkbox']+label{position:relative;border-radius:8px;font-size:14px;color:#fff;text-align:center;vertical-align:top;background:none;}
+.mainWrap .accountBox .toggleSwitch input[type='checkbox']+label:after{position:absolute;top:0;left:0;display:block;content:'';width:40px;height:24px;border:1px solid #fff;opacity:.6;border-radius:20px;}
+.mainWrap .accountBox .toggleSwitch input[type='checkbox']:checked+label{color:#fff}
+
+.mainWrap .accountBox .mainBtn{display:flex;position:absolute;bottom:0;width:calc(100% - 40px);}
+.mainWrap .accountBox .mainBtn .btn{position:relative;height:52px;font-size:18px;font-weight:bold;color:#fff;text-align:center;line-height:52px;flex:1;}
+.mainWrap .accountBox .mainBtn .btn+.btn:before{display:block;position:absolute;top:50%;left:0;width:1px;height:15px;margin-top:-7px;background:#f2f2f2;content:'';opacity:.4;}
+.mainWrap .contentBottom{margin-top:20px;}
+/* [2023-02-14] 콕뱅크 송금 수수료 면제 정책 적용 : 김연진 */
+.mainBtn.addTip{position:relative;}
+.mainBtn.addTip .eventBox{position:absolute;top:3px;right:10px;width:30px;height:30px;background:url(../images/main/ico_eventBox.png)no-repeat center center/contain;animation:shake1 .16s 1s forwards;animation-iteration-count:6;opacity:0;}
+.mainBtn.addTip .MainTip{position:absolute;display:block;top:-25px;right:-150px;width:103px;height:37px;background:url(../images/main/img_eventPee.png) no-repeat center center/contain;animation:scale4 1s 2s forwards;-webkit-animation:scale4 1s 2s forwards;opacity:0;box-shadow:none;}
+.mainBtn.addTip .close{position:absolute;top:-45px;right:-20px;width:19px;height:20px;background:url(../images/main/btn_close.png) no-repeat center center/contain;animation:scale5 .5s 2.8s forwards;-webkit-animation:scale5 .5s 2.8s forwards;opacity:0;}
+@keyframes shake1{0%{transform:translate(3px, 0) rotate(5deg);opacity:1;}50%{transform:translate(-3px, 0) rotate(-5deg);opacity:1;}100%{transform:translate(0px, 0) rotate(0deg);opacity:1;}}
+@keyframes scale4{0%{transform:scale(0);right:-150px;opacity:0;}50%{transform:scale(1);right:-35px;opacity:1;}75%{transform:scale(1.1);right:-35px;opacity:1;}100%{transform:scale(1);right:-35px;opacity:1;}}
+@keyframes scale5{0%{transform:scale(0);right:-30px;opacity:0;}50%{transform:scale(1.1);right:-30px;opacity:1;}100%{transform:scale(1);right:-30px;opacity:1;}}
+/* //[2023-02-14] 콕뱅크 송금 수수료 면제 정책 적용 : 김연진 */
+
+.btnSetup {display: inline-block;width:20px;height:17px;vertical-align:-2px; background:url('../images/com/ico_setup.png') no-repeat center/15px auto;}
+
+.unionLinkWrap{margin:20px 0;padding:0 20px;}
+.unionLinkWrap .banList{display:flex;margin:0 -5px;}
+.unionLinkWrap .banList li{padding:0 5px;flex:1;}
+.unionLinkWrap .menuList{overflow:hidden;margin:0 -5px;}
+.unionLinkWrap .menuList li{float:left;width:33.3%;padding:0 5px;box-sizing:border-box;}
+.unionLinkWrap .menuList li{display:table;}
+.unionLinkWrap .menuList li a{display:table-cell;width:100%;height:70px;border-radius:15px;background:#e7f2f4;font-size:15px;color:#333;text-align:center;vertical-align:middle;line-height:1.3;box-sizing:border-box;}
+
+.unionLinkWrap .banList{margin:16px -5px 20px;}
+.unionLinkWrap .banList li a{display:block;position:relative;width:100%;padding:20px 0 56px 15px;border-radius:20px;font-size:14px;}
+.unionLinkWrap .banList li a{background:#e7f2f4 url('../images/main/img_union_ban01.png') no-repeat 100% 100%/contain;}
+.unionLinkWrap .banList li a dt{display:inline-block;position:relative;font-weight:bold;color:#333;}
+.unionLinkWrap .banList li a dt:after{position:absolute;right:0px;bottom:-2px;left:0px;width:100%;height:7px;border-radius:5px;background-color:#1ea2bb;content:'';opacity:.4;}
+.unionLinkWrap .banList li a dd{padding-top:15px;line-height:1.4;}
+.unionLinkWrap .banList li:last-child a{background:#e3edf9 url('../images/main/img_union_ban02.png') no-repeat 100% 100%/contain;}
+.unionLinkWrap .banList li:last-child a dd{color:var(--txt-color-blue-02);}
+
+.mainWrap .mainBannerArea{margin-top:0;padding:0 16px;}
+.mainWrap .ContSwipe{position:relative;height:100%;}
+.mainWrap .ContSwipe::before{display:block;position:absolute;top:0;left:-20px;z-index:100;width:20px;height:100%;background:#fff;content:'';}
+.mainWrap .ContSwipe.none::before{display:none;}
+.mainWrap .swiper-pagination{right:5px;bottom:-5px;}
+.mainWrap .banTop{padding-top:10px;margin-bottom:24px} /* [2023-05-22] 홈 콕추천배너 신규 디자인 가이드 적용 */
+.mainWrap .banTop .swiper-slide{padding-bottom:0}
+.mainWrap .banTop .slideBox .inner a{min-height:auto}
+.mainWrap .ContSwipe .slideBtnArea{bottom:-25px;right:20px}
+.mainWrap .cokrecTit{position:absolute;left:-1px;top:0;width:67px;height:34px;padding:0 12px;background:url('../images/main/cokrec_tit.png') 0 0 /cover;color:#fff;font-weight:bold;font-size:12px;line-height:26px;z-index:2}
+.mainWrap .banBottom{margin-bottom:40px;}
+.mainWrap .banBottom .tit{padding-bottom:10px;font-size:16px;color:#111;font-weight:bold;}
+.mainWrap .slideBox{width:100%;border-radius:20px;}
+.mainWrap .slideBox .inner{overflow:hidden;border-radius:20px;}
+.mainWrap .slideBox .inner a{display:block;width:100%;height:100%;min-height:100px;}
+.mainWrap .slideBox .inner a img{display:block;width:100%;height:auto;}
+/* .mainWrap .swiper-slide{padding-bottom:15px;} */
+.mainWrap .swiper-pagination-bullet{display:none;width:6px;height:6px;background-color:#b7c1cc;}
+.mainWrap .swiper-pagination-bullet-active{width:14px;background-color:#6a7688;}
+/* .mainWrap .swiper-container{overflow:inherit;}
+.mainWrap .swiper-wrapper{min-width:2000px;} */
+
+.mainWrap .slideBtnArea{position:absolute;bottom:18%;right:6%;z-index:90;}
+/* .mainWrap .banBottom .slideBtnArea{bottom:0;right:10px;} */
+.mainWrap .slideNumber{display:inline-block;font-size:14px;color:#5d6c83;z-index:90;letter-spacing:1px;}
+.mainWrap .slideNumber .page{color:#353d4a;}
+.mainWrap .slideBtnArea .btnList{display:inline-block;padding-right:12px;margin-left:10px;vertical-align:0;font-size:14px;background:url('../images/main/ico_arrow.png') no-repeat 100% 1.5px /6px 10px;}
+
+.mainWrap .auto{display:inline-block;width:10px;height:10px;margin-right:10px;}
+.mainWrap .swiperAuto{position:relative;display:block;width:10px;height:10px;}
+.mainWrap .swiperAuto:after{position:absolute;top:0;left:0;display:block;content:'';width:10px;height:10px;background-image:url(../images/main/spr_autoplay.png);background-repeat:no-repeat;background-size:20px 10px;}
+.mainWrap .swiperAuto.start:after{background-position:-12px 0;}
+.mainWrap .swiperAuto.stop:after{background-position:0 0;}
+
+.mainWrap .quickMenuArea{padding:0 16px;}
+.mainWrap .quickMenuArea .defTit2{line-height:1}
+.mainWrap .quickMenuArea ul{overflow:hidden;margin:10px -5px 0 -5px;}
+.mainWrap .quickMenuArea ul li{float:left;width:33.3%;padding:5px;text-align:center;}
+.mainWrap .quickMenuArea ul li a{display:block;width:100%;height:45px;border-radius:10px;background:#f2f3f5;font-size:14px;color:var(--txt-color-blue-01);line-height:45px;}
+/* .mainWrap .quickMenuArea ul li a::before{display:inline-block;position:relative;top:-1px;width:14px;height:13px;margin-right:8px;background-repeat:no-repeat;background-size:14px 13px;vertical-align:middle;content:'';}
+.mainWrap .quickMenuArea ul li a.nhAccSch::before{background-image:url('../images/main/ico_q_nhAccSch.png');}
+.mainWrap .quickMenuArea ul li a.accList::before{background-image:url('../images/main/ico_q_accList.png');}
+.mainWrap .quickMenuArea ul li a.accReg::before{background-image:url('../images/main/ico_q_accReg.png');}
+.mainWrap .quickMenuArea ul li a.accRegSch::before{background-image:url('../images/main/ico_q_accRegSch.png');}
+.mainWrap .quickMenuArea ul li a.nhPay::before{background-image:url('../images/main/ico_q_nhPay.png');}
+.mainWrap .quickMenuArea ul li a.setting::before{background-image:url('../images/main/ico_q_setting.png');} */
+
+/* .mainWrap .menuBottom{display:flex;width:100%;height:68px;padding:0 10px;border-top:1px solid #e3e4e7;background:#fff;box-sizing: border-box;}
+.mainWrap .menuBottom .menuItem{padding:43px 0 0;font-size:14px;color:#7d8291;text-align:center;flex:1;}
+.mainWrap .menuBottom .menuItem::before{display:block;position:absolute;top:12px;left:50%;width:24px;height:24px;margin-left:-12px;background:url('../images/main/spr_bottom_menu.png')  0 -10px /307px no-repeat;;content:'';}
+.mainWrap .menuBottom .menuItem:nth-child(2)::before{background-position-x:-70px;}
+.mainWrap .menuBottom .menuItem:nth-child(3)::before{background-position-x:-140px;}
+.mainWrap .menuBottom .menuItem:nth-child(4)::before{background-position-x:-210px;}
+.mainWrap .menuBottom .menuItem:nth-child(5)::before{background-position-x:-280px;}
+.mainWrap .menuBottom .menuItem.active::before{background-position-y:-45px;}
+.mainWrap .menuBottom .menuItem.active{color:#353d4a;} */
+
+
+@media screen and (max-width: 360px) {
+	.mainWrap #header .menuItem{margin:0 5px;}
+	.mainWrap .accInfo .logoWrap+.accInfoWrap{min-width:140px;}
+	.mainWrap .accountBox .logText .defTxt3{font-size:13px;letter-spacing:-.5px;}
+}
+
+@media screen and (max-width: 320px) {
+	.mainWrap #header .headerL{padding-right:5px;}
+	.mainWrap #header .headerL .btn{padding:0 5px;font-size:13px;}
+	.mainWrap .accountBox{padding:20px 15px 52px 15px;}
+	.mainWrap .accountBox .mainBtn{width:calc(100% - 30px);}
+	.mainWrap .accInfo .logoWrap+.accInfoWrap{min-width:130px;margin-right:5px;}
+	.mainWrap .accountBox .accInfo .accInfoInBtn .btnRefrash{margin-left:5px;}
+	.mainWrap .accountBox .accInfo .accInfoInBtn .accMore{margin-left:5px;}
+	.mainWrap .accountBox .accInfo .accNumber{font-size:13px;letter-spacing:-.5px;}
+	/*.mainWrap .menuBottom .menuItem{font-size:13px;}*/
+	.myMenuArea .menuList .name{width:auto;font-size:12px;letter-spacing:-1.5px;} /* 202-11-18 윤지현:width 수정 63px->auto, 폰트사이즈수정 */
+	.mainWrap .accountBox .logText .tit{font-size:15px;letter-spacing:-1px;}
+	.myMenuArea.setup{margin-right:-5px;margin-left:-5px;} /* 202-11-18 윤지현:글자 떨어짐수정 */
+}
+
+@media screen and (max-width: 280px) {
+	.mainWrap #header{padding:0 15px;}
+	.mainWrap .contentTop{padding-top:20px;}
+	.mainWrap .headerL .btn{padding:0 7px;font-size:13px;}
+	.mainWrap #header .headerR > a{width:20px;height:20px;margin:0 4px;background-size:20px !important;}
+	.mainWrap .userWelcome, .mainWrap .userWelcome .userMessage{font-size:20px;}
+	.mainWrap .accountBox .logText .tit{font-size:16px;line-height:20px;}
+	.mainWrap .accountBox .accDataWrap{display:block;margin-top:10px;}
+	.mainWrap .accountBox .toggleSwitch{margin:10px auto 0 auto;}
+	.mainWrap .accountBox .mainBtn .btn{font-size:16px;}
+	.mainWrap .accountBox .accInfo .accInfoInBtn{display:flex;position: absolute;top:96px;right:23px;}
+	.mainWrap .accountBox{padding:20px 10px 38px 10px;}
+	.mainWrap .accountBox .mainBtn{width: calc(100% - 20px);}
+	.mainWrap .alarm.on:after{top:0;right:0;}
+	.mainWrap .unionMode .accountBox:after{width:80px;height:75px;background-size:80px;}
+	.mainWrap .accountBox .accDataWrap .accCash{font-size:20px !important;}
+	.mainWrap .accountBox .accDataWrap .accUnit{font-size:18px;}
+	.mainWrap .accountBox .accInfo .accInfoInBtn .btnRefrash{width:20px;height:20px;background-size:auto 15px;}
+	.mainWrap .accountBox .accInfo .accInfoInBtn .accMore{width:20px;height:20px;background-size:auto 18px;}
+
+	.mainWrap .quickMenuArea ul li a{font-size:13px;letter-spacing:-1px;}
+	.mainWrap .quickMenuArea ul li a::before{margin-right:3px;}
+
+	/* .mainWrap .menuBottom{height:70px;}
+	.mainWrap .menuBottom .menuItem::before{top:10px;}
+	.mainWrap .menuBottom .menuItem{padding-top:45px;font-size:12px;letter-spacing:-1px;} */
+
+	.unionLinkWrap, .unionLinkWrap .banList{margin-top:20px;}
+
+	.unionLinkWrap .menuList li a{font-size:14px;letter-spacing:-1px;}
+	.unionLinkWrap .banList li a{padding:20px 0 70px 10px;}
+	.unionLinkWrap .banList li a dt{font-size:12px;}
+	.unionLinkWrap .banList li a dd{font-size:11px;letter-spacing:-1px;}
+
+	.myMenuArea .menuList .name{font-size:12px;line-height:1.1;}
+}
+
+

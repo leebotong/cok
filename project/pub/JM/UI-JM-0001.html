@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JM-0001</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_junior.css"><!-- 시니어 큰글모드 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body class="purpleC">
+	<div id="wrap" class="junior ">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>내맘콕송금</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="deviceSmall"><!-- [2022-09-05] div추가 -->
+					<div class="pgTitWrap">
+						<p class="pTit ac">내 <strong>NH농협</strong> 통장에서</p>
+					</div>
+
+					<div class="sendInfoWrap">
+						<div>
+							<a href="javascript:;" role="button" class="accSelect">123-1234-5678-12</a>
+						</div>
+						<div>
+							<span>출금가능금액</span>
+							<strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong>
+						</div>
+					</div>
+
+					<div class="limitMoney">
+						<a href="javascript:;" role="button">1일 송금한도 안내  &#xE001;</a>
+						<a href="javascript:;" role="button">송금가능금액 <span class="colorCase">1,000,000원</span> &#xE001;</a> <!-- [2022-11-18] 윤지현:금액에 span 감싸기 -->
+					</div>
+
+					<div class="toSendMonyWrap">
+						<div class="formWrap">
+							<div class="formItem"><!-- error 문구 노출 시 .error 추가 -->
+								<div class="priceWrap">
+									<div title="이체금액 000원" role="button" aria-label="보낼금액입력" class="priceInput"><!-- native 키패드 호출. 입력전 title="" -->
+										<input type="tel" title="보낼 금액" class="toSendMony inpText" placeholder>
+										<div class="placeholder">얼마를 보낼까요?</div>
+										<!-- <div class="price">
+											5,320,000<span>원</span>
+										</div> -->
+									</div>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+								<div class="priceMessage">
+									<span>삼십만원</span>
+									<!-- case: error문구 -->
+									<!-- <span>출금가능금액을 초과합니다.</span> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<!-- <div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class="sel">다음</button>
+				</div>
+			</div> -->
+
+
+				<!-- native 영역 -->
+				<div>
+					<div style="margin:0 -20px;position:absolute;bottom:0;width:100%;">
+						<img src="../../images/cont/pad.png" style="width:100%;">
+					</div>
+				</div>
+				<!-- //native 영역 -->			
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<script>
+		// 송금금액입력. 해당 페이지에서만 사용
+		$(document)
+			.on('keypress, keyup', '.toSendMonyWrap .toSendMony', function(e){
+				if(this.value.length>9){
+					$(this).addClass('full').next('.price').addClass('sfont');
+				} else{
+					$(this).removeClass('full').next('.price').removeClass('sfont');
+				}
+				$(this).next('div').removeClass('placeholder').addClass('price').html(this.value + '<span>원</span>');
+				$(this).parent('.priceInput').next('.btnReset').show();
+			})
+			//reset 버튼
+			.off('click', '.priceWrap .btnReset')
+			.on('click', '.priceWrap .btnReset', function(e){
+				$(this).parent('.priceWrap').find('.price').html('');
+				$(this).parent('.priceWrap').find('.toSendMony').val('');
+				$(this).parent('.priceWrap').children('.priceInput').find('div').removeClass('price').addClass('placeholder').html('보낼 금액 입력');
+			});
+	</script>
+</body>
+</html>

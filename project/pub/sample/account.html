@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>2022 콕뱅크 고도화</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<meta name="description" content="[SEPTEM] UI Dev Team Markup Sample">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css">
+	<link rel="stylesheet" href="../../css/account.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			// toastOpen();
+			// popOpen(sp1);
+			// popOpen(sp2);
+		});
+	</script>
+	<style>
+	hr{margin-top:30px !important;margin-bottom:20px !important;}hr+div{margin-top:20px;}</style>
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- #header -->
+		<div id="header">
+			<div class="headerL">
+				<a href="#nolink" title="이전메뉴" class="headBtn btnPrev"></a>
+			</div>
+			<h1>콕!BASIC 적금</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div>
+		<!-- //#header -->
+		<!-- #container -->
+		<div id="container">
+			<!-- #contents -->
+			<div id="contents">
+				<div style="background: rgba(255,0,0,0.2);display: inline-block;padding: 10px;">
+					<a href="./account_format_sample.png" target="_blank">click<br><img src="./account_format_sample.png" width="100px" height="auto" alt></a>
+				</div>
+				<hr>0: 기본구조 / 로고(logoWrap)옵션(즐겨찾기): .accFavorite
+				<div class="accTypeWrap">
+					<div class="accInfo">
+						<div class="logoWrap">
+							<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+							<span class="accFavorite"></span>
+						</div>
+						<div class="accInfoWrap">
+							<strong class="accName">
+								<span class="accLimitBank">[한도계좌]</span>
+								<!--<span class="accBank">[농협]</span>-->
+								<span class="bankBookName">주머니(money) 통장주머니(money) 통장주머니(money) 통장</span>
+							</strong>
+							<div class="accNumWrap">
+								<div class="accNumBox">
+									<span class="accNumber">352-1775-6397-03</span>
+								</div>
+							</div>
+							<!-- <span class="accNowInfo">마이너스 이용중</span> -->
+							<!-- <span class="accPossible">잔액 12,000,000원</span> -->
+						</div>
+					</div>
+				</div>
+
+				<hr>1: 로고(logoWrap)옵션(위로 정렬): .alignTop, select type
+				<div class="accTypeWrap accSelectType">
+					<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+						<div class="accInfo">
+							<div class="logoWrap">
+								<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+							</div>
+							<div class="accInfoWrap">
+								<strong class="accName">
+									<!--<span class="accBank">[농협]</span>-->
+									<span class="bankBookName">주머니(money) 통장주머니(money) 통장주머니(money) 통장</span>
+								</strong>
+								<div class="accNumWrap">
+									<div class="accNumBox">
+										<span class="accNumber">352-1775-6397-03</span>
+										<!-- <button type="button" class="accDetail">자세히</button> -->
+										<!-- <button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button> -->
+									</div>
+								</div>
+								<!-- <span class="accNowInfo">마이너스 이용중</span> -->
+								<!-- <span class="accPossible">잔액 12,000,000원</span> -->
+							</div>
+						</div>
+					</a>
+					<div class="accUtility">
+						<button type="button" class="accUtilityItem"><span class="itemLine">거래내역</span></button>
+						<button type="button" class="accUtilityItem"><span class="itemLine">통장표지조회</span></button>
+						<button type="button" class="accUtilityItem"><span class="itemLine">QR코드생성</span></button>
+						<button type="button" class="accUtilityItem"><span class="itemIcon"></span>송금</button>
+						<button type="button" class="accUtilityItem"><span class="itemIcon"></span>송금내역조회</button>
+					</div>
+				</div>
+
+				<hr>2: select type 선택시 체크 아이콘 표시
+				<div class="accTypeWrap accSelectType">
+					<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+						<div class="accInfo accInfoInLayoutWrap">
+							<div class="accInfoInLayout">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<!--<span class="accBank">[농협]</span>-->
+										<span class="bankBookName">자립예탁금(테니스클럽)</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+						</div>
+					</a>
+				</div>
+
+				<hr>2-2: select type, 화살표 아이콘 항상 표시 상태
+				<div class="roundBox noBorder">
+					<div class="roundInBox">
+						<div class="accTypeWrap accAlwaysType">
+							<a href="javascript:popOpen(sp2);" role="button" class="accInLayout">
+								<div class="accInfo">
+									<div class="logoWrap">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+									</div>
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<span class="accLimitBank">[한도계좌]</span>
+											<!--<span class="accBank">[농협]</span>-->
+											<span class="bankBookName">자립예탁금(테니스클럽)</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">
+												<span class="accNumber">352-1775-6397-03</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="roundBox">
+					<div class="roundInBox">
+						<div class="accTypeWrap accAlwaysType">
+							<a href="javascript:popOpen(sp2);" role="button" class="accInLayout">
+								<div class="accInfo">
+									<div class="logoWrap">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+									</div>
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<!--<span class="accBank">[농협]</span>-->
+											<span class="bankBookName">자립예탁금(테니스클럽)</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">
+												<span class="accNumber">352-1775-6397-03</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<div class="accDataWrap">
+								<span class="accNumInfo">잔액</span>
+								<strong class="accCash">15,768,000</strong>
+								<span class="accUnit">원</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="roundBox noBorder">
+					<div class="roundInBox">
+						<div class="accTypeWrap accAlwaysType">
+							<a href="javascript:popOpen(sp2);" role="button" class="accInLayout">
+								<div class="accInfo accInfoInLayoutWrap">
+									<div class="accInfoInLayout">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<!--<span class="accBank">[농협]</span>-->
+												<span class="bankBookName">자립예탁금(테니스클럽)</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1775-6397-03</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="roundBox"><!-- option: noBorder -->
+					<div class="roundInBox">
+						<div class="accTypeWrap accAlwaysType">
+							<a href="javascript:popOpen(sp2);" role="button" class="accInLayout">
+								<div class="accInfo">
+									<div class="logoWrap">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+									</div>
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<!--<span class="accBank">[농협]</span>-->
+											<span class="bankBookName">자립예탁금(테니스클럽)</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">
+												<span class="accNumber">352-1775-6397-03</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<div class="accDataWrap">
+								<span class="accNumInfo">잔액</span>
+								<strong class="accCash">15,768,000</strong>
+								<span class="accUnit">원</span>
+							</div>
+						</div>
+					</div>
+					<div class="roundBoxUtility icon">
+						<a href="javascript:;" role="button" class="utilItem send">송금</a>
+						<a href="javascript:;" role="button" class="utilItem historySearch">송금내역조회</a>
+					</div>
+				</div>
+
+				<div class="roundBox"><!-- option: noBorder -->
+					<div class="roundInBox">
+						<div class="accTypeWrap accAlwaysType">
+							<a href="javascript:popOpen(sp2);" role="button" class="accInLayout">
+								<div class="accInfo accInfoInLayoutWrap">
+									<div class="accInfoInLayout">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<!--<span class="accBank">[농협]</span>-->
+												<span class="bankBookName">자립예탁금(테니스클럽)</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1775-6397-03</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="roundBoxUtility icon">
+						<a href="javascript:;" role="button" class="utilItem send">송금</a>
+						<a href="javascript:;" role="button" class="utilItem historySearch">송금내역조회</a>
+					</div>
+				</div>
+
+				<!-- <div class="accTypeWrap accAlwaysType">
+					<a href="javascript:;" title="계좌 상세보기" role="button" class="accInLayout">
+						<div class="accInfo">
+							<div class="logoWrap">
+								<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+							</div>
+							<div class="accInfoWrap">
+								<strong class="accName">
+									<!--<span class="accBank">[농협]</span>-->
+									<span class="bankBookName">주머니(money) 통장주머니(money) 통장주머니(money) 통장</span>
+								</strong>
+								<div class="accNumWrap">
+									<div class="accNumBox">
+										<span class="accNumber">352-1775-6397-03</span>
+										<button type="button" class="accDetail">자세히</button>
+										<button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button>
+									</div>
+								</div>
+								<span class="accNowInfo">마이너스 이용중</span>
+								<span class="accPossible">잔액 12,000,000원</span>
+							</div>
+						</div>
+					</a>
+				</div> -->
+
+				<hr>2-3: 리스트, 즐겨찾기(토스트)
+				<div class="listTbl">
+					<ul>
+						<li>
+							<div class="accTypeWrap listIn_flex">
+								<div class="accLayout">
+									<div class="accInfo">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<!--<span class="accBank">[농협]</span>-->
+													<span class="accNumber">352-1775-6397-03</span>
+												</div>
+											</div>
+											<strong class="accName">
+												<span class="userName">김농협 2022.00.00</span>
+											</strong>
+										</div>
+									</div>
+								</div>
+								<div class="accUtilBox">
+									<button type="button" title="선택됨" onclick="toastOpen(toastA, message)" class="jsSelectLink listFav active"><span class="blind">즐겨찾기</span></button>
+									<button type="button" class="listClear"><span class="blind">삭제하기</span></button>
+									<script>
+										message = '토스트 메시지가 들어갑니다'
+									</script>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<hr>2-3: 셀렉트
+				<div class="formWrap">
+					<div class="formItem">
+						<strong class="formTit">중도인출계좌번호</strong>
+						<div class="inpSel isLogo">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel placeholder">
+								<span class="logo">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+								</span>
+								<div class="accNum">
+									<span class="tit"><!--<span class="accBank">[농협]</span>--> 바로N콕통장(내주거래통장)</span>
+									<span class="num">555368-12-023456</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<hr>2-3: checkbox type
+				<div class="accTypeWrap accCheckType">
+					<div class="accInLayout">
+						<div class="accInfo">
+							<div class="logoWrap">
+								<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								<span class="accFavorite"></span>
+							</div>
+							<div class="accInfoWrap">
+								<div class="accTag">
+									<span class="blind">[태그],</span>
+									<span class="tagItem tag0">주거래</span>
+									<span class="tagItem tag1">입출금</span>
+									<span class="tagItem tag2">예적금</span>
+									<span class="tagItem tag3">펀드</span>
+								</div>
+								<strong class="accName">
+									<!--<span class="accBank">[농협]</span>-->
+									<span class="bankBookName">주머니(money) 통장</span>
+								</strong>
+								<div class="accNumWrap">
+									<div class="accNumBox">
+										<span class="accNumber">352-1775-6397-03</span>
+										<button type="button" class="accDetail">자세히</button>
+										<!-- <button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button> -->
+									</div>
+								</div>
+								<span class="accNowInfo">마이너스 이용중</span>
+								<span class="accPossible">잔액 12,000,000원</span>
+							</div>
+						</div>
+						<div class="checkBox">
+							<input type="checkbox" name="agreeChk" id="aggrChk09">
+							<label for="aggrChk09"><span class="blind">계좌등록</span></label>
+						</div>
+					</div>
+					<div class="accDataWrap">
+						<span class="accNumInfo">잔액</span>
+						<span class="accExchangeRate">USD</span>
+						<strong class="accCash">58,000,000</strong>
+						<span class="accUnit">달러</span>
+					</div>
+					<div class="accDataWrap">
+						<span class="accNumInfo">잔액</span>
+						<strong class="accCash">58,000,000</strong>
+						<span class="accUnit">원</span>
+					</div>
+					<div class="accDataWrap">
+						<span class="accNumInfo">+ 입금할 금액</span>
+						<strong class="accCash">0</strong>
+						<span class="accUnit">원</span>
+					</div>
+					<div class="accUtility">
+						<button type="button" class="accUtilityItem"><span class="itemLine">잔액채우기</span></button>
+						<button type="button" class="accUtilityItem"><span class="itemLine">한도조회</span></button>
+						<button type="button" class="accUtilityItem"><span class="itemLine">거래내역</span></button>
+						<button type="button" class="accUtilityItem"><span class="itemLine">통장표지조회</span></button>
+						<button type="button" class="accUtilityItem"><span class="itemLine">QR코드생성</span></button>
+						<button type="button" class="accUtilityItem"><span class="itemIcon"></span>계좌별칭 등록/수정</button>
+						<button type="button" class="accUtilityItem"><span class="itemIcon"></span>계좌등록</button>
+						<button type="button" class="accUtilityItem"><span class="itemIcon"></span>송금</button>
+						<button type="button" class="accUtilityItem"><span class="itemIcon"></span>송금내역조회</button>
+						<button type="button" class="accUtilityItem"><span class="itemIcon"></span>ATM/창구출금</button>
+					</div>
+				</div>
+
+				<hr>3: checkbox type
+				<div class="accTypeWrap accCheckType">
+					<div class="accInLayout">
+						<div class="accInfo">
+							<div class="logoWrap">
+								<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+							</div>
+							<div class="accInfoWrap">
+								<strong class="accName">
+									<!--<span class="accBank">[농협]</span>-->
+									<span class="bankBookName">주머니(money) 통장</span>
+								</strong>
+								<div class="accNumWrap">
+									<div class="accNumBox">
+										<span class="accNumber">352-1775-6397-03</span>
+										<!-- <button type="button" class="accDetail">자세히</button> -->
+										<!-- <button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button> -->
+									</div>
+								</div>
+								<!-- <span class="accNowInfo">마이너스 이용중</span> -->
+								<!-- <span class="accPossible">잔액 12,000,000원</span> -->
+							</div>
+						</div>
+						<div class="checkBox">
+							<input type="checkbox" name="agreeChk" id="aggrChk08">
+							<label for="aggrChk08"><span class="blind">계좌등록</span></label>
+						</div>
+					</div>
+				</div>
+
+				<hr>4
+				<div class="accTypeWrap accMoreType">
+					<div class="accInLayout">
+						<div class="accInfo">
+							<div class="logoWrap">
+								<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+							</div>
+							<div class="accInfoWrap">
+								<strong class="accName">
+									<!--<span class="accBank">[농협]</span>-->
+									<span class="bankBookName">주머니(money) 통장</span>
+								</strong>
+								<div class="accNumWrap">
+									<div class="accNumBox">
+										<span class="accNumber">352-1775-6397-03</span>
+										<!-- <button type="button" class="accDetail">자세히</button> -->
+										<button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button>
+									</div>
+								</div>
+								<!-- <span class="accNowInfo">마이너스 이용중</span> -->
+								<!-- <span class="accPossible">잔액 12,000,000원</span> -->
+							</div>
+							<button type="button" onclick="popOpen(sp2)" class="accMore">
+								<span class="blind">더보기</span>
+							</button>
+						</div>
+					</div>
+					<div class="accDataWrap">
+						<span class="accNumInfo">잔액</span>
+						<strong class="accCash">58,000</strong>
+						<span class="accUnit">원</span>
+					</div>
+					<div class="accUtility">
+						<button type="button" class="accUtilityItem"><span class="itemLine">잔액채우기</span></button>
+						<button type="button" class="accUtilityItem"><span class="itemLine">한도조회</span></button>
+					</div>
+				</div>
+
+				<hr>5 하단 버튼 영역 오픈기능O
+				<div class="accTypeWrap">
+					<div class="jsTgWrap">
+						<a href="javascript:;" role="button" class="jsTgBtn jsSelectLink accInLayout">
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<!--<span class="accBank">[농협]</span>-->
+										<span class="bankBookName">주머니(money) 통장</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+											<!-- <button type="button" class="accDetail">자세히</button> -->
+											<!-- <button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button> -->
+										</div>
+									</div>
+									<!-- <span class="accNowInfo">마이너스 이용중</span> -->
+									<!-- <span class="accPossible">잔액 12,000,000원</span> -->
+								</div>
+								<button type="button" onclick="popOpen(sp2)" class="accMore">
+									<span class="blind">더보기</span>
+								</button>
+							</div>
+						</a>
+						<div class="accDataWrap">
+							<span class="accNumInfo">잔액</span>
+							<strong class="accCash">58,000</strong>
+							<span class="accUnit">원</span>
+						</div>
+						<div class="accUtility">
+							<button type="button" class="accUtilityItem"><span class="itemLine">잔액채우기</span></button>
+							<button type="button" class="accUtilityItem"><span class="itemLine">한도조회</span></button>
+						</div>
+						<div class="jsTgCont btnInArea" style="display: none">
+							<a href="javascriapt:;" role="button">거래내역</a>
+							<a href="javascriapt:;" role="button">송금</a>
+							<a href="javascriapt:;" role="button">QR코드 생성</a>
+						</div>
+						<!-- <button class="accListClose">&#xE001;</button> -->
+					</div>
+				</div>
+
+				<hr>6 : 온오프기능 O
+				<div class="accTypeWrap accLineBoxList">
+					<div class="jsTgWrap expandMenuWrap active">
+						<a href="javascript:;" role="button" class="jsTgBtn jsSelectLink layoutWrap expandMenu active">
+							<div class="expandMenuTitle">
+								<span>입출금</span> <span class="statusCount">2</span>
+							</div>
+							<div class="expandMenuPay">4,534,345원</div>
+						</a>
+						<div class="jsTgCont" style="display:block;">
+							<ul class="expandMenuList">
+								<li class="listItem">
+									<div class="accLayout jsShWrap">
+										<div class="accInLayout">
+											<div class="accTag">
+												<span class="tagItem accStop">거래정지</span>
+											</div>
+											<div class="accInfo">
+												<div class="logoWrap">
+													<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+												</div>
+												<div class="accInfoWrap">
+													<strong class="accName">
+														<!--<span class="accBank">[농협]</span>-->
+														<span class="bankBookName">자립예탁금(테니스클럽)</span>
+													</strong>
+													<div class="accNumWrap">
+														<div class="accNumBox">
+															<span class="accNumber">352-1775-6397-03</span>
+														</div>
+													</div>
+												</div>
+												<button type="button" onclick="popOpen(sp2)" class="accMore">
+													<span class="blind">계좌관리 보기</span>
+												</button>
+											</div>
+											<div class="accDataWrap">
+												<strong class="accCash">5,000,000</strong>
+												<span class="accUnit">원</span>
+											</div>
+										</div>
+										<div class="btnInArea">
+											<button type="button">거래내역조회</button>
+											<button type="button">송금</button>
+										</div>
+									</div>
+								</li>
+								<li class="listItem notUse">
+									<div class="accLayout jsShWrap">
+										<div class="accInLayout">
+											<div class="accInfo">
+												<div class="logoWrap">
+													<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+												</div>
+												<div class="accInfoWrap">
+													<strong class="accName">
+														<!--<span class="accBank">[농협]</span>-->
+														<span class="bankBookName">자립예탁금(테니스클럽)</span>
+													</strong>
+													<div class="accNumWrap">
+														<div class="accNumBox">
+															<span class="accNumber">352-1775-6397-03</span>
+														</div>
+													</div>
+												</div>
+												<button type="button" onclick="popOpen(sp2)" class="accMore">
+													<span class="blind">계좌관리 보기</span>
+												</button>
+											</div>
+											<div class="accDataWrap">
+												<strong class="accCash">58,000,000</strong>
+												<span class="accUnit">원</span>
+											</div>
+										</div>
+										<div class="btnInArea jsShTarget">
+											<button type="button">거래내역조회</button>
+											<button type="button">송금</button>
+											<div class="hideBox">
+												<button type="button" data-focus="focus">QR코드 발급</button>
+											</div>
+										</div>
+										<button class="accListClose jsShControl"><span class="blind">더보기</span></button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<hr>7 : 온오프기능 O
+				<section class="notUse" style="padding: 20px;position: relative;">
+					<div class="accLayout jsShWrap">
+						<div class="accInLayout">
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<!--<span class="accBank">[농협]</span>-->
+										<span class="bankBookName">자립예탁금(테니스클럽)</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+								<button type="button" onclick="popOpen(sp_popup)" class="accMore">
+									<span class="blind">계좌관리 보기</span>
+								</button>
+							</div>
+							<div class="accDataWrap">
+								<strong class="accCash">58,000,000</strong>
+								<span class="accUnit">원</span>
+							</div>
+						</div>
+						<div class="btnInArea jsShTarget">
+							<button type="button">거래내역조회</button>
+							<button type="button">송금</button>
+							<div class="hideBox">
+								<button type="button" data-focus="focus">QR코드 발급</button>
+							</div>
+						</div>
+						<button class="accListClose jsShControl"><span class="blind">더보기</span></button>
+					</div>
+				</section>
+
+				<!-- <div class="accTypeWrap accLineBoxList">
+					<div class="jsTgCont" style="display: block;">
+						<ul class="expandMenuList">
+							<li class="listItem">
+								<div class="accLayout jsShWrap">
+									<div class="accInLayout">
+										<div class="accInfo">
+											<div class="logoWrap">
+												<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+											</div>
+											<div class="accInfoWrap">
+												<strong class="accName">
+													<!--<span class="accBank">[농협]</span>-->
+													<span class="bankBookName">자립예탁금(테니스클럽)</span>
+												</strong>
+												<div class="accNumWrap">
+													<div class="accNumBox">
+														<span class="accNumber">352-1775-6397-03</span>
+													</div>
+												</div>
+											</div>
+											<button type="button" onclick="popOpen(sp_popup)" class="accMore">
+												<span class="blind">계좌관리 보기</span>
+											</button>
+										</div>
+										<div class="accDataWrap">
+											<strong class="accCash">58,000,000</strong><span class="accUnit">원</span>
+										</div>
+									</div>
+									<div class="btnInArea jsShTarget">
+										<button type="button">거래내역조회</button>
+										<button type="button">송금</button>
+										<div class="hideBox">
+											<button type="button" data-focus="focus">QR코드 발급</button>
+										</div>
+									</div>
+									<button class="accListClose jsShControl"><span class="blind">더보기</span></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div> -->
+
+				<!-- <div class="accTypeWrap accLineBoxList">
+					<ul class="accList">
+						<li class="jsTgWrap listItem">
+							<div class="accLayout">
+								<div class="jsTgBtn jsSelectLink accInLayout">
+									<div class="accInfo">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<div class="accTag">
+												<span class="blind">[태그],</span>
+												<span class="tagItem tag0">주거래</span>
+												<span class="tagItem tag1">입출금</span>
+												<span class="tagItem tag2">예적금</span>
+												<span class="tagItem tag3">펀드</span>
+											</div>
+											<strong class="accName">
+												<!--<span class="accBank">[농협]</span>-->
+												<span class="bankBookName">주머니(money) 통장</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1775-6397-03</span>
+													<button type="button" class="accDetail">자세히</button>
+													<button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button>
+												</div>
+											</div>
+											<span class="accNowInfo">마이너스 이용중</span>
+											<span class="accPossible">잔액 12,000,000원</span>
+										</div>
+									</div>
+								</div>
+								<div class="accDataWrap">
+									<span class="accNumInfo">잔액</span>
+									<strong class="accCash">58,000,000</strong>
+									<span class="accUnit">원</span>
+								</div>
+							</div>
+							<div class="accUtility">
+								<button type="button" class="accUtilityItem"><span class="itemLine">잔액채우기</span></button>
+							</div>
+							<button type="button" onclick="popOpen(sp2)" class="accMore">
+								<span class="blind">더보기</span>
+							</button>
+							<div class="btnInArea jsShTarget">
+								<button type="button">거래내역조회</button>
+								<button type="button">송금</button>
+								<div class="hideBox">
+									<button type="button" data-focus="focus">QR코드 발급</button>
+								</div>
+							</div>
+							<button class="accListClose">&#xE001;</button>
+						</li>
+					</ul>
+				</div> -->
+
+				<hr>8 : 온오프기능 X
+				<section class="roundBox type2">
+					<div class="roundInBox">
+						<div class="accLayout">
+							<div class="accInLayout">
+								<div class="accTag">
+									<span class="tagItem accStop">거래정지</span>
+								</div>
+								<div class="accInfo">
+									<div class="logoWrap">
+										<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+									</div>
+									<div class="accInfoWrap">
+										<strong class="accName">
+											<!--<span class="accBank">[농협]</span>-->
+											<span class="bankBookName">주머니(money) 통장</span>
+										</strong>
+										<div class="accNumWrap">
+											<div class="accNumBox">
+												<span class="accNumber">352-1775-6397-03</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accDataWrap">
+									<strong class="accCash">5,000,000</strong>
+									<span class="accUnit">원</span>
+								</div>
+							</div>
+							<div class="btnInArea">
+								<button type="button">거래내역조회</button>
+								<button type="button">송금</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section style="padding: 20px;">
+					<div class="accLayout">
+						<div class="accInLayout">
+							<div class="accTag">
+								<span class="tagItem accStop">거래정지</span>
+							</div>
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<!--<span class="accBank">[농협]</span>-->
+										<span class="bankBookName">주머니(money) 통장</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accDataWrap">
+								<strong class="accCash">5,000,000</strong>
+								<span class="accUnit">원</span>
+							</div>
+						</div>
+						<div class="btnInArea halfWidth">
+							<button type="button">거래내역조회</button>
+							<button type="button">송금</button>
+							<button type="button">QR 발급</button>
+						</div>
+					</div>
+				</section>
+
+				<section style="padding: 20px;">
+					<div class="accLayout">
+						<div class="accInLayout">
+							<div class="accTag">
+								<span class="tagItem tag0">주거래</span><span class="tagItem tag5">입출금</span>
+							</div>
+							<div class="accInfo">
+								<div class="logoWrap">
+									<img src="../../images/logo/logo_bnk_hana_72x72.png" alt="계좌 아이콘" class="logo">
+								</div>
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<!-- <span class="accBank">[NH농협]</span> -->
+										<span class="bankBookName">자립예탁금(테니스클럽)</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+											<button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button>
+										</div>
+									</div>
+								</div>
+								<button type="button" onclick="popOpen(sp2)" class="accMore">
+									<span class="blind">계좌관리 보기</span>
+								</button>
+							</div>
+							<div class="accDataWrap flex">
+								<strong class="accCash">5,000,000</strong><span class="accUnit">원</span>
+								<button type="button" class="btnSm">+ 채우기</button>
+							</div>
+						</div>
+						<div class="btnInArea mt10">
+							<button type="button">거래내역조회</button>
+							<button type="button">송금</button>
+						</div>
+					</div>
+					<!-- <div class="roundBox">
+						<div class="roundInBox">
+						</div>
+					</div> -->
+				</section>
+
+				<!-- <div class="accTypeWrap accLineBoxList">
+					<ul class="accList">
+						<li class="jsTgWrap listItem">
+							<div class="accLayout">
+								<div class="accInLayout">
+									<div class="accTag">
+										<span class="blind">[태그],</span>
+										<span class="tagItem tag0">SMS</span>
+										<span class="tagItem tag1">PUSH</span>
+										<span class="tagItem tag2">장기미사용</span>
+									</div>
+									<div class="accInfo">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<!--<span class="accBank">[농협]</span>-->
+												<span class="bankBookName">주머니(money) 통장</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1775-6397-03</span>
+													<button type="button" class="accDetail">자세히</button>
+													<button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button>
+												</div>
+											</div>
+											<span class="accNowInfo">마이너스 이용중</span>
+											<span class="accPossible">잔액 12,000,000원</span>
+										</div>
+									</div>
+								</div>
+								<div class="accDataWrap">
+									<span class="accNumInfo">잔액</span>
+									<strong class="accCash">58,000,000</strong>
+									<span class="accUnit">원</span>
+								</div>
+								<div class="accUtility">
+									<button type="button" class="accUtilityItem"><span class="itemLine">잔액채우기</span></button>
+								</div>
+								<button type="button" onclick="popOpen(sp2)" class="accMore">
+									<span class="blind">더보기</span>
+								</button>
+								<div class="btnInArea">
+									<a href="javascriapt:;" role="button">알림변경</a>
+									<a href="javascriapt:;" role="button">알림삭제</a>
+								</div>
+								<button class="accListClose">&#xE001;</button>
+							</div>
+						</li>
+					</ul>
+				</div> -->
+
+				<hr>9
+				<div class="accTypeWrap accOtherBank">
+					<div class="accInLayout">
+						<div class="accInfo">
+							<div class="logoWrap">
+								<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+							</div>
+							<div class="accInfoWrap">
+								<div class="accTag">
+									<span class="tagItem tag1">입출금</span>
+									<span class="tagItem tag2">활동성</span>
+									<span class="tagItem tag3">예적금</span>
+									<span class="tagItem tag4">금투사 계좌</span>
+									<span class="tagItem tag5">활동성</span>
+									<span class="tagItem disabled">비활동성</span>
+								</div>
+								<strong class="accName">
+									<span class="accBank">[국민]</span>
+									<span class="bankBookName">KB국민ONE통장</span>
+								</strong>
+								<div class="accNumWrap">
+									<div class="accNumBox">
+										<span class="accNumber">352-1775-6397-03</span>
+										<!-- <button type="button" class="accDetail">자세히</button> -->
+										<!-- <button type="button" class="accCopy"><span class="blind">계좌 번호 복사하기</span></button> -->
+									</div>
+								</div>
+								<span class="accNowInfo">마이너스 이용중</span>
+								<span class="accPossible">잔액 12,000,000원</span>
+							</div>
+							<div class="accAppended">
+								<div class="checkBox">
+									<input type="checkbox" name="agreeChk" id="aggrChk10">
+									<label for="aggrChk10"><span class="blind">계좌등록</span></label>
+								</div>
+								<span>콕뱅크<br>등록계좌</span>
+								<span class="doNotAppend">등록불가</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //#contents -->
+			<!-- #footer_cont -->
+			<!-- <div id="footer_cont">
+			</div> -->
+			<!-- //#footer_cont -->
+		</div>
+		<!-- //#container -->
+	</div>
+	<!-- //#wrap -->
+
+	<div id="popupArea">
+		<!-- SLIDE POPUP -->
+		<div id="sp1" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">계좌 선택 1</h2>
+						</div>
+						<div class="layerSelectContent">
+							<ul class="listWrap textType">
+								<li><a href="javascript:;" role="button" class="jsSelectLink">계좌정보</a></li>
+								<li><a href="javascript:;" role="button" class="jsSelectLink active">통장표지조회</a></li>
+								<li><a href="javascript:;" role="button" class="jsSelectLink">계좌등록</a></li>
+								<li><a href="javascript:;" role="button" class="jsSelectLink">계좌별칭등록/수정</a></li>
+								<li><a href="javascript:;" role="button" class="jsSelectLink">계좌번호복사</a></li>
+								<li><a href="javascript:;" role="button" class="jsSelectLink">QR코드발급</a></li>
+							</ul>
+						</div>
+						<!-- <div class="popFootBox">
+							<div class="btnArea">
+								<button type="button" onclick="popClose(this)">취소</button>
+								<button type="button" onclick="popClose(this)" class="sel">확인</button>
+							</div>
+						</div> -->
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div id="sp1" class="popWrap slidePop">
+			<div class="popLayout">
+				<div class="popInner">
+					<div class="popHeader with_line">
+						<h2 data-popup-focus="sp1" class="popTitle">계좌 선택 1</h2>
+					</div>
+					<div class="popCont">
+						<div class="popCont_content">
+							<ul class="listWrap textType">
+								<li><a href="javascript:;" role="button" class="jsSelectLink">계좌정보</a></li>
+								<li><a href="javascript:;" role="button" class="jsSelectLink active">통장표지조회</a></li>
+								<li><a href="javascript:;" role="button" class="jsSelectLink">계좌등록</a></li>
+								<li><a href="javascript:;" role="button" class="jsSelectLink">계좌별칭등록/수정</a></li>
+								<li><a href="javascript:;" role="button" class="jsSelectLink">계좌번호복사</a></li>
+								<li><a href="javascript:;" role="button" class="jsSelectLink">QR코드발급</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" data-popup-focus-close="sp1-close" onclick="popClose(this);" class="popClose"><span class="blind">팝업닫기</span></a>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- SLIDE POPUP -->
+		<div id="sp2" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">계좌 선택 2</h2>
+						</div>
+						<div class="layerSelectContent">
+							<ul class="listWrap accType">
+								<li>
+									<div class="accTypeWrap accSelectType">
+										<a href="javascript:popOpen(sp2);" role="button" class="jsSelectLink accInLayout">
+											<div class="accInfo accInfoInLayoutWrap">
+												<div class="accInfoInLayout">
+													<div class="logoWrap">
+														<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+													</div>
+													<div class="accInfoWrap">
+														<strong class="accName">
+															<!--<span class="accBank">[농협]</span>-->
+															<span class="bankBookName">자립예탁금(테니스클럽)</span>
+														</strong>
+														<div class="accNumWrap">
+															<div class="accNumBox">
+																<span class="accNumber">352-1775-6397-03</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="accTypeWrap accSelectType">
+										<a href="javascript:popOpen(sp2);" role="button" class="jsSelectLink accInLayout">
+											<div class="accInfo accInfoInLayoutWrap">
+												<div class="accInfoInLayout">
+													<div class="logoWrap">
+														<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+													</div>
+													<div class="accInfoWrap">
+														<strong class="accName">
+															<!--<span class="accBank">[농협]</span>-->
+															<span class="bankBookName">자립예탁금(테니스클럽)</span>
+														</strong>
+														<div class="accNumWrap">
+															<div class="accNumBox">
+																<span class="accNumber">352-1775-6397-03</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="accTypeWrap accSelectType">
+										<a href="javascript:popOpen(sp2);" role="button" class="jsSelectLink accInLayout">
+											<div class="accInfo accInfoInLayoutWrap">
+												<div class="accInfoInLayout">
+													<div class="logoWrap">
+														<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+													</div>
+													<div class="accInfoWrap">
+														<strong class="accName">
+															<!--<span class="accBank">[농협]</span>-->
+															<span class="bankBookName">자립예탁금(테니스클럽)</span>
+														</strong>
+														<div class="accNumWrap">
+															<div class="accNumBox">
+																<span class="accNumber">352-1775-6397-03</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="accPossible">잔액 <span class="pColor">12,000,000원</span></div>
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button type="button" onclick="popClose(this)">취소</button>
+								<button type="button" onclick="popClose(this)" class="sel">확인</button>
+							</div>
+						</div>
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div id="sp2" class="popWrap slidePop">
+			<div class="popLayout">
+				<div class="popInner">
+					<div class="popHeader with_line">
+						<h2 data-popup-focus="sp1" class="popTitle">계좌 선택 2</h2>
+					</div>
+					<div class="popCont">
+						<div class="popCont_content">
+							<ul class="listWrap accType">
+								<li>
+									<div class="accTypeWrap accSelectType">
+										<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+											<div class="accInfo">
+												<div class="logoWrap">
+													<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+												</div>
+												<div class="accInfoWrap">
+													<strong class="accName">
+														<!--<span class="accBank">[농협]</span>-->
+														<span class="bankBookName">주머니(money) 통장</span>
+													</strong>
+													<div class="accNumWrap">
+														<div class="accNumBox">352-1775-6397-03
+													</div>
+													<span class="accPossible">잔액 12,000,000원</span>
+												</div>
+											</div>
+										</div>
+									</a>
+									</div>
+								</li>
+								<li>
+									<div class="accTypeWrap accSelectType">
+										<a href="javascript:;" role="button" class="jsSelectLink accInLayout active">
+											<div class="accInfo">
+												<div class="logoWrap">
+													<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+												</div>
+												<div class="accInfoWrap">
+													<strong class="accName">
+														<!--<span class="accBank">[농협]</span>-->
+														<span class="bankBookName">주머니(money) 통장</span>
+													</strong>
+													<div class="accNumWrap">
+														<div class="accNumBox">352-1775-6397-03
+													</div>
+													<span class="accPossible">잔액 12,000,000원</span>
+												</div>
+											</div>
+										</div>
+									</a>
+									</div>
+								</li>
+								<li>
+									<div class="accTypeWrap accSelectType">
+										<a href="javascript:;" role="button" class="jsSelectLink accInLayout">
+											<div class="accInfo">
+												<div class="logoWrap">
+													<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+												</div>
+												<div class="accInfoWrap">
+													<strong class="accName">
+														<!--<span class="accBank">[농협]</span>-->
+														<span class="bankBookName">주머니(money) 통장</span>
+													</strong>
+													<div class="accNumWrap">
+														<div class="accNumBox">352-1775-6397-03
+													</div>
+													<span class="accPossible">잔액 12,000,000원</span>
+												</div>
+											</div>
+										</div>
+									</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" data-popup-focus-close="sp1-close" onclick="popClose(this);" class="popClose"><span class="blind">팝업닫기</span></a>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- TOAST POPUP -->
+		<div class="toastPopWrap">
+			<div id="toastA" class="toastPop">
+				<span class="toastMessage">토스트 팝업 샘플</span>
+			</div>
+			<div id="toastB" class="toastPop">
+				<span class="toastMessage">토스트 팝업 샘플</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0021P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">영업점 정보</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="officeListBox">
+							<div class="officeList">
+								<!-- <span class="tagWrap"><em class="tag black">ATM</em></span>
+								 ▼  [2022-07-15] 김자영 : 태그수정 -->
+								<span class="tag black">ATM</span>
+								<strong class="tit">NH통합IT센터</strong>
+								<ul class="listDot">
+									<li>주소 : 경기도 의왕시 검고개로 59</li>
+									<li>전화 : 000.0000.0000</li>
+									<li>FAX : 000.0000.0000</li>
+									<li>오시는길 : <span>5호선 계룡역 3번출구 국민은행에서 우회전하여 50m 전방</span></li>
+								</ul>
+								<div class="btnInArea">
+									<a href="tel:000-0000-0000;" role="button" class="point">전화걸기</a>
+									<a href="javascript:;" role="button" class="point">주소복사</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- [2022-07-13] 지도영역 수정-->
+						<div class="mapArea">
+							<div class="mapOptionBox">		
+								<div class="controlViewBox">
+									<button type="button" title="확대" class="btnMap zoomIn">&nbsp;</button>
+									<button type="button" title="축소" class="btnMap zoomOut">&nbsp;</button>
+								</div>
+							</div>
+							<div class="officeMapBox">
+								<img src="../../images/cont/@tmp_map.jpg" style="width:100%;">
+								<img src="../../images/com/icon_mapNhBK.png" alt="농협은행 아이콘" class="icon HNbk">
+								<img src="../../images/com/icon_mapNhSH.png" alt="농축협 아이콘" class="icon HNsh">
+								<img src="../../images/com/icon_mapNHmart.png" alt="하나로마트 아이콘" class="icon NHmt">
+								<img src="../../images/com/icon_mapNHbkAtm.png" alt="농협은행ATM 아이콘" class="icon NHbkAtm">
+								<img src="../../images/com/icon_mapNHshAtm.png" alt="농축협ATM 아이콘" class="icon NHshAtm">
+								<img src="../../images/com/icon_myPoint.png" alt="나의위치 아이콘" class="icon myPoint">
+							</div>
+						</div>
+						<!--// [2022-07-13] 지도영역 수정-->
+					</div>
+
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function(){
+		//맵 하단에 위치
+		var mapPose = $('.officeListBox').height() + 100;
+		$('.mapArea').css('top', mapPose);
+	});
+</script>
+</body>
+</html>

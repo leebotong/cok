@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-3310P</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cokClas.css"><!-- 콕모임 전용 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupCCA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>FATCA/CRS 본인확인서 제출</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupCCA);" title="팝업 열기" role="button" class="popOpen">UI-CT-3201P</a><br><br>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<!-- <div class="btnArea">
+				<button type="button" class="btn_full sel">조회</button>
+			</div> -->
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- CENTER POPUP -->
+	<div id="popupCCA" class="popupWrap center" style="display:none;">
+		<div class="layerPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="Layer_Tit">
+								<h2 tabindex="0"><span class="blind">회원가입확인</span></h2>
+							</div>
+							<div class="Layer_Con">
+								<!-- 컨펌메세지 -->
+								<div class="confirmMsg">
+									<i class="error"></i>
+									<p class="tit">조세 목적상 국가로<br>
+										대한민국을 선택하시기 위하여<br>
+										아래 중 하나의 대한민국<br>
+										거주 증빙자료가 필요합니다.</p>
+
+										<ul class="al listNum">
+											<li>주민등록증/운전면허증</li>
+											<li>외국인등록증/영주증</li>
+											<li>관할세무서 발행 거주자 증명서</li>
+											<li>외국국적동포 국내거소신고증<br>(183일 이상 대한민국 체류 사실을 알 수 있는 ‘출입국에 관한 사실증명‘을 함께 제출)</li>
+											<li>그 외 대한민국 정부가 발급한 서류<br>(공무원증, 복지카드, 사업자등록증 등)</li>
+										</ul>
+									<p class="txt al">※ 증빙자료를 지참 후 해당 농·축협을 방문하시어 FATCA/CRS 본인확인서를 제출해주시기 바랍니다</p>
+								</div>
+							</div>
+							<div class="Layer_Pop_Close">
+								<div class="btnArea">
+									<button type="button" title onclick="popClose(this)" class="sel">확인</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

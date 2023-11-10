@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-ME-2820P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>이용약관</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">개인정보의 필수적 수집∙이용 동의</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="terms">
+							<p>㈜농협경제지주는 개인정보를 수집함에 있어, 서비스 제공에 필요한 최소한의 개인정보를 필수동의 항목으로, 그 외 개인정보는 선택동의 항목으로 구분하여 이에 대해 개별적으로 동의 할 수 있는 절차를 마련합니다.</p>
+							<p>㈜농협경제지주는 이용자가 필요한 최소한의 개인정보 이외의 개인정보를 제공하지 아니한다는 이유로 그 서비스 제공을 거부하지 않습니다.</p>
+
+							<h4 class="termsSubTit">(1) 수집 · 이용 목적</h4>
+							<p>회원가입의 성립(본인식별 및 가입의사 확인 등), 포인트 적립 및 사용, 공지사항 전달 등 의사소통 경로 확보</p>
+
+							<h4 class="termsSubTit">(2) 수집하는 개인정보의 항목 </h4>
+								<ul>
+									<li>1. 개인 : 성명, 아이디, 비밀번호, 본인확인정보(CI, 생년월일, 성별, 내외국인구분), 휴대폰번호, 카드번호(카드인증시)</li>
+									<li>2. 사업자  : 아이디, 비밀번호, 휴대폰번호, 사업자명, 사업자등록번호, 이메일, (법인) 법인 대표자 정보(성명, 생년월일, 성별), 과세구분, 업종, 사업장유형, 각종 개별 서비스 이용 시 필수 항목(모바일앱, 구매 및 배송, 사이트접속 등
+									</li>
+									<li>3. 사이트접속 시 : 서비스 이용기록, 접속로그, 쿠키, 접속IP정보, 이용정지 기록, 결제기록</li>
+									<li>4. 구매 및 배송 : 배송의뢰인 및 수령인 성명, 주소, 연락처, 신용카드사명, 신용카드번호, 은행명, 계좌번호, 전화번호, 이메일, 휴대폰번호</li>
+									<li>5. 모바일 기기 이용회원 : 단말기 식별번호 및 OS정보, 이동통신회사, PUSH 수신여부</li>
+								</ul>
+
+							<h4 class="termsSubTit">(3) 보유 및 이용기간</h4>
+							<p>수집 및 이용 목적 달성시까지 보유하며 고객님이 회원탈퇴, 삭제나 처리중단을 요청하신 경우 즉시 파기하고 법률에서 별도로 정한 경우 그 기간 동안 정보를 보유합니다.</p>
+
+							<h4 class="termsSubTit">(4) 거부 권리 및 불이익</h4>
+							<p>귀하는 동의를 거부하실 수 있습니다. 다만, 위 개인(신용)정보 수집·이용에 관한 동의는 통합회원가입을 위한 필수적 사항이므로, 아래의 사항에 동의하셔야 통합회원 가입이 가능합니다.</p>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">확인</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

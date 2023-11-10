@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CO-0033P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>콕! BASIC 통장</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button" class="popOpen">풀팝업</a>
+
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel dis">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- FULL POPUP -->
+<div id="popupA" class="popupWrap full" style="display:none;">
+	<div class="fullPopupDim">
+		<div class="popContent">
+			<div class="popContentBox">
+				<div class="popHead">
+					<div class="popHeadBox">
+						<h2 tabindex="0">계좌인증</h2> <!-- [2022-06-24] 윤지현:문구수정 -->
+					</div>
+				</div>
+				<div class="popContBox">
+					<div class="pgTitWrap">
+						<p class="pTit"><strong>계좌인증</strong>을<br><strong>진행</strong>해주세요.</p>
+						<ul class="listDot">
+							<li>농협계좌는 계좌 비밀번호 인증, 타행계좌는 1원 입금 인증으로 계좌인증이 가능합니다.</li> <!-- [2022-06-24] 윤지현:문구수정 -->
+						</ul>
+					</div>
+
+					<section class="section40">
+						<div class="tabWrap segment">
+							<div role="tablist" class="tabList">
+								<a href="javascript:;" role="tab" aria-selected="true" class="segmentItem active">농협 계좌인증</a>
+								<a href="javascript:;" role="tab" class="segmentItem">타행 계좌인증</a>
+							</div>
+							<div class="tabPanelList">
+								<div role="tabpanel" class="tabPanel show">
+									<section class="section30">
+										<div class="formWarp">
+											<div class="formItem">
+												<strong class="formTit">은행</strong> <!-- [2022-06-24] 윤지현:문구수정 -->
+												<div class="inpText">
+													<input type="text" value="NH농협" title="금융기관" class="tyTxt" placeholder="" readonly>
+													<button type="button" class="btnReset" title="입력 텍스트 삭제"></button>
+												</div>
+											</div>
+											<div class="formItem">
+												<strong class="formTit">계좌번호</strong>
+												<div class="inpSel isLogo">
+													<a href="javascript:;" class="btnSel" title="계좌번호 선택" role="button">
+														<span class="logo">
+															<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+														</span>
+														<div class="accNum">
+															<span class="tit"><!--<span class="accBank">[농협]</span>--> 바로N콕통장(내주거래통장)</span>
+															<span class="num">555368-12-023456</span>
+														</div>
+													</a>
+												</div>
+												<!-- 계좌번호 직접입력 선택시 노출 -->
+												<div class="inpText">
+													<input type="tel" value="" title="계좌번호" class="tyTxt" placeholder="계좌번호 입력">
+													<button type="button" class="btnReset" title="입력 텍스트 삭제"></button>
+												</div>
+												<!-- //계좌번호 직접입력 선택시 노출 -->
+											</div>
+											<div class="formItem">
+												<strong class="formTit">계좌 비밀번호</strong>
+												<div class="inpText error">
+													<button type="button" title="계좌비밀번호 4자리 입력됨" aria-label="계좌비밀번호" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+													<input type="password" value="" title="계좌비밀번호" class="tyTxt sKey" placeholder="숫자 4자리 입력" readonly aria-hidden="true"> <!-- [2022-06-24] 윤지현:문구수정, 클래스추가 -->
+													<a href="javascript:;" role="button" class="btnSm" aria-label="">계좌확인</a>
+												</div>
+												<p class="infoTxtOk">인증 완료되었습니다.</p>
+												<p class="infoTxtErr">비밀번호가 일치하지 않습니다. (1/5)</p>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div role="tabpanel" class="tabPanel">
+									<section class="section30">
+										<div class="formWarp">
+											<div class="formItem">
+												<strong class="formTit">은행</strong> <!-- [2022-06-24] 윤지현:문구수정 -->
+												<div class="inpSel">
+													<a href="javascript:;" class="btnSel" title="금융기관 선택" role="button">우리은행</a>
+												</div>
+											</div>
+											<!--[2022-11-09] 1원송금 프로세스 수정 상시운영 : 윤희정-->
+											<div class="formItem">
+												<strong class="formTit">계좌번호</strong>
+												<!--인증요청-->
+												<div class="inpText">
+													<input type="tel" value="" title="계좌번호" class="tyTxt" placeholder="-없이 입력">
+													<button type="button" class="btnReset" title="입력 텍스트 삭제"></button>
+													<a href="javascript:;" role="button" class="btnSm" aria-label="">1원 입금</a>
+												</div>
+												<!--//인증요청-->
+												<!--인증완료-->
+												<div class="inpText ">
+													<input type="tel" value="214-21-0757-669" title="계좌번호" class="tyTxt" placeholder="-없이 입력" readonly>
+													<span  class="pColor noWrap">인증완료	</span>
+												</div>
+												<!--//인증완료-->
+											</div>
+											<p class="infoTxt">1원 입금은 일 5회만 이용 가능해요. (<span title="현재 실행횟수">0</span><span aria-hidden="true">/5</span>)</p>
+											<!--//[2022-11-09] 1원송금 프로세스 수정 상시운영 : 윤희정-->
+										</div>
+										<!-- [2022-07-26] 윤지현:계좌확인요소 삭제 -->
+									</section>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="popFootBox">
+					<div class="btnArea">
+						<!-- [2022-07-01] 윤지현:수정 -->
+						<button class="">취소</button>
+						<button class="sel">다음</button>
+						<!-- //[2022-07-01] 윤지현:수정 -->
+					</div>
+				</div>
+				<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

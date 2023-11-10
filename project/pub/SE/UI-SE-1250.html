@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SE-1250</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-ui.min.js"></script>
+	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../js/modernizr.custom.min.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>나의 메뉴 설정</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="pgTitWrap">
+					<p class="pTit"><strong>나만의 메뉴</strong>를<br><strong>원하시는 위치</strong>로 이동해 보세요.</p>
+					<ul class="listDot">
+						<li>최대 16개의 메뉴를 자유롭게<br>순서 지정이 가능합니다.</li><!-- 2022-09-19 수정 -->
+					</ul>
+				</div>
+	
+				<!-- menuListSetting -->
+				<div class="menuListSetting">
+					<!-- 2022-09-19 수정 -->
+					<div class="switchWrap">
+						<div class="btns">
+							<button class="refresh">초기화</button>
+						</div>
+						<div class="formHolder switchType grid">
+							<input type="checkbox" name="majorAccount" id="customSwitches" class="inptSwitch">
+							<label for="customSwitches" class="swch"><span class="blind">drag로 목록순서 변경</span></label>
+						</div>
+					</div>
+
+					<!-- dragGridItem -->
+					<div class="item dragGridItem">
+						<ul class="transferView typeRoundBox menuSetUp">
+						</ul>
+						<ul aria-live="polite" id="sortable" class="transferView typeRoundBox menuSetUp ui-sortable">
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>ATM<br>출금</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>카드명세</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>빠른송금</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>계좌등록</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>농협<br>전계좌</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>송금내역</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>공과금</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>환전</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>이벤트</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>NH포인트</span>
+								</div>
+							</li>
+
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>증권추천</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<button class="delete">삭제</button>
+									<span>콕창구출금</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<!-- <button class="delete">삭제</button> -->
+									<span>지정가능</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<!-- <button class="delete">삭제</button> -->
+									<span>지정가능</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<!-- <button class="delete">삭제</button> -->
+									<span>지정가능</span>
+								</div>
+							</li>
+							<li>
+								<div class="inr btnSetWrap">
+									<!-- <button class="delete">삭제</button> -->
+									<span>지정가능</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- //dragGridItem -->
+
+					<!-- listItem -->
+					<div class="item listItem">
+						<ul class="transferView typeRoundBox menuSetUp">
+						</ul>
+						<ul aria-live="polite" class="transferView typeRoundBox menuSetUp">
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>ATM출금</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp off"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>카드명세</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>빠른송금</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>계좌등록</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>농협 전계좌</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>송금내역</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>공과금</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>환전</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>이벤트</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>NH포인트</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>증권추천</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>콕창구출금</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown off"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li class="empty">
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>지정가능</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li class="empty">
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>지정가능</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li class="empty">
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>지정가능</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+							<li class="empty">
+								<div class="inr">
+									<button class="delete">삭제</button>
+									<span>지정가능</span>
+									<div class="btnSetWrap upDown">
+										<button type="button" class="btnSetDown"><span class="blind">하단으로 이동</span></button>
+										<button type="button" class="btnSetUp"><span class="blind">상단으로 이동</span></button>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- //listItem -->
+					<!-- //2022-09-19 수정 -->
+				</div>
+				<!-- //menuListSetting -->
+
+				<hr class="divingLine">
+
+			<div class="pgTitWrap">
+				<p class="pTit">원하시는 메뉴를 <strong>자유롭게 <br>추가 또는 해제</strong>할 수 있어요</p>
+				<!-- <ul class="listDot">
+					<li>최대 16개 메뉴만 가능해요.</li>
+				</ul> --><!-- 2022-09-19 삭제 -->
+			</div>
+
+			<div class="myMenuItem">
+				<strong class="myMenuTit">금융서비스</strong>
+				<div class="boxChkGroup">
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check11" checked>
+						<label for="check11">빠른송금</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check14" checked>
+						<label for="check14">송금내역</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check12" checked>
+						<label for="check12">ATM출금</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check13" checked>
+						<label for="check13">콕창구출금</label>
+					</div>
+					<!-- [2022-11-08] 윤지현:마이데이터추가 -->
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check15">
+						<label for="check15">마이데이터</label>
+					</div>
+					<!-- //[2022-11-08] 윤지현:마이데이터추가 -->
+				</div>			
+			</div> 
+
+			<div class="myMenuItem">
+				<strong class="myMenuTit">계좌관리</strong>
+				<div class="boxChkGroup">
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check01">
+						<label for="check01">콕뱅크 <br class="blank">등록계좌</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check02" checked>
+						<label for="check02">농협 전계좌</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check03">
+						<label for="check03">다른금융<br class="blank">계좌</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check04" checked>
+						<label for="check04">계좌등록</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check05">
+						<label for="check05">계좌정보</label>
+					</div>
+				</div>			
+			</div> 
+
+			<div class="myMenuItem">
+				<strong class="myMenuTit">생활서비스</strong>
+				<div class="boxChkGroup">
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check21" checked>
+						<label for="check21">공과금</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check22" checked>
+						<label for="check22">환전</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check28">
+						<label for="check28">외화선물</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check23" checked>
+						<label for="check23">이벤트</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check24" checked>
+						<label for="check24">NH포인트</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check25" checked>
+						<label for="check25">카드명세</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check26">
+						<label for="check26">영업점 찾기</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check27">
+						<label for="check27">콕모임</label>
+					</div>
+				</div>			
+			</div>
+			
+			<div class="myMenuItem">
+				<strong class="myMenuTit">콕팜</strong>
+				<div class="boxChkGroup">
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check61">
+						<label for="check61">직거래장터</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check62">
+						<label for="check62">영농라이프</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check63">
+						<label for="check63">농·축협 소식</label>
+					</div>
+				</div>						
+			</div> 
+
+			<div class="myMenuItem">
+				<strong class="myMenuTit">콕쇼핑</strong>
+				<div class="boxChkGroup">
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check41">
+						<label for="check41">농협몰</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check42">
+						<label for="check42">농·축협 <br class="blank">직영몰</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check43">
+						<label for="check43">e-하나로마트</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check44">
+						<label for="check44">라이블리</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check45">
+						<label for="check45">K플라워</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check45">
+						<label for="check45">박사장몰</label>
+					</div>
+				</div>						
+			</div> 
+
+			<div class="myMenuItem">
+				<strong class="myMenuTit">콕세상</strong>
+				<div class="boxChkGroup">
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check31">
+						<label for="check31">알뜰폰 <br class="blank">전용몰</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check32">
+						<label for="check32">휴대폰 <br class="blank">전용몰</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check33" checked>
+						<label for="check33">증권추천</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check34">
+						<label for="check34">아파트NH콕</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check35">
+						<label for="check35">MY콕</label>
+					</div>
+				</div>			
+			</div> 			
+
+			<div class="myMenuItem">
+				<strong class="myMenuTit">간편결제</strong>
+				<div class="boxChkGroup">
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check52">
+						<label for="check52">제로페이</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check51">
+						<label for="check51">제로페이<br>모바일상품권</label>
+					</div>
+					<div class="inpChk">
+						<input type="checkbox" name="check" id="check53">
+						<label for="check53">모바일 <br class="blank">현금카드</label>
+					</div>
+				</div>						
+			</div> 
+
+			<hr class="divingLine">
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>나의 즐겨찾기 메뉴는 최소 4개 ~ 최대 16개 메뉴를 설정하실수 있습니다.</li>
+					<li>설정하신 나의 즐겨찾기 메뉴는 콕뱅크 재설치, 단말기 데이터 초기화, 기기변경을 하신 경우 초기화되므로 유의해 주시기 바랍니다.</li>
+			 </ul>
+			</div> 
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">초기화</button>
+				<button type="button" class="btn_full sel">저장</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div><!-- //#wrap -->
+
+<script>
+	$(function(){
+		$("#sortable").sortable({
+			//connectWith:'.accInfoArea',
+			helper : 'clone',
+			handle:'.btnSetWrap',
+			cancel:'',
+			containment:'.menuSetUp.ui-sortable',
+			items:'li',
+			scroll:false,
+			axis : 'x, y' //2022-09-19 수정
+		});
+		$("#sortable").disableSelection();
+		$("input:checkbox[name=majorAccount]").click(function(){
+			if(!$(this).closest('.menuListSetting').hasClass('on')){
+				$(this).closest('.menuListSetting').addClass('on');
+				$(this).next().find('span').text('drag로 목록순서 변경');
+			} else {
+				$(this).closest('.menuListSetting').removeClass('on');
+				$(this).next().find('span').text('button으로 목록순서 변경');
+			}
+		});
+	});
+
+	
+	(function () {
+	var Class = {
+		/* radio, checkbox 세팅 */		initCheckboxRadioOnce: function initCheckboxRadioOnce() {
+			$(document)
+				.off('click', 'input:radio, input:checkbox')
+				.on('click', 'input:radio, input:checkbox', function (e) {
+					var $input = $(this);
+					var name = $input.attr('name');
+					var id = $input.attr('id');
+					var type = $input.attr('type');
+
+					if (type == 'radio') {
+						$('input[name="' + name + '"]')
+							.each(function () {
+								var id = $(this).attr('id');
+								$('label[for="' + id + '"]').closest('.formHolder.radio:not(.noCtrl), .btnHolder.radio:not(.noCtrl)').removeClass('active');
+							});
+						$('label[for="' + id + '"]').closest('.formHolder.radio:not(.noCtrl), .btnHolder.radio:not(.noCtrl)').addClass('active');
+					} else {
+						if (!$input.closest('.formHolder:not(.noCtrl)').hasClass('active')) {
+							$('label[for="' + id + '"]').closest('.formHolder.check:not(.noCtrl), .formHolder.switchType:not(.noCtrl)').addClass('active');
+						} else {
+							$('label[for="' + id + '"]').closest('.formHolder.check:not(.noCtrl), .formHolder.switchType:not(.noCtrl)').removeClass('active');
+						}
+					}
+				});
+		},
+
+		/* ComUi 초기화 */
+		init: function () {
+			for (var func in Class) {
+				if (Class.hasOwnProperty(func)) {
+					if (func !== 'init' && func.indexOf('init') == 0) {
+						var $document = $(document);
+						if (func.lastIndexOf('Once') + 4 == func.length && !$document.data(func)) {
+							$document.data(func, true);
+							Class[func].call(this);
+						} else if (func.lastIndexOf('Once') + 4 != func.length) {
+							Class[func].call(this);
+						}
+					}
+				}
+			}
+		}
+	};
+	if (typeof this['ComUi'] !== 'undefined') {
+		this['ComUi']['mobile'] = Class;
+	} else {
+		this['ComUi'] = { mobile: Class };
+	}
+})();
+
+//ComUi.mobile.toast(navigator.userAgent);
+$.fn.ComUi = ComUi.mobile.init;
+$(function () {
+	var $html = $('html');
+	var $body = $('body');
+	$(document).ComUi();
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+

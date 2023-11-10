@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TX-007P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			 popOpen(popupA);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- #header -->
+		
+		<!-- //#header -->
+		<!-- #container -->
+		<div id="container">
+			<!-- #contents -->
+			<div id="contents">
+				<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+			</div>
+			<!-- //#contents -->
+			<!-- #footer_cont -->
+			<div id="footer_cont">
+			</div>
+			<!-- //#footer_cont -->
+		</div>
+		<!-- //#container -->
+	</div>
+	<!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP	-->
+		<div id="popupA" class="popupWrap full">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">지방세 예약납부상세</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div class="pgTitWrap">
+								<p class="pTit">예약납부 취소는 예약납부 예정일<br><strong>전예정일까지</strong> 가능합니다</p>
+							</div>
+							<section>
+								<div class="listTbl">
+									<div class="listTit"> <!-- [2022-05-30] 한은정 : 타이틀 추가 -->
+										<strong>주민세</strong>
+									</div>
+									<ul>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">납부자명</span>  <!-- [2022-06-10] 윤지현:문구수정 -->
+												<p class="txt">홍길동</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">전자납부번호</span>
+												<p class="txt">302514951542</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">세목</span>
+												<p class="txt">주민세</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">납부기한</span>
+												<p class="txt">2022.03.19</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">납부세액</span>
+												<p class="txt"><strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong></p>
+											</div>
+										</li>
+										<!-- [2022-06-10] 윤지현:추가 -->
+										<!-- [2022-07-11] 윤지현:삭제<li>
+											<div class="listIn_flex">
+												<span class="tit">예약일</span>
+												<p class="txt">2022.03.09</p>
+											</div>
+										</li>-->
+										<!-- //[2022-06-10] 윤지현:추가 --> 
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">예약납부예정일</span>
+												<p class="txt">2022.03.19</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">과세기관</span>
+												<p class="txt">서울시 영등포구</p>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">처리결과</span>
+												<p class="txt txtRed">대기중</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button>예약취소</button>
+								<button class="sel">확인</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

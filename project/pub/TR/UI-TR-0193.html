@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-0193</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		// $(function(){
+		// 	popOpen(popupC)
+		// })
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>일반상환</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="listTblBox">
+				<ul>
+					<li>
+						<span class="tit">대출입금번호</span>
+						<p class="txt">123-1234-1234-12</p>
+					</li>
+					<li>
+						<span class="tit">상환하실 원금</span>
+						<p class="txt">
+							<strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong>
+						</p>
+					</li>
+					<li>
+						<span class="tit">상환하실 이자</span>
+						<p class="txt">
+							<strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong>
+						</p>
+					</li>
+					<li>
+						<span class="tit">중도수수료</span>
+						<p class="txt">
+							<strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong>
+						</p>
+					</li>
+					<li>
+						<span class="tit">대출관련 수수료</span>
+						<p class="txt">
+							<strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong>
+						</p>
+					</li>
+					<li>
+						<span class="tit">금차입금원리금합계(①)</span>
+						<p class="txt">
+							<strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong>
+						</p>
+					</li>
+					<li>
+						<span class="tit">최종이자계산일</span>
+						<p class="txt">2022.06.20</p>
+					</li>
+					<li>
+						<span class="tit">선납이자환출액(②)</span>
+						<p class="txt">
+							<strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong>
+						</p>
+					</li>
+					<li>
+						<span class="tit">출금액(①-②)</span>
+						<p class="txt">
+							<strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<section class="section40">
+				<div class="formWrap">
+					<strong class="defTit2">출금 정보</strong>
+					<div class="formItem">
+						<!-- ▼ 2022-07-01 수정, 텍스트 수정 -->
+						<strong class="formTit">출금 계좌</strong>
+						<div class="inpSel isLogo">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel placeholder">
+								<span class="logo">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+								</span>
+								<div class="accNum">
+									<span class="tit"><!--<span class="accBank">[농협]</span>--> 바로N콕통장(내주거래통장)</span>
+									<span class="num">555368-12-023456</span>
+								</div>
+							</a>
+						</div>
+						<div class="ar accLimitRange">
+							출금가능금액 <strong class="dataWrap"><em class="data">500,000</em><span class="unit">원</span></strong>
+						</div>
+					</div>
+					<!-- ▼ 2022-07-01 수정, 텍스트 수정 -->
+					<div class="formItem">
+						<strong class="formTit">계좌 비밀번호</strong>
+						<div class="inpText">
+							<button type="button" title="계좌 비밀번호 4자리 숫자 입력됨" aria-label="계좌 비밀번호 4자리 숫자" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+							<input type="password" title="계좌 비밀번호 4자리 숫자 입력 팝업열림" aria-hidden="true" value class="sKey" placeholder="숫자 4자리 입력" maxlength="4" readonly>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class>취소</button>
+				<button type="button" class="sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+</div>
+
+</body>
+</html>

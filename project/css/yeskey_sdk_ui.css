@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* version 1.0 | 2020-02-23 */
+/*==========================================================
+   테마
+==========================================================*/
+/* 체크박스 */
+.cloud_frame .checkbox_pack input:checked + label .checkbox_shape { background-color: #05a5ab; }
+
+/* 메인버튼 */
+.cloud_frame .btn_pack.btn_confirm { background: #05a5ab; }
+
+/* 비밀번호 입력 */
+.cloud_frame .password_input_area .password_input_group .pw_box.ready { background: rgba(0, 177, 44, 0.4); }
+.cloud_frame .password_input_area .password_input_group .pw_box.active { background: #05a5ab; }
+
+/* 인증서 - 카드 */
+.cloud_frame .card_swiper .swiper-slide-active.card_basic .card_wrap .shape .info,
+.cloud_frame .card_swiper .swiper-slide-active.card_renewal .card_wrap .shape .info,
+.cloud_frame .card_swiper .swiper-slide .card_wrap .shape:after { background:#05a5ab; /*background-image: linear-gradient(-38deg,#05a5ab,#068a4c);*/}
+
+/* 인증서 - 문구 */
+.cloud_frame .card_swiper .swiper-slide .card_wrap .shape .info .card_validity .validity_number .d_day { color: #05a5ab; }
+
+
+
+
+
+/*------------------------------------------------ 
+   ETC
+------------------------------------------------*/
+/* 문구강조*/
+.cloud_frame .highlight { color: #05a5ab !important; }
+
+/* 입력필드 */
+.cloud_frame .input_pack input:focus { border: 1px solid #05a5ab !important;}
+
+/* 레이어얼럿 - 얼럿 */
+.cloud_frame .cf_alert .btn_cfa_confirm { color: #05a5ab; }
+
+/* 완료아이콘 */
+.cloud_frame .icon_shape_wrap .icon_check_shape { background-color: #05a5ab; }
+.cloud_frame .icon_check_shape .icon_fake_check:after { background-color: #05a5ab; }
+
+/* SMS확인코드 */
+.cloud_frame .code_info_area .code_confirm_number { color: #05a5ab; }
+
+/* 설정 - 자동연결관리 - 자동연결기기 - 편집모드 */
+.cloud_frame .auto_connect ul > li.ac_edit { border: 1px solid #05a5ab; }
+
+
+
+
+/*------------------------------------------------ 
+   추가
+------------------------------------------------*/
+.cloud_frame .cf_totalmenu .tm_profile_area .info_area { color:#05a5ab !important; }
+.cloud_frame .cf_totalmenu .tm_profile_area .info_area b { color:#05a5ab !important; }
+
+.cloud_frame .card_swiper .swiper-slide .card_wrap .shape .info .btn_select_list,
+.cloud_frame .card_swiper .swiper-slide .card_wrap .shape .info .btn_delete_card { background:rgba(255, 255, 255, 0.3) !important; }
+/* 
+.cloud_frame .card_swiper .swiper-slide .card_wrap .shape .info .card_title .btn_bookmark { background:url('../images/yeskey_sdk/star_fill_off.png') center no-repeat !important; background-size:16px 16px !important}
+.cloud_frame .card_swiper .swiper-slide .card_wrap .shape .info .card_title .btn_bookmark.active { background:url('../images/yeskey_sdk/star_fill_on.png') center no-repeat !important; background-size:16px 16px !important} */
+
+:focus{outline-width:0;}

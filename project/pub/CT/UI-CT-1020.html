@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-1020</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>고객정보 확인</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>고객정보</strong>를 <br>확인해주세요.</p>
+			</div>
+
+			<!-- formwrap -->
+			<div class="formWrap">
+				<div class="formItem">
+					<div class="rounBgBox readonlyBox">
+						<ul>
+							<li>
+								<span class="tit">고객명</span>
+								<p class="txt">홍길동</p>
+							</li>
+							<li>
+								<span class="tit">영문이름</span>
+								<p class="txt">Hong gill dong</p>
+							</li>
+							<li>
+								<span class="tit">생년월일</span>
+								<p class="txt">1990년 1월 1일</p>
+							</li>
+							<li>
+								<span class="tit">양음력 구분</span>
+								<p class="txt">양력</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- formwrap -->
+			<div class="formWrap">
+				<h2 class="defTit2">연락처 정보</h2>
+
+				<div class="formItem">
+					<strong class="formTit">휴대전화번호</strong>
+					<div class="formGroup flex46">
+						<div class="inpSel readonly">
+							<!-- <a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel">010</a> -->
+							<div class="btnSel">010</div>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="휴대폰번호 가운데자리('-'없이 입력)" value="1234-5678" class="tyTxt" placeholder="'-'없이 입력" maxlength="8" readonly>
+						</div>
+					</div>
+				</div>
+
+				<div class="formItem error">
+					<strong class="formTit">자택 전화번호(선택)</strong>
+					<div class="formGroup flex46">
+						<div class="inpSel ">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel">선택</a>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="휴대폰번호 가운데자리('-'없이 입력)" value="" class="tyTxt" placeholder="'-'없이 입력" maxlength="8">
+						</div>
+					</div>
+					<p class="infoTxtErr">Error MSG</p>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">직장 전화번호(선택)</strong>
+					<div class="formGroup flex46">
+						<div class="inpSel ">
+							<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel">선택</a>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="휴대폰번호 가운데자리('-'없이 입력)" value="" class="tyTxt" placeholder="'-'없이 입력" maxlength="8">
+						</div>
+					</div>
+					<p class="infoTxtErr">Error MSG</p>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">연락 받을 곳</strong>
+					<!--[2022-12-19] 1.2버전 수정반영 상시운영 : 윤희정_disabled 삭제-->
+					<div class="boxRdoGroup mt14">
+						<div class="inpChk">
+							<input type="radio" name="radio2" id="radio3" checked>
+							<label for="radio3">휴대전화</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio2" id="radio4">
+							<label for="radio4">자택</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio2" id="radio5">
+							<label for="radio5">직장</label>
+						</div>
+					</div>
+					<!--//[2022-12-19] 1.2버전 수정반영 상시운영 : 윤희정_disabled 삭제-->
+				</div>
+			</div>
+
+			<hr class="divingLine" aria-hidden="true"><!--//[2022-12-13] 항목위치이동 상시운영 : 윤희정 - 접근성을 위한 aria 추가-->
+
+			<!-- formwrap -->
+			<div class="formWrap">
+
+				<h2 class="defTit2">주소 정보</h2>
+
+				<div class="formItem">
+					<strong class="formTit">자택주소</strong>
+					<!--[2022-12-19] 1.2버전 수정반영 상시운영 : 윤희정_readonly 삭제 및 수정가능-->
+					<div class="inpText mt0">
+						<input type="text" title="우편번호" value="" class="tyTxt" placeholder="주소검색" >
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+					</div>
+					<div class="inpText mt0">
+						<input type="text" title="자택 주소" value="" class="tyTxt" placeholder >
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<div class="inpText mt0">
+						<input type="text" title="자택 상세주소" value="" class="tyTxt" placeholder="상세주소 입력" >
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<!--//[2022-12-19] 1.2버전 수정반영 상시운영 : 윤희정_readonly 삭제 및 수정가능-->
+				</div>
+
+				<!--[2022-12-13] 항목위치이동 상시운영 : 윤희정
+				<div class="formItem">
+					<strong class="formTit">직장주소(선택)</strong>
+					<div class="inpText">
+						<input type="text" title="우편번호" value class="tyTxt sKey" placeholder="우편번호" readonly>
+						<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+					</div>
+					<div class="inpText">
+						<input type="text" title="직장 상세주소" value class="tyTxt sKey" placeholder readonly>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<div class="inpText">
+						<input type="text" title="직장 상세주소" value class="tyTxt" placeholder="상세주소 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxtErr">Error MSG</p>
+				</div> -->
+
+				<div class="formItem">
+					<strong class="formTit">우편물 수령지</strong>
+					<!--[2022-12-19] 1.2버전 수정반영 상시운영 : 윤희정_disabled 삭제-->
+					<div class="boxRdoGroup mt14">
+						<div class="inpChk">
+							<input type="radio" name="radio3" id="radio6" checked >
+							<label for="radio6">자택</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio3" id="radio7" >
+							<label for="radio7">직장</label>
+						</div>
+					</div>
+					<!--//[2022-12-19] 1.2버전 수정반영 상시운영 : 윤희정_disabled 삭제-->
+				</div>
+			</div>
+
+			<hr class="divingLine" aria-hidden="true"><!--//[2022-12-13] 항목위치이동 상시운영 : 윤희정 - 접근성을 위한 aria 추가-->
+
+			<!-- formwrap -->
+			<div class="formWrap">
+				<h2 class="defTit2">직업 정보</h2>
+
+				<div class="formItem">
+					<strong class="formTit">직업분류</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="대분류 선택" role="button" class="btnSel placeholder">대분류 선택</a>
+					</div>
+					<div class="inpSel">
+						<a href="javascript:;" title="중분류 선택" role="button" class="btnSel placeholder">중분류 선택</a>
+					</div>
+					<div class="inpSel">
+						<a href="javascript:;" title="소분류 선택" role="button" class="btnSel placeholder">소분류 선택</a>
+					</div>
+					<p class="infoTxtErr">Error MSG</p>
+				</div>
+
+
+				<div class="formItem">
+					<strong class="formTit">직위</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="직위 선택" role="button" class="btnSel placeholder">차장</a>
+					</div>
+					<p class="infoTxtErr">Error MSG</p>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">직장명</strong><!--//[2022-12-23] 2차 QA 수정 상시운영 : 윤희정_선택 삭제-->
+					<div class="inpText">
+						<input type="text" title="직장명" class="tyTxt" placeholder="직장명 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxtErr">Error MSG</p>
+				</div>
+
+				<!--[2022-12-13] 항목위치이동 상시운영 : 윤희정-->
+				<div class="formItem">
+					<strong class="formTit">직장주소</strong><!--//[2022-12-23] 2차 QA 수정 상시운영 : 윤희정_선택 삭제-->
+					<div class="inpText">
+						<input type="text" title="우편번호" value class="tyTxt sKey" placeholder="주소검색" readonly>
+						<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+					</div>
+					<div class="inpText">
+						<input type="text" title="직장 상세주소" value class="tyTxt sKey" placeholder readonly>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<div class="inpText">
+						<input type="text" title="직장 상세주소" value class="tyTxt" placeholder="상세주소 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxtErr">Error MSG</p>
+				</div>
+			</div>
+
+
+			<hr class="divingLine" aria-hidden="true"><!--// 접근성을 위한 aria 추가-->
+			<!--//[2022-12-13] 항목위치이동 상시운영 : 윤희정-->
+
+			<!-- formwrap -->
+			<div class="formWrap">
+
+				<h2 class="defTit2">부가 정보</h2>
+
+				<div class="formItem">
+					<strong class="formTit">거래목적</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="거래목적 선택" role="button" class="btnSel placeholder">선택</a>
+					</div>
+					<!-- <div class="inpText">
+						<input type="text" title="거래목적 직접입력" class="tyTxt" placeholder="직접입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div> -->
+					<p class="infoTxtErr">Error MSG</p>
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">자금의 원천</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="자금의 원천 선택" role="button" class="btnSel placeholder">급여</a>
+					</div>
+					<p class="infoTxtErr">Error MSG</p>
+				</div>
+			</div>
+
+			<!--[2022-12-13] 항목위치이동 상시운영 : 윤희정-->
+			<hr class="divingLine" aria-hidden="true">
+
+			<!-- formwrap -->
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">실소유자 여부
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">실소유자란?</strong>
+								<ul class="listDot">
+									<li>이용하고자 하는 금융거래의 궁극적 혜택을 보는 개인으로 고객을 최종적으로 지배하거나 통제하는 자연인을 말합니다. 실소유자가 아닐 경우 온라인 비대면 서비스 이용이 불가합니다.</li>
+								</ul>
+								<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+							</div>
+						</div>
+					</strong>
+
+					<div class="boxRdoGroup mt14">
+						<div class="inpChk">
+							<input type="radio" name="radio4" id="radio8">
+							<label for="radio8">네</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio4" id="radio9">
+							<label for="radio9">아니오</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--//[2022-12-13] 항목위치이동 상시운영 : 윤희정-->
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

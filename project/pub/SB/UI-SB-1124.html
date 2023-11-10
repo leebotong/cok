@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1124</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<!-- <a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a> -->
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+		</div>
+		<!-- <h1>회차별중도인출</h1> -->
+		<div class="headerR">
+			<!-- <a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a> -->
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="completeWrap">
+				<i class="check"></i>
+				<p class="tit"><strong class="pColor">송금</strong> 완료</p>
+				<!-- ▼ 2022-07-01 삭제 -->
+				<!-- <p class="txt"><strong class="pColor">김수현</strong>님이 보내신 금액 <strong class="pColor">12,567,000</strong>원이<br>고객님의 계좌로 입금되었습니다.</p> -->
+			</div>
+
+			<section>
+				<ul class="listWrap mt20List">
+					<li class="listItem">
+						<div class="roundBox type2">
+							<div class="roundInBox">
+								<div class="accTypeWrap">
+									<div class="accInfo">
+										<div class="accInfoWrap">
+											<div class="accNumWrap">
+												<p class="fMiddle"><strong class="pColor">김농협</strong>님께 송금 완료</p>
+											</div>
+										</div>
+										<div class="utilArea">
+											<button type="button" class="btnSm">공유</button><!-- [2022-11-09] 윤지현:버튼 마크업변경. 이하 동일 -->
+											<!-- <a href="javascript:;" role="button" class="utilItem share"><span class="blind">송금메시지 전송</span></a> -->
+										</div>
+									</div>
+									<div class="listTblBox">
+										<ul>
+											<li>
+												<!-- ▼ 2022-07-20 텍스트 수정 -->
+												<span data-focus="focus" class="tit">보낸금액</span>
+												<p class="txt"><strong class="dataWrap"><em class="data">11,000,000</em><span class="unit">원</span></strong></p>
+											</li>
+											<li>
+												<!-- ▼ 2022-07-20 텍스트 수정 -->
+												<span class="tit">입금계좌</span><!-- [2022-11-10] 윤지현:문구수정 -->
+												<!-- ▼ 2022-07-07 pColor 클래스 추가 -->
+												<p class="txt">NH농협<br>123-1234-1234-12</p><!-- [2022-11-10] 윤지현: 클래스삭제 -->
+											</li>
+											<li>
+												<span class="tit">받는분</span>
+												<p class="txt pColor">박축협</p><!-- [2022-11-10] 윤지현: 클래스추가 -->
+											</li>
+											<!-- [2023-02-14] 송금수수료 발생시 보이는 항목 : 김연진 -->
+											<li>
+												<span class="tit">수수료</span>
+												<p class="txt">0원</p>
+											</li>
+											<!-- //[2023-02-14] 송금수수료 발생시 보이는 항목 : 김연진 -->
+											<!-- [2023-02-14] 송금수수료 무료시 보이는 항목 : 김연진
+											<li>
+												<span class="tit">수수료</span>
+												<p class="txt">0원</p>
+											</li>
+											//[2023-02-14] 송금수수료 무료시 보이는 항목 : 김연진 -->
+										</ul>
+									</div>
+								</div>
+								<div class="btnLnkLine">
+									<a href="javascript:;" role="button" class="underLine">+ 자주쓰는 계좌 설정</a>
+								</div>
+							</div>
+							<div class="roundBoxUtility">
+								<a href="javascript:;" role="button" class="utilItem voice">송금내역저장</a>
+								<a href="javascript:;" role="button" class="utilItem voice">빠른송금 등록</a>
+							</div>
+						</div>
+					</li>
+					<li class="listItem">
+						<div class="roundBox type2">
+							<div class="roundInBox">
+								<div class="accTypeWrap">
+									<div class="accInfo">
+										<div class="accInfoWrap">
+											<div class="accNumWrap">
+												<p class="fMiddle"><strong class="pColor">김농협</strong>님께 송금 완료</p>
+											</div>
+										</div>
+										<div class="utilArea">
+											<button type="button" class="btnSm">공유</button><!-- [2022-11-09] 윤지현:버튼 마크업변경 -->
+										</div>
+									</div>
+									<div class="listTblBox">
+										<ul>
+											<li>
+												<!-- ▼ 2022-07-20 텍스트 수정 -->
+												<span data-focus="focus" class="tit">보낸금액</span>
+												<p class="txt"><strong class="dataWrap"><em class="data">11,000,000</em><span class="unit">원</span></strong></p>
+											</li>
+											<li>
+												<!-- ▼ 2022-07-20 텍스트 수정 -->
+												<span class="tit">입금계좌</span><!-- [2022-11-10] 윤지현:문구수정 -->
+												<p class="txt">NH농협<br>123-1234-1234-12</p><!-- [2022-11-10] 윤지현: 클래스삭제 -->
+											</li>
+											<li>
+												<span class="tit">받는분</span>
+												<p class="txt pColor">박축협</p><!-- [2022-11-10] 윤지현: 클래스추가 -->
+											</li>
+											<!-- [2023-02-14] 송금수수료 발생시 보이는 항목 : 김연진
+											<li>
+												<span class="tit">수수료</span>
+												<p class="txt">0원</p>
+											</li>
+											//[2023-02-14] 송금수수료 발생시 보이는 항목 : 김연진 -->
+											<!-- [2023-02-14] 송금수수료 무료시 보이는 항목 : 김연진 -->
+											<li>
+												<span class="tit">수수료</span>
+												<p class="txt">0원</p>
+											</li>
+											<!-- //[2023-02-14] 송금수수료 무료시 보이는 항목 : 김연진 -->
+										</ul>
+									</div>
+								</div>
+								<div class="btnLnkLine">
+									<a href="javascript:;" role="button" class="underLine">+ 자주쓰는 계좌 설정</a>
+								</div>
+							</div>
+							<div class="roundBoxUtility">
+								<a href="javascript:;" role="button" class="utilItem voice">송금내역저장</a>
+								<a href="javascript:;" role="button" class="utilItem voice">빠른송금 등록</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="line">송금내역</button><!-- [2022-11-09] 윤지현:line 클래스추가 -->
+				<button type="button" class="sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

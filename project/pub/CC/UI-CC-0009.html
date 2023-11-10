@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CC-0009</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>제로페이</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>QR코드 촬영</strong> 또는<br> <strong>QR/바코드 생성 후</strong> 결제해주세요.</p><!-- [2022-06-30] 김자영 : 마침표 추가 -->
+			</div>
+
+			<div class="roundBox"><!-- option: noBorder -->
+				<div class="roundInBox">
+					<div class="accTypeWrap accAlwaysType">
+						<a href="javascript:popOpen(popupB);" role="button" class="accInLayout">
+							<div class="accInfo">
+								<div class="accInfoWrap">
+									<strong class="accName">
+										<!--<span class="accBank">[농협]</span>-->
+										<span class="bankBookName">자립예탁금(테니스클럽)</span>
+									</strong>
+									<div class="accNumWrap">
+										<div class="accNumBox">
+											<span class="accNumber">352-1775-6397-03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="roundBoxUtility">
+					<div class="accDataWrap">
+						<span class="accNumInfo">출금가능금액</span>
+						<span class="dataWrap">
+							<strong class="accCash">15,768,000</strong>
+							<span class="accUnit">원</span>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<ul class="linkArr">
+				<li><a href="#">제로페이 소개 &#xE001;</a></li>
+				<li><a href="#">이용가맹점 &#xE001;</a></li>
+			</ul>
+
+			<section class="section40">
+				<div class="roundBox">
+					<div class="roundBoxUtility icon">
+						<a href="javascript:;" role="button" class="utilItem qrScan">QR코드 촬영</a>
+						<a href="javascript:;" role="button" class="utilItem qrCreate">QR/바코드 생성</a>
+					</div>
+				</div>
+				<p class="infoTxt mt20"><strong class="pColor">[QR/바코드 생성]</strong>을 선택하면 전자서명과 동시에 QR/바코드가 생성됩니다.</p>
+			</section>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">결제내역</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popupArea">
+</div>
+</body>
+</html>

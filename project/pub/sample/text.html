@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>콕 text</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>Spoqa Han Sans Neo</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents pubGuide">
+			<h1 class="gTit">### page title</h1>
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>아파트관리비</strong> 정보를<br><strong>입력</strong>해주세요</p>
+				<ul class="listDot">
+					<li>고객님께 고지된 2022년 03월 09일 현재의 인터넷 청구서입니다.</li>
+					<li>은행 창구 등에서 이미 납부하셨던 기금 고지서는 납부하지 마시기 바랍니다. (이중납부 위험)</li>
+				</ul>
+				<!-- <div role="img" aria-label="스탭 5단계 중 2단계" class="stepTxt">
+					<em>2</em>/5
+				</div> -->
+			</div>
+			<div class="pgTitWrap sm">
+				<p class="pTit">정기적금</p>
+				<p class="pTxt">해운대농협</p>
+			</div>
+
+			<div class="rounBgBox">
+				<strong class="defTit1">제목이 있는 info text의 경우의 박스</strong>
+				<ul class="listDot">
+					<li>본인명의 휴대폰</li>
+					<li>공동인증서</li>
+				</ul>
+			</div>
+
+			<div class="roundBdGBox charac05">
+				<p>고객님의 거래실적에 따라 하나로가족고객이<br> 되시면 농협이 제공하는 우대서비스를<br> 받으실 수 있습니다.</p>
+			</div>
+
+			<!-- <div class="roundBgWBox">
+				<div class="roundBgGBox">asdasdas</div>
+				asdasdasd
+			</div> -->
+
+			<h1 class="gTit" style="margin-top:40px">### Title case</h1>
+			<p class="defTit1">.defTit1(18px #111 bold)</p>
+			<p class="defTit2">.defTit2(16px #353d4a bold)</p>
+			<p class="formTit">.formTit(14px #353d4a normal)</p>
+
+			<h1 class="gTit" style="margin-top:40px">### Text case</h1>
+			<p class="defTxt1">.defTxt1(15px #5d6c83 normal)</p>
+			<p class="defTxt2">.defTxt2(14px #353d4a normal)</p>
+			<p class="defTxt3">.defTxt3(14px #5d6c83 normal)</p>
+			<p class="defTxt4">.defTxt4(14px #7d8291 normal)</p>
+			<p class="through">.through</p>
+			<!-- <p class="defTxt2">.defTxt2(14px #5d6c83 normal)</p> -->
+			<p class="infoTxt">.infoTxt(14px #5d6c83 normal) 블라블라블라 블라블라블라 블라블라블라</p>
+			<p class="bili">.bili(14px #5d6c83 normal) 블라블라블라 블라블라블라 블라블라블라</p>
+			<div class="listTbl_btnBox">
+				<a href="javascript:;" title="펼치기" role="button" class="inBoxBtn jsShowBtn">상품 상세 정보</a>
+			</div>
+
+			<!-- <p class="defSub1">콕뱅크 폰트 size23px #333 Medium 700</p>
+			<h2 class="defTit2">김농협님, 안녕하세요</h2>
+
+			<p class="defSub1">콕뱅크 폰트 size23px #333 Bold 900</p>
+			<h2 class="defTit3">김농협님, 안녕하세요</h2> -->
+
+			<h1 class="gTit" style="margin-top:40px">### 금액 등 data 사용 마크업()</h1>
+			case1: strong.dataWrap > em.data + span.unit<br><br>
+			<strong class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></strong>
+			<br><br>
+			case2: span.dataWrap > em.data + span.unit<br><br>
+			<span class="dataWrap"><em class="data">170,000</em><span class="unit">원</span></span>
+
+			<h1 class="gTit" style="margin-top:40px">### info Txt</h1>
+			<p class="infoTxt">계좌확인을 하신 계좌는 콕뱅크 주거래 계좌로 등록합니다.</p>
+
+			<h1 class="gTit" style="margin-top:40px">### TextItem</h1>
+			<div class="textItem">
+				<p class="tit">캐시삭제 안내</p>
+				<p class="txt">캐시 지우기는 사용자 기기에 저장되어 있는 불필요한 파일,	임시파일을 삭제합니다.</p>
+			</div>
+
+			<h1 class="gTit" style="margin-top:40px">### 특수문자</h1>
+			<p>
+			왼쪽 화살표 : <span style="font-size:20px">&#xE000;  뒤로 가기</span>
+			</p>
+			<p>
+			오른쪽 화살표 : <span style="font-size:20px">더 알아보기 &#xE001;</span>
+			</p>
+			<!-- <p style="margin-top:20px">
+				<span style="font-size:20px">
+					&#xE002; &#xE003; &#xE004; &copy; &amp; &lt; &gt; &#x2603; 、。·‥…‘’“”「」『』
+					△▲▽▼→←↑↓↔〓◁◀▷▶
+					¥ $ ₩￦
+				</span>
+			</p> -->
+
+			<h1 class="gTit" style="margin-top:40px">### 원문자 마크업으로</h1>
+			<i class="txtNum n1"></i>
+			<i class="txtNum n2"></i>
+			<i class="txtNum n3"></i>
+			<i class="txtNum n4"></i>
+			<i class="txtNum n5"></i>
+			<i class="txtNum n6"></i>
+			<i class="txtNum n7"></i>
+			<i class="txtNum n8"></i>
+			<i class="txtNum n9"></i>
+
+			<h1 class="gTit" style="margin-top:40px">### 텍스트아이콘</h1>
+			<span class="tagWrap">
+				<em class="tag red">납부실패</em>
+				<em class="tag blue">납부성공</em>
+				<em class="tag success">등록완료</em>
+				<em class="tag faild">등록실패</em>
+			</span>
+			<span class="tagWrap">
+				<em class="tag kword01">NEW</em>
+				<em class="tag kword02">BEST</em>
+				<em class="tag kword03">즉시대출</em>
+				<em class="tag kword04">계열사</em>
+				<em class="tag kword05">매우높은위험</em>
+				<em class="tag kword06">높은위험</em>
+				<em class="tag kword07">다소높은위험</em>
+				<em class="tag kword08">보통위험</em>
+				<em class="tag kword09">낮은위험</em>
+				<em class="tag kword10">매우낮은위험</em>
+
+			</span>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+		</div> <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

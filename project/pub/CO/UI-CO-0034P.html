@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CO-0034P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>모바일 운전면허증 인증</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascrit:;" onclick="popOpen(popupA)">팝업열기</a>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel dis">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" >
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">모바일 운전면허증 인증</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="creditTakeWrap">
+							<div class="pgTitWrap">
+								<p class="pTit">인증 요청을 <strong>진행중</strong> 이에요.</p>
+							</div>
+
+							<div class="imgWrap">
+								<img src="../../images/com/img_driveId02.png" alt="신분증 촬영이미지">
+							</div>
+
+							<div class="pgTitWrap">
+								<ul class="listDot">
+									<li><span class="underLine">신분증 앱이 실행되지 않나요?</span></li>
+								</ul>
+							</div>
+						</div>
+
+						<section class="mt10">
+							<p class="layoutWrap driveIdTi">
+								<span class="defTit2">인증 절차 안내</span>
+								<a href="javascript:;" role="button" class="btnDetail">모바일운전면허증 안내</a>
+							</p>
+							<div class="stepDiagram driveIdStep">
+								<li>
+									<i class="ico"></i>
+									<p><span class="numb">01.</span>모바일 운전면허증 앱 호출</p>
+								</li>
+								<li>
+									<i class="ico"></i>
+									<p><span class="numb">02.</span>모바일 운전면허증 앱에서 인증하기</p>
+								</li>
+								<li>
+									<i class="ico"></i>
+									<p><span class="numb">03.</span>인증 후 인증완료 버튼 선택하기</p>
+								</li>
+							</div>
+						</section>
+					</div>
+
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="point">재실행</button>
+							<button class="sel">인증완료</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

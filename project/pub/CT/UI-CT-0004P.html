@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-0004P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			 popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>회원가입</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- #popupArea -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full" style="display:none;">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">공지사항 상세</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+            <div class="boardView">
+							<div class="boardTxt">
+								<span class="title">시스템 정기점검에 따른 서비스 시스템 정기점검에 따른 서비스 <i aria-label="새글" class="new">N</i></span>
+								<span class="date">2022.02.18</span>
+								<!-- ▼ [2022-10-07] 김자영: 공유버튼추가-->
+								<button type="button" class="btnSm">공유</button>
+							</div>
+							<div class="boardCont">
+								<!-- 내용영역 -->
+								<div style="padding:20px;background:#e6ebf3;">Contents Area</div>
+								<!-- //내용영역 -->
+							</div>
+							<div class="btnInArea">
+								<button type="button" class="primary">확인</button>
+							</div>
+
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="linkArea">
+              <ul>
+                <li><em>이전글</em><span class="links">이전글이 없습니다.</span></li>
+                <li><em>다음글</em><a href="javascript:;" title="상세보기" role="button" class="links">코로나19 관련 일부 영업점 임시휴업 안내 임시휴업 안내</a></li>
+              </ul>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">확인</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //#popupArea -->
+</body>
+</html>

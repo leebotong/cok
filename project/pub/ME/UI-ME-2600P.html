@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-ME-2600</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>회원가입</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			계좌확인완료_P
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>
+		<!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupA" class="popupWrap slide">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">맞춤계좌번호</h2>
+					</div>
+					<div class="layerSelectContent">
+						<div class="formWrap"><!-- [2022-06-20] 김자영 : 클래스명 오타수정 -->
+							<div class="formItem">
+								<strong class="formTit">계좌번호 입력</strong>
+								<div class="inpText">
+									<input type="tel" title="계좌번호" value class="tyTxt" placeholder="계좌번호 입력">
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+								<p class="infoTxtErr">Error MSG</p>
+							</div>
+							<!-- [2022-06-20] 김자영 : 삭제
+							<div class="formItem">
+								<ul class="listDot">
+									<li>계좌번호를 기억하지 못하시는 고객님은 사전에 영업점에서 설정한 맞춤계좌를 입력해 주세요.</li>
+								</ul>
+							</div>
+							-->
+						</div>
+						<!-- [2022-06-20] 김자영 : 추가 -->
+						<p class="bili">계좌번호를 기억하지 못하시는 고객님은 사전에 영업점에서 설정한 맞춤계좌를 입력해 주세요.</p>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel dis">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CENTER POPUP [alert]-->
+	<div id="popupCCA" class="popupWrap center" style="display:block;">
+		<div class="layerPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="Layer_Tit">
+								<h2 tabindex="0"><span class="blind">팝업</span></h2>
+							</div>
+							<div class="Layer_Con">
+								<!-- 컨펌메세지 -->
+								<div class="confirmMsg">
+									<i class="check"></i>
+									<p class="tit">계좌가 확인되었습니다.</p>
+								</div>
+							</div>
+							<div class="Layer_Pop_Close">
+								<div class="btnArea">
+									<button type="button" title onclick="popClose(this)" class="sel">확인</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--// POPUP AREA -->
+
+</body>
+</html>

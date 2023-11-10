@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0287</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>주머니(money) 통장</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+			<!-- 영업점선택 -->
+			<div class="marketListBranch">
+				<div class="balloon">
+					<p class="dil">금리를 꼭 확인해주세요</p>
+					<!-- tooltip -->
+					<div class="tooltipWrap jsTooltipPosition">
+						<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+						<div class="tooltipCont">
+							<strong class="tit">금리 확인 안내</strong>
+							<p>조회하신 금리(연%P, 세전)는 가입설계, 우대금리 적용, 금리반영시점에 따라 가입 시 금리와 다를 수 있습니다. (실제 적용금리는 상품가입 단계에서 꼭 확인해주세요.)</p>
+							<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+						</div>
+					</div>
+					<!-- //tooltip -->
+				</div>
+				<div class="box">
+					<div class="formWrap">
+						<div class="formItem">
+							<strong class="formTit">상품 가입 영업점
+								<!-- tooltip -->
+								<div class="tooltipWrap jsTooltipPosition">
+									<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+									<div class="tooltipCont l-15">
+										<strong class="tit">농·축협 영업점 선택 안내</strong>
+										<ul class="listDot">
+											<p>선택하신 농·축협 영업점으로 상품 가입이 진행되며, 농·축협 별로 기본금리와 우대금리는 다를 수 있으므로 상품 가입 영업점을 꼭 확인하신 후 가입을 진행해주세요.</p>
+										</ul>
+										<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+									</div>
+								</div>
+								<!-- //tooltip -->
+							</strong>
+							<div class="inpSel">
+								<a href="javascript:;" title="상품 판매 영업점 선택" role="button" class="btnSel placeholder">영업점 선택</a>
+							</div>
+							<div class="inpText">
+								<input type="text" title="영업점 검색" class="tyTxt sKey" value placeholder="영업점 검색" readonly><!-- [2022-09-01] readonly추가 -->
+								<button type="button" title="입력 텍스트 삭제" class="btnReset" style="display: none;"></button>
+							</div>
+						</div>
+						<button type="button" class="btnSm">검색</button>
+					</div>
+					<!-- case: 예상금리 -->
+					<div class="rateBox">
+						<div class="innerBox">
+							최고 연 <strong class="dataWrap"><em class="data">0.0505</em><span class="unit">%</span></strong>
+							<button type="button" class="btnSm">자세히</button>
+						</div>
+						<div class="rateEtc">
+							<span>세전</span>
+							<span>우대금리포함</span>
+						</div>
+					</div>
+					<!-- case: 미판매중 -->
+					<div class="rateBox noSale">
+						<p>해당 상품을 판매하지 않는<br>영업점입니다.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- 상세내용 -->
+			<div class="marketPrdDetail bg02"> <!-- [2022-08-08] 윤지현:클래스명 수정 -->
+				<strong class="prdName">주머니(money)통장</strong>
+				<p class="prdDesc">내 통장 속 여유자금<br>이제 그냥 두지 마세요!</p>
+				<ul class="listDot">
+					<li>수시입출식</li>
+					<li>마이포켓 우대금리</li>
+					<li>다양한 금융 수수료 면제</li>
+				</ul>
+				<div class="btnInArea">
+					<button type="button">가입하기</button>
+				</div>
+			</div>
+
+			<!-- [2022-09-05] 마케팅컨텐츠 영역 -->
+			<div class="marketingArea myPocketAniBox">
+				<!-- aniSec01 -->
+				<div class="section aniSec01 right">
+					<strong class="mktTit">이제 내 통장 여유자금은<br><span class="highlight"><span>마이 포켓</span></span>으로!</strong>
+					<p class="mktDesc">여유자금이 생기면 통장에 그냥 그대로 두지 마세요!<br> 마이 포켓을 신청하고 여유자금을 넣어 두기만 해도 더 높은 금리를 받으실 수 있습니다.</p>
+					<div class="imgAreaUnit aniCont01">
+						<div class="base"><img src="../../images/market/ani/img_vaultBox.png" alt></div>
+						<div class="over1"><img src="../../images/market/ani/img_dial.png" alt></div>
+						<div class="over2"><img src="../../images/market/ani/img_vaultDoor.png" alt></div>
+						<div class="bill01"><img src="../../images/market/ani/img_bill01.png" alt></div>
+						<div class="bill02"><img src="../../images/market/ani/img_bill02.png" alt></div>
+						<div class="bill03"><img src="../../images/market/ani/img_bill03.png" alt></div>
+						<div class="coin">
+							<span class="c1"><img src="../../images/market/ani/img_coin.png" alt="금화"></span>
+							<span class="c2"><img src="../../images/market/ani/img_pocketAni_Coin.png" alt="금화"></span>
+							<span class="c3"><img src="../../images/market/ani/img_pocketAni_Coin.png" alt="금화"></span>
+						</div>
+						<div class="star">
+							<span class="s1"><img src="../../images/market/ani/img_star.png" alt></span>
+							<span class="s2"><img src="../../images/market/ani/img_star.png" alt></span>
+						</div>
+					</div>
+				</div>
+
+				<!-- aniSec02 -->
+				<div class="section aniSec02 bg">
+					<strong class="mktTit"><span class="highlight"><span>긴급자금</span></span>이 필요하면<br>언제든지 쓸 수 있으니까!</strong>
+					<p class="mktDesc">갑자기 긴급자금이 필요하다면? 걱정하지 마세요!<br> 마이 포켓에 넣어둔 자금은 언제든지 인출이 가능하고 우대금리도 그대로 받을 수 있습니다.</p>
+					<p class="infoTxt">매결산일(3월,6월,9월,12월의 넷째 토요일) 이전에 목표금액(평잔액)을 달성하면 우대금리 제공</p>
+					<div class="imgAreaUnit aniCont02">
+						<div class="base">
+							<img src="../../images/market/ani/img_myPocketAni02_bg.png" alt>
+						</div>
+						<div class="base2">
+							<img src="../../images/market/ani/img_myPocketAni02_bg2.png" alt>
+						</div>
+						<div class="bill">
+							<img src="../../images/market/ani/img_myPocketAni02_bill.png" alt>
+						</div>
+						<div class="over">
+							<img src="../../images/market/ani/img_myPocketAni02_over.png" alt>
+						</div>
+						<div class="txtBox bubble">
+							<strong class="sm">우대금리<br>제공</strong>
+						</div>
+					</div>
+				</div>
+
+				<!-- aniSec03 -->
+				<div class="section aniSec03 left">
+					<strong class="mktTit">언제 어디서나 <span class="highlight"><span>마이 포켓</span></span>을<br>확인할 수 있으니까!</strong>
+					<p class="mktDesc">스마트폰/인터넷으로 마이 포켓 잔액을 언제든지 확인할 수 있어요. <br>목표금액에 부족한 금액을 실시간으로 알려 주니까 우대금리를 놓치는 일은 없겠죠!</p>
+					<div class="imgAreaUnit aniCont03">
+						<div class="base">
+							<img src="../../images/market/ani/img_myPocketAni03_bg.png" alt>
+						</div>
+						<div class="over1">
+							<img src="../../images/market/ani/img_myPocketAni03_01.png" alt>
+						</div>
+
+						<div class="over4"></div>
+
+						<div class="over5">
+							<span>내 예상 평잔액</span>
+							<span class="pay"><i>150,000</i>원</span>
+						</div>
+
+						<div class="txtBox bubble black">
+							<strong><span class="sm">목표금액 달성!</span></strong>
+						</div>
+
+						<div class="over7">우대금리 적용</div>
+
+						<div class="coin">
+							<span class="c1"><img src="../../images/market/ani/img_coin.png" alt></span>
+							<span class="c2"><img src="../../images/market/ani/img_pocketAni_Coin.png" alt></span>
+							<span class="c3"><img src="../../images/market/ani/img_pocketAni_Coin.png" alt></span>
+						</div>
+
+						<div class="star">
+							<span class="s1"><img src="../../images/market/ani/img_star.png" alt></span>
+							<span class="s2"><img src="../../images/market/ani/img_star.png" alt></span>
+						</div>
+					</div>
+				</div>
+
+				<!-- aniSec04 -->
+				<div class="section aniSec04 bg">
+					<strong class="mktTit"><span class="highlight"><span>우대금리</span></span>도<br> 전략이 필요하다?</strong>
+					<p class="mktDesc">여유자금이 더 생기면? <br>더 큰 마이 포켓으로 바꾸고 더 높은 금리를! <br>자금여유가 없다면? <br>작은 마이 포켓으로 바꾸고 우대금리는 꼭 챙기는 센스!</p>
+					<ul class="listDot mt10">
+						<li>5개 마이 포켓 중 원하는 마이 포켓으로 언제든지 변경 가능합니다.</li>
+						<li class="pColor">금리는 농·축협별로 상이하므로 가입 전 반드시 확인하시기 바랍니다.</li>
+					</ul>
+					<div class="imgAreaUnit aniCont04 vennDiagram">
+						<div class="txtBox blue c1 centerOval">
+							<strong>최고<br>우대금리</strong>
+						</div>
+						<div class="txtBox white c2 leftOval">
+							<strong>효율적인<br>예비자산관리</strong>
+						</div>
+						<div class="txtBox green c3 rightOval">
+							<strong>1.5%p<br><span class="sm">기본금리<br>0.1% 포함</span></strong>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //마케팅컨텐츠 영역 -->
+
+			<!-- 상세 토글영역 -->
+			<section class="section40"><!-- [2022-08-30] 김자영 : section40 제거 -->
+				<ul class="faqList jsAcc marketAcc">
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">상품안내</p>
+						</a>
+						<div class="view">
+
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">금리안내</p>
+						</a>
+						<div class="view">
+
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">유의사항</p>
+						</a>
+						<div class="view">
+
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">설명서 및 약관</p>
+						</a>
+						<div class="view">
+							<div class="btnInArea">
+								<button type="button">변경이력보기</button>
+								<button type="button">상품설명서</button>
+								<button type="button">약관</button>
+								<button type="button">기본약관</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" role="button" class="accHeader">
+							<p class="question noIconQ">기타</p>
+						</a>
+						<div class="view">
+
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<!-- [2022-11-04] 윤지현:예금자보호법(iframe), 준법(관리자) 추가 -->
+			<div class="protectIframe">
+				<iframe src="/content/nhsangho/html/dt/SMNMFDE342000_02.html" frameborder="0" width="100%" height="150px"></iframe> <!-- [2022-11-07] 윤지현:경로수정 -->
+			</div>
+			<div class="compliance">
+				<strong class="tit">준법감시인 심의필</strong><!-- [2022-11-04] 윤지현:타이틀추가 -->
+				준법감시인 심의필 : 2022-171(심의일 2022.07.08)<br>
+				유효기간 : 2022.07.08~2025.12.31
+			</div>
+			<!-- //[2022-11-04] 윤지현:예금자보호법, 준법 추가 -->
+
+			<div class="marketGuide">
+				<p class="defTit2">계좌 가입신청</p>
+				<ul class="listDot">
+					<!--[2022-12-05] 이용시간변경 상시운영 : 윤희정-->
+					<li><strong>24시간</strong><br>(00:00~00:15 신청불가)</li>
+					<!--//[2022-12-05] 이용시간변경 상시운영 : 윤희정-->
+					<li><strong>스마트상담센터 1600-2800</strong><br>(09:00~18:00 영업일 기준)</li>
+				</ul>
+			</div>
+
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class="btn_full sel">가입하기</button>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- [2022-09-05] ▼ 마케팅컨텐츠 애니메이션 -->
+<script>
+	$(document).ready(function(){
+		// ********* [2022-09-27] 푸터 버튼 스크립트 수정 ********** //
+		$('#footer_cont').css({'display':'none'});
+		$(window).scroll(function(){
+			var scrollTop = $('html').scrollTop();
+			var sectionH = $(".marketingArea .aniSec01").offset().top - 90
+			if(scrollTop >= sectionH){
+				$('#footer_cont').fadeIn();
+			} else {
+				$('#footer_cont').fadeOut();
+			}
+		});
+		//********* [2022-09-27] 푸터 버튼 스크립트 수정 **********//
+
+		visualController();
+	});
+
+	// 스크롤 모션 시작
+	// *********** [2022-09-07] 김자영 : 스크립트 수정  ***********
+	function visualController(){
+		$(window).scroll(function(){
+			var windowHeight = $(window).height();
+			$(".marketingArea .section").each(function(i){
+				if ($(window).scrollTop() >= $(".aniSec0"+(i+1)).offset().top - windowHeight /2) {
+					$(".aniCont0"+(i+1)).addClass("active");
+
+					// NH매일 적금 텀블러
+					if($('.marketingArea').hasClass('everydayAniBox') && $(this).hasClass('aniSec01')){ /* [2022-09-16] hasClass aniSec01 로 수정 */
+						setTimeout(function(){
+							$('.aniCont01.active').find(".water").css("display","block");
+							$('.aniCont01.active').find(".waterBt").css("display","block");
+						},1800);
+					}
+
+					// 주머니통장 그래프 금액 animate효과
+					if($('.marketingArea').hasClass('myPocketAniBox')){
+						textAnimate();
+					}
+
+					// 주머니적금 저금통 금액 animate효과
+					if($('.marketingArea').hasClass('myPocketAniBox02') && $(this).hasClass('aniSec02') ){
+						setTimeout(function(){
+							textAnimate();
+						},1800);
+					}
+				}
+			});
+		});
+	};
+
+
+	// *********** [2022-09-07] 김자영 : 스크립트 추가  ***********
+	//금액 animate효과
+	function textAnimate(){
+		var comma_separator_number_step = jQuery.animateNumber.numberStepFactories.separator(',');
+		jQuery('.myPocketAniBox .active .over5 .pay i').animateNumber(
+		{
+			number:5000000,
+			numberStep:comma_separator_number_step
+		}
+		,2000);
+
+		jQuery('.myPocketAniBox02 .aniCont02.active .txtBox i').animateNumber(
+		{
+			number:3800,
+			numberStep:comma_separator_number_step
+		}
+		,1200);
+	};
+</script>
+
+<!-- *********** [2022-09-07] ▼ 금액 animate 플러그인 추가 *********** -->
+<script type="text/javascript" src="../../js/jquery.animateNumber.js"></script>
+</body>
+</html>

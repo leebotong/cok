@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CT-3001</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>FATCA/CRS 본인확인서 제출</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+				<div class="pgTitWrap">
+					<p class="pTit"><strong>본인확인서 제출</strong>을 위한 정보를<br>입력해주세요.</p>
+				</div>
+
+				<div class="formWrap">
+						<div class="formItem">
+							<strong class="formTit">본인확인서 제출지점</strong>
+							<div class="inpText">
+								<input type="text" title="영업점 검색" class="tyTxt" value="" placeholder="영업점 검색">
+								<a href="javascript:;" role="button" aria-label="" class="btnSm">검색</a>
+							</div>
+					</div>
+
+					<div clas="allCheckBox">
+						<div class="termsHead mt30">
+							<p>개인정보 수집·이용·제공 동의서<br>(FATCA/CRS)</p>
+							<a href="javascript:;" role="button" class="btn">전체동의</a>
+						</div>
+						<ul class="termsList">
+							<li>
+								<div class="termsCheck">
+									<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk01">
+									<label for="aggrChk01">[필수] 개인정보 수집·이용에 동의</label>
+								</div>
+								<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow"></a>
+							</li>
+							<li>
+								<div class="termsCheck">
+									<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk02">
+									<label for="aggrChk02">[선택] 개인정보 제3자 제공에 동의</label>
+								</div>
+								<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow"></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">기본정보</strong>
+						<div class="rounBgBox readonlyBox">
+							<ul>
+								<li>
+									<strong class="formTit">성명</strong>
+									<p class="value">김농은</p>
+								</li>
+								<li>
+									<strong class="formTit">생년월일</strong>
+									<p class="value">1987/06/15</p>
+								</li>
+								<li>
+									<strong class="formTit">전화번호</strong>
+									<p class="value">02-2348-****</p>
+								</li>
+								<li>
+									<strong class="formTit">주소</strong>
+									<p class="value">서울특별시 강남구 역삼동 <br>777-14번지, 301호</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="formItem">
+						<div class="formTit">국가</div>
+
+						<div class="boxRdoGroup">
+							<div class="inpChk">
+								<input type="radio" name="country" id="country1" class="realTime" checked="">
+								<label for="country1">한국</label>
+							</div>
+							<div class="inpChk">
+								<input type="radio" name="country" id="country2" class="designTime">
+								<label for="country2">한국 외 국가</label>
+							</div>
+						</div>
+
+						<div class="setCountry" style="display: none;">
+							<div class="formExpBox">
+								<div class="formItem">
+									<div class="inpText">
+										<input type="text" title="국가선택" value="" class="tyTxt" placeholder="한국 이외의 국가는 선택해 주세요">
+										<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+										<button type="button" title="검색" class="btnSearch"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<script>
+							$(document).on('click', 'input[name=country]', function () {
+								if($(this).prop('checked') && $(this).attr("id") == "country2"){
+									$(".setCountry").show();
+								}else{
+									$(".setCountry").hide();
+								}
+							});
+						</script>
+					</div>
+
+					<div class="formItem">
+						<strong class="formTit">영문이름</strong>
+						<div class="formGroup">
+							<div class="inpText">
+								<input type="text" title="Last Name" value="" class="tyTxt" placeholder="성(Last Name)">
+								<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							</div>
+							<div class="inpText">
+								<input type="text" title="First Name" value="" class="tyTxt" placeholder="명(First Name)">
+								<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+							</div>
+						</div>
+						<div class="inpText">
+							<input type="text" title="Middle Name" value="" class="tyTxt" placeholder="명(선택)(Middle Name)">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+			</div>
+
+			<hr class="divingLine" aria-hidden="true">
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>상호주의에 따른 정기적인 금융정보의 교환을 위한 조세조약의 이행과 관련하여 국제조세조정에 관한 법률에 따라 작성이 요구됩니다.</li>
+					<li>농·축협으로부터 본인확인서 재작성 또는 증빙자료를 요청 받는 경우, 요청일로부터 60일 이내에 제출해야 합니다. 만약, 기재한 내용에 변경이 있을 경우 60일 이내에 통지해야 합니다.</li>
+					<li>관련정보를 제공하지 않거나, 허위로 제공할 경우 향후 거래에 제한이 발생할 수 있으며, 국세청 의무이행 방해자로 신고될 수 있습니다.</li>
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<div id="popupArea">
+</div>
+</body>
+</html>

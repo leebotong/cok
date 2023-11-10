@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-ME-2630</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<!-- 개발페이지에는 적용 X -->
+	<script>
+		// 스크롤 show 퍼블 확인용 실제 적용 X
+		$(document).ready(function(){
+			var scrollHeight = $(document).height();
+			$('.btnSm').click(function(){
+				$(this).attr("aria-expanded", "true");
+				$(".hideBox").slideDown();
+				$("body,html").animate({ scrollTop: scrollHeight }, 800);
+				return false;
+			});
+		});
+	</script>
+	<!--// 개발페이지에는 적용 X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>회원가입</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>계좌인증</strong>을<br>진행해주세요.</p>
+			</div>
+
+			<div class="formWrap">
+				<p class="defTit2">계좌입력방식</p>
+				<div class="formItem">
+					<div class="boxRdoGroup type2">
+						<div class="inpChk">
+							<input type="radio" name="radio6" id="radio61">
+							<label for="radio61">계좌번호</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio6" id="radio62">
+							<label for="radio62">공동인증서</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio6" id="radio63" checked>
+							<label for="radio63">금융인증서</label>
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">농협계좌번호
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">입출금이 자유로운 계좌만 입력 가능합니다.</strong>
+								<ul class="listDot">
+									<li>*제외계좌: '고용노동부의 실시간이체' 에 의한 급여통장</li>
+								</ul>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="inpText">
+						<input type="tel" title="농협계좌번호" value class="tyTxt" placeholder="- 없이 입력" maxlength="8">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<!-- [2022-07-19] 김자영 : 마크업 수정 -->
+					<div class="relative infoTxtErrWrap">
+						<p class="infoTxtErr">에러메세지</p>
+						<a href="javascript:popOpen(popupA);" role="button" class="btnDetail">맞춤계좌번호</a>
+					</div>
+					<!--// [2022-07-19] 김자영 : 마크업 수정 -->
+				</div>
+				<div class="formItem">
+					<strong class="formTit">계좌비밀번호</strong>
+					<div class="inpText">
+						<button type="button" title="계좌비밀번호 4자리 입력됨" aria-label="계좌비밀번호 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+						<input type="password" title="계좌비밀번호 입력" aria-hidden="true" value class="sKey" placeholder="숫자 4자리 입력" maxlength="4" readonly><!-- [2022-06-24] 김자영 : placeholder수정 -->
+						<!-- ▼  [2022-07-19] class jsShowBtnScroll ******삭제******* / 비밀번호 입력 후 active 활성화 -->
+						<a href="javascript:;" role="button" class="btnSm">계좌확인</a>
+					</div>
+					<p class="infoTxtErr">에러메세지</p>
+				</div>
+
+				<!-- [2022-07-26] 김자영 : 개발확인용 버튼 추가 -->
+				<div class="btnInArea">
+					<a href="javascript:;" role="button" class="point">계좌확인(비밀번호 체크안함 - 개발용)</a>
+				</div>
+				<!--// [2022-07-26] 김자영 : 개발확인용 버튼 추가 -->
+
+				<!-- [2022-07-26] 김자영: 위치 변경
+				<p class="infoTxt">계좌확인을 하신 계좌는 콕뱅크 주거래 계좌로 등록됩니다.</p>
+				-->
+
+				<!-- case : 계좌확인 시 -->
+				<section class="section20 hideBox">
+					<!-- ▼ [2022-07-26] 김자영: 위치 변경 및 class mb20 추가 -->
+					<p class="infoTxt mb20">계좌확인을 하신 계좌는 콕뱅크 주거래 계좌로 등록됩니다.</p>
+					<!-- 지점정보 -->
+					<div class="rounBgBox">
+						<div class="branchBox">
+							<a href="javascript:;" class="link">
+								<p class="name">서울동부인삼농협<br>디지털미디어시티지점</p>
+							</a>
+						</div>
+					</div>
+					<!--// 지점정보 -->
+
+					<!-- 약관동의 -->
+					<div class="allCheckBox">
+						<div class="termsHead">
+							<p>지점정보 이용약관</p>
+							<a href="javascript:;" role="button" class="btn">전체동의</a>
+						</div>
+						<ul class="termsList">
+							<li>
+								<div class="termsCheck">
+									<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk01">
+									<label for="aggrChk01">[필수] 개인정보 제3자 제공동의</label>
+								</div>
+								<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+							</li>
+							<li>
+								<div class="termsCheck">
+									<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk02">
+									<label for="aggrChk02">[필수] 개인정보 위탁처리 동의</label>
+								</div>
+								<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+							</li>
+						</ul>
+					</div>
+					<!--// 약관동의 -->
+				</section>
+				<!--// case : 계좌확인 시 -->
+			</div>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>
+		<!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupA" class="popupWrap slide">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">맞춤계좌번호</h2>
+					</div>
+					<div class="layerSelectContent">
+						<div class="formWrap"><!-- [2022-06-20] 김자영 : 클래스명 오타수정 -->
+							<div class="formItem">
+								<strong class="formTit">계좌번호 입력</strong>
+								<div class="inpText">
+									<input type="tel" title="계좌번호" value class="tyTxt" placeholder="계좌번호 입력">
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+								</div>
+								<p class="infoTxtErr">Error MSG</p>
+							</div>
+							<!-- [2022-06-20] 김자영 : 삭제
+							<div class="formItem">
+								<ul class="listDot">
+									<li>계좌번호를 기억하지 못하시는 고객님은 사전에 영업점에서 설정한 맞춤계좌를 입력해 주세요.</li>
+								</ul>
+							</div>
+							-->
+							<!-- [2022-06-20] 김자영 : 추가 -->
+							<p class="bili">계좌번호를 기억하지 못하시는 고객님은 사전에 영업점에서 설정한 맞춤계좌를 입력해 주세요.</p>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)" class="sel dis">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--// POPUP AREA -->
+
+
+</body>
+</html>

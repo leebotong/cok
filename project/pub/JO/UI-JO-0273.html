@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0273</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>NH콕마이카신용대출</h1>
+		<div class="headerR">
+			<!-- <a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a> -->
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">대출신청 <strong>영업점</strong>을<br><strong>선택</strong>해주세요.</p>
+			</div>
+
+			<!-- 관리영버점 노출 -->
+			<div>
+				<div class="formItem">
+					<strong class="formTit">관리영업점
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">관리영업점</strong>
+								<p>주소지(자택/직장)와 같은 권역 내 해당 상품을 취급하는 영업점중에서 콕뱅크에 등록된 입출금계좌 관리영업점이 표시됩니다.</p>
+								<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="branchSelectBox roundBox noBorder">
+						<div class="roundInBox">
+							<div class="branchAddr">
+								<strong clas="tit">새서울농협 중앙지점</strong>
+								<p class="txt">서울시 강남구 강남로 1004</p>
+							</div>
+							<div class="inpChk">
+								<input type="checkbox" name="chk1" id="chk12">
+								<label for="chk12" aria-label="영업점선택"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+			<!-- //관리영버점 노출 -->
+			
+			<div class="jsTgWrap branchSelectWrap">
+				<div class="btnInArea">
+					<button type="button" class="arrow jsTgBtn">다른 농·축협 영업점 선택</button>
+				</div>
+				<!-- 다른 영업점 선택 시 노출 -->
+				<div class="jsTgCont">
+					<div class="formWrap">
+						<div class="formItem">
+							<strong class="formTit">영업점 직접 선택
+								<!-- tooltip -->
+								<div class="tooltipWrap">
+									<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+									<div class="tooltipCont">
+										<strong class="tit">영업점 직접 선택</strong>
+										<ul class="listDot">
+											<li>입출금 통장 관리영업점 외 선택 시 비대면 실명인증을 위한 신분증이 필요합니다.</li>
+											<li>주소지(자택/직장)와 같은 권역 내 해당 상품을 취급하는 영업점만 선택 가능합니다. </li>
+											<li>권역 안내 : 서울·경기·인천권역 / 강원권역 / 충북권역 / 대전·세종·충남권역 / 전북권역 / 광주·전남권역 / 대구·경북권역 / 부산·울산·경남권역 / 제주권역</li>
+										</ul>
+										<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+									</div>
+								</div>
+								<!-- //tooltip -->
+							</strong>
+							<div class="formGroup">
+								<div class="inpSel">
+									<a href="javascript:;" title="지역 선택" role="button" class="btnSel placeholder">지역 선택</a>
+								</div>
+								<!-- <div class="inpSel">
+									<a href="javascript:;" title="시/군/구 선택" role="button" class="btnSel placeholder">시/군/구 선택</a>
+								</div> -->
+								<!-- 2022-08-24 -->
+								<div class="inpText">
+									<input type="text" title="영업점명 직접입력" value="" class="tyTxt" placeholder="영업점명 입력">
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									<button type="button" title="검색" class="btnSearch"></button>
+								</div>
+								<!-- //2022-08-24 -->
+							</div>
+						</div>
+					</div>
+	
+					<!-- 목록 리스트 -->
+					<section class="section20">
+						<div class="branchSelectBox roundBox noBorder">
+							<div class="roundInBox">
+								<div class="branchAddr">
+									<strong clas="tit">새서울농협 중앙지점</strong>
+									<p class="txt">서울시 강남구 강남로 1004</p>
+								</div>
+								<div class="inpChk">
+									<input type="checkbox" name="chk2" id="chk22">
+									<label for="chk22" aria-label="영업점선택"></label>
+								</div>
+								<p class="smallTip">비대면 실명인증을 위한 신분증이 필요해요!</p> <!-- [2022-08-01] 윤지현:추가 -->
+							</div>
+						</div>
+						<div class="branchSelectBox roundBox noBorder">
+							<div class="roundInBox">
+								<div class="branchAddr">
+									<strong clas="tit">새서울농협 중앙지점</strong>
+									<p class="txt">서울시 강남구 강남로 1004<br>
+										새서울빌딩 101호<br>
+										02-1234-5678</p>
+								</div>
+								<div class="inpChk">
+									<input type="checkbox" name="chk3" id="chk32">
+									<label for="chk32" aria-label="영업점선택"></label>
+								</div>
+								<p class="smallTip">비대면 실명인증을 위한 신분증이 필요해요!</p> <!-- [2022-08-01] 윤지현:추가 -->
+							</div>
+						</div>
+	
+						<div class="moreBtn"><button type="button">더보기</button></div>
+					</section>
+					<!-- //목록 리스트 -->
+
+					<script>
+						// [2022-10-04] 김자영: 체크시 툴팁위치 스크립트 추가
+						$(document).ready(function(){
+							var branchTxt = $('.branchSelectBox');
+							branchTxt.each(function(){
+								$(this).find('.branchAddr').siblings().addClass('chkTip');
+								$(this).find('.branchAddr').siblings('.chkTip').wrapAll("<div class='chkTipWrap'></div>");
+								$(this).find('.chkTipWrap').wrapInner("<div class='inner'></div>");
+							});
+						})
+					</script>
+	
+					<!-- 결과없음 -->
+					<div class="noData">
+						<i class="check"></i>
+						<p class="tit">대출 신청이 가능한 영업점이 없습니다. </p>
+					</div>
+					<!-- //결과없음 -->
+				</div>
+				<!-- //다른 영업점 선택 시 노출 -->
+			</div>
+			
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<script>
+	// [2022-08-01] 윤지현:추가
+	$(function(){
+		$('.branchSelectBox .inpChk input').click(function(){
+			if($(this).is(':checked')){
+				$(this).closest('.roundInBox').addClass('active');
+			} else {
+				$(this).closest('.roundInBox').removeClass('active');
+			}
+			
+		})
+	})	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-1135</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>송금</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<div class="paymentWrap topAccBox">
+					<div class="">
+						<div class="ttTop">
+							<!-- PAYMENT -->
+							<div class="">
+								<div class="roundInBox">
+									<div class="accTypeWrap accAlwaysType">
+										<a href="javascript:popOpen(accSlide);" title="계좌선택" role="button" class="accInLayout">
+											<div class="accInfo">
+												<div class="accInfoInLayout">
+													<div class="logoWrap">
+														<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+													</div>
+													<div class="accInfoWrap">
+														<strong class="accName">
+															<span class="accLimitBank">[한도제한]</span>
+															<span class="bankBookName">자립예탁금(테니스클럽)</span>
+														</strong>
+														<div class="accNumWrap">
+															<div class="accNumBox">
+																<span class="accNumber">352-1775-6397-03</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- PAYMENT -->
+							
+							<!-- ▼ 2022-07-01 마크업 수정 -->
+							<section class="jsOnOffTarget active" style="display:block">
+								<hr class="my20">
+								<div class="layoutWrap"> 
+									<div class="layoutL">
+										<span data-focus="focus" class="accPossible">출금가능금액</span>
+										<button type="button" class="btnSm">+ 채우기</button>
+										<!-- ▼ 2022-07-01 출금미조회 경우 추가 -->
+										<!-- <div class="accDataWrap">
+											<strong class="accCash">출금미조회</strong>
+										</div> -->
+									</div>
+									<div class="layoutR">
+										<div class="accDataWrap">
+											<strong class="accCash">58,000,000</strong><span class="accUnit">원</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="layoutWrap mt10">	
+									
+									<div class="layoutL">
+										<span class="accLimit">1일 송금 잔여한도
+											<!-- tooltip -->
+											<div class="tooltipWrap jsTooltipPosition">
+												<button type="button" aria-label="1일 송금 잔여한도 자세히보기" class="btnToolTip"></button>
+											</div>
+											<!-- //tooltip -->
+										</span>
+									</div>
+									<div class="layoutR">
+										<span class="accLimit">4,500,000원</span> 
+										<!-- <a href="javascript:popOpen(cp1);" role="button" class="accLimtSearch">자세히보기<span class="icon">&#xE001;</span></a> [2022-10-11] 윤지현:삭제 -->
+									</div>
+								</div>
+							</section>
+							<!-- //PAYMENT -->
+						</div>
+						<div class="ttBottom">
+							<div class="ttContents">
+								<!-- ▼ 2022-07-01 받는 분, 보낼금액 수정 -->
+								<!-- 받는 분 -->
+								<div class="roundBox">
+									<!-- ▼ 2022-07-04 마크업 수정 -->
+									<div class="roundInBox">
+										<a href="javascript:;" role="button" class="layoutWrap baseline">
+											<strong class="formTit">받는 분</strong>
+											<strong class="ar lineHeight13">NH농협<br><span class="pColor">352-1763-1005-87</span></strong>
+										</a>
+									</div>
+								</div>
+
+								<div class="btnInArea">
+									<button type="button" class="point">음성으로 재입력</button>
+								</div>
+
+								<!-- 보낼금액 -->
+								<div class="roundBox">
+									<div class="roundInBox">
+										<div class="formItem"><!-- .error -->
+											<strong class="formTit">보낼금액</strong>
+											<!-- ▼ 2022-07-01 삭제 -->
+											<!-- <p class="numVal"><em class="data"></em><span class="unit">원</span></p> -->
+											<div class="inpText noBorder">
+												<input type="tel" title="이체 금액" onclick="popOpen(sp)" value="0" class="tyNum popOpen" placeholder="금액 입력" maxlength="16"> <!-- fn_change_hangul_money 퍼블 테스트용 -->
+												<span class="unit">원</span>
+												<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+											</div>
+										</div>
+									</div>
+									<div class="roundBoxUtility">
+										<!-- [2022-07-04] 윤지현:마크업수정 -->
+										<div class="touchBtnWrap">
+											<a href="javascript:;" title="1만원 추가" role="button">+1만</a>
+											<a href="javascript:;" title="5만원 추가" role="button">+5만</a>
+											<a href="javascript:;" title="10만원 추가" role="button">+10만</a>
+											<a href="javascript:;" title="100만원 추가" role="button" class>+100만</a>
+											<a href="javascript:;" title="전액" role="button" class>전액</a>
+										</div>
+										<!-- //[2022-07-04] 윤지현:마크업수정 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class="sel">다음</button>
+				</div>
+			</div>
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+<script>
+	$(document).ready(function(){
+		$('.errorcheck').hide();
+		$('.uicheck').bind('click', function(){
+			$('.toSendMonyWrap').toggleClass('active');
+			$('.errorcheck').fadeToggle();
+		});
+		$('.errorcheck').bind('click', function(){
+			$('.formItem').toggleClass('error');
+		});
+	});
+</script>
+</body>
+</html>

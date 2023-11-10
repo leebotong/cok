@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MN-0004</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_senior.css"><!-- 시니어 큰글모드 일때만 호출 -->
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap" class="senior main"><!-- 시니어 큰글모드 일때 class senior 추가/ 메인일때 main 추가 -->
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" role="button" class="mode">앱종료</a>
+			<a href="javascript:;" role="button" class="mode">일반모드</a>
+		</div>
+		<div class="headerR">
+			<a href="javascript:;" role="button" class="">검색</a>
+			<a href="javascript:;" role="button" class="alarm on">알림</a><!-- [2022-08-30] 알람있을 경우 on 클래스 추가 -->
+      <a href="javascript:;" role="button" class="btnMenu">메뉴</a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<section class="seniorAccWrap">
+				<div class="userWelcome">
+					<p class="names"><strong>김농협</strong>님 반갑습니다.</p>
+					<!--a href="javascript:;" role="button" class="btnBranch">의왕농협 포일지점</a-->
+				</div>
+				<div class="seniorAcc">
+					<div class="seniorAccInfo">
+						<div class="accTypeWrap accAlwaysType">
+							<a href="javascript:;" role="button" class="accInLayout">
+								<div class="accInfo">
+									<div class="accInfoInLayout">
+										<div class="logoWrap">
+											<img src="../../images/logo/logo_bnk_011_72x72.png" alt="OO은행" class="logo">
+										</div>
+										<div class="accInfoWrap">
+											<strong class="accName">
+												<span class="bankBookName">주머니(MONEY)통장</span>
+											</strong>
+											<div class="accNumWrap">
+												<div class="accNumBox">
+													<span class="accNumber">352-1775-6397-03</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="accInfoInBtn layoutWrap">
+							<button type="button" class="btnRefrash"><span class="blind">새로고침</span></button>
+							<button type="button" class="mainAccMore"><span class="blind">더보기</span></button>
+						</div>
+					</div>
+					<div class="seniorMainPrice">
+						<div class="price">
+							<strong class="accCash">15,000,000,000</strong><span class="accUnit">원</span>
+						</div>
+						<div class="priceControl">
+							<div class="toggleSwitch">
+								<input type="checkbox" id="btnPrice">
+								<label for="btnPrice">숨김</label>
+							</div>
+						</div>
+					</div>
+					<script>
+						$(document).ready(function(){
+							/*  잔액표시 토글 추가 */
+							$('#btnPrice').on("click", function(e){
+								var priceBox = $(".seniorMainPrice .price")
+								if($(this).is(":checked")){
+									priceBox.find('label').text('보기');
+									priceBox.find('.accCash').addClass('active').text('잔액 숨김 중');
+									priceBox.find('.accUnit').hide();
+								} else{
+									$('label').text('숨김');
+									priceBox.find('.accCash').removeClass('active').text('15,000,000,000');
+									priceBox.find('.accUnit').show();
+								}
+							});
+						})
+					</script>
+				</div>
+      </section>
+
+			<section class="seniorMenu">
+        <ul>
+          <li><a href="javascript:;" role="button">거래내역</a></li>
+          <li><a href="javascript:;" role="button">송금</a></li>
+        </ul>
+      </section>
+
+			<section class="seniorLink">
+        <ul>
+          <li><a href="javascript:;" role="button"><span>등록</span>계좌</a></a></li>
+          <li><a href="javascript:;" role="button"><span>농협</span>전계좌</a></li>
+					<li><a href="javascript:;" role="button"><span>ATM</span>출금</a></li>
+          <li><a href="javascript:;" role="button"><span>창구</span>출금</a></li>
+          <li><a href="javascript:;" role="button"><span>계좌</span>등록/해지</a></li>
+          <li><a href="javascript:;" role="button"><span>송금</span>내역</a></li>
+        </ul>
+      </section>
+
+			<div class="seniorMainBanner">
+				<a href="javascipt:;" role="button" title="새창열림"><img src="../../images/com/senior/main_banner01.png" alt="금융감독원 제작 금융사기 피해예방 영상시청하기"></a><!-- [2022-11-02] 윤지현:alt문구수정 --><!-- [2022-09-30] 웹접근성 수정 title="새창열림" 추가 -->
+			</div>
+
+      <div class="seniorCusTel">
+        <a href="javascript:;"><em class="tit">NH콕뱅크 스마트상담센터</em></a><!-- [2022-11-02] 윤지현:a태그추가/문구수정 -->
+        <a href="tel:1600-2800" role="button" class="tel">1600-2800</a>
+        <span class="txt">(이용시간 : 평일 09:00~18:00)</span><!-- [2022-11-02] 윤지현:문구수정 -->
+      </div>
+		</div> <!-- //#contents -->
+		<!-- <div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="sel dis">다음</button>
+			</div>
+		</div> -->
+	</div> <!-- //#container -->
+</div> <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+</div>
+</body>
+</html>

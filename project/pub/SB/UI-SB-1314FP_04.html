@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-1314FP_04</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(fullA);
+			// popOpen(cp);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>송금</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(fullA);" class="popOpen">송금내역 상세 팝업</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP -->
+		<div id="fullA" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">송금내역 상세</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<!-- listTbl -->
+							<div class="listTbl">
+								<div class="listTit">
+									<strong>받는 분 정보</strong>
+								</div>
+								<ul>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">수취인</span>
+											<p class="txt">강감찬</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">휴대폰번호</span>
+											<p class="txt">01012341234</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">송금액</span>
+											<p class="txt"><strong class="dataWrap"><em class="data">11,000</em><span class="unit">원</span></strong></p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- listTbl -->
+							<div class="listTbl">
+								<div class="listTit">
+									<strong>보내는 분 정보</strong>
+								</div>
+								<ul>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">송금인</span>
+											<p class="txt">강감찬</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">출금은행</span>
+											<p class="txt">기업은행</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">출금계좌</span>
+											<p class="txt flex">123-1234-1234-12</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">송금일</span>
+											<p class="txt">2022.02.02 00:00:00</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- listTbl -->
+							<div class="listTbl">
+								<div class="listTit">
+									<strong>송금 결과</strong>
+								</div>
+								<ul>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">송금방식</span>
+											<p class="txt">휴대전화</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">송금상태</span>
+											<p class="txt txtRed">오류취소</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">송금완료일</span>
+											<p class="txt">2022.02.02 00:00:00</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">수수료</span>
+											<p class="txt">면제</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- listTbl -->
+							<div class="listTbl">
+								<div class="listTit">
+									<strong>메모정보</strong>
+								</div>
+								<ul>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">받는계좌에 표시</span>
+											<p class="txt">홍길동</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">내계좌에 표시</span>
+											<p class="txt">강감찬</p>
+										</div>
+									</li>
+									<!-- [2023-04-14] 요구불계좌 거래내역 메모 항목추가 -->
+									<li>
+										<div class="listIn_flex">
+											<div class="tit">메모
+												<div class="tooltipWrap">
+													<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+													<div class="tooltipCont">
+														<ul class="listDot">
+															<li>송금내역의 메모는 콕뱅크에서 콕송금 시 입력하신 거래메모 입니다.</li>
+															<li>입출금 거래내역의 거래메모를 수정 하시더라도 송금내역의 메모에는 반영되지 않으며, 송금내역 메모는 수정 및 삭제를 하실 수 없습니다.</li>
+														</ul>
+														<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+													</div>
+												</div>
+											</div>
+											<p class="txt">용돈</p>
+										</div>
+									</li>
+									<li>
+										<div class="listIn_flex">
+											<span class="tit">경조금 메시지</span>
+											<p class="txt">축생일</p>
+										</div>
+									</li>
+									<!-- [2023-03-31] 김연진 : 거래메모추가 -->
+									<!-- <li>
+										<div class="memoTransaction formItem typeSrch">
+											<strong class="formTit">거래메모
+												<div class="tooltipWrap">
+													<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+													<div class="tooltipCont">
+														<ul class="listDot">
+															<li>최근 2년 이내면서 2022년 11월 1일 이후 거래내역에서만 거래메모 기능을 사용할 수 있어요.</li>
+															<li>거래메모 기능은 농협 계좌의 거래내역에서만 사용할 수 있어요.</li>
+														</ul>
+														<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+													</div>
+												</div>
+											</strong>
+											<a href="javascript:;" role="button" class="btnDetail">과거 송금메모 조회</a>
+											<div class="textAreaWrap readyonly">
+												<textarea title="거래메모내용" readonly placeholder="메모가 이곳에 노출 됩니다"></textarea>
+											</div>
+										</div>
+									</li> -->
+									<!--// [2023-03-31] 김연진 : 거래메모추가-->
+								</ul>
+                            </div>
+
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea half">
+								<button class="">다시송금</button>
+								<button class="sel">확인</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

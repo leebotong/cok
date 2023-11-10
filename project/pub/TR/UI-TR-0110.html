@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-0110</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			//popOpen(sp_popup);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>농협 전계좌 조회</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<!-- ▼ 2022-06-22 삭제 -->
+				<!-- <div class="tabWrap oneDepthSwipe">
+					<div role="tablist" class="tabList tabSwipe">
+						<a href="javascript:;" role="tab" class="active">입출금</a>
+						<a href="javascript:;" role="tab">예적금/신탁</a>
+						<a href="javascript:;" role="tab">대출</a>
+						<a href="javascript:;" role="tab">펀드</a>
+						<a href="javascript:;" role="tab">외화</a>
+					</div>
+				</div> -->
+				<div class="twoToneType">
+					<div class="ttTop">
+						<div class="topImgWrap lookUpImg">
+							<p class="topImgWrapTxt">
+								<div class="lookUpTotal">
+
+									<!-- <div class="expandMenuTitle">
+										<span class="txt">총 계좌수</span> <span class="statusCount">12</span>
+									</div> -->
+									
+									<!-- 2022-10-06 마크업수정 -->
+									<div class="expandMenuSub">
+										<span class="txt">총 계좌수<em class="statusCount">2</em></span> <!-- [2022-11-01] 윤지현:총 계좌수 추가 -->
+										<!-- <div class="expandMenuTotal"><strong class="total">총 <span class="num">6</span>개</strong></div> [2022-11-01] 윤지현:총 계좌수 삭제 -->
+									</div>
+								  <!-- //2022-10-06 마크업수정 -->
+									<div class="expandMenuSub alignTop"> <!-- [2022-11-01] 윤지현:alignTop 클래스추가 -->
+										<span class="txt">총 자산
+											<!-- ▼ [2022-11-01] 툴팁 마크업 위치 이동 -->
+											<!-- tooltip -->
+											<div class="tooltipWrap">
+												<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+												<div class="tooltipCont">
+													<strong class="tit">농협에 보유하신 순자산</strong>
+													<ul class="listDot">
+														<li>고객님이 농협에 보유하신 예금, 적금, 펀드, 외화예금 등 예금성 총 자산에서 대출, 카드 등의 마이너스 자산을 차감한 자산 총계의 순자산입니다.</li>
+														<li>카드 자산은 기 사용금액(현재 결제 예정인 할부, 일시불, 현금 서비스 총액)의 총합으로 마이너스 자산으로 표기됩니다.</li>
+														<li>외화펀드는 원화로 환산한 평가금액으로 계산되어 제공됩니다. (외화펀드 원화평가금액=외화평가금액*매매기준율)</li>
+													</ul>
+													<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+												</div>
+											</div>
+											<!-- //tooltip -->
+											<!-- ▲ //[2022-11-01] 툴팁 마크업 위치 이동 -->
+										</span>
+										
+										<!-- [2022-11-01] 윤지현:숨김버튼 추가로 마크업수정 -->
+										<div class="isSwitch">
+											<div class="toggleSwitch">
+												<input type="checkbox" id="btnPrice">
+												<label for="btnPrice">숨김</label>
+											</div>
+											<div class="expandMenuTotal">
+												<strong class="accCash">958,000,000</strong>
+												<span class="accUnit">원</span>
+												<!-- ▲ [2022-11-01] 툴팁 마크업 위치 이동으로 삭제 -->
+											</div>
+										</div>
+
+										<script>
+											$('#btnPrice').on("click", function(e){
+												var priceBox = $(".isSwitch")
+												if($(this).is(":checked")){
+													priceBox.find('label').text('보기');
+													priceBox.find('.accCash').addClass('active').text('숨김 중');
+													priceBox.find('.accUnit').hide();
+												} else{
+													$('label').text('숨김');
+													priceBox.find('.accCash').removeClass('active').text('958,000,000');
+													priceBox.find('.accUnit').show();
+												}
+											});
+										</script>
+										<!-- //[2022-11-01] 윤지현:숨김버튼 추가로 마크업수정 -->
+
+									</div>
+								</div>
+							</p>
+							<!-- ▼ [2022-11-01] 윤지현:나의 농협 자산 분포 마크업위치 이동 -->
+						</div>
+					</div>
+					<div class="ttBottom">
+						<div class="ttContents allList"><!-- 2022-09-27 클래스명추가 -->
+							<!-- ▼ 2022-07-19 jsAcc 클래스 추가 -->
+							<!-- ▼ 2022-06-30 accLineBoxList 클래스 삭제 -->
+							<div class="accTypeWrap jsAcc">
+								<!--
+									▼ 2022-07-19 [수정사항 정리]
+									1. 	jsTgWrap, jsTgBtn, jsSelectLink 클래스 삭제
+									2. 	<a href="javascript:;" role="button" 에
+												- aria-controls="~~~" 추가
+												- accHeader 클래스 추가(기본으로 오픈되어 있는 상태에서는 active 클래스 추가 적용)
+									3. 	jsTgCont -> view 클래스 변경후에
+												- data-acc-view="~~~" 추가
+												- aria-hidden="true" 추가(기본으로 오픈되어 있는 상태에서는 false 적용)
+								-->
+
+								<!-- 입출금 -->
+								<!-- ▼ 2022-07-19 jsTgWrap, active 클래스 삭제  -->
+								<div class="expandMenuWrap">
+									<!-- ▼ 2022-07-19
+										- accHeader 클래스 추가, 디폴트 오픈상태는 active 클래스 추가 적용
+										- aria-controls="~~" 추가
+									-->
+									<a href="javascript:;" role="button" aria-controls="acc_con01" class="layoutWrap expandMenu accHeader active">
+										<div class="expandMenuTitle">
+											<span>입출금</span> <span class="statusCount">2</span>
+										</div>
+										<div class="expandMenuPay">4,534,345원</div>
+									</a>
+									<!-- ▼ 2022-07-19
+										- jsTgCont -> view 클래스 변경
+										- data-acc-view="~~" 추가
+										- aria-hidden="false" 추가
+									-->
+									<div data-acc-view="acc_con01" aria-hidden="false" class="view" style="display: block;">
+										<!-- ▼ 2022-07-01 expandMenuList 항목내부 마크업 수정 -->
+										<ul class="expandMenuList">
+											<li class="listItem">
+												<div class="accLayout jsShWrap">
+													<div class="accInLayout">
+														<div class="accTag">
+															<span class="tagItem accStop">거래정지</span>
+														</div>
+														<div class="accInfo">
+															<div class="logoWrap">
+																<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+															</div>
+															<div class="accInfoWrap">
+																<strong class="accName">
+																	<span class="accBank">[농협]</span>
+																	<span class="bankBookName">주머니(money) 통장주머니(money) 통장주머니(money) 통장주머니(money) 통장</span>
+																</strong>
+																<div class="accNumWrap">
+																	<div class="accNumBox">
+																		<span class="accNumber">352-1775-6397-03</span>
+																		<!-- ▼ 2022-07-01 추가 -->
+																		<button type="button" class="accDetail">자세히</button>
+																	</div>
+																</div>
+															</div>
+															<button type="button" onclick="popOpen(sp_popup)" class="accMore">
+																<span class="blind">계좌관리 보기</span>
+															</button>
+														</div>
+														<div class="accDataWrap">
+															<strong class="accCash">5,000,000</strong><span class="accUnit">원</span>
+														</div>
+													</div>
+													<!-- ▼ 2022-07-01 halfWidth 클래스 삭제 -->
+													<div class="btnInArea">
+														<button type="button">거래내역조회</button>
+														<button type="button">송금</button>
+													</div>
+												</div>
+											</li>
+											<li class="listItem">
+												<div class="accLayout jsShWrap">
+													<div class="accInLayout">
+														<div class="accInfo">
+															<div class="logoWrap">
+																<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+															</div>
+															<div class="accInfoWrap">
+																<strong class="accName">
+																	<span class="accBank">[농협]</span>
+																	<span class="bankBookName">주머니(money) 통장주머니(money) 통장주머니(money) 통장주머니(money) 통장</span>
+																</strong>
+																<div class="accNumWrap">
+																	<div class="accNumBox">
+																		<span class="accNumber">352-1775-6397-03</span>
+																		<!-- ▼ 2022-07-01 추가 -->
+																		<button type="button" class="accDetail">자세히</button>
+																	</div>
+																</div>
+															</div>
+															<button type="button" onclick="popOpen(sp_popup)" class="accMore">
+																<span class="blind">계좌관리 보기</span>
+															</button>
+														</div>
+														<div class="accDataWrap">
+															<strong class="accCash">5,000,000</strong><span class="accUnit">원</span>
+														</div>
+													</div>
+													<!-- ▼ 2022-07-01 halfWidth 클래스 삭제 -->
+													<div class="btnInArea">
+														<button type="button">거래내역조회</button>
+														<button type="button">송금</button>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //입출금 -->
+
+								<!-- 예적금/신탁 -->
+								<!-- ▼ 2022-07-19 jsTgWrap 클래스 삭제 -->
+								<div class="expandMenuWrap">
+									<!-- ▼ 2022-07-19
+										- accHeader 클래스 추가
+										- aria-controls="~~" 추가
+									-->
+									<a href="javascript:;" role="button" aria-controls="acc_con02" class="layoutWrap expandMenu accHeader">
+										<div class="expandMenuTitle">
+											<span>예적금/신탁</span> <span class="statusCount">1</span>
+										</div>
+										<div class="expandMenuPay">4,534,345원</div>
+									</a>
+									<!-- ▼ 2022-07-19
+										- jsTgCont -> view 클래스 변경
+										- data-acc-view="~~" 추가
+										- aria-hidden="true" 추가
+									-->
+									<div data-acc-view="acc_con02" aria-hidden="true" class="view" style="display: none;">
+										<!-- ▼ 2022-07-01 expandMenuList 항목내부 마크업 수정 -->
+										<ul class="expandMenuList">
+											<li class="listItem">
+												<div class="accLayout jsShWrap">
+													<div class="accInLayout">
+														<div class="accInfo">
+															<div class="logoWrap">
+																<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+															</div>
+															<div class="accInfoWrap">
+																<strong class="accName">
+																	<span class="accBank">[농협]</span>
+																	<span class="bankBookName">통장주머니</span>
+																</strong>
+																<div class="accNumWrap">
+																	<div class="accNumBox">
+																		<span class="accNumber">352-1775-6397-03</span>
+																		<!-- ▼ 2022-07-01 추가 -->
+																		<button type="button" class="accDetail">자세히</button>
+																	</div>
+																</div>
+															</div>
+															<button type="button" onclick="popOpen(sp_popup)" class="accMore">
+																<span class="blind">계좌관리 보기</span>
+															</button>
+														</div>
+														<div class="accDataWrap">
+															<strong class="accCash">5,000,000</strong><span class="accUnit">원</span>
+														</div>
+													</div>
+													<!-- ▼ 2022-07-01 halfWidth 클래스 삭제 -->
+													<div class="btnInArea">
+														<button type="button">거래내역조회</button>
+														<button type="button">송금</button>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //예적금/신탁 -->
+
+								<!-- 대출 -->
+								<!-- ▼ 2022-07-19 jsTgWrap 클래스 삭제 -->
+								<div class="expandMenuWrap">
+									<!-- ▼ 2022-07-19
+										- accHeader 클래스 추가
+										- aria-controls="~~" 추가
+									-->
+									<a href="javascript:;" role="button" aria-controls="acc_con03" class="layoutWrap expandMenu accHeader">
+										<div class="expandMenuTitle"><span>대출</span> <span class="statusCount">2</span></div>
+										<!-- ▼ 2022-07-19 txtRed 클래스 추가 -->
+										<div class="expandMenuPay txtRed">-580,000원</div>
+									</a>
+									<!-- ▼ 2022-07-19
+										- jsTgCont -> view 클래스 변경
+										- data-acc-view="~~" 추가
+										- aria-hidden="true" 추가
+									-->
+									<div data-acc-view="acc_con03" aria-hidden="true" class="view" style="display: none;">
+										<!-- ▼ 2022-07-01 expandMenuList 항목내부 마크업 수정 -->
+										<ul class="expandMenuList">
+											<li class="listItem">
+												<div class="accLayout jsShWrap">
+													<div class="accInLayout">
+														<div class="accInfo">
+															<div class="logoWrap">
+																<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+															</div>
+															<div class="accInfoWrap">
+																<strong class="accName">
+																	<span class="accBank">[농협]</span>
+																	<span class="bankBookName">통장주머니</span>
+																</strong>
+																<div class="accNumWrap">
+																	<div class="accNumBox">
+																		<span class="accNumber">352-1775-6397-03</span>
+																		<!-- ▼ 2022-07-01 추가 -->
+																		<button type="button" class="accDetail">자세히</button>
+																	</div>
+																</div>
+															</div>
+															<button type="button" onclick="popOpen(sp_popup)" class="accMore">
+																<span class="blind">계좌관리 보기</span>
+															</button>
+														</div>
+														<!-- ▼ 2022-07-20 txtRed 클래스 추가 -->
+														<div class="accDataWrap txtRed">
+															<strong class="accCash">-800,000</strong><span class="accUnit">원</span>
+														</div>
+													</div>
+													<!-- ▼ 2022-07-01 halfWidth 클래스 삭제 -->
+													<div class="btnInArea">
+														<button type="button">거래내역조회</button>
+														<button type="button">송금</button>
+													</div>
+												</div>
+											</li>
+											<li class="listItem">
+												<div class="accLayout jsShWrap">
+													<div class="accInLayout">
+														<div class="accInfo">
+															<div class="logoWrap">
+																<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+															</div>
+															<div class="accInfoWrap">
+																<strong class="accName">
+																	<span class="accBank">[농협]</span>
+																	<span class="bankBookName">통장주머니</span>
+																</strong>
+																<div class="accNumWrap">
+																	<div class="accNumBox">
+																		<span class="accNumber">352-1775-6397-03</span>
+																		<!-- ▼ 2022-07-01 추가 -->
+																		<button type="button" class="accDetail">자세히</button>
+																	</div>
+																</div>
+															</div>
+															<button type="button" onclick="popOpen(sp_popup)" class="accMore">
+																<span class="blind">계좌관리 보기</span>
+															</button>
+														</div>
+														<!-- ▼ 2022-07-20 txtRed 클래스 추가 -->
+														<div class="accDataWrap txtRed">
+															<strong class="accCash">-5,000,000</strong><span class="accUnit">원</span>
+														</div>
+													</div>
+													<!-- ▼ 2022-07-01 halfWidth 클래스 삭제 -->
+													<div class="btnInArea">
+														<button type="button">거래내역조회</button>
+														<button type="button">송금</button>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //대출 -->
+
+								<!-- 펀드 -->
+								<!-- ▼ 2022-07-19 jsTgWrap 클래스 삭제 -->
+								<div class="expandMenuWrap">
+									<!-- ▼ 2022-07-19
+										- accHeader 클래스 추가
+										- aria-controls="~~" 추가
+									-->
+									<a href="javascript:;" role="button" aria-controls="acc_con04" class="layoutWrap expandMenu accHeader">
+										<div class="expandMenuTitle"><span>펀드</span> <span class="statusCount">0</span></div>
+										<div class="expandMenuPay">0원</div>
+									</a>
+									<!-- ▼ 2022-07-19
+										- jsTgCont -> view 클래스 변경
+										- data-acc-view="~~" 추가
+										- aria-hidden="true" 추가
+									-->
+									<div data-acc-view="acc_con04" aria-hidden="true" class="view" style="display: none;">
+										<div class="rounBgBox expandMenuList">
+											<div class="confirmWrap">
+												<div class="confirmMsg">
+													<div class="noData">
+														<i class="check"></i>
+														<p class="tit">보유하신 계좌가 없습니다.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //펀드 -->
+
+								<!-- 외화 -->
+								<!-- ▼ 2022-07-19 jsTgWrap 클래스 삭제 -->
+								<div class="expandMenuWrap">
+									<!-- ▼ 2022-07-19
+										- accHeader 클래스 추가
+										- aria-controls="~~" 추가
+									-->
+									<a href="javascript:;" role="button" aria-controls="acc_con05" class="layoutWrap expandMenu accHeader">
+										<div class="expandMenuTitle"><span>외화</span> <span class="statusCount">1</span></div>
+										<div class="expandMenuPay">100,000원</div>
+									</a>
+									<!-- ▼ 2022-07-19
+										- jsTgCont -> view 클래스 변경
+										- data-acc-view="~~" 추가
+										- aria-hidden="true" 추가
+									-->
+									<div data-acc-view="acc_con05" aria-hidden="true" class="view" style="display: none;">
+										<!-- ▼ 2022-07-01 expandMenuList 항목내부 마크업 수정 -->
+										<ul class="expandMenuList">
+											<li class="listItem">
+												<div class="accLayout jsShWrap">
+													<div class="accInLayout">
+														<div class="accInfo">
+															<div class="logoWrap">
+																<img src="../../images/logo/logo_bnk_011_72x72.png" alt="계좌 아이콘" class="logo">
+															</div>
+															<div class="accInfoWrap">
+																<strong class="accName">
+																	<span class="accBank">[농협]</span>
+																	<span class="bankBookName">통장주머니</span>
+																</strong>
+																<div class="accNumWrap">
+																	<div class="accNumBox">
+																		<span class="accNumber">352-1775-6397-03</span>
+																		<!-- ▼ 2022-07-01 추가 -->
+																		<button type="button" class="accDetail">자세히</button>
+																	</div>
+																</div>
+															</div>
+															<button type="button" onclick="popOpen(sp_popup)" class="accMore">
+																<span class="blind">계좌관리 보기</span>
+															</button>
+														</div>
+														<div class="accDataWrap">
+															<strong class="accCash">5,000,000</strong><span class="accUnit">원</span>
+														</div>
+													</div>
+													<!-- ▼ 2022-07-01 halfWidth 클래스 삭제 -->
+													<div class="btnInArea">
+														<button type="button">거래내역조회</button>
+														<button type="button">송금</button>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //외화 -->
+
+								<!-- 카드 -->
+								<div class="expandMenuWrap">
+									<!-- 2022-09-27 마크업변경 -->
+									<div class="layoutWrap expandMenu expandLink">
+										<div class="expandMenuTitle">
+											<!-- 2022-09-26 --> 
+											<span class="tit">카드
+												<!-- tooltip -->
+												<div class="tooltipWrap jsTooltipPosition">
+													<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+													<div class="tooltipCont">
+														<p>카드자산은 모든 사용카드의 기 사용금액(현재 결제 예정인 할부, 일시불, 현금서비스 총액)의 총합으로 마이너스 자산으로 표기합니다.</p><!-- [2022-10-07] 윤지현:.을 ,로 수정 -->
+														<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+													</div>
+												</div>
+												<!-- //tooltip -->
+											</span>
+											<!-- //2022-09-26 --> 
+										</div>
+										<a href="javascript:;" role="button" class="expandMenuPay txtRed">-100,000원</a>
+									</div>
+									<!-- //2022-09-27 -->
+								</div>
+
+								<!-- 링크없을때 -->
+								<div class="expandMenuWrap">
+									<div class="layoutWrap expandMenu expandLinkNone">
+										<div class="expandMenuTitle">
+											<!-- 2022-09-26 --> 
+											<span class="tit">카드
+												<!-- tooltip -->
+												<div class="tooltipWrap jsTooltipPosition">
+													<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+													<div class="tooltipCont">
+														<p>카드자산은 모든 사용카드의 기 사용금액(현재 결제 예정인 할부, 일시불, 현금서비스 총액)의 총합으로 마이너스 자산으로 표기합니다.</p><!-- [2022-10-07] 윤지현:.을 ,로 수정 -->
+														<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+													</div>
+												</div>
+												<!-- //tooltip -->
+											</span>
+											<!-- //2022-09-26 --> 
+										</div>
+										<div class="expandMenuPay">미보유</div>
+									</div>
+								</div>
+								<div class="expandMenuWrap">
+									<div class="layoutWrap expandMenu expandLinkNone">
+										<div class="expandMenuTitle">
+											<!-- 2022-09-26 --> 
+											<span class="tit">카드
+												<!-- tooltip -->
+												<div class="tooltipWrap jsTooltipPosition">
+													<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+													<div class="tooltipCont">
+														<p>카드자산은 모든 사용카드의 기 사용금액(현재 결제 예정인 할부, 일시불, 현금서비스 총액)의 총합으로 마이너스 자산으로 표기합니다.</p> <!-- [2022-10-07] 윤지현:.을 ,로 수정 -->
+														<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+													</div>
+												</div>
+												<!-- //tooltip -->
+											</span>
+											<!-- //2022-09-26 --> 
+										</div>
+										<div class="expandMenuPay">조회불가</div>
+									</div>
+								</div>
+								<!-- //카드 -->
+
+								<!-- [2022-11-01] 윤지현 : 마크업위치 이동 -->
+								<!-- 나의 농협 자산 분포 -->
+								<div class="nhAllAccount">
+									<h2 class="title">나의 농협 자산 분포</h2>
+									<div class="barGraph">
+										<span class="barItem bar1" style="width: 40%"></span>
+										<span class="barItem bar2" style="width: 20%"></span>
+										<span class="barItem bar3" style="width: 15%"></span>
+										<span class="barItem bar4" style="width: 15%"></span>
+										<!-- ▼ 2022-07-01 추가 -->
+										<span class="barItem bar5" style="width: 10%"></span>
+									</div>
+									<div class="barData">
+										<ul>
+											<li><span class="dataItem"><span class="item bar1"></span>예적금/신탁 <em>88.65%</em></span></li>
+											<li><span class="dataItem"><span class="item bar2"></span>예적금 <em>20%</em></span></li>
+											<li><span class="dataItem"><span class="item bar3"></span>펀드 <em>15%</em></span></li>
+											<li><span class="dataItem"><span class="item bar4"></span>외화 <em>15%</em></span></li>
+											<!-- ▼ 2022-07-01 추가 -->
+											<li><span class="dataItem"><span class="item bar5"></span>카드 <em>10%</em></span></li>
+										</ul>
+									</div>
+								</div>
+								<!-- //나의 농협 자산 분포 -->
+								<!-- //[2022-11-01] 윤지현 : 마크업위치 이동 -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- //#contents -->
+			<!-- <div id="footer_cont">
+				<div class="btnArea">
+					<button type="button" class>거래내역</button>
+					<button type="button" class="sel">송금</button>
+				</div>
+			</div> -->
+		</div> <!-- //#container -->
+	</div><!-- //#wrap -->
+
+	<div id="popupArea">
+		<!-- TOAST POPUP -->
+		<div class="toastPopWrap">
+			<div role="alert" aria-hidden="true" aria-live="assertive" id="toast" class="toastPop fade hide">
+				<span class="toastMessage"><!-- message --></span>
+			</div>
+		</div>
+
+		<!-- SLIDE POPUP -->
+		<div id="sp_popup" class="popupWrap slide" style="display:none;">
+			<div class="slidePopupDim">
+				<div class="layerSelectCont">
+					<div class="layerSelectContInner">
+						<div class="layerSelectTitle">
+							<h2 tabindex="0">계좌관리</h2>
+						</div>
+						<div class="layerSelectContent">
+							<ul class="listWrap textType">
+								<li><a href="javascript:;" title="선택됨" role="button" onclick="toastOpen(toast, '')" class="jsSelectLink active">계좌상세정보</a></li><!-- 기본 활성화 필요할 경우 active 클래스 추가 -->
+								<li><a href="javascript:;" title role="button" onclick="toastOpen(toast, '')" class="jsSelectLink">통장표지조회</a></li>
+								<li><a href="javascript:;" title role="button" onclick="toastOpen(toast, '')" class="jsSelectLink">거래내역조회</a></li>
+								<li><a href="javascript:;" title role="button" onclick="toastOpen(toast, '계좌번호가 복사되었습니다.')" class="jsSelectLink">계좌번호복사</a></li>
+								<li><a href="javascript:;" title role="button" onclick="toastOpen(toast, '')" class="jsSelectLink">QR코드발급</a></li>
+							</ul>
+						</div>
+						<!-- <div class="popFootBox">
+							<div class="btnArea">
+								<button type="button" onclick="popClose(this)">취소</button>
+								<button type="button" onclick="popClose(this)" class="sel">확인</button>
+							</div>
+						</div> -->
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

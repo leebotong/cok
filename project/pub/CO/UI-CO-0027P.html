@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CO-0027P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			 popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>휴대전화 본인확인</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- #popupArea -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">휴대전화 본인확인</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<!-- [2022-06-24] 윤지현:마크업추가 -->
+						<div class="pgTitWrap">
+							<p class="pTit"><strong>휴대전화 본인인증</strong>을<br><strong>진행</strong>해주세요.<br></p>
+						</div>
+						<!-- //[2022-06-24] 윤지현:마크업추가 -->
+						<div class="jsTgWrap">
+							<div class="allCheckTopBox addArrow noImg"> <!-- [2022-08-17] 김자영 : class noImg 추가(캐릭터 삭제) -->
+								<input type="checkbox" name="agreeChk" id="aggrChk10" class="jsTgBtn" aria-expanded="true">
+								<label for="aggrChk10">약관 전체동의</label>
+								<!-- <a href="#none" class="termsArrow" role="button" title="약관상세보기 팝업열림">&#xE001;</a> -->
+							</div>
+				
+							<div class="allCheckBox jsTgCont" style="display:block">
+								<div class="termsHead">
+									<p>휴대전화 인증 약관</p>
+								</div>
+								<ul class="termsList">
+									<li>
+										<div class="termsCheck">
+											<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk01">
+											<label for="aggrChk01">[필수] 개인정보 수집·이용 동의</label>
+										</div>
+										<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+									</li>
+									<li>
+										<div class="termsCheck">
+											<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk02">
+											<label for="aggrChk02">[필수] 개인정보 제공 동의</label>
+										</div>
+										<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+									</li>
+									<li>
+										<div class="termsCheck">
+											<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk03">
+											<label for="aggrChk03">[필수] 서비스 이용약관 동의</label>
+										</div>
+										<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+			
+						<div class="allAgreeCont">
+							<div class="formWrap">
+								<div class="formItem">
+									<strong class="formTit">통신사선택</strong>
+									<div class="boxRdoGroup">
+										<span class="inpChk">
+											<input type="radio" name="rdo00" id="rdo01">
+											<label for="rdo01">SKT</label>
+										</span>
+										<span class="inpChk">
+											<input type="radio" name="rdo00" id="rdo02">
+											<label for="rdo02">KT</label>
+										</span>
+										<span class="inpChk">
+											<input type="radio" name="rdo00" id="rdo03">
+											<label for="rdo03">LG U+</label>
+										</span>
+									</div>
+									<p class="infoTxt">알뜰폰 가입자는 가입된 통신사를 선택해 주세요.
+										예) SKT 알뜰폰 사용자 → SKT 선택</p>
+								</div>
+								<div class="formItem">
+									<strong class="formTit">휴대전화번호</strong>
+									<div class="formGroup flex46">
+										<div class="inpSel">
+											<a href="javascript:;" title="휴대폰번호 앞자리 선택" role="button" class="btnSel">010</a>
+										</div>
+										<div class="inpText">
+											<input type="tel" title="휴대폰번호" class="tyTxt" value placeholder="'-'없이 입력">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">다음</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CENTER POPUP [alert]-->
+	<div id="popupCCA" class="popupWrap center">
+		<div class="layerPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="Layer_Tit">
+								<h2 tabindex="0"><span class="blind">팝업</span></h2>
+							</div>
+							<div class="Layer_Con">
+								<!-- 컨펌메세지 -->
+								<div class="confirmMsg">
+									<i class="check"></i>
+									<p class="tit">본인 인증이 확인 되었습니다.</p>
+								</div>
+							</div>
+							<div class="Layer_Pop_Close">
+								<div class="btnArea">
+									<button type="button" title onclick="popClose(this)" class="sel">확인</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //#popupArea -->
+
+</body>
+</html>

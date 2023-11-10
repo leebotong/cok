@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SE-0602P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupB);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>알림</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupB" class="popupWrap slide" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="layerSelectCont">
+				<div class="layerSelectContInner">
+					<div class="layerSelectTitle">
+						<h2 tabindex="0">알림옵션 변경</h2>
+					</div>
+					<div class="layerSelectContent">
+						<div class="formWrap">
+							<div class="formItem">
+								<strong class="formTit">알람범위</strong>
+								<div class="boxRdoGroup">
+									<div class="inpChk">
+										<input type="radio" name="radio0" id="radio01" checked>
+										<label for="radio71">전체</label>
+									</div>
+									<div class="inpChk">
+										<input type="radio" name="radio0" id="radio02">
+										<label for="radio72">입금</label>
+									</div>
+									<div class="inpChk">
+										<input type="radio" name="radio0" id="radio03">
+										<label for="radio72">출금</label>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="formItem">
+								<div class="formTit">금액제한</div>
+								<div class="inpSel">
+									<a href="javascript:;" title="금액선택" role="button" class="btnSel">제한없음</a>
+								</div>
+							</div>
+							<!-- [2023-02-22] 김연진 : 잔액표시 항목 삭제 <div class="inpChk mt15">
+								<input type="checkbox" name="chk5" id="chk51" class="jsTgBtn">
+								<label for="chk51">잔액은 표시하지 말아주세요.</label>
+							</div>							 -->
+
+							<!-- [2023-02-22] 김연진 : 잔액표시 항목 추가 -->
+							<div class="formItem">
+								<div class="formTit">잔액표시
+								</div>
+								<div class="boxRdoGroup">
+									<div class="inpChk">
+										<input type="radio" name="radio3" id="radio31" checked>
+										<label for="radio71">표시</label>
+									</div>
+									<div class="inpChk">
+										<input type="radio" name="radio3" id="radio32">
+										<label for="radio72">미표시</label>
+									</div>
+								</div>
+							</div>
+							<!-- //[2023-02-22] 김연진 : 잔액표시 항목 추가 -->
+						</div>
+					</div>
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button type="button" onclick="popClose(this)">취소</button>
+							<button type="button" onclick="popClose(this)" class="sel">다음</button>
+						</div>
+					</div>
+					<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SB-0030P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(fullA);
+		})
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1></h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(fullA);" class="popOpen">승인내역상세 팝업</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP -->
+		<div id="fullA" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">승인내역 상세</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div class="cardDetailInfoWrap">
+								<span class="cardSpotName">aliexpress</span>
+								<div class="dataWrap">
+									<em class="data">16,773</em><span class="unit">원</span>
+								</div>
+							</div>
+
+							<section>
+								<div class="listTbl">
+									<ul>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">카드번호</span>
+												<span class="txt">1234-****-****-1234</span>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">거래방법</span>
+												<span class="txt">일시불</span>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">거래일시</div>
+												<div class="txt">2022.12.20 17:00:15</div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">승인번호</div>
+												<div class="txt">12345678</div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">취소여부</div>
+												<div class="txt">-</div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">현지통화/금액</div>
+												<div class="txt"><span class="dataWrap"><span class="unit">USD </span><em class="data">13.46</em></span></div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">거래금액</div>
+												<div class="txt"><span class="dataWrap"><em class="data">16,773</em><span class="unit">원</span></span></div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">수수료</div>
+												<div class="txt"><span class="dataWrap"><em class="data">0</em><span class="unit">원</span></span></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<div class="listTbl">
+									<div class="listTit">
+										<span>가맹점정보</span>
+									</div>
+									<ul>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">업종</span>
+												<span class="txt">백화점</span>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<span class="tit">가맹점명</span>
+												<span class="txt">aliexpress</span>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">국가</div>
+												<div class="txt">Singapore</div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">도시</div>
+												<div class="txt">Singapore</div>
+											</div>
+										</li>
+										<li>
+											<div class="listIn_flex">
+												<div class="tit">가맹점번호</div>
+												<div class="txt">123456789</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button class="sel">확인</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MN-0003_2</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);	
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">조합원, 준조합원 안내</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="pgTitWrap">
+							<p class="pTit"><strong>조합원, 준조합원</strong> 이란?</p>
+						</div>
+						
+						<div class="imgWrap">
+							<img src="../../images/cont/img_jun_member.jpg" alt="">
+						</div>
+			
+						<p class="defTit2"><span class=pColor>조합원</span>은 </p>
+						<p class="defTxt2">지역농·축협 조합의 구역에 주소, 거소, 사업장이 있는 농·축업을 하는 농업인 이예요.<br>
+							조합원 가입은 농·축협 영업점에서 할 수 있어요. 가입기준 (농지경영 또는 경작면적, 가축사육 두 수 등) 등 자세한 내용은 가까운(주소, 거소, 사업장) 농·축협 영업점에 문의하셔야 해요.</p>
+						<p class="defTit2"><span class=pColor>준조합원</span>은</p>
+						<p class="defTxt2">농축업에 종사하지는 않지만 지역농·축협 조합의 구역에 주소나 거소가 있는 농·축협의 고객 이예요.<br>준조합원 가입은 농·축협 영업점에서 하거나, 콕뱅크에서 가입하고 해당 농·축협에서 승인하면 가입할 수 있어요.<br>
+							가입기준 등 자세한 내용은 가까운(주소, 거소) 농·축협 영업점에 문의하셔야 해요.</p>
+						<div class="btnLnkLine">
+							<a href="javascript:;" role="button" class="underLine">콕뱅크에서 준조합원 가입하기</a>
+						</div>
+					</div>
+			 
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">확인</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

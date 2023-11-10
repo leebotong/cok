@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0063</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>MY콕통장</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<!-- [2022-07-04] 윤지현:twoToneType 걷어냄 -->
+			<div class="pgTitWrap">
+				<!-- [2022-07-04] 윤지현:브랜치 위치변경 및 마크업변경  -->
+				<div class="branchBox">
+					<p class="name">서울경기축산농협 디지털미디어시티지점</p>
+				</div>
+				<!-- //[2022-07-04] 윤지현:브랜치 위치변경 및 마크업변경  -->
+				<p class="pTit"><strong>계좌 개설 정보</strong>를<br>입력해주세요.</p>
+			</div>
+
+			<!-- formwrap -->
+			<section class="section30">
+				<div class="formWrap">
+					<div class="formItem">
+						<div class="rounBgBox readonlyBox">
+							<ul>
+								<li>
+									<strong class="formTit">고객명</strong>
+									<p class="value">홍길동</p>
+								</li>
+								<li>
+									<strong class="formTit">생년월일</strong>
+									<p class="value">1990년 1월 1일</p>
+								</li>
+							</ul>
+							<!-- [2022-07-04] 윤지현:아래에서 마크업위치이동 -->
+							<div class="boxRdoGroup">
+								<div class="inpChk">
+									<input type="radio" name="radio1" id="radio11" checked>
+									<label for="radio11">양력</label>
+								</div>
+								<div class="inpChk">
+									<input type="radio" name="radio1" id="radio12">
+									<label for="radio12">음력</label>
+								</div>
+							</div>
+							<!-- [2022-07-04] //윤지현:아래에서 마크업위치이동 -->
+						</div>
+					</div>
+
+					<!-- [2022-07-29] 윤지현:추가 -->
+					<div class="formItem">
+						<strong class="formTit">영문이름</strong>
+						<div class="inpText">
+							<input type="text" title="영문이름" value="" class="tyTxt" placeholder="예시 Kim Hong Do">
+							<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+						</div>
+					</div>
+					<!-- //[2022-07-29] 윤지현:추가 -->
+
+					<!-- [2022-07-04] 윤지현:아래에서 마크업위치이동 -->
+					<div class="formItem mt14 ">
+						<strong class="formTit inpChk">
+							<input type="checkbox" name="chk5" id="chk51">
+							<label for="chk51">계좌 실소유자 입니다.
+								<!-- tooltip -->
+								<div class="tooltipWrap">
+									<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+									<div class="tooltipCont">
+										<strong class="tit">계좌 실소유자</strong> <!-- [2023-06-30] 이경아: 텍스트 수정 -->
+										<p>비대면계좌개설은 본인 명의 계좌로만 개설이 가능하며 해당 계좌의 실소유자가 아닌 경우 계좌개설이 불가능합니다.</p>
+										<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+									</div>
+								</div>
+								<!-- //tooltip -->
+							</label>
+						</strong>
+					</div>
+				</div>
+			</section>
+			<!-- //formwrap -->
+
+			<hr class="divingLine">
+
+			<!-- formwrap -->
+			<div class="formWrap">
+				<!-- ▼ [2022-10-27] 김자영 : 타이틀 추가 -->
+				<p class="defTit1">연락처 정보</p>
+				<div class="formItem">
+					<strong class="formTit">휴대전화번호</strong>
+					<div class="formGroup flex46">
+						<div class="inpSel">
+							<a href="javascript:;" title="휴대폰번호 앞자리 선택" role="button" class="btnSel">010</a>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="휴대폰번호" class="tyTxt" value placeholder="'-'없이 입력">
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">자택 전화번호 (선택)</strong>
+					<div class="formGroup flex46">
+						<div class="inpSel">
+							<a href="javascript:;" title="자택 전화번호 앞자리 선택" role="button" class="btnSel placeholder">선택</a>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="자택 전화번호" class="tyTxt" value placeholder="'-'없이 입력">
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">직장 전화번호 (선택)</strong>
+					<div class="formGroup flex46">
+						<div class="inpSel">
+							<a href="javascript:;" title="직장 전화번호 앞자리 선택" role="button" class="btnSel placeholder">선택</a>
+						</div>
+						<div class="inpText">
+							<input type="tel" title="직장 전화번호" class="tyTxt" value placeholder="'-'없이 입력">
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">이메일</strong>
+					<div class="formGroup">
+						<div class="inpText">
+							<input type="text" title="아이디" class="tyTxt" placeholder="이메일 입력">
+						</div>
+						<span class="etc">@</span>
+						<div class="inpSel">
+							<a href="javascript:;" title="도메인 선택" role="button" class="btnSel">nonghyup.com</a>
+						</div>
+					</div>
+					<div class="inpText">
+						<input type="text" title="도메일직접입력" class="tyTxt" value placeholder="직접입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">연락 받을곳</strong>
+					<div class="boxRdoGroup">
+						<div class="inpChk">
+							<input type="radio" name="radio2" id="radio21" checked>
+							<label for="radio21">휴대전화</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio2" id="radio22">
+							<label for="radio22">자택</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio2" id="radio23">
+							<label for="radio23">직장</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //formwrap -->
+
+			<hr class="divingLine">
+
+			<!-- formwrap -->
+			<div class="formWrap">
+				<!-- ▼ [2022-10-27] 김자영 : 타이틀 추가 -->
+				<p class="defTit1">주소 정보</p>
+				<div class="formItem">
+					<strong class="formTit">자택 주소</strong>
+					<div class="inpText">
+						<input type="text" title="우편번호" class="tyTxt sKey" value placeholder="우편번호" readonly> <!-- [2022-06-23] 윤지현:클래스추가 -->
+						<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+					</div>
+					<div class="inpText">
+						<input type="text" title="자택 상세주소" class="tyTxt sKey" value placeholder readonly> <!-- [2022-06-23] 윤지현:클래스추가 --><!-- [2022-06-23] 윤지현:클래스추가 -->
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<div class="inpText">
+						<input type="text" title="자택 상세주소" class="tyTxt" value placeholder="상세주소 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">직장 주소 (선택)</strong>
+					<div class="inpText">
+						<input type="text" title="우편번호" class="tyTxt sKey" value placeholder="우편번호" readonly> <!-- [2022-06-23] 윤지현:클래스추가 -->
+						<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+					</div>
+					<div class="inpText">
+						<input type="text" title="직장 상세주소" class="tyTxt sKey" value placeholder readonly> <!-- [2022-06-23] 윤지현:클래스추가 -->
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<div class="inpText">
+						<input type="text" title="직장 상세주소" class="tyTxt" value placeholder="상세주소 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">우편물 수령지</strong>
+					<div class="boxRdoGroup">
+						<div class="inpChk">
+							<input type="radio" name="radio2" id="radio21" checked="">
+							<label for="radio21">자택</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio2" id="radio22" disabled>
+							<label for="radio22">직장</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //formwrap -->
+
+			<hr class="divingLine">
+
+			<!-- formwrap -->
+			<div class="formWrap">
+				<!-- ▼ [2022-10-27] 김자영 : 타이틀 추가 -->
+				<p class="defTit1">직업 정보</p>
+				<div class="formItem">
+					<strong class="formTit">직업분류</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="직업분류 선택" role="button" class="btnSel placeholder">대분류 선택</a> <!-- [2022-06-24] 윤지현:문구수정 -->
+					</div>
+					<div class="inpSel">
+						<a href="javascript:;" title="직업분류 선택" role="button" class="btnSel placeholder">중분류 선택</a> <!-- [2022-06-24] 윤지현:문구수정 -->
+					</div>
+					<div class="inpSel">
+						<a href="javascript:;" title="직업분류 선택" role="button" class="btnSel placeholder">소분류 선택</a> <!-- [2022-06-24] 윤지현:문구수정 -->
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">직위</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="직위 선택" role="button" class="btnSel placeholder">선택</a>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">직장명 (선택)</strong>
+					<div class="inpText">
+						<input type="text" title="직장명" class="tyTxt" value placeholder="직장명 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+			</div>
+			<!-- //formwrap -->
+
+			<hr class="divingLine">
+
+			<!-- formwrap -->
+			<div class="formWrap">
+				<!-- ▼ [2022-10-27] 김자영 : 타이틀 추가 -->
+				<p class="defTit1">부가 정보</p>
+				<div class="formItem">
+					<strong class="formTit">거래목적</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="거래목적 선택" role="button" class="btnSel placeholder">선택</a>
+					</div>
+					<!-- [2022-07-29] case:직접입력 추가 -->
+					<div class="inpText">
+						<input type="text" title="거래목적 직접입력" value="" class="tyTxt" placeholder="거래목적 직접 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">자금원천</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="자금원천 선택" role="button" class="btnSel placeholder">선택</a>
+					</div>
+					<!-- [2022-07-29] case:직접입력 추가 -->
+					<div class="inpText">
+						<input type="text" title="자금원천 직접입력" value="" class="tyTxt" placeholder="자금원천 직접 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+			</div>
+			<!-- //formwrap -->
+
+			<!-- [2022-07-29] 윤지현:추가 -->
+			<div class="termsList mt40">
+				<div>
+					<!-- <div class="termsCheck">
+						<input type="checkbox" name="nPartCheck" id="aggrChk10">
+						<label for="aggrChk10">[선택] 마케팅 정보수신동의</label>
+					</div> --><!-- [2022-09-02] 삭제 -->
+					<div>
+						<p class="formTit mt10">마케팅수신 채널 선택</p><!-- [2022-09-02] 클래스수정 -->
+						<div class="chkGroup flex11">
+							<div class="inpChk">
+								<input type="checkbox" name="check5" id="check51">
+								<label for="check51">전화</label>
+							</div>
+							<div class="inpChk">
+								<input type="checkbox" name="check5" id="check52">
+								<label for="check52">SMS</label>
+							</div>
+							<div class="inpChk">
+								<input type="checkbox" name="check5" id="check53">
+								<label for="check53">우편물</label>
+							</div>
+							<div class="inpChk">
+								<input type="checkbox" name="check5" id="check54">
+								<label for="check54">이메일</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //[2022-07-29] 윤지현:추가 -->
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel dis">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

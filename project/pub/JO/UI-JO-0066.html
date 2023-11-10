@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0066</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>MY콕통장</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<!-- [2022-07-04] 윤지현:twoToneType 걷어냄 -->
+			<div class="pgTitWrap">
+				<!-- [2022-07-04] 윤지현:브랜치 위치변경 및 마크업변경  -->
+				<div class="branchBox">
+					<p class="name">서울경기축산농협 디지털미디어시티지점</p>
+				</div>
+				<!-- //[2022-07-04] 윤지현:브랜치 위치변경 및 마크업변경  -->
+				<p class="pTit">약관 및 유의사항 확인 후<br><strong>신규비밀번호</strong>를 <strong>입력</strong>해주세요.</p> <!-- [2022-07-22] 윤지현:문구수정 -->
+			</div>
+
+			<div class="allCheckTopBox">
+				<input type="checkbox" name="agreeChk" id="aggrChk10">
+				<label for="aggrChk10">약관 및 유의사항 전체 동의</label>
+				<!-- <a href="#none" class="termsArrow" role="button" title="약관상세보기 팝업열림">&#xE001;</a> -->
+			</div>
+
+			<div class="allCheckBox">
+				<div class="termsHead">
+					<p>상품안내 및 이용약관</p>
+					<a href="javascript:;" role="button" class="btn">모두보기</a><!-- [2022-07-13] 윤지현:문구수정 -->
+				</div>
+				<ul class="termsList">
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk01">
+							<label for="aggrChk01">[필수] 예탁금거래기본약관</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+					</li>
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk02">
+							<label for="aggrChk02">[필수] 입출금이 자유로운 예탁금 약관</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+					</li>
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk03">
+							<label for="aggrChk03">[필수] 특약 주머니(money)통장</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+					</li>
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk04">
+							<label for="aggrChk04">[필수] 상품설명서 주머니(money)통장</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+					</li>
+					<li>
+						<div class="termsCheck">
+							<input type="checkbox" title="약관상세보기 팝업열림" name="nPartCheck" id="aggrChk05">
+							<label for="aggrChk05">[필수] 개인(신용)정보 수집·이용 동의서</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow">&#xE001;</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- [2022-07-29] 윤지현:삭제 <div class="allCheck">
+				<input type="checkbox" name="agreeChk" id="aggrChk11">
+				<label for="aggrChk11">상품 약관 및 주요 안내사항을 읽고 충분히 이해하며 이에 동의합니다.</label>
+			</div> -->
+
+			<!-- [2022-07-29] 윤지현:추가 -->
+			<strong class="termsListTit"><span class="highlight">혜택(우대금리 등) 제공</span>을 위해 꼭 필요해요.</strong>
+			<div class="termsList">
+				<div>
+					<div class="flex">
+						<div class="termsCheck">
+							<input type="checkbox" name="nPartCheck" id="aggrChk11">
+							<label for="aggrChk11">[선택] (비여신)개인(신용)정보 수집·이용 동의서(상품별선택)</label>
+						</div>
+						<a href="#none" title="약관상세보기 팝업열림" role="button" class="termsArrow"></a>
+					</div>
+					<div class="colorBox">
+						<div class="descArea">
+							<p>해당 선택 약관을 반드시 동의 해야만 이 상품에서 제공하는 혜택(우대금리 등)를 받으실 수 있습니다. 혜택(우대금리 등) 제공을 위해 내용을 꼭 확인하시고 동의해 주세요.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //[2022-07-29] 윤지현:추가 -->
+
+			<hr class="divingLine">
+
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">신규계좌 비밀번호</strong>
+					<div class="inpText">
+						<button type="button" title="신규계좌 비밀번호 4자리 입력됨" aria-label="신규계좌 비밀번호 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+						<input type="password" title="신규계좌 비밀번호" aria-hidden="true" class="tyTxt sKey" value placeholder="신규계좌 비밀번호 입력" readonly>
+					</div>
+					<div class="inpText">
+						<button type="button" title="신규계좌 비밀번호 4자리 입력됨" aria-label="신규계좌 비밀번호 재입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+						<input type="password" title="신규계좌 비밀번호 재입력" aria-hidden="true" class="tyTxt sKey" value placeholder="신규계좌 비밀번호 재입력" readonly>
+					</div>
+					<p class="infoTxt">동일연속숫자, 생년월일, 주민번호, 전화번호 등은 보안에 취약하여 사용이 불가합니다.</p>
+				</div>
+				<div class="formItem">
+					<strong class="formTit inpChk">
+						<input type="checkbox" name="chk9" id="chk91">
+						<label for="chk91">예금잔액통보(우편) 신청해요.
+							<!-- tooltip -->
+							<div class="tooltipWrap">
+								<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+								<div class="tooltipCont">
+									<strong class="tit">예금잔액통보(우편)</strong> <!-- [2022-06-24] 윤지현:문구수정 -->
+									<p>신청계좌의 기준잔액이 매월 말일 기준으로 5억원 이상인 경우 사고예방을  위하여 예금잔액을 우편(등기)발송합니다.</p>
+									<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+								</div>
+							</div>
+							<!-- //tooltip -->
+						</label>
+					</strong>
+				</div>
+				<div class="formItem jsTgWrap">
+					<strong class="formTit inpChk">
+						<input type="checkbox" name="chk10" id="chk101" class="jsTgBtn">
+						<label for="chk101">권유직원이 있어요. (선택)</label>
+					</strong>
+					<!-- 권유직원 선택시 노출 -->
+					<div class="jsTgCont formExpBox">
+						<div class="formWrap">
+							<div class="formGroup mt0">
+								<div class="inpText">
+									<input type="text" title="권유직원" class="tyTxt" value placeholder="권유직원 입력" readonly>
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									<a href="javascript:;" role="button" aria-label class="btnSm">검색</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //권유직원 선택시 노출 -->
+				</div>
+			</div>
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel dis">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

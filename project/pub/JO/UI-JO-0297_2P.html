@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-0131P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(fullA);
+			// popOpen(cp);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>금리안내</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(fullA);" class="popOpen">금리안내 팝업</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP -->
+		<div id="fullA" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">금리안내</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<section class="section30">
+									<div class="tblWrap">
+										<div class="tblHeader">
+											<strong>기본금리</strong>
+											<small>(연%, 세전)</small>
+										</div>
+										<div class="tbl">
+											<table>
+												<caption>기본금리정보. 가입기간, 기본금리 정보가 있음</caption>
+												<colgroup>
+													<col width="50%">
+													<col width="">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">가입기간</th>
+														<th scope="col">기본금리(%)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>6개월 이상~<br>12개월 미만</td>
+														<td class="pColor">2.5%</td>
+													</tr>
+													<tr>
+														<td>12개월 이상~<br>24개월 미만</td>
+														<td class="pColor">4.2%</td>
+													</tr>
+													<tr>
+														<td>24개월 이상~<br>36개월 미만</td>
+														<td class="pColor">4.2%</td>
+													</tr>
+													<tr>
+														<td>36개월 이상~<br>48개월 미만</td>
+														<td class="pColor">4%</td>
+													</tr>
+													<tr>
+														<td>48개월 이상~<br>60개월 미만</td>
+														<td class="pColor">2%</td>
+													</tr>
+													<tr>
+														<td>60개월 이상</td>
+														<td class="pColor">2%</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="tblWrap">
+										<div class="tblHeader">
+											<strong>우대금리</strong>
+											<small>(연%p, 세전)</small>
+										</div>
+										<div class="tbl">
+											<table>
+												<caption>우대금리. 가입기간, 기본금리 정보가 있음</caption>
+												<colgroup>
+													<col width="50%">
+													<col width="">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">우대조건</th>
+														<th scope="col">이율(%p)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>농축협 영업점 특별우대금리(특판)</td>
+														<td class="pColor">2.80%p</td>
+													</tr>
+													<tr>
+														<td>농축협 예/적금 인터넷(스마트)뱅킹 가입시 우대금리(1개월 이상 ~ 12개월 미만)</td>
+														<td class="pColor">0.1%p</td>
+													</tr>
+													<tr>
+														<td>농축협 예/적금 인터넷(스마트)뱅킹 가입시 우대금리(12개월 이상 ~ 24개월 미만)</td>
+														<td class="pColor">0.1%p</td>
+													</tr>
+													<tr>
+														<td>농축협 예/적금 인터넷(스마트)뱅킹 가입시 우대금리(24개월 이상 ~ 36개월 미만)</td>
+														<td class="pColor">0.1%p</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+							</section>
+						</div>
+						<div class="popFootBox">
+							<div class="btnArea">
+								<button class="sel">확인</button>
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$('.errorcheck').hide();
+			$('.uicheck').bind('click', function(){
+				$('.toSendMonyWrap').toggleClass('active');
+				$('.errorcheck').fadeToggle();
+			});
+			$('.errorcheck').bind('click', function(){
+				$('.formItem').toggleClass('error');
+			});
+		});
+	</script>
+</body>
+</html>

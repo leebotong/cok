@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>콕 toggle</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>Toggle</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<p>.jsTgWrap > .jsTgBtn + .jsTgCont</p>
+			<h1 class="gTit" style="margin-top:40px">### button의 경우<br>(div.jsTgWrap > a.jsTgBtn + div.jsTgCont)</h1>
+			<div class="jsTgWrap">
+				<a href="javascript:;" role="button" class="jsTgBtn">토글버튼 ▼</a>
+				<div class="jsTgCont" style="height:100px;background:#ddd">
+					토글 컨텐츠
+				</div>
+			</div>
+
+			<h1 class="gTit" style="margin-top:40px">### input의 경우<br>(div.jsTgWrap > input + div.jsTgCont)</h1>
+			<div class="termsList">
+				<div class="jsTgWrap">
+					<div class="termsCheck">
+						<input type="checkbox" aria-expanded="true" name="nPartCheck" id="aggrChk07" class="jsTgBtn">
+						<label for="aggrChk07">[필수] 불법/탈법 차명거래금지 설명 확인</label>
+					</div>
+					<div class="jsTgCont" style="display:block">
+						<p class="termsExp">
+							「금융실명거래 및 비밀보장에 관한 법률」 제 3조 제3항에 따라 누구든지 불법재산의 은닉, 자금세탁행위, 공중협박자금조달행위 및 강제집행의 면탈 그 밖의 탈법행위를 목적으로 타인의 실명으로 금융거래를 하여서는 아니 되며, 이를 위한 시 5년 이하의 징역 또는 5천만원 이하의 벌금에 처해질 수 있습니다.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<h1 class="gTit" style="margin-top:40px">### 모두펼침(.jsAllShControl, .jsShTarget)</h1>
+			<button type="button" class="btnSm jsAllShControl">모두펼침</button>
+			<div>
+				<p class="my20">펼침 대상 1</p>
+				<div class="jsShTarget">
+					<div class="hideBox" style="background-color: #ddd;padding: 20px">ss</div>
+				</div>
+			</div>
+			<div>
+				<p class="my20">펼침 대상 2</p>
+				<div class="jsShTarget">
+					<div class="hideBox" style="background-color: #ddd;padding: 20px">ss</div>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">이전</button>
+				<button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

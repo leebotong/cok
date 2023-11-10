@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0191</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			//popOpen(popupC);
+		})
+		
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>예적금담보대출</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<!-- [2022-07-04] 윤지현:브랜치 위치변경 및 마크업변경  -->
+				<div class="branchBox">
+					<p class="name">서울경기축산농협 디지털미디어시티지점</p>
+				</div>
+				<!-- //[2022-07-04] 윤지현:브랜치 위치변경 및 마크업변경  -->
+				<p class="pTit"><strong>대출신청정보</strong>를<br><strong>입력</strong>해주세요.</p>
+			</div>
+
+			<div class="rounBgBox readonlyBox">
+				<ul>
+					<li>
+						<strong class="formTit">대출가능금액</strong> <!-- [2022-07-13] 윤지현:문구수정 -->
+						<p class="value"><strong class="dataWrap"><em class="data">100,000,000</em><span class="unit">원</span></strong><br>(1회 최고한도 5천만원)</p>
+					</li>
+					<li>
+						<strong class="formTit">기설정금액</strong>
+						<p class="value"><strong class="dataWrap"><em class="data">0</em><span class="unit">원</span></strong></p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="formWrap">
+				<div class="formItem action error">
+					<strong class="formTit default">대출신청금액</strong>
+					<p class="numVal"><em class="data"></em><span class="unit">만원</span></p>
+					<div class="inpText">
+						<input type="tel" title="대출신청금액" class="tyNum" value="" placeholder="금액입력">
+						<span class="unit">만원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+					<p class="infoTxtErr">1회 신청한도는 5천만원입니다.<br>대출가능금액 이하로 입력해주세요.</p>
+					<p class="infoTxt ar">최소 10만원 이상 10만원 단위</p> <!-- [2022-07-05] 윤지현:문구추가 -->
+				</div>
+				<div class="formItem actionp">
+					<strong class="formTit default">담보 예·적금(신탁)계좌</strong>
+					<div class="readonlyBox"> <!-- [2022-07-05] 윤지현:클래스삭제 -->
+						<div class="inpSel isLogo">
+							<div class="btnSel">
+								<span class="logo">
+									<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+								</span>
+								<div class="accNum">
+									<span class="tit"><!--<span class="accBank">[농협]</span>--> 바로N콕통장(내주거래통장)</span>
+									<span class="num">555368-12-023456</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">계좌비밀번호</strong>
+					<div class="inpText readonly">
+						<button type="button" title="계좌비밀번호 4자리 입력됨" aria-label="계좌비밀번호 입력" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+						<input type="password" title="계좌비밀번호 입력" class="sKey" value="0000" placeholder="비밀번호 입력(숫자 4자리)" maxlength="4" readonly aria-hidden="true">
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">대출구분
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">대출구분</strong>
+								<p>개별거래는 약정액 범위 내에서 일괄하여
+									대출이 발생, 상환한 금액을 재사용 할 수 
+									없습니다.
+									한도거래는 약정한 한도금액 범위내에서
+									동일과목의 대출을 자유롭게 재사용하고
+									대출기간 만료일에 한도금액을 상환하는
+									방식을 말합니다.</p>
+								<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="boxRdoGroup">
+						<div class="inpChk">
+							<input type="radio" name="radio6" id="radio61" checked>
+							<label for="radio61">개별거래</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio6" id="radio62">
+							<label for="radio62">한도거래<br>(마이너스통장대출)</label>
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">대출금 상환방법
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">대출금 상환방법</strong>
+								<p>만기일 자동이체 상환이란? 대출만기일 당일 영업시간 이전에 대출이자 
+									자동이체계좌에서 대출원리금이 자동이체 
+									출금됩니다. 예적금은 만기일에 자동으로 
+									해지되지 않으며 개별대출의 경우 
+									고객님께서 직접 예금해지(중도인출) 메뉴를 
+									통해 담보예금 해지 및 담보대출금 상환이 
+									가능합니다. (마이너스통장 불가)<br><br>
+									만기일 직접 상환이란? 대출만기일 당일 대출이자만 자동이체상환 
+									되므로 고객께서 직접 원금상환 조작
+									(또는 영업점 방문 상환) 후 만기예적금을 
+									해지하실 수 있습니다.</p>
+								<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="boxRdoGroup">
+						<div class="inpChk">
+							<input type="radio" name="radio7" id="radio71">
+							<label for="radio71">만기일 자동이체 상환</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio7" id="radio72" checked>
+							<label for="radio72">만기일 직접 상환</label>
+						</div>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">대출금 입금(약정)계좌
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">대출금 입금(약정)계좌</strong>
+								<p>대출금 입금(약정)계좌는 농·축협 계좌만 가능 <!-- [2022-07-13] 윤지현:문구수정 -->
+									합니다. (농협은행 제외)
+									대출금 입금계좌에서 대출이자가 자동이체
+									됩니다.
+									자동이체계좌 변경은 [개인 인터넷뱅킹&gt;
+									자동이체] 메뉴를 이용하시면 됩니다.</p>
+								<button type="button" aria-label="툴팁 닫기" onclick="" class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<!--case: 계좌선택 전 -->
+					<div class="inpSel">
+						<!-- [2022-08-19] 플레이스홀더 문구수정 -->
+						<a href="javascript:;" title="대출금 입금(약정) 계좌 선택" role="button" class="btnSel placeholder">
+							대출금 입금(약정) 계좌 선택
+						</a>
+						<!-- //[2022-08-19] 플레이스홀더 문구수정 -->
+					</div>
+					<!-- case: 계좌선택 전 -->
+					<!--case: 계좌선택 후 -->
+					<div class="inpSel isLogo">
+						<a href="javascript:;" title="대출금 입금(약정) 계좌 선택" role="button" class="btnSel placeholder">
+							<span class="logo">
+								<img src="../../images/logo/logo_bnk_011_72x72.png" alt="NH농협은행">
+							</span>
+							<div class="accNum">
+								<span class="tit"><!--<span class="accBank">[농협]</span>--> 바로N콕통장(내주거래통장)</span>
+								<span class="num">555368-12-023456</span>
+							</div>
+						</a>
+					</div>
+					<!-- case: 계좌선택 후 -->
+				</div>
+
+				<div class="formItem">
+					<strong class="formTit">대출금 입금(약정)계좌 관리점</strong>
+					<div class="readonlyBox"> <!-- [2022-07-05] 윤지현:클래스 삭제 -->
+						<div class="branchInfo">
+							<strong class="name">서울경기축산농협<br>디지털미디어시티지점</strong>
+							<button type="button" class="btnSm point">영업점정보</button> <!-- [2022-07-05] 윤지현:point 클래스추가 -->
+						</div>
+						<p class="defTxt">경기도 의왕시 포일대로 123 포일빌딩1층<br>031-2345-6789</p>
+					</div>
+				</div>
+				
+				<!-- [2022-07-13] 윤지현:위치이동 및 타이틀추가 -->
+				<!-- case: 대출구분 걔별거래 노출 -->
+				<div class="formItem">
+					<strong class="formTit">자동이체일</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="자동이체일 선택" role="button" class="btnSel placeholder">자동이체일 선택</a>
+					</div>
+				</div>
+				<!-- case: 대출구분 한도거래 선택 시 노출 -->
+				<!-- //[2022-07-13] 윤지현:위치이동 및 타이틀추가 -->
+
+				<p class="infoTxt">한도거래(마이너스통장) 대출약정계좌는 담보 예 ·적금 관리점과 동일한 농·축협 (본지점기준)의 계좌여야 합니다.</p>
+
+				<div class="formItem">
+					<strong class="formTit">연락처</strong>
+					<div class="inpText readonly">
+						<input type="text" title="연락처" value="010-1234-****" class="tyTxt" placeholder="" readonly>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">우편수령지 선택</strong>
+					<div class="boxRdoGroup">
+						<div class="inpChk">
+							<input type="radio" name="radio8" id="radio81" checked>
+							<label for="radio81">자택</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio8" id="radio82" disabled> <!-- 직장주소지 없을 경우 disabled 추가 -->
+							<label for="radio82">직장</label>
+						</div>
+					</div>
+					<div class="readonlyBox"> <!-- [2022-07-05] 윤지현:클래스 삭제 -->
+						<p class="defTxt">12345<br>서울시 강남구 봉은사로 111한국빌딩<br>5층 101호</p>
+					</div>
+				</div>
+				
+				<div class="formItem jsTgWrap">
+					<strong class="formTit inpChk">
+						<input type="checkbox" name="chk10" id="chk101" class="jsTgBtn" aria-expanded="false">
+						<label for="chk101">권유직원이 있어요. (선택)</label>
+					</strong>
+					<!-- 권유직원 선택시 노출 -->
+					<div class="jsTgCont formExpBox">
+						<div class="formWrap">
+							<div class="formGroup mt0">
+								<div class="inpText readonly">
+									<input type="text" title="권유직원" class="tyTxt" value="" placeholder="권유직원 입력" readonly="">
+									<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+									<a href="javascript:;" role="button" aria-label="" class="btnSm">검색</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>대출금 상환 기일은 담보 예·적금 계좌의 만기일로 자동 지정됩니다.</li>
+					<li>대출한도는 최저 10만원 이상 최고한도는 예금납입액의 90%까지 10만원 단위로 가능합니다.</li>
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<script>
+	$(document).ready(function(){
+		$('.boxRdoGroup').each(function(e){
+			var h = $('.boxRdoGroup').eq(e).outerHeight();
+			console.log(h);
+			$('.boxRdoGroup').eq(e).find('label').css('height', h)
+		})
+	})
+</script>
+
+</body>
+</html>

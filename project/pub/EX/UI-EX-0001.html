@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0001</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>환전</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+				<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+			</div>
+		</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="exchangeMain">
+				<div class="imgBox exchange">
+					<div class="pgTitWrap">
+						<p class="pTit">편리한 콕뱅크 환전!<br>최대 <strong>80%</strong> 환율 우대</p>
+						<ul class="listDot">
+							<li>#당일수령 #최대80% #편리한<br> #외화주머니 #재환전</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="btnInArea">
+					<button type="button" class="btnInquery">환전신청</button>
+				</div>
+			</div>
+
+			<!-- BANNER -->
+				<!-- TODO: 배너영역 -->
+				<section class="section40">
+					<div class="majorCurrency">
+						<strong class="tit">주요통화</strong>
+						<span class="txt">2022.03.18 13:49:11 / 92회차 / 매매기준율</span>
+				</div>
+					<div class="ContSwipe exchangeSlide"> <!-- [2022-10-07] 윤지현:.exchangeSlide 클래스 추가 -->
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<!-- [2022-10-07] 윤지현:접근성수정.스와이프 전체구조 변경. 2개씩 묶음 -->
+								<div class="swiper-slide">  <!--[2022-07-11] 이경아 : swiper-slide 클래스 하나씩 감싸도록 수정-->
+									<div class="slideBox">
+										<div class="majorCurrencyWrap usd">
+											<p>
+												<span>USD</span><span class="imgIncrease"><img src="../../images/com/img_increase.png" alt="상승"></span><em class="data">4.10</em>
+											</p>
+											<p>
+												<span class="dataWrap"><em class="data">1,212.20</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="slideBox">
+										<div class="majorCurrencyWrap jpy">
+											<p>
+												<span>JPY</span><span class="imgDecrease"><img src="../../images/com/img_decrease.png" alt="하락"></span><em class="data">-1.10</em>
+											</p>
+											<p>
+												<span class="dataWrap"><em class="data">1,212.20</em></span>
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide"> <!--[2022-07-11] 이경아 : swiper-slide 클래스 하나씩 감싸도록 수정-->
+									<div class="slideBox">
+										<div class="majorCurrencyWrap eur">
+											<p>
+												<span>EUR</span>
+												<span class="imgIncrease"><img src="../../images/com/img_increase.png" alt="상승"></span><em class="data">4.10</em>
+											</p>
+											<p>
+												<span class="dataWrap"><em class="data">1,212.20</em></span>
+											</p>
+										</div>
+									</div>
+									<div class="slideBox">
+										<div class="majorCurrencyWrap cny">
+											<p>
+												<span>CNY</span>
+												<span class="imgIncrease"><img src="../../images/com/img_increase.png" alt="상승"></span><em class="data">4.10</em>
+											</p>
+											<p>
+												<span class="dataWrap"><em class="data">1,212.20</em></span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- //[2022-10-07] 윤지현:접근성수정. 스와이프 전체구조 변경. 2개씩 묶음 -->
+							</div>
+							<!-- [2022-10-07] 윤지현:접근성수정. 마크업추가 -->
+							<div class="swiperNavigation">
+								<div class="swiper-button-prev btn-transparent"></div>
+								<div class="swiper-button-next btn-transparent"></div>
+							</div>
+							<!-- //[2022-10-07] 윤지현:접근성수정. 마크업추가 -->
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+
+					<!-- [2022-10-07] 윤지현:접근성수정. 스크립트 전체수정 -->
+					<script>
+						$(document).ready(function(){
+							function ContSwipe() {
+								$('.ContSwipe').each(function (idx) {
+									var $this = $(this);
+									$this.addClass('type' + idx);
+
+									//슬라이드 초기화
+									if (termsSwiper != undefined){
+										termsSwiper.destroy();
+										termsSwiper = undefined;
+									}
+
+									var termsSwiper = new Swiper(".exchangeSlide .swiper-container", {
+										centeredSlides: false,
+										observer: true,
+										observeParents: true,
+										// slidesPerView: 2,
+										// spaceBetween: 10,
+										//observeSlideChildren: true,
+										pagination: {
+											el: $(".exchangeSlide .swiper-pagination"),
+											clickable: true,
+											bulletElement: "a",
+										},
+										navigation : {
+											nextEl : $('.exchangeSlide .btn-transparent.swiper-button-next'),
+											prevEl : $('.exchangeSlide .btn-transparent.swiper-button-prev'),
+										},
+										on: {
+											init: function () {
+												$(".exchangeSlide").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+												$(".exchangeSlide").find(".swiper-slide.swiper-slide-active").attr("aria-hidden", false).attr("tabindex", 0);
+											},
+											slideChangeTransitionEnd: function () {
+												$(".exchangeSlide").find(".swiper-slide").attr("aria-hidden", true).removeAttr("tabindex");
+												$(".exchangeSlide").find(".swiper-slide.swiper-slide-active").attr("aria-hidden", false)	.attr("tabindex", 0);
+												$(".exchangeSlide .swiper-pagination").find('a').attr('title', '');
+												$(".exchangeSlide .swiper-pagination").find('a').eq(this.activeIndex).attr('title','선택됨');
+											}
+										},
+									});
+								})
+							}
+							ContSwipe();
+
+							$(document).on('click','.exchangeSlide .swiper-button-next, .exchangeSlide .swiper-button-prev',function(){
+								var $obj = $(this);
+								setTimeout(function(){
+									$obj.closest('.exchangeSlide').find('.swiper-slide[aria-hidden=false]').focus();
+								}, 500);
+							})
+						})
+					</script>
+					<!-- //[2022-10-07] 윤지현:스크립트 전체수정 -->
+				</section>
+				<!-- BANNER -->
+
+			<section class="section40">
+				<div class="fastService">
+					<a href="javascript:;" role="button">통화선택<br> 환율조회</a>
+					<!--
+						[2022-09-07] 김자영 : 링크 삭제
+						 <a href="javascript:;" role="button">여행자<br> 수표 계산기</a>
+					 -->
+					<a href="javascript:;" role="button">환율<br> 계산기</a>
+				</div>
+			</section>
+
+			<!-- guideInfo01 jsTgWrap -->
+			<div class="guideInfo jsTgWrap">
+				<a href="javascript:;" role="button" aria-expanded="false" class="jsTgBtn listItemArrow">우대환율 가이드</a>
+				<div class="jsTgCont">
+					<div class="tblWrap">
+						<div class="tblHeader">
+							<p>우대환율</p>
+						</div>
+						<div class="tbl">
+							<table>
+								<caption>우대환율 기준표로 구분,USD,JPY,EUR,CNY으로 구성</caption>
+								<colgroup>
+									<col width="30%">
+									<col width="">
+									<col width="">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">USD,JPY,EUR</th>
+										<th scope="col">CNY</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>미화기준<br>5백 달러 상당액<br>이하</td>
+										<td>50% 우대</td>
+										<td>20%우대</td>
+									</tr>
+									<tr>
+										<td>미화기준<br>5백 달러 초과<br>3천 달러 상당액<br>이하</td>
+										<td>60% 우대</td>
+										<td>30%우대</td>
+									</tr>
+									<tr>
+										<td>미화기준<br>3천 달러 초과<br>1만 달러 상당액<br>이하</td>
+										<td>70% 우대</td>
+										<td>40%우대</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<p class="defTit2">10% 추가우대 Tip</p>
+					<ul class="listDot">
+						<li>1년 이내 인터넷뱅킹, 스마트뱅킹, 콕뱅크에서 환전 이용실적이 있는 경우(신청일, 외화수령점 기준)</li>
+						<li>최근1년 이내 농축협에서 환전수령을 한 경우, 수령점 지정 시 농축협을 선택하셔야 추가 우대가 가능합니다.</li>
+						<!--[2022-12-08] 환전 신청 1일 거래금액 한도 조정 재수정 상시운영 : 윤희정-->
+						<li>외화주머니에 「담기」 거래 후 당일자에 「원화 꺼내기」 신청할 경우 10% 추가 우대를 비롯하여 환율우대 미적용 (토/일/공휴일 외화주머니에 「담기」 거래 후 익영업일에 「원화 꺼내기」 거래한 경우도 환율우대 미적용)</li>
+						<!--//[2022-12-08] 환전 신청 1일 거래금액 한도 조정 재수정 상시운영 : 윤희정-->
+					</ul>
+				</div>
+			</div>
+
+			<!-- guideInfo02 jsTgWrap -->
+			<div class="guideInfo jsTgWrap">
+				<a href="javascript:;" role="button" aria-expanded="false" class="jsTgBtn listItemArrow">환전서비스 이용안내</a>
+				<div class="jsTgCont">
+					<p class="defTit2">이용대상</p>
+					<ul class="listDot">
+						<li>국민인 거주자 개인<br>(비거주자,외국인,법인,개인사업자 : 영업점 환전만 가능)</li>
+						<li>외화수령은 본인만 가능합니다.(신분증 지참필수, 대리인 외화수령 불가)</li>
+					</ul>
+
+					<!-- [2023-05-10] 환전 거래한도 및 재환전 시 적용 환율 : v1.2 -->
+					<p class="defTit2">환전 가능 한도</p>
+					<ul class="listDot">
+						<li>1일 USD 1~ USD 2,000 상당액 이하 (외화주머니 합산)</li>
+						<li>전체 비대면(인터넷/스마트뱅킹,NH콕뱅크) 환전한도 :환전신청 후 미수령한 금액이  USD 10,000(미국달러)초과 시 추가 환전 신청이 불가합니다. 영업점에서 해당 외화를 수령 후 추가 신청이 가능합니다.</li>
+						<li>1일 USD 2,000(미국 달러) 상당액 초과 금액의 환전은 인터넷/스마트뱅킹을 이용해 주시기 바랍니다.</li>
+					</ul>
+
+					<p class="defTit2">이용 시간</p>
+					<ul class="listDot">
+						<!-- [2023-05-10] 환전 거래한도 및 재환전 시 적용 환율 : v1.2// -->
+						<!-- <li>인터넷환전(평일)<br>
+							- 2천불 이하 : 00:00~09:00, 16:00~24:00<br>
+							- 1만불 이하 : 09:00~16:00
+						</li>
+						<li>인터넷환전(토요일/공휴일)<br>- 2천불 이하 : 00:00~24:00</li> -->
+						<li>인터넷환전<br>
+							- 2천불 이하 : 00:00~24:00 (토/일요일, 공휴일 포함)
+						</li>
+						<li>외화수령<br>
+							- 외화수령은 본인만 가능합니다.(신분증 지참필수, 대리인 외화 수령불가)
+						</li>
+						<!-- //[2023-05-10] 환전 거래한도 및 재환전 시 적용 환율 : v1.2 -->
+						<li>외화수령가능시간<br>
+							-영업시간(월~금)09:00~16:00 내[토.일, 공휴일 수령불가]</li>
+						<li>외화수령일 지정<br>
+							- USD, EUR, JPY, CNY는 신청 당일부터 지정가능</li>
+					</ul>
+
+					<p class="defTit2">환전 가능 금액</p>
+					<ul class="listDot">
+						<li>1일 누계 미화기준 1만 달러 상당액 이하<br>(NH은행에서 신청한 비대면 환전금액 전체 합산한 금액 기준)</li>
+					</ul>
+					<p class="defTit2">환전가능 사유</p>
+					<ul class="listDot">
+						<li>해외여행경비 / 소지목적의 환전만 제공</li>
+					</ul>
+					<p class="defTit2">결제 방법</p>
+					<ul class="listDot">
+						<li>등록된 농·축협 계좌를 통한 결제만 가능</li>
+					</ul>
+					<p class="defTit2">환전 수령 전 확인사항</p>
+					<ul class="listDot">
+						<li>외화수령 시 본인확인을 위해 실명확인증표(주민등록증, 운전면허증 등)을 지참하시기 바랍니다.</li>
+						<li>외화 수령 시 영업점의 외화재고에 따라 교부받는 외화권종(소액권 등)이 제한 될 수 있습니다.</li>
+					</ul>
+					<p class="defTit2">기타 안내</p>
+					<ul class="listDot">
+						<li>환율이 재고시 되기 전까지는 전일자의 최종고시 환율이 적용됩니다.</li>
+						<li>외화수정일 지정<br>- USD, EEUR, JPY, CNY는 신청 당일부터 지정가능</li>
+						<li>수령일 지정은 현시점으로부터 최대 6개월 까지 가능하며 수령일 다음 영업일로부터 7영업일 이내 미 수령시 자동 재환전(되팔기) 처리되어 (8영업일 1회 차 매매기준율 적용) 당초 환전신청 시 선택한 입출금계좌로 입금됩니다. 재환전 처리시 환율변동으로 인한 손실이 발생할 수 있으니 유의하시기 바랍니다.</li> <!-- [2023-05-10] 환전 거래한도 및 재환전 시 적용 환율 : v1.2 -->
+						<li>환전 신청이 완료된 후 취소처리는 불가합니다.</li>
+						<li>외국환 거래규정에 따라 국민인 거주자의 미화 환산 1만 달러 상당액 초과 환전은 국세청 및 관세청에 자동 통보됩니다.(동일자 동일인 합산기준)</li>
+						<li>미수령 상태로 남아있는 환전금액은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.(예금자보호법 적용 대상 아님)</li>
+						<li>더모아 외환서비스는 제공되지 않습니다.</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- guideInfo03 jsTgWra
+			<div class="guideInfo jsTgWrap">
+				<a href="javascript:;" role="button" aria-expanded="false" class="jsTgBtn listItemArrow">환전 수수료 안내</a>
+				<div class="jsTgCont">
+
+				</div>
+			</div>
+			-->
+
+		</div>  <!-- //#contents -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

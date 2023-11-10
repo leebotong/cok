@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-TR-1123FP</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(fullA);
+			// popOpen(cp);
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="header">
+			<div class="headerL">
+				<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+			</div>
+			<h1>송금확인</h1>
+			<div class="headerR">
+				<a href="javascript:;" title="음성" role="button" class="headBtn btnVoice"></a>
+				<a href="javascript:;" title="QR" role="button" class="headBtn btnQr"></a>
+			</div>
+		</div> <!-- //#header -->
+		<div id="container">
+			<div id="contents">
+				<a href="javascript:popOpen(fullA);" class="popOpen">UI-TR-1023FP</a>
+			</div> <!-- //#contents -->
+		</div> <!-- //#container -->
+	</div> <!-- //#wrap -->
+
+	<!-- POPUP AREA -->
+	<div id="popupArea">
+		<!-- FULL POPUP -->
+		<div id="fullA" class="popupWrap full" style="display:none;">
+			<div class="fullPopupDim">
+				<div class="popContent">
+					<div class="popContentBox">
+						<div class="popHead">
+							<div class="popHeadBox">
+								<h2 tabindex="0">송금확인</h2>
+							</div>
+						</div>
+						<div class="popContBox">
+							<div class="pgTitWrap">
+								<p class="pTit">총 <strong>3</strong>건 <strong>12,567,000원</strong>을<br>
+								송금하시겠습니까?</p>
+							</div>
+
+							<div class="ar">
+								<button type="button" class="btnSm jsAllShControl">모두펼침</button>
+							</div>
+
+							<section class="section20 topAccBox"> <!-- [2022-10-11] 윤지현:.topAccBox 추가 -->
+								<!-- ROUND BOX -->
+								<!-- ▼ 2022-07-01 수정 -->
+								<div class="roundBox type2">
+									<div class="roundInBox">
+										<!-- 추가송금 -->
+										<div class="accTypeWrap jsShWrap">
+											<div class="accInfo">
+												<!-- <div class="logoWrap">
+													<img src="../../images/logo/logo_bnk_kb_72x72.png" alt="계좌 아이콘" class="logo">
+												</div>  [2022-10-11] 윤지현:삭제 -->
+												<div class="accInfoWrap">
+													<div class="accNumWrap">
+														<span class="accUser">김농협</span> <!-- [2022-10-11] 윤지현:문구수정 -->
+													</div>
+													<strong class="accName mt5 gColor">
+														<span class="accBank">하나</span>
+														<span class="accNumber small">729384720394809</span> <!-- [2022-10-11] 윤지현:.small 클래스 삭제 -->
+													</strong>
+												</div>
+												<!-- <button type="button" class="listClear"><span class="blind">삭제하기</span></button> -->
+											</div>
+											<div class="listTblBox">
+												<ul>
+													<li>
+														<span data-focus="focus" class="tit">보낼금액</span>
+														<div class="accUtilBox">
+															<strong class="accCash pColor">58,000,000원</strong>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="listTblBox jsShTarget">
+												<ul class="hideBox">
+													<!-- [2023-02-14] 송금수수료 발생시 보이는 항목 : 김연진 -->
+													<li>
+														<span data-focus="focus" class="tit">수수료</span>
+														<p class="txt through">500원</p>
+													</li>
+													<!-- //[2023-02-14] 송금수수료 발생시 보이는 항목 : 김연진 -->
+													<!-- [2023-02-14] 송금수수료 무료시 보이는 항목 : 김연진
+													<li>
+														<span data-focus="focus" class="tit">수수료</span>
+														<p class="txt">면제</p>
+													</li>
+													//[2023-02-14] 송금수수료 무료시 보이는 항목 : 김연진 -->
+													<li>
+														<span class="tit">출금계좌</span>
+														<p class="txt">111-222222-333333</p>
+													</li>
+													<li>
+														<span class="tit">받는계좌에 표시</span>
+														<p class="txt">박축협</p>
+													</li>
+													<li>
+														<span class="tit">내계좌에 표시</span>
+														<p class="txt">친구</p>
+													</li>
+													<li>
+														<span class="tit">거래메모</span> <!-- [2023-03-31] 김연진:문구수정 -->
+														<p class="txt">생일</p>
+													</li>
+													<li>
+														<span class="tit">경조금메시지</span>
+														<p class="txt">축생일</p>
+													</li>
+												</ul>
+											</div>
+											<div class="btnShArrowWrap ac mt0">
+												<a href="javascript:;" title="펼치기" role="button" class="btnShArrow jsShControl"><span class="blind">계좌 정보</span></a>
+											</div>
+										</div>
+										<hr class="my14">
+										<!-- 추가송금 -->
+										<div class="accTypeWrap jsShWrap">
+											<div class="accInfo">
+												<!-- <div class="logoWrap">
+													<img src="../../images/logo/logo_bnk_kb_72x72.png" alt="계좌 아이콘" class="logo">
+												</div>  [2022-10-11] 윤지현:삭제 -->
+												<div class="accInfoWrap">
+													<div class="accNumWrap">
+														<span class="accUser">김농협</span> <!-- [2022-10-11] 윤지현:문구수정 -->
+													</div>
+													<strong class="accName mt5 gColor">
+														<span class="accBank">하나</span>
+														<span class="accNumber small">729384720394809</span> <!-- [2022-10-11] 윤지현:.small 클래스 삭제 -->
+													</strong>
+												</div>
+												<!-- <button type="button" class="listClear"><span class="blind">삭제하기</span></button> -->
+											</div>
+											<div class="listTblBox">
+												<ul>
+													<li>
+														<span data-focus="focus" class="tit">보낼금액</span>
+														<div class="accUtilBox">
+															<strong class="accCash pColor">58,000,000원</strong>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="listTblBox jsShTarget">
+												<ul class="hideBox">
+													<!-- [2023-02-14] 송금수수료 발생시 보이는 항목 : 김연진
+													<li>
+														<span data-focus="focus" class="tit">수수료</span>
+														<p class="txt">0원</p>
+													</li>
+													//[2023-02-14] 송금수수료 발생시 보이는 항목 : 김연진 -->
+													<!-- [2023-02-14] 송금수수료 무료시 보이는 항목 : 김연진 -->
+													<li>
+														<span data-focus="focus" class="tit">수수료</span>
+														<p class="txt">0원</p>
+													</li>
+													<!-- //[2023-02-14] 송금수수료 무료시 보이는 항목 : 김연진 -->
+													<li>
+														<span class="tit">출금계좌</span>
+														<p class="txt">111-222222-333333</p>
+													</li>
+													<li>
+														<span class="tit">받는계좌에 표시</span>
+														<p class="txt">박축협</p>
+													</li>
+													<li>
+														<span class="tit">내계좌에 표시</span>
+														<p class="txt">친구</p>
+													</li>
+													<li>
+														<span class="tit">거래메모</span> <!-- [2023-03-31] 김연진:문구수정 -->
+														<p class="txt">생일</p>
+													</li>
+													<li>
+														<span class="tit">경조금메시지</span>
+														<p class="txt">축생일</p>
+													</li>
+												</ul>
+											</div>
+											<div class="btnShArrowWrap ac mt0">
+												<a href="javascript:;" title="펼치기" role="button" class="btnShArrow jsShControl"><span class="blind">계좌 정보</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //ROUND BOX -->
+
+								<!-- [2023-02-14] 콕뱅크 송금 수수료 면제 정책 적용
+								<section class="section30">
+									<div class="titWrap">
+										<strong class="title">수수료안내</strong>
+										 ▼ 2022-07-01 utilItem 클래스 삭제
+										<small><a href="javascript:;" role="button">수수료 면제 조회<span class="icon">&#xE001;</span></a></small>
+									</div>
+									<ul class="listDot">
+										<li>타행으로 50만원 초과 송금 시 수수료가 부과되며, 하나로 가족 고객일 경우 수수료가 면제됩니다.</li>
+									</ul>
+								</section>
+								//[2023-02-14] 콕뱅크 송금 수수료 면제 정책 적용 -->
+
+								<section class="section40">
+									<div class="titWrap">
+										<strong class="title">보이스피싱</strong>
+										<!-- ▼ 2022-07-01 utilItem 클래스 삭제 -->
+										<small><a href="javascript:;" role="button">유의안내<span class="icon">&#xE001;</span></a></small>
+									</div>
+								</section>
+							</section>
+
+						</div>
+						<div class="popFootBox">
+							<div class="toastMessage">[송금] 선택시 전자서명과 동시에 송금됩니다.</div>
+							<div class="btnArea">
+								<button type="button" class>취소</button> <!-- [2022-10-11] 윤지현:문구수정 -->
+								<button type="button" class="sel">송금</button> <!-- [2022-10-11] 윤지현:문구수정 -->
+							</div>
+						</div>
+						<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

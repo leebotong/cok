@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CL-0003</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap" class="cokClassMain">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>내 모임원 관리</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">관리중인 모임의 <br><strong>모임원</strong>을 <strong>관리</strong>할 수 있어요</p>
+			</div>
+			<div class="CLaccountList">
+				<p class="ar">
+					<a href="#nolink" class="btnDetail" role="button" title="팝업실행">콕모임 안내</a>
+				</p>
+
+				<!--모임계좌카드-->
+				<div class="CLaccountBox white">
+					<div class="CLaccGroup"> <!-- [2023-04-25] a링크 div.CLaccGroup로 변경 -->
+						<div class="MemberInvite"><span class="classMenber">69명</span><button class="roundBorderBtn">+초대</button> <!-- [2023-04-25] 버튼으로 수정 --></div>
+						<div class="accName">고등학교모임모임명노출모임명</div>
+						<div class="accNumBox">
+							<p class="accNumber">352-1775-6397-03<button class="accCopy" aria-label="계좌번호 복사"></button></p> <!-- [2023-04-26] 콕모임 : 계좌번호 복사 버튼 추가 -->
+						</div>
+						<div class="MemberNobody">참여 대기중인 모임원이 없어요.</div>
+					</div>
+					<div class="mainBtn">
+						<button type="button">모임원 내보내기</button>
+						<button type="button">가입승인</button>
+					</div>
+				</div>
+				<!--//모임계좌카드-->
+
+				<div class="CLaccountBox white">
+					<div class="CLaccGroup"> <!-- [2023-04-25] a링크 div.CLaccGroup로 변경 -->
+						<div class="MemberInvite"><span class="classMenber">69명</span><button class="roundBorderBtn">+초대</button> <!-- [2023-04-25] 버튼으로 수정 --></div>
+						<div class="accName">고등학교모임모임명노출모임명</div>
+						<div class="accNumBox">
+							<p class="accNumber">352-1775-6397-03<button class="accCopy" aria-label="계좌번호 복사"></button></p> <!-- [2023-04-26] 콕모임 : 계좌번호 복사 버튼 추가 -->
+						</div>
+						<div class="MemberNobody pColor">30명 참여 대기중</div>
+					</div>
+					<div class="mainBtn">
+						<button type="button">모임원 내보내기</button>
+						<button type="button">가입승인</button>
+					</div>
+				</div>
+
+				<!-- 초대불가모임 -->
+				<div class="CLaccountBox white">
+					<div class="CLaccGroup"> <!-- [2023-04-25] a링크 div.CLaccGroup로 변경 -->
+						<div class="MemberInvite"><span class="classMenber red">101명</span></div>
+						<div class="accName">고등학교모임모임명노출모임명</div>
+						<div class="accNumBox">
+							<p class="accNumber">352-1775-6397-03<button class="accCopy" aria-label="계좌번호 복사"></button></p> <!-- [2023-04-26] 콕모임 : 계좌번호 복사 버튼 추가 -->
+						</div>
+						<div class="MemberNobody red">더 이상 모임원을 받을 수 없어요.</div>
+					</div>
+					<div class="mainBtn">
+						<button type="button">모임원 내보내기</button>
+						<button type="button">가입승인</button>
+					</div>
+				</div>
+			</div>
+
+		</div>  <!-- //#contents -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

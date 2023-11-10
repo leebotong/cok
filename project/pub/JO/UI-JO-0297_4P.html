@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-JO-0297_4P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">준조합원 혜택 안내</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="pgTitWrap ac">
+							<p class="pTit">준조합원 가입신청하고<br>
+								<strong>세금우대</strong> 혜택 받아보세요</p>
+						</div>
+						<p class="ar mt0">
+							<a href="javascript:" class="btnDetail" role="button" title="팝업실행">조합원 안내</a>
+						</p>
+						<div class="imgWrap mt30">
+							<img src="../../images/market/cont/img_tax_break.png" alt="">
+						</div>
+						<section class="section30">
+							<ol class="listIco jun">
+								<li>
+									<div class="titNum"><span class="highlight"><span>혜택 하나!</span></span></div>
+									<strong class="tit">최고 <span class="pColor">3,000만원의 세금우대</span> 혜택</strong>
+									<p class="infoTxt">
+										준조합원에 가입하면 예적금 ‘3000만원’까지 이자소득세 감면 (15.4% → 1.4%) 혜택을 받으실 수 있어요.<br>
+										* 준 조합원 가입 시 이자소득세의 14%가 면제 됩니다.
+									</p>
+								</li>
+								<li>
+									<div class="titNum"><span class="highlight"><span>혜택 둘!</span></span></div>
+									<strong class="tit"><span class="pColor">이용고배당</span> 혜택</strong>
+									<p class="infoTxt">
+										적금, 예금, 대출, 보험, 하나로마트 이용까지 농협을 이용하는 모든 실적에 대해 배당금을 지급해요.<br>
+										* 단, 일부농협에서는 이용고배당을 하지 않을 수 있습니다.
+									</p>
+								</li>
+							</ol>
+						</section>
+					</div>
+
+					<div class="popFootBox">
+						<div class="btnArea">
+							<button class="sel">가입하고 세금우대 혜택 받기</button>
+						</div>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

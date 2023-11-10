@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0119FP</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>계좌등록</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">휴대전화 본인확인</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<div class="tabWrap oneDepth">
+							<div role="tablist" class="tabList">
+								<a href="javascript:;" role="tab" class="active" aria-selected="true">Android</a>
+								<a href="javascript:;" role="tab">IOS</a>
+							</div>
+
+							<div class="tabPanelList">
+								<div role="tabpanel" class="tabPanel show">
+                  <ol class="listNumBg">
+                    <li>&lsquo;SMS으로 휴대전화 단말기 등록&rsquo; 버튼을 누르세요.</li>
+                    <li>메시지 입력창에 번호 확인을 위한 인증 메시지가 자동으로 입력됩니다.</li>
+                    <li>인증 메시지를 수정없이 그대로 보내주세요. 발신번호가 휴대전화 본인확인에 이용됩니다.</li>
+                    <li>인증문자가 전송되었다면, 휴대전화 단말기 인증이 완료됩니다.</li>
+                  </ol>
+                  <div class="relative">
+                    <strong class="point">인증방법
+                      <!-- tooltip -->
+                      <div class="tooltipWrap">
+                        <button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+                        <div class="tooltipCont">
+                          <ul class="listDot">
+                            <li>SMS로 인증코드를 전송합니다.</li>
+                            <li>인증코드를 임의로 수정하지 마세요.</li>
+                            <li>인증코드는 제3자가 사용할 수 없습니다.</li>
+                          </ul>
+                          <button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+                        </div>
+                      </div>
+                      <!-- //tooltip -->
+                    </strong>
+                  </div>
+								</div>
+								<div role="tabpanel" class="tabPanel">
+                  <ol class="listNumBg">
+                    <li>&lsquo;SMS으로 휴대전화 단말기 등록&rsquo; 버튼을 누르세요.</li>
+                    <li>메시지 입력창에 번호 확인을 위한 인증 메시지가 자동으로 입력됩니다.</li>
+                    <li>인증 메시지를 수정없이 그대로 보내주세요. 발신번호가 휴대전화 본인확인에 이용됩니다.</li>
+                    <li>인증문자가 전송되었다면, 휴대전화 단말기 인증이 완료됩니다.</li>
+                  </ol>
+                  미등록단말 오류조치방법 >
+								</div>
+							</div>
+						</div>
+					</div>
+          <div class="popFootBox">
+            <div class="btnArea">
+              <button class="sel">SMS로 휴대전화 단말기 등록</button>
+            </div>
+          </div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

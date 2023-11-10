@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SE-0004P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);	
+		});
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>ARS인증</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupA);" title="풀팝업 열기" role="button">풀팝업</a>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP	-->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">입출금 알림</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						<!-- 2022-09-26 -->
+						<!-- <div class="pgTitWrap">
+							<p class="pTit"><span class="pColor">입출금 알림</span>을<br> 휴대전화로 콕! 알려드려요.</p>
+						</div> [2022-09-29] 윤지현:삭제 -->
+						<div class="imgWrap"><img src="../../images/cont/img_alarm2.png" alt=""></div>
+						<!-- //2022-09-26 -->
+
+						<p class="defTit2">입출금 알림 서비스란?</p>
+						<p class="defTxt1">고객님의 입출금 정보를 휴대전화 문자 알림(SMS) 또는 푸시알림 (PUSH) 으로 알려드리는 서비스 입니다.</p>
+			
+						<p class="defTit2">입출금 알림 이용료 안내</p>
+						<div class="tblWrap">
+							<table class="tbl">
+								<caption>입출금 알림 이용료 안내</caption> 
+								<colgroup>
+									<col width="50%">
+									<col width="">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">문자 알림(SMS)</th>
+										<th scope="col">푸시 알림(PUSH)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>정액제<br>(매월 900원)</td>
+										<td rowspan="2">무료<br>(1인 1휴대전화)</td>
+									</tr>
+									<tr>
+										<td>종량제<br>(건당 20원)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+			
+						<p class="defTit2">입출금 알림 신청 가능한 계좌</p>
+						<div class="tblWrap">
+							<table class="tbl">
+								<caption>입출금 알림 신청 가능한 계좌</caption> 
+								<colgroup>
+									<col width="25%">
+									<col width="">
+									<col width="">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">입출금이<br>자유로운 예금</th>
+										<th scope="col">기타</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">농·축협</th>
+										<td>보통예금<br>자립예탁금<br>자유저축예탁금<br>기업자유예탁금</td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">농협은행</th>
+										<td>보통예금<br>저축예금<br>가계당좌예금<br>기업자유예금<br>외화입출식예금</td>
+										<td>수익증권<br>신탁(다만족특정금전신탁 MMT)	</td>
+									</tr>
+									<tr>
+										<th scope="row">알림매체</th>
+										<td colspan="2">휴대전화(SMS/푸시)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+			
+						<p class="defTit1">서비스 변경 및 해지</p>
+						<div class="textItem">
+							<p class="tit">서비스 변경</p>
+							<p class="txt">문자/푸시 알림 신청 시 설정한 정보를 변경하실 수 있습니다. 문자알림의 경우 일부 정보(장기미사용 해제, 미납)는 인터넷뱅킹, 스마트뱅킹 또는 영업점 등을 통해 변경하실 수 있습니다.</p>
+						</div>
+						<div class="textItem">
+							<p class="tit">서비스 해지</p>
+							<p class="txt">등록된 문자/푸시 알림을 서비스별로 해지할 수 있습니다.<br>당월 문자 알림 해지 후 다시 문자 알림 신청 시 서비스 등록 정책(당월 2회 신청 가능)에 따라 서비스가 제한될 수 있습니다.</p>
+						</div>
+			
+						<div class="btmInfoWrap">
+							<strong class="tit">확인사항</strong>
+							<p class="defTit3">푸시 알림</p>
+							<ul class="listDot">
+								<li>푸시 알림은 1인 1개의 본인 휴대전화로만 등록 가능합니다.</li>
+								<li>푸시 알림은 휴대전화의 데이터 수신율에 따라 수신이 불가할 수 있습니다.</li>
+								<li>푸시 알림/문자 알림은 중복 신청이 가능합니다.</li>
+							</ul>
+							<p class="defTit3">문자 알림</p>
+							<ul class="listDot">
+								<li>문자요금제는 계좌별로 설정 가능합니다. </li>
+								<li>문자 요금제를 변경하면 다음달부터 변경된 요금제로 적용됩니다. 단, 요금제를 즉시 변경하려면 해지 후 재등록을 하시면 됩니다. </li>
+								<li>문자 알림은 신청 계좌별 10대 이내의 휴대전화를 등록하여 알림을 받으실 수 있습니다. </li>
+								<li>문자 알림 이용요금은 계좌/휴대전화 등록한 건별로 발생합니다. </li>
+								<li>문자 알림 SMS 이용요금은 매월 10일(영업시간 전) 이용료 납부계좌에서 자동출금처리 됩니다. 단, 요금 미납 시 매월 10일 이후 ~ 말일까지 매일 1회(영업시간 전) 자동출금처리 하며 말일까지 이용요금이 납부되지 않을 시 1일부터 문자 알림 서비스는 중지됩니다.</li>
+								<li>이용요금 미납 시 서비스 이용이 일부 제한될 수 있습니다. </li>
+								<li>서비스가 중지된 이후 미납요금 납부는 영업점, 인터넷뱅킹, 고객센터(상담사연결) 등을 통해 납부 가능합니다.</li>
+								<li>이용요금이 1년 이상 미납된 경우 장기미사용고객으로 등록되며 미납요금 납부 후 영업점, 인터넷뱅킹, 고객센터(상담사연결) 등을 통해 해제 가능합니다. </li>
+								<li>문자 알림은 해외체류 시 USIM을 변경한 경우와 통신불가지역, 시스템 장애 등의 기술적 사유에 의해 메시지 수신이 불가능할 수 있습니다. </li>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="popFootBox">
+
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

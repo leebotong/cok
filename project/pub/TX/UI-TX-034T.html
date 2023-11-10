@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>UI-TX-034T</title>
+	<meta name="publisher" content="[SEPTEM] UI Dev Team">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/cok_com.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>국세납부(재정자금)</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="tabWrap oneDepth">
+				<div role="tablist" class="tabList">
+					<a href="javascript:;" role="tab">조회납부</a>
+					<a href="javascript:;" role="tab">연대납부</a>
+					<a href="javascript:;" role="tab" class="active">자진납부</a>
+					<a href="javascript:;" role="tab">내역조회</a>
+				</div>
+			</div>
+
+			<p class="defTit2">납부정보입력</p>
+
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">소관구분</strong>
+					<div class="inpText">
+						<input type="tel" title="소관구분" class="tyTxt" value="0126" maxlength="4" readonly="">
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">납부년월</strong>
+					<div class="inpText">
+						<input type="tel" title="납부년월" class="tyTxt" value="" maxlength="4" placeholder="숫자 4자리 입력">
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">결정구분</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="결정구분 선택" role="button" class="btnSel placeholder">선택</a>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">세목</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="세목 선택" role="button" class="btnSel placeholder">선택</a>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">회계연도<span class="smTxt">(일반회계, 재정경제부장관, 조세)</span></strong>
+					<div class="inpText">
+						<input type="tel" title="회계연도" class="tyTxt" value="" maxlength="4" placeholder="숫자 4자리 입력"> <!-- [2022-06-24] 윤지현:placeholder수정 -->
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">납세자명</strong>
+					<div class="inpText">
+						<input type="text" title="납세자명" class="tyTxt" value="" maxlength="4" placeholder="납부자의무명을 기입하십시오">
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">납세자번호(주민/사업자번호)</strong>
+					<div class="inpText">
+						<input type="tel" title="납세자번호" class="tyTxt" value=""  placeholder="'-＇없이 입력하십시오">
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">세무서코드</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="셀렉트박스 선택" role="button" class="btnSel placeholder">선택</a>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">세입징수관서</strong>
+					<div class="inpText">
+						<input type="text" title="세입징수관서" class="tyTxt" value="서울마포경찰서" readonly="">
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">세입징수관 계좌번호</strong>
+					<div class="inpText">
+						<input type="tel" title="세입징수관 계좌번호" class="tyTxt" value="18900-0" readonly="">
+					</div>
+				</div>
+			</div>
+
+			<p class="defTit2">납부할 세금 내역</p>
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">본세(필수입력)</strong>
+					<div class="inpText">
+						<input type="tel" title="본세 금액" class="tyNum" placeholder="">
+						<span class="unit">원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">농어촌특별세</strong>
+					<div class="inpText">
+						<input type="tel" title="농어촌특별세 금액" class="tyNum" placeholder="">
+						<span class="unit">원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">합계</strong>
+					<div class="inpText">
+						<input type="tel" title="합계 금액" class="tyNum" placeholder="">
+						<span class="unit">원</span>
+						<button type="button" title="입력 텍스트 삭제" class="btnReset"></button>
+					</div>
+				</div>
+				
+			</div>
+
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>서비스 이용시간: 평일 00:30~23:00</li>
+					<li>개인사업자의 사업자번호로 고지된 국세는 국세청 홈택스 서비스 (<a href="http://m.hometax.go.kr" class="pColor" target="_blank" title="홈택스 서비스로 이동">http://m.hometax.go.kr</a>)를 이용하시기 바랍니다.</li>
+					<li>10원 이상 금액만 수납처리 됩니다.(단수금액은 수납불가)</li>
+					<li>조회납부는 2003년 고지분부터 납부하실 수 있습니다.</li>
+				</ul>
+			</div>
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">조회</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

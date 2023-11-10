@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-CO-0084P</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupB);
+		})
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<a href="javascript:popOpen(popupB);" title="풀팝업 열기" role="button" class="popOpen">팝업열기</a>
+			
+		</div>  <!-- //#contents -->
+		
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- SLIDE POPUP -->
+	<div id="popupB" class="popupWrap slideBanner" style="display:none;">
+		<div class="slidePopupDim">
+			<div class="bannerCont ">
+				<!-- 시스템공지안내 -->
+				<div class="noticeCont2 mainEvent2">
+					<div class="notiSwipeWrap2 slide">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<!-- *********** 이벤트배너 텍스트타입(txtType) *********** -->
+								<div class="swiper-slide eventImg txtType2">
+									<a href="javascript:;">
+										<div class="eventTxt2">
+											<!-- 텍스트 -->
+											<strong class="tit">누구나 쉽게 우대받는<br><span class="txtCok">콕콕콕</span> 이벤트</strong>
+											<p class="txt">6.23(목) 23:55 ~ 6.24(금) 04:00</p>
+											<span class="evtDetail2">자세히보기</span>
+										</div>
+										<img src="../../images/main/event_bg.png" alt><!-- bg이미지-->
+									</a>
+								</div>
+								<!-- *********** //이벤트배너 텍스트타입(txtType) *********** -->
+								<div class="swiper-slide eventImg1">
+									<a href="javascript:;"><img src="../../images/main/main_banner0101.jpg" alt="" title="자세히보기"></a>
+								</div>
+								<div class="swiper-slide eventImg2">
+									<a href="javascript:;"><img src="../../images/main/event_02.png" alt="" title="자세히보기"></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="notiDateBtns2">
+						<div class="todayChk2">
+							<input type="checkbox" id="dayChk">
+							<label for="dayChk">오늘보지 않기</label>
+						</div>
+						<a href="javascript:;" role="button" onclick="popClose(this)" class="btnPopClose">닫기</a>
+					</div>
+					<script>
+						$(document).ready(function(){
+							noticeSwiperBefore();
+						})
+					</script>
+				</div>
+				<!-- //시스템공지안내 -->
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-SA-0041</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupCCA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>OTP 이용등록</h1>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit"><strong>보안매체 등록현황</strong></p>
+			</div>
+			<div class="listTblBox accredit">
+				<ul>
+					<li>
+						<span class="tit">종류</span>
+						<p class="txt">모바일OTP-A형</p>
+					</li>
+					<li>
+						<span class="tit">상태</span>
+						<p class="txt">정상</p>
+					</li>
+					<li>
+						<span class="tit">등록일</span>
+						<p class="txt">2022.03.11</p>
+					</li>
+				</ul>
+			</div>
+			<div class="formWrap">
+				<div class="formItem">
+					<strong class="formTit">계좌번호</strong>
+					<div class="inpText">
+						<input type="tel" title="이체 금액" class="tyNum" value placeholder="계좌번호 입력" maxlength="16">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset" style="display: none;"></button>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">계좌 비밀번호</strong>
+					<div class="inpText error readonly">
+						<button type="button" title="계좌비밀번호 4자리 입력됨" aria-label="계좌비밀번호" class="btnTransparent"></button> <!-- 개발전달: 보안키패트 여는 버튼(onclick 이벤트) / title은 dafault 는 공백, 입력완료 후 삽입 -->
+						<input type="password" title="계좌비밀번호 숫자 4자리 입력" aria-hidden="true" class="tyTxt sKey" value placeholder="숫자 4자리 입력" readonly>
+					</div>
+					<p class="infoTxtOk">인증 완료되었습니다.</p>
+					<p class="infoTxtErr">비밀번호가 일치하지 않습니다. (1/5)</p>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">보안매체 제조사
+						<!-- tooltip -->
+						<div class="tooltipWrap">
+							<button type="button" aria-label="툴팁보기" class="btnToolTip"></button>
+							<div class="tooltipCont">
+								<strong class="tit">보안매체(OTP발생기)</strong>
+								<ul class="listDot">
+									<li>일련번호</li>
+									<li>제조사</li>
+								</ul>
+								<button type="button" aria-label="툴팁 닫기" onclick class="close"></button>
+							</div>
+						</div>
+						<!-- //tooltip -->
+					</strong>
+					<div class="inpSel">
+						<a href="javascript:;" title="선택" role="button" class="btnSel placeholder">선택</a>
+					</div>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">보안매체 S/N일련번호</strong>
+					<div class="inpText">
+						<input type="text" title="신규보안 매체 일련번호 입력" class="tyNum" value placeholder="신규보안 매체 일련번호 입력">
+						<button type="button" title="입력 텍스트 삭제" class="btnReset" style="display: none;"></button>
+					</div>
+					<p class="bili">새로 등록할 OTP의 이용등록 가능여부를 조회합니다.</p>
+				</div>
+				<div class="formItem">
+					<strong class="formTit">본인인증 방법선택</strong>
+				
+					<div class="chkGroup">
+						<div class="inpChk">
+							<input type="radio" name="radio4" id="radio41">
+							<label for="radio41">휴대폰인증</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio4" id="radio42">
+							<label for="radio42">ARS인증</label>
+						</div>
+						<div class="inpChk">
+							<input type="radio" name="radio4" id="radio43">
+							<label for="radio43">기존보안매체</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full sel">확인</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div>  <!-- //#container -->
+</div> <!-- //#container -->
+  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- CENTER POPUP -->
+	<div id="popupCCA" class="popupWrap center" style="display:none;">
+		<div class="layerPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="Layer_Tit">
+								<h2 tabindex="0"><span class="blind">팝업</span></h2>
+							</div>
+							<div class="Layer_Con">
+								<!-- 컨펌메세지 -->
+								<div class="confirmMsg">
+									<i class="warning"></i>
+									<p class="tit">발급되지 않은 OTP입니다.</p>
+									<p class="txt">확인하신 후 다시 이용하시기 바랍니다.</p>
+								</div>
+							</div>
+							<div class="Layer_Pop_Close">
+								<div class="btnArea">
+									<button type="button" title onclick="popClose(this)" class="sel">확인</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

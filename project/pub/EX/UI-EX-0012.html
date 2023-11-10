@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-EX-0012</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>환전내역조회</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+			<p class="defTit2">조회설정</p>
+			<!-- ▼ [2022-09-07] 김자영 : 기간 수정 -->
+			<div class="rdoBtnsWrap">
+				<ul>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample01">
+							<label for="sample01">1주일</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample02">
+							<label for="sample02">1개월</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample03">
+							<label for="sample03">3개월</label>
+						</span>
+					</li>
+					<li>
+						<span class="rdoBtn">
+							<input type="radio" name="sample00" id="sample04">
+							<label for="sample04">6개월</label>
+						</span>
+					</li>
+					<li class="filter">
+						<a href="javascript:;" role="button" aria-label="조회기간설정 선택" class="btnFilter"></a>
+					</li>
+				</ul>
+			</div>
+
+			<hr class="divingLine">
+
+			<section>
+				<div class="inqueryList exchange">
+					<div class="listTit">2022.03.05~2022.04.05</div>
+					<ul>
+						<li>
+							<a href="javascript:;" title="상세보기" role="button">
+								<div class="flex">
+									<span class="tit">환전일자</span>
+									<p class="txt">2022.05.13</p>
+								</div>
+								<div class="flex">
+									<span class="tit">환전신청금액</span>
+									<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">1.00</em></span></p>
+								</div>
+								<div class="flex">
+									<span class="tit">수령영업점</span>
+									<p class="txt">서부 농협 위례지점</p>
+								</div>
+								<div class="flex">
+									<span class="tit">환전상태</span>
+									<p class="txt"><span class="pColor">수령가능</span></p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="상세보기" role="button">
+								<div class="flex">
+									<span class="tit">환전일자</span>
+									<p class="txt">2022.05.13</p>
+								</div>
+								<div class="flex">
+									<span class="tit">환전신청금액</span>
+									<p class="txt"><span class="dataWrap"><span class="unit">USD</span><em class="data">1.00</em></span></p>
+								</div>
+								<div class="flex">
+									<span class="tit">수령영업점</span>
+									<p class="txt">서부 농협 위례지점</p>
+								</div>
+								<div class="flex">
+									<span class="tit">환전상태</span>
+									<p class="txt"><span class="pColor">수령가능</span></p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- 조회 결과 없을때 -->
+				<!-- <div class="noData">
+					<i class="check"></i>
+					<strong class="tit">조회내역이 없습니다.</strong>
+				</div> -->
+				<!-- 더보기 -->
+				<div class="moreBtn"><button type="button">더보기</button></div>
+
+			<div class="btmInfoWrap">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+						<li>비대면 환전 신청하신 분만 조회 가능합니다.</li>
+						<li>원화 재환전이 필요하신 경우 외화주머니 옮겨담기 후 원화꺼내기로 처리하실 수 있으며 환율은 거래시점의 현찰매입율이 적용됩니다. (단, 주말/공휴일은 직전영업일 최종고시 현찰매입률 적용)</li> <!-- [2023-05-17] 환전 거래한도 : 문구수정 v1.14 -->
+				</ul>
+			</div>
+
+		</div>  <!-- //#contents -->
+
+		<!-- [2022-09-07] 김자영: 푸터버튼 삭제
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">재환전</button>
+			</div>
+		</div>   //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+</body>
+</html>

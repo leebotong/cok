@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-FI-0005P</title>
+	<meta name="publisher" content>
+	<meta name="description" content>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script>
+		$(function(){
+			popOpen(popupA);
+		})
+	</script>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1></h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<div id="contents">
+
+		</div>  <!-- //#contents -->
+
+		<div id="footer_cont">
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">다음</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- FULL POPUP -->
+	<div id="popupA" class="popupWrap full">
+		<div class="fullPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popHead">
+						<div class="popHeadBox">
+							<h2 tabindex="0">우대환율가이드</h2>
+						</div>
+					</div>
+					<div class="popContBox">
+						
+						<div class="tblWrap mt30"> <!--[2022-07-18] 이경아 : 클래스추가-->
+							<div class="tblHeader">
+								<p>우대환율 기준</p>
+							</div>
+							<div class="tbl">
+								<table>
+									<caption>우대환율 기준표로 구분,USD,JPY,EUR,CNY으로 구성</caption>
+									<colgroup>
+										<col width="30%">
+										<col width="">
+										<col width="">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">USD,JPY,EUR</th>
+											<th scope="col">CNY</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>미화기준<br>5백달러 상당액<br>이하</td>
+											<td>50% 우대</td>
+											<td>20%우대</td>
+										</tr>
+										<tr>
+											<td>미화기준<br>5백달러 초과<br>3천달러 상당액<br>이하</td>
+											<td>60% 우대</td>
+											<td>30%우대</td>
+										</tr>
+										<tr>
+											<td>미화기준<br>3천달러 초과<br>1만달러 상당액<br>이하</td>
+											<td>70% 우대</td>
+											<td>40%우대</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<p class="defTit2">10% 추가우대 Tip</p>
+						<ul class="listDot">
+							<li>1년 이내 인터넷뱅킹, 스마트뱅킹, 콕뱅크에서 환전 이용실적이 있는 경우(신청일, 외화수령점 기준)</li>
+							<li>최근1년 이내 농축협에서 환전수령을 한 경우, 수령점 지정 시 농축협을 선택하셔야 추가 우대가 가능합니다.</li>
+						</ul>
+					</div>
+					<a href="#none" role="button" onclick="popClose(this)" class="btnPopClose"><span class="blind">팝업 닫기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

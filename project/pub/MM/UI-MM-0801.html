@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<title>UI-MM-0801</title>
+	<meta name="publisher" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<link rel="stylesheet" href="../../css/cok_base.css">
+	<link rel="stylesheet" href="../../css/cok_com.css">
+	<link rel="stylesheet" href="../../css/cok_cont.css">
+	<link rel="stylesheet" href="../../css/cok_market.css">
+	<link rel="stylesheet" href="../../css/cok_pub.css"> <!-- 퍼블리싱 가이드용 실제 적용X -->
+	<script src="../../js/jquery-1.9.1.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/cok_com.js"></script>
+	<script src="../../js/cok_pub.js"></script> <!-- 퍼블리싱 가이드용 실제 적용X -->
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<div class="headerL">
+			<a href="javascript:;" title="뒤로가기" role="button" class="headBtn btnPrev"></a>
+		</div>
+		<h1>오픈뱅킹 서비스 해지</h1>
+		<div class="headerR">
+			<a href="javascript:;" title="홈" role="button" class="headBtn btnHome"></a>
+			<a href="javascript:;" title="전체메뉴" role="button" class="headBtn btnMenu"></a>
+		</div>
+	</div> <!-- //#header -->
+	<div id="container">
+		<!-- [2023-04-07] 변경-->
+		<div id="contents">
+			<div class="pgTitWrap">
+				<p class="pTit">농·축협 <strong>오픈뱅킹 서비스</strong>를<br> <strong>해지</strong>하시겠습니까?</p>  <!-- [2023-05-10] 오픈뱅킹 문구수정 : 농협중앙회 -> 농축협 --> <!-- [2023-05-12] 오픈뱅킹 문구수정 : 농축협 -> 농·축협 -->
+				<!-- <ul class="listDot">
+					<li>해지 할 오픈뱅킹서비스 채널을 선택해주세요.</li>
+				</ul> -->
+			</div>
+
+			<!-- <div class="formWrap">
+						<div class="formItem">
+							<p class="defTit2">오픈뱅킹서비스 이용채널</p>
+							<div class="chkGroup">
+								<div class="inpChk">
+									<input type="checkbox" name="chk1" id="chk31">
+									<label for="chk31">콕뱅크</label>
+								</div>
+							</div>
+							<div class="chkGroup">
+								<div class="inpChk">
+									<input type="checkbox" name="chk1" id="chk32">
+									<label for="chk32">NH농협 인터넷/스마트뱅킹</label>
+								</div>
+							</div>
+				</div>
+			</div> -->
+
+			<!-- [2023-04-14] UI수정 -->
+			<!-- <div class="btmInfoWrap mt70">
+				<strong class="tit">확인사항</strong>
+				<ul class="listDot">
+					<li>농협의 모든 채널 (콕뱅크/스마트뱅킹/인터넷뱅킹)에 등록된 오픈뱅킹 서비스가 해지 됩니다.</li>
+					<li>오픈뱅킹 서비스 재가입은 해지일로부터 2~3영업일 이후에 가입하실 수 있습니다</li>
+					<li>오픈뱅킹 해지 후 재가입 시 3일 동안 오픈뱅킹 송금이 제한되니 이점 유념해주시기 바랍니다.</li>
+				</ul>
+			</div> -->
+			<div class="rounBgBox">
+				<ul class="listDot">
+					<li>농협의 모든 채널 (콕뱅크/스마트뱅킹/인터넷뱅킹)에 등록된 오픈뱅킹 서비스가 해지 됩니다.</li>
+					<li>오픈뱅킹 서비스 재가입은 해지일로부터 2~3영업일 이후에 가입하실 수 있습니다.</li>  <!-- [2023-05-10] 오픈뱅킹 문구수정 : .추가 -->
+					<li>오픈뱅킹 해지 후 재가입 시 3일 동안 오픈뱅킹 송금이 제한되니 이점 유념해주시기 바랍니다.</li>
+				</ul>
+			</div>
+
+
+		</div>  <!-- //#contents -->
+		<div id="footer_cont">
+			<div class="toastMessage">[해지] 선택 시 전자서명과 동시에 해지됩니다.</div>
+			<div class="btnArea">
+				<button type="button" class="btn_full">취소</button>
+				<button type="button" class="btn_full sel">서비스 해지</button>
+			</div>
+		</div>  <!-- //#footer_cont -->
+	</div> <!-- //#container -->
+</div>  <!-- //#wrap -->
+
+<!-- POPUP AREA -->
+<div id="popupArea">
+	<!-- CENTER POPUP -->
+	<div id="popupCCA" class="popupWrap center" style="display:none;">
+		<div class="layerPopupDim">
+			<div class="popContent">
+				<div class="popContentBox">
+					<div class="popContBox">
+						<div class="Layer_Pop">
+							<div class="Layer_Tit">
+								<h2 tabindex="0"><span class="blind">팝업</span></h2>
+							</div>
+							<div class="Layer_Con">
+								<!-- 컨펌메세지 -->
+								<div class="confirmMsg">
+									<i class="warning"></i>
+									<p class="tit">해당 계좌 등록을 취소하시겠습니까?</p>
+									<p class="txt">다시 선택하려면 비밀번호 재확인이 필요합니다.</p>
+								</div>
+							</div>
+							<div class="Layer_Pop_Close">
+								<div class="btnArea">
+									<button type="button" title onclick="popClose(this)" class="">취소</button>
+									<button type="button" title onclick="popClose(this)" class="sel">확인</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
